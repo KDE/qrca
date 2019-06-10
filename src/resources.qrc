@@ -3,5 +3,6 @@
         <file alias="main.qml">contents/ui/main.qml</file>
         <file alias="QrCodeScannerPage.qml">contents/ui/QrCodeScannerPage.qml</file>
         <file alias="QrCodeEncoderPage.qml">contents/ui/QrCodeEncoderPage.qml</file>
+        <file alias="ShareSheet.qml">contents/ui/ShareSheet.qml</file>
     </qresource>
 </RCC>

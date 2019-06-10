@@ -1,6 +1,9 @@
 #include <QDebug>
 #include <QImage>
 #include <QRegularExpression>
+#include <QStandardPaths>
+#include <QDateTime>
+#include <QDir>
 
 #include <ZXing/BarcodeFormat.h>
 #include <ZXing/MultiFormatWriter.h>
@@ -35,3 +38,19 @@ QImage QrSkanner::encode(const QString &text, const int &width) {
 	return image;
 }
 
+QString QrSkanner::save(const QImage &image) {
+	const QString directory = QStandardPaths::writableLocation(QStandardPaths::PicturesLocation)
+	                   + "/qrcodes/";
+
+	const QString path = directory + QDateTime::currentDateTime().toString(Qt::ISODate) + ".png";
+
+	QDir dir = QDir(directory);
+	if (!dir.exists()) {
+		dir.mkpath(directory);
+	}
+
+	qDebug() << "Saving image to" << path;
+	image.save(path, "PNG", -1);
+
+	return path;
+}

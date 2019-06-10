@@ -5,9 +5,33 @@ import org.kde.kirigami 2.2 as Kirigami
 import QtQuick.Layouts 1.3
 
 Kirigami.Page {
+    ShareSheet {
+        id: shareSheet
+        title: i18n("Share QR-Code")
+    }
+
+
+    actions.contextualActions: [
+        Kirigami.Action {
+            property string path
+            text: i18n("Save")
+            onTriggered: {
+                path = "file://" + qrSkanner.save(codeView.source)
+                showPassiveNotification(i18n("Saved image to " + path), 1000, "Open Externally", function() {Qt.openUrlExternally(path)})
+            }
+        },
+        Kirigami.Action {
+            text: i18n("Share")
+            onTriggered: {
+                shareSheet.url = qrSkanner.save(codeView.source)
+                shareSheet.open()
+            }
+        }
+    ]
     ColumnLayout {
         anchors.fill: parent
         Kirigami.Icon {
+            id: codeView
             Layout.fillWidth: true
             width: Kirigami.Units.gridUnit * 20
             height: Kirigami.Units.gridUnit * 20
