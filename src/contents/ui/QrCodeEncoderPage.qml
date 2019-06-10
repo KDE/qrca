@@ -4,7 +4,9 @@ import QtMultimedia 5.9
 import org.kde.kirigami 2.2 as Kirigami
 import QtQuick.Layouts 1.3
 
-Kirigami.Page {
+Kirigami.ScrollablePage {
+    title: i18n("Create QR-Code")
+
     ShareSheet {
         id: shareSheet
         title: i18n("Share QR-Code")
@@ -28,8 +30,10 @@ Kirigami.Page {
             }
         }
     ]
+
     ColumnLayout {
-        anchors.fill: parent
+        spacing: 50
+
         Kirigami.Icon {
             id: codeView
             Layout.fillWidth: true
