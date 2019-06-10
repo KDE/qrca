@@ -1,7 +1,7 @@
 import QtQuick 2.0
 import QtQuick.Controls 2.3 as Controls
 import QtMultimedia 5.9
-import org.kde.kirigami 2.2 as Kirigami
+import org.kde.kirigami 2.7 as Kirigami
 import QtQuick.Layouts 1.3
 
 Kirigami.ScrollablePage {
@@ -17,6 +17,7 @@ Kirigami.ScrollablePage {
         Kirigami.Action {
             property string path
             text: i18n("Save")
+            icon.name: "document-save"
             onTriggered: {
                 path = "file://" + qrSkanner.save(codeView.source)
                 showPassiveNotification(i18n("Saved image to " + path), 1000, "Open Externally", function() {Qt.openUrlExternally(path)})
@@ -24,6 +25,7 @@ Kirigami.ScrollablePage {
         },
         Kirigami.Action {
             text: i18n("Share")
+            icon.name: "document-share"
             onTriggered: {
                 shareSheet.url = qrSkanner.save(codeView.source)
                 shareSheet.open()
@@ -39,13 +41,20 @@ Kirigami.ScrollablePage {
             Layout.fillWidth: true
             width: Kirigami.Units.gridUnit * 20
             height: Kirigami.Units.gridUnit * 20
-            source: inputText.text.length > 0 ? qrSkanner.encode(inputText.text, width) : ""
+            source: qrSkanner.encode(inputText.text.length > 0 ? inputText.text: " ", width)
         }
 
-        Controls.TextField {
+        Kirigami.ActionTextField {
             id: inputText
-            text: "Enter text"
+            placeholderText: "Enter text"
             Layout.fillWidth: true
+            rightActions: [
+                Kirigami.Action {
+                    icon.name: "edit-clear"
+                    enabled: inputText.text.length > 0
+                    onTriggered: inputText.text = ""
+                }
+            ]
         }
     }
 }

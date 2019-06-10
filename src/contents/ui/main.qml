@@ -14,10 +14,12 @@ Kirigami.ApplicationWindow {
         actions: [
             Kirigami.Action {
                 text: i18n("Scan")
+                icon.name: "camera-photo-symbolic"
                 onTriggered: pageStack.replace(qrCodeScannerPage)
             },
             Kirigami.Action {
                 text: i18n("Create")
+                icon.name: "document-new-symbolic"
                 onTriggered: pageStack.replace(qrCodeEncoderPage)
             }
         ]
