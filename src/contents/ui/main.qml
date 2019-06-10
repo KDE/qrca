@@ -15,12 +15,15 @@ Kirigami.ApplicationWindow {
             Kirigami.Action {
                 text: i18n("Scan")
                 icon.name: "camera-photo-symbolic"
-                onTriggered: pageStack.replace(qrCodeScannerPage)
+                onTriggered: pageStack.layers.pop()
             },
             Kirigami.Action {
                 text: i18n("Create")
                 icon.name: "document-new-symbolic"
-                onTriggered: pageStack.replace(qrCodeEncoderPage)
+                onTriggered: {
+                    if (pageStack.layers.depth < 2)
+                        pageStack.layers.push(qrCodeEncoderPage)
+                }
             }
         ]
     }

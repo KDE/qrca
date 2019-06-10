@@ -17,7 +17,6 @@ QrSkanner::QrSkanner()
 }
 
 bool QrSkanner::isUrl(const QString &text) {
-
 	QRegularExpression exp("(?:https?|ftp)://\\S+");
 
 	return exp.match(text).hasMatch();

@@ -111,9 +111,9 @@ Kirigami.Page {
 	QrCodeScanner {
 		camera: camera
 		onScanningSucceeded: {
-            resultSheet.tag = result
-            resultSheet.isLink = qrSkanner.isUrl(result)
-            resultSheet.open()
+			resultSheet.tag = result
+			resultSheet.isLink = qrSkanner.isUrl(result)
+			resultSheet.open()
 		}
 	}
 
