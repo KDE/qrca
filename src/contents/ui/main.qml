@@ -35,6 +35,8 @@ Kirigami.ApplicationWindow {
         ]
     }
 
+    contextDrawer: Kirigami.ContextDrawer {}
+
     Component {id: qrCodeScannerPage; QrCodeScannerPage {}}
     Component {id: qrCodeEncoderPage; QrCodeEncoderPage {}}
 
