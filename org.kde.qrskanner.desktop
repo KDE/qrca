@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=QrSkanner
+GenericName=Barcode Scanner
+Comment=Scan and create QR-Codes
+Version=1.0
+Exec=qrskanner
+MimeType=application/x-QrSkanner;
+Icon=view-barcode
+Type=Application
+Terminal=false
+Categories=Qt;KDE;Multimedia;

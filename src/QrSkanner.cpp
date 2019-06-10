@@ -1,0 +1,37 @@
+#include <QDebug>
+#include <QImage>
+#include <QRegularExpression>
+
+#include <ZXing/BarcodeFormat.h>
+#include <ZXing/MultiFormatWriter.h>
+#include <ZXing/BitMatrix.h>
+
+#include "QrSkanner.h"
+
+
+QrSkanner::QrSkanner()
+{
+}
+
+bool QrSkanner::isUrl(const QString &text) {
+
+	QRegularExpression exp("(?:https?|ftp)://\\S+");
+
+	return exp.match(text).hasMatch();
+}
+
+QImage QrSkanner::encode(const QString &text, const int &width) {
+	ZXing::MultiFormatWriter writer(ZXing::BarcodeFormat::QR_CODE);
+
+	auto matrix = writer.encode(text.toStdWString(), width, width);
+	QImage image(width, width, QImage::Format_ARGB32);
+
+	for (int y = 0; y < matrix.height(); ++y) {
+		for (int x = 0; x < matrix.width(); ++x) {
+			image.setPixel(y, x, matrix.get(x, y) ? qRgb(0,0,0) : qRgb(255,255,255));
+		}
+	}
+
+	return image;
+}
+
