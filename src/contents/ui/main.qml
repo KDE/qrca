@@ -7,6 +7,13 @@ Kirigami.ApplicationWindow {
 
     title: i18n("QR Code Scanner")
 
+    function passiveNotification(text) {
+        showPassiveNotification(text, "long")
+    }
+
+    Component.onCompleted: qrSkanner.passiveNotificationRequested.connect(passiveNotification)
+
+
     globalDrawer: Kirigami.GlobalDrawer {
         title: i18n("QR-Code Scanner")
         titleIcon: "view-barcode"

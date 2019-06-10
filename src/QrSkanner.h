@@ -12,6 +12,11 @@ public:
 	Q_INVOKABLE bool isUrl(const QString &text);
 	Q_INVOKABLE QImage encode(const QString &text, const int &width);
 	Q_INVOKABLE QString save(const QImage &image);
+signals:
+	/**
+	 * Show passive notification
+	 */
+	void passiveNotificationRequested(QString text);
 };
 
 #endif // QRSKANNER_H

@@ -95,7 +95,7 @@ void QrCodeScanner::processImage(const QImage& image)
 	auto result = reader.read(binImage);
 
 	if (!result.isValid()) {
-		QTimer::singleShot(QR_CODE_RESCAN_INTERVAL, [this]() {
+		QTimer::singleShot(QR_CODE_RESCAN_INTERVAL, sender(), [this]() {
 			emit scanningFailed();
 		});
 	} else {
@@ -145,7 +145,7 @@ void QrCodeScanner::startScanningLoop(QCameraImageCapture* imageCapture)
 	connect(this, &QrCodeScanner::scanningFailed, imageCapture, [imageCapture]() {
 		imageCapture->capture();
 	});
-	connect(this, &QrCodeScanner::scanningSucceeded, this,
+	connect(this, &QrCodeScanner::scanningSucceeded, imageCapture,
 	        [imageCapture](const QString&) {
 		imageCapture->capture();
 	});
