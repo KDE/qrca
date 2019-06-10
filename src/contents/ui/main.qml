@@ -7,6 +7,22 @@ Kirigami.ApplicationWindow {
 
     title: i18n("QR Code Scanner")
 
+    globalDrawer: Kirigami.GlobalDrawer {
+        title: i18n("QR-Code Scanner")
+        titleIcon: "view-barcode"
+
+        actions: [
+            Kirigami.Action {
+                text: i18n("Scan")
+                onTriggered: pageStack.replace(qrCodeScannerPage)
+            },
+            Kirigami.Action {
+                text: i18n("Create")
+                onTriggered: pageStack.replace(qrCodeEncoderPage)
+            }
+        ]
+    }
+
     Component {id: qrCodeScannerPage; QrCodeScannerPage {}}
     Component {id: qrCodeEncoderPage; QrCodeEncoderPage {}}
 

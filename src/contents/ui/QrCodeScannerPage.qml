@@ -44,13 +44,6 @@ Kirigami.Page {
 
 	title: qsTr("Scan QR code")
 
-    actions.contextualActions: [
-        Kirigami.Action {
-            text: "Encode"
-            onTriggered: pageStack.layers.push(qrCodeEncoderPage)
-        }
-    ]
-
     function asLink(text) {
         return "<a href='" + text + "'>" + text + "</a>"
     }
