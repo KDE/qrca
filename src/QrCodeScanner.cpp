@@ -74,9 +74,6 @@ void QrCodeScanner::processImage(const QImage& image)
 
 	DecodeHints decodeHints;
 	decodeHints.setShouldTryRotate(true);
-	std::vector<BarcodeFormat> allowedFormats;
-	allowedFormats.emplace_back(BarcodeFormat::QR_CODE);
-	decodeHints.setPossibleFormats(allowedFormats);
 
 	MultiFormatReader reader(decodeHints);
 	GenericLuminanceSource source(
