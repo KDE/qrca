@@ -4,7 +4,11 @@
 #include <QStandardPaths>
 #include <QDateTime>
 #include <QDir>
+#include <QCryptographicHash>
+
 #include <KLocalizedString>
+#include <KContacts/Addressee>
+#include <KContacts/VCardConverter>
 
 #include <ZXing/BarcodeFormat.h>
 #include <ZXing/MultiFormatWriter.h>
@@ -21,6 +25,34 @@ bool QrSkanner::isUrl(const QString &text) {
 	QRegularExpression exp("(?:https?|ftp)://\\S+");
 
 	return exp.match(text).hasMatch();
+}
+
+bool QrSkanner::isVCard(const QString &text) {
+	return (text.startsWith("BEGIN:VCARD") && text.endsWith("END:VCARD"));
+}
+
+void QrSkanner::saveVCard(const QString &text) {
+	QString path = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)
+	               + ("/kpeoplevcard");
+
+	QCryptographicHash hash(QCryptographicHash::Sha1);
+	hash.addData(getVCardName(text).toUtf8());
+
+	QFile file(path + "/" + hash.result().toHex() + ".vcf");
+
+	if (!file.open(QFile::WriteOnly)) {
+		qWarning() << "Couldn't save vCard: Couldn't open file for writing.";
+	    return;
+	}
+	file.write(text.toUtf8(), text.toUtf8().length());
+	file.close();
+}
+
+QString QrSkanner::getVCardName(const QString &text) {
+	KContacts::VCardConverter converter;
+	KContacts::Addressee adressee = converter.parseVCard(text.toUtf8());
+
+	return adressee.familyName();
 }
 
 QImage QrSkanner::encode(const QString &text, const int &width) {

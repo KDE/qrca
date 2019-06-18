@@ -37,12 +37,12 @@ import QtQuick.Layouts 1.3
 import org.kde.qrskanner 1.0
 
 Kirigami.Page {
-	leftPadding: 0
-	rightPadding: 0
-	topPadding: 0
-	bottomPadding: 0
+    leftPadding: 0
+    rightPadding: 0
+    topPadding: 0
+    bottomPadding: 0
 
-	title: qsTr("Scan QR code")
+    title: qsTr("Scan QR code")
 
     function asLink(text) {
         return "<a href='" + text + "'>" + text + "</a>"
@@ -53,6 +53,7 @@ Kirigami.Page {
 
         property string tag
         property bool isLink: false
+        property bool isVCard: false
 
         ColumnLayout {
             Kirigami.Heading {
@@ -64,6 +65,8 @@ Kirigami.Page {
                 text: {
                     if (resultSheet.isLink)
                         i18n("The following tag has been found. Do you want to open the url?")
+                    else if (resultSheet.isVCard)
+                        i18n("A contact has been found, do you want to save it?")
                     else
                         i18n("The following tag has been found.")
                 }
@@ -72,7 +75,7 @@ Kirigami.Page {
                 Layout.fillWidth: true
             }
             Controls.TextArea {
-                visible: !resultSheet.isLink
+                visible: !resultSheet.isLink && !resultSheet.isVCard
                 text: resultSheet.tag
                 wrapMode: Text.WordWrap
                 Layout.fillWidth: true
@@ -84,12 +87,23 @@ Kirigami.Page {
                 text: asLink(resultSheet.tag)
                 Layout.fillWidth: true
             }
+            Controls.Label {
+                visible: resultSheet.isVCard
+                text: i18n("Name: ") + qrSkanner.getVCardName(resultSheet.tag)
+            }
 
             RowLayout {
                 Controls.Button {
-                    text: i18n("Open")
-                    enabled: resultSheet.isLink
-                    onClicked: Qt.openUrlExternally(resultSheet.tag)
+                    text: resultSheet.isVCard ? i18n("Save contact") : i18n("Open")
+                    enabled: resultSheet.isLink || resultSheet.isVCard
+                    onClicked: {
+                        if (resultSheet.isVCard)
+                            qrSkanner.saveVCard(resultSheet.tag)
+                        else
+                            Qt.openUrlExternally(resultSheet.tag)
+
+                        resultSheet.close()
+                    }
                     Layout.fillWidth: true
                 }
                 Controls.Button {
@@ -101,26 +115,27 @@ Kirigami.Page {
         }
     }
 
-	VideoOutput {
-		id: viewfinder
-		anchors.fill: parent
-		source: camera
-		autoOrientation: true
-	}
+    VideoOutput {
+        id: viewfinder
+        anchors.fill: parent
+        source: camera
+        autoOrientation: true
+    }
 
-	QrCodeScanner {
-		camera: camera
-		onScanningSucceeded: {
-			resultSheet.tag = result
-			resultSheet.isLink = qrSkanner.isUrl(result)
-			resultSheet.open()
-		}
-	}
+    QrCodeScanner {
+        camera: camera
+        onScanningSucceeded: {
+            resultSheet.tag = result
+            resultSheet.isLink = qrSkanner.isUrl(result)
+            resultSheet.isVCard = qrSkanner.isVCard(result)
+            resultSheet.open()
+        }
+    }
 
-	Camera {
-		id: camera
-		onAvailabilityChanged: {
-			kaidan.qrCodeScanner.startScanning(camera.mediaObject)
-		}
-	}
+    Camera {
+        id: camera
+        onAvailabilityChanged: {
+            kaidan.qrCodeScanner.startScanning(camera.mediaObject)
+        }
+    }
 }

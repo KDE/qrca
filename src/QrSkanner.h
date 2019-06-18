@@ -10,8 +10,11 @@ class QrSkanner : public QObject
 public:
 	QrSkanner();
 	Q_INVOKABLE bool isUrl(const QString &text);
+	Q_INVOKABLE bool isVCard(const QString &text);
 	Q_INVOKABLE QImage encode(const QString &text, const int &width);
 	Q_INVOKABLE QString save(const QImage &image);
+	Q_INVOKABLE void saveVCard(const QString &text);
+	Q_INVOKABLE QString getVCardName(const QString &text);
 signals:
 	/**
 	 * Show passive notification

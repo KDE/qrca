@@ -1,7 +1,6 @@
 project(qrskanner)
 
 cmake_minimum_required(VERSION 2.8.12)
-set(KF5_MIN_VERSION "5.18.0")
 set(QT_MIN_VERSION "5.5.0")
 
 ################# Disallow in-source build #################
@@ -30,7 +29,7 @@ kde_enable_exceptions()
 ################# Find dependencies #################
 
 find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Multimedia)
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 Purpose I18n)
+find_package(KF5 REQUIRED COMPONENTS Kirigami2 Purpose I18n Contacts)
 find_package(ZXing REQUIRED COMPONENTS Core)
 
 ################# Enable C++11 features for clang and gcc #################
