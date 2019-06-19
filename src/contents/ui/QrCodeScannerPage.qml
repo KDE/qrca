@@ -134,8 +134,9 @@ Kirigami.Page {
 
     Camera {
         id: camera
-        onAvailabilityChanged: {
-            kaidan.qrCodeScanner.startScanning(camera.mediaObject)
+        focus {
+            focusMode: Camera.FocusMacro + Camera.FocusContinuous
+            focusPointMode: Camera.FocusPointCenter
         }
     }
 }
