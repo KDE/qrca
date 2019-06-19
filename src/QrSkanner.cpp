@@ -52,7 +52,7 @@ QString QrSkanner::getVCardName(const QString &text) {
 	KContacts::VCardConverter converter;
 	KContacts::Addressee adressee = converter.parseVCard(text.toUtf8());
 
-	return adressee.familyName();
+	return adressee.realName();
 }
 
 QImage QrSkanner::encode(const QString &text, const int &width) {
