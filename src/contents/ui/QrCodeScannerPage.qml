@@ -34,7 +34,7 @@ import QtMultimedia 5.9
 import org.kde.kirigami 2.2 as Kirigami
 import QtQuick.Layouts 1.3
 
-import org.kde.qrskanner 1.0
+import org.kde.qrca 1.0
 
 Kirigami.Page {
     leftPadding: 0
@@ -89,7 +89,7 @@ Kirigami.Page {
             }
             Controls.Label {
                 visible: resultSheet.isVCard
-                text: i18n("Name: ") + qrSkanner.getVCardName(resultSheet.tag)
+                text: i18n("Name: ") + qrca.getVCardName(resultSheet.tag)
             }
 
             RowLayout {
@@ -98,7 +98,7 @@ Kirigami.Page {
                     enabled: resultSheet.isLink || resultSheet.isVCard
                     onClicked: {
                         if (resultSheet.isVCard)
-                            qrSkanner.saveVCard(resultSheet.tag)
+                            qrca.saveVCard(resultSheet.tag)
                         else
                             Qt.openUrlExternally(resultSheet.tag)
 
@@ -126,8 +126,8 @@ Kirigami.Page {
         camera: camera
         onScanningSucceeded: {
             resultSheet.tag = result
-            resultSheet.isLink = qrSkanner.isUrl(result)
-            resultSheet.isVCard = qrSkanner.isVCard(result)
+            resultSheet.isLink = qrca.isUrl(result)
+            resultSheet.isVCard = qrca.isVCard(result)
             resultSheet.open()
         }
     }

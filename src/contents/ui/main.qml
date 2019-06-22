@@ -11,7 +11,7 @@ Kirigami.ApplicationWindow {
         showPassiveNotification(text, "long")
     }
 
-    Component.onCompleted: qrSkanner.passiveNotificationRequested.connect(passiveNotification)
+    Component.onCompleted: qrca.passiveNotificationRequested.connect(passiveNotification)
 
 
     globalDrawer: Kirigami.GlobalDrawer {

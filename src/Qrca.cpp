@@ -14,24 +14,24 @@
 #include <ZXing/MultiFormatWriter.h>
 #include <ZXing/BitMatrix.h>
 
-#include "QrSkanner.h"
+#include "Qrca.h"
 
 
-QrSkanner::QrSkanner()
+Qrca::Qrca()
 {
 }
 
-bool QrSkanner::isUrl(const QString &text) {
+bool Qrca::isUrl(const QString &text) {
 	QRegularExpression exp("(?:https?|ftp)://\\S+");
 
 	return exp.match(text).hasMatch();
 }
 
-bool QrSkanner::isVCard(const QString &text) {
+bool Qrca::isVCard(const QString &text) {
 	return (text.startsWith("BEGIN:VCARD") && text.endsWith("END:VCARD"));
 }
 
-void QrSkanner::saveVCard(const QString &text) {
+void Qrca::saveVCard(const QString &text) {
 	QString path = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)
 	               + ("/kpeoplevcard");
 
@@ -48,14 +48,14 @@ void QrSkanner::saveVCard(const QString &text) {
 	file.close();
 }
 
-QString QrSkanner::getVCardName(const QString &text) {
+QString Qrca::getVCardName(const QString &text) {
 	KContacts::VCardConverter converter;
 	KContacts::Addressee adressee = converter.parseVCard(text.toUtf8());
 
 	return adressee.realName();
 }
 
-QImage QrSkanner::encode(const QString &text, const int &width) {
+QImage Qrca::encode(const QString &text, const int &width) {
 	try {
 		ZXing::MultiFormatWriter writer(ZXing::BarcodeFormat::QR_CODE);
 
@@ -79,7 +79,7 @@ QImage QrSkanner::encode(const QString &text, const int &width) {
 	return(QImage());
 }
 
-QString QrSkanner::save(const QImage &image) {
+QString Qrca::save(const QImage &image) {
 	const QString directory = QStandardPaths::writableLocation(QStandardPaths::PicturesLocation)
 	                   + "/qrcodes/";
 

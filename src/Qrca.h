@@ -1,14 +1,14 @@
-#ifndef QRSKANNER_H
-#define QRSKANNER_H
+#ifndef ORCASCANNER_H
+#define ORCASCANNER_H
 
 #include <QObject>
 #include <QImage>
 
-class QrSkanner : public QObject
+class Qrca : public QObject
 {
         Q_OBJECT
 public:
-	QrSkanner();
+	Qrca();
 	Q_INVOKABLE bool isUrl(const QString &text);
 	Q_INVOKABLE bool isVCard(const QString &text);
 	Q_INVOKABLE QImage encode(const QString &text, const int &width);

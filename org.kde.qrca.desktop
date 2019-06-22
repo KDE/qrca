@@ -1,10 +1,9 @@
 [Desktop Entry]
-Name=QrSkanner
+Name=Qrca
 GenericName=Barcode Scanner
 Comment=Scan and create QR-Codes
 Version=1.0
-Exec=qrskanner
-MimeType=application/x-QrSkanner;
+Exec=Qrca
 Icon=view-barcode
 Type=Application
 Terminal=false

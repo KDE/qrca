@@ -19,7 +19,7 @@ Kirigami.ScrollablePage {
             text: i18n("Save")
             icon.name: "document-save"
             onTriggered: {
-                path = "file://" + qrSkanner.save(codeView.source)
+                path = "file://" + qrca.save(codeView.source)
                 showPassiveNotification(i18n("Saved image to " + path), 1000, "Open Externally", function() {Qt.openUrlExternally(path)})
             }
         },
@@ -27,7 +27,7 @@ Kirigami.ScrollablePage {
             text: i18n("Share")
             icon.name: "document-share"
             onTriggered: {
-                shareSheet.url = qrSkanner.save(codeView.source)
+                shareSheet.url = qrca.save(codeView.source)
                 shareSheet.open()
             }
         }
@@ -41,7 +41,7 @@ Kirigami.ScrollablePage {
             Layout.fillWidth: true
             width: Kirigami.Units.gridUnit * 20
             height: Kirigami.Units.gridUnit * 20
-            source: qrSkanner.encode(inputText.text.length > 0 ? inputText.text: " ", width)
+            source: qrca.encode(inputText.text.length > 0 ? inputText.text: " ", width)
         }
 
         Kirigami.ActionTextField {

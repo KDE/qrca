@@ -1,9 +1,9 @@
 {
-    "id": "org.kde.qrskanner",
+    "id": "org.kde.qrca",
     "runtime": "org.kde.Platform",
     "runtime-version": "5.12",
     "sdk": "org.kde.Sdk",
-    "command": "QrSkanner",
+    "command": "orca",
     "tags": ["nightly"],
     "desktop-file-name-suffix": " (Nightly)",
     "finish-args": [
@@ -104,7 +104,7 @@
             ]
         },
         {
-            "name": "QrSkanner",
+            "name": "qrca",
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "sources": [ { "type": "dir", "path": ".", "skip": [".git"] } ]

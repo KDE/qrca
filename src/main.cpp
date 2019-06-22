@@ -4,7 +4,7 @@
 #include <QUrl>
 
 #include "QrCodeScanner.h"
-#include "QrSkanner.h"
+#include "Qrca.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -12,15 +12,15 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QApplication app(argc, argv);
     QCoreApplication::setOrganizationName("KDE");
     QCoreApplication::setOrganizationDomain("kde.org");
-    QCoreApplication::setApplicationName("QrSkanner");
+    QCoreApplication::setApplicationName("qrca");
 
     qRegisterMetaType<QrCodeScanner*>("QrCodeScanner*");
-    qmlRegisterType<QrCodeScanner>("org.kde.qrskanner", 1, 0, "QrCodeScanner");
+    qmlRegisterType<QrCodeScanner>("org.kde.qrca", 1, 0, "QrCodeScanner");
 
     QQmlApplicationEngine engine;
 
-    QrSkanner *qrSkanner = new QrSkanner();
-    engine.rootContext()->setContextProperty("qrSkanner", qrSkanner);
+    auto *qrca = new Qrca();
+    engine.rootContext()->setContextProperty("qrca", qrca);
 
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
 

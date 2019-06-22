@@ -1,4 +1,4 @@
-project(qrskanner)
+project(orca)
 
 cmake_minimum_required(VERSION 2.8.12)
 set(QT_MIN_VERSION "5.5.0")
@@ -41,7 +41,7 @@ endif()
 ################# build and install #################
 add_subdirectory(src)
 
-install(PROGRAMS org.kde.qrskanner.desktop DESTINATION ${KDE_INSTALL_APPDIR})
-install(FILES org.kde.qrskanner.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
+install(PROGRAMS org.kde.qrca.desktop DESTINATION ${KDE_INSTALL_APPDIR})
+install(FILES org.kde.qrca.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
