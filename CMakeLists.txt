@@ -1,4 +1,4 @@
-project(orca)
+project(qrca)
 
 cmake_minimum_required(VERSION 2.8.12)
 set(QT_MIN_VERSION "5.5.0")
