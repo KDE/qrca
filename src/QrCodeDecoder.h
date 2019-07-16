@@ -28,53 +28,49 @@
  *  along with Kaidan.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef QRCODESCANNER_H
-#define QRCODESCANNER_H
+#ifndef QRCODEDECODER_H
+#define QRCODEDECODER_H
 
 #include <QObject>
-class QCameraImageCapture;
 
-class QrCodeScanner : public QObject
+/**
+ * Decoder for QR codes. This is a backend for \c QrCodeScanner .
+ */
+class QrCodeDecoder : public QObject
 {
 	Q_OBJECT
-	Q_PROPERTY(QObject* camera READ qmlCamera WRITE setQmlCamera NOTIFY qmlCameraChanged)
 
 public:
-	QrCodeScanner(QObject* parent = nullptr);
-
-	QObject* qmlCamera() const;
-	void setQmlCamera(QObject* qmlCamera);
+	/**
+	 * Instantiates a QR code decoder.
+	 *
+	 * @param parent parent object
+	 */
+	explicit QrCodeDecoder(QObject *parent = nullptr);
 
 signals:
-	void qmlCameraChanged();
-
 	/**
-	 * Scanning of an image did not succeed, no QR code was found
+	 * Emitted when the decoding failed.
 	 */
-	void scanningFailed();
+	void decodingFailed();
 
 	/**
-	 * Scanning succeeded and we got a result string
+	 * Emitted when the decoding succeeded.
 	 *
-	 * @param result content of the QR code
+	 * @param tag string which was decoded by the QR code decoder
 	 */
-	void scanningSucceeded(const QString& result);
+	void decodingSucceeded(const QString &tag);
 
 public slots:
 	/**
-	 * Scans an image for QR codes
+	 * Tries to decode the QR code from the given image. When decoding has
+	 * finished @c decodingFinished() will be emitted. In case a QR code was found,
+	 * also @c tagFound() will be emitted.
 	 *
-	 * @param imagePath location of the image to be scanned
+	 * @param image image which may contain a QR code to decode to a string.
+	 *        It needs to be in grayscale format (one byte per pixel).
 	 */
-	void processImage(const QImage& image);
-
-private slots:
-	void handleReadyForCaptureChanged(bool ready);
-	void handleQmlCameraChanged();
-	void startScanningLoop(QCameraImageCapture* imageCapture);
-
-private:
-	QObject* m_qmlCamera;
+	void decodeImage(const QImage &image);
 };
 
-#endif // QRCODESCANNER_H
+#endif // QRCODEDECODER_H

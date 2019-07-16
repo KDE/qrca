@@ -3,7 +3,7 @@
 #include <QtQml>
 #include <QUrl>
 
-#include "QrCodeScanner.h"
+#include "QrCodeScannerFilter.h"
 #include "Qrca.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
@@ -14,8 +14,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCoreApplication::setOrganizationDomain("kde.org");
     QCoreApplication::setApplicationName("qrca");
 
-    qRegisterMetaType<QrCodeScanner*>("QrCodeScanner*");
-    qmlRegisterType<QrCodeScanner>("org.kde.qrca", 1, 0, "QrCodeScanner");
+    qmlRegisterType<QrCodeScannerFilter>("org.kde.qrca", 1, 0, "QrCodeScannerFilter");
 
     QQmlApplicationEngine engine;
 

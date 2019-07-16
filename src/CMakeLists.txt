@@ -1,7 +1,9 @@
 set(qrca_SRCS
     main.cpp
-    QrCodeScanner.cpp
     Qrca.cpp
+    QrCodeScannerFilter.cpp
+    QrCodeVideoFrame.cpp
+    QrCodeDecoder.cpp
     )
 
 qt5_add_resources(RESOURCES resources.qrc)

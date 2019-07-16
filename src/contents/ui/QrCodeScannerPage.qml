@@ -120,22 +120,26 @@ Kirigami.Page {
         anchors.fill: parent
         source: camera
         autoOrientation: true
+        filters: [scannerFilter]
     }
 
-    QrCodeScanner {
-        camera: camera
+    QrCodeScannerFilter {
+        id: scannerFilter
         onScanningSucceeded: {
             resultSheet.tag = result
             resultSheet.isLink = qrca.isUrl(result)
             resultSheet.isVCard = qrca.isVCard(result)
             resultSheet.open()
         }
+        onUnsupportedFormatReceived: {
+            passiveNotification(qsTr("The camera format '%1' is not supported.").arg(format))
+        }
     }
 
     Camera {
         id: camera
         focus {
-            focusMode: Camera.FocusMacro + Camera.FocusContinuous
+            focusMode: Camera.FocusContinuous
             focusPointMode: Camera.FocusPointCenter
         }
     }
