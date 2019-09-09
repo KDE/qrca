@@ -28,8 +28,8 @@ kde_enable_exceptions()
 
 ################# Find dependencies #################
 
-find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Multimedia)
-find_package(KF5 REQUIRED COMPONENTS Kirigami2 Purpose I18n Contacts)
+find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Multimedia DBus)
+find_package(KF5 REQUIRED COMPONENTS Kirigami2 Purpose I18n Contacts NetworkManagerQt)
 find_package(ZXing REQUIRED COMPONENTS Core)
 
 ################# Enable C++11 features for clang and gcc #################
@@ -43,5 +43,6 @@ add_subdirectory(src)
 
 install(PROGRAMS org.kde.qrca.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.qrca.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
+install(FILES org.kde.qrca.svg DESTINATION ${KDE_INSTALL_FULL_ICONDIR}/hicolor/scalable/apps/)
 
 feature_summary(WHAT ALL INCLUDE_QUIET_PACKAGES FATAL_ON_MISSING_REQUIRED_PACKAGES)
