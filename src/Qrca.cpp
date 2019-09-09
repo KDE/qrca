@@ -28,7 +28,7 @@ bool Qrca::isUrl(const QString &text) {
 }
 
 bool Qrca::isVCard(const QString &text) {
-	return (text.startsWith("BEGIN:VCARD") && text.endsWith("END:VCARD"));
+	return (text.startsWith("BEGIN:VCARD") && text.trimmed().endsWith("END:VCARD"));
 }
 
 void Qrca::saveVCard(const QString &text) {
