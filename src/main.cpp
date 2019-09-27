@@ -2,6 +2,7 @@
 #include <QQmlApplicationEngine>
 #include <QtQml>
 #include <QUrl>
+#include <QCommandLineParser>
 
 #include "QrCodeScannerFilter.h"
 #include "Qrca.h"
@@ -14,11 +15,17 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCoreApplication::setOrganizationDomain("kde.org");
     QCoreApplication::setApplicationName("qrca");
 
+    QCommandLineParser parser;
+    parser.addHelpOption();
+    parser.addOption(QCommandLineOption("encode", "Text to encode into a QR-Code", "encode", ""));
+    parser.process(app);
+
     qmlRegisterType<QrCodeScannerFilter>("org.kde.qrca", 1, 0, "QrCodeScannerFilter");
 
     QQmlApplicationEngine engine;
 
     auto *qrca = new Qrca();
+    engine.rootContext()->setContextProperty("encodeText", parser.value("encode"));
     engine.rootContext()->setContextProperty("qrca", qrca);
 
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));

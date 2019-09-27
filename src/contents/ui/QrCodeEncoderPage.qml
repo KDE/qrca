@@ -47,6 +47,7 @@ Kirigami.ScrollablePage {
         Kirigami.ActionTextField {
             id: inputText
             placeholderText: "Enter text"
+            text: encodeText ? encodeText : ""
             Layout.fillWidth: true
             rightActions: [
                 Kirigami.Action {
