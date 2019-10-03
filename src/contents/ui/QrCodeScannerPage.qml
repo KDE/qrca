@@ -129,7 +129,8 @@ Kirigami.Page {
             resultSheet.tag = result
             resultSheet.isLink = qrca.isUrl(result)
             resultSheet.isVCard = qrca.isVCard(result)
-            resultSheet.open()
+            if (!resultSheet.sheetOpen)
+                resultSheet.open()
         }
         onUnsupportedFormatReceived: {
             passiveNotification(qsTr("The camera format '%1' is not supported.").arg(format))
