@@ -20,7 +20,7 @@ Kirigami.ScrollablePage {
             icon.name: "document-save"
             onTriggered: {
                 path = "file://" + qrca.save(codeView.source)
-                showPassiveNotification(i18n("Saved image to " + path), 1000, "Open Externally", function() {Qt.openUrlExternally(path)})
+                showPassiveNotification(i18n("Saved image to " + path), "long", "Open Externally", function() {Qt.openUrlExternally(path)})
             }
         },
         Kirigami.Action {
