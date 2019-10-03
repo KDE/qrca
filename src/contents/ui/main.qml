@@ -36,7 +36,15 @@ Kirigami.ApplicationWindow {
                     if (pageStack.layers.depth < 2)
                         pageStack.layers.push(qrCodeEncoderPage)
                 }
+            },
+            Kirigami.Action {
+                text: i18n("About")
+                icon.name: "help-feedback"
+                property string component: "qrc:/AboutPage.qml"
+                onTriggered: if (pageStack.layers.depth < 2)
+                           pageStack.layers.push(component)
             }
+
         ]
     }
 
@@ -44,6 +52,7 @@ Kirigami.ApplicationWindow {
 
     Component {id: qrCodeScannerPage; QrCodeScannerPage {}}
     Component {id: qrCodeEncoderPage; QrCodeEncoderPage {}}
+    Component {id: aboutPage; AboutPage {}}
 
     pageStack.initialPage: qrCodeScannerPage
 }
