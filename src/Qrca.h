@@ -1,5 +1,5 @@
-#ifndef ORCASCANNER_H
-#define ORCASCANNER_H
+#ifndef QRCA_H
+#define QRCA_H
 
 #include <QObject>
 #include <QImage>
@@ -22,4 +22,4 @@ signals:
 	void passiveNotificationRequested(QString text);
 };
 
-#endif // QRSKANNER_H
+#endif // QRCA_H
