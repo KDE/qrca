@@ -29,7 +29,7 @@ kde_enable_exceptions()
 ################# Find dependencies #################
 
 find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Multimedia DBus)
-find_package(KF5 REQUIRED COMPONENTS Kirigami2 Purpose I18n Contacts CoreAddons)# NetworkManagerQt)
+find_package(KF5 REQUIRED COMPONENTS Kirigami2 Purpose I18n Contacts CoreAddons)
 find_package(ZXing REQUIRED COMPONENTS Core)
 
 ################# Enable C++11 features for clang and gcc #################
