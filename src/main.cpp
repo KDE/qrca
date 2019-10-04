@@ -47,8 +47,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     qmlRegisterType<QrCodeScannerFilter>("org.kde.qrca", 1, 0, "QrCodeScannerFilter");
 
-    qmlRegisterType<KAboutData>();
-
     QQmlApplicationEngine engine;
 
     auto *qrca = new Qrca();
