@@ -1,5 +1,5 @@
 import QtQuick 2.1
-import org.kde.kirigami 2.4 as Kirigami
+import org.kde.kirigami 2.11 as Kirigami
 import QtQuick.Controls 2.0 as Controls
 
 Kirigami.ApplicationWindow {
@@ -18,31 +18,32 @@ Kirigami.ApplicationWindow {
         }
     }
 
+    Kirigami.PagePool {
+        id: mainPagePool
+    }
 
     globalDrawer: Kirigami.GlobalDrawer {
         title: i18n("QR-Code Scanner")
         titleIcon: "view-barcode"
 
         actions: [
-            Kirigami.Action {
+            Kirigami.PagePoolAction {
                 text: i18n("Scan")
                 icon.name: "camera-photo-symbolic"
-                onTriggered: pageStack.layers.pop()
+                pagePool: mainPagePool
+                page: "QrCodeScannerPage.qml"
             },
-            Kirigami.Action {
+            Kirigami.PagePoolAction {
                 text: i18n("Create")
                 icon.name: "document-new-symbolic"
-                onTriggered: {
-                    if (pageStack.layers.depth < 2)
-                        pageStack.layers.push(qrCodeEncoderPage)
-                }
+                pagePool: mainPagePool
+                page: "QrCodeEncoderPage.qml"
             },
-            Kirigami.Action {
+            Kirigami.PagePoolAction {
                 text: i18n("About")
                 icon.name: "help-feedback"
-                property string component: "qrc:/AboutPage.qml"
-                onTriggered: if (pageStack.layers.depth < 2)
-                           pageStack.layers.push(component)
+                pagePool: mainPagePool
+                page: "AboutPage.qml"
             }
 
         ]
