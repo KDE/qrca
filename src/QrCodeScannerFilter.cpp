@@ -31,6 +31,8 @@
 #include "QrCodeScannerFilter.h"
 
 #include <QDebug>
+#include <QCamera>
+#include <QCameraViewfinderSettings>
 #include <QtConcurrent/QtConcurrent>
 
 QrCodeScannerFilter::QrCodeScannerFilter(QObject *parent)
@@ -59,6 +61,18 @@ QrCodeDecoder *QrCodeScannerFilter::decoder()
 QVideoFilterRunnable *QrCodeScannerFilter::createFilterRunnable()
 {
 	return new QrCodeScannerFilterRunnable(this);
+}
+
+void QrCodeScannerFilter::setCameraDefaultVideoFormat(QObject *qmlCamera)
+{
+	QCamera *camera = qvariant_cast<QCamera*>(qmlCamera->property("mediaObject"));
+	if (camera) {
+		QCameraViewfinderSettings settings = camera->viewfinderSettings();
+		settings.setPixelFormat(QVideoFrame::Format_RGB24);
+		camera->setViewfinderSettings(settings);
+	} else {
+		qWarning() << "Could not set pixel format of QML camera";
+	}
 }
 
 QrCodeScannerFilterRunnable::QrCodeScannerFilterRunnable(QrCodeScannerFilter *filter)
@@ -97,7 +111,7 @@ void QrCodeScannerFilterRunnable::processVideoFrameProbed(
 		QrCodeScannerFilter *filter
 ) {
 	// Return if the frame is empty.
-	if (videoFrame.data().length() < 1)
+	if (videoFrame.data().isEmpty())
 		return;
 
 	// Create an image from the frame.
@@ -108,7 +122,7 @@ void QrCodeScannerFilterRunnable::processVideoFrameProbed(
 		// dirty hack: write QVideoFrame::PixelFormat as string to format using QDebug
 		//             QMetaEnum::valueToKey() did not work
 		QString format;
-		QDebug(&format) << videoFrame.pixelFormat();
+		QDebug(&format).nospace() << videoFrame.pixelFormat();
 
 		qDebug() << "QrCodeScannerFilterRunnable error: Cannot create image file to process.";
 		qDebug() << "Maybe it was a format conversion problem.";

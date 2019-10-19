@@ -144,4 +144,8 @@ Kirigami.Page {
             focusPointMode: Camera.FocusPointCenter
         }
     }
+
+    Component.onCompleted: {
+        scannerFilter.setCameraDefaultVideoFormat(camera);
+    }
 }
