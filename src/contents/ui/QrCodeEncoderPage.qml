@@ -3,6 +3,7 @@ import QtQuick.Controls 2.3 as Controls
 import QtMultimedia 5.9
 import org.kde.kirigami 2.7 as Kirigami
 import QtQuick.Layouts 1.3
+import org.kde.qrca 1.0
 
 Kirigami.ScrollablePage {
     title: i18n("Create QR-Code")
@@ -19,7 +20,7 @@ Kirigami.ScrollablePage {
             text: i18n("Save")
             icon.name: "document-save"
             onTriggered: {
-                path = "file://" + qrca.save(codeView.source)
+                path = "file://" + Qrca.save(codeView.source)
                 showPassiveNotification(i18n("Saved image to " + path), "long", "Open Externally", function() {Qt.openUrlExternally(path)})
             }
         },
@@ -27,7 +28,7 @@ Kirigami.ScrollablePage {
             text: i18n("Share")
             icon.name: "document-share"
             onTriggered: {
-                shareSheet.url = qrca.save(codeView.source)
+                shareSheet.url = Qrca.save(codeView.source)
                 shareSheet.open()
             }
         }
@@ -41,7 +42,7 @@ Kirigami.ScrollablePage {
             Layout.fillWidth: true
             width: Kirigami.Units.gridUnit * 20
             height: Kirigami.Units.gridUnit * 20
-            source: qrca.encode(inputText.text.length > 0 ? inputText.text: " ", width)
+            source: Qrca.encode(inputText.text.length > 0 ? inputText.text: " ", width)
         }
 
         Kirigami.ActionTextField {

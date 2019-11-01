@@ -46,12 +46,17 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     aboutData.setProgramLogo(app.windowIcon());
 
     qmlRegisterType<QrCodeScannerFilter>("org.kde.qrca", 1, 0, "QrCodeScannerFilter");
+    qmlRegisterSingletonType<Qrca>("org.kde.qrca", 1, 0, "Qrca", [](QQmlEngine *engine, QJSEngine *scriptEngine) {
+        Q_UNUSED(engine)
+        Q_UNUSED(scriptEngine)
+
+        auto *qrca = new Qrca();
+        return qrca;
+    });
 
     QQmlApplicationEngine engine;
 
-    auto *qrca = new Qrca();
     engine.rootContext()->setContextProperty("encodeText", parser.value("encode"));
-    engine.rootContext()->setContextProperty("qrca", qrca);
     engine.rootContext()->setContextProperty(QStringLiteral("qrcaAboutData"), QVariant::fromValue(KAboutData::applicationData()));
 
 

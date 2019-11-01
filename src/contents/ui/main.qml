@@ -1,6 +1,7 @@
 import QtQuick 2.1
 import org.kde.kirigami 2.11 as Kirigami
 import QtQuick.Controls 2.0 as Controls
+import org.kde.qrca 1.0
 
 Kirigami.ApplicationWindow {
     id: root
@@ -12,7 +13,7 @@ Kirigami.ApplicationWindow {
     }
 
     Component.onCompleted: {
-        qrca.passiveNotificationRequested.connect(passiveNotification)
+        Qrca.passiveNotificationRequested.connect(passiveNotification)
         if (encodeText) {
             pageStack.layers.push(qrCodeEncoderPage)
         }

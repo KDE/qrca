@@ -89,7 +89,7 @@ Kirigami.Page {
             }
             Controls.Label {
                 visible: resultSheet.isVCard
-                text: i18n("Name: ") + qrca.getVCardName(resultSheet.tag)
+                text: i18n("Name: ") + Qrca.getVCardName(resultSheet.tag)
             }
 
             RowLayout {
@@ -98,7 +98,7 @@ Kirigami.Page {
                     enabled: resultSheet.isLink || resultSheet.isVCard
                     onClicked: {
                         if (resultSheet.isVCard)
-                            qrca.saveVCard(resultSheet.tag)
+                            Qrca.saveVCard(resultSheet.tag)
                         else
                             Qt.openUrlExternally(resultSheet.tag)
 
@@ -127,8 +127,8 @@ Kirigami.Page {
         id: scannerFilter
         onScanningSucceeded: {
             resultSheet.tag = result
-            resultSheet.isLink = qrca.isUrl(result)
-            resultSheet.isVCard = qrca.isVCard(result)
+            resultSheet.isLink = Qrca.isUrl(result)
+            resultSheet.isVCard = Qrca.isVCard(result)
             if (!resultSheet.sheetOpen)
                 resultSheet.open()
         }
