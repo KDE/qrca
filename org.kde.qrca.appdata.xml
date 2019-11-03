@@ -3,9 +3,9 @@
   <id>org.kde.qrca</id>
   <name>Barcode Scanner</name>
   <summary>Scan and create QR-Codes</summary>
-  <metadata_license>"CC0-1.0"</metadata_license>
-  <project_license>"GPL-3+"</project_license>
-  <developer_name>"KDE Community"</developer_name>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <developer_name>KDE Community</developer_name>
   <description>
     <p>
       Scan QR-Codes with your camera on phones and laptops, and create your own for easily sharing data between devices.
