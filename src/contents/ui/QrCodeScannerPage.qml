@@ -52,8 +52,7 @@ Kirigami.Page {
         id: resultSheet
 
         property string tag
-        property bool isLink: false
-        property bool isVCard: false
+        property int contentType
 
         ColumnLayout {
             Kirigami.Heading {
@@ -63,19 +62,23 @@ Kirigami.Page {
 
             Controls.Label {
                 text: {
-                    if (resultSheet.isLink)
-                        i18n("The following tag has been found. Do you want to open the url?")
-                    else if (resultSheet.isVCard)
-                        i18n("A contact has been found, do you want to save it?")
-                    else
-                        i18n("The following tag has been found.")
+                    switch (resultSheet.contentType) {
+                    case Qrca.Url:
+                        return i18n("The following tag has been found. Do you want to open the url?");
+                    case Qrca.VCard:
+                        return i18n("A contact has been found, do you want to save it?");
+                    case Qrca.OtpToken:
+                        return i18n("An OTP URI has been found. Do you want to open your OTP client?");
+                    default:
+                        return i18n("The following tag has been found.");
+                    }
                 }
                 wrapMode: Text.WordWrap
                 elide: Text.ElideRight
                 Layout.fillWidth: true
             }
             Controls.TextArea {
-                visible: !resultSheet.isLink && !resultSheet.isVCard
+                visible: !resultSheet.contentType === Qrca.Url && !resultSheet.contentType === Qrca.VCard
                 text: resultSheet.tag
                 wrapMode: Text.WordWrap
                 Layout.fillWidth: true
@@ -83,21 +86,25 @@ Kirigami.Page {
                 selectByMouse: true
             }
             Controls.Label {
-                visible: resultSheet.isLink
+                visible: resultSheet.contentType === Qrca.Url
                 text: asLink(resultSheet.tag)
                 Layout.fillWidth: true
             }
             Controls.Label {
-                visible: resultSheet.isVCard
+                visible: resultSheet.contentType === Qrca.VCard
                 text: i18n("Name: ") + Qrca.getVCardName(resultSheet.tag)
             }
 
             RowLayout {
                 Controls.Button {
-                    text: resultSheet.isVCard ? i18n("Save contact") : i18n("Open")
-                    enabled: resultSheet.isLink || resultSheet.isVCard
+                    text: resultSheet.contentType === Qrca.VCard ? i18n("Save contact") : i18n("Open")
+                    enabled: {
+                        resultSheet.contentType === Qrca.Url
+                            || resultSheet.contentType === Qrca.VCard
+                            || resultSheet.contentType === Qrca.OtpToken
+                    }
                     onClicked: {
-                        if (resultSheet.isVCard)
+                        if (resultSheet.contentType === Qrca.VCard)
                             Qrca.saveVCard(resultSheet.tag)
                         else
                             Qt.openUrlExternally(resultSheet.tag)
@@ -127,8 +134,7 @@ Kirigami.Page {
         id: scannerFilter
         onScanningSucceeded: {
             resultSheet.tag = result
-            resultSheet.isLink = Qrca.isUrl(result)
-            resultSheet.isVCard = Qrca.isVCard(result)
+            resultSheet.contentType = Qrca.identifyContentType(result)
             if (!resultSheet.sheetOpen)
                 resultSheet.open()
         }

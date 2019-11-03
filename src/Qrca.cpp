@@ -5,6 +5,7 @@
 #include <QDateTime>
 #include <QDir>
 #include <QCryptographicHash>
+#include <QUrlQuery>
 
 #include <KLocalizedString>
 #include <KContacts/Addressee>
@@ -29,6 +30,31 @@ bool Qrca::isUrl(const QString &text) {
 
 bool Qrca::isVCard(const QString &text) {
 	return (text.startsWith("BEGIN:VCARD") && text.trimmed().endsWith("END:VCARD"));
+}
+
+bool Qrca::isOtpToken(const QString &text)
+{
+	if (text.startsWith("otpauth")) {
+		QUrl uri(text);
+		if (uri.isValid() && (uri.host() == "totp" || uri.host() == "hotp")) {
+			QUrlQuery query(uri.query());
+			return query.hasQueryItem("secret");
+		}
+	}
+
+	return false;
+}
+
+Qrca::ContentType Qrca::identifyContentType(const QString &text)
+{
+	if (isUrl(text))
+		return ContentType::Url;
+	else if (isVCard(text))
+		return ContentType::VCard;
+	else if (isOtpToken(text))
+		return ContentType::OtpToken;
+
+	return ContentType::Text;
 }
 
 void Qrca::saveVCard(const QString &text) {

@@ -6,20 +6,36 @@
 
 class Qrca : public QObject
 {
-        Q_OBJECT
+	Q_OBJECT
+
 public:
+	enum ContentType {
+		Url,
+		VCard,
+		OtpToken,
+		Text
+	};
+	Q_ENUM(ContentType)
+
 	Qrca();
-	Q_INVOKABLE bool isUrl(const QString &text);
-	Q_INVOKABLE bool isVCard(const QString &text);
+
+	static Q_INVOKABLE ContentType identifyContentType(const QString &text);
+
 	Q_INVOKABLE QImage encode(const QString &text, const int &width);
-	Q_INVOKABLE QString save(const QImage &image);
-	Q_INVOKABLE void saveVCard(const QString &text);
-	Q_INVOKABLE QString getVCardName(const QString &text);
+	static Q_INVOKABLE QString save(const QImage &image);
+	static Q_INVOKABLE void saveVCard(const QString &text);
+	static Q_INVOKABLE QString getVCardName(const QString &text);
+
 signals:
 	/**
 	 * Show passive notification
 	 */
 	void passiveNotificationRequested(QString text);
+
+private:
+	static bool isUrl(const QString &text);
+	static bool isVCard(const QString &text);
+	static bool isOtpToken(const QString &text);
 };
 
 #endif // QRCA_H

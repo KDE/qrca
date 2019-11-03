@@ -59,7 +59,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     engine.rootContext()->setContextProperty("encodeText", parser.value("encode"));
     engine.rootContext()->setContextProperty(QStringLiteral("qrcaAboutData"), QVariant::fromValue(KAboutData::applicationData()));
 
-
     engine.load(QUrl(QStringLiteral("qrc:///main.qml")));
 
     if (engine.rootObjects().isEmpty()) {
