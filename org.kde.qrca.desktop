@@ -1,8 +1,31 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=Qrca
+Name[ca]=Qrca
+Name[cs]=Qrca
+Name[nl]=Qrca
+Name[pt]=Qrca
+Name[tg]=Qrca
+Name[uk]=Qrca
+Name[x-test]=xxQrcaxx
+Name[zh_TW]=Qrca
 GenericName=Barcode Scanner
+GenericName[ca]=Escàner de codi de barres
+GenericName[cs]=Čtečka čarových kódů
+GenericName[nl]=Barcodescanner
+GenericName[pt]=Leitor de Códigos de Barras
+GenericName[tg]=Сканнери рамзи наворӣ
+GenericName[uk]=Засіб сканування штрихкодів
+GenericName[x-test]=xxBarcode Scannerxx
+GenericName[zh_TW]=條碼掃描器
 Comment=Scan and create QR-Codes
+Comment[ca]=Escaneja i crea codis QR
+Comment[nl]=QR-Codes scannen en aanmaken
+Comment[pt]=Digitalizar e criar códigos QR
+Comment[tg]=Рамзҳои QR-ро мушоҳида ё эҷод намоед
+Comment[uk]=Сканування і створення QR-кодів
+Comment[x-test]=xxScan and create QR-Codesxx
+Comment[zh_TW]=掃描及建立 QR 碼
 Version=1.0
 Exec=qrca
 Icon=org.kde.qrca
