@@ -3,6 +3,7 @@
   <id>org.kde.qrca</id>
   <name>Barcode Scanner</name>
   <name xml:lang="ca">Escàner de codi de barres</name>
+  <name xml:lang="ca-valencia">Escàner de codi de barres</name>
   <name xml:lang="cs">Čtečka čarových kódů</name>
   <name xml:lang="es">Escáner de códigos de barras</name>
   <name xml:lang="et">Ribakoodi skanner</name>
@@ -18,6 +19,7 @@
   <name xml:lang="zh-TW">條碼掃描器</name>
   <summary>Scan and create QR-Codes</summary>
   <summary xml:lang="ca">Escaneja i crea codis QR</summary>
+  <summary xml:lang="ca-valencia">Escaneja i crea codis QR</summary>
   <summary xml:lang="es">Escanear y crear códigos QR</summary>
   <summary xml:lang="et">QR-koodi skannimine ja loomine</summary>
   <summary xml:lang="fr">Scannez et créez des codes QR</summary>
@@ -34,6 +36,7 @@
   <project_license>GPL-3.0+</project_license>
   <developer_name>KDE Community</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
+  <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
   <developer_name xml:lang="cs">Komunita KDE</developer_name>
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
   <developer_name xml:lang="et">KDE kogukond</developer_name>
@@ -52,6 +55,7 @@
       Scan QR-Codes with your camera on phones and laptops, and create your own for easily sharing data between devices.
     </p>
     <p xml:lang="ca">Escanegeu els codis QR amb la càmera del telèfon i/o portàtil, i creeu-ne els vostres per a compartir dades amb facilitat entre diferents dispositius.</p>
+    <p xml:lang="ca-valencia">Escanegeu els codis QR amb la càmera del telèfon i/o portàtil, i creeu-ne els vostres per a compartir dades amb facilitat entre diferents dispositius.</p>
     <p xml:lang="es">Escanear códigos QR con la cámara de los teléfonos móviles y de los portátiles, y crear un código QR propio para compartir datos de forma sencilla entre dispositivos.</p>
     <p xml:lang="et">QR-koodi skannimine telefoni või sülearvuti kaameraga ning omaenda ribakoodi loomine hõlpsaks andmete jagamiseks seadmete vahel.</p>
     <p xml:lang="fr">Scannez des codes QR avec votre caméra sur votre téléphone ou votre ordinateur portable, et créez les vôtres afin de partager facilement des données entre appareils.</p>
