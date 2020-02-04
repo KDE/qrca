@@ -2,6 +2,7 @@
 [Desktop Entry]
 Name=Qrca
 Name[ca]=Qrca
+Name[ca@valencia]=Qrca
 Name[cs]=Qrca
 Name[es]=Qrca
 Name[et]=Qrca
@@ -16,6 +17,7 @@ Name[x-test]=xxQrcaxx
 Name[zh_TW]=Qrca
 GenericName=Barcode Scanner
 GenericName[ca]=Escàner de codi de barres
+GenericName[ca@valencia]=Escàner de codi de barres
 GenericName[cs]=Čtečka čarových kódů
 GenericName[es]=Escáner de códigos de barras
 GenericName[et]=Ribakoodi skanner
@@ -30,6 +32,7 @@ GenericName[x-test]=xxBarcode Scannerxx
 GenericName[zh_TW]=條碼掃描器
 Comment=Scan and create QR-Codes
 Comment[ca]=Escaneja i crea codis QR
+Comment[ca@valencia]=Escaneja i crea codis QR
 Comment[es]=Escanear y crear códigos QR
 Comment[et]=QR-koodi skannimine ja loomine
 Comment[fr]=Scannez et créez des codes QR
