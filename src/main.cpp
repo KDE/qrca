@@ -46,7 +46,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     aboutData.setProgramLogo(app.windowIcon());
 
     qmlRegisterType<QrCodeScannerFilter>("org.kde.qrca", 1, 0, "QrCodeScannerFilter");
-    qmlRegisterSingletonType<Qrca>("org.kde.qrca", 1, 0, "Qrca", [](QQmlEngine *engine, QJSEngine *scriptEngine) {
+    qmlRegisterSingletonType<Qrca>("org.kde.qrca", 1, 0, "Qrca", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
         Q_UNUSED(engine)
         Q_UNUSED(scriptEngine)
 
