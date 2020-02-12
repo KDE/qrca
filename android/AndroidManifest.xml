@@ -43,8 +43,11 @@
 
             <!-- auto screen scale factor -->
             <meta-data android:name="android.app.auto_screen_scale_factor" android:value="true"/>
+
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28"/>
     <supports-screens android:largeScreens="true" android:normalScreens="true" android:anyDensity="true" android:smallScreens="true"/>
