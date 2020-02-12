@@ -6,6 +6,7 @@
 #include <QCommandLineParser>
 
 #include <KAboutData>
+#include <KLocalizedContext>
 #include <KLocalizedString>
 
 #include "QrCodeScannerFilter.h"
@@ -55,6 +56,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     });
 
     QQmlApplicationEngine engine;
+    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
 
     engine.rootContext()->setContextProperty("encodeText", parser.value("encode"));
     engine.rootContext()->setContextProperty(QStringLiteral("qrcaAboutData"), QVariant::fromValue(KAboutData::applicationData()));
