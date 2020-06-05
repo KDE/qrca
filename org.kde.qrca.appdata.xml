@@ -14,6 +14,7 @@
   <name xml:lang="ko">바코드 스캐너</name>
   <name xml:lang="nl">Barcodescanner</name>
   <name xml:lang="pt">Analisador de Códigos de Barras</name>
+  <name xml:lang="sk">Cítačka čiarových kódov</name>
   <name xml:lang="sv">Streckkodsläsare</name>
   <name xml:lang="tg">Сканнери рамзи наворӣ</name>
   <name xml:lang="uk">Засіб сканування штрихкодів</name>
@@ -31,6 +32,7 @@
   <summary xml:lang="ko">QR 코드 스캔 및 생성</summary>
   <summary xml:lang="nl">QR-Codes scannen en aanmaken</summary>
   <summary xml:lang="pt">Digitalizar e criar códigos QR</summary>
+  <summary xml:lang="sk">Cítanie a vytváranie QR kódov</summary>
   <summary xml:lang="sv">Läs och skapa QR-koder</summary>
   <summary xml:lang="tg">Рамзҳои QR-ро мушоҳида ё эҷод намоед</summary>
   <summary xml:lang="uk">Сканування і створення QR-кодів</summary>
@@ -51,6 +53,7 @@
   <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
   <developer_name xml:lang="nl">KDE gemeenschap</developer_name>
   <developer_name xml:lang="pt">Comunidade do KDE</developer_name>
+  <developer_name xml:lang="sk">KDE komunita</developer_name>
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
   <developer_name xml:lang="tg">Ҷамъияти KDE</developer_name>
   <developer_name xml:lang="uk">Спільнота KDE</developer_name>
