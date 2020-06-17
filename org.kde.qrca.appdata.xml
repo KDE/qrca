@@ -19,7 +19,6 @@
   <name xml:lang="sv">Streckkodsläsare</name>
   <name xml:lang="tg">Сканнери рамзи наворӣ</name>
   <name xml:lang="uk">Засіб сканування штрихкодів</name>
-  <name xml:lang="x-test">xxBarcode Scannerxx</name>
   <name xml:lang="zh-TW">條碼掃描器</name>
   <summary>Scan and create QR-Codes</summary>
   <summary xml:lang="ca">Escaneja i crea codis QR</summary>
@@ -38,7 +37,6 @@
   <summary xml:lang="sv">Läs och skapa QR-koder</summary>
   <summary xml:lang="tg">Рамзҳои QR-ро мушоҳида ё эҷод намоед</summary>
   <summary xml:lang="uk">Сканування і створення QR-кодів</summary>
-  <summary xml:lang="x-test">xxScan and create QR-Codesxx</summary>
   <summary xml:lang="zh-TW">掃描及建立 QR 碼</summary>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
@@ -60,7 +58,6 @@
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
   <developer_name xml:lang="tg">Ҷамъияти KDE</developer_name>
   <developer_name xml:lang="uk">Спільнота KDE</developer_name>
-  <developer_name xml:lang="x-test">xxKDE Communityxx</developer_name>
   <developer_name xml:lang="zh-TW">KDE 社群</developer_name>
   <description>
     <p>
@@ -81,7 +78,6 @@
     <p xml:lang="sv">Läs av QR-koder med kameran på telefoner och bärbara datorer, och skapa egna för att enkelt dela data mellan apparater.</p>
     <p xml:lang="tg">Рамзҳои QR-ро ба воситаи камераи телефон ё ноутбуки худ мушоҳида кунед ва рамзҳои худро барои мубодилаи иттилоот байни дастгоҳҳо ба осонӣ эҷод намоед.</p>
     <p xml:lang="uk">Скануйте QR-коди за допомогою вашої фотокамери на телефоні або ноутбуці і створюйте ваші власні коди для передавання даних між пристроями.</p>
-    <p xml:lang="x-test">xxScan QR-Codes with your camera on phones and laptops, and create your own for easily sharing data between devices.xx</p>
     <p xml:lang="zh-TW">使用手機或筆電上的相機掃描 QR 碼，並建立自己的 QR 碼以方便在裝置間傳輸。</p>
   </description>
 </component>
