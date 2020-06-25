@@ -59,6 +59,6 @@ private slots:
 	}
 };
 
-QTEST_MAIN(QrcaTest);
+QTEST_GUILESS_MAIN(QrcaTest);
 
 #include "qrcatest.moc"
