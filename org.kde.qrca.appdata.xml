@@ -9,6 +9,7 @@
   <name xml:lang="et">Ribakoodi skanner</name>
   <name xml:lang="fi">Viivakoodinlukija</name>
   <name xml:lang="fr">Scanner de codes-barres</name>
+  <name xml:lang="gl">Escáner de códigos de barras</name>
   <name xml:lang="id">Barcode Scanner</name>
   <name xml:lang="it">Scanner di codici a barre</name>
   <name xml:lang="ko">바코드 스캐너</name>
@@ -29,6 +30,7 @@
   <summary xml:lang="et">QR-koodi skannimine ja loomine</summary>
   <summary xml:lang="fi">Lue ja luo QR-koodeja</summary>
   <summary xml:lang="fr">Scannez et créez des codes QR</summary>
+  <summary xml:lang="gl">Dixitalizar e crear códigos QR</summary>
   <summary xml:lang="id">Scan dan ciptakan QR-Codes</summary>
   <summary xml:lang="it">Scansiona e crea codici QR</summary>
   <summary xml:lang="ko">QR 코드 스캔 및 생성</summary>
@@ -52,6 +54,7 @@
   <developer_name xml:lang="et">KDE kogukond</developer_name>
   <developer_name xml:lang="fi">KDE-yhteisö</developer_name>
   <developer_name xml:lang="fr">La communauté KDE</developer_name>
+  <developer_name xml:lang="gl">Comunidade KDE</developer_name>
   <developer_name xml:lang="id">Komunitas KDE</developer_name>
   <developer_name xml:lang="it">Comunità KDE</developer_name>
   <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
@@ -75,6 +78,7 @@
     <p xml:lang="et">QR-koodi skannimine telefoni või sülearvuti kaameraga ning omaenda ribakoodi loomine hõlpsaks andmete jagamiseks seadmete vahel.</p>
     <p xml:lang="fi">Lue QR-koodeja puhelimesi tai tietokoneesi kameralla tai luoda oma koodisi jakaaksesi helposti tietoa laitteiden välillä.</p>
     <p xml:lang="fr">Scannez des codes QR avec votre caméra sur votre téléphone ou votre ordinateur portable, et créez les vôtres afin de partager facilement des données entre appareils.</p>
+    <p xml:lang="gl">Dixitalice códigos QR coa cámara de teléfonos ou portátiles, e cree códigos para compartir data facilmente entre dispositivos.</p>
     <p xml:lang="id">Scan QR-Codes pakai kamera pada telepon dan laptop, dan ciptakan kemudahan berbagi data milikmu antara perangkat.</p>
     <p xml:lang="it">Scansiona codici QR con la fotocamera del telefono o del computer portatile, poi ne crea una copia per una condivisione semplice fra i dispositivi.</p>
     <p xml:lang="ko">휴대폰과 노트북의 카메라로 QR 코드를 스캔하고, 장치끼리 쉽게 데이터를 공유하는 QR 코드를 생성삽니다.</p>
