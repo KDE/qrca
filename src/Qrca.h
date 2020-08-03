@@ -37,18 +37,18 @@ public:
 
 	Qrca();
 
-	static Q_INVOKABLE ContentType identifyContentType(const QString &text);
+	static Q_INVOKABLE ContentType identifyContentType(const QString &text) noexcept;
 
-	Q_INVOKABLE QImage encode(const QString &text, const int &width);
-	static Q_INVOKABLE QString save(const QImage &image);
-	static Q_INVOKABLE void saveVCard(const QString &text);
-	static Q_INVOKABLE QString getVCardName(const QString &text);
+	Q_INVOKABLE QImage encode(const QString &text, const int &width) noexcept ;
+	static Q_INVOKABLE QString save(const QImage &image) noexcept;
+	static Q_INVOKABLE void saveVCard(const QString &text) noexcept;
+	static Q_INVOKABLE QString getVCardName(const QString &text) noexcept;
 
-	QString encodeText() const;
-	void setEncodeText(const QString &encodeText);
+	QString encodeText() const noexcept;
+	void setEncodeText(const QString &encodeText) noexcept;
 
-	QVariant aboutData() const;
-	void setAboutData(const QVariant &aboutData);
+	QVariant aboutData() const noexcept;
+	void setAboutData(const QVariant &aboutData) noexcept;
 
 signals:
 	/**
