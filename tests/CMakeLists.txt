@@ -11,5 +11,5 @@ ecm_add_test(qrcatest.cpp ../src/Qrca.cpp
 if (TARGET ZXing::ZXing)
      target_link_libraries(qrcatest ZXing::ZXing)
 elseif (TARGET ZXing::Core)
-     target_link_libraries(qrcatest ZXing::Core)
+     target_link_libraries(qrcatest ZXing::Core KF5::CoreAddons)
 endif()

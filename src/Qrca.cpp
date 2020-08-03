@@ -61,12 +61,12 @@ bool Qrca::isOtpToken(const QString &text)
 	return false;
 }
 
-QVariant Qrca::aboutData() const noexcept
+KAboutData Qrca::aboutData() const noexcept
 {
 	return m_aboutData;
 }
 
-void Qrca::setAboutData(const QVariant &aboutData) noexcept
+void Qrca::setAboutData(const KAboutData &aboutData) noexcept
 {
 	m_aboutData = aboutData;
 

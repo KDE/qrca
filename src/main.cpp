@@ -49,7 +49,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterType<QrCodeScannerFilter>("org.kde.qrca", 1, 0, "QrCodeScannerFilter");
 
     Qrca qrca;
-    qrca.setAboutData(QVariant::fromValue(aboutData));
+    qrca.setAboutData(aboutData);
     qrca.setEncodeText(parser.value(QStringLiteral("encode")));
     qmlRegisterSingletonInstance<Qrca>("org.kde.qrca", 1, 0, "Qrca", &qrca);
 

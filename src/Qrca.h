@@ -20,12 +20,13 @@
 #include <QImage>
 #include <QVariant>
 #include <QUrl>
+#include <KAboutData>
 
 class Qrca : public QObject
 {
 	Q_OBJECT
 	Q_PROPERTY(QString encodeText READ encodeText WRITE setEncodeText NOTIFY encodeTextChanged)
-	Q_PROPERTY(QVariant aboutData READ aboutData WRITE setAboutData NOTIFY aboutDataChanged)
+	Q_PROPERTY(KAboutData aboutData READ aboutData WRITE setAboutData NOTIFY aboutDataChanged)
 
 public:
 	enum ContentType {
@@ -48,8 +49,8 @@ public:
 	QString encodeText() const noexcept;
 	void setEncodeText(const QString &encodeText) noexcept;
 
-	QVariant aboutData() const noexcept;
-	void setAboutData(const QVariant &aboutData) noexcept;
+	KAboutData aboutData() const noexcept;
+	void setAboutData(const KAboutData &aboutData) noexcept;
 
 signals:
 	/**
@@ -66,7 +67,7 @@ private:
 	static bool isOtpToken(const QString &text);
 
 	QString m_encodeText;
-	QVariant m_aboutData;
+	KAboutData m_aboutData;
 };
 
 #endif // QRCA_H
