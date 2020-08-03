@@ -34,9 +34,10 @@ find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test
 find_package(KF5 REQUIRED COMPONENTS Kirigami2 Purpose I18n Contacts CoreAddons)
 find_package(ZXing REQUIRED)
 
-################# Enable C++11 features for clang and gcc #################
+################# Enable C++14 #################
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 ################# build and install #################
 add_subdirectory(src)
