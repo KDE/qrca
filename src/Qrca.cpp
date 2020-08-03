@@ -63,6 +63,30 @@ bool Qrca::isOtpToken(const QString &text)
 	return false;
 }
 
+QVariant Qrca::aboutData() const
+{
+	return m_aboutData;
+}
+
+void Qrca::setAboutData(const QVariant &aboutData)
+{
+	m_aboutData = aboutData;
+
+	Q_EMIT aboutDataChanged();
+}
+
+QString Qrca::encodeText() const
+{
+	return m_encodeText;
+}
+
+void Qrca::setEncodeText(const QString &encodeText)
+{
+	m_encodeText = encodeText;
+
+	Q_EMIT encodeTextChanged();
+}
+
 Qrca::ContentType Qrca::identifyContentType(const QString &text)
 {
 	if (isUrl(text))

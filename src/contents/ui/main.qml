@@ -14,7 +14,7 @@ Kirigami.ApplicationWindow {
 
     Component.onCompleted: {
         Qrca.passiveNotificationRequested.connect(passiveNotification)
-        if (encodeText) {
+        if (Qrca.encodeText) {
             pageStack.layers.push(qrCodeEncoderPage)
         }
     }

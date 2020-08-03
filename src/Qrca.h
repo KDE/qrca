@@ -18,10 +18,13 @@
 
 #include <QObject>
 #include <QImage>
+#include <QVariant>
 
 class Qrca : public QObject
 {
 	Q_OBJECT
+	Q_PROPERTY(QString encodeText READ encodeText WRITE setEncodeText NOTIFY encodeTextChanged)
+	Q_PROPERTY(QVariant aboutData READ aboutData WRITE setAboutData NOTIFY aboutDataChanged)
 
 public:
 	enum ContentType {
@@ -41,16 +44,28 @@ public:
 	static Q_INVOKABLE void saveVCard(const QString &text);
 	static Q_INVOKABLE QString getVCardName(const QString &text);
 
+	QString encodeText() const;
+	void setEncodeText(const QString &encodeText);
+
+	QVariant aboutData() const;
+	void setAboutData(const QVariant &aboutData);
+
 signals:
 	/**
 	 * Show passive notification
 	 */
 	void passiveNotificationRequested(QString text);
 
+	void encodeTextChanged();
+	void aboutDataChanged();
+
 private:
 	static bool isUrl(const QString &text);
 	static bool isVCard(const QString &text);
 	static bool isOtpToken(const QString &text);
+
+	QString m_encodeText;
+	QVariant m_aboutData;
 };
 
 #endif // QRCA_H
