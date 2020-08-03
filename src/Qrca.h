@@ -19,6 +19,7 @@
 #include <QObject>
 #include <QImage>
 #include <QVariant>
+#include <QUrl>
 
 class Qrca : public QObject
 {
@@ -40,7 +41,7 @@ public:
 	static Q_INVOKABLE ContentType identifyContentType(const QString &text) noexcept;
 
 	Q_INVOKABLE QImage encode(const QString &text, const int &width) noexcept ;
-	static Q_INVOKABLE QString save(const QImage &image) noexcept;
+	static Q_INVOKABLE QUrl save(const QImage &image) noexcept;
 	static Q_INVOKABLE void saveVCard(const QString &text) noexcept;
 	static Q_INVOKABLE QString getVCardName(const QString &text) noexcept;
 

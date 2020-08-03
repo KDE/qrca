@@ -145,14 +145,14 @@ QImage Qrca::encode(const QString &text, const int &width) noexcept
 	return {};
 }
 
-QString Qrca::save(const QImage &image) noexcept
+QUrl Qrca::save(const QImage &image) noexcept
 {
 	const QString directory = QStandardPaths::writableLocation(QStandardPaths::PicturesLocation)
 	                   + "/qrcodes/";
 
 	const QString path = directory + QDateTime::currentDateTime().toString(Qt::ISODate) + ".png";
 
-	const QDir dir = QDir(directory);
+	const QDir dir(directory);
 	if (!dir.exists()) {
 		dir.mkpath(directory);
 	}
@@ -160,5 +160,5 @@ QString Qrca::save(const QImage &image) noexcept
 	qDebug() << "Saving image to" << path;
 	image.save(path, "PNG", -1);
 
-	return path;
+	return QUrl::fromLocalFile(path);
 }
