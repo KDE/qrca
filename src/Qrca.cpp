@@ -39,22 +39,24 @@
 Qrca::Qrca() = default;
 
 bool Qrca::isUrl(const QString &text) {
-	QRegularExpression exp("(?:https?|ftp)://\\S+");
+	QRegularExpression exp(QStringLiteral("(?:https?|ftp)://\\S+"));
 
 	return exp.match(text).hasMatch();
 }
 
 bool Qrca::isVCard(const QString &text) {
-	return (text.startsWith("BEGIN:VCARD") && text.trimmed().endsWith("END:VCARD"));
+	return (text.startsWith(QLatin1String("BEGIN:VCARD"))
+	        && text.trimmed().endsWith(QLatin1String("END:VCARD")));
 }
 
 bool Qrca::isOtpToken(const QString &text)
 {
-	if (text.startsWith("otpauth")) {
+	if (text.startsWith(QLatin1String("otpauth"))) {
 		QUrl uri(text);
-		if (uri.isValid() && (uri.host() == "totp" || uri.host() == "hotp")) {
+		if (uri.isValid() && (uri.host() == QLatin1String("totp")
+		                      || uri.host() == QLatin1String("hotp"))) {
 			QUrlQuery query(uri.query());
-			return query.hasQueryItem("secret");
+			return query.hasQueryItem(QStringLiteral("secret"));
 		}
 	}
 
@@ -100,12 +102,14 @@ Qrca::ContentType Qrca::identifyContentType(const QString &text) noexcept
 void Qrca::saveVCard(const QString &text) noexcept
 {
 	QString path = QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)
-	               + ("/kpeoplevcard");
+	               + QStringLiteral("/kpeoplevcard");
 
 	QCryptographicHash hash(QCryptographicHash::Sha1);
 	hash.addData(getVCardName(text).toUtf8());
 
-	QFile file(path + "/" + hash.result().toHex() + ".vcf");
+	QFile file(path + QStringLiteral("/")
+	           + QString::fromLatin1(hash.result().toHex())
+	           + QStringLiteral(".vcf"));
 
 	if (!file.open(QFile::WriteOnly)) {
 		qWarning() << "Couldn't save vCard: Couldn't open file for writing.";
@@ -148,9 +152,9 @@ QImage Qrca::encode(const QString &text, const int &width) noexcept
 QUrl Qrca::save(const QImage &image) noexcept
 {
 	const QString directory = QStandardPaths::writableLocation(QStandardPaths::PicturesLocation)
-	                   + "/qrcodes/";
+	                   + QStringLiteral("/qrcodes/");
 
-	const QString path = directory + QDateTime::currentDateTime().toString(Qt::ISODate) + ".png";
+	const QString path = directory + QDateTime::currentDateTime().toString(Qt::ISODate) + QStringLiteral(".png");
 
 	const QDir dir(directory);
 	if (!dir.exists()) {

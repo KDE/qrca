@@ -20,12 +20,12 @@
 
 #include "Qrca.h"
 
-#define VCARD "BEGIN:VCARD\n" \
-	          "VERSION:3.0\n" \
-	          "NAME:Alice\n"\
-	          "TEL;TYPE=CELL:+12 3456 789\n" \
-	          "UID:H3ll0-W0RLD-1M-A-VC4RD\n" \
-	          "END:VCARD"
+constexpr auto VCARD = "BEGIN:VCARD\n" \
+                       "VERSION:3.0\n" \
+                       "NAME:Alice\n"\
+                       "TEL;TYPE=CELL:+12 3456 789\n" \
+                       "UID:H3ll0-W0RLD-1M-A-VC4RD\n" \
+                       "END:VCARD";
 
 class QrcaTest : public QObject
 {

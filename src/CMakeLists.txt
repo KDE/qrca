@@ -14,6 +14,7 @@ if (TARGET ZXing::ZXing)
 elseif (TARGET ZXing::Core)
     target_link_libraries(qrca ZXing::Core)
 endif()
+target_compile_definitions(qrca PRIVATE -DQT_NO_CAST_FROM_ASCII)
 
 if(ANDROID)
     target_link_libraries(qrca Qt5::Svg KF5::Kirigami2)
