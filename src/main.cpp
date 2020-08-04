@@ -46,7 +46,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     // in GUI apps set the window icon manually, not covered by KAboutData
     // needed for environments where the icon name is not extracted from
     // the information in the application's desktop file
-    QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("qrca")));
+    QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.qrca")));
     aboutData.setProgramLogo(app.windowIcon());
 
     qmlRegisterType<QrCodeScannerFilter>("org.kde.qrca", 1, 0, "QrCodeScannerFilter");
