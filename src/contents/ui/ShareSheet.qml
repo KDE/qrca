@@ -48,10 +48,15 @@ Kirigami.OverlaySheet {
     }
 
     onSheetOpenChanged: {
-        view.inputData = {
-            "urls": [inputSheet.url.toString()],
-            "title": inputSheet.title,
-            "mimeType": "image"
+
+        if (sheetOpen) {
+            view.inputData = {
+                "urls": [inputSheet.url.toString()],
+                "title": inputSheet.title,
+                "mimeType": "image"
+            }
+        } else {
+            view.reset()
         }
     }
 }
