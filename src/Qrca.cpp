@@ -24,6 +24,8 @@
 #include <QDir>
 #include <QCryptographicHash>
 #include <QUrlQuery>
+#include <QGuiApplication>
+#include <QClipboard>
 
 #include <KLocalizedString>
 #include <KContacts/Addressee>
@@ -165,4 +167,10 @@ QUrl Qrca::save(const QImage &image) noexcept
 	image.save(path, "PNG", -1);
 
 	return QUrl::fromLocalFile(path);
+}
+
+void Qrca::copyToClipboard(const QString &text) noexcept
+{
+    QClipboard *clipboard = QGuiApplication::clipboard();
+    clipboard->setText(text);
 }

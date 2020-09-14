@@ -54,70 +54,67 @@ Kirigami.Page {
         property string tag
         property int contentType
 
-        ColumnLayout {
-            Kirigami.Heading {
-                text: i18n("Tag found")
-                Layout.fillWidth: true
+        header: Kirigami.Heading {
+            text: {
+                switch (resultSheet.contentType) {
+                    case Qrca.Text:
+                        return i18n("Text found")
+                    case Qrca.Url:
+                        return i18n("URL found")
+                    case Qrca.VCard:
+                        return i18n("Contact found")
+                    case Qrca.OtpToken:
+                        return i18n("OTP URI found")
+                }
             }
+        }
 
-            Controls.Label {
+        Controls.Label {
+            visible: resultSheet.contentType !== Qrca.VCard
+            text: resultSheet.tag
+        }
+        Controls.Label {
+            visible: resultSheet.contentType === Qrca.VCard
+            text: Qrca.getVCardName(resultSheet.tag)
+        }
+
+        footer: RowLayout {
+            Controls.Button {
                 text: {
                     switch (resultSheet.contentType) {
+                    case Qrca.Text:
+                        return i18n("Copy to clipboard")
                     case Qrca.Url:
-                        return i18n("The following tag has been found. Do you want to open the url?");
+                        return i18n("Open")
                     case Qrca.VCard:
-                        return i18n("A contact has been found, do you want to save it?");
+                        return i18n("Save contact")
                     case Qrca.OtpToken:
-                        return i18n("An OTP URI has been found. Do you want to open your OTP client?");
-                    default:
-                        return i18n("The following tag has been found.");
+                        return i18n("Open OTP client")
                     }
                 }
-                wrapMode: Text.WordWrap
-                elide: Text.ElideRight
-                Layout.fillWidth: true
-            }
-            Controls.TextArea {
-                visible: !resultSheet.contentType === Qrca.Url && !resultSheet.contentType === Qrca.VCard
-                text: resultSheet.tag
-                wrapMode: Text.WordWrap
-                Layout.fillWidth: true
-                selectByKeyboard: true
-                selectByMouse: true
-            }
-            Controls.Label {
-                visible: resultSheet.contentType === Qrca.Url
-                text: asLink(resultSheet.tag)
-                Layout.fillWidth: true
-            }
-            Controls.Label {
-                visible: resultSheet.contentType === Qrca.VCard
-                text: i18n("Name: ") + Qrca.getVCardName(resultSheet.tag)
-            }
-
-            RowLayout {
-                Controls.Button {
-                    text: resultSheet.contentType === Qrca.VCard ? i18n("Save contact") : i18n("Open")
-                    enabled: {
-                        resultSheet.contentType === Qrca.Url
-                            || resultSheet.contentType === Qrca.VCard
-                            || resultSheet.contentType === Qrca.OtpToken
+                onClicked: {
+                    switch (resultSheet.contentType) {
+                    case Qrca.Text:
+                        Qrca.copyToClipboard(resultSheet.tag)
+                        break
+                    case Qrca.Url:
+                       Qt.openUrlExternally(resultSheet.tag)
+                       break
+                    case Qrca.VCard:
+                         Qrca.saveVCard(resultSheet.tag)
+                        break
+                    case Qrca.OtpToken:
+                        Qt.openUrlExternally(resultSheet.tag)
+                        break
                     }
-                    onClicked: {
-                        if (resultSheet.contentType === Qrca.VCard)
-                            Qrca.saveVCard(resultSheet.tag)
-                        else
-                            Qt.openUrlExternally(resultSheet.tag)
-
-                        resultSheet.close()
-                    }
-                    Layout.fillWidth: true
+                    resultSheet.close()
                 }
-                Controls.Button {
-                    text: i18n("Cancel")
-                    onClicked: resultSheet.close()
-                    Layout.fillWidth: true
-                }
+                Layout.fillWidth: true
+            }
+            Controls.Button {
+                text: i18n("Cancel")
+                onClicked: resultSheet.close()
+                Layout.fillWidth: true
             }
         }
     }

@@ -45,6 +45,7 @@ public:
 	static Q_INVOKABLE QUrl save(const QImage &image) noexcept;
 	static Q_INVOKABLE void saveVCard(const QString &text) noexcept;
 	static Q_INVOKABLE QString getVCardName(const QString &text) noexcept;
+    Q_INVOKABLE void copyToClipboard(const QString &text) noexcept;
 
 	QString encodeText() const noexcept;
 	void setEncodeText(const QString &encodeText) noexcept;
