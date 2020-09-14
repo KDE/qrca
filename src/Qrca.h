@@ -16,59 +16,54 @@
 #ifndef QRCA_H
 #define QRCA_H
 
-#include <QObject>
-#include <QImage>
-#include <QVariant>
-#include <QUrl>
 #include <KAboutData>
+#include <QImage>
+#include <QObject>
+#include <QUrl>
+#include <QVariant>
 
 class Qrca : public QObject
 {
-	Q_OBJECT
-	Q_PROPERTY(QString encodeText READ encodeText WRITE setEncodeText NOTIFY encodeTextChanged)
-	Q_PROPERTY(KAboutData aboutData READ aboutData WRITE setAboutData NOTIFY aboutDataChanged)
+    Q_OBJECT
+    Q_PROPERTY(QString encodeText READ encodeText WRITE setEncodeText NOTIFY encodeTextChanged)
+    Q_PROPERTY(KAboutData aboutData READ aboutData WRITE setAboutData NOTIFY aboutDataChanged)
 
 public:
-	enum ContentType {
-		Url,
-		VCard,
-		OtpToken,
-		Text
-	};
-	Q_ENUM(ContentType)
+    enum ContentType { Url, VCard, OtpToken, Text };
+    Q_ENUM(ContentType)
 
-	Qrca();
+    Qrca();
 
-	static Q_INVOKABLE ContentType identifyContentType(const QString &text) noexcept;
+    static Q_INVOKABLE ContentType identifyContentType(const QString &text) noexcept;
 
-	Q_INVOKABLE QImage encode(const QString &text, const int &width) noexcept ;
-	static Q_INVOKABLE QUrl save(const QImage &image) noexcept;
-	static Q_INVOKABLE void saveVCard(const QString &text) noexcept;
-	static Q_INVOKABLE QString getVCardName(const QString &text) noexcept;
+    Q_INVOKABLE QImage encode(const QString &text, const int &width) noexcept;
+    static Q_INVOKABLE QUrl save(const QImage &image) noexcept;
+    static Q_INVOKABLE void saveVCard(const QString &text) noexcept;
+    static Q_INVOKABLE QString getVCardName(const QString &text) noexcept;
     Q_INVOKABLE void copyToClipboard(const QString &text) noexcept;
 
-	QString encodeText() const noexcept;
-	void setEncodeText(const QString &encodeText) noexcept;
+    QString encodeText() const noexcept;
+    void setEncodeText(const QString &encodeText) noexcept;
 
-	KAboutData aboutData() const noexcept;
-	void setAboutData(const KAboutData &aboutData) noexcept;
+    KAboutData aboutData() const noexcept;
+    void setAboutData(const KAboutData &aboutData) noexcept;
 
 signals:
-	/**
-	 * Show passive notification
-	 */
-	void passiveNotificationRequested(QString text);
+    /**
+     * Show passive notification
+     */
+    void passiveNotificationRequested(QString text);
 
-	void encodeTextChanged();
-	void aboutDataChanged();
+    void encodeTextChanged();
+    void aboutDataChanged();
 
 private:
-	static bool isUrl(const QString &text);
-	static bool isVCard(const QString &text);
-	static bool isOtpToken(const QString &text);
+    static bool isUrl(const QString &text);
+    static bool isVCard(const QString &text);
+    static bool isOtpToken(const QString &text);
 
-	QString m_encodeText;
-	KAboutData m_aboutData;
+    QString m_encodeText;
+    KAboutData m_aboutData;
 };
 
 #endif // QRCA_H

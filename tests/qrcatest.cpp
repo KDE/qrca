@@ -15,48 +15,55 @@
  *  along with this project.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include <QtTest/QTest>
 #include <QImage>
+#include <QtTest/QTest>
 
 #include "Qrca.h"
 
-constexpr auto VCARD = "BEGIN:VCARD\n" \
-                       "VERSION:3.0\n" \
-                       "NAME:Alice\n"\
-                       "TEL;TYPE=CELL:+12 3456 789\n" \
-                       "UID:H3ll0-W0RLD-1M-A-VC4RD\n" \
-                       "END:VCARD";
+constexpr auto VCARD =
+    "BEGIN:VCARD\n"
+    "VERSION:3.0\n"
+    "NAME:Alice\n"
+    "TEL;TYPE=CELL:+12 3456 789\n"
+    "UID:H3ll0-W0RLD-1M-A-VC4RD\n"
+    "END:VCARD";
 
 class QrcaTest : public QObject
 {
-	Q_OBJECT
+    Q_OBJECT
 
 private slots:
-	void isUrl() {
-		Qrca::ContentType type = Qrca::identifyContentType("https://kde.org");
-		QCOMPARE(type, Qrca::Url);
-	}
+    void isUrl()
+    {
+        Qrca::ContentType type = Qrca::identifyContentType("https://kde.org");
+        QCOMPARE(type, Qrca::Url);
+    }
 
-	void isVCard() {
-		Qrca::ContentType type = Qrca::identifyContentType(VCARD);
-		QCOMPARE(type, Qrca::VCard);
-	}
+    void isVCard()
+    {
+        Qrca::ContentType type = Qrca::identifyContentType(VCARD);
+        QCOMPARE(type, Qrca::VCard);
+    }
 
-	void isOtpToken() {
-		Qrca::ContentType type = Qrca::identifyContentType("otpauth://totp/ACME%20Co:john.doe@email.com?"
-		                                                   "secret=HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ&"
-		                                                   "issuer=ACME%20Co&algorithm=SHA1&digits=6&period=30");
-		QCOMPARE(type, Qrca::OtpToken);
-	}
+    void isOtpToken()
+    {
+        Qrca::ContentType type = Qrca::identifyContentType(
+            "otpauth://totp/ACME%20Co:john.doe@email.com?"
+            "secret=HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ&"
+            "issuer=ACME%20Co&algorithm=SHA1&digits=6&period=30");
+        QCOMPARE(type, Qrca::OtpToken);
+    }
 
-	void isText() {
-		Qrca::ContentType type = Qrca::identifyContentType("Hello World");
-		QCOMPARE(type, Qrca::Text);
-	}
+    void isText()
+    {
+        Qrca::ContentType type = Qrca::identifyContentType("Hello World");
+        QCOMPARE(type, Qrca::Text);
+    }
 
-	void VCardName() {
-		QCOMPARE(Qrca::getVCardName(VCARD), "Alice");
-	}
+    void VCardName()
+    {
+        QCOMPARE(Qrca::getVCardName(VCARD), "Alice");
+    }
 };
 
 QTEST_GUILESS_MAIN(QrcaTest);

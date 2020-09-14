@@ -45,47 +45,38 @@
 using namespace ZXing;
 
 QrCodeDecoder::QrCodeDecoder(QObject *parent)
-	: QObject(parent)
+    : QObject(parent)
 {
 }
 
 void QrCodeDecoder::decodeImage(const QImage &image)
 {
-	// options for decoding
-	DecodeHints decodeHints;
+    // options for decoding
+    DecodeHints decodeHints;
 
-	// Advise the decoder to also decode rotated QR codes.
-	decodeHints.setTryRotate(true);
+    // Advise the decoder to also decode rotated QR codes.
+    decodeHints.setTryRotate(true);
 
-	// Advise the decoder to only decode QR codes.
-	std::vector<BarcodeFormat> allowedFormats;
-	allowedFormats.emplace_back(BarcodeFormat::QR_CODE);
-	decodeHints.setPossibleFormats(allowedFormats);
+    // Advise the decoder to only decode QR codes.
+    std::vector<BarcodeFormat> allowedFormats;
+    allowedFormats.emplace_back(BarcodeFormat::QR_CODE);
+    decodeHints.setPossibleFormats(allowedFormats);
 
-	MultiFormatReader reader(decodeHints);
+    MultiFormatReader reader(decodeHints);
 
-	// Create an image source to be decoded later.
-	GenericLuminanceSource source(
-			image.width(),
-			image.height(),
-			image.bits(),
-			image.width(),
-			1,
-			0,
-			1,
-			2
-	);
+    // Create an image source to be decoded later.
+    GenericLuminanceSource source(image.width(), image.height(), image.bits(), image.width(), 1, 0, 1, 2);
 
-	// Create an image source specific for decoding black data on white background.
-	HybridBinarizer binImage(std::shared_ptr<LuminanceSource>(&source, [](void*) {}));
+    // Create an image source specific for decoding black data on white background.
+    HybridBinarizer binImage(std::shared_ptr<LuminanceSource>(&source, [](void *) {}));
 
-	// Decode the specific image source.
-	auto result = reader.read(binImage);
+    // Decode the specific image source.
+    auto result = reader.read(binImage);
 
-	// If a QR code could be found and decoded, emit a signal with the decoded string.
-	// Otherwise, emit a signal for failed decoding.
-	if (result.isValid())
-		emit decodingSucceeded(QString::fromStdString(TextUtfEncoding::ToUtf8(result.text())));
-	else
-		emit decodingFailed();
+    // If a QR code could be found and decoded, emit a signal with the decoded string.
+    // Otherwise, emit a signal for failed decoding.
+    if (result.isValid())
+        emit decodingSucceeded(QString::fromStdString(TextUtfEncoding::ToUtf8(result.text())));
+    else
+        emit decodingFailed();
 }
