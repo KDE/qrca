@@ -15,6 +15,7 @@
   <name xml:lang="it">Scanner di codici a barre</name>
   <name xml:lang="ko">바코드 스캐너</name>
   <name xml:lang="nl">Barcodescanner</name>
+  <name xml:lang="nn">Strekkode-skannar</name>
   <name xml:lang="pt">Analisador de Códigos de Barras</name>
   <name xml:lang="pt-BR">Leitor de código de barras</name>
   <name xml:lang="sk">Cítačka čiarových kódov</name>
@@ -37,6 +38,7 @@
   <summary xml:lang="it">Scansiona e crea codici QR</summary>
   <summary xml:lang="ko">QR 코드 스캔 및 생성</summary>
   <summary xml:lang="nl">QR-Codes scannen en aanmaken</summary>
+  <summary xml:lang="nn">Skann og lag QR-kodar</summary>
   <summary xml:lang="pt">Digitalizar e criar códigos QR</summary>
   <summary xml:lang="pt-BR">Leia e crie códigos QR</summary>
   <summary xml:lang="sk">Cítanie a vytváranie QR kódov</summary>
@@ -62,6 +64,7 @@
   <developer_name xml:lang="it">Comunità KDE</developer_name>
   <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
   <developer_name xml:lang="nl">KDE gemeenschap</developer_name>
+  <developer_name xml:lang="nn">KDE-fellesskapet</developer_name>
   <developer_name xml:lang="pt">Comunidade do KDE</developer_name>
   <developer_name xml:lang="pt-BR">Comunidade KDE</developer_name>
   <developer_name xml:lang="sk">KDE komunita</developer_name>
@@ -87,6 +90,7 @@
     <p xml:lang="it">Scansiona codici QR con la fotocamera del telefono o del computer portatile, poi ne crea una copia per una condivisione semplice fra i dispositivi.</p>
     <p xml:lang="ko">휴대폰과 노트북의 카메라로 QR 코드를 스캔하고, 장치끼리 쉽게 데이터를 공유하는 QR 코드를 생성삽니다.</p>
     <p xml:lang="nl">QR-codes met uw camera op telefoons en laptops scannen en maak uw eigen codes voor gemakkelijk delen van gegevens tussen apparaten.</p>
+    <p xml:lang="nn">Skann QR-kodar med kameraet på telefonen eller datamaskina, og lag eigne kodar for enkel deling av data mellom einingar.</p>
     <p xml:lang="pt">Digitalize códigos QR com a sua câmara nos telemóveis e portáteis ou crie os seus próprios para partilhar facilmente dados entre dispositivos.</p>
     <p xml:lang="pt-BR">Leia códigos QR com sua câmera em celulares e laptops e crie seus próprios para compartilhar facilmente dados entre dispositivos.</p>
     <p xml:lang="sl">S telefonom skenirajte kode QR na telefonih in prenosnikih ter ustvarite svoje za preprosto izmenjavo podatkov med napravami.</p>
