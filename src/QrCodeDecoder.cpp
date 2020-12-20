@@ -28,11 +28,14 @@
  *  along with Kaidan.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include "config-qrca.h"
+
 #include "QrCodeDecoder.h"
 // Qt
 #include <QColor>
 #include <QImage>
 // ZXing-cpp
+#if ZXING_VERSION < QT_VERSION_CHECK(1, 1, 0)
 #include <ZXing/BarcodeFormat.h>
 #include <ZXing/DecodeHints.h>
 #include <ZXing/GenericLuminanceSource.h>
@@ -40,6 +43,9 @@
 #include <ZXing/LuminanceSource.h>
 #include <ZXing/MultiFormatReader.h>
 #include <ZXing/Result.h>
+#else
+#include <ZXing/ReadBarcode.h>
+#endif
 #include <ZXing/TextUtfEncoding.h>
 
 using namespace ZXing;
@@ -54,6 +60,7 @@ void QrCodeDecoder::decodeImage(const QImage &image)
     // options for decoding
     DecodeHints decodeHints;
 
+#if ZXING_VERSION < QT_VERSION_CHECK(1, 1, 0)
     // Advise the decoder to also decode rotated QR codes.
     decodeHints.setTryRotate(true);
 
@@ -71,7 +78,11 @@ void QrCodeDecoder::decodeImage(const QImage &image)
     HybridBinarizer binImage(std::shared_ptr<LuminanceSource>(&source, [](void *) {}));
 
     // Decode the specific image source.
-    auto result = reader.read(binImage);
+    const auto result = reader.read(binImage);
+#else
+    decodeHints.setFormats(BarcodeFormat::QR_CODE);
+    const auto result = ReadBarcode({image.bits(), image.width(), image.height(), ZXing::ImageFormat::Lum, image.bytesPerLine()}, decodeHints);
+#endif
 
     // If a QR code could be found and decoded, emit a signal with the decoded string.
     // Otherwise, emit a signal for failed decoding.

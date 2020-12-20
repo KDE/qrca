@@ -1,3 +1,5 @@
+configure_file(config-qrca.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-qrca.h)
+
 set(qrca_SRCS
     main.cpp
     Qrca.cpp
