@@ -1,8 +1,9 @@
 /*
  *  Kaidan - A user-friendly XMPP client for every device!
  *
+ *  Copyright (C) 2020 Nicolas Fella <nicolas.fella@gmx.de>
  *  Copyright (C) 2016-2019 Kaidan developers and contributors
- *  (see the LICENSE file for a full list of copyright authors)
+ *  (see the LICENSE file of Kaidan for a full list of copyright authors)
  *
  *  Kaidan is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
