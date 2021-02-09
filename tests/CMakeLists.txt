@@ -6,7 +6,7 @@ include_directories(../src)
 
 ecm_add_test(qrcatest.cpp ../src/Qrca.cpp
              TEST_NAME qrcatest
-             LINK_LIBRARIES Qt5::Test Qt5::Core Qt5::Gui KF5::I18n KF5::Contacts KF5::CoreAddons
+             LINK_LIBRARIES Qt::Test Qt::Core Qt::Gui KF5::I18n KF5::Contacts KF5::CoreAddons
 )
 if (TARGET ZXing::ZXing)
      target_link_libraries(qrcatest ZXing::ZXing)

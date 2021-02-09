@@ -11,7 +11,7 @@ set(qrca_SRCS
 
 add_executable(qrca ${qrca_SRCS})
 
-target_link_libraries(qrca Qt5::Core Qt5::Qml Qt5::Quick Qt5::Svg Qt5::Multimedia KF5::I18n KF5::Contacts KF5::CoreAddons)
+target_link_libraries(qrca Qt::Core Qt::Qml Qt::Quick Qt::Svg Qt::Multimedia KF5::I18n KF5::Contacts KF5::CoreAddons)
 
 if (TARGET ZXing::ZXing)
     target_link_libraries(qrca ZXing::ZXing)
@@ -22,7 +22,7 @@ endif()
 target_compile_definitions(qrca PRIVATE -DQT_NO_CAST_FROM_ASCII)
 
 if(ANDROID)
-    target_link_libraries(qrca Qt5::Svg KF5::Kirigami2)
+    target_link_libraries(qrca Qt::Svg KF5::Kirigami2)
 
     kirigami_package_breeze_icons(ICONS
         document-share
