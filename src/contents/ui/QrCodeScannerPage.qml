@@ -70,13 +70,16 @@ Kirigami.Page {
             }
         }
 
-        Controls.Label {
-            visible: resultSheet.contentType !== Qrca.VCard
-            text: resultSheet.tag
-        }
-        Controls.Label {
-            visible: resultSheet.contentType === Qrca.VCard
-            text: Qrca.getVCardName(resultSheet.tag)
+        Item {
+            implicitWidth: Kirigami.Units.gridUnit * 20
+            height: childrenRect.height
+
+            Controls.Label {
+                text: resultSheet.contentType === Qrca.VCard ? Qrca.getVCardName(resultSheet.tag) : resultSheet.tag
+                anchors.left: parent.left
+                anchors.right: parent.right
+                wrapMode: Text.Wrap
+            }
         }
 
         footer: RowLayout {
