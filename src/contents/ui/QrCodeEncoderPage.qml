@@ -57,8 +57,10 @@ Kirigami.ScrollablePage {
         Kirigami.Icon {
             id: codeView
             Layout.fillWidth: true
-            width: Kirigami.Units.gridUnit * 20
-            height: Kirigami.Units.gridUnit * 20
+            Layout.alignment: Qt.AlignCenter
+            Layout.maximumWidth: Kirigami.Units.gridUnit * 16
+
+            implicitHeight: width
             source: Qrca.encode(inputText.text.length > 0 ? inputText.text: " ", width)
         }
 
