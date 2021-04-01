@@ -8,6 +8,7 @@
   <name xml:lang="en-GB">Barcode Scanner</name>
   <name xml:lang="es">Escáner de códigos de barras</name>
   <name xml:lang="et">Ribakoodi skanner</name>
+  <name xml:lang="eu">Barra-kode eskanerra</name>
   <name xml:lang="fi">Viivakoodinlukija</name>
   <name xml:lang="fr">Scanner de codes-barres</name>
   <name xml:lang="gl">Escáner de códigos de barras</name>
@@ -33,6 +34,7 @@
   <summary xml:lang="en-GB">Scan and create QR-Codes</summary>
   <summary xml:lang="es">Escanear y crear códigos QR</summary>
   <summary xml:lang="et">QR-koodi skannimine ja loomine</summary>
+  <summary xml:lang="eu">Eskaneatu eta sortu QR-Kodeak</summary>
   <summary xml:lang="fi">Lue ja luo QR-koodeja</summary>
   <summary xml:lang="fr">Scannez et créez des codes QR</summary>
   <summary xml:lang="gl">Dixitalizar e crear códigos QR</summary>
@@ -61,6 +63,7 @@
   <developer_name xml:lang="en-GB">KDE Community</developer_name>
   <developer_name xml:lang="es">Comunidad KDE</developer_name>
   <developer_name xml:lang="et">KDE kogukond</developer_name>
+  <developer_name xml:lang="eu">KDE komunitatea</developer_name>
   <developer_name xml:lang="fi">KDE-yhteisö</developer_name>
   <developer_name xml:lang="fr">La communauté KDE</developer_name>
   <developer_name xml:lang="gl">Comunidade KDE</developer_name>
@@ -89,6 +92,7 @@
     <p xml:lang="en-GB">Scan QR-Codes with your camera on phones and laptops, and create your own for easily sharing data between devices.</p>
     <p xml:lang="es">Escanear códigos QR con la cámara de los teléfonos móviles y de los portátiles, y crear un código QR propio para compartir datos de forma sencilla entre dispositivos.</p>
     <p xml:lang="et">QR-koodi skannimine telefoni või sülearvuti kaameraga ning omaenda ribakoodi loomine hõlpsaks andmete jagamiseks seadmete vahel.</p>
+    <p xml:lang="eu">Eskaneatu QR-Kodeak zure kamerarekin telefonoetan edo magalekoetan, eta sortu zure kodeak, gailuen artean datuak erraz partekatzeko.</p>
     <p xml:lang="fi">Lue QR-koodeja puhelimesi tai tietokoneesi kameralla tai luoda oma koodisi jakaaksesi helposti tietoa laitteiden välillä.</p>
     <p xml:lang="fr">Scannez des codes QR avec votre caméra sur votre téléphone ou votre ordinateur portable, et créez les vôtres afin de partager facilement des données entre appareils.</p>
     <p xml:lang="gl">Dixitalice códigos QR coa cámara de teléfonos ou portátiles, e cree códigos para compartir data facilmente entre dispositivos.</p>
