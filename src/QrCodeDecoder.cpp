@@ -67,6 +67,7 @@ void QrCodeDecoder::decodeImage(const QImage &image)
     // Advise the decoder to only decode QR codes.
     std::vector<BarcodeFormat> allowedFormats;
     allowedFormats.emplace_back(BarcodeFormat::QR_CODE);
+    allowedFormats.emplace_back(BarcodeFormat::AZTEC);
     decodeHints.setPossibleFormats(allowedFormats);
 
     MultiFormatReader reader(decodeHints);
@@ -80,7 +81,7 @@ void QrCodeDecoder::decodeImage(const QImage &image)
     // Decode the specific image source.
     const auto result = reader.read(binImage);
 #else
-    decodeHints.setFormats(BarcodeFormat::QR_CODE);
+    decodeHints.setFormats(BarcodeFormat::QR_CODE | BarcodeFormat::AZTEC);
     const auto result = ReadBarcode({image.bits(), image.width(), image.height(), ZXing::ImageFormat::Lum, image.bytesPerLine()}, decodeHints);
 #endif
 
