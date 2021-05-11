@@ -29,7 +29,6 @@ import org.kde.purpose 1.0 as Purpose
 Kirigami.OverlaySheet {
     id: inputSheet
     property var url
-    property var title
 
     Purpose.AlternativesView {
         id: view
@@ -52,7 +51,7 @@ Kirigami.OverlaySheet {
         if (sheetOpen) {
             view.inputData = {
                 "urls": [inputSheet.url.toString()],
-                "title": inputSheet.title,
+                "title": i18n("Share QR-Code"),
                 "mimeType": "image"
             }
         } else {

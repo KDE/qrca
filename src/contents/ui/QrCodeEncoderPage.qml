@@ -29,14 +29,8 @@ Kirigami.ScrollablePage {
         id: shareSheetLoader
 
         active: false
-
-        ShareSheet {
-            id: shareSheet
-            title: i18n("Share QR-Code")
-        }
+        source: "ShareSheet.qml"
     }
-
-
 
     actions.contextualActions: [
         Kirigami.Action {
@@ -54,8 +48,8 @@ Kirigami.ScrollablePage {
             visible: Qt.platform.os !== "android" // Purpose doesn't work properly on Android
             onTriggered: {
                 shareSheetLoader.active = true
-                shareSheet.url = Qrca.save(codeView.source)
-                shareSheet.open()
+                shareSheetLoader.item.url = Qrca.save(codeView.source)
+                shareSheetLoader.item.open()
             }
         }
     ]
