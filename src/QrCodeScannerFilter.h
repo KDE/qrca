@@ -40,6 +40,8 @@
 #include "QrCodeDecoder.h"
 #include "QrCodeVideoFrame.h"
 
+class QrCodeContent;
+
 /**
  * video filter to be registered in C++, instantiated and attached in QML
  */
@@ -82,7 +84,7 @@ signals:
      *
      * @param result decoded content of the QR code
      */
-    void scanningSucceeded(const QString &result);
+    void scanningSucceeded(const QrCodeContent &result);
 
     /**
      * Emitted when a video frame with an unsupported format is received.

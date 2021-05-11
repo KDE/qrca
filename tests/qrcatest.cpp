@@ -19,6 +19,7 @@
 #include <QtTest/QTest>
 
 #include "Qrca.h"
+#include "QrCodeContent.h"
 
 constexpr auto VCARD =
     "BEGIN:VCARD\n"
@@ -35,29 +36,35 @@ class QrcaTest : public QObject
 private slots:
     void isUrl()
     {
-        Qrca::ContentType type = Qrca::identifyContentType("https://kde.org");
-        QCOMPARE(type, Qrca::Url);
+        auto type = QrCodeContent(QStringLiteral("https://kde.org")).contentType();
+        QCOMPARE(type, QrCodeContent::Url);
     }
 
     void isVCard()
     {
-        Qrca::ContentType type = Qrca::identifyContentType(VCARD);
-        QCOMPARE(type, Qrca::VCard);
+        auto type = QrCodeContent(QString::fromUtf8(VCARD)).contentType();
+        QCOMPARE(type, QrCodeContent::VCard);
     }
 
     void isOtpToken()
     {
-        Qrca::ContentType type = Qrca::identifyContentType(
+        auto type = QrCodeContent(QStringLiteral(
             "otpauth://totp/ACME%20Co:john.doe@email.com?"
             "secret=HXDMVJECJJWSRB3HWIZR4IFUGFTMXBOZ&"
-            "issuer=ACME%20Co&algorithm=SHA1&digits=6&period=30");
-        QCOMPARE(type, Qrca::OtpToken);
+            "issuer=ACME%20Co&algorithm=SHA1&digits=6&period=30")).contentType();
+        QCOMPARE(type, QrCodeContent::OtpToken);
     }
 
     void isText()
     {
-        Qrca::ContentType type = Qrca::identifyContentType("Hello World");
-        QCOMPARE(type, Qrca::Text);
+        auto type = QrCodeContent(QStringLiteral("Hello World")).contentType();
+        QCOMPARE(type, QrCodeContent::Text);
+    }
+
+    void isBinary()
+    {
+        auto type = QrCodeContent(QByteArray("hello\0world")).contentType();
+        QCOMPARE(type, QrCodeContent::Binary);
     }
 
     void VCardName()
@@ -66,6 +73,6 @@ private slots:
     }
 };
 
-QTEST_GUILESS_MAIN(QrcaTest);
+QTEST_GUILESS_MAIN(QrcaTest)
 
 #include "qrcatest.moc"

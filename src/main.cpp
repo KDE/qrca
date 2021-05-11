@@ -27,6 +27,7 @@
 #include <KLocalizedContext>
 #include <KLocalizedString>
 
+#include "QrCodeContent.h"
 #include "QrCodeScannerFilter.h"
 #include "Qrca.h"
 
@@ -62,6 +63,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     aboutData.setProgramLogo(app.windowIcon());
 
     qmlRegisterType<QrCodeScannerFilter>("org.kde.qrca", 1, 0, "QrCodeScannerFilter");
+    qmlRegisterUncreatableType<QrCodeContent>("org.kde.qrca", 1, 0, "QrCodeContent", {});
+    qRegisterMetaType<QrCodeContent>();
 
     Qrca qrca;
     qrca.setAboutData(aboutData);

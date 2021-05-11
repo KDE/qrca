@@ -30,6 +30,7 @@
 
 #include "config-qrca.h"
 
+#include "QrCodeContent.h"
 #include "QrCodeDecoder.h"
 // Qt
 #include <QColor>
@@ -87,8 +88,18 @@ void QrCodeDecoder::decodeImage(const QImage &image)
 
     // If a QR code could be found and decoded, emit a signal with the decoded string.
     // Otherwise, emit a signal for failed decoding.
-    if (result.isValid())
-        emit decodingSucceeded(QString::fromStdString(TextUtfEncoding::ToUtf8(result.text())));
-    else
+    if (result.isValid()) {
+        const auto hasWideChars = std::any_of(result.text().begin(), result.text().end(), [](auto c) { return c > 255; });
+        const auto hasControlChars = std::any_of(result.text().begin(), result.text().end(), [](auto c) { return c < 20; });
+        if (hasWideChars || !hasControlChars) {
+            emit decodingSucceeded(QrCodeContent(QString::fromStdString(TextUtfEncoding::ToUtf8(result.text()))));
+        } else {
+            QByteArray b;
+            b.resize(result.text().size());
+            std::copy(result.text().begin(), result.text().end(), b.begin());
+            emit decodingSucceeded(QrCodeContent(b));
+        }
+    } else {
         emit decodingFailed();
+    }
 }

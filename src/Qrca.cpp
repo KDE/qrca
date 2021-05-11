@@ -22,9 +22,8 @@
 #include <QDir>
 #include <QGuiApplication>
 #include <QImage>
-#include <QRegularExpression>
+#include <QMimeData>
 #include <QStandardPaths>
-#include <QUrlQuery>
 
 #include <KContacts/Addressee>
 #include <KContacts/VCardConverter>
@@ -35,33 +34,9 @@
 #include <ZXing/MultiFormatWriter.h>
 
 #include "Qrca.h"
+#include "QrCodeContent.h"
 
 Qrca::Qrca() = default;
-
-bool Qrca::isUrl(const QString &text)
-{
-    QRegularExpression exp(QStringLiteral("(?:https?|ftp)://\\S+"));
-
-    return exp.match(text).hasMatch();
-}
-
-bool Qrca::isVCard(const QString &text)
-{
-    return (text.startsWith(QLatin1String("BEGIN:VCARD")) && text.trimmed().endsWith(QLatin1String("END:VCARD")));
-}
-
-bool Qrca::isOtpToken(const QString &text)
-{
-    if (text.startsWith(QLatin1String("otpauth"))) {
-        QUrl uri(text);
-        if (uri.isValid() && (uri.host() == QLatin1String("totp") || uri.host() == QLatin1String("hotp"))) {
-            QUrlQuery query(uri.query());
-            return query.hasQueryItem(QStringLiteral("secret"));
-        }
-    }
-
-    return false;
-}
 
 KAboutData Qrca::aboutData() const noexcept
 {
@@ -85,18 +60,6 @@ void Qrca::setEncodeText(const QString &encodeText) noexcept
     m_encodeText = encodeText;
 
     Q_EMIT encodeTextChanged();
-}
-
-Qrca::ContentType Qrca::identifyContentType(const QString &text) noexcept
-{
-    if (isUrl(text))
-        return ContentType::Url;
-    else if (isVCard(text))
-        return ContentType::VCard;
-    else if (isOtpToken(text))
-        return ContentType::OtpToken;
-
-    return ContentType::Text;
 }
 
 void Qrca::saveVCard(const QString &text) noexcept
@@ -164,8 +127,14 @@ QUrl Qrca::save(const QImage &image) noexcept
     return QUrl::fromLocalFile(path);
 }
 
-void Qrca::copyToClipboard(const QString &text) noexcept
+void Qrca::copyToClipboard(const QrCodeContent &content) noexcept
 {
     QClipboard *clipboard = QGuiApplication::clipboard();
-    clipboard->setText(text);
+    if (content.contentType() == QrCodeContent::Binary) {
+        auto md = new QMimeData;
+        md->setData(QStringLiteral("application/octet-stream"), content.binaryContent());
+        clipboard->setMimeData(md);
+    } else {
+        clipboard->setText(content.text());
+    }
 }

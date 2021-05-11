@@ -33,6 +33,8 @@
 
 #include <QObject>
 
+class QrCodeContent;
+
 /**
  * Decoder for QR codes. This is a backend for \c QrCodeScanner .
  */
@@ -57,9 +59,9 @@ signals:
     /**
      * Emitted when the decoding succeeded.
      *
-     * @param tag string which was decoded by the QR code decoder
+     * @param tag barcode content from the QR code decoder
      */
-    void decodingSucceeded(const QString &tag);
+    void decodingSucceeded(const QrCodeContent &tag);
 
 public slots:
     /**

@@ -22,6 +22,8 @@
 #include <QUrl>
 #include <QVariant>
 
+class QrCodeContent;
+
 class Qrca : public QObject
 {
     Q_OBJECT
@@ -29,18 +31,13 @@ class Qrca : public QObject
     Q_PROPERTY(KAboutData aboutData READ aboutData WRITE setAboutData NOTIFY aboutDataChanged)
 
 public:
-    enum ContentType { Url, VCard, OtpToken, Text };
-    Q_ENUM(ContentType)
-
     Qrca();
-
-    static Q_INVOKABLE ContentType identifyContentType(const QString &text) noexcept;
 
     Q_INVOKABLE QImage encode(const QString &text, const int &width) noexcept;
     static Q_INVOKABLE QUrl save(const QImage &image) noexcept;
     static Q_INVOKABLE void saveVCard(const QString &text) noexcept;
     static Q_INVOKABLE QString getVCardName(const QString &text) noexcept;
-    Q_INVOKABLE void copyToClipboard(const QString &text) noexcept;
+    Q_INVOKABLE void copyToClipboard(const QrCodeContent &content) noexcept;
 
     QString encodeText() const noexcept;
     void setEncodeText(const QString &encodeText) noexcept;
@@ -58,10 +55,6 @@ signals:
     void aboutDataChanged();
 
 private:
-    static bool isUrl(const QString &text);
-    static bool isVCard(const QString &text);
-    static bool isOtpToken(const QString &text);
-
     QString m_encodeText;
     KAboutData m_aboutData;
 };

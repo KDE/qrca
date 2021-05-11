@@ -52,20 +52,21 @@ Kirigami.Page {
     Kirigami.OverlaySheet {
         id: resultSheet
 
-        property string tag
-        property int contentType
+        property var tag
 
         header: Kirigami.Heading {
             text: {
-                switch (resultSheet.contentType) {
-                    case Qrca.Text:
+                switch (resultSheet.tag.contentType) {
+                    case QrCodeContent.Text:
                         return i18n("Text found")
-                    case Qrca.Url:
+                    case QrCodeContent.Url:
                         return i18n("URL found")
-                    case Qrca.VCard:
+                    case QrCodeContent.VCard:
                         return i18n("Contact found")
-                    case Qrca.OtpToken:
+                    case QrCodeContent.OtpToken:
                         return i18n("OTP URI found")
+                    case QrCodeContent.Binary:
+                        return i18n("Binary data found")
                 }
             }
         }
@@ -75,7 +76,16 @@ Kirigami.Page {
             height: childrenRect.height
 
             Controls.Label {
-                text: resultSheet.contentType === Qrca.VCard ? Qrca.getVCardName(resultSheet.tag) : resultSheet.tag
+                text: {
+                    switch(resultSheet.tag.contentType) {
+                        case QrCodeContent.VCard:
+                            return Qrca.getVCardName(resultSheet.tag.text);
+                        case QrCodeContent.Binary:
+                            return i18n("<binary data>");
+                        default:
+                            return resultSheet.tag.text;
+                    }
+                }
                 anchors.left: parent.left
                 anchors.right: parent.right
                 wrapMode: Text.Wrap
@@ -85,30 +95,32 @@ Kirigami.Page {
         footer: RowLayout {
             Controls.Button {
                 text: {
-                    switch (resultSheet.contentType) {
-                    case Qrca.Text:
+                    switch (resultSheet.tag.contentType) {
+                    case QrCodeContent.Binary:
+                    case QrCodeContent.Text:
                         return i18n("Copy to clipboard")
-                    case Qrca.Url:
+                    case QrCodeContent.Url:
                         return i18n("Open")
-                    case Qrca.VCard:
+                    case QrCodeContent.VCard:
                         return i18n("Save contact")
-                    case Qrca.OtpToken:
+                    case QrCodeContent.OtpToken:
                         return i18n("Open OTP client")
                     }
                 }
                 onClicked: {
-                    switch (resultSheet.contentType) {
-                    case Qrca.Text:
+                    switch (resultSheet.tag.contentType) {
+                    case QrCodeContent.Binary:
+                    case QrCodeContent.Text:
                         Qrca.copyToClipboard(resultSheet.tag)
                         break
-                    case Qrca.Url:
-                       Qt.openUrlExternally(resultSheet.tag)
+                    case QrCodeContent.Url:
+                       Qt.openUrlExternally(resultSheet.tag.text)
                        break
-                    case Qrca.VCard:
-                         Qrca.saveVCard(resultSheet.tag)
+                    case QrCodeContent.VCard:
+                         Qrca.saveVCard(resultSheet.tag.text)
                         break
-                    case Qrca.OtpToken:
-                        Qt.openUrlExternally(resultSheet.tag)
+                    case QrCodeContent.OtpToken:
+                        Qt.openUrlExternally(resultSheet.tag.text)
                         break
                     }
                     resultSheet.close()
@@ -135,7 +147,6 @@ Kirigami.Page {
         id: scannerFilter
         onScanningSucceeded: {
             resultSheet.tag = result
-            resultSheet.contentType = Qrca.identifyContentType(result)
             if (!resultSheet.sheetOpen)
                 resultSheet.open()
         }

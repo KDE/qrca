@@ -6,6 +6,7 @@ set(qrca_SRCS
     QrCodeScannerFilter.cpp
     QrCodeVideoFrame.cpp
     QrCodeDecoder.cpp
+    QrCodeContent.cpp
     resources.qrc
 )
 
