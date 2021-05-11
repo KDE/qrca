@@ -25,10 +25,17 @@ import org.kde.qrca 1.0
 Kirigami.ScrollablePage {
     title: i18n("Create QR-Code")
 
-    ShareSheet {
-        id: shareSheet
-        title: i18n("Share QR-Code")
+    Loader {
+        id: shareSheetLoader
+
+        active: false
+
+        ShareSheet {
+            id: shareSheet
+            title: i18n("Share QR-Code")
+        }
     }
+
 
 
     actions.contextualActions: [
@@ -44,7 +51,9 @@ Kirigami.ScrollablePage {
         Kirigami.Action {
             text: i18n("Share")
             icon.name: "document-share"
+            visible: Qt.platform.os !== "android" // Purpose doesn't work properly on Android
             onTriggered: {
+                shareSheetLoader.active = true
                 shareSheet.url = Qrca.save(codeView.source)
                 shareSheet.open()
             }

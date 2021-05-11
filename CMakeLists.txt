@@ -20,8 +20,12 @@ include(KDEClangFormat)
 kde_enable_exceptions()
 
 find_package(Qt5 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Multimedia Concurrent)
-find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 Purpose I18n Contacts CoreAddons)
+find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Contacts CoreAddons)
 find_package(ZXing REQUIRED)
+
+if(NOT ANDROID)
+    find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Purpose)
+endif()
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
