@@ -16,7 +16,11 @@
  *  along with this project.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#ifndef Q_OS_ANDROID
 #include <QApplication>
+#else
+#include <QGuiApplication>
+#endif
 #include <QCommandLineParser>
 #include <QIcon>
 #include <QQmlApplicationEngine>
@@ -34,7 +38,11 @@
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+#ifndef Q_OS_ANDROID
     QApplication app(argc, argv);
+#else
+    QGuiApplication app(argc, argv);
+#endif
     QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
     QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
     QCoreApplication::setApplicationName(QStringLiteral("qrca"));
@@ -59,7 +67,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     // in GUI apps set the window icon manually, not covered by KAboutData
     // needed for environments where the icon name is not extracted from
     // the information in the application's desktop file
-    QApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.qrca")));
+    QGuiApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.qrca")));
     aboutData.setProgramLogo(app.windowIcon());
 
     qmlRegisterType<QrCodeScannerFilter>("org.kde.qrca", 1, 0, "QrCodeScannerFilter");
