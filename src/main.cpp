@@ -16,6 +16,7 @@
  *  along with this project.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+#include <qglobal.h>
 #ifndef Q_OS_ANDROID
 #include <QApplication>
 #else
