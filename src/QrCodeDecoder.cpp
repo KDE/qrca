@@ -82,7 +82,13 @@ void QrCodeDecoder::decodeImage(const QImage &image)
     // Decode the specific image source.
     const auto result = reader.read(binImage);
 #else
-    decodeHints.setFormats(BarcodeFormat::QR_CODE | BarcodeFormat::AZTEC);
+#if ZXING_VERSION < QT_VERSION_CHECK(1, 2, 0)
+    // emulate BarcodeFormat::Any, which was only introduced in 1.2.0
+    decodeHints.setFormats(static_cast<BarcodeFormat>(static_cast<int>(BarcodeFormat::_max) - 1));
+#else
+    decodeHints.setFormats(BarcodeFormat::Any);
+#endif
+
     const auto result = ReadBarcode({image.bits(), image.width(), image.height(), ZXing::ImageFormat::Lum, image.bytesPerLine()}, decodeHints);
 #endif
 
