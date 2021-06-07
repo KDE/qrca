@@ -33,7 +33,6 @@ Kirigami.OverlaySheet {
     Purpose.AlternativesView {
         id: view
         pluginType: "Export"
-        implicitHeight: initialItem.contentHeight
 
         delegate: Kirigami.BasicListItem {
             label: model.display
