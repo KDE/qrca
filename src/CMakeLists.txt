@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: 2019 Jonah Brüchert <jbb@kaidan.im>
+# SPDX-FileCopyrightText: 2020 Nicolas Fella <nicolas.fella@gmx.de>
+#
+# SPDX-License-Identifier: BSD-2-Clause
+
 configure_file(config-qrca.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-qrca.h)
 
 set(qrca_SRCS
@@ -12,7 +17,7 @@ set(qrca_SRCS
 
 add_executable(qrca ${qrca_SRCS})
 
-target_link_libraries(qrca Qt::Core Qt::Qml Qt::Quick Qt::Svg Qt::Multimedia KF5::I18n KF5::Contacts KF5::CoreAddons)
+target_link_libraries(qrca Qt::Core Qt::Qml Qt::Quick Qt::Svg Qt::Multimedia Qt::Concurrent KF5::I18n KF5::Contacts KF5::CoreAddons)
 
 if (TARGET ZXing::ZXing)
     target_link_libraries(qrca ZXing::ZXing)

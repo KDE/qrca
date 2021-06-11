@@ -1,3 +1,8 @@
+# SPDX-FileCopyrightText: 2019 Jonah Brüchert <jbb@kaidan.im>
+# SPDX-FileCopyrightText: 2020 Nicolas Fella <nicolas.fella@gmx.de>
+#
+# SPDX-License-Identifier: BSD-2-Clause
+
 project(qrca)
 
 cmake_minimum_required(VERSION 3.16)

@@ -1,8 +1,3 @@
-/*
-   SPDX-FileCopyrightText: none
-   SPDX-License-Identifier: LGPL-2.0-or-later
-*/
-
 #define ZXING_VERSION_MAJOR @ZXing_VERSION_MAJOR@
 #define ZXING_VERSION_MINOR @ZXing_VERSION_MINOR@
 #define ZXING_VERSION_PATCH @ZXing_VERSION_PATCH@

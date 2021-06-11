@@ -1,3 +1,9 @@
+# SPDX-FileCopyrightText: 2019 Jonah Brüchert <jbb@kaidan.im>
+# SPDX-FileCopyrightText: 2020 Nicolas Fella <nicolas.fella@gmx.de>
+# SPDX-FileCopyrightText: 2020 Volker Krause <vkrause@kde.org>
+#
+# SPDX-License-Identifier: BSD-2-Clause
+
 include(ECMAddTests)
 
 find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Test)
