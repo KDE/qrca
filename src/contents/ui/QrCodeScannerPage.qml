@@ -75,6 +75,10 @@ Kirigami.Page {
                         return i18n("OTP URI found")
                     case QrCodeContent.Binary:
                         return i18n("Binary data found")
+                    case QrCodeContent.HealthCertificate:
+                        return i18n("Health certificate found")
+                    case QrCodeContent.TransportTicket:
+                        return i18n("Transport ticket found")
                 }
             }
         }
@@ -88,10 +92,8 @@ Kirigami.Page {
                     switch(resultSheet.tag.contentType) {
                         case QrCodeContent.VCard:
                             return Qrca.getVCardName(resultSheet.tag.text);
-                        case QrCodeContent.Binary:
-                            return i18n("<binary data>");
                         default:
-                            return resultSheet.tag.text;
+                            return resultSheet.tag.isPlainText ? resultSheet.tag.text : i18n("<binary data>");
                     }
                 }
                 anchors.left: parent.left
@@ -106,6 +108,8 @@ Kirigami.Page {
                     switch (resultSheet.tag.contentType) {
                     case QrCodeContent.Binary:
                     case QrCodeContent.Text:
+                    case QrCodeContent.HealthCertificate:
+                    case QrCodeContent.TransportTicket:
                         return i18n("Copy to clipboard")
                     case QrCodeContent.Url:
                         return i18n("Open")
@@ -119,6 +123,8 @@ Kirigami.Page {
                     switch (resultSheet.tag.contentType) {
                     case QrCodeContent.Binary:
                     case QrCodeContent.Text:
+                    case QrCodeContent.HealthCertificate:
+                    case QrCodeContent.TransportTicket:
                         Qrca.copyToClipboard(resultSheet.tag)
                         break
                     case QrCodeContent.Url:

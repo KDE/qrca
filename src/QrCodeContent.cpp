@@ -48,10 +48,52 @@ static bool isOtpToken(const QString &text)
     return false;
 }
 
+static constexpr const char base45Table[] = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ $%*+-./:";
+
+static bool isBase45(const QString &text)
+{
+    return std::all_of(text.begin(), text.end(), [](QChar c) {
+        return c.row() == 0 && std::find(std::begin(base45Table), std::end(base45Table), c.cell()) != std::end(base45Table);
+    });
+}
+
+static bool isHealtCertificate(const QString &text)
+{
+    // EU DGC
+    return text.size() > 400 && text.startsWith(QLatin1String("HC1:")) && isBase45(text);
+}
+
+static bool isTransportTicket(const QByteArray &data)
+{
+    // UIC 918.3 train ticket containers
+    if (data.size() > 100 && (data.startsWith("#UT") || data.startsWith("OTI"))) {
+        return true;
+    }
+
+    // VDV eTicket
+    if (data.size() >= 352 && data.startsWith((char)0x9E) && data.contains("VDV")) {
+        return true;
+    }
+
+    return false;
+}
+
 QrCodeContent::ContentType QrCodeContent::contentType() const
 {
-    if (m_content.type() == QVariant::ByteArray)
+    if (m_content.type() == QVariant::ByteArray) {
+        const auto data = m_content.toByteArray();
+
+        // Indian vaccination certificates
+        if (data.startsWith(QByteArray::fromHex("504B0304")) && data.contains("certificate.json")) {
+            return HealthCertificate;
+        }
+
+        if (isTransportTicket(data)) {
+            return ContentType::TransportTicket;
+        }
+
         return ContentType::Binary;
+    }
 
     const auto text = m_content.toString();
     if (isUrl(text))
@@ -60,8 +102,15 @@ QrCodeContent::ContentType QrCodeContent::contentType() const
         return ContentType::VCard;
     else if (isOtpToken(text))
         return ContentType::OtpToken;
+    else if (isHealtCertificate(text))
+        return ContentType::HealthCertificate;
 
     return ContentType::Text;
+}
+
+bool QrCodeContent::isPlainText() const
+{
+    return m_content.type() == QVariant::String;
 }
 
 QString QrCodeContent::text() const
