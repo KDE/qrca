@@ -44,6 +44,14 @@ Kirigami.Page {
     bottomPadding: 0
 
     title: qsTr("Scan QR code")
+    contextualActions: [
+        Kirigami.Action {
+            text: i18n("Select Camera")
+            visible: QtMultimedia.availableCameras.length > 1
+            icon.name: "camera-video-symbolic"
+            onTriggered: cameraSelectorSheet.open()
+        }
+    ]
 
     function asLink(text) {
         return "<a href='" + text + "'>" + text + "</a>"
@@ -131,6 +139,26 @@ Kirigami.Page {
                 text: i18n("Cancel")
                 onClicked: resultSheet.close()
                 Layout.fillWidth: true
+            }
+        }
+    }
+
+    Kirigami.OverlaySheet {
+        id: cameraSelectorSheet
+
+        header: Kirigami.Heading {
+            text: i18n("Select Camera")
+        }
+
+        ListView {
+            model: QtMultimedia.availableCameras
+            delegate: Kirigami.BasicListItem {
+                text: modelData.displayName
+                onClicked: {
+                    camera.deviceId = modelData.deviceId;
+                    camera.start();
+                    cameraSelectorSheet.close();
+                }
             }
         }
     }

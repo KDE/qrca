@@ -31,6 +31,7 @@ if(ANDROID)
         edit-clear
         arrow-right
         camera-photo-symbolic
+        camera-video-symbolic
         document-new-symbolic
         help-feedback
     )
