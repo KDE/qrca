@@ -45,6 +45,21 @@ Kirigami.ApplicationWindow {
         title: i18n("QR-Code Scanner")
         titleIcon: "view-barcode"
 
+        modal: !root.wideScreen
+        onEnabledChanged: drawerOpen = enabled && !modal
+        onModalChanged: drawerOpen = !modal
+        contentItem.implicitWidth: Kirigami.Units.gridUnit * 12
+
+        header: Kirigami.AbstractApplicationHeader {
+            topPadding: Kirigami.Units.smallSpacing
+            bottomPadding: Kirigami.Units.largeSpacing
+            leftPadding: Kirigami.Units.largeSpacing
+            rightPadding: Kirigami.Units.largeSpacing
+            Kirigami.Heading {
+                text: i18n("Qrca")
+            }
+        }
+
         actions: [
             Kirigami.PagePoolAction {
                 text: i18n("Scan")
@@ -64,7 +79,6 @@ Kirigami.ApplicationWindow {
                 pagePool: mainPagePool
                 page: "AboutPage.qml"
             }
-
         ]
     }
 
