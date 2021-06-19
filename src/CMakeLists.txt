@@ -8,6 +8,7 @@ set(qrca_SRCS
     QrCodeDecoder.cpp
     QrCodeContent.cpp
     notificationmanager.cpp
+    clipboard.cpp
     resources.qrc
 )
 

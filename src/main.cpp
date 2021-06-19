@@ -36,6 +36,7 @@
 #include "QrCodeScannerFilter.h"
 #include "Qrca.h"
 #include "notificationmanager.h"
+#include "clipboard.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -79,6 +80,12 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
         Q_UNUSED(scriptEngine)
 
         return new NotificationManager();
+    });
+    qmlRegisterSingletonType<Clipboard>("org.kde.qrca", 1, 0, "Clipboard", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
+        Q_UNUSED(engine)
+        Q_UNUSED(scriptEngine)
+
+        return new Clipboard();
     });
     qRegisterMetaType<QrCodeContent>();
 
