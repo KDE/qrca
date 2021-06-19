@@ -35,6 +35,7 @@
 #include "QrCodeContent.h"
 #include "QrCodeScannerFilter.h"
 #include "Qrca.h"
+#include "notificationmanager.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -73,6 +74,12 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     qmlRegisterType<QrCodeScannerFilter>("org.kde.qrca", 1, 0, "QrCodeScannerFilter");
     qmlRegisterUncreatableType<QrCodeContent>("org.kde.qrca", 1, 0, "QrCodeContent", {});
+    qmlRegisterSingletonType<NotificationManager>("org.kde.qrca", 1, 0, "NotificationManager", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
+        Q_UNUSED(engine)
+        Q_UNUSED(scriptEngine)
+
+        return new NotificationManager();
+    });
     qRegisterMetaType<QrCodeContent>();
 
     Qrca qrca;

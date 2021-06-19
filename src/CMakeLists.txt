@@ -7,12 +7,13 @@ set(qrca_SRCS
     QrCodeVideoFrame.cpp
     QrCodeDecoder.cpp
     QrCodeContent.cpp
+    notificationmanager.cpp
     resources.qrc
 )
 
 add_executable(qrca ${qrca_SRCS})
 
-target_link_libraries(qrca Qt::Core Qt::Qml Qt::Quick Qt::Svg Qt::Multimedia KF5::I18n KF5::Contacts KF5::CoreAddons)
+target_link_libraries(qrca Qt::Core Qt::Qml Qt::Quick Qt::Svg Qt::Multimedia KF5::I18n KF5::Contacts KF5::CoreAddons KF5::Notifications)
 
 if (TARGET ZXing::ZXing)
     target_link_libraries(qrca ZXing::ZXing)
