@@ -5,6 +5,7 @@
 */
 
 #include "QrCodeContent.h"
+#include <qrcastore.h>
 
 #include <QRegularExpression>
 #include <QUrlQuery>
@@ -19,6 +20,20 @@ QrCodeContent::QrCodeContent(const QByteArray &content)
 QrCodeContent::QrCodeContent(const QString &content)
     : m_content(content)
 {
+}
+
+bool QrCodeContent::saveCode()
+{
+    if (!m_content.canConvert<QString>()) {
+        return false;
+    }
+
+    auto codes = QrcaStorage::self()->codes();
+    codes.append(m_content.toString());
+    QrcaStorage::self()->setCodes(codes);
+    QrcaStorage::self()->save();
+
+    return true;
 }
 
 QrCodeContent::~QrCodeContent() = default;

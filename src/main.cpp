@@ -24,6 +24,7 @@
 #include "QrCodeContent.h"
 #include "QrCodeScannerFilter.h"
 #include "Qrca.h"
+#include "GalleryModel.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -61,6 +62,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     aboutData.setProgramLogo(app.windowIcon());
 
     qmlRegisterType<QrCodeScannerFilter>("org.kde.qrca", 1, 0, "QrCodeScannerFilter");
+    qmlRegisterType<GalleryModel>("org.kde.qrca", 1, 0, "GalleryModel");
     qmlRegisterUncreatableType<QrCodeContent>("org.kde.qrca", 1, 0, "QrCodeContent", {});
     qRegisterMetaType<QrCodeContent>();
 

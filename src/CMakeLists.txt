@@ -12,12 +12,16 @@ set(qrca_SRCS
     QrCodeVideoFrame.cpp
     QrCodeDecoder.cpp
     QrCodeContent.cpp
+    GalleryModel.cpp
     resources.qrc
 )
 
 add_executable(qrca ${qrca_SRCS})
 
-target_link_libraries(qrca Qt::Core Qt::Qml Qt::Quick Qt::Svg Qt::Multimedia Qt::Concurrent KF5::I18n KF5::Contacts KF5::CoreAddons)
+kconfig_add_kcfg_files(qrca GENERATE_MOC qrcastore.kcfgc)
+
+target_link_libraries(qrca Qt::Core Qt::Qml Qt::Quick Qt::Svg Qt::Multimedia Qt::Concurrent
+                           KF5::I18n KF5::Contacts KF5::CoreAddons KF5::ConfigGui)
 
 if (TARGET ZXing::ZXing)
     target_link_libraries(qrca ZXing::ZXing)

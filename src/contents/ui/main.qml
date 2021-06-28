@@ -48,6 +48,12 @@ Kirigami.ApplicationWindow {
                 page: "QrCodeEncoderPage.qml"
             },
             Kirigami.PagePoolAction {
+                text: i18n("Gallery")
+                icon.name: "view-grid-symbolic"
+                pagePool: mainPagePool
+                page: "Gallery.qml"
+            },
+            Kirigami.PagePoolAction {
                 text: i18n("About")
                 icon.name: "help-feedback"
                 pagePool: mainPagePool

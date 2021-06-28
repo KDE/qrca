@@ -32,12 +32,12 @@ public:
     static Q_INVOKABLE QString getVCardName(const QString &text) noexcept;
     Q_INVOKABLE void copyToClipboard(const QrCodeContent &content) noexcept;
 
+
     QString encodeText() const noexcept;
     void setEncodeText(const QString &encodeText) noexcept;
 
     KAboutData aboutData() const noexcept;
     void setAboutData(const KAboutData &aboutData) noexcept;
-
 signals:
     /**
      * Show passive notification

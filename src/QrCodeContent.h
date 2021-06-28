@@ -22,6 +22,7 @@ public:
     explicit QrCodeContent(const QByteArray &content);
     explicit QrCodeContent(const QString &content);
     ~QrCodeContent();
+    Q_INVOKABLE bool saveCode();
 
     enum ContentType { Url, VCard, OtpToken, TransportTicket, HealthCertificate, Text, Binary };
     Q_ENUM(ContentType)

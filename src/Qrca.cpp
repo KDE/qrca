@@ -129,3 +129,4 @@ void Qrca::copyToClipboard(const QrCodeContent &content) noexcept
         clipboard->setText(content.text());
     }
 }
+

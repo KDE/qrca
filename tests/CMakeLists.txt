@@ -12,8 +12,10 @@ include_directories(../src)
 
 ecm_add_test(qrcatest.cpp ../src/Qrca.cpp ../src/QrCodeContent.cpp
              TEST_NAME qrcatest
-             LINK_LIBRARIES Qt::Test Qt::Core Qt::Gui KF5::I18n KF5::Contacts KF5::CoreAddons
+             LINK_LIBRARIES Qt::Test Qt::Core Qt::Gui KF5::I18n KF5::Contacts KF5::CoreAddons KF5::ConfigGui
 )
+kconfig_add_kcfg_files(qrcatest GENERATE_MOC ../src/qrcastore.kcfgc)
+
 if (TARGET ZXing::ZXing)
      target_link_libraries(qrcatest ZXing::ZXing)
 elseif (TARGET ZXing::Core)

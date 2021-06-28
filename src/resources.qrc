@@ -5,5 +5,7 @@
         <file alias="QrCodeEncoderPage.qml">contents/ui/QrCodeEncoderPage.qml</file>
         <file alias="ShareSheet.qml">contents/ui/ShareSheet.qml</file>
         <file alias="AboutPage.qml">contents/ui/AboutPage.qml</file>
+        <file>Gallery.qml</file>
+        <file>DisplaySavedCode.qml</file>
     </qresource>
 </RCC>

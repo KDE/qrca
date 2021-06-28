@@ -117,6 +117,15 @@ Kirigami.Page {
                 }
                 Layout.fillWidth: true
             }
+            Controls.Button{
+                text: i18n("Save")
+                visible: resultSheet.tag.contentType !== QrCodeContent.Binary
+                onClicked: {
+                    resultSheet.tag.saveCode()
+                    resultSheet.close()
+                }
+
+            }
             Controls.Button {
                 text: i18n("Cancel")
                 onClicked: resultSheet.close()
@@ -155,7 +164,7 @@ Kirigami.Page {
 
     QrCodeScannerFilter {
         id: scannerFilter
-        onScanningSucceeded: {
+        onScanningSucceeded: (result) => {
             resultSheet.tag = result
             if (!resultSheet.sheetOpen)
                 resultSheet.open()
