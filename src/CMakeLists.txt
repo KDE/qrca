@@ -31,14 +31,17 @@ if(ANDROID)
     target_link_libraries(qrca Qt::Svg KF5::Kirigami2)
 
     kirigami_package_breeze_icons(ICONS
-        document-share
-        document-save
-        edit-clear
         arrow-right
         camera-photo-symbolic
         camera-video-symbolic
+        document-encrypt
         document-new-symbolic
+        document-save
+        document-share
+        edit-clear
+        edit-copy-symbolic
         help-feedback
+        internet-services
     )
 endif()
 
