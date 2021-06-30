@@ -8,6 +8,8 @@
 
 #include <QVariant>
 
+#include <ZXing/BarcodeFormat.h>
+
 /** Result of a barcode scan.
  *  Can contain either text or binary data.
  */
@@ -19,11 +21,21 @@ class QrCodeContent
     Q_PROPERTY(bool isPlainText READ isPlainText)
 public:
     QrCodeContent();
-    explicit QrCodeContent(const QByteArray &content);
-    explicit QrCodeContent(const QString &content);
+    explicit QrCodeContent(const QByteArray &content, ZXing::BarcodeFormat format);
+    explicit QrCodeContent(const QString &content, ZXing::BarcodeFormat format);
     ~QrCodeContent();
 
-    enum ContentType { Url, VCard, OtpToken, TransportTicket, HealthCertificate, Text, Binary };
+    enum ContentType {
+        Url,
+        VCard,
+        OtpToken,
+        TransportTicket,
+        HealthCertificate,
+        Text,
+        Binary,
+        ISBN,
+        EAN,
+    };
     Q_ENUM(ContentType)
     ContentType contentType() const;
 
@@ -34,6 +46,7 @@ public:
 
 private:
     QVariant m_content;
+    ZXing::BarcodeFormat m_format;
 };
 
 Q_DECLARE_METATYPE(QrCodeContent)

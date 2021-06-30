@@ -55,6 +55,10 @@ Kirigami.Page {
                         return i18n("Health certificate found")
                     case QrCodeContent.TransportTicket:
                         return i18n("Transport ticket found")
+                    case QrCodeContent.ISBN:
+                        return i18n("ISBN found")
+                    case QrCodeContent.EAN:
+                        return i18n("International Article Number found")
                 }
             }
         }
@@ -93,6 +97,10 @@ Kirigami.Page {
                         return i18n("Save contact")
                     case QrCodeContent.OtpToken:
                         return i18n("Open OTP client")
+                    case QrCodeContent.EAN:
+                        return i18n("Open Food Facts")
+                    case QrCodeContent.ISBN:
+                        return i18n("Wikipedia Book Sources")
                     }
                 }
                 onClicked: {
@@ -112,6 +120,12 @@ Kirigami.Page {
                     case QrCodeContent.OtpToken:
                         Qt.openUrlExternally(resultSheet.tag.text)
                         break
+                    case QrCodeContent.EAN:
+                        Qt.openUrlExternally("https://world.openfoodfacts.org/product/" + resultSheet.tag.text)
+                        break;
+                    case QrCodeContent.ISBN:
+                        Qt.openUrlExternally("https://en.wikipedia.org/wiki/Special:BookSources?isbn=" + resultSheet.tag.text)
+                        break;
                     }
                     resultSheet.close()
                 }

@@ -74,12 +74,12 @@ void QrCodeDecoder::decodeImage(const QImage &image)
         const auto hasWideChars = std::any_of(result.text().begin(), result.text().end(), [](auto c) { return c > 255; });
         const auto hasControlChars = std::any_of(result.text().begin(), result.text().end(), [](auto c) { return c < 20; });
         if (hasWideChars || !hasControlChars) {
-            emit decodingSucceeded(QrCodeContent(QString::fromStdString(TextUtfEncoding::ToUtf8(result.text()))));
+            emit decodingSucceeded(QrCodeContent(QString::fromStdString(TextUtfEncoding::ToUtf8(result.text())), result.format()));
         } else {
             QByteArray b;
             b.resize(result.text().size());
             std::copy(result.text().begin(), result.text().end(), b.begin());
-            emit decodingSucceeded(QrCodeContent(b));
+            emit decodingSucceeded(QrCodeContent(b, result.format()));
         }
     } else {
         emit decodingFailed();

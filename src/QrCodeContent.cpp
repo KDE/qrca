@@ -11,13 +11,15 @@
 
 QrCodeContent::QrCodeContent() = default;
 
-QrCodeContent::QrCodeContent(const QByteArray &content)
+QrCodeContent::QrCodeContent(const QByteArray &content, ZXing::BarcodeFormat format)
     : m_content(content)
+    , m_format(format)
 {
 }
 
-QrCodeContent::QrCodeContent(const QString &content)
+QrCodeContent::QrCodeContent(const QString &content, ZXing::BarcodeFormat format)
     : m_content(content)
+    , m_format(format)
 {
 }
 
@@ -78,6 +80,23 @@ static bool isTransportTicket(const QByteArray &data)
     return false;
 }
 
+// https://en.wikipedia.org/wiki/Global_Trade_Item_Number
+// https://en.wikipedia.org/wiki/International_Standard_Book_Number
+// https://en.wikipedia.org/wiki/International_Article_Number
+// https://en.wikipedia.org/wiki/List_of_GS1_country_codes
+static bool isGlobalTradeItemNumber(const QString &text)
+{
+    if (text.size() != 13 || std::any_of(text.begin(), text.end(), [](auto c) { return c.row() != 0 || !c.isDigit(); })) {
+        return false;
+    }
+
+    int checkSum = 0;
+    for (int i = 0; i < text.size() - 1; ++i) {
+        checkSum += text[i].digitValue() * (i % 2 == 1 ? 3 : 1);
+    }
+    return text.back().digitValue() == ((10 - (checkSum % 10)) % 10);
+}
+
 QrCodeContent::ContentType QrCodeContent::contentType() const
 {
     if (m_content.type() == QVariant::ByteArray) {
@@ -104,6 +123,15 @@ QrCodeContent::ContentType QrCodeContent::contentType() const
         return ContentType::OtpToken;
     else if (isHealtCertificate(text))
         return ContentType::HealthCertificate;
+    else if (m_format == ZXing::BarcodeFormat::EAN13 && isGlobalTradeItemNumber(text)) {
+        if (text.startsWith(QLatin1String("978"))) {
+            return ContentType::ISBN;
+        }
+        if (text.startsWith(QLatin1String("950")) || text.startsWith(QLatin1String("979"))) { // ISSN / ISMN
+            return ContentType::Text;
+        }
+        return ContentType::EAN;
+    }
 
     return ContentType::Text;
 }
