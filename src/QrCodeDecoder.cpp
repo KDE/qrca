@@ -72,7 +72,7 @@ void QrCodeDecoder::decodeImage(const QImage &image)
     // Otherwise, emit a signal for failed decoding.
     if (result.isValid()) {
         const auto hasWideChars = std::any_of(result.text().begin(), result.text().end(), [](auto c) { return c > 255; });
-        const auto hasControlChars = std::any_of(result.text().begin(), result.text().end(), [](auto c) { return c < 20; });
+        const auto hasControlChars = std::any_of(result.text().begin(), result.text().end(), [](auto c) { return c < 20 && c != 0x0a && c != 0x0d; });
         if (hasWideChars || !hasControlChars) {
             emit decodingSucceeded(QrCodeContent(QString::fromStdString(TextUtfEncoding::ToUtf8(result.text())), result.format()));
         } else {
