@@ -96,6 +96,8 @@ Kirigami.Page {
                         return i18n("Open Food Facts")
                     case QrCodeContent.ISBN:
                         return i18n("Wikipedia Book Sources")
+                    case QrCodeContent.TransportTicket:
+                        return i18n("Open KDE Itinerary")
                     }
                 }
                 onClicked: {
@@ -115,6 +117,9 @@ Kirigami.Page {
                     case QrCodeContent.ISBN:
                         Qt.openUrlExternally("https://en.wikipedia.org/wiki/Special:BookSources?isbn=" + resultSheet.tag.text)
                         break;
+                    case QrCodeContent.TransportTicket:
+                        Qrca.openInItinerary(resultSheet.tag);
+                        break;
                     }
                     resultSheet.close()
                 }
@@ -123,8 +128,9 @@ Kirigami.Page {
                     case QrCodeContent.Binary:
                     case QrCodeContent.Text:
                     case QrCodeContent.HealthCertificate:
-                    case QrCodeContent.TransportTicket:
                         return false;
+                    case QrCodeContent.TransportTicket:
+                        return Qrca.hasItinerary();
                     }
                     return true;
                 }
@@ -134,6 +140,8 @@ Kirigami.Page {
                         return "document-save";
                     case QrCodeContent.OtpToken:
                         return "document-encrypt";
+                    case QrCodeContent.TransportTicket:
+                        return "itinerary";
                     }
                     return "internet-services"
                 }

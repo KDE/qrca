@@ -6,6 +6,11 @@
  *  SPDX-License-Identifier: GPL-3.0-or-later
  */
 
+#ifndef Q_OS_ANDROID
+#include <KService>
+#include <KIO/ApplicationLauncherJob>
+#endif
+
 #include <QClipboard>
 #include <QCryptographicHash>
 #include <QDateTime>
@@ -15,6 +20,7 @@
 #include <QImage>
 #include <QMimeData>
 #include <QStandardPaths>
+#include <QTemporaryFile>
 
 #include <KContacts/Addressee>
 #include <KContacts/VCardConverter>
@@ -128,4 +134,36 @@ void Qrca::copyToClipboard(const QrCodeContent &content) noexcept
     } else {
         clipboard->setText(content.text());
     }
+}
+
+bool Qrca::hasItinerary() const
+{
+#ifndef Q_OS_ANDROID
+    return KService::serviceByDesktopName(QLatin1String("org.kde.itinerary"));
+#else
+    return false;
+#endif
+}
+
+void Qrca::openInItinerary(const QrCodeContent &content)
+{
+#ifndef Q_OS_ANDROID
+    QTemporaryFile file;
+    if (!file.open()) {
+        qWarning() << file.errorString();
+        return;
+    }
+    if (content.isPlainText()) {
+        file.write(content.text().toUtf8());
+    } else {
+        file.write(content.binaryContent());
+    }
+    file.flush();
+    file.setAutoRemove(false);
+
+    auto job = new KIO::ApplicationLauncherJob(KService::serviceByDesktopName(QLatin1String("org.kde.itinerary")), this);
+    job->setUrls({QUrl::fromLocalFile(file.fileName())});
+    job->setRunFlags(KIO::ApplicationLauncherJob::DeleteTemporaryFiles);
+    job->start();
+#endif
 }

@@ -29,7 +29,7 @@ find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Contacts 
 find_package(ZXing REQUIRED)
 
 if(NOT ANDROID)
-    find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Purpose)
+    find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Purpose Service KIO)
 endif()
 
 set(CMAKE_CXX_STANDARD 17)
