@@ -80,6 +80,18 @@ static bool isTransportTicket(const QByteArray &data)
     return false;
 }
 
+static bool isTransportTicket(const QString &text)
+{
+    // IATA BCBP
+    if (text.size() >= 47 && text[0] == QLatin1Char('M') && text[1].digitValue() >= 1 && text[1].digitValue() <= 4
+        && std::all_of(text.begin(), text.end(), [](QChar c) { return c.row() == 0; })
+        && std::all_of(text.begin() + 30, text.begin() + 36, [](QChar c) { return c.isLetter() && c.isUpper(); })) {
+        return true;
+    }
+
+    return false;
+}
+
 // https://en.wikipedia.org/wiki/Global_Trade_Item_Number
 // https://en.wikipedia.org/wiki/International_Standard_Book_Number
 // https://en.wikipedia.org/wiki/International_Article_Number
@@ -131,6 +143,9 @@ QrCodeContent::ContentType QrCodeContent::contentType() const
             return ContentType::Text;
         }
         return ContentType::EAN;
+    }
+    else if (isTransportTicket(text)) {
+        return ContentType::TransportTicket;
     }
 
     return ContentType::Text;

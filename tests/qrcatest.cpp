@@ -76,6 +76,10 @@ private slots:
         auto content = QrCodeContent(uic9183, ZXing::BarcodeFormat::QR_CODE);
         QCOMPARE(content.contentType(), QrCodeContent::TransportTicket);
         QCOMPARE(content.isPlainText(), false);
+
+        content = QrCodeContent(QStringLiteral("M1DESMARAIS/LUC       EABC123 YULFRAAC 0834 326J001A0025 100"), ZXing::BarcodeFormat::PDF_417);
+        QCOMPARE(content.contentType(), QrCodeContent::TransportTicket);
+        QCOMPARE(content.isPlainText(), true);
     }
 
     void isGlobalTradeItemNumber()
