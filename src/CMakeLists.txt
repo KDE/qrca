@@ -17,7 +17,7 @@ set(qrca_SRCS
 
 add_executable(qrca ${qrca_SRCS})
 
-target_link_libraries(qrca Qt::Core Qt::Qml Qt::Quick Qt::Svg Qt::Multimedia Qt::Concurrent KF5::I18n KF5::Contacts KF5::CoreAddons)
+target_link_libraries(qrca Qt::Core Qt::Qml Qt::Quick Qt::QuickControls2 Qt::Svg Qt::Multimedia Qt::Concurrent KF5::I18n KF5::Contacts KF5::CoreAddons)
 
 if (TARGET ZXing::ZXing)
     target_link_libraries(qrca ZXing::ZXing)
