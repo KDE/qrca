@@ -186,6 +186,7 @@ Kirigami.Page {
         source: camera
         autoOrientation: true
         filters: [scannerFilter]
+        fillMode: VideoOutput.PreserveAspectCrop
     }
 
     QrCodeScannerFilter {
