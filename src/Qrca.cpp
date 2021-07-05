@@ -6,6 +6,8 @@
  *  SPDX-License-Identifier: GPL-3.0-or-later
  */
 
+#include <QtGlobal>
+
 #ifndef Q_OS_ANDROID
 #include <KService>
 #include <KIO/ApplicationLauncherJob>
