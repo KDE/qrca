@@ -98,6 +98,8 @@ Kirigami.Page {
                         return i18n("Wikipedia Book Sources")
                     case QrCodeContent.TransportTicket:
                         return i18n("Open KDE Itinerary")
+                    case QrCodeContent.HealthCertificate:
+                        return i18n("Open in Vakzination")
                     }
                 }
                 onClicked: {
@@ -118,8 +120,10 @@ Kirigami.Page {
                         Qt.openUrlExternally("https://en.wikipedia.org/wiki/Special:BookSources?isbn=" + resultSheet.tag.text)
                         break;
                     case QrCodeContent.TransportTicket:
-                        Qrca.openInItinerary(resultSheet.tag);
+                        Qrca.openInApplication(resultSheet.tag, "org.kde.itinerary");
                         break;
+                    case QrCodeContent.HealthCertificate:
+                        Qrca.openInApplication(resultSheet.tag, "org.kde.vakzination");
                     }
                     resultSheet.close()
                 }
@@ -127,10 +131,11 @@ Kirigami.Page {
                     switch (resultSheet.tag.contentType) {
                     case QrCodeContent.Binary:
                     case QrCodeContent.Text:
-                    case QrCodeContent.HealthCertificate:
                         return false;
                     case QrCodeContent.TransportTicket:
-                        return Qrca.hasItinerary();
+                        return Qrca.hasApplication("org.kde.itinerary");
+                    case QrCodeContent.HealthCertificate:
+                        return Qrca.hasApplication("org.kde.vakzination");
                     }
                     return true;
                 }

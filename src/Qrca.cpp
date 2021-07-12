@@ -138,16 +138,16 @@ void Qrca::copyToClipboard(const QrCodeContent &content) noexcept
     }
 }
 
-bool Qrca::hasItinerary() const
+bool Qrca::hasApplication(const QString &appId) const
 {
 #ifndef Q_OS_ANDROID
-    return KService::serviceByDesktopName(QLatin1String("org.kde.itinerary"));
+    return KService::serviceByDesktopName(appId);
 #else
     return false;
 #endif
 }
 
-void Qrca::openInItinerary(const QrCodeContent &content)
+void Qrca::openInApplication(const QrCodeContent &content, const QString &appId)
 {
 #ifndef Q_OS_ANDROID
     QTemporaryFile file;
@@ -163,7 +163,7 @@ void Qrca::openInItinerary(const QrCodeContent &content)
     file.flush();
     file.setAutoRemove(false);
 
-    auto job = new KIO::ApplicationLauncherJob(KService::serviceByDesktopName(QLatin1String("org.kde.itinerary")), this);
+    auto job = new KIO::ApplicationLauncherJob(KService::serviceByDesktopName(appId), this);
     job->setUrls({QUrl::fromLocalFile(file.fileName())});
     job->setRunFlags(KIO::ApplicationLauncherJob::DeleteTemporaryFiles);
     job->start();
