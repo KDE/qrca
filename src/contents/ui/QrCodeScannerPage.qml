@@ -174,6 +174,8 @@ Kirigami.Page {
 
         ListView {
             model: QtMultimedia.availableCameras
+            implicitWidth: Kirigami.Units.gridUnit * 20
+
             delegate: Kirigami.BasicListItem {
                 text: modelData.displayName
                 onClicked: {
