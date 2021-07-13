@@ -26,6 +26,7 @@ Kirigami.ScrollablePage {
             property string path
             text: i18n("Save")
             icon.name: "document-save"
+            enabled: inputText.length > 0
             onTriggered: {
                 path = "file://" + Qrca.save(codeView.source)
                 showPassiveNotification(i18n("Saved image to " + path), "long", "Open Externally", function() {Qt.openUrlExternally(path)})
@@ -35,6 +36,7 @@ Kirigami.ScrollablePage {
             text: i18n("Share")
             icon.name: "document-share"
             visible: Qt.platform.os !== "android" // Purpose doesn't work properly on Android
+            enabled: inputText.length > 0
             onTriggered: {
                 shareSheetLoader.active = true
                 shareSheetLoader.item.url = Qrca.save(codeView.source)
