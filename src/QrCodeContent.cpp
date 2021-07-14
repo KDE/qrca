@@ -135,7 +135,7 @@ QrCodeContent::ContentType QrCodeContent::contentType() const
         return ContentType::OtpToken;
     else if (isHealtCertificate(text))
         return ContentType::HealthCertificate;
-    else if (m_format == ZXing::BarcodeFormat::EAN13 && isGlobalTradeItemNumber(text)) {
+    else if (m_format == ZXing::BarcodeFormat::EAN_13 && isGlobalTradeItemNumber(text)) {
         if (text.startsWith(QLatin1String("978"))) {
             return ContentType::ISBN;
         }

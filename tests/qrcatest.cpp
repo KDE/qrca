@@ -84,11 +84,11 @@ private slots:
 
     void isGlobalTradeItemNumber()
     {
-        auto content = QrCodeContent(QStringLiteral("9783827316608"), ZXing::BarcodeFormat::EAN13);
+        auto content = QrCodeContent(QStringLiteral("9783827316608"), ZXing::BarcodeFormat::EAN_13);
         QCOMPARE(content.contentType(), QrCodeContent::ISBN);
-        content = QrCodeContent(QStringLiteral("4337256114837"), ZXing::BarcodeFormat::EAN13);
+        content = QrCodeContent(QStringLiteral("4337256114837"), ZXing::BarcodeFormat::EAN_13);
         QCOMPARE(content.contentType(), QrCodeContent::EAN);
-        content = QrCodeContent(QStringLiteral("4388844146860"), ZXing::BarcodeFormat::EAN13);
+        content = QrCodeContent(QStringLiteral("4388844146860"), ZXing::BarcodeFormat::EAN_13);
         QCOMPARE(content.contentType(), QrCodeContent::EAN);
     }
 };
