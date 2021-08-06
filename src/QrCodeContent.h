@@ -35,6 +35,7 @@ public:
         Binary,
         ISBN,
         EAN,
+        WifiSetting,
     };
     Q_ENUM(ContentType)
     ContentType contentType() const;

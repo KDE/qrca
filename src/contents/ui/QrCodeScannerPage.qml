@@ -59,6 +59,8 @@ Kirigami.Page {
                         return i18n("ISBN found")
                     case QrCodeContent.EAN:
                         return i18n("International Article Number found")
+                    case QrCodeContent.WifiSetting:
+                        return i18n("Wi-Fi settings found")
                 }
             }
         }
@@ -72,6 +74,8 @@ Kirigami.Page {
                     switch(resultSheet.tag.contentType) {
                         case QrCodeContent.VCard:
                             return Qrca.getVCardName(resultSheet.tag.text);
+                        case QrCodeContent.WifiSetting:
+                            return Qrca.wifiName(resultSheet.tag.text);
                         default:
                             return resultSheet.tag.isPlainText ? resultSheet.tag.text : i18n("<binary data>");
                     }
@@ -131,6 +135,7 @@ Kirigami.Page {
                     switch (resultSheet.tag.contentType) {
                     case QrCodeContent.Binary:
                     case QrCodeContent.Text:
+                    case QrCodeContent.WifiSetting:
                         return false;
                     case QrCodeContent.TransportTicket:
                         return Qrca.hasApplication("org.kde.itinerary");

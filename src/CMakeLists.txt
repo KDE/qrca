@@ -12,6 +12,7 @@ set(qrca_SRCS
     QrCodeVideoFrame.cpp
     QrCodeDecoder.cpp
     QrCodeContent.cpp
+    mecardparser.cpp
     notificationmanager.cpp
     clipboard.cpp
     resources.qrc

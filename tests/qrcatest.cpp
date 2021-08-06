@@ -91,6 +91,12 @@ private slots:
         content = QrCodeContent(QStringLiteral("4388844146860"), ZXing::BarcodeFormat::EAN_13);
         QCOMPARE(content.contentType(), QrCodeContent::EAN);
     }
+
+    void isWifiSetting()
+    {
+        auto content = QrCodeContent(QStringLiteral("WIFI:T:WPA;S:mynetwork;P:mypass;;"), ZXing::BarcodeFormat::QR_CODE);
+        QCOMPARE(content.contentType(), QrCodeContent::WifiSetting);
+    }
 };
 
 QTEST_GUILESS_MAIN(QrcaTest)

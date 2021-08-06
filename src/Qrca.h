@@ -33,6 +33,7 @@ public:
     Q_INVOKABLE void copyToClipboard(const QrCodeContent &content) noexcept;
     Q_INVOKABLE bool hasApplication(const QString &appId) const;
     Q_INVOKABLE void openInApplication(const QrCodeContent &content, const QString &appId);
+    Q_INVOKABLE QString wifiName(const QString &wifiSetting) const;
 
     QString encodeText() const noexcept;
     void setEncodeText(const QString &encodeText) noexcept;

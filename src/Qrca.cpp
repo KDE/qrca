@@ -34,6 +34,7 @@
 
 #include "Qrca.h"
 #include "QrCodeContent.h"
+#include "mecardparser.h"
 
 Qrca::Qrca() = default;
 
@@ -168,4 +169,11 @@ void Qrca::openInApplication(const QrCodeContent &content, const QString &appId)
     job->setRunFlags(KIO::ApplicationLauncherJob::DeleteTemporaryFiles);
     job->start();
 #endif
+}
+
+QString Qrca::wifiName(const QString& wifiSetting) const
+{
+    MeCardParser p;
+    p.parse(wifiSetting);
+    return p.value(u"S");
 }

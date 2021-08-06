@@ -5,6 +5,7 @@
 */
 
 #include "QrCodeContent.h"
+#include "mecardparser.h"
 
 #include <QRegularExpression>
 #include <QUrlQuery>
@@ -92,6 +93,12 @@ static bool isTransportTicket(const QString &text)
     return false;
 }
 
+static bool isWifiSetting(const QString &text)
+{
+    MeCardParser p;
+    return p.parse(text) && p.header().compare(QLatin1String("wifi"), Qt::CaseInsensitive) == 0;
+}
+
 // https://en.wikipedia.org/wiki/Global_Trade_Item_Number
 // https://en.wikipedia.org/wiki/International_Standard_Book_Number
 // https://en.wikipedia.org/wiki/International_Article_Number
@@ -146,6 +153,9 @@ QrCodeContent::ContentType QrCodeContent::contentType() const
     }
     else if (isTransportTicket(text)) {
         return ContentType::TransportTicket;
+    }
+    else if (isWifiSetting(text)) {
+        return ContentType::WifiSetting;
     }
 
     return ContentType::Text;
