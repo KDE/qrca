@@ -104,6 +104,8 @@ Kirigami.Page {
                         return i18n("Open KDE Itinerary")
                     case QrCodeContent.HealthCertificate:
                         return i18n("Open in Vakzination")
+                    case QrCodeContent.WifiSetting:
+                        return i18n("Connect")
                     }
                 }
                 onClicked: {
@@ -128,6 +130,8 @@ Kirigami.Page {
                         break;
                     case QrCodeContent.HealthCertificate:
                         Qrca.openInApplication(resultSheet.tag, "org.kde.vakzination");
+                    case QrCodeContent.WifiSetting:
+                        Qrca.connectToWifi(resultSheet.tag.text);
                     }
                     resultSheet.close()
                 }
@@ -135,12 +139,13 @@ Kirigami.Page {
                     switch (resultSheet.tag.contentType) {
                     case QrCodeContent.Binary:
                     case QrCodeContent.Text:
-                    case QrCodeContent.WifiSetting:
                         return false;
                     case QrCodeContent.TransportTicket:
                         return Qrca.hasApplication("org.kde.itinerary");
                     case QrCodeContent.HealthCertificate:
                         return Qrca.hasApplication("org.kde.vakzination");
+                    case QrCodeContent.WifiSetting:
+                        return Qrca.canConnectToWifi();
                     }
                     return true;
                 }
@@ -152,6 +157,8 @@ Kirigami.Page {
                         return "document-encrypt";
                     case QrCodeContent.TransportTicket:
                         return "itinerary";
+                    case QrCodeContent.WifiSetting:
+                        return "network-wireless";
                     }
                     return "internet-services"
                 }

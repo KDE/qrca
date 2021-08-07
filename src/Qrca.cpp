@@ -6,11 +6,20 @@
  *  SPDX-License-Identifier: GPL-3.0-or-later
  */
 
+#include "config-qrca.h"
 #include <QtGlobal>
 
 #ifndef Q_OS_ANDROID
 #include <KService>
 #include <KIO/ApplicationLauncherJob>
+#endif
+
+#if HAVE_NETWORKMANAGER
+#include <NetworkManagerQt/Manager>
+#include <NetworkManagerQt/Security8021xSetting>
+#include <NetworkManagerQt/Settings>
+#include <NetworkManagerQt/WirelessSetting>
+#include <NetworkManagerQt/WirelessSecuritySetting>
 #endif
 
 #include <QClipboard>
@@ -176,4 +185,93 @@ QString Qrca::wifiName(const QString& wifiSetting) const
     MeCardParser p;
     p.parse(wifiSetting);
     return p.value(u"S");
+}
+
+bool Qrca::canConnectToWifi() const
+{
+#if HAVE_NETWORKMANAGER
+    return NetworkManager::isNetworkingEnabled();
+#else
+    return false;
+#endif
+}
+
+// see https://github.com/zxing/zxing/blob/master/android/src/com/google/zxing/client/android/wifi/WifiConfigManager.java
+// for the details not found in the documentation
+#if HAVE_NETWORKMANAGER
+static struct {
+    const char *name;
+    NetworkManager::Security8021xSetting::EapMethod method;
+} constexpr const eap_methods[] = {
+    { "PEAP", NetworkManager::Security8021xSetting::EapMethodPeap },
+    { "PWD", NetworkManager::Security8021xSetting::EapMethodPwd },
+    { "TLS", NetworkManager::Security8021xSetting::EapMethodTls },
+    { "TTLS", NetworkManager::Security8021xSetting::EapMethodTtls },
+};
+
+static struct {
+    const char *name;
+    NetworkManager::Security8021xSetting::AuthMethod method;
+} constexpr const auth_methods[] = {
+    { "GTC", NetworkManager::Security8021xSetting::AuthMethodGtc },
+    { "MSCHAP", NetworkManager::Security8021xSetting::AuthMethodMschap },
+    { "MSCHAPV2", NetworkManager::Security8021xSetting::AuthMethodMschapv2 },
+    { "PAP", NetworkManager::Security8021xSetting::AuthMethodPap },
+};
+#endif
+
+void Qrca::connectToWifi(const QString &wifiCode)
+{
+    MeCardParser p;
+    p.parse(wifiCode);
+
+#if HAVE_NETWORKMANAGER
+    using namespace NetworkManager;
+    auto settings = ConnectionSettings::Ptr(new ConnectionSettings(ConnectionSettings::Wireless));
+    settings->setId(p.value(u"S"));
+    settings->setUuid(ConnectionSettings::createNewUuid());
+    settings->setAutoconnect(true);
+
+    auto wifiSetting = settings->setting(Setting::Wireless).dynamicCast<WirelessSetting>();
+    wifiSetting->setInitialized(true);
+    wifiSetting = settings->setting(Setting::Wireless).dynamicCast<WirelessSetting>();
+    wifiSetting->setSsid(p.value(u"S").toUtf8());
+
+    auto wifiSecurity = settings->setting(Setting::WirelessSecurity).dynamicCast<WirelessSecuritySetting>();
+    const auto securityType = p.value(u"T");
+
+    if (!securityType.isEmpty() && securityType != QLatin1String("nopass")) {
+        wifiSecurity->setInitialized(true);
+        wifiSetting->setSecurity(QStringLiteral("802-11-wireless-security"));
+    }
+
+    if (securityType == QLatin1String("WPA") || securityType == QLatin1String("WEP")) {
+        wifiSecurity->setKeyMgmt(NetworkManager::WirelessSecuritySetting::WpaPsk);
+        wifiSecurity->setPsk(p.value(u"P"));
+        wifiSecurity->setPskFlags(NetworkManager::Setting::AgentOwned);
+    } else if (securityType == QLatin1String("WPA2-EAP")) {
+        wifiSecurity->setKeyMgmt(NetworkManager::WirelessSecuritySetting::WpaEap);
+        auto sec8021x = settings->setting(Setting::Security8021x).dynamicCast<Security8021xSetting>();
+        sec8021x->setAnonymousIdentity(p.value(u"A"));
+        sec8021x->setIdentity(p.value(u"I"));
+        sec8021x->setPassword(p.value(u"P"));
+
+        const auto eapMethod = p.value(u"E");
+        for (const auto &method : eap_methods) {
+            if (eapMethod == QLatin1String(method.name)) {
+                sec8021x->setEapMethods({method.method});
+                break;
+            }
+        }
+        const auto phase2AuthMethod = p.value(u"PH2");
+        for (const auto &method : auth_methods) {
+            if (eapMethod == QLatin1String(method.name)) {
+                sec8021x->setPhase2AuthMethod(method.method);
+                break;
+            }
+        }
+    }
+
+    NetworkManager::addConnection(settings->toMap());
+#endif
 }

@@ -3,6 +3,9 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 
+if (TARGET KF5::NetworkManagerQt)
+    set(HAVE_NETWORKMANAGER TRUE)
+endif()
 configure_file(config-qrca.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-qrca.h)
 
 set(qrca_SRCS
@@ -28,6 +31,10 @@ elseif (TARGET ZXing::Core)
     target_link_libraries(qrca ZXing::Core)
 endif()
 
+if (TARGET KF5::NetworkManagerQt)
+    target_link_libraries(qrca KF5::NetworkManagerQt)
+endif()
+
 target_compile_definitions(qrca PRIVATE -DQT_NO_CAST_FROM_ASCII)
 
 if(ANDROID)
@@ -46,6 +53,7 @@ if(ANDROID)
         help-feedback
         internet-services
         itinerary
+        network-wireless
     )
 else()
     target_link_libraries(qrca KF5::KIOGui KF5::Service)

@@ -8,7 +8,7 @@ include(ECMAddTests)
 
 find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Test)
 
-include_directories(../src)
+include_directories(../src ${CMAKE_CURRENT_BINARY_DIR}/../src)
 
 ecm_add_test(qrcatest.cpp ../src/Qrca.cpp ../src/QrCodeContent.cpp ../src/mecardparser.cpp
              TEST_NAME qrcatest
@@ -21,6 +21,9 @@ elseif (TARGET ZXing::Core)
 endif()
 if (NOT ANDROID)
     target_link_libraries(qrcatest KF5::KIOGui KF5::Service)
+endif()
+if (TARGET KF5::NetworkManagerQt)
+    target_link_libraries(qrcatest KF5::NetworkManagerQt)
 endif()
 
 ecm_add_test(mecardparsertest.cpp ../src/mecardparser.cpp TEST_NAME mecardparsertest LINK_LIBRARIES Qt5::Core Qt5::Test)
