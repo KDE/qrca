@@ -32,6 +32,7 @@ public:
     static Q_INVOKABLE QString getVCardName(const QString &text) noexcept;
     Q_INVOKABLE void copyToClipboard(const QrCodeContent &content) noexcept;
     Q_INVOKABLE bool hasApplication(const QString &appId) const;
+    Q_INVOKABLE QString applicationIconName(const QString &appId) const;
     Q_INVOKABLE void openInApplication(const QrCodeContent &content, const QString &appId);
     Q_INVOKABLE QString wifiName(const QString &wifiSetting) const;
     Q_INVOKABLE bool canConnectToWifi() const;

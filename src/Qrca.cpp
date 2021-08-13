@@ -157,6 +157,16 @@ bool Qrca::hasApplication(const QString &appId) const
 #endif
 }
 
+QString Qrca::applicationIconName(const QString &appId) const
+{
+#ifndef Q_OS_ANDROID
+    const auto service = KService::serviceByDesktopName(appId);
+    return service ? service->icon() : QString();
+#else
+    return {};
+#endif
+}
+
 void Qrca::openInApplication(const QrCodeContent &content, const QString &appId)
 {
 #ifndef Q_OS_ANDROID

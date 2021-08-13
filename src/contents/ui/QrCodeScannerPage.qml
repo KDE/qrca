@@ -156,7 +156,9 @@ Kirigami.Page {
                     case QrCodeContent.OtpToken:
                         return "document-encrypt";
                     case QrCodeContent.TransportTicket:
-                        return "itinerary";
+                        return Qrca.applicationIconName("org.kde.itinerary");
+                    case QrCodeContent.HealthCertificate:
+                        return Qrca.applicationIconName("org.kde.vakzination");
                     case QrCodeContent.WifiSetting:
                         return "network-wireless";
                     }
