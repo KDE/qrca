@@ -275,7 +275,7 @@ void Qrca::connectToWifi(const QString &wifiCode)
         }
         const auto phase2AuthMethod = p.value(u"PH2");
         for (const auto &method : auth_methods) {
-            if (eapMethod == QLatin1String(method.name)) {
+            if (phase2AuthMethod == QLatin1String(method.name)) {
                 sec8021x->setPhase2AuthMethod(method.method);
                 break;
             }
