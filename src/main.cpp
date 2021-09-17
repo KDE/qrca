@@ -50,7 +50,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     KAboutData aboutData(
         QStringLiteral("qrca"), i18n("Qrca"), QStringLiteral("0.1"), i18n("A simple QR scanner"), KAboutLicense::GPL_V3, i18n("Copyright 2016-2019 Qrca and Kaidan authors"), QString(), QStringLiteral("https://www.plasma-mobile.org"));
     // overwrite default-generated values of organizationDomain & desktopFileName
-    aboutData.addAuthor(i18n("Jonah Brüchert"), QString(), QStringLiteral("jbb@kaidan.im"), QStringLiteral("jbbgameich.github.io"));
+    aboutData.addAuthor(i18n("Jonah Brüchert"), QString(), QStringLiteral("jbb@kaidan.im"), QStringLiteral("https://jbbgameich.github.io"));
     aboutData.addAuthor(i18n("Simon Schmeißer"));
     aboutData.setOrganizationDomain("kde.org");
     aboutData.setDesktopFileName(QStringLiteral("org.kde.qrca"));
