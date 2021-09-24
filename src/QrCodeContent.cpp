@@ -62,8 +62,14 @@ static bool isBase45(const QString &text)
 
 static bool isHealtCertificate(const QString &text)
 {
-    // EU DGC
-    return text.size() > 400 && text.startsWith(QLatin1String("HC1:")) && isBase45(text);
+    return
+        // EU DGC
+        (text.size() > 400 && text.startsWith(QLatin1String("HC1:")) && isBase45(text)) ||
+        // SMART Health Cards (SHC)
+        (text.size() > 1000 && text.startsWith(QLatin1String("shc:/")) && std::all_of(text.begin() + 10, text.end(), [](QChar c) {
+            return c.row() == 0 && c.cell() >= '0' && c.cell() <= '9';
+        }))
+    ;
 }
 
 static bool isTransportTicket(const QByteArray &data)
