@@ -18,4 +18,5 @@ Dependencies:
     'frameworks/purpose': '@stable'
 
 - 'on': ['Linux']
+  'require':
     'frameworks/networkmanager-qt': '@stable'
