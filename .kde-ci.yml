@@ -11,9 +11,11 @@ Dependencies:
     'frameworks/kcoreaddons': '@stable'
     'frameworks/knotifications': '@stable'
 
-- 'on': ['Linux']
+- 'on': ['Linux', 'FreeBSD']
   'require':
     'frameworks/kservice': '@stable'
     'frameworks/kio': '@stable'
     'frameworks/purpose': '@stable'
+
+- 'on': ['Linux']
     'frameworks/networkmanager-qt': '@stable'
