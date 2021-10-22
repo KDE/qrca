@@ -6,12 +6,12 @@
  */
 
 import QtQuick 2.1
-import org.kde.kirigami 2.11 as Kirigami
+import org.kde.kirigami 2.19 as Kirigami
 import QtQuick.Controls 2.0 as Controls
 import org.kde.qrca 1.0
 
 Kirigami.ApplicationWindow {
-    id: root
+    id: window 
 
     title: i18n("QR Code Scanner")
 
@@ -22,7 +22,9 @@ Kirigami.ApplicationWindow {
     Component.onCompleted: {
         Qrca.passiveNotificationRequested.connect(passiveNotification)
         if (Qrca.encodeText) {
-            pageStack.layers.push(qrCodeEncoderPage)
+            qrCodeEncoderAction.trigger()
+        } else {
+            qrCodeScannerAction.trigger()
         }
     }
 
@@ -30,38 +32,40 @@ Kirigami.ApplicationWindow {
         id: mainPagePool
     }
 
+    readonly property list<Kirigami.PagePoolAction> navigationActions: [
+        Kirigami.PagePoolAction {
+            id: qrCodeScannerAction
+            text: i18n("Scan")
+            icon.name: "camera-photo-symbolic"
+            pagePool: mainPagePool
+            page: "QrCodeScannerPage.qml"
+        },
+        Kirigami.PagePoolAction {
+            id: qrCodeEncoderAction
+            text: i18n("Create")
+            icon.name: "document-new-symbolic"
+            pagePool: mainPagePool
+            page: "QrCodeEncoderPage.qml"
+        },
+        Kirigami.PagePoolAction {
+            text: i18n("About")
+            icon.name: "help-feedback"
+            pagePool: mainPagePool
+            page: "AboutPage.qml"
+        }
+    ]
+
     globalDrawer: Kirigami.GlobalDrawer {
         title: i18n("QR-Code Scanner")
-        titleIcon: "view-barcode"
+        isMenu: window.wideScreen
+        actions: window.wideScreen ? navigationActions : []
+        enabled: false
+    }
 
-        actions: [
-            Kirigami.PagePoolAction {
-                text: i18n("Scan")
-                icon.name: "camera-photo-symbolic"
-                pagePool: mainPagePool
-                page: "QrCodeScannerPage.qml"
-            },
-            Kirigami.PagePoolAction {
-                text: i18n("Create")
-                icon.name: "document-new-symbolic"
-                pagePool: mainPagePool
-                page: "QrCodeEncoderPage.qml"
-            },
-            Kirigami.PagePoolAction {
-                text: i18n("About")
-                icon.name: "help-feedback"
-                pagePool: mainPagePool
-                page: "AboutPage.qml"
-            }
-
-        ]
+    footer: Kirigami.NavigationTabBar {
+        visible: !window.wideScreen
+        actions: navigationActions
     }
 
     contextDrawer: Kirigami.ContextDrawer {}
-
-    Component {id: qrCodeScannerPage; QrCodeScannerPage {}}
-    Component {id: qrCodeEncoderPage; QrCodeEncoderPage {}}
-    Component {id: aboutPage; AboutPage {}}
-
-    pageStack.initialPage: qrCodeScannerPage
 }
