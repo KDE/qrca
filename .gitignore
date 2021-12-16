@@ -1,2 +1,9 @@
-.clang-format
 CMakeLists.txt.user
+
+# LSP & IDE
+/.clang-format
+/compile_commands.json
+.clangd
+.cache
+.idea
+/cmake-build*
