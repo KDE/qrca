@@ -1,9 +1,9 @@
 {
     "id": "org.kde.qrca",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.12",
+    "runtime-version": "5.15-21.08",
     "sdk": "org.kde.Sdk",
-    "command": "orca",
+    "command": "qrca",
     "tags": ["nightly"],
     "desktop-file-name-suffix": " (Nightly)",
     "finish-args": [
@@ -11,61 +11,13 @@
         "--share=network",
         "--socket=x11",
         "--socket=wayland",
-        "--device=dri",
+        "--device=all",
         "--filesystem=home",
         "--talk-name=org.freedesktop.Notifications"
     ],
     "separate-locales": false,
 
     "modules": [
-        {
-            "name": "gstreamer",
-            "buildsystem": "meson",
-            "builddir": true,
-            "config-opts": [
-                "-Ddisable_gtkdoc=true"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "branch": "1.16.0",
-                    "url": "git://anongit.freedesktop.org/gstreamer/gstreamer",
-                    "commit": "89c221a6972513f629c969f5485f37e77ccfa6e1"
-                }
-            ]
-        },
-        {
-            "name": "gst-plugins-base",
-            "buildsystem": "meson",
-            "builddir": true,
-            "config-opts": [
-                "-Ddisable_gtkdoc=true"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "branch": "1.16.0",
-                    "url": "git://anongit.freedesktop.org/gstreamer/gst-plugins-base",
-                    "commit": "e0f8f635a96a3639be4d519fcf234b619bb74ca6"
-                }
-            ]
-        },
-        {
-            "name": "gst-plugins-good",
-            "buildsystem": "meson",
-            "builddir": true,
-            "config-opts": [
-                "-Ddisable_gtkdoc=true"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "branch": "1.16.0",
-                    "url": "git://anongit.freedesktop.org/gstreamer/gst-plugins-good",
-                    "commit": "646dc1ef9b92841e235d10a8262882b6e7d97422"
-                }
-            ]
-        },
         {
             "name": "gst-plugins-bad",
             "buildsystem": "meson",
@@ -75,31 +27,28 @@
             ],
             "sources": [
                 {
-                    "type": "git",
-                    "branch": "1.16.0",
-                    "url": "git://anongit.freedesktop.org/gstreamer/gst-plugins-bad",
-                    "commit": "5fde70bb63a1cbf6f734fb2429e74ffb53126217"
+                    "type": "archive",
+                    "url": "https://gstreamer.freedesktop.org/src/gst-plugins-bad/gst-plugins-bad-1.18.5.tar.xz",
+                    "sha256": "a164923b94f0d08578a6fcaeaac6e0c05da788a46903a1086870e9ca45ad678e"
                 }
+            ],
+            "cleanup": [
+                "/include",
+                "/lib/*.la",
+                "/lib/gstreamer-1.0/*.la",
+                "/lib/gstreamer-1.0/include",
+                "/lib/pkgconfig",
+                "/share/gtk-doc"
             ]
         },
         {
             "name": "zxing-cpp",
             "buildsystem": "cmake-ninja",
+            "config-opts": [ "-DBUILD_SHARED_LIBS=ON", "-DBUILD_BLACKBOX_TESTS=OFF", "-DBUILD_EXAMPLES=OFF" ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://github.com/nu-book/zxing-cpp"
-                }
-            ]
-        },
-        {
-            "name": "purpose",
-            "buildsystem": "cmake-ninja",
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "git://anongit.kde.org/purpose.git",
-                    "tag": "v5.58.0"
                 }
             ]
         },
