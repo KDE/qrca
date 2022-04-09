@@ -285,3 +285,12 @@ void Qrca::connectToWifi(const QString &wifiCode)
     NetworkManager::addConnection(settings->toMap());
 #endif
 }
+
+QrCodeContent Qrca::resultContent(const Prison::ScanResult &result)
+{
+    if (result.hasBinaryData()) {
+        return QrCodeContent(result.binaryData(), result.format());
+    } else {
+        return QrCodeContent(result.text(), result.format());
+    }
+}

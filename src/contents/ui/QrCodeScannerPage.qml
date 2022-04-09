@@ -10,6 +10,7 @@ import QtQuick.Controls 2.3 as Controls
 import QtMultimedia 5.9
 import org.kde.kirigami 2.2 as Kirigami
 import QtQuick.Layouts 1.3
+import org.kde.prison.scanner 1.0 as Prison
 
 import org.kde.qrca 1.0
 
@@ -210,15 +211,19 @@ Kirigami.Page {
         fillMode: VideoOutput.PreserveAspectCrop
     }
 
-    QrCodeScannerFilter {
+    Prison.VideoScanner {
         id: scannerFilter
-        onScanningSucceeded: {
-            resultSheet.tag = result
-            if (!resultSheet.sheetOpen)
+
+        onResultContentChanged: result => {
+
+            if (!result.hasContent) {
+                return
+            }
+
+            resultSheet.tag = Qrca.resultContent(result)
+            if (!resultSheet.sheetOpen) {
                 resultSheet.open()
-        }
-        onUnsupportedFormatReceived: {
-            passiveNotification(qsTr("The camera format '%1' is not supported.").arg(format))
+            }
         }
     }
 
@@ -228,9 +233,5 @@ Kirigami.Page {
             focusMode: Camera.FocusContinuous
             focusPointMode: Camera.FocusPointCenter
         }
-    }
-
-    Component.onCompleted: {
-        scannerFilter.setCameraDefaultVideoFormat(camera);
     }
 }

@@ -12,13 +12,13 @@
 
 QrCodeContent::QrCodeContent() = default;
 
-QrCodeContent::QrCodeContent(const QByteArray &content, ZXing::BarcodeFormat format)
+QrCodeContent::QrCodeContent(const QByteArray &content, Prison::Format::BarcodeFormat format)
     : m_content(content)
     , m_format(format)
 {
 }
 
-QrCodeContent::QrCodeContent(const QString &content, ZXing::BarcodeFormat format)
+QrCodeContent::QrCodeContent(const QString &content, Prison::Format::BarcodeFormat format)
     : m_content(content)
     , m_format(format)
 {
@@ -148,7 +148,7 @@ QrCodeContent::ContentType QrCodeContent::contentType() const
         return ContentType::OtpToken;
     else if (isHealtCertificate(text))
         return ContentType::HealthCertificate;
-    else if (m_format == ZXing::BarcodeFormat::EAN_13 && isGlobalTradeItemNumber(text)) {
+    else if (m_format == Prison::Format::EAN13 && isGlobalTradeItemNumber(text)) {
         if (text.startsWith(QLatin1String("978"))) {
             return ContentType::ISBN;
         }
@@ -156,11 +156,9 @@ QrCodeContent::ContentType QrCodeContent::contentType() const
             return ContentType::Text;
         }
         return ContentType::EAN;
-    }
-    else if (isTransportTicket(text)) {
+    } else if (isTransportTicket(text)) {
         return ContentType::TransportTicket;
-    }
-    else if (isWifiSetting(text)) {
+    } else if (isWifiSetting(text)) {
         return ContentType::WifiSetting;
     }
 

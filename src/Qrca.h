@@ -10,6 +10,7 @@
 #define QRCA_H
 
 #include <KAboutData>
+#include <Prison/ScanResult>
 #include <QImage>
 #include <QObject>
 #include <QUrl>
@@ -37,6 +38,7 @@ public:
     Q_INVOKABLE QString wifiName(const QString &wifiSetting) const;
     Q_INVOKABLE bool canConnectToWifi() const;
     Q_INVOKABLE void connectToWifi(const QString &wifiCode);
+    Q_INVOKABLE QrCodeContent resultContent(const Prison::ScanResult &result);
 
     QString encodeText() const noexcept;
     void setEncodeText(const QString &encodeText) noexcept;

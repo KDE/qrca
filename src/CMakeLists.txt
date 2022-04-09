@@ -11,9 +11,6 @@ configure_file(config-qrca.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-qrca.h)
 set(qrca_SRCS
     main.cpp
     Qrca.cpp
-    QrCodeScannerFilter.cpp
-    QrCodeVideoFrame.cpp
-    QrCodeDecoder.cpp
     QrCodeContent.cpp
     mecardparser.cpp
     notificationmanager.cpp
@@ -23,7 +20,7 @@ set(qrca_SRCS
 
 add_executable(qrca ${qrca_SRCS})
 
-target_link_libraries(qrca Qt::Core Qt::Qml Qt::Quick Qt::Svg Qt::Multimedia Qt::Concurrent KF5::I18n KF5::Contacts KF5::CoreAddons KF5::Notifications)
+target_link_libraries(qrca Qt::Core Qt::Qml Qt::Quick Qt::Svg Qt::Multimedia Qt::Concurrent KF5::I18n KF5::Contacts KF5::CoreAddons KF5::Notifications KF5::PrisonScanner)
 
 if (TARGET ZXing::ZXing)
     target_link_libraries(qrca ZXing::ZXing)

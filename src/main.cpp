@@ -22,7 +22,7 @@
 #include <KLocalizedString>
 
 #include "QrCodeContent.h"
-#include "QrCodeScannerFilter.h"
+// #include "QrCodeScannerFilter.h"
 #include "Qrca.h"
 #include "notificationmanager.h"
 #include "clipboard.h"
@@ -62,7 +62,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QGuiApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.qrca")));
     aboutData.setProgramLogo(app.windowIcon());
 
-    qmlRegisterType<QrCodeScannerFilter>("org.kde.qrca", 1, 0, "QrCodeScannerFilter");
     qmlRegisterUncreatableType<QrCodeContent>("org.kde.qrca", 1, 0, "QrCodeContent", {});
     qmlRegisterSingletonType<NotificationManager>("org.kde.qrca", 1, 0, "NotificationManager", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
         Q_UNUSED(engine)

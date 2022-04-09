@@ -8,7 +8,7 @@
 
 #include <QVariant>
 
-#include <ZXing/BarcodeFormat.h>
+#include <Prison/Format>
 
 /** Result of a barcode scan.
  *  Can contain either text or binary data.
@@ -21,8 +21,8 @@ class QrCodeContent
     Q_PROPERTY(bool isPlainText READ isPlainText)
 public:
     QrCodeContent();
-    explicit QrCodeContent(const QByteArray &content, ZXing::BarcodeFormat format);
-    explicit QrCodeContent(const QString &content, ZXing::BarcodeFormat format);
+    explicit QrCodeContent(const QByteArray &content, Prison::Format::BarcodeFormat format);
+    explicit QrCodeContent(const QString &content, Prison::Format::BarcodeFormat format);
     ~QrCodeContent();
 
     enum ContentType {
@@ -47,7 +47,7 @@ public:
 
 private:
     QVariant m_content;
-    ZXing::BarcodeFormat m_format;
+    Prison::Format::BarcodeFormat m_format;
 };
 
 Q_DECLARE_METATYPE(QrCodeContent)

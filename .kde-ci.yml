@@ -10,6 +10,7 @@ Dependencies:
     'frameworks/kcontacts': '@stable'
     'frameworks/kcoreaddons': '@stable'
     'frameworks/knotifications': '@stable'
+    'frameworks/prison': '@stable'
 
 - 'on': ['Linux', 'FreeBSD']
   'require':
