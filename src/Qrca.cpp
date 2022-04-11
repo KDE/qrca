@@ -139,7 +139,7 @@ QUrl Qrca::save(const QImage &image) noexcept
 void Qrca::copyToClipboard(const QrCodeContent &content) noexcept
 {
     QClipboard *clipboard = QGuiApplication::clipboard();
-    if (content.contentType() == QrCodeContent::Binary) {
+    if (!content.isPlainText()) {
         auto md = new QMimeData;
         md->setData(QStringLiteral("application/octet-stream"), content.binaryContent());
         clipboard->setMimeData(md);
