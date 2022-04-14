@@ -26,6 +26,7 @@
   <name xml:lang="sl">Skener črtne kode</name>
   <name xml:lang="sv">Streckkodsläsare</name>
   <name xml:lang="tg">Сканнери рамзи наворӣ</name>
+  <name xml:lang="tr">Barkod Tarayıcı</name>
   <name xml:lang="uk">Засіб сканування штрихкодів</name>
   <name xml:lang="x-test">xxBarcode Scannerxx</name>
   <name xml:lang="zh-CN">二维码扫描器</name>
@@ -54,6 +55,7 @@
   <summary xml:lang="sl">Skenira in kreira kode QR</summary>
   <summary xml:lang="sv">Läs och skapa QR-koder</summary>
   <summary xml:lang="tg">Рамзҳои QR-ро мушоҳида ё эҷод намоед</summary>
+  <summary xml:lang="tr">Kare kod tarayın ve oluşturun</summary>
   <summary xml:lang="uk">Сканування і створення QR-кодів</summary>
   <summary xml:lang="x-test">xxScan and create QR-Codesxx</summary>
   <summary xml:lang="zh-CN">扫描和创建二维码</summary>
@@ -85,6 +87,7 @@
   <developer_name xml:lang="sl">Skupnost KDE</developer_name>
   <developer_name xml:lang="sv">KDE-gemenskapen</developer_name>
   <developer_name xml:lang="tg">Ҷамъияти KDE</developer_name>
+  <developer_name xml:lang="tr">KDE Topluluğu</developer_name>
   <developer_name xml:lang="uk">Спільнота KDE</developer_name>
   <developer_name xml:lang="x-test">xxKDE Communityxx</developer_name>
   <developer_name xml:lang="zh-CN">KDE 社区</developer_name>
@@ -115,6 +118,7 @@
     <p xml:lang="sl">S telefonom skenirajte kode QR na telefonih in prenosnikih ter ustvarite svoje za preprosto izmenjavo podatkov med napravami.</p>
     <p xml:lang="sv">Läs av QR-koder med kameran på telefoner och bärbara datorer, och skapa egna för att enkelt dela data mellan apparater.</p>
     <p xml:lang="tg">Рамзҳои QR-ро ба воситаи камераи телефон ё ноутбуки худ мушоҳида кунед ва рамзҳои худро барои мубодилаи иттилоот байни дастгоҳҳо ба осонӣ эҷод намоед.</p>
+    <p xml:lang="tr">Telefon veya dizüstünüzün kamerasıyla kare kodları tarayın ve aygıtlar arasında kolay veri aktarımı için kendi kodlarınızı oluşturun.</p>
     <p xml:lang="uk">Скануйте QR-коди за допомогою вашої фотокамери на телефоні або ноутбуці і створюйте ваші власні коди для передавання даних між пристроями.</p>
     <p xml:lang="x-test">xxScan QR-Codes with your camera on phones and laptops, and create your own for easily sharing data between devices.xx</p>
     <p xml:lang="zh-CN">使用手机和笔记本电脑的摄像头扫描二维码，还可以轻松创建您自己的二维码以便在不同设备之间分享数据。</p>
