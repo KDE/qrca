@@ -2,10 +2,10 @@
 # SPDX-FileCopyrightText: 2020 Nicolas Fella <nicolas.fella@gmx.de>
 #
 # SPDX-License-Identifier: BSD-2-Clause
+cmake_minimum_required(VERSION 3.16)
 
 project(qrca VERSION 0.1)
 
-cmake_minimum_required(VERSION 3.16)
 set(QT_MIN_VERSION "5.15.0")
 set(KF5_MIN_VERSION "5.94.0")
 set(KDE_COMPILERSETTINGS_LEVEL "5.82")
