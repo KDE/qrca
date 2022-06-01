@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 
-project(qrca)
+project(qrca VERSION 0.1)
 
 cmake_minimum_required(VERSION 3.16)
 set(QT_MIN_VERSION "5.15.0")
@@ -38,6 +38,10 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_subdirectory(src)
+
+if (ANDROID)
+    configure_file(${CMAKE_CURRENT_SOURCE_DIR}/android/version.gradle.in ${CMAKE_BINARY_DIR}/version.gradle)
+endif()
 
 if (BUILD_TESTING)
     add_subdirectory(tests)
