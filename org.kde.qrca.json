@@ -48,7 +48,22 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://github.com/nu-book/zxing-cpp"
+                    "url": "https://github.com/nu-book/zxing-cpp",
+                    "tag": "v1.3.0"
+                }
+            ]
+        },
+        {
+            "name": "prison",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/prison.git",
+                    "tag": "v5.96.0"
                 }
             ]
         },
