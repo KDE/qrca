@@ -27,7 +27,6 @@ class Qrca : public QObject
 public:
     Qrca();
 
-    Q_INVOKABLE QImage encode(const QString &text, const int &width) noexcept;
     static Q_INVOKABLE QUrl save(const QImage &image) noexcept;
     static Q_INVOKABLE void saveVCard(const QString &text) noexcept;
     static Q_INVOKABLE QString getVCardName(const QString &text) noexcept;

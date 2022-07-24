@@ -14,11 +14,6 @@ ecm_add_test(qrcatest.cpp ../src/Qrca.cpp ../src/QrCodeContent.cpp ../src/mecard
              TEST_NAME qrcatest
              LINK_LIBRARIES Qt::Test Qt::Core Qt::Gui KF5::I18n KF5::Contacts KF5::CoreAddons KF5::PrisonScanner
 )
-if (TARGET ZXing::ZXing)
-     target_link_libraries(qrcatest ZXing::ZXing)
-elseif (TARGET ZXing::Core)
-     target_link_libraries(qrcatest ZXing::Core)
-endif()
 if (NOT ANDROID)
     target_link_libraries(qrcatest KF5::KIOGui KF5::Service)
 endif()

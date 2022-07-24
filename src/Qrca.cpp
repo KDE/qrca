@@ -37,10 +37,6 @@
 #include <KContacts/VCardConverter>
 #include <KLocalizedString>
 
-#include <ZXing/BarcodeFormat.h>
-#include <ZXing/BitMatrix.h>
-#include <ZXing/MultiFormatWriter.h>
-
 #include "Qrca.h"
 #include "QrCodeContent.h"
 #include "mecardparser.h"
@@ -94,29 +90,6 @@ QString Qrca::getVCardName(const QString &text) noexcept
     KContacts::Addressee adressee = converter.parseVCard(text.toUtf8());
 
     return adressee.realName();
-}
-
-QImage Qrca::encode(const QString &text, const int &width) noexcept
-{
-    try {
-        const ZXing::MultiFormatWriter writer(ZXing::BarcodeFormat::QR_CODE);
-
-        const auto matrix = writer.encode(text.toStdWString(), width, width);
-
-        QImage image(width, width, QImage::Format_ARGB32);
-
-        for (int y = 0; y < matrix.height(); ++y) {
-            for (int x = 0; x < matrix.width(); ++x) {
-                image.setPixel(y, x, matrix.get(x, y) ? qRgb(0, 0, 0) : qRgb(255, 255, 255));
-            }
-        }
-
-        return image;
-    } catch (const std::invalid_argument &e) {
-        passiveNotificationRequested(i18n("Generating the QR-Code failed: ") + QString::fromLatin1(e.what()));
-    };
-
-    return {};
 }
 
 QUrl Qrca::save(const QImage &image) noexcept

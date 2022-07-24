@@ -10,6 +10,7 @@ import QtMultimedia 5.9
 import org.kde.kirigami 2.7 as Kirigami
 import QtQuick.Layouts 1.3
 import org.kde.qrca 1.0
+import org.kde.prison 1.0 as Prison
 
 Kirigami.ScrollablePage {
     title: i18n("Create QR-Code")
@@ -48,14 +49,14 @@ Kirigami.ScrollablePage {
     ColumnLayout {
         spacing: 50
 
-        Kirigami.Icon {
+        Prison.Barcode {
             id: codeView
             Layout.fillWidth: true
             Layout.alignment: Qt.AlignCenter
             Layout.maximumWidth: Kirigami.Units.gridUnit * 16
-
-            implicitHeight: width
-            source: Qrca.encode(inputText.text.length > 0 ? inputText.text: " ", width)
+            Layout.preferredHeight: width
+            barcodeType: Prison.Barcode.QRCode
+            content: inputText.text.length > 0 ? inputText.text: "https://www.kde.org"
         }
 
         Kirigami.ActionTextField {
