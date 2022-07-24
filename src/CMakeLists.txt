@@ -50,4 +50,4 @@ else()
     target_link_libraries(qrca KF5::KIOGui KF5::Service)
 endif()
 
-install(TARGETS qrca ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS qrca ${KF_INSTALL_TARGETS_DEFAULT_ARGS})

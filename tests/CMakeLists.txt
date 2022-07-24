@@ -6,7 +6,7 @@
 
 include(ECMAddTests)
 
-find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Test)
+find_package(Qt${QT_MAJOR_VERSION} ${REQUIRED_QT_VERSION} CONFIG REQUIRED Test)
 
 include_directories(../src ${CMAKE_CURRENT_BINARY_DIR}/../src)
 
@@ -21,4 +21,4 @@ if (TARGET KF5::NetworkManagerQt)
     target_link_libraries(qrcatest KF5::NetworkManagerQt)
 endif()
 
-ecm_add_test(mecardparsertest.cpp ../src/mecardparser.cpp TEST_NAME mecardparsertest LINK_LIBRARIES Qt5::Core Qt5::Test)
+ecm_add_test(mecardparsertest.cpp ../src/mecardparser.cpp TEST_NAME mecardparsertest LINK_LIBRARIES Qt::Core Qt::Test)
