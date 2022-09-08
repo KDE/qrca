@@ -125,5 +125,5 @@
     <p xml:lang="zh-TW">使用手機或筆電上的相機掃描 QR 碼，並建立自己的 QR 碼以方便在裝置間傳輸。</p>
   </description>
   <launchable type="desktop-id">org.kde.qrca.desktop</launchable>
-  <content_rating type="oars-1.1" />
+  <content_rating type="oars-1.1"/>
 </component>
