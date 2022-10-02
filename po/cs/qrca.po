@@ -1,0 +1,229 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the qrca package.
+# Vit Pelcak <vit@pelcak.org>, 2019, 2020, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: qrca\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-07-26 00:48+0000\n"
+"PO-Revision-Date: 2021-08-16 12:38+0200\n"
+"Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
+"Language-Team: Czech <kde-i18n-doc@kde.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 21.04.3\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Vít Pelčák"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "vit@pelcak.org"
+
+#: src/contents/ui/main.qml:16
+#, kde-format
+msgid "QR Code Scanner"
+msgstr "Čtečka kódů QR"
+
+#: src/contents/ui/main.qml:38
+#, kde-format
+msgid "Scan"
+msgstr "Přečíst"
+
+#: src/contents/ui/main.qml:45
+#, kde-format
+msgid "Create"
+msgstr "Vytvořit"
+
+#: src/contents/ui/main.qml:51
+#, kde-format
+msgid "About"
+msgstr "O aplikaci"
+
+#: src/contents/ui/main.qml:59
+#, kde-format
+msgid "QR-Code Scanner"
+msgstr "Čtečka kódů QR"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:16
+#, kde-format
+msgid "Create QR-Code"
+msgstr "Vytvořit kód QR"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:27
+#, kde-format
+msgid "Save"
+msgstr "Uložit"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:33
+#, kde-format
+msgid "Saved image to %1"
+msgstr "Obrázek byl uložen do %1"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:33
+#, kde-format
+msgid "Open Externally"
+msgstr "Otevřít externě"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:37
+#, kde-format
+msgid "Share"
+msgstr "Sdílet"
+
+#: src/contents/ui/QrCodeScannerPage.qml:26
+#: src/contents/ui/QrCodeScannerPage.qml:187
+#, kde-format
+msgid "Select Camera"
+msgstr "Vyberte fotoaparát"
+
+#: src/contents/ui/QrCodeScannerPage.qml:46
+#, kde-format
+msgid "Text found"
+msgstr "Nalezen text"
+
+#: src/contents/ui/QrCodeScannerPage.qml:48
+#, kde-format
+msgid "URL found"
+msgstr "URL nalezena"
+
+#: src/contents/ui/QrCodeScannerPage.qml:50
+#, kde-format
+msgid "Contact found"
+msgstr "Kontakt byl nalezen"
+
+#: src/contents/ui/QrCodeScannerPage.qml:52
+#, kde-format
+msgid "OTP URI found"
+msgstr "OTP URI nalezena"
+
+#: src/contents/ui/QrCodeScannerPage.qml:54
+#, kde-format
+msgid "Binary data found"
+msgstr "Nalezena binární data"
+
+#: src/contents/ui/QrCodeScannerPage.qml:56
+#, kde-format
+msgid "Health certificate found"
+msgstr ""
+
+#: src/contents/ui/QrCodeScannerPage.qml:58
+#, kde-format
+msgid "Transport ticket found"
+msgstr ""
+
+#: src/contents/ui/QrCodeScannerPage.qml:60
+#, kde-format
+msgid "ISBN found"
+msgstr "ISBN nalezena"
+
+#: src/contents/ui/QrCodeScannerPage.qml:62
+#, kde-format
+msgid "International Article Number found"
+msgstr "Mezinárodní číslo článku nalezeno"
+
+#: src/contents/ui/QrCodeScannerPage.qml:64
+#, kde-format
+msgid "Wi-Fi settings found"
+msgstr "Nalezeno nastavení WiFi"
+
+#: src/contents/ui/QrCodeScannerPage.qml:81
+#, kde-format
+msgid "<binary data>"
+msgstr "<binární data>"
+
+#: src/contents/ui/QrCodeScannerPage.qml:95
+#, kde-format
+msgid "Open"
+msgstr "Otevřít"
+
+#: src/contents/ui/QrCodeScannerPage.qml:97
+#, kde-format
+msgid "Save contact"
+msgstr "Uložit kontakt"
+
+#: src/contents/ui/QrCodeScannerPage.qml:99
+#, kde-format
+msgid "Open OTP client"
+msgstr "Spustit klienta OTP"
+
+#: src/contents/ui/QrCodeScannerPage.qml:101
+#, kde-format
+msgid "Open Food Facts"
+msgstr "Otevřít fakta o potravinách"
+
+#: src/contents/ui/QrCodeScannerPage.qml:103
+#, kde-format
+msgid "Wikipedia Book Sources"
+msgstr "Zdroje knih Wikipedie"
+
+#: src/contents/ui/QrCodeScannerPage.qml:105
+#, kde-format
+msgid "Open KDE Itinerary"
+msgstr "Otevřít Itinerář KDE"
+
+#: src/contents/ui/QrCodeScannerPage.qml:107
+#, kde-format
+msgid "Open in Vakzination"
+msgstr "Otevřít ve Vakzination"
+
+#: src/contents/ui/QrCodeScannerPage.qml:109
+#, kde-format
+msgid "Connect"
+msgstr "Připojit se"
+
+#: src/contents/ui/QrCodeScannerPage.qml:172
+#, kde-format
+msgid "Copy to clipboard"
+msgstr "Zkopírovat do schránky"
+
+#: src/contents/ui/ShareSheet.qml:28
+#, kde-format
+msgid "Share Qr-Code"
+msgstr "Sdílet kód QR"
+
+#: src/contents/ui/ShareSheet.qml:40
+#, kde-format
+msgid "Sharing Failed"
+msgstr "Sdílení selhalo"
+
+#: src/contents/ui/ShareSheet.qml:81
+#, kde-format
+msgid "Share QR-Code"
+msgstr "Sdílet kód QR"
+
+#: src/main.cpp:51
+#, kde-format
+msgid "Qrca"
+msgstr "Qrca"
+
+#: src/main.cpp:51
+#, kde-format
+msgid "A simple QR scanner"
+msgstr "Jednoduchá čtečka QR"
+
+#: src/main.cpp:51
+#, kde-format
+msgid "Copyright 2016-2019 Qrca and Kaidan authors"
+msgstr "Copyright 2016-2019 Autoři Qrca a Kaidan"
+
+#: src/main.cpp:53
+#, kde-format
+msgid "Jonah Brüchert"
+msgstr "Jonah Brüchert"
+
+#: src/main.cpp:54
+#, kde-format
+msgid "Simon Schmeißer"
+msgstr "Simon Schmeißer"
+
+#: src/notificationmanager.cpp:19
+#, kde-format
+msgid "Shared url for image is <a href='%1'>%1</a>"
+msgstr "Sdílená adresa obrázku je <a href='%1'>%1</a>"

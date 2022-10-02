@@ -1,0 +1,248 @@
+# Simon Depiets <sdepiets@gmail.com>, 2019.
+# Xavier Besnard <xavier.besnard@neuf.fr>, 2020, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: qrca\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-07-26 00:48+0000\n"
+"PO-Revision-Date: 2021-12-27 22:34+0100\n"
+"Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
+"Language-Team: French <kde-francophone@kde.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 21.12.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Simon Depiets"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "sdepiets@gmail.com"
+
+#: src/contents/ui/main.qml:16
+#, kde-format
+msgid "QR Code Scanner"
+msgstr "Scanner de code QR"
+
+#: src/contents/ui/main.qml:38
+#, kde-format
+msgid "Scan"
+msgstr "Scanner"
+
+#: src/contents/ui/main.qml:45
+#, kde-format
+msgid "Create"
+msgstr "Créer"
+
+#: src/contents/ui/main.qml:51
+#, kde-format
+msgid "About"
+msgstr "À propos"
+
+#: src/contents/ui/main.qml:59
+#, kde-format
+msgid "QR-Code Scanner"
+msgstr "Scanner de code QR"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:16
+#, kde-format
+msgid "Create QR-Code"
+msgstr "Créer un code QR"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:27
+#, kde-format
+msgid "Save"
+msgstr "Enregistrer"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:33
+#, kde-format
+msgid "Saved image to %1"
+msgstr "Image enregistrée sous %1"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:33
+#, kde-format
+msgid "Open Externally"
+msgstr "Ouvrir avec une application externe"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:37
+#, kde-format
+msgid "Share"
+msgstr "Partager"
+
+#: src/contents/ui/QrCodeScannerPage.qml:26
+#: src/contents/ui/QrCodeScannerPage.qml:187
+#, kde-format
+msgid "Select Camera"
+msgstr "Sélectionner une caméra"
+
+#: src/contents/ui/QrCodeScannerPage.qml:46
+#, kde-format
+msgid "Text found"
+msgstr "Texte trouvé"
+
+#: src/contents/ui/QrCodeScannerPage.qml:48
+#, kde-format
+msgid "URL found"
+msgstr "URL trouvée"
+
+#: src/contents/ui/QrCodeScannerPage.qml:50
+#, kde-format
+msgid "Contact found"
+msgstr "Contact trouvé"
+
+#: src/contents/ui/QrCodeScannerPage.qml:52
+#, kde-format
+msgid "OTP URI found"
+msgstr "URI « OTP » trouvée"
+
+#: src/contents/ui/QrCodeScannerPage.qml:54
+#, kde-format
+msgid "Binary data found"
+msgstr "Données binaires trouvées"
+
+#: src/contents/ui/QrCodeScannerPage.qml:56
+#, kde-format
+msgid "Health certificate found"
+msgstr "Un certificat de santé a été trouvé."
+
+#: src/contents/ui/QrCodeScannerPage.qml:58
+#, kde-format
+msgid "Transport ticket found"
+msgstr "Un ticket de transport a été trouvé"
+
+#: src/contents/ui/QrCodeScannerPage.qml:60
+#, kde-format
+msgid "ISBN found"
+msgstr "Code ISBN trouvé"
+
+#: src/contents/ui/QrCodeScannerPage.qml:62
+#, kde-format
+msgid "International Article Number found"
+msgstr "Numéro international de l'article trouvé"
+
+#: src/contents/ui/QrCodeScannerPage.qml:64
+#, kde-format
+msgid "Wi-Fi settings found"
+msgstr "Configuration pour le wifi trouvée"
+
+#: src/contents/ui/QrCodeScannerPage.qml:81
+#, kde-format
+msgid "<binary data>"
+msgstr "<données binaires>"
+
+#: src/contents/ui/QrCodeScannerPage.qml:95
+#, kde-format
+msgid "Open"
+msgstr "Ouvrir"
+
+#: src/contents/ui/QrCodeScannerPage.qml:97
+#, kde-format
+msgid "Save contact"
+msgstr "Enregistrer le contact"
+
+#: src/contents/ui/QrCodeScannerPage.qml:99
+#, kde-format
+msgid "Open OTP client"
+msgstr "Ouvrir le client « OTP »"
+
+#: src/contents/ui/QrCodeScannerPage.qml:101
+#, kde-format
+msgid "Open Food Facts"
+msgstr "Ouvrir les informations sur la nourriture"
+
+#: src/contents/ui/QrCodeScannerPage.qml:103
+#, kde-format
+msgid "Wikipedia Book Sources"
+msgstr "Sources de livres sur Wikipedia"
+
+#: src/contents/ui/QrCodeScannerPage.qml:105
+#, kde-format
+msgid "Open KDE Itinerary"
+msgstr "Ouvrir KDE Itinerary"
+
+#: src/contents/ui/QrCodeScannerPage.qml:107
+#, kde-format
+msgid "Open in Vakzination"
+msgstr "Ouvrir dans Vakzination"
+
+#: src/contents/ui/QrCodeScannerPage.qml:109
+#, kde-format
+msgid "Connect"
+msgstr "Se connecter"
+
+#: src/contents/ui/QrCodeScannerPage.qml:172
+#, kde-format
+msgid "Copy to clipboard"
+msgstr "Copier dans le presse-papier"
+
+#: src/contents/ui/ShareSheet.qml:28
+#, kde-format
+msgid "Share Qr-Code"
+msgstr "Partager un code « QR »"
+
+#: src/contents/ui/ShareSheet.qml:40
+#, kde-format
+msgid "Sharing Failed"
+msgstr "Impossible de réaliser un partage"
+
+#: src/contents/ui/ShareSheet.qml:81
+#, kde-format
+msgid "Share QR-Code"
+msgstr "Partager un code QR"
+
+#: src/main.cpp:51
+#, kde-format
+msgid "Qrca"
+msgstr "Qrca"
+
+#: src/main.cpp:51
+#, kde-format
+msgid "A simple QR scanner"
+msgstr "Un scanner de code QR simple"
+
+#: src/main.cpp:51
+#, kde-format
+msgid "Copyright 2016-2019 Qrca and Kaidan authors"
+msgstr "Copyright 2016-2019 Les auteurs de Qrca et Kaidan"
+
+#: src/main.cpp:53
+#, kde-format
+msgid "Jonah Brüchert"
+msgstr "Jonah Brüchert"
+
+#: src/main.cpp:54
+#, kde-format
+msgid "Simon Schmeißer"
+msgstr "Simon Schmeißer"
+
+#: src/notificationmanager.cpp:19
+#, kde-format
+msgid "Shared url for image is <a href='%1'>%1</a>"
+msgstr "L'URL partagée pour l'image est <a href='%1'>%1</a>."
+
+#~ msgid "Generating the QR-Code failed: "
+#~ msgstr "La génération du code QR a échoué : "
+
+#~ msgid "Cancel"
+#~ msgstr "Annuler"
+
+#~ msgid "The following tag has been found. Do you want to open the url?"
+#~ msgstr "La balise suivante a été trouvée. Voulez-vous ouvrir l'URL ?"
+
+#~ msgid "A contact has been found, do you want to save it?"
+#~ msgstr "Un contact a été trouvé, voulez-vous l'enregistrer ?"
+
+#~ msgid "An OTP URI has been found. Do you want to open your OTP client?"
+#~ msgstr "Une URI OTP a été trouvée. Voulez-vous ouvrir votre client OTP ?"
+
+#~ msgid "The following tag has been found."
+#~ msgstr "La balise suivante a été trouvée."
+
+#~ msgid "Name: "
+#~ msgstr "Nom : "
