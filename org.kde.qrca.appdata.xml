@@ -15,6 +15,7 @@
   <name xml:lang="gl">Escáner de códigos de barras</name>
   <name xml:lang="id">Barcode Scanner</name>
   <name xml:lang="it">Scanner di codici a barre</name>
+  <name xml:lang="ka">ბარკოდის სკანერი</name>
   <name xml:lang="ko">바코드 스캐너</name>
   <name xml:lang="nl">Barcodescanner</name>
   <name xml:lang="nn">Strekkode-skannar</name>
@@ -44,6 +45,7 @@
   <summary xml:lang="gl">Dixitalizar e crear códigos QR</summary>
   <summary xml:lang="id">Scan dan ciptakan QR-Codes</summary>
   <summary xml:lang="it">Scansiona e crea codici QR</summary>
+  <summary xml:lang="ka">QR კოდის სკანირება და შექმნა</summary>
   <summary xml:lang="ko">QR 코드 스캔 및 생성</summary>
   <summary xml:lang="nl">QR-Codes scannen en aanmaken</summary>
   <summary xml:lang="nn">Skann og lag QR-kodar</summary>
@@ -76,6 +78,7 @@
   <developer_name xml:lang="gl">Comunidade KDE</developer_name>
   <developer_name xml:lang="id">Komunitas KDE</developer_name>
   <developer_name xml:lang="it">Comunità KDE</developer_name>
+  <developer_name xml:lang="ka">KDE-ის საზოგადოება</developer_name>
   <developer_name xml:lang="ko">KDE 커뮤니티</developer_name>
   <developer_name xml:lang="nl">KDE-gemeenschap</developer_name>
   <developer_name xml:lang="nn">KDE-fellesskapet</developer_name>
