@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the qrca package.
-# Tommi Nieminen <translator@legisign.org>, 2020.
+# Tommi Nieminen <translator@legisign.org>, 2020, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-07-26 00:48+0000\n"
-"PO-Revision-Date: 2020-12-31 16:35+0200\n"
+"PO-Revision-Date: 2022-10-02 17:15+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 20.04.2\n"
+"X-Generator: Lokalize 20.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -63,15 +63,14 @@ msgid "Save"
 msgstr "Tallenna"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:33
-#, fuzzy, kde-format
-#| msgid "Saved image to "
+#, kde-format
 msgid "Saved image to %1"
-msgstr "Kuva tallennettiin kohteeseen "
+msgstr "Kuva tallennettu tiedostoon %1"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:33
 #, kde-format
 msgid "Open Externally"
-msgstr ""
+msgstr "Avaa ulkoisesti"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:37
 #, kde-format
@@ -82,64 +81,62 @@ msgstr "Jaa"
 #: src/contents/ui/QrCodeScannerPage.qml:187
 #, kde-format
 msgid "Select Camera"
-msgstr ""
+msgstr "Valitse kamera"
 
 #: src/contents/ui/QrCodeScannerPage.qml:46
 #, kde-format
 msgid "Text found"
-msgstr "Teksti löytyi"
+msgstr "Löytyi teksti"
 
 #: src/contents/ui/QrCodeScannerPage.qml:48
 #, kde-format
 msgid "URL found"
-msgstr "Verkko-osoite löytyi"
+msgstr "Löytyi verkko-osoite"
 
 #: src/contents/ui/QrCodeScannerPage.qml:50
 #, kde-format
 msgid "Contact found"
-msgstr "Yhteystieto löytyi"
+msgstr "Löytyi yhteystieto"
 
 #: src/contents/ui/QrCodeScannerPage.qml:52
 #, kde-format
 msgid "OTP URI found"
-msgstr "OTP:n URI löytyi"
+msgstr "Löytyi OTP-URI"
 
 #: src/contents/ui/QrCodeScannerPage.qml:54
-#, fuzzy, kde-format
-#| msgid "Contact found"
+#, kde-format
 msgid "Binary data found"
-msgstr "Yhteystieto löytyi"
+msgstr "Löytyi binaaridataa"
 
 #: src/contents/ui/QrCodeScannerPage.qml:56
 #, kde-format
 msgid "Health certificate found"
-msgstr ""
+msgstr "Löytyi terveystodistus"
 
 #: src/contents/ui/QrCodeScannerPage.qml:58
 #, kde-format
 msgid "Transport ticket found"
-msgstr ""
+msgstr "Löytyi matkalippu"
 
 #: src/contents/ui/QrCodeScannerPage.qml:60
-#, fuzzy, kde-format
-#| msgid "URL found"
+#, kde-format
 msgid "ISBN found"
-msgstr "Verkko-osoite löytyi"
+msgstr "Löytyi ISBN"
 
 #: src/contents/ui/QrCodeScannerPage.qml:62
 #, kde-format
 msgid "International Article Number found"
-msgstr ""
+msgstr "Löytyi kansainvälinen artikkelinumero"
 
 #: src/contents/ui/QrCodeScannerPage.qml:64
 #, kde-format
 msgid "Wi-Fi settings found"
-msgstr ""
+msgstr "Löytyi langattoman verkon asetukset"
 
 #: src/contents/ui/QrCodeScannerPage.qml:81
 #, kde-format
 msgid "<binary data>"
-msgstr ""
+msgstr "<binaaridataa>"
 
 #: src/contents/ui/QrCodeScannerPage.qml:95
 #, kde-format
@@ -159,27 +156,27 @@ msgstr "Avaa OTP-asiakas"
 #: src/contents/ui/QrCodeScannerPage.qml:101
 #, kde-format
 msgid "Open Food Facts"
-msgstr ""
+msgstr "Avaa ainesosaseloste"
 
 #: src/contents/ui/QrCodeScannerPage.qml:103
 #, kde-format
 msgid "Wikipedia Book Sources"
-msgstr ""
+msgstr "Wikipedia Books -lähteet"
 
 #: src/contents/ui/QrCodeScannerPage.qml:105
 #, kde-format
 msgid "Open KDE Itinerary"
-msgstr ""
+msgstr "Avaa KDE Itinerary"
 
 #: src/contents/ui/QrCodeScannerPage.qml:107
 #, kde-format
 msgid "Open in Vakzination"
-msgstr ""
+msgstr "Avaa Vakzinationiin"
 
 #: src/contents/ui/QrCodeScannerPage.qml:109
 #, kde-format
 msgid "Connect"
-msgstr ""
+msgstr "Yhdistä"
 
 #: src/contents/ui/QrCodeScannerPage.qml:172
 #, kde-format
@@ -187,15 +184,14 @@ msgid "Copy to clipboard"
 msgstr "Kopioi leikepöydälle"
 
 #: src/contents/ui/ShareSheet.qml:28
-#, fuzzy, kde-format
-#| msgid "Share QR-Code"
+#, kde-format
 msgid "Share Qr-Code"
 msgstr "Jaa QR-koodi"
 
 #: src/contents/ui/ShareSheet.qml:40
 #, kde-format
 msgid "Sharing Failed"
-msgstr ""
+msgstr "Jakaminen epäonnistui"
 
 #: src/contents/ui/ShareSheet.qml:81
 #, kde-format
@@ -230,7 +226,7 @@ msgstr "Simon Schmeißer"
 #: src/notificationmanager.cpp:19
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
-msgstr ""
+msgstr "Kuvan jaettu verkko-osoite on <a href='%1'>%1</a>"
 
 #~ msgid "Generating the QR-Code failed: "
 #~ msgstr "QR-koodin luonti epäonnistui: "
