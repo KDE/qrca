@@ -29,6 +29,14 @@ Kirigami.Page {
             onTriggered: cameraSelectorSheet.open()
         }
     ]
+    actions.main: Kirigami.Action {
+        icon.name: checked ? "flashlight-off" : "flashlight-on"
+        text: i18n("Light")
+        checkable: true
+        checked: camera.flash.mode == Camera.FlashVideoLight
+        visible: camera.flash.supportedModes.length > 1
+        onTriggered: camera.flash.mode = (camera.flash.mode == Camera.FlashVideoLight ? Camera.FlashOff : Camera.FlashVideoLight)
+    }
 
     function asLink(text) {
         return "<a href='" + text + "'>" + text + "</a>"

@@ -41,6 +41,8 @@ if(ANDROID)
         document-share
         edit-clear
         edit-copy-symbolic
+        flashlight-off
+        flashlight-on
         help-feedback
         internet-services
         itinerary
