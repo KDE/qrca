@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-07-26 00:48+0000\n"
-"PO-Revision-Date: 2022-11-19 14:48\n"
+"POT-Creation-Date: 2022-12-02 00:50+0000\n"
+"PO-Revision-Date: 2022-12-01 06:53\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -78,107 +78,112 @@ msgid "Share"
 msgstr "分享"
 
 #: src/contents/ui/QrCodeScannerPage.qml:26
-#: src/contents/ui/QrCodeScannerPage.qml:187
+#: src/contents/ui/QrCodeScannerPage.qml:195
 #, kde-format
 msgid "Select Camera"
 msgstr "选择摄像头"
 
-#: src/contents/ui/QrCodeScannerPage.qml:46
+#: src/contents/ui/QrCodeScannerPage.qml:34
+#, kde-format
+msgid "Light"
+msgstr ""
+
+#: src/contents/ui/QrCodeScannerPage.qml:54
 #, kde-format
 msgid "Text found"
 msgstr "发现文本"
 
-#: src/contents/ui/QrCodeScannerPage.qml:48
+#: src/contents/ui/QrCodeScannerPage.qml:56
 #, kde-format
 msgid "URL found"
 msgstr "发现 URL"
 
-#: src/contents/ui/QrCodeScannerPage.qml:50
+#: src/contents/ui/QrCodeScannerPage.qml:58
 #, kde-format
 msgid "Contact found"
 msgstr "发现联系人"
 
-#: src/contents/ui/QrCodeScannerPage.qml:52
+#: src/contents/ui/QrCodeScannerPage.qml:60
 #, kde-format
 msgid "OTP URI found"
 msgstr "发现 OTP URI"
 
-#: src/contents/ui/QrCodeScannerPage.qml:54
+#: src/contents/ui/QrCodeScannerPage.qml:62
 #, kde-format
 msgid "Binary data found"
 msgstr "发现二进制数据"
 
-#: src/contents/ui/QrCodeScannerPage.qml:56
+#: src/contents/ui/QrCodeScannerPage.qml:64
 #, kde-format
 msgid "Health certificate found"
 msgstr "发现健康证书"
 
-#: src/contents/ui/QrCodeScannerPage.qml:58
+#: src/contents/ui/QrCodeScannerPage.qml:66
 #, kde-format
 msgid "Transport ticket found"
 msgstr "发现交通票据"
 
-#: src/contents/ui/QrCodeScannerPage.qml:60
+#: src/contents/ui/QrCodeScannerPage.qml:68
 #, kde-format
 msgid "ISBN found"
 msgstr "发现 ISBN 码"
 
-#: src/contents/ui/QrCodeScannerPage.qml:62
+#: src/contents/ui/QrCodeScannerPage.qml:70
 #, kde-format
 msgid "International Article Number found"
 msgstr "发现 EAN 码"
 
-#: src/contents/ui/QrCodeScannerPage.qml:64
+#: src/contents/ui/QrCodeScannerPage.qml:72
 #, kde-format
 msgid "Wi-Fi settings found"
 msgstr "发现 Wi-Fi 设置信息"
 
-#: src/contents/ui/QrCodeScannerPage.qml:81
+#: src/contents/ui/QrCodeScannerPage.qml:89
 #, kde-format
 msgid "<binary data>"
 msgstr "<二进制数据>"
 
-#: src/contents/ui/QrCodeScannerPage.qml:95
+#: src/contents/ui/QrCodeScannerPage.qml:103
 #, kde-format
 msgid "Open"
 msgstr "打开"
 
-#: src/contents/ui/QrCodeScannerPage.qml:97
+#: src/contents/ui/QrCodeScannerPage.qml:105
 #, kde-format
 msgid "Save contact"
 msgstr "保存联系人"
 
-#: src/contents/ui/QrCodeScannerPage.qml:99
+#: src/contents/ui/QrCodeScannerPage.qml:107
 #, kde-format
 msgid "Open OTP client"
 msgstr "打开 OTP 客户端"
 
-#: src/contents/ui/QrCodeScannerPage.qml:101
+#: src/contents/ui/QrCodeScannerPage.qml:109
 #, kde-format
 msgid "Open Food Facts"
 msgstr "开放食品信息库"
 
-#: src/contents/ui/QrCodeScannerPage.qml:103
+#: src/contents/ui/QrCodeScannerPage.qml:111
 #, kde-format
 msgid "Wikipedia Book Sources"
 msgstr "维基百科书籍来源"
 
-#: src/contents/ui/QrCodeScannerPage.qml:105
+#: src/contents/ui/QrCodeScannerPage.qml:113
 #, kde-format
 msgid "Open KDE Itinerary"
 msgstr "打开 KDE Itinerary"
 
-#: src/contents/ui/QrCodeScannerPage.qml:107
+#: src/contents/ui/QrCodeScannerPage.qml:115
 #, kde-format
 msgid "Open in Vakzination"
 msgstr "使用 Vakzination 打开"
 
-#: src/contents/ui/QrCodeScannerPage.qml:109
+#: src/contents/ui/QrCodeScannerPage.qml:117
 #, kde-format
 msgid "Connect"
 msgstr "连接"
 
-#: src/contents/ui/QrCodeScannerPage.qml:172
+#: src/contents/ui/QrCodeScannerPage.qml:180
 #, kde-format
 msgid "Copy to clipboard"
 msgstr "复制到剪贴板"
