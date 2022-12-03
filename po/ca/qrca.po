@@ -4,21 +4,21 @@
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2019, 2022.
-# Josep M. Ferrer <txemaq@gmail.com>, 2020, 2021.
+# Josep M. Ferrer <txemaq@gmail.com>, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-02 00:50+0000\n"
-"PO-Revision-Date: 2022-09-04 13:36+0200\n"
-"Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
+"PO-Revision-Date: 2022-12-02 15:21+0100\n"
+"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.08.0\n"
+"X-Generator: Lokalize 20.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -89,7 +89,7 @@ msgstr "Selecció de càmera"
 #: src/contents/ui/QrCodeScannerPage.qml:34
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Llum"
 
 #: src/contents/ui/QrCodeScannerPage.qml:54
 #, kde-format
@@ -236,24 +236,3 @@ msgstr "Simon Schmeißer"
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
 msgstr "L'URL compartit per a la imatge és <a href='%1'>%1</a>"
-
-#~ msgid "Generating the QR-Code failed: "
-#~ msgstr "Ha fallat en generar el codi QR:"
-
-#~ msgid "Cancel"
-#~ msgstr "Cancel·la"
-
-#~ msgid "The following tag has been found. Do you want to open the url?"
-#~ msgstr "S'ha trobat la següent etiqueta. Voleu obrir l'URL?"
-
-#~ msgid "A contact has been found, do you want to save it?"
-#~ msgstr "S'ha trobat un contacte. El voleu desar?"
-
-#~ msgid "An OTP URI has been found. Do you want to open your OTP client?"
-#~ msgstr "S'ha trobat un URI OTP. Voleu obrir el client OTP?"
-
-#~ msgid "The following tag has been found."
-#~ msgstr "S'ha trobat la següent etiqueta."
-
-#~ msgid "Name: "
-#~ msgstr "Nom: "
