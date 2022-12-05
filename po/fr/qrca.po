@@ -1,11 +1,11 @@
 # Simon Depiets <sdepiets@gmail.com>, 2019.
-# Xavier Besnard <xavier.besnard@neuf.fr>, 2020, 2021.
+# Xavier Besnard <xavier.besnard@neuf.fr>, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-02 00:50+0000\n"
-"PO-Revision-Date: 2021-12-27 22:34+0100\n"
+"PO-Revision-Date: 2022-12-04 02:29+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@neuf.fr>\n"
 "Language-Team: French <kde-francophone@kde.org>\n"
 "Language: fr\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 21.12.0\n"
+"X-Generator: Lokalize 22.11.90\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -84,7 +84,7 @@ msgstr "Sélectionner une caméra"
 #: src/contents/ui/QrCodeScannerPage.qml:34
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Clair"
 
 #: src/contents/ui/QrCodeScannerPage.qml:54
 #, kde-format

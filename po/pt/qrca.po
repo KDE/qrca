@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-02 00:50+0000\n"
-"PO-Revision-Date: 2021-08-24 02:10+0100\n"
+"PO-Revision-Date: 2022-12-04 13:24+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -85,7 +85,7 @@ msgstr "Seleccionar a Câmara"
 #: src/contents/ui/QrCodeScannerPage.qml:34
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Luz"
 
 #: src/contents/ui/QrCodeScannerPage.qml:54
 #, kde-format
@@ -231,6 +231,3 @@ msgstr "Simon Schmeißer"
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
 msgstr "O URL partilhado da imagem é <a href='%1'>%1</a>"
-
-#~ msgid "Generating the QR-Code failed: "
-#~ msgstr "Não foi possível gerar o código QR: "
