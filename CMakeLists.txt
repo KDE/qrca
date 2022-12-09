@@ -25,7 +25,7 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDEClangFormat)
 kde_enable_exceptions()
 
-find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Multimedia Concurrent)
+find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Multimedia)
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Contacts CoreAddons Notifications Prison)
 
 if(NOT ANDROID)

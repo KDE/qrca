@@ -20,7 +20,7 @@ set(qrca_SRCS
 
 add_executable(qrca ${qrca_SRCS})
 
-target_link_libraries(qrca Qt::Core Qt::Qml Qt::Quick Qt::Svg Qt::Multimedia Qt::Concurrent KF5::I18n KF5::Contacts KF5::CoreAddons KF5::Notifications KF5::PrisonScanner)
+target_link_libraries(qrca Qt::Core Qt::Qml Qt::Quick Qt::Svg Qt::Multimedia KF5::I18n KF5::Contacts KF5::CoreAddons KF5::Notifications KF5::PrisonScanner)
 
 if (TARGET KF5::NetworkManagerQt)
     target_link_libraries(qrca KF5::NetworkManagerQt)
