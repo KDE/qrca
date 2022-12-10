@@ -22,4 +22,5 @@ Dependencies:
   'require':
     'frameworks/networkmanager-qt': '@stable'
 
-require-passing-tests-on: [ 'Linux', 'FreeBSD' ]
+Options:
+  require-passing-tests-on: [ 'Linux', 'FreeBSD' ]
