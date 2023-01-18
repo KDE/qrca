@@ -7,6 +7,9 @@ cmake_minimum_required(VERSION 3.16)
 project(qrca VERSION 0.1)
 
 set(QT_MIN_VERSION "5.15.0")
+if (ANDROID)
+    set(QT_MIN_VERSION "5.15.8")
+endif()
 set(KF5_MIN_VERSION "5.94.0")
 set(KDE_COMPILERSETTINGS_LEVEL "5.82")
 
