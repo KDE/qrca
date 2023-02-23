@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the qrca package.
-# Vit Pelcak <vit@pelcak.org>, 2019, 2020, 2021.
+# Vit Pelcak <vit@pelcak.org>, 2019, 2020, 2021, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-02 00:50+0000\n"
-"PO-Revision-Date: 2021-08-16 12:38+0200\n"
+"PO-Revision-Date: 2023-02-22 16:45+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 21.04.3\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -216,7 +216,7 @@ msgstr "Jednoduchá čtečka QR"
 #: src/main.cpp:51
 #, kde-format
 msgid "Copyright 2016-2019 Qrca and Kaidan authors"
-msgstr "Copyright 2016-2019 Autoři Qrca a Kaidan"
+msgstr "Autorská práva 2016-2019 Autoři Qrca a Kaidan"
 
 #: src/main.cpp:53
 #, kde-format
