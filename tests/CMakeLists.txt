@@ -12,13 +12,13 @@ include_directories(../src ${CMAKE_CURRENT_BINARY_DIR}/../src)
 
 ecm_add_test(qrcatest.cpp ../src/Qrca.cpp ../src/QrCodeContent.cpp ../src/mecardparser.cpp
              TEST_NAME qrcatest
-             LINK_LIBRARIES Qt::Test Qt::Core Qt::Gui KF5::I18n KF5::Contacts KF5::CoreAddons KF5::PrisonScanner
+             LINK_LIBRARIES Qt::Test Qt::Core Qt::Gui KF${QT_MAJOR_VERSION}::I18n KF${QT_MAJOR_VERSION}::Contacts KF${QT_MAJOR_VERSION}::CoreAddons KF${QT_MAJOR_VERSION}::PrisonScanner
 )
 if (NOT ANDROID)
-    target_link_libraries(qrcatest KF5::KIOGui KF5::Service)
+    target_link_libraries(qrcatest KF${QT_MAJOR_VERSION}::KIOGui KF${QT_MAJOR_VERSION}::Service)
 endif()
-if (TARGET KF5::NetworkManagerQt)
-    target_link_libraries(qrcatest KF5::NetworkManagerQt)
+if (TARGET KF${QT_MAJOR_VERSION}::NetworkManagerQt)
+    target_link_libraries(qrcatest KF${QT_MAJOR_VERSION}::NetworkManagerQt)
 endif()
 
 ecm_add_test(mecardparsertest.cpp ../src/mecardparser.cpp TEST_NAME mecardparsertest LINK_LIBRARIES Qt::Core Qt::Test)
