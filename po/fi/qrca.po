@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the qrca package.
-# Tommi Nieminen <translator@legisign.org>, 2020, 2022.
+# Tommi Nieminen <translator@legisign.org>, 2020, 2022, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-02 00:50+0000\n"
-"PO-Revision-Date: 2022-10-02 17:15+0300\n"
+"PO-Revision-Date: 2023-03-30 12:10+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -83,10 +83,11 @@ msgstr "Jaa"
 msgid "Select Camera"
 msgstr "Valitse kamera"
 
+# *** TARKISTA: Vai ”kevyt"? Pitäisi tietää konteksti.
 #: src/contents/ui/QrCodeScannerPage.qml:34
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Vaalea"
 
 #: src/contents/ui/QrCodeScannerPage.qml:54
 #, kde-format
