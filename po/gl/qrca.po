@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the qrca package.
-# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2020.
+# Adrián Chaves (Gallaecio) <adrian@chaves.io>, 2020, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-02 00:50+0000\n"
-"PO-Revision-Date: 2020-03-07 17:08+0100\n"
+"PO-Revision-Date: 2023-05-02 11:53+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 19.08.3\n"
+"X-Generator: Lokalize 23.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -63,15 +63,14 @@ msgid "Save"
 msgstr "Gardar"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:33
-#, fuzzy, kde-format
-#| msgid "Saved image to "
+#, kde-format
 msgid "Saved image to %1"
-msgstr "A imaxe gardouse en "
+msgstr "A imaxe gardouse en %1."
 
 #: src/contents/ui/QrCodeEncoderPage.qml:33
 #, kde-format
 msgid "Open Externally"
-msgstr ""
+msgstr "Abrir externamente"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:37
 #, kde-format
@@ -82,73 +81,67 @@ msgstr "Compartir"
 #: src/contents/ui/QrCodeScannerPage.qml:195
 #, kde-format
 msgid "Select Camera"
-msgstr ""
+msgstr "Escoller unha cámara"
 
 #: src/contents/ui/QrCodeScannerPage.qml:34
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Luz"
 
 #: src/contents/ui/QrCodeScannerPage.qml:54
-#, fuzzy, kde-format
-#| msgid "Tag found"
+#, kde-format
 msgid "Text found"
-msgstr "Atopouse unha etiqueta"
+msgstr "Atopouse texto"
 
 #: src/contents/ui/QrCodeScannerPage.qml:56
-#, fuzzy, kde-format
-#| msgid "Tag found"
+#, kde-format
 msgid "URL found"
-msgstr "Atopouse unha etiqueta"
+msgstr "Atopouse un URL"
 
 #: src/contents/ui/QrCodeScannerPage.qml:58
-#, fuzzy, kde-format
-#| msgid "Tag found"
+#, kde-format
 msgid "Contact found"
-msgstr "Atopouse unha etiqueta"
+msgstr "Atopouse un contacto"
 
 #: src/contents/ui/QrCodeScannerPage.qml:60
-#, fuzzy, kde-format
-#| msgid "Tag found"
+#, kde-format
 msgid "OTP URI found"
-msgstr "Atopouse unha etiqueta"
+msgstr "Atopouse un URI de OTP"
 
 #: src/contents/ui/QrCodeScannerPage.qml:62
-#, fuzzy, kde-format
-#| msgid "Tag found"
+#, kde-format
 msgid "Binary data found"
-msgstr "Atopouse unha etiqueta"
+msgstr "Atopáronse datos binarios"
 
 #: src/contents/ui/QrCodeScannerPage.qml:64
 #, kde-format
 msgid "Health certificate found"
-msgstr ""
+msgstr "Atopouse un certificado de saúde"
 
 #: src/contents/ui/QrCodeScannerPage.qml:66
 #, kde-format
 msgid "Transport ticket found"
-msgstr ""
+msgstr "Atopouse un billete de transporte"
 
 #: src/contents/ui/QrCodeScannerPage.qml:68
-#, fuzzy, kde-format
-#| msgid "Tag found"
+#, kde-format
 msgid "ISBN found"
-msgstr "Atopouse unha etiqueta"
+msgstr "Atopouse un ISBN"
 
 #: src/contents/ui/QrCodeScannerPage.qml:70
 #, kde-format
 msgid "International Article Number found"
-msgstr ""
+msgstr "Atopouse un número internacional de artigo"
 
 #: src/contents/ui/QrCodeScannerPage.qml:72
 #, kde-format
 msgid "Wi-Fi settings found"
-msgstr ""
+msgstr "Atopouse unha configuración de rede sen fíos"
 
 #: src/contents/ui/QrCodeScannerPage.qml:89
 #, kde-format
 msgid "<binary data>"
-msgstr ""
+msgstr "<datos binarios>"
 
 #: src/contents/ui/QrCodeScannerPage.qml:103
 #, kde-format
@@ -163,48 +156,47 @@ msgstr "Gardar o contacto"
 #: src/contents/ui/QrCodeScannerPage.qml:107
 #, kde-format
 msgid "Open OTP client"
-msgstr ""
+msgstr "Abrir un cliente de OTP"
 
 #: src/contents/ui/QrCodeScannerPage.qml:109
 #, kde-format
 msgid "Open Food Facts"
-msgstr ""
+msgstr "Open Food Facts"
 
 #: src/contents/ui/QrCodeScannerPage.qml:111
 #, kde-format
 msgid "Wikipedia Book Sources"
-msgstr ""
+msgstr "Fontes de libros de Wikipedia"
 
 #: src/contents/ui/QrCodeScannerPage.qml:113
 #, kde-format
 msgid "Open KDE Itinerary"
-msgstr ""
+msgstr "Abrir KDE Itinerary"
 
 #: src/contents/ui/QrCodeScannerPage.qml:115
 #, kde-format
 msgid "Open in Vakzination"
-msgstr ""
+msgstr "Abrir en Vakzination"
 
 #: src/contents/ui/QrCodeScannerPage.qml:117
 #, kde-format
 msgid "Connect"
-msgstr ""
+msgstr "Conectar"
 
 #: src/contents/ui/QrCodeScannerPage.qml:180
 #, kde-format
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Copiar no portapapeis"
 
 #: src/contents/ui/ShareSheet.qml:28
-#, fuzzy, kde-format
-#| msgid "Share QR-Code"
+#, kde-format
 msgid "Share Qr-Code"
 msgstr "Compartir o código QR"
 
 #: src/contents/ui/ShareSheet.qml:40
 #, kde-format
 msgid "Sharing Failed"
-msgstr ""
+msgstr "A compartición fallou"
 
 #: src/contents/ui/ShareSheet.qml:81
 #, kde-format
@@ -239,7 +231,7 @@ msgstr "Simon Schmeißer"
 #: src/notificationmanager.cpp:19
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
-msgstr ""
+msgstr "O URL de imaxe compartido é <a href='%1'>%1</a>"
 
 #~ msgid "Generating the QR-Code failed: "
 #~ msgstr "A xeración do código QR fallou: "
