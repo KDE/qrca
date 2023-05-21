@@ -11,11 +11,136 @@
         "--share=network",
         "--socket=fallback-x11",
         "--socket=wayland",
-        "--device=all"
+        "--device=all",
+        "--system-talk-name=org.freedesktop.NetworkManager"
     ],
     "separate-locales": false,
 
     "modules": [
+        {
+            "name": "libndp",
+            "buildsystem": "autotools",
+            "cleanup": [
+                "/bin",
+                "/include",
+                "/lib/pkgconfig",
+                "/share/man"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/jpirko/libndp/archive/v1.8.tar.gz",
+                    "sha256": "c3ea76e253def89869651686a827da75b56896fe94fabd87d8c14b1d4588fd05",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 14944,
+                        "stable-only": true,
+                        "url-template": "https://github.com/jpirko/libndp/archive/v$version.tar.gz"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "polkit",
+            "config-opts": [
+                "--disable-polkitd",
+                "--disable-man-pages",
+                "--disable-introspection",
+                "--disable-examples",
+                "--disable-gtk-doc",
+                "--disable-libelogind",
+                "--disable-libsystemd-login",
+                "--with-systemdsystemunitdir=no",
+                "--with-authdb=dummy",
+                "--with-authfw=none"
+            ],
+            "cleanup": [
+                "/bin/*",
+                "/include",
+                "/etc/pam.d",
+                "/etc/dbus-1",
+                "/lib/pkgconfig",
+                "/lib/polkit-1",
+                "/share/dbus-1/system-services/*",
+                "/share/polkit-1"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://www.freedesktop.org/software/polkit/releases/polkit-0.120.tar.gz",
+                    "sha256": "ee7a599a853117bf273548725719fa92fabd2f136915c7a4906cee98567aee03"
+                },
+                {
+                    "type": "patch",
+                    "path": "flatpak/polkit-build-Add-option-to-build-without-polkitd.patch"
+                },
+                {
+                    "type": "shell",
+                    "commands": [
+                        "gtkdocize --flavour no-tmpl",
+                        "autoreconf -if"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "NetworkManager",
+            "buildsystem": "meson",
+            "build-options": {
+                "cflags": "-ltinfo",
+                "cxxflags": "-ltinfo"
+            },
+            "config-opts": [
+                "-Dsystemdsystemunitdir=no",
+                "-Ddbus_conf_dir=/app/etc/dbus-1/system.d",
+                "-Diptables=/usr/bin/true",
+                "-Ddnsmasq=/usr/bin/true",
+                "-Dsession_tracking=no",
+                "-Dselinux=false",
+                "-Dsystemd_journal=false",
+                "-Dlibaudit=no",
+                "-Dwext=false",
+                "-Dwifi=true",
+                "-Dppp=false",
+                "-Dmodem_manager=false",
+                "-Dovs=false",
+                "-Dnmcli=false",
+                "-Dnmtui=false",
+                "-Dintrospection=false",
+                "-Dvapi=false",
+                "-Ddocs=false",
+                "-Dtests=no",
+                "-Dfirewalld_zone=false",
+                "-Dlibpsl=false",
+                "-Dqt=false"
+            ],
+            "cleanup": [
+                "/bin",
+                "/etc",
+                "/include",
+                "/lib/pkgconfig",
+                "/libexec",
+                "/sbin",
+                "/var"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git",
+                    "tag": "1.42.6",
+                    "commit": "b6cc7c7e695ba3b1f2a5c95b0d6df418b8556e57",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^([\\d.]+)$"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "networkmanager-qt",
+            "buildsystem": "cmake-ninja",
+            "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/networkmanager-qt.git", "tag": "v5.106.0"}]
+        },
         {
             "name": "qrca",
             "buildsystem": "cmake-ninja",
