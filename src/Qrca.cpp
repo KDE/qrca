@@ -92,10 +92,9 @@ QString Qrca::getVCardName(const QString &text) noexcept
     return adressee.realName();
 }
 
-QUrl Qrca::save(const QImage &image) noexcept
+QString Qrca::newQrCodeSaveLocation() noexcept
 {
     const QString directory = QStandardPaths::writableLocation(QStandardPaths::PicturesLocation) + QStringLiteral("/qrcodes/");
-
     const QString path = directory + QDateTime::currentDateTime().toString(Qt::ISODate) + QStringLiteral(".png");
 
     const QDir dir(directory);
@@ -103,10 +102,7 @@ QUrl Qrca::save(const QImage &image) noexcept
         dir.mkpath(directory);
     }
 
-    qDebug() << "Saving image to" << path;
-    image.save(path, "PNG", -1);
-
-    return QUrl::fromLocalFile(path);
+    return path;
 }
 
 void Qrca::copyToClipboard(const QrCodeContent &content) noexcept

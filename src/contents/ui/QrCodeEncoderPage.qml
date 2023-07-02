@@ -28,9 +28,11 @@ Kirigami.ScrollablePage {
             icon.name: "document-save"
             enabled: inputText.length > 0
             onTriggered: {
-                const path = Qrca.save(codeView.source)
-                const displayName = String(path).replace("file://", "")
-                showPassiveNotification(i18n("Saved image to %1", displayName), "long", i18n("Open Externally"), function() {Qt.openUrlExternally(path)})
+                codeView.grabToImage((result) => {
+                    const saveLocation = Qrca.newQrCodeSaveLocation()
+                    result.saveToFile(saveLocation)
+                    showPassiveNotification(i18n("Saved image to %1", saveLocation), "long", i18n("Open Externally"), () => Qt.openUrlExternally(saveLocation))
+                })
             }
         },
         Kirigami.Action {
@@ -40,8 +42,12 @@ Kirigami.ScrollablePage {
             enabled: inputText.length > 0
             onTriggered: {
                 shareSheetLoader.active = true
-                shareSheetLoader.item.url = Qrca.save(codeView.source)
-                shareSheetLoader.item.open()
+                codeView.grabToImage((result) => {
+                    const saveLocation = Qrca.newQrCodeSaveLocation()
+                    result.saveToFile(saveLocation)
+                    shareSheetLoader.item.url = saveLocation
+                    shareSheetLoader.item.open()
+                })
             }
         }
     ]
