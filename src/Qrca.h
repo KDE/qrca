@@ -27,7 +27,7 @@ class Qrca : public QObject
 public:
     Qrca();
 
-    static Q_INVOKABLE QString newQrCodeSaveLocation() noexcept;
+    Q_INVOKABLE QString newQrCodeSaveLocation() noexcept;
     static Q_INVOKABLE void saveVCard(const QString &text) noexcept;
     static Q_INVOKABLE QString getVCardName(const QString &text) noexcept;
     Q_INVOKABLE void copyToClipboard(const QrCodeContent &content) noexcept;

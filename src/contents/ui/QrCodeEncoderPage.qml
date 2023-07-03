@@ -12,6 +12,8 @@ import QtQuick.Layouts 1.3
 import org.kde.qrca 1.0
 import org.kde.prison 1.0 as Prison
 
+import QtQuick.Dialogs 1.2
+
 Kirigami.ScrollablePage {
     title: i18n("Create QR-Code")
 
@@ -22,17 +24,30 @@ Kirigami.ScrollablePage {
         source: "ShareSheet.qml"
     }
 
+    FileDialog {
+        id: fileDialog
+        selectExisting: false
+        defaultSuffix: "png"
+        nameFilters: [ i18n("Image files (*.png *.jpg)"), i18n("All files (*)") ]
+    }
+
     actions.contextualActions: [
         Kirigami.Action {
             text: i18n("Save")
             icon.name: "document-save"
             enabled: inputText.length > 0
             onTriggered: {
-                codeView.grabToImage((result) => {
-                    const saveLocation = Qrca.newQrCodeSaveLocation()
-                    result.saveToFile(saveLocation)
-                    showPassiveNotification(i18n("Saved image to %1", saveLocation), "long", i18n("Open Externally"), () => Qt.openUrlExternally(saveLocation))
+                fileDialog.accepted.connect(() => {
+                    codeView.grabToImage((result) => {
+                         const s = result.saveToFile(fileDialog.fileUrl.toString().replace("file://", ""))
+                         if (!s) {
+                             showPassiveNotification(i18n("QR-Code could not be saved"))
+                         }
+
+                         fileDialog.accepted.disconnect()
+                    })
                 })
+                fileDialog.open()
             }
         },
         Kirigami.Action {
@@ -44,7 +59,11 @@ Kirigami.ScrollablePage {
                 shareSheetLoader.active = true
                 codeView.grabToImage((result) => {
                     const saveLocation = Qrca.newQrCodeSaveLocation()
-                    result.saveToFile(saveLocation)
+                    const s = result.saveToFile(saveLocation)
+                    if (!s) {
+                        showPassiveNotification(i18n("QR-Code could not be saved to temporary location"))
+                    }
+
                     shareSheetLoader.item.url = saveLocation
                     shareSheetLoader.item.open()
                 })

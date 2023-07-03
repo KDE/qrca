@@ -94,14 +94,8 @@ QString Qrca::getVCardName(const QString &text) noexcept
 
 QString Qrca::newQrCodeSaveLocation() noexcept
 {
-    const QString directory = QStandardPaths::writableLocation(QStandardPaths::PicturesLocation) + QStringLiteral("/qrcodes/");
-    const QString path = directory + QDateTime::currentDateTime().toString(Qt::ISODate) + QStringLiteral(".png");
-
-    const QDir dir(directory);
-    if (!dir.exists()) {
-        dir.mkpath(directory);
-    }
-
+    const QString directory = QStandardPaths::writableLocation(QStandardPaths::TempLocation);
+    const QString path = directory + QDir::separator() + QDateTime::currentDateTime().toString(Qt::ISODate) + QStringLiteral(".png");
     return path;
 }
 
