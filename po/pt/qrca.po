@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-02 00:50+0000\n"
+"POT-Creation-Date: 2023-07-03 00:59+0000\n"
 "PO-Revision-Date: 2022-12-04 13:24+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -61,17 +61,17 @@ msgstr "Criar um Código QR"
 msgid "Save"
 msgstr "Gravar"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:33
+#: src/contents/ui/QrCodeEncoderPage.qml:34
 #, kde-format
 msgid "Saved image to %1"
 msgstr "A imagem foi gravada em %1"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:33
+#: src/contents/ui/QrCodeEncoderPage.qml:34
 #, kde-format
 msgid "Open Externally"
 msgstr "Abrir Externamente"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:37
+#: src/contents/ui/QrCodeEncoderPage.qml:39
 #, kde-format
 msgid "Share"
 msgstr "Partilhar"

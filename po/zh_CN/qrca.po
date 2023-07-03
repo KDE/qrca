@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-02 00:50+0000\n"
+"POT-Creation-Date: 2023-07-03 00:59+0000\n"
 "PO-Revision-Date: 2023-06-17 04:11\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -62,17 +62,17 @@ msgstr "创建二维码"
 msgid "Save"
 msgstr "保存"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:33
+#: src/contents/ui/QrCodeEncoderPage.qml:34
 #, kde-format
 msgid "Saved image to %1"
 msgstr "保存图像到 %1"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:33
+#: src/contents/ui/QrCodeEncoderPage.qml:34
 #, kde-format
 msgid "Open Externally"
 msgstr "使用外部程序打开"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:37
+#: src/contents/ui/QrCodeEncoderPage.qml:39
 #, kde-format
 msgid "Share"
 msgstr "分享"

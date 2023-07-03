@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-02 00:50+0000\n"
+"POT-Creation-Date: 2023-07-03 00:59+0000\n"
 "PO-Revision-Date: 2022-12-03 09:54+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -65,17 +65,17 @@ msgstr "Sortu QR-Kodea"
 msgid "Save"
 msgstr "Gorde"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:33
+#: src/contents/ui/QrCodeEncoderPage.qml:34
 #, kde-format
 msgid "Saved image to %1"
 msgstr "Irudia hor gorde da, %1"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:33
+#: src/contents/ui/QrCodeEncoderPage.qml:34
 #, kde-format
 msgid "Open Externally"
 msgstr "Ireki kanpotik"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:37
+#: src/contents/ui/QrCodeEncoderPage.qml:39
 #, kde-format
 msgid "Share"
 msgstr "Partekatu"
