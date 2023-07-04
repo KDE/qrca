@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-03 00:59+0000\n"
+"POT-Creation-Date: 2023-07-04 00:51+0000\n"
 "PO-Revision-Date: 2022-12-02 11:32+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -52,30 +52,40 @@ msgstr "Info over"
 msgid "QR-Code Scanner"
 msgstr "QR-codescanner"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:16
+#: src/contents/ui/QrCodeEncoderPage.qml:18
 #, kde-format
 msgid "Create QR-Code"
 msgstr "QR-code aanmaken"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:27
+#: src/contents/ui/QrCodeEncoderPage.qml:31
+#, kde-format
+msgid "Image files (*.png *.jpg)"
+msgstr ""
+
+#: src/contents/ui/QrCodeEncoderPage.qml:31
+#, kde-format
+msgid "All files (*)"
+msgstr ""
+
+#: src/contents/ui/QrCodeEncoderPage.qml:36
 #, kde-format
 msgid "Save"
 msgstr "Opslaan"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:34
+#: src/contents/ui/QrCodeEncoderPage.qml:44
 #, kde-format
-msgid "Saved image to %1"
-msgstr "Afbeelding in %1 opgeslagen"
+msgid "QR-Code could not be saved"
+msgstr ""
 
-#: src/contents/ui/QrCodeEncoderPage.qml:34
-#, kde-format
-msgid "Open Externally"
-msgstr "Extern openen"
-
-#: src/contents/ui/QrCodeEncoderPage.qml:39
+#: src/contents/ui/QrCodeEncoderPage.qml:54
 #, kde-format
 msgid "Share"
 msgstr "Delen"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:64
+#, kde-format
+msgid "QR-Code could not be saved to temporary location"
+msgstr ""
 
 #: src/contents/ui/QrCodeScannerPage.qml:26
 #: src/contents/ui/QrCodeScannerPage.qml:195
@@ -232,6 +242,12 @@ msgstr "Simon Schmeißer"
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
 msgstr "Gedeelde url voor afbeelding is <a href='%1'>%1</a>"
+
+#~ msgid "Saved image to %1"
+#~ msgstr "Afbeelding in %1 opgeslagen"
+
+#~ msgid "Open Externally"
+#~ msgstr "Extern openen"
 
 #~ msgid "Generating the QR-Code failed: "
 #~ msgstr "De QR-code genereren is mislukt: "

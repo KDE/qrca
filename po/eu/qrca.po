@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-03 00:59+0000\n"
+"POT-Creation-Date: 2023-07-04 00:51+0000\n"
 "PO-Revision-Date: 2022-12-03 09:54+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -55,30 +55,40 @@ msgstr "Honi buruz"
 msgid "QR-Code Scanner"
 msgstr "QR-Code eskanerra"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:16
+#: src/contents/ui/QrCodeEncoderPage.qml:18
 #, kde-format
 msgid "Create QR-Code"
 msgstr "Sortu QR-Kodea"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:27
+#: src/contents/ui/QrCodeEncoderPage.qml:31
+#, kde-format
+msgid "Image files (*.png *.jpg)"
+msgstr ""
+
+#: src/contents/ui/QrCodeEncoderPage.qml:31
+#, kde-format
+msgid "All files (*)"
+msgstr ""
+
+#: src/contents/ui/QrCodeEncoderPage.qml:36
 #, kde-format
 msgid "Save"
 msgstr "Gorde"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:34
+#: src/contents/ui/QrCodeEncoderPage.qml:44
 #, kde-format
-msgid "Saved image to %1"
-msgstr "Irudia hor gorde da, %1"
+msgid "QR-Code could not be saved"
+msgstr ""
 
-#: src/contents/ui/QrCodeEncoderPage.qml:34
-#, kde-format
-msgid "Open Externally"
-msgstr "Ireki kanpotik"
-
-#: src/contents/ui/QrCodeEncoderPage.qml:39
+#: src/contents/ui/QrCodeEncoderPage.qml:54
 #, kde-format
 msgid "Share"
 msgstr "Partekatu"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:64
+#, kde-format
+msgid "QR-Code could not be saved to temporary location"
+msgstr ""
 
 #: src/contents/ui/QrCodeScannerPage.qml:26
 #: src/contents/ui/QrCodeScannerPage.qml:195
@@ -235,6 +245,12 @@ msgstr "Simon Schmeißer"
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
 msgstr "Irudia partekatzeko URLa <a href='%1'>%1</a> da"
+
+#~ msgid "Saved image to %1"
+#~ msgstr "Irudia hor gorde da, %1"
+
+#~ msgid "Open Externally"
+#~ msgstr "Ireki kanpotik"
 
 #~ msgid "Generating the QR-Code failed: "
 #~ msgstr "QR-Kodea sortzea huts egin du: "

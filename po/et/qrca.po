@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-03 00:59+0000\n"
+"POT-Creation-Date: 2023-07-04 00:51+0000\n"
 "PO-Revision-Date: 2020-10-25 22:06+0100\n"
 "Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
 "Language-Team: Estonian <>\n"
@@ -53,31 +53,40 @@ msgstr "Teave"
 msgid "QR-Code Scanner"
 msgstr "QR-koodi skanner"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:16
+#: src/contents/ui/QrCodeEncoderPage.qml:18
 #, kde-format
 msgid "Create QR-Code"
 msgstr "QR-koodi loomine"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:27
+#: src/contents/ui/QrCodeEncoderPage.qml:31
+#, kde-format
+msgid "Image files (*.png *.jpg)"
+msgstr ""
+
+#: src/contents/ui/QrCodeEncoderPage.qml:31
+#, kde-format
+msgid "All files (*)"
+msgstr ""
+
+#: src/contents/ui/QrCodeEncoderPage.qml:36
 #, kde-format
 msgid "Save"
 msgstr "Salvesta"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:34
-#, fuzzy, kde-format
-#| msgid "Saved image to "
-msgid "Saved image to %1"
-msgstr "Pilt salvestati asukohta "
-
-#: src/contents/ui/QrCodeEncoderPage.qml:34
+#: src/contents/ui/QrCodeEncoderPage.qml:44
 #, kde-format
-msgid "Open Externally"
+msgid "QR-Code could not be saved"
 msgstr ""
 
-#: src/contents/ui/QrCodeEncoderPage.qml:39
+#: src/contents/ui/QrCodeEncoderPage.qml:54
 #, kde-format
 msgid "Share"
 msgstr "Jaga"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:64
+#, kde-format
+msgid "QR-Code could not be saved to temporary location"
+msgstr ""
 
 #: src/contents/ui/QrCodeScannerPage.qml:26
 #: src/contents/ui/QrCodeScannerPage.qml:195
@@ -237,6 +246,11 @@ msgstr "Simon Schmeißer"
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Saved image to "
+#~ msgid "Saved image to %1"
+#~ msgstr "Pilt salvestati asukohta "
 
 #~ msgid "Generating the QR-Code failed: "
 #~ msgstr "QR-koodi genereerimine nurjus: "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-07-03 00:59+0000\n"
+"POT-Creation-Date: 2023-07-04 00:51+0000\n"
 "PO-Revision-Date: 2022-12-03 01:11+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -54,30 +54,40 @@ msgstr "Acerca de"
 msgid "QR-Code Scanner"
 msgstr "Escáner de códigos QR"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:16
+#: src/contents/ui/QrCodeEncoderPage.qml:18
 #, kde-format
 msgid "Create QR-Code"
 msgstr "Crear código QR"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:27
+#: src/contents/ui/QrCodeEncoderPage.qml:31
+#, kde-format
+msgid "Image files (*.png *.jpg)"
+msgstr ""
+
+#: src/contents/ui/QrCodeEncoderPage.qml:31
+#, kde-format
+msgid "All files (*)"
+msgstr ""
+
+#: src/contents/ui/QrCodeEncoderPage.qml:36
 #, kde-format
 msgid "Save"
 msgstr "Guardar"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:34
+#: src/contents/ui/QrCodeEncoderPage.qml:44
 #, kde-format
-msgid "Saved image to %1"
-msgstr "Imagen guardada en %1"
+msgid "QR-Code could not be saved"
+msgstr ""
 
-#: src/contents/ui/QrCodeEncoderPage.qml:34
-#, kde-format
-msgid "Open Externally"
-msgstr "Abrir externamente"
-
-#: src/contents/ui/QrCodeEncoderPage.qml:39
+#: src/contents/ui/QrCodeEncoderPage.qml:54
 #, kde-format
 msgid "Share"
 msgstr "Compartir"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:64
+#, kde-format
+msgid "QR-Code could not be saved to temporary location"
+msgstr ""
 
 #: src/contents/ui/QrCodeScannerPage.qml:26
 #: src/contents/ui/QrCodeScannerPage.qml:195
@@ -234,6 +244,12 @@ msgstr "Simon Schmeißer"
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
 msgstr "El URL compartido para la imagen es <a href='%1'>%1</a>"
+
+#~ msgid "Saved image to %1"
+#~ msgstr "Imagen guardada en %1"
+
+#~ msgid "Open Externally"
+#~ msgstr "Abrir externamente"
 
 #~ msgid "Generating the QR-Code failed: "
 #~ msgstr "La generación del código QR ha fallado: "
