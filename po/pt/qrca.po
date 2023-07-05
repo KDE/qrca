@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-07-04 00:51+0000\n"
-"PO-Revision-Date: 2022-12-04 13:24+0000\n"
+"PO-Revision-Date: 2023-07-05 00:32+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-POFile-SpellExtra: QR Qrca Jonah Schmeißer Brüchert OTP Kaidan Open Food\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-POFile-IgnoreConsistency: Scan\n"
-"X-POFile-SpellExtra: Facts Itinerary Vakzination Wi Fi\n"
+"X-POFile-SpellExtra: Facts Itinerary Vakzination Wi Fi jpg\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -59,12 +59,12 @@ msgstr "Criar um Código QR"
 #: src/contents/ui/QrCodeEncoderPage.qml:31
 #, kde-format
 msgid "Image files (*.png *.jpg)"
-msgstr ""
+msgstr "Ficheiros de imagens (*.png *.jpg)"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:31
 #, kde-format
 msgid "All files (*)"
-msgstr ""
+msgstr "Todos os Ficheiros (*)"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:36
 #, kde-format
@@ -74,7 +74,7 @@ msgstr "Gravar"
 #: src/contents/ui/QrCodeEncoderPage.qml:44
 #, kde-format
 msgid "QR-Code could not be saved"
-msgstr ""
+msgstr "Não foi possível gravar o código QR"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:54
 #, kde-format
@@ -84,7 +84,7 @@ msgstr "Partilhar"
 #: src/contents/ui/QrCodeEncoderPage.qml:64
 #, kde-format
 msgid "QR-Code could not be saved to temporary location"
-msgstr ""
+msgstr "Não foi possível gravar o código QR na pasta temporária"
 
 #: src/contents/ui/QrCodeScannerPage.qml:26
 #: src/contents/ui/QrCodeScannerPage.qml:195
@@ -241,9 +241,3 @@ msgstr "Simon Schmeißer"
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
 msgstr "O URL partilhado da imagem é <a href='%1'>%1</a>"
-
-#~ msgid "Saved image to %1"
-#~ msgstr "A imagem foi gravada em %1"
-
-#~ msgid "Open Externally"
-#~ msgstr "Abrir Externamente"
