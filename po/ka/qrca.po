@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-07-04 00:51+0000\n"
-"PO-Revision-Date: 2022-12-03 07:01+0100\n"
+"PO-Revision-Date: 2023-07-06 08:03+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -61,12 +61,12 @@ msgstr "QR კოდის ტიპის შექმნა"
 #: src/contents/ui/QrCodeEncoderPage.qml:31
 #, kde-format
 msgid "Image files (*.png *.jpg)"
-msgstr ""
+msgstr "გამოსახულებები (*.png *.jpg)"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:31
 #, kde-format
 msgid "All files (*)"
-msgstr ""
+msgstr "ყველა ფაილი (*)"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:36
 #, kde-format
@@ -76,7 +76,7 @@ msgstr "შენახვა"
 #: src/contents/ui/QrCodeEncoderPage.qml:44
 #, kde-format
 msgid "QR-Code could not be saved"
-msgstr ""
+msgstr "QR-კოდის შენახვის შეცდომა"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:54
 #, kde-format
@@ -86,7 +86,7 @@ msgstr "გაზიარება"
 #: src/contents/ui/QrCodeEncoderPage.qml:64
 #, kde-format
 msgid "QR-Code could not be saved to temporary location"
-msgstr ""
+msgstr "QR-კოდის დროებით საქაღალდეში შენახვის შეცდომა"
 
 #: src/contents/ui/QrCodeScannerPage.qml:26
 #: src/contents/ui/QrCodeScannerPage.qml:195
