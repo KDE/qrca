@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-07-04 00:51+0000\n"
-"PO-Revision-Date: 2023-07-03 11:39\n"
+"PO-Revision-Date: 2023-07-18 11:12\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -60,12 +60,12 @@ msgstr "创建二维码"
 #: src/contents/ui/QrCodeEncoderPage.qml:31
 #, kde-format
 msgid "Image files (*.png *.jpg)"
-msgstr ""
+msgstr "图像文件 (*.png *.jpg)"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:31
 #, kde-format
 msgid "All files (*)"
-msgstr ""
+msgstr "所有文件 (*)"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:36
 #, kde-format
@@ -75,7 +75,7 @@ msgstr "保存"
 #: src/contents/ui/QrCodeEncoderPage.qml:44
 #, kde-format
 msgid "QR-Code could not be saved"
-msgstr ""
+msgstr "无法保存二维码"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:54
 #, kde-format
@@ -85,7 +85,7 @@ msgstr "分享"
 #: src/contents/ui/QrCodeEncoderPage.qml:64
 #, kde-format
 msgid "QR-Code could not be saved to temporary location"
-msgstr ""
+msgstr "二维码无法保存到临时位置"
 
 #: src/contents/ui/QrCodeScannerPage.qml:26
 #: src/contents/ui/QrCodeScannerPage.qml:195
@@ -96,7 +96,7 @@ msgstr "选择摄像头"
 #: src/contents/ui/QrCodeScannerPage.qml:34
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "补光灯"
 
 #: src/contents/ui/QrCodeScannerPage.qml:54
 #, kde-format
@@ -242,9 +242,3 @@ msgstr "Simon Schmeißer"
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
 msgstr "此图像的分享 URL 为 <a href='%1'>%1</a>"
-
-#~ msgid "Saved image to %1"
-#~ msgstr "保存图像到 %1"
-
-#~ msgid "Open Externally"
-#~ msgstr "使用外部程序打开"
