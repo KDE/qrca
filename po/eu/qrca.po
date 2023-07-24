@@ -4,13 +4,13 @@
 # KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
 #
 # Translators:
-# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2021, 2022.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-07-04 00:51+0000\n"
-"PO-Revision-Date: 2022-12-03 09:54+0100\n"
+"PO-Revision-Date: 2023-07-22 15:41+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -53,22 +53,22 @@ msgstr "Honi buruz"
 #: src/contents/ui/main.qml:59
 #, kde-format
 msgid "QR-Code Scanner"
-msgstr "QR-Code eskanerra"
+msgstr "QR kodeen eskanerra"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:18
 #, kde-format
 msgid "Create QR-Code"
-msgstr "Sortu QR-Kodea"
+msgstr "Sortu QR kodea"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:31
 #, kde-format
 msgid "Image files (*.png *.jpg)"
-msgstr ""
+msgstr "Irudi fitxategiak (*.png *.jpg)"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:31
 #, kde-format
 msgid "All files (*)"
-msgstr ""
+msgstr "Fitxategi guztiak (*)"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:36
 #, kde-format
@@ -78,7 +78,7 @@ msgstr "Gorde"
 #: src/contents/ui/QrCodeEncoderPage.qml:44
 #, kde-format
 msgid "QR-Code could not be saved"
-msgstr ""
+msgstr "Ezin izan du QR kodea gorde"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:54
 #, kde-format
@@ -88,7 +88,7 @@ msgstr "Partekatu"
 #: src/contents/ui/QrCodeEncoderPage.qml:64
 #, kde-format
 msgid "QR-Code could not be saved to temporary location"
-msgstr ""
+msgstr "QR kodea ezin izan du aldi baterako kokalekuan gorde"
 
 #: src/contents/ui/QrCodeScannerPage.qml:26
 #: src/contents/ui/QrCodeScannerPage.qml:195
