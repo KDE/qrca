@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-07-04 00:51+0000\n"
-"PO-Revision-Date: 2023-02-22 16:45+0100\n"
+"PO-Revision-Date: 2023-07-04 16:47+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 23.04.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -60,12 +60,12 @@ msgstr "Vytvořit kód QR"
 #: src/contents/ui/QrCodeEncoderPage.qml:31
 #, kde-format
 msgid "Image files (*.png *.jpg)"
-msgstr ""
+msgstr "Soubory obrázků (*.png *.jpg)"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:31
 #, kde-format
 msgid "All files (*)"
-msgstr ""
+msgstr "Všechny soubory (*)"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:36
 #, kde-format
@@ -75,7 +75,7 @@ msgstr "Uložit"
 #: src/contents/ui/QrCodeEncoderPage.qml:44
 #, kde-format
 msgid "QR-Code could not be saved"
-msgstr ""
+msgstr "QR kód nelze uložit"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:54
 #, kde-format
@@ -85,7 +85,7 @@ msgstr "Sdílet"
 #: src/contents/ui/QrCodeEncoderPage.qml:64
 #, kde-format
 msgid "QR-Code could not be saved to temporary location"
-msgstr ""
+msgstr "QR kód nelze uložit na dočasné místo"
 
 #: src/contents/ui/QrCodeScannerPage.qml:26
 #: src/contents/ui/QrCodeScannerPage.qml:195
@@ -242,9 +242,3 @@ msgstr "Simon Schmeißer"
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
 msgstr "Sdílená adresa obrázku je <a href='%1'>%1</a>"
-
-#~ msgid "Saved image to %1"
-#~ msgstr "Obrázek byl uložen do %1"
-
-#~ msgid "Open Externally"
-#~ msgstr "Otevřít externě"
