@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-07-04 00:51+0000\n"
-"PO-Revision-Date: 2023-05-02 11:53+0200\n"
+"PO-Revision-Date: 2023-07-29 09:28+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.0\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -60,12 +60,12 @@ msgstr "Crear un código QR"
 #: src/contents/ui/QrCodeEncoderPage.qml:31
 #, kde-format
 msgid "Image files (*.png *.jpg)"
-msgstr ""
+msgstr "Ficheiros de imaxe (*.png *.jpg)"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:31
 #, kde-format
 msgid "All files (*)"
-msgstr ""
+msgstr "Todos os ficheiros (*)"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:36
 #, kde-format
@@ -75,7 +75,7 @@ msgstr "Gardar"
 #: src/contents/ui/QrCodeEncoderPage.qml:44
 #, kde-format
 msgid "QR-Code could not be saved"
-msgstr ""
+msgstr "Non se puido gardar o código QR."
 
 #: src/contents/ui/QrCodeEncoderPage.qml:54
 #, kde-format
@@ -85,7 +85,7 @@ msgstr "Compartir"
 #: src/contents/ui/QrCodeEncoderPage.qml:64
 #, kde-format
 msgid "QR-Code could not be saved to temporary location"
-msgstr ""
+msgstr "Non se puido gardar o código QR nunha localización temporal."
 
 #: src/contents/ui/QrCodeScannerPage.qml:26
 #: src/contents/ui/QrCodeScannerPage.qml:195
@@ -226,7 +226,7 @@ msgstr "Un escáner sinxelo de códigos QR"
 #: src/main.cpp:51
 #, kde-format
 msgid "Copyright 2016-2019 Qrca and Kaidan authors"
-msgstr "© 2016-2019 Qrca e os autores de Kaidan"
+msgstr "© 2016-2019 Persoas autoras de Qrca e de Kaidan"
 
 #: src/main.cpp:53
 #, kde-format
