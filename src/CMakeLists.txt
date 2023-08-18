@@ -49,7 +49,7 @@ if(ANDROID)
         network-wireless
     )
 else()
-    target_link_libraries(qrca KF${QT_MAJOR_VERSION}::KIOGui KF${QT_MAJOR_VERSION}::Service)
+    target_link_libraries(qrca Qt::Widgets KF${QT_MAJOR_VERSION}::KIOGui KF${QT_MAJOR_VERSION}::Service)
 endif()
 
 install(TARGETS qrca ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
