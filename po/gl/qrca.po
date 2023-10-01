@@ -75,7 +75,7 @@ msgstr "Gardar"
 #: src/contents/ui/QrCodeEncoderPage.qml:44
 #, kde-format
 msgid "QR-Code could not be saved"
-msgstr "Non se puido gardar o código QR."
+msgstr "Non foi posíbel gardar o código QR."
 
 #: src/contents/ui/QrCodeEncoderPage.qml:54
 #, kde-format
@@ -85,7 +85,7 @@ msgstr "Compartir"
 #: src/contents/ui/QrCodeEncoderPage.qml:64
 #, kde-format
 msgid "QR-Code could not be saved to temporary location"
-msgstr "Non se puido gardar o código QR nunha localización temporal."
+msgstr "Non foi posíbel gardar o código QR nunha localización temporal."
 
 #: src/contents/ui/QrCodeScannerPage.qml:26
 #: src/contents/ui/QrCodeScannerPage.qml:195
