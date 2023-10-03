@@ -69,7 +69,13 @@
                 {
                     "type": "archive",
                     "url": "https://www.freedesktop.org/software/polkit/releases/polkit-0.120.tar.gz",
-                    "sha256": "ee7a599a853117bf273548725719fa92fabd2f136915c7a4906cee98567aee03"
+                    "sha256": "ee7a599a853117bf273548725719fa92fabd2f136915c7a4906cee98567aee03",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 3682,
+                        "stable-only": true,
+                        "url-template": "https://www.freedesktop.org/software/polkit/releases/polkit-$version.tar.gz"
+                    }
                 },
                 {
                     "type": "patch",
@@ -144,7 +150,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/networkmanager-qt.git",
-                    "tag": "v5.106.0"
+                    "tag": "v5.110.0",
+                    "x-checker-data": {
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$"
+                    },
+                    "commit": "183c0e1dddb968032e152e86593441a7515f82ca"
                 }
             ]
         },
