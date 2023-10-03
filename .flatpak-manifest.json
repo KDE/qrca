@@ -4,7 +4,9 @@
     "runtime-version": "5.15-22.08",
     "sdk": "org.kde.Sdk",
     "command": "qrca",
-    "tags": ["nightly"],
+    "tags": [
+        "nightly"
+    ],
     "desktop-file-name-suffix": " (Nightly)",
     "finish-args": [
         "--share=ipc",
@@ -15,7 +17,6 @@
         "--system-talk-name=org.freedesktop.NetworkManager"
     ],
     "separate-locales": false,
-
     "modules": [
         {
             "name": "libndp",
@@ -127,8 +128,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git",
-                    "tag": "1.42.6",
-                    "commit": "b6cc7c7e695ba3b1f2a5c95b0d6df418b8556e57",
+                    "tag": "1.44.2",
+                    "commit": "8bee6ef894a27ffc8a464df3b32b03e811e1a15d",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
@@ -139,13 +140,27 @@
         {
             "name": "networkmanager-qt",
             "buildsystem": "cmake-ninja",
-            "sources": [ { "type": "git", "url": "https://invent.kde.org/frameworks/networkmanager-qt.git", "tag": "v5.106.0"}]
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://invent.kde.org/frameworks/networkmanager-qt.git",
+                    "tag": "v5.106.0"
+                }
+            ]
         },
         {
             "name": "qrca",
             "buildsystem": "cmake-ninja",
             "builddir": true,
-            "sources": [ { "type": "dir", "path": ".", "skip": [".git"] } ]
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": ".",
+                    "skip": [
+                        ".git"
+                    ]
+                }
+            ]
         }
     ]
 }
