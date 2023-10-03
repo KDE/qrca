@@ -43,17 +43,10 @@
         },
         {
             "name": "polkit",
+            "buildsystem": "meson",
             "config-opts": [
-                "--disable-polkitd",
-                "--disable-man-pages",
-                "--disable-introspection",
-                "--disable-examples",
-                "--disable-gtk-doc",
-                "--disable-libelogind",
-                "--disable-libsystemd-login",
-                "--with-systemdsystemunitdir=no",
-                "--with-authdb=dummy",
-                "--with-authfw=none"
+                "-Dlibs-only=true",
+                "-Dauthfw=shadow"
             ],
             "cleanup": [
                 "/bin/*",
@@ -68,25 +61,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.freedesktop.org/software/polkit/releases/polkit-0.120.tar.gz",
-                    "sha256": "ee7a599a853117bf273548725719fa92fabd2f136915c7a4906cee98567aee03",
+                    "url": "https://gitlab.freedesktop.org/polkit/polkit/-/archive/123/polkit-123.tar.gz",
+                    "sha256": "b69278f6ea0eac406350c45f5720e2fe5e4beaf9f53c16d9902e025965418864",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3682,
                         "stable-only": true,
-                        "url-template": "https://www.freedesktop.org/software/polkit/releases/polkit-$version.tar.gz"
+                        "url-template": "https://gitlab.freedesktop.org/polkit/polkit/-/archive/123/polkit-$version.tar.gz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "path": "flatpak/polkit-build-Add-option-to-build-without-polkitd.patch"
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "gtkdocize --flavour no-tmpl",
-                        "autoreconf -if"
-                    ]
                 }
             ]
         },
