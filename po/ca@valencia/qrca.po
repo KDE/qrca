@@ -94,7 +94,7 @@ msgstr "No s'ha pogut guardar el codi QR a la ubicació temporal"
 #: src/contents/ui/QrCodeScannerPage.qml:195
 #, kde-format
 msgid "Select Camera"
-msgstr "Seleccioneu el càmera"
+msgstr "Seleccioneu la càmera"
 
 #: src/contents/ui/QrCodeScannerPage.qml:34
 #, kde-format
