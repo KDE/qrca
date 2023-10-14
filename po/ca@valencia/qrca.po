@@ -200,7 +200,7 @@ msgstr "Connecta"
 #: src/contents/ui/QrCodeScannerPage.qml:180
 #, kde-format
 msgid "Copy to clipboard"
-msgstr "Copia al porta-retalls"
+msgstr "Copia a dins del porta-retalls"
 
 #: src/contents/ui/ShareSheet.qml:28
 #, kde-format
