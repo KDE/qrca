@@ -6,11 +6,8 @@ cmake_minimum_required(VERSION 3.16)
 
 project(qrca VERSION 0.1)
 
-set(QT_MIN_VERSION "5.15.0")
-if (ANDROID)
-    set(QT_MIN_VERSION "5.15.10")
-endif()
-set(KF_MIN_VERSION "5.94.0")
+set(QT_MIN_VERSION "6.5.0")
+set(KF_MIN_VERSION "5.240.0")
 set(KDE_COMPILERSETTINGS_LEVEL "5.82")
 
 find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
@@ -28,12 +25,12 @@ include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDEClangFormat)
 kde_enable_exceptions()
 
-find_package(Qt${QT_MAJOR_VERSION} ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Multimedia)
-find_package(KF${QT_MAJOR_VERSION} ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Contacts CoreAddons Notifications Prison)
+find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Multimedia)
+find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami2 I18n Contacts CoreAddons Notifications Prison)
 
 if(NOT ANDROID)
-    find_package(KF${QT_MAJOR_VERSION} ${KF_MIN_VERSION} REQUIRED COMPONENTS Purpose Service KIO)
-    find_package(KF${QT_MAJOR_VERSION} ${KF_MIN_VERSION} OPTIONAL_COMPONENTS NetworkManagerQt)
+    find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Purpose Service KIO)
+    find_package(KF6 ${KF_MIN_VERSION} OPTIONAL_COMPONENTS NetworkManagerQt)
 endif()
 
 set(CMAKE_CXX_STANDARD 17)

@@ -7,7 +7,7 @@
 
 import QtQuick 2.0
 import QtQuick.Controls 2.3 as Controls
-import QtMultimedia 5.9
+import QtMultimedia
 import org.kde.kirigami 2.2 as Kirigami
 import QtQuick.Layouts 1.3
 import org.kde.prison.scanner 1.0 as Prison
@@ -21,21 +21,25 @@ Kirigami.Page {
     bottomPadding: 0
 
     title: qsTr("Scan QR code")
-    contextualActions: [
+    actions: [
+        Kirigami.Action {
+            icon.name: checked ? "flashlight-off" : "flashlight-on"
+            text: i18n("Light")
+            checkable: true
+            checked: camera.flash.mode == Camera.FlashVideoLight
+            visible: camera.flash.supportedModes.length > 1
+            onTriggered: camera.flash.mode = (camera.flash.mode == Camera.FlashVideoLight ? Camera.FlashOff : Camera.FlashVideoLight)
+        },
         Kirigami.Action {
             text: i18n("Select Camera")
-            visible: QtMultimedia.availableCameras.length > 1
+            visible: devices.videoInputs.length > 1
             icon.name: "camera-video-symbolic"
             onTriggered: cameraSelectorSheet.open()
         }
     ]
-    actions.main: Kirigami.Action {
-        icon.name: checked ? "flashlight-off" : "flashlight-on"
-        text: i18n("Light")
-        checkable: true
-        checked: camera.flash.mode == Camera.FlashVideoLight
-        visible: camera.flash.supportedModes.length > 1
-        onTriggered: camera.flash.mode = (camera.flash.mode == Camera.FlashVideoLight ? Camera.FlashOff : Camera.FlashVideoLight)
+
+    MediaDevices {
+        id: devices
     }
 
     function asLink(text) {
@@ -196,13 +200,13 @@ Kirigami.Page {
         }
 
         ListView {
-            model: QtMultimedia.availableCameras
+            model: devices.videoInputs
             implicitWidth: Kirigami.Units.gridUnit * 20
 
             delegate: Kirigami.BasicListItem {
-                text: modelData.displayName
+                text: modelData.description
                 onClicked: {
-                    camera.deviceId = modelData.deviceId;
+                    camera.cameraDevice = modelData;
                     camera.start();
                     cameraSelectorSheet.close();
                 }
@@ -213,9 +217,6 @@ Kirigami.Page {
     VideoOutput {
         id: viewfinder
         anchors.fill: parent
-        source: camera
-        autoOrientation: true
-        filters: [scannerFilter]
         fillMode: VideoOutput.PreserveAspectCrop
     }
 
@@ -223,7 +224,6 @@ Kirigami.Page {
         id: scannerFilter
 
         onResultContentChanged: result => {
-
             if (!result.hasContent) {
                 return
             }
@@ -233,13 +233,16 @@ Kirigami.Page {
                 resultSheet.open()
             }
         }
+        videoSink: viewfinder.videoSink
     }
 
-    Camera {
-        id: camera
-        focus {
-            focusMode: Camera.FocusContinuous
-            focusPointMode: Camera.FocusPointCenter
+    CaptureSession {
+        id: captureSession
+        camera: Camera {
+            id: camera
+            active: true
         }
+        videoOutput: viewfinder
     }
+
 }

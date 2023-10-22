@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 
-if (TARGET KF${QT_MAJOR_VERSION}::NetworkManagerQt)
+if (TARGET KF6::NetworkManagerQt)
     set(HAVE_NETWORKMANAGER TRUE)
 endif()
 configure_file(config-qrca.h.in ${CMAKE_CURRENT_BINARY_DIR}/config-qrca.h)
@@ -20,16 +20,16 @@ set(qrca_SRCS
 
 add_executable(qrca ${qrca_SRCS})
 
-target_link_libraries(qrca Qt::Core Qt::Qml Qt::Quick Qt::Svg Qt::Multimedia KF${QT_MAJOR_VERSION}::I18n KF${QT_MAJOR_VERSION}::Contacts KF${QT_MAJOR_VERSION}::CoreAddons KF${QT_MAJOR_VERSION}::Notifications KF${QT_MAJOR_VERSION}::PrisonScanner)
+target_link_libraries(qrca Qt::Core Qt::Qml Qt::Quick Qt::Svg Qt::Multimedia KF6::I18n KF6::Contacts KF6::CoreAddons KF6::Notifications KF6::PrisonScanner)
 
-if (TARGET KF${QT_MAJOR_VERSION}::NetworkManagerQt)
-    target_link_libraries(qrca KF${QT_MAJOR_VERSION}::NetworkManagerQt)
+if (TARGET KF6::NetworkManagerQt)
+    target_link_libraries(qrca KF6::NetworkManagerQt)
 endif()
 
 target_compile_definitions(qrca PRIVATE -DQT_NO_CAST_FROM_ASCII)
 
 if(ANDROID)
-    target_link_libraries(qrca Qt::Svg KF${QT_MAJOR_VERSION}::Kirigami2)
+    target_link_libraries(qrca Qt::Svg KF6::Kirigami2)
 
     kirigami_package_breeze_icons(ICONS
         arrow-right
@@ -49,7 +49,7 @@ if(ANDROID)
         network-wireless
     )
 else()
-    target_link_libraries(qrca Qt::Widgets KF${QT_MAJOR_VERSION}::KIOGui KF${QT_MAJOR_VERSION}::Service)
+    target_link_libraries(qrca Qt::Widgets KF6::KIOGui KF6::Service)
 endif()
 
 install(TARGETS qrca ${KF_INSTALL_TARGETS_DEFAULT_ARGS})

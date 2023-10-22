@@ -12,7 +12,7 @@ import QtQuick.Layouts 1.3
 import org.kde.qrca 1.0
 import org.kde.prison 1.0 as Prison
 
-import QtQuick.Dialogs 1.2
+import QtQuick.Dialogs
 
 Kirigami.ScrollablePage {
     title: i18n("Create QR-Code")
@@ -26,12 +26,11 @@ Kirigami.ScrollablePage {
 
     FileDialog {
         id: fileDialog
-        selectExisting: false
         defaultSuffix: "png"
         nameFilters: [ i18n("Image files (*.png *.jpg)"), i18n("All files (*)") ]
     }
 
-    actions.contextualActions: [
+    actions: [
         Kirigami.Action {
             text: i18n("Save")
             icon.name: "document-save"

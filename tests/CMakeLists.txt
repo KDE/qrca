@@ -6,19 +6,19 @@
 
 include(ECMAddTests)
 
-find_package(Qt${QT_MAJOR_VERSION} ${REQUIRED_QT_VERSION} CONFIG REQUIRED Test)
+find_package(Qt6 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Test)
 
 include_directories(../src ${CMAKE_CURRENT_BINARY_DIR}/../src)
 
 ecm_add_test(qrcatest.cpp ../src/Qrca.cpp ../src/QrCodeContent.cpp ../src/mecardparser.cpp
              TEST_NAME qrcatest
-             LINK_LIBRARIES Qt::Test Qt::Core Qt::Gui KF${QT_MAJOR_VERSION}::I18n KF${QT_MAJOR_VERSION}::Contacts KF${QT_MAJOR_VERSION}::CoreAddons KF${QT_MAJOR_VERSION}::PrisonScanner
+             LINK_LIBRARIES Qt::Test Qt::Core Qt::Gui KF6::I18n KF6::Contacts KF6::CoreAddons KF6::PrisonScanner
 )
 if (NOT ANDROID)
-    target_link_libraries(qrcatest KF${QT_MAJOR_VERSION}::KIOGui KF${QT_MAJOR_VERSION}::Service)
+    target_link_libraries(qrcatest KF6::KIOGui KF6::Service)
 endif()
-if (TARGET KF${QT_MAJOR_VERSION}::NetworkManagerQt)
-    target_link_libraries(qrcatest KF${QT_MAJOR_VERSION}::NetworkManagerQt)
+if (TARGET KF6::NetworkManagerQt)
+    target_link_libraries(qrcatest KF6::NetworkManagerQt)
 endif()
 
 ecm_add_test(mecardparsertest.cpp ../src/mecardparser.cpp TEST_NAME mecardparsertest LINK_LIBRARIES Qt::Core Qt::Test)
