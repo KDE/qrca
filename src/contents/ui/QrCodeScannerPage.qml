@@ -203,8 +203,9 @@ Kirigami.Page {
             model: devices.videoInputs
             implicitWidth: Kirigami.Units.gridUnit * 20
 
-            delegate: Kirigami.BasicListItem {
+            delegate: Controls.ItemDelegate {
                 text: modelData.description
+                width: ListView.view.width
                 onClicked: {
                     camera.cameraDevice = modelData;
                     camera.start();

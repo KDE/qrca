@@ -36,9 +36,10 @@ Kirigami.OverlaySheet {
         implicitWidth: Kirigami.Units.gridUnit * 20
         implicitHeight: Kirigami.Units.gridUnit * 10
 
-        delegate: Kirigami.BasicListItem {
-            label: model.display
-            icon.name: "arrow-right"
+        delegate: Controls.ItemDelegate {
+            text: model.display
+            icon.name: model.iconName
+            width: ListView.view.width
             onClicked: view.createJob(model.index)
             Keys.onReturnPressed: view.createJob(model.index)
             Keys.onEnterPressed: view.createJob(model.index)
