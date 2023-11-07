@@ -51,7 +51,7 @@ Kirigami.OverlaySheet {
 
         delegate: Kirigami.BasicListItem {
             label: model.display
-            icon: "arrow-right"
+            icon.name: "arrow-right"
             onClicked: view.createJob(model.index)
             Keys.onReturnPressed: view.createJob(model.index)
             Keys.onEnterPressed: view.createJob(model.index)
@@ -73,9 +73,9 @@ Kirigami.OverlaySheet {
         }
     }
 
-    onSheetOpenChanged: {
+    onVisibleChanged: {
         errorOccured = false;
-        if (sheetOpen) {
+        if (visible) {
             view.inputData = {
                 "urls": [inputSheet.url.toString()],
                 "title": i18n("Share QR-Code"),
