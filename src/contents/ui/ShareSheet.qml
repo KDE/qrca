@@ -29,19 +29,6 @@ Kirigami.OverlaySheet {
         leftPadding: Kirigami.Units.largeSpacing
     }
 
-    Controls.BusyIndicator {
-        visible: inputSheet.running
-        anchors.fill: parent
-    }
-
-    Kirigami.Heading {
-        anchors.centerIn: parent
-        width: parent.width - Kirigami.Units.gridUnit * 2
-        text: i18n("Sharing Failed")
-        horizontalAlignment: Text.AlignHCenter
-        visible: errorOccured
-    }
-
     Purpose.AlternativesView {
         id: view
         clip: true
@@ -55,6 +42,19 @@ Kirigami.OverlaySheet {
             onClicked: view.createJob(model.index)
             Keys.onReturnPressed: view.createJob(model.index)
             Keys.onEnterPressed: view.createJob(model.index)
+        }
+
+        Controls.BusyIndicator {
+            visible: inputSheet.running
+            anchors.fill: parent
+        }
+
+        Kirigami.Heading {
+            anchors.centerIn: parent
+            width: parent.width - Kirigami.Units.gridUnit * 2
+            text: i18n("Sharing Failed")
+            horizontalAlignment: Text.AlignHCenter
+            visible: errorOccured
         }
 
         onRunningChanged: inputSheet.running = running
