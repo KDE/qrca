@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-07 02:45+0000\n"
+"POT-Creation-Date: 2023-11-08 08:49+0000\n"
 "PO-Revision-Date: 2023-07-27 20:10+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -57,144 +57,144 @@ msgstr "QR-koodinlukija"
 msgid "Create QR-Code"
 msgstr "Luo QR-koodi"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:31
+#: src/contents/ui/QrCodeEncoderPage.qml:30
 #, kde-format
 msgid "Image files (*.png *.jpg)"
 msgstr "Kuvatiedostot (*.png *.jpg)"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:31
+#: src/contents/ui/QrCodeEncoderPage.qml:30
 #, kde-format
 msgid "All files (*)"
 msgstr "Kaikki tiedostot (*)"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:36
+#: src/contents/ui/QrCodeEncoderPage.qml:35
 #, kde-format
 msgid "Save"
 msgstr "Tallenna"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:44
+#: src/contents/ui/QrCodeEncoderPage.qml:43
 #, kde-format
 msgid "QR-Code could not be saved"
 msgstr "QR-koodia ei voitu tallentaa"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:54
+#: src/contents/ui/QrCodeEncoderPage.qml:53
 #, kde-format
 msgid "Share"
 msgstr "Jaa"
 
-#: src/contents/ui/QrCodeEncoderPage.qml:64
+#: src/contents/ui/QrCodeEncoderPage.qml:63
 #, kde-format
 msgid "QR-Code could not be saved to temporary location"
 msgstr "QR-koodia ei voitu tallentaa väliaikaissijaintiin"
 
-#: src/contents/ui/QrCodeScannerPage.qml:26
-#: src/contents/ui/QrCodeScannerPage.qml:195
-#, kde-format
-msgid "Select Camera"
-msgstr "Valitse kamera"
-
 # *** TARKISTA: Vai ”kevyt"? Pitäisi tietää konteksti.
-#: src/contents/ui/QrCodeScannerPage.qml:34
+#: src/contents/ui/QrCodeScannerPage.qml:27
 #, kde-format
 msgid "Light"
 msgstr "Vaalea"
 
-#: src/contents/ui/QrCodeScannerPage.qml:54
+#: src/contents/ui/QrCodeScannerPage.qml:34
+#: src/contents/ui/QrCodeScannerPage.qml:199
+#, kde-format
+msgid "Select Camera"
+msgstr "Valitse kamera"
+
+#: src/contents/ui/QrCodeScannerPage.qml:58
 #, kde-format
 msgid "Text found"
 msgstr "Löytyi teksti"
 
-#: src/contents/ui/QrCodeScannerPage.qml:56
+#: src/contents/ui/QrCodeScannerPage.qml:60
 #, kde-format
 msgid "URL found"
 msgstr "Löytyi verkko-osoite"
 
-#: src/contents/ui/QrCodeScannerPage.qml:58
+#: src/contents/ui/QrCodeScannerPage.qml:62
 #, kde-format
 msgid "Contact found"
 msgstr "Löytyi yhteystieto"
 
-#: src/contents/ui/QrCodeScannerPage.qml:60
+#: src/contents/ui/QrCodeScannerPage.qml:64
 #, kde-format
 msgid "OTP URI found"
 msgstr "Löytyi OTP-URI"
 
-#: src/contents/ui/QrCodeScannerPage.qml:62
+#: src/contents/ui/QrCodeScannerPage.qml:66
 #, kde-format
 msgid "Binary data found"
 msgstr "Löytyi binaaridataa"
 
-#: src/contents/ui/QrCodeScannerPage.qml:64
+#: src/contents/ui/QrCodeScannerPage.qml:68
 #, kde-format
 msgid "Health certificate found"
 msgstr "Löytyi terveystodistus"
 
-#: src/contents/ui/QrCodeScannerPage.qml:66
+#: src/contents/ui/QrCodeScannerPage.qml:70
 #, kde-format
 msgid "Transport ticket found"
 msgstr "Löytyi matkalippu"
 
-#: src/contents/ui/QrCodeScannerPage.qml:68
+#: src/contents/ui/QrCodeScannerPage.qml:72
 #, kde-format
 msgid "ISBN found"
 msgstr "Löytyi ISBN"
 
-#: src/contents/ui/QrCodeScannerPage.qml:70
+#: src/contents/ui/QrCodeScannerPage.qml:74
 #, kde-format
 msgid "International Article Number found"
 msgstr "Löytyi kansainvälinen artikkelinumero"
 
-#: src/contents/ui/QrCodeScannerPage.qml:72
+#: src/contents/ui/QrCodeScannerPage.qml:76
 #, kde-format
 msgid "Wi-Fi settings found"
 msgstr "Löytyi langattoman verkon asetukset"
 
-#: src/contents/ui/QrCodeScannerPage.qml:89
+#: src/contents/ui/QrCodeScannerPage.qml:93
 #, kde-format
 msgid "<binary data>"
 msgstr "<binaaridataa>"
 
-#: src/contents/ui/QrCodeScannerPage.qml:103
+#: src/contents/ui/QrCodeScannerPage.qml:107
 #, kde-format
 msgid "Open"
 msgstr "Avaa"
 
-#: src/contents/ui/QrCodeScannerPage.qml:105
+#: src/contents/ui/QrCodeScannerPage.qml:109
 #, kde-format
 msgid "Save contact"
 msgstr "Tallenna yhteystieto"
 
-#: src/contents/ui/QrCodeScannerPage.qml:107
+#: src/contents/ui/QrCodeScannerPage.qml:111
 #, kde-format
 msgid "Open OTP client"
 msgstr "Avaa OTP-asiakas"
 
-#: src/contents/ui/QrCodeScannerPage.qml:109
+#: src/contents/ui/QrCodeScannerPage.qml:113
 #, kde-format
 msgid "Open Food Facts"
 msgstr "Avaa ainesosaseloste"
 
-#: src/contents/ui/QrCodeScannerPage.qml:111
+#: src/contents/ui/QrCodeScannerPage.qml:115
 #, kde-format
 msgid "Wikipedia Book Sources"
 msgstr "Wikipedia Books -lähteet"
 
-#: src/contents/ui/QrCodeScannerPage.qml:113
+#: src/contents/ui/QrCodeScannerPage.qml:117
 #, kde-format
 msgid "Open KDE Itinerary"
 msgstr "Avaa KDE Itinerary"
 
-#: src/contents/ui/QrCodeScannerPage.qml:115
+#: src/contents/ui/QrCodeScannerPage.qml:119
 #, kde-format
 msgid "Open in Vakzination"
 msgstr "Avaa Vakzinationiin"
 
-#: src/contents/ui/QrCodeScannerPage.qml:117
+#: src/contents/ui/QrCodeScannerPage.qml:121
 #, kde-format
 msgid "Connect"
 msgstr "Yhdistä"
 
-#: src/contents/ui/QrCodeScannerPage.qml:180
+#: src/contents/ui/QrCodeScannerPage.qml:184
 #, kde-format
 msgid "Copy to clipboard"
 msgstr "Kopioi leikepöydälle"
