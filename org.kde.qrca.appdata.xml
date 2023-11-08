@@ -2,6 +2,7 @@
 <component type="desktop-application">
   <id>org.kde.qrca</id>
   <name>Barcode Scanner</name>
+  <name xml:lang="ast">Escáner de códigos de barres</name>
   <name xml:lang="ca">Escàner de codi de barres</name>
   <name xml:lang="ca-valencia">Escàner de codi de barres</name>
   <name xml:lang="cs">Čtečka čarových kódů</name>
@@ -34,6 +35,7 @@
   <name xml:lang="zh-CN">二维码扫描器</name>
   <name xml:lang="zh-TW">條碼掃描器</name>
   <summary>Scan and create QR-Codes</summary>
+  <summary xml:lang="ast">Escania ya crea códigos QR</summary>
   <summary xml:lang="ca">Escaneja i crea codis QR</summary>
   <summary xml:lang="ca-valencia">Escaneja i crea codis QR</summary>
   <summary xml:lang="de">Scannen und Erstellen von QR-Codes</summary>
@@ -67,6 +69,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <developer_name>KDE Community</developer_name>
+  <developer_name xml:lang="ast">La comunidá KDE</developer_name>
   <developer_name xml:lang="ca">La comunitat KDE</developer_name>
   <developer_name xml:lang="ca-valencia">La comunitat KDE</developer_name>
   <developer_name xml:lang="cs">Komunita KDE</developer_name>
@@ -102,6 +105,7 @@
     <p>
       Scan QR-Codes with your camera on phones and laptops, and create your own for easily sharing data between devices.
     </p>
+    <p xml:lang="ast">Escania códigos QR cola cámara de teléfonos ya portátiles, ya crea los de to pa compartir datos ente preseos fácilmente.</p>
     <p xml:lang="ca">Escanegeu els codis QR amb la càmera del telèfon o portàtil, i creeu els vostres per a compartir dades amb facilitat entre diferents dispositius.</p>
     <p xml:lang="ca-valencia">Escanegeu els codis QR amb la càmera del telèfon o portàtil, i creeu els vostres per a compartir dades amb facilitat entre diferents dispositius.</p>
     <p xml:lang="de">Scannen Sie QR-Codes mit Ihrer Kamera auf Telefonen und Laptops, und erstellen Sie Ihre eigenen QR-Codeszum einfachen Austausch von Daten zwischen Geräten.</p>
