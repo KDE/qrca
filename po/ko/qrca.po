@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-08 08:49+0000\n"
+"POT-Creation-Date: 2023-11-09 01:40+0000\n"
 "PO-Revision-Date: 2023-07-25 01:18+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -203,12 +203,12 @@ msgstr "클립보드에 복사"
 msgid "Share Qr-Code"
 msgstr "QR 코드 공유"
 
-#: src/contents/ui/ShareSheet.qml:40
+#: src/contents/ui/ShareSheet.qml:56
 #, kde-format
 msgid "Sharing Failed"
 msgstr "공유 실패"
 
-#: src/contents/ui/ShareSheet.qml:81
+#: src/contents/ui/ShareSheet.qml:82
 #, kde-format
 msgid "Share QR-Code"
 msgstr "QR 코드 공유"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-08 08:49+0000\n"
+"POT-Creation-Date: 2023-11-09 01:40+0000\n"
 "PO-Revision-Date: 2023-07-07 22:19+0200\n"
 "Last-Translator: Paolo Zamponi <feus73@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -203,12 +203,12 @@ msgstr "Copia negli appunti"
 msgid "Share Qr-Code"
 msgstr "Condividi codice QR"
 
-#: src/contents/ui/ShareSheet.qml:40
+#: src/contents/ui/ShareSheet.qml:56
 #, kde-format
 msgid "Sharing Failed"
 msgstr "Condivisione non riuscita"
 
-#: src/contents/ui/ShareSheet.qml:81
+#: src/contents/ui/ShareSheet.qml:82
 #, kde-format
 msgid "Share QR-Code"
 msgstr "Condividi codice QR"

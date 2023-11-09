@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-08 08:49+0000\n"
+"POT-Creation-Date: 2023-11-09 01:40+0000\n"
 "PO-Revision-Date: 2023-07-31 11:11+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -203,12 +203,12 @@ msgstr "Kopiera till klippbordet"
 msgid "Share Qr-Code"
 msgstr "Dela QR-kod"
 
-#: src/contents/ui/ShareSheet.qml:40
+#: src/contents/ui/ShareSheet.qml:56
 #, kde-format
 msgid "Sharing Failed"
 msgstr "Delning misslyckades"
 
-#: src/contents/ui/ShareSheet.qml:81
+#: src/contents/ui/ShareSheet.qml:82
 #, kde-format
 msgid "Share QR-Code"
 msgstr "Dela QR-kod"

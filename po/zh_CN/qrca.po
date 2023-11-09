@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-08 08:49+0000\n"
+"POT-Creation-Date: 2023-11-09 01:40+0000\n"
 "PO-Revision-Date: 2023-10-21 13:55\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -203,12 +203,12 @@ msgstr "复制到剪贴板"
 msgid "Share Qr-Code"
 msgstr "分享二维码"
 
-#: src/contents/ui/ShareSheet.qml:40
+#: src/contents/ui/ShareSheet.qml:56
 #, kde-format
 msgid "Sharing Failed"
 msgstr "分享失败"
 
-#: src/contents/ui/ShareSheet.qml:81
+#: src/contents/ui/ShareSheet.qml:82
 #, kde-format
 msgid "Share QR-Code"
 msgstr "分享二维码"
