@@ -48,6 +48,7 @@ if(ANDROID)
         itinerary
         network-wireless
     )
+    ecm_add_android_apk(qrca ANDROID_DIR ${CMAKE_SOURCE_DIR}/android)
 else()
     target_link_libraries(qrca Qt::Widgets KF6::KIOGui KF6::Service)
 endif()
