@@ -29,7 +29,7 @@ endif()
 target_compile_definitions(qrca PRIVATE -DQT_NO_CAST_FROM_ASCII)
 
 if(ANDROID)
-    target_link_libraries(qrca Qt::Svg KF6::Kirigami2)
+    target_link_libraries(qrca Qt::Svg KF6::Kirigami)
 
     kirigami_package_breeze_icons(ICONS
         arrow-right
