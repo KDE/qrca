@@ -7,3 +7,5 @@ CMakeLists.txt.user
 .cache
 .idea
 /cmake-build*
+
+/build*/
