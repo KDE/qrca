@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-09 01:40+0000\n"
+"POT-Creation-Date: 2023-11-16 01:47+0000\n"
 "PO-Revision-Date: 2019-11-15 18:09+0800\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
@@ -223,27 +223,27 @@ msgstr ""
 msgid "Share QR-Code"
 msgstr "分享 QR 碼"
 
-#: src/main.cpp:51
+#: src/main.cpp:50
 #, kde-format
 msgid "Qrca"
 msgstr "Qrca"
 
-#: src/main.cpp:51
+#: src/main.cpp:50
 #, kde-format
 msgid "A simple QR scanner"
 msgstr "簡單的 QR 掃描器"
 
-#: src/main.cpp:51
+#: src/main.cpp:50
 #, kde-format
 msgid "Copyright 2016-2019 Qrca and Kaidan authors"
 msgstr "版權所有 2016-2019 Qrca 及 Kaidan 作者群"
 
-#: src/main.cpp:53
+#: src/main.cpp:52
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: src/main.cpp:54
+#: src/main.cpp:53
 #, kde-format
 msgid "Simon Schmeißer"
 msgstr "Simon Schmeißer"
