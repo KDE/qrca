@@ -26,9 +26,9 @@ Kirigami.Page {
             icon.name: checked ? "flashlight-off" : "flashlight-on"
             text: i18n("Light")
             checkable: true
-            checked: camera.flash.mode == Camera.FlashVideoLight
-            visible: camera.flash.supportedModes.length > 1
-            onTriggered: camera.flash.mode = (camera.flash.mode == Camera.FlashVideoLight ? Camera.FlashOff : Camera.FlashVideoLight)
+            checked: camera.torchMode == Camera.TorchOn
+            visible: camera.isTorchModeSupported
+            onTriggered: camera.torchMode = (camera.torchMode == Camera.TorchOn ? Camera.TorchOff : Camera.TorchOn)
         },
         Kirigami.Action {
             text: i18n("Select Camera")
