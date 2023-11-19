@@ -11,7 +11,7 @@ import QtQuick.Controls 2.0 as Controls
 import org.kde.qrca 1.0
 
 Kirigami.ApplicationWindow {
-    id: window 
+    id: root
 
     title: i18n("QR Code Scanner")
 
@@ -57,13 +57,13 @@ Kirigami.ApplicationWindow {
 
     globalDrawer: Kirigami.GlobalDrawer {
         title: i18n("QR-Code Scanner")
-        isMenu: window.wideScreen
-        actions: window.wideScreen ? navigationActions : []
+        isMenu: root.wideScreen
+        actions: root.wideScreen ? navigationActions : []
         enabled: false
     }
 
     footer: Kirigami.NavigationTabBar {
-        visible: !window.wideScreen
+        visible: true || !root.wideScreen
         actions: navigationActions
     }
 
