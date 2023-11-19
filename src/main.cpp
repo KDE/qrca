@@ -61,7 +61,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QGuiApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.qrca")));
     aboutData.setProgramLogo(app.windowIcon());
 
-    qmlRegisterUncreatableType<QrCodeContent>("org.kde.qrca", 1, 0, "QrCodeContent", {});
+    qmlRegisterUncreatableMetaObject(QrCodeContent::staticMetaObject, "org.kde.qrca", 1, 0, "QrCodeContent", {});
     qmlRegisterSingletonType<NotificationManager>("org.kde.qrca", 1, 0, "NotificationManager", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
         Q_UNUSED(engine)
         Q_UNUSED(scriptEngine)
