@@ -59,7 +59,7 @@ Kirigami.ApplicationWindow {
         title: i18n("QR-Code Scanner")
         isMenu: window.wideScreen
         actions: window.wideScreen ? navigationActions : []
-        enabled: false
+        enabled: window.wideScreen
     }
 
     footer: Kirigami.NavigationTabBar {
