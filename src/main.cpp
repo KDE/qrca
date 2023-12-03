@@ -16,6 +16,7 @@
 #include <QQmlApplicationEngine>
 #include <QUrl>
 #include <QtQml>
+#include <QQuickStyle>
 
 #include <KAboutData>
 #include <KLocalizedContext>
@@ -31,8 +32,13 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 {
 #ifndef Q_OS_ANDROID
     QApplication app(argc, argv);
+    // Default to org.kde.desktop style unless the user forces another style
+    if (qEnvironmentVariableIsEmpty("QT_QUICK_CONTROLS_STYLE")) {
+        QQuickStyle::setStyle(QStringLiteral("org.kde.desktop"));
+    }
 #else
     QGuiApplication app(argc, argv);
+    QQuickStyle::setStyle(QStringLiteral("org.kde.breeze"));
 #endif
     QCoreApplication::setOrganizationName(QStringLiteral("KDE"));
     QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
