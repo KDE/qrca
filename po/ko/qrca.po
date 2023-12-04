@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-16 01:47+0000\n"
+"POT-Creation-Date: 2023-12-04 01:39+0000\n"
 "PO-Revision-Date: 2023-07-25 01:18+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -213,27 +213,27 @@ msgstr "공유 실패"
 msgid "Share QR-Code"
 msgstr "QR 코드 공유"
 
-#: src/main.cpp:50
+#: src/main.cpp:56
 #, kde-format
 msgid "Qrca"
 msgstr "Qrca"
 
-#: src/main.cpp:50
+#: src/main.cpp:56
 #, kde-format
 msgid "A simple QR scanner"
 msgstr "간단한 QR 스캐너"
 
-#: src/main.cpp:50
+#: src/main.cpp:56
 #, kde-format
 msgid "Copyright 2016-2019 Qrca and Kaidan authors"
 msgstr "Copyright 2016-2019 Qrca and Kaidan authors"
 
-#: src/main.cpp:52
+#: src/main.cpp:58
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: src/main.cpp:53
+#: src/main.cpp:59
 #, kde-format
 msgid "Simon Schmeißer"
 msgstr "Simon Schmeißer"
