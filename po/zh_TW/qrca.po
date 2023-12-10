@@ -5,20 +5,21 @@
 #
 # Automatically generated, 2019.
 # pan93412 <pan93412@gmail.com>, 2019.
+# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-04 01:39+0000\n"
-"PO-Revision-Date: 2019-11-15 18:09+0800\n"
-"Last-Translator: pan93412 <pan93412@gmail.com>\n"
-"Language-Team: Chinese <zh-l10n@lists.linux.org.tw>\n"
+"PO-Revision-Date: 2023-12-09 19:42+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 19.08.3\n"
+"X-Generator: Lokalize 24.01.80\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -63,12 +64,12 @@ msgstr "建立 QR 碼"
 #: src/contents/ui/QrCodeEncoderPage.qml:30
 #, kde-format
 msgid "Image files (*.png *.jpg)"
-msgstr ""
+msgstr "影像檔 (*png *.jpg)"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:30
 #, kde-format
 msgid "All files (*)"
-msgstr ""
+msgstr "所有檔案 (*)"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:35
 #, kde-format
@@ -78,7 +79,7 @@ msgstr "儲存"
 #: src/contents/ui/QrCodeEncoderPage.qml:43
 #, kde-format
 msgid "QR-Code could not be saved"
-msgstr ""
+msgstr "QR 碼無法儲存"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:53
 #, kde-format
@@ -88,7 +89,7 @@ msgstr "分享"
 #: src/contents/ui/QrCodeEncoderPage.qml:63
 #, kde-format
 msgid "QR-Code could not be saved to temporary location"
-msgstr ""
+msgstr "QR 碼無法儲存到暫存位置"
 
 #: src/contents/ui/QrCodeScannerPage.qml:27
 #, kde-format
@@ -99,68 +100,62 @@ msgstr ""
 #: src/contents/ui/QrCodeScannerPage.qml:199
 #, kde-format
 msgid "Select Camera"
-msgstr ""
+msgstr "選取相機"
 
 #: src/contents/ui/QrCodeScannerPage.qml:58
-#, fuzzy, kde-format
-#| msgid "Tag found"
+#, kde-format
 msgid "Text found"
-msgstr "找到標籤"
+msgstr "找到文字"
 
 #: src/contents/ui/QrCodeScannerPage.qml:60
-#, fuzzy, kde-format
-#| msgid "Tag found"
+#, kde-format
 msgid "URL found"
-msgstr "找到標籤"
+msgstr "找到網址"
 
 #: src/contents/ui/QrCodeScannerPage.qml:62
-#, fuzzy, kde-format
-#| msgid "Tag found"
+#, kde-format
 msgid "Contact found"
-msgstr "找到標籤"
+msgstr "找到聯絡人"
 
 #: src/contents/ui/QrCodeScannerPage.qml:64
-#, fuzzy, kde-format
-#| msgid "Tag found"
+#, kde-format
 msgid "OTP URI found"
-msgstr "找到標籤"
+msgstr "找到 OTP URI"
 
 #: src/contents/ui/QrCodeScannerPage.qml:66
-#, fuzzy, kde-format
-#| msgid "Tag found"
+#, kde-format
 msgid "Binary data found"
-msgstr "找到標籤"
+msgstr "找到二進位資料"
 
 #: src/contents/ui/QrCodeScannerPage.qml:68
 #, kde-format
 msgid "Health certificate found"
-msgstr ""
+msgstr "找到健康證明"
 
 #: src/contents/ui/QrCodeScannerPage.qml:70
 #, kde-format
 msgid "Transport ticket found"
-msgstr ""
+msgstr "找到交通票券"
 
 #: src/contents/ui/QrCodeScannerPage.qml:72
-#, fuzzy, kde-format
-#| msgid "Tag found"
+#, kde-format
 msgid "ISBN found"
-msgstr "找到標籤"
+msgstr "找到 ISBN"
 
 #: src/contents/ui/QrCodeScannerPage.qml:74
 #, kde-format
 msgid "International Article Number found"
-msgstr ""
+msgstr "找到國際商品條碼"
 
 #: src/contents/ui/QrCodeScannerPage.qml:76
 #, kde-format
 msgid "Wi-Fi settings found"
-msgstr ""
+msgstr "找到 Wi-Fi 設定"
 
 #: src/contents/ui/QrCodeScannerPage.qml:93
 #, kde-format
 msgid "<binary data>"
-msgstr ""
+msgstr "<二進位資料>"
 
 #: src/contents/ui/QrCodeScannerPage.qml:107
 #, kde-format
@@ -175,48 +170,47 @@ msgstr "儲存聯絡人"
 #: src/contents/ui/QrCodeScannerPage.qml:111
 #, kde-format
 msgid "Open OTP client"
-msgstr ""
+msgstr "開啟 OTP 用戶端"
 
 #: src/contents/ui/QrCodeScannerPage.qml:113
 #, kde-format
 msgid "Open Food Facts"
-msgstr ""
+msgstr "開啟食品資訊"
 
 #: src/contents/ui/QrCodeScannerPage.qml:115
 #, kde-format
 msgid "Wikipedia Book Sources"
-msgstr ""
+msgstr "維基百科書本來源"
 
 #: src/contents/ui/QrCodeScannerPage.qml:117
 #, kde-format
 msgid "Open KDE Itinerary"
-msgstr ""
+msgstr "開啟 KDE Itinerary"
 
 #: src/contents/ui/QrCodeScannerPage.qml:119
 #, kde-format
 msgid "Open in Vakzination"
-msgstr ""
+msgstr "在 Vakzination 開啟"
 
 #: src/contents/ui/QrCodeScannerPage.qml:121
 #, kde-format
 msgid "Connect"
-msgstr ""
+msgstr "連線"
 
 #: src/contents/ui/QrCodeScannerPage.qml:184
 #, kde-format
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "複製到剪貼簿"
 
 #: src/contents/ui/ShareSheet.qml:28
-#, fuzzy, kde-format
-#| msgid "Share QR-Code"
+#, kde-format
 msgid "Share Qr-Code"
 msgstr "分享 QR 碼"
 
 #: src/contents/ui/ShareSheet.qml:56
 #, kde-format
 msgid "Sharing Failed"
-msgstr ""
+msgstr "分享失敗"
 
 #: src/contents/ui/ShareSheet.qml:82
 #, kde-format
@@ -251,7 +245,7 @@ msgstr "Simon Schmeißer"
 #: src/notificationmanager.cpp:19
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
-msgstr ""
+msgstr "影像已分享的網址是 <a href='%1'>%1</a>"
 
 #, fuzzy
 #~| msgid "Saved image to "
