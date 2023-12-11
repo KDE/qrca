@@ -5,10 +5,11 @@
  *  SPDX-License-Identifier: GPL-3.0-or-later
  */
 
+import QtCore
 import QtQuick 2.0
 import QtQuick.Controls 2.3 as Controls
 import QtMultimedia
-import org.kde.kirigami 2.2 as Kirigami
+import org.kde.kirigami as Kirigami
 import QtQuick.Layouts 1.3
 import org.kde.prison.scanner 1.0 as Prison
 
@@ -37,6 +38,15 @@ Kirigami.Page {
             onTriggered: cameraSelectorSheet.open()
         }
     ]
+
+    CameraPermission {
+        id: permission
+        onStatusChanged: {
+            if (status == Qt.PermissionStatus.Granted) {
+                camera.start();
+            }
+        }
+    }
 
     MediaDevices {
         id: devices
@@ -246,4 +256,14 @@ Kirigami.Page {
         videoOutput: viewfinder
     }
 
+    Kirigami.PlaceholderMessage {
+        text: camera.errorString
+        visible: camera.error != Camera.NoError
+        anchors.fill: parent
+    }
+
+    Component.onCompleted: {
+        if (permission.status == Qt.PermissionStatus.Undetermined)
+            permission.request()
+    }
 }
