@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-04 01:39+0000\n"
+"POT-Creation-Date: 2023-12-12 01:39+0000\n"
 "PO-Revision-Date: 2023-07-22 15:41+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -90,113 +90,113 @@ msgstr "Partekatu"
 msgid "QR-Code could not be saved to temporary location"
 msgstr "QR kodea ezin izan du aldi baterako kokalekuan gorde"
 
-#: src/contents/ui/QrCodeScannerPage.qml:27
+#: src/contents/ui/QrCodeScannerPage.qml:28
 #, kde-format
 msgid "Light"
 msgstr "Argia"
 
-#: src/contents/ui/QrCodeScannerPage.qml:34
-#: src/contents/ui/QrCodeScannerPage.qml:199
+#: src/contents/ui/QrCodeScannerPage.qml:35
+#: src/contents/ui/QrCodeScannerPage.qml:209
 #, kde-format
 msgid "Select Camera"
 msgstr "Hautatu kamera"
 
-#: src/contents/ui/QrCodeScannerPage.qml:58
+#: src/contents/ui/QrCodeScannerPage.qml:68
 #, kde-format
 msgid "Text found"
 msgstr "Testua aurkitu da"
 
-#: src/contents/ui/QrCodeScannerPage.qml:60
+#: src/contents/ui/QrCodeScannerPage.qml:70
 #, kde-format
 msgid "URL found"
 msgstr "URLa aurkitu da"
 
-#: src/contents/ui/QrCodeScannerPage.qml:62
+#: src/contents/ui/QrCodeScannerPage.qml:72
 #, kde-format
 msgid "Contact found"
 msgstr "Kontaktua aurkitu da"
 
-#: src/contents/ui/QrCodeScannerPage.qml:64
+#: src/contents/ui/QrCodeScannerPage.qml:74
 #, kde-format
 msgid "OTP URI found"
 msgstr "OTPren URI aurkitu da"
 
-#: src/contents/ui/QrCodeScannerPage.qml:66
+#: src/contents/ui/QrCodeScannerPage.qml:76
 #, kde-format
 msgid "Binary data found"
 msgstr "Datu bitarrak aurkitu dira"
 
-#: src/contents/ui/QrCodeScannerPage.qml:68
+#: src/contents/ui/QrCodeScannerPage.qml:78
 #, kde-format
 msgid "Health certificate found"
 msgstr "Osasun ziurtagiria aurkitu da"
 
-#: src/contents/ui/QrCodeScannerPage.qml:70
+#: src/contents/ui/QrCodeScannerPage.qml:80
 #, kde-format
 msgid "Transport ticket found"
 msgstr "Garraio-txartela aurkitu da"
 
-#: src/contents/ui/QrCodeScannerPage.qml:72
+#: src/contents/ui/QrCodeScannerPage.qml:82
 #, kde-format
 msgid "ISBN found"
 msgstr "ISBN aurkitu da"
 
-#: src/contents/ui/QrCodeScannerPage.qml:74
+#: src/contents/ui/QrCodeScannerPage.qml:84
 #, kde-format
 msgid "International Article Number found"
 msgstr "Nazioarteko artikulu zenbakia aurkitu da"
 
-#: src/contents/ui/QrCodeScannerPage.qml:76
+#: src/contents/ui/QrCodeScannerPage.qml:86
 #, kde-format
 msgid "Wi-Fi settings found"
 msgstr "Wi-Fi ezarpenak aurkitu dira"
 
-#: src/contents/ui/QrCodeScannerPage.qml:93
+#: src/contents/ui/QrCodeScannerPage.qml:103
 #, kde-format
 msgid "<binary data>"
 msgstr "<datu bitarrak>"
 
-#: src/contents/ui/QrCodeScannerPage.qml:107
+#: src/contents/ui/QrCodeScannerPage.qml:117
 #, kde-format
 msgid "Open"
 msgstr "Ireki"
 
-#: src/contents/ui/QrCodeScannerPage.qml:109
+#: src/contents/ui/QrCodeScannerPage.qml:119
 #, kde-format
 msgid "Save contact"
 msgstr "Gorde kontaktua"
 
-#: src/contents/ui/QrCodeScannerPage.qml:111
+#: src/contents/ui/QrCodeScannerPage.qml:121
 #, kde-format
 msgid "Open OTP client"
 msgstr "Ireki OTP bezeroa"
 
-#: src/contents/ui/QrCodeScannerPage.qml:113
+#: src/contents/ui/QrCodeScannerPage.qml:123
 #, kde-format
 msgid "Open Food Facts"
 msgstr "Open Food Facts"
 
-#: src/contents/ui/QrCodeScannerPage.qml:115
+#: src/contents/ui/QrCodeScannerPage.qml:125
 #, kde-format
 msgid "Wikipedia Book Sources"
 msgstr "Wikipedia Liburu bilatzailea"
 
-#: src/contents/ui/QrCodeScannerPage.qml:117
+#: src/contents/ui/QrCodeScannerPage.qml:127
 #, kde-format
 msgid "Open KDE Itinerary"
 msgstr "Ireki KDE Itinerary"
 
-#: src/contents/ui/QrCodeScannerPage.qml:119
+#: src/contents/ui/QrCodeScannerPage.qml:129
 #, kde-format
 msgid "Open in Vakzination"
 msgstr "Ireki «Vakzination»ekin"
 
-#: src/contents/ui/QrCodeScannerPage.qml:121
+#: src/contents/ui/QrCodeScannerPage.qml:131
 #, kde-format
 msgid "Connect"
 msgstr "Konektatu"
 
-#: src/contents/ui/QrCodeScannerPage.qml:184
+#: src/contents/ui/QrCodeScannerPage.qml:194
 #, kde-format
 msgid "Copy to clipboard"
 msgstr "Kopiatu arbelera"

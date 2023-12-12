@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-04 01:39+0000\n"
+"POT-Creation-Date: 2023-12-12 01:39+0000\n"
 "PO-Revision-Date: 2020-10-25 22:06+0100\n"
 "Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
 "Language-Team: Estonian <>\n"
@@ -88,115 +88,115 @@ msgstr "Jaga"
 msgid "QR-Code could not be saved to temporary location"
 msgstr ""
 
-#: src/contents/ui/QrCodeScannerPage.qml:27
+#: src/contents/ui/QrCodeScannerPage.qml:28
 #, kde-format
 msgid "Light"
 msgstr ""
 
-#: src/contents/ui/QrCodeScannerPage.qml:34
-#: src/contents/ui/QrCodeScannerPage.qml:199
+#: src/contents/ui/QrCodeScannerPage.qml:35
+#: src/contents/ui/QrCodeScannerPage.qml:209
 #, kde-format
 msgid "Select Camera"
 msgstr ""
 
-#: src/contents/ui/QrCodeScannerPage.qml:58
+#: src/contents/ui/QrCodeScannerPage.qml:68
 #, kde-format
 msgid "Text found"
 msgstr "Leiti tekst"
 
-#: src/contents/ui/QrCodeScannerPage.qml:60
+#: src/contents/ui/QrCodeScannerPage.qml:70
 #, kde-format
 msgid "URL found"
 msgstr "Leiti URL"
 
-#: src/contents/ui/QrCodeScannerPage.qml:62
+#: src/contents/ui/QrCodeScannerPage.qml:72
 #, kde-format
 msgid "Contact found"
 msgstr "Leiti kontakt"
 
-#: src/contents/ui/QrCodeScannerPage.qml:64
+#: src/contents/ui/QrCodeScannerPage.qml:74
 #, kde-format
 msgid "OTP URI found"
 msgstr "Leiti OTP URI"
 
-#: src/contents/ui/QrCodeScannerPage.qml:66
+#: src/contents/ui/QrCodeScannerPage.qml:76
 #, fuzzy, kde-format
 #| msgid "Contact found"
 msgid "Binary data found"
 msgstr "Leiti kontakt"
 
-#: src/contents/ui/QrCodeScannerPage.qml:68
+#: src/contents/ui/QrCodeScannerPage.qml:78
 #, kde-format
 msgid "Health certificate found"
 msgstr ""
 
-#: src/contents/ui/QrCodeScannerPage.qml:70
+#: src/contents/ui/QrCodeScannerPage.qml:80
 #, kde-format
 msgid "Transport ticket found"
 msgstr ""
 
-#: src/contents/ui/QrCodeScannerPage.qml:72
+#: src/contents/ui/QrCodeScannerPage.qml:82
 #, fuzzy, kde-format
 #| msgid "URL found"
 msgid "ISBN found"
 msgstr "Leiti URL"
 
-#: src/contents/ui/QrCodeScannerPage.qml:74
+#: src/contents/ui/QrCodeScannerPage.qml:84
 #, kde-format
 msgid "International Article Number found"
 msgstr ""
 
-#: src/contents/ui/QrCodeScannerPage.qml:76
+#: src/contents/ui/QrCodeScannerPage.qml:86
 #, kde-format
 msgid "Wi-Fi settings found"
 msgstr ""
 
-#: src/contents/ui/QrCodeScannerPage.qml:93
+#: src/contents/ui/QrCodeScannerPage.qml:103
 #, kde-format
 msgid "<binary data>"
 msgstr ""
 
-#: src/contents/ui/QrCodeScannerPage.qml:107
+#: src/contents/ui/QrCodeScannerPage.qml:117
 #, kde-format
 msgid "Open"
 msgstr "Ava"
 
-#: src/contents/ui/QrCodeScannerPage.qml:109
+#: src/contents/ui/QrCodeScannerPage.qml:119
 #, kde-format
 msgid "Save contact"
 msgstr "Salvesta kontakt"
 
-#: src/contents/ui/QrCodeScannerPage.qml:111
+#: src/contents/ui/QrCodeScannerPage.qml:121
 #, kde-format
 msgid "Open OTP client"
 msgstr "Ava OTP klient"
 
-#: src/contents/ui/QrCodeScannerPage.qml:113
+#: src/contents/ui/QrCodeScannerPage.qml:123
 #, kde-format
 msgid "Open Food Facts"
 msgstr ""
 
-#: src/contents/ui/QrCodeScannerPage.qml:115
+#: src/contents/ui/QrCodeScannerPage.qml:125
 #, kde-format
 msgid "Wikipedia Book Sources"
 msgstr ""
 
-#: src/contents/ui/QrCodeScannerPage.qml:117
+#: src/contents/ui/QrCodeScannerPage.qml:127
 #, kde-format
 msgid "Open KDE Itinerary"
 msgstr ""
 
-#: src/contents/ui/QrCodeScannerPage.qml:119
+#: src/contents/ui/QrCodeScannerPage.qml:129
 #, kde-format
 msgid "Open in Vakzination"
 msgstr ""
 
-#: src/contents/ui/QrCodeScannerPage.qml:121
+#: src/contents/ui/QrCodeScannerPage.qml:131
 #, kde-format
 msgid "Connect"
 msgstr ""
 
-#: src/contents/ui/QrCodeScannerPage.qml:184
+#: src/contents/ui/QrCodeScannerPage.qml:194
 #, kde-format
 msgid "Copy to clipboard"
 msgstr "Kopeeri lõikepuhvrisse"

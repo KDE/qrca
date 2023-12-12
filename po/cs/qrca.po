@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-04 01:39+0000\n"
+"POT-Creation-Date: 2023-12-12 01:39+0000\n"
 "PO-Revision-Date: 2023-07-04 16:47+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -87,113 +87,113 @@ msgstr "Sdílet"
 msgid "QR-Code could not be saved to temporary location"
 msgstr "QR kód nelze uložit na dočasné místo"
 
-#: src/contents/ui/QrCodeScannerPage.qml:27
+#: src/contents/ui/QrCodeScannerPage.qml:28
 #, kde-format
 msgid "Light"
 msgstr "Lehce"
 
-#: src/contents/ui/QrCodeScannerPage.qml:34
-#: src/contents/ui/QrCodeScannerPage.qml:199
+#: src/contents/ui/QrCodeScannerPage.qml:35
+#: src/contents/ui/QrCodeScannerPage.qml:209
 #, kde-format
 msgid "Select Camera"
 msgstr "Vyberte fotoaparát"
 
-#: src/contents/ui/QrCodeScannerPage.qml:58
+#: src/contents/ui/QrCodeScannerPage.qml:68
 #, kde-format
 msgid "Text found"
 msgstr "Nalezen text"
 
-#: src/contents/ui/QrCodeScannerPage.qml:60
+#: src/contents/ui/QrCodeScannerPage.qml:70
 #, kde-format
 msgid "URL found"
 msgstr "URL nalezena"
 
-#: src/contents/ui/QrCodeScannerPage.qml:62
+#: src/contents/ui/QrCodeScannerPage.qml:72
 #, kde-format
 msgid "Contact found"
 msgstr "Kontakt byl nalezen"
 
-#: src/contents/ui/QrCodeScannerPage.qml:64
+#: src/contents/ui/QrCodeScannerPage.qml:74
 #, kde-format
 msgid "OTP URI found"
 msgstr "OTP URI nalezena"
 
-#: src/contents/ui/QrCodeScannerPage.qml:66
+#: src/contents/ui/QrCodeScannerPage.qml:76
 #, kde-format
 msgid "Binary data found"
 msgstr "Nalezena binární data"
 
-#: src/contents/ui/QrCodeScannerPage.qml:68
+#: src/contents/ui/QrCodeScannerPage.qml:78
 #, kde-format
 msgid "Health certificate found"
 msgstr ""
 
-#: src/contents/ui/QrCodeScannerPage.qml:70
+#: src/contents/ui/QrCodeScannerPage.qml:80
 #, kde-format
 msgid "Transport ticket found"
 msgstr ""
 
-#: src/contents/ui/QrCodeScannerPage.qml:72
+#: src/contents/ui/QrCodeScannerPage.qml:82
 #, kde-format
 msgid "ISBN found"
 msgstr "ISBN nalezena"
 
-#: src/contents/ui/QrCodeScannerPage.qml:74
+#: src/contents/ui/QrCodeScannerPage.qml:84
 #, kde-format
 msgid "International Article Number found"
 msgstr "Mezinárodní číslo článku nalezeno"
 
-#: src/contents/ui/QrCodeScannerPage.qml:76
+#: src/contents/ui/QrCodeScannerPage.qml:86
 #, kde-format
 msgid "Wi-Fi settings found"
 msgstr "Nalezeno nastavení WiFi"
 
-#: src/contents/ui/QrCodeScannerPage.qml:93
+#: src/contents/ui/QrCodeScannerPage.qml:103
 #, kde-format
 msgid "<binary data>"
 msgstr "<binární data>"
 
-#: src/contents/ui/QrCodeScannerPage.qml:107
+#: src/contents/ui/QrCodeScannerPage.qml:117
 #, kde-format
 msgid "Open"
 msgstr "Otevřít"
 
-#: src/contents/ui/QrCodeScannerPage.qml:109
+#: src/contents/ui/QrCodeScannerPage.qml:119
 #, kde-format
 msgid "Save contact"
 msgstr "Uložit kontakt"
 
-#: src/contents/ui/QrCodeScannerPage.qml:111
+#: src/contents/ui/QrCodeScannerPage.qml:121
 #, kde-format
 msgid "Open OTP client"
 msgstr "Spustit klienta OTP"
 
-#: src/contents/ui/QrCodeScannerPage.qml:113
+#: src/contents/ui/QrCodeScannerPage.qml:123
 #, kde-format
 msgid "Open Food Facts"
 msgstr "Otevřít fakta o potravinách"
 
-#: src/contents/ui/QrCodeScannerPage.qml:115
+#: src/contents/ui/QrCodeScannerPage.qml:125
 #, kde-format
 msgid "Wikipedia Book Sources"
 msgstr "Zdroje knih Wikipedie"
 
-#: src/contents/ui/QrCodeScannerPage.qml:117
+#: src/contents/ui/QrCodeScannerPage.qml:127
 #, kde-format
 msgid "Open KDE Itinerary"
 msgstr "Otevřít Itinerář KDE"
 
-#: src/contents/ui/QrCodeScannerPage.qml:119
+#: src/contents/ui/QrCodeScannerPage.qml:129
 #, kde-format
 msgid "Open in Vakzination"
 msgstr "Otevřít ve Vakzination"
 
-#: src/contents/ui/QrCodeScannerPage.qml:121
+#: src/contents/ui/QrCodeScannerPage.qml:131
 #, kde-format
 msgid "Connect"
 msgstr "Připojit se"
 
-#: src/contents/ui/QrCodeScannerPage.qml:184
+#: src/contents/ui/QrCodeScannerPage.qml:194
 #, kde-format
 msgid "Copy to clipboard"
 msgstr "Zkopírovat do schránky"
