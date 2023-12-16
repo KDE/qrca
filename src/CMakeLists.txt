@@ -46,6 +46,7 @@ if(ANDROID)
         help-feedback
         internet-services
         itinerary
+        license
         network-wireless
     )
     ecm_add_android_apk(qrca ANDROID_DIR ${CMAKE_SOURCE_DIR}/android)
