@@ -8,6 +8,4 @@ include:
       - /gitlab-templates/freebsd-qt6.yml
       - /gitlab-templates/android-qt6.yml
       - /gitlab-templates/craft-android-qt6-apks.yml
-
-      # awaiting kf6 runtime
-      # - /gitlab-templates/flatpak.yml
+      - /gitlab-templates/flatpak.yml
