@@ -3,8 +3,8 @@
 # Burkhard Lück <lueck@hube-lueck.de>, 2021.
 # Alois Spitzbart <spitz234@hotmail.com>, 2022.
 # Frederik Schwarzer <schwarzer@kde.org>, 2023.
+# SPDX-FileCopyrightText: 2023 Johannes Obermayr <johannesobermayr@gmx.de>
 #
-# Johannes Obermayr <johannesobermayr@gmx.de>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
