@@ -147,4 +147,6 @@
   </description>
   <launchable type="desktop-id">org.kde.qrca.desktop</launchable>
   <content_rating type="oars-1.1"/>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=qrca</url>
+  <url type="donation">https://www.kde.org/community/donations/?app=qrca&amp;source=appdata</url>
 </component>
