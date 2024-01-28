@@ -1,13 +1,13 @@
 # Copyright (C) 2023 This file is copyright:
 # This file is distributed under the same license as the qrca package.
 #
-# SPDX-FileCopyrightText: 2023 Alexander Yavorsky <kekcuha@gmail.com>
+# SPDX-FileCopyrightText: 2023, 2024 Alexander Yavorsky <kekcuha@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-12-12 01:39+0000\n"
-"PO-Revision-Date: 2023-12-05 16:18+0300\n"
+"PO-Revision-Date: 2024-01-27 15:16+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
 "Language: ru\n"
@@ -16,22 +16,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Lokalize 23.08.3\n"
+"X-Generator: Lokalize 23.08.4\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Александр Яворский"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "kekcuha@gmail.com"
 
 #: src/contents/ui/main.qml:16
 #, kde-format
 msgid "QR Code Scanner"
-msgstr ""
+msgstr "Сканер QR"
 
 #: src/contents/ui/main.qml:38
 #, kde-format
@@ -41,78 +41,78 @@ msgstr "Сканировать"
 #: src/contents/ui/main.qml:45
 #, kde-format
 msgid "Create"
-msgstr ""
+msgstr "Создать"
 
 #: src/contents/ui/main.qml:51
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "О программе"
 
 #: src/contents/ui/main.qml:59
 #, kde-format
 msgid "QR-Code Scanner"
-msgstr ""
+msgstr "Сканер QR"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:18
 #, kde-format
 msgid "Create QR-Code"
-msgstr ""
+msgstr "Создать QR-код"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:30
 #, kde-format
 msgid "Image files (*.png *.jpg)"
-msgstr ""
+msgstr "Изображения (*.png *.jpg)"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:30
 #, kde-format
 msgid "All files (*)"
-msgstr ""
+msgstr "Все файлы (*)"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:35
 #, kde-format
 msgid "Save"
-msgstr ""
+msgstr "Сохранить"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:43
 #, kde-format
 msgid "QR-Code could not be saved"
-msgstr ""
+msgstr "Не удалось сохранить QR-код"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:53
 #, kde-format
 msgid "Share"
-msgstr ""
+msgstr "Поделиться"
 
 #: src/contents/ui/QrCodeEncoderPage.qml:63
 #, kde-format
 msgid "QR-Code could not be saved to temporary location"
-msgstr ""
+msgstr "Не удалось сохранить QR-код во временное расположение"
 
 #: src/contents/ui/QrCodeScannerPage.qml:28
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Подсветка"
 
 #: src/contents/ui/QrCodeScannerPage.qml:35
 #: src/contents/ui/QrCodeScannerPage.qml:209
 #, kde-format
 msgid "Select Camera"
-msgstr ""
+msgstr "Выбрать камеру"
 
 #: src/contents/ui/QrCodeScannerPage.qml:68
 #, kde-format
 msgid "Text found"
-msgstr ""
+msgstr "Найден текст"
 
 #: src/contents/ui/QrCodeScannerPage.qml:70
 #, kde-format
 msgid "URL found"
-msgstr ""
+msgstr "Найден URL-адрес"
 
 #: src/contents/ui/QrCodeScannerPage.qml:72
 #, kde-format
 msgid "Contact found"
-msgstr ""
+msgstr "Найдены данные контакта"
 
 #: src/contents/ui/QrCodeScannerPage.qml:74
 #, kde-format
@@ -122,22 +122,22 @@ msgstr ""
 #: src/contents/ui/QrCodeScannerPage.qml:76
 #, kde-format
 msgid "Binary data found"
-msgstr ""
+msgstr "Найдены двоичные данные"
 
 #: src/contents/ui/QrCodeScannerPage.qml:78
 #, kde-format
 msgid "Health certificate found"
-msgstr ""
+msgstr "Найден сертификат о состоянии здоровья"
 
 #: src/contents/ui/QrCodeScannerPage.qml:80
 #, kde-format
 msgid "Transport ticket found"
-msgstr ""
+msgstr "Найден билет на транспорт"
 
 #: src/contents/ui/QrCodeScannerPage.qml:82
 #, kde-format
 msgid "ISBN found"
-msgstr ""
+msgstr "Найден код ISBN"
 
 #: src/contents/ui/QrCodeScannerPage.qml:84
 #, kde-format
@@ -147,27 +147,27 @@ msgstr ""
 #: src/contents/ui/QrCodeScannerPage.qml:86
 #, kde-format
 msgid "Wi-Fi settings found"
-msgstr ""
+msgstr "Найдены параметры подключения к Wi-Fi"
 
 #: src/contents/ui/QrCodeScannerPage.qml:103
 #, kde-format
 msgid "<binary data>"
-msgstr ""
+msgstr "<двоичные данные>"
 
 #: src/contents/ui/QrCodeScannerPage.qml:117
 #, kde-format
 msgid "Open"
-msgstr ""
+msgstr "Открыть"
 
 #: src/contents/ui/QrCodeScannerPage.qml:119
 #, kde-format
 msgid "Save contact"
-msgstr ""
+msgstr "Сохранить контакт"
 
 #: src/contents/ui/QrCodeScannerPage.qml:121
 #, kde-format
 msgid "Open OTP client"
-msgstr ""
+msgstr "Открыть приложение-клиент OTP"
 
 #: src/contents/ui/QrCodeScannerPage.qml:123
 #, kde-format
@@ -182,27 +182,27 @@ msgstr ""
 #: src/contents/ui/QrCodeScannerPage.qml:127
 #, kde-format
 msgid "Open KDE Itinerary"
-msgstr ""
+msgstr "Открыть приложение KDE Itinerary"
 
 #: src/contents/ui/QrCodeScannerPage.qml:129
 #, kde-format
 msgid "Open in Vakzination"
-msgstr ""
+msgstr "Открыть в приложении Вакцинация"
 
 #: src/contents/ui/QrCodeScannerPage.qml:131
 #, kde-format
 msgid "Connect"
-msgstr ""
+msgstr "Подключиться"
 
 #: src/contents/ui/QrCodeScannerPage.qml:194
 #, kde-format
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Скопировать в буфер обмена"
 
 #: src/contents/ui/ShareSheet.qml:28
 #, kde-format
 msgid "Share Qr-Code"
-msgstr ""
+msgstr "Поделиться QR-кодом"
 
 #: src/contents/ui/ShareSheet.qml:56
 #, kde-format
@@ -217,12 +217,12 @@ msgstr ""
 #: src/main.cpp:56
 #, kde-format
 msgid "Qrca"
-msgstr ""
+msgstr "Qrca"
 
 #: src/main.cpp:56
 #, kde-format
 msgid "A simple QR scanner"
-msgstr ""
+msgstr "Простой сканер QR"
 
 #: src/main.cpp:56
 #, kde-format
@@ -232,12 +232,12 @@ msgstr ""
 #: src/main.cpp:58
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr ""
+msgstr "Jonah Brüchert"
 
 #: src/main.cpp:59
 #, kde-format
 msgid "Simon Schmeißer"
-msgstr ""
+msgstr "Simon Schmeißer"
 
 #: src/notificationmanager.cpp:19
 #, kde-format
