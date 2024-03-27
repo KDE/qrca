@@ -22,6 +22,7 @@
   <name xml:lang="it">Scanner di codici a barre</name>
   <name xml:lang="ka">ბარკოდის სკანერი</name>
   <name xml:lang="ko">바코드 스캐너</name>
+  <name xml:lang="lv">Svītrkodu skeneris</name>
   <name xml:lang="nl">Barcodescanner</name>
   <name xml:lang="nn">Strekkode-skannar</name>
   <name xml:lang="pa">ਬਾਰ-ਕੋਡ ਸਕੈਨਰ</name>
@@ -57,6 +58,7 @@
   <summary xml:lang="it">Scansiona e crea codici QR</summary>
   <summary xml:lang="ka">QR კოდის სკანირება და შექმნა</summary>
   <summary xml:lang="ko">QR 코드 스캔 및 생성</summary>
+  <summary xml:lang="lv">Skenējiet un izveidojiet kvadrātkodus</summary>
   <summary xml:lang="nl">QR-Codes scannen en aanmaken</summary>
   <summary xml:lang="nn">Skann og lag QR-kodar</summary>
   <summary xml:lang="pa">QR-ਕੋਡ ਸਕੈਨ ਕਰੋ ਤੇ ਬਣਾਓ</summary>
@@ -101,6 +103,7 @@
     <p xml:lang="it">Scansiona codici QR con la fotocamera del telefono o del computer portatile, poi ne crea una copia per una condivisione semplice fra i dispositivi.</p>
     <p xml:lang="ka">დაასკანერეთ QR კოდები თქვენი ტელეფონის ან ლეპტოპის კამერით ან შექმენით თქვენი საკუთარი, მოწყობილობებს შორის ინფორმაციის ადვილად გადასატანად.</p>
     <p xml:lang="ko">휴대폰과 노트북의 카메라로 QR 코드를 스캔하고, 장치끼리 쉽게 데이터를 공유하는 QR 코드를 생성삽니다.</p>
+    <p xml:lang="lv">Skenējiet kvadrātkodus ar savu tālruņa vai datora kameru un veidojiet paši savus, lai viegli nodotu datus starp ierīcēm.</p>
     <p xml:lang="nl">QR-codes met uw camera op telefoons en laptops scannen en maak uw eigen codes voor gemakkelijk delen van gegevens tussen apparaten.</p>
     <p xml:lang="nn">Skann QR-kodar med kameraet på telefonen eller datamaskina, og lag eigne kodar for enkel deling av data mellom einingar.</p>
     <p xml:lang="pa">ਆਪਣੇ ਫ਼ੋਨ ਅਤੇ ਲੈਪਟਾਪ ਦੇ ਕੈਮਰੇ ਨਾਲ QR-ਕੋਡ ਸਕੈਨ ਕਰੋ ਅਤੇ ਡਿਵਾਈਸਾਂ ਵਿਚਾਲੇ ਡਾਟਾ ਸੌਖੀ ਤਰ੍ਹਾਂ ਸਾਂਝਾ ਕਰਨ ਲਈ ਆਪਣੇ ਖੁਦ ਦੇ ਕੋਡ ਬਣਾਓ।</p>
