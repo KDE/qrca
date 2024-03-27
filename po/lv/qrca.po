@@ -1,0 +1,245 @@
+# Copyright (C) 2024 This file is copyright:
+# This file is distributed under the same license as the qrca package.
+#
+# SPDX-FileCopyrightText: 2024 Toms Trasūns <toms.trasuns@posteo.net>
+msgid ""
+msgstr ""
+"Project-Id-Version: qrca\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2023-12-12 01:39+0000\n"
+"PO-Revision-Date: 2024-03-26 16:10+0200\n"
+"Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: Lokalize 23.08.5\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Toms Trasūns"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "toms.trasuns@posteo.net"
+
+#: src/contents/ui/main.qml:16
+#, kde-format
+msgid "QR Code Scanner"
+msgstr "Kvadrātkodu skeneris"
+
+#: src/contents/ui/main.qml:38
+#, kde-format
+msgid "Scan"
+msgstr "Skenēt"
+
+#: src/contents/ui/main.qml:45
+#, kde-format
+msgid "Create"
+msgstr "Izveidot"
+
+#: src/contents/ui/main.qml:51
+#, kde-format
+msgid "About"
+msgstr "Par"
+
+#: src/contents/ui/main.qml:59
+#, kde-format
+msgid "QR-Code Scanner"
+msgstr "Kvadrātkodu skeneris"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:18
+#, kde-format
+msgid "Create QR-Code"
+msgstr "Izveidot kvadrātkodu"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:30
+#, kde-format
+msgid "Image files (*.png *.jpg)"
+msgstr "Attēlu datnes (*.png *.jpg)"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:30
+#, kde-format
+msgid "All files (*)"
+msgstr "Visas datnes (*)"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:35
+#, kde-format
+msgid "Save"
+msgstr "Saglabāt"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:43
+#, kde-format
+msgid "QR-Code could not be saved"
+msgstr "Kvadrātkodu nevar saglabāt"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:53
+#, kde-format
+msgid "Share"
+msgstr "Kopīgot"
+
+#: src/contents/ui/QrCodeEncoderPage.qml:63
+#, kde-format
+msgid "QR-Code could not be saved to temporary location"
+msgstr "Kvadrātkodu nevar saglabāt pagaidu vietā"
+
+#: src/contents/ui/QrCodeScannerPage.qml:28
+#, kde-format
+msgid "Light"
+msgstr "Gaisma"
+
+#: src/contents/ui/QrCodeScannerPage.qml:35
+#: src/contents/ui/QrCodeScannerPage.qml:209
+#, kde-format
+msgid "Select Camera"
+msgstr "Atlasiet kameru"
+
+#: src/contents/ui/QrCodeScannerPage.qml:68
+#, kde-format
+msgid "Text found"
+msgstr "Atrasts teksts"
+
+#: src/contents/ui/QrCodeScannerPage.qml:70
+#, kde-format
+msgid "URL found"
+msgstr "Atrasta URL"
+
+#: src/contents/ui/QrCodeScannerPage.qml:72
+#, kde-format
+msgid "Contact found"
+msgstr "Atrasts kontakts"
+
+#: src/contents/ui/QrCodeScannerPage.qml:74
+#, kde-format
+msgid "OTP URI found"
+msgstr "Atrasta OTP URI"
+
+#: src/contents/ui/QrCodeScannerPage.qml:76
+#, kde-format
+msgid "Binary data found"
+msgstr "Atrasti binārie dati"
+
+#: src/contents/ui/QrCodeScannerPage.qml:78
+#, kde-format
+msgid "Health certificate found"
+msgstr "Atrasts veselības sertifikāts"
+
+#: src/contents/ui/QrCodeScannerPage.qml:80
+#, kde-format
+msgid "Transport ticket found"
+msgstr "Atrasta transporta biļete"
+
+#: src/contents/ui/QrCodeScannerPage.qml:82
+#, kde-format
+msgid "ISBN found"
+msgstr "Atrasts ISBN"
+
+#: src/contents/ui/QrCodeScannerPage.qml:84
+#, kde-format
+msgid "International Article Number found"
+msgstr "Atrasts Starptautiskais rakstu numurs"
+
+#: src/contents/ui/QrCodeScannerPage.qml:86
+#, kde-format
+msgid "Wi-Fi settings found"
+msgstr "Atrasti Wi-Fi iestatījumi"
+
+#: src/contents/ui/QrCodeScannerPage.qml:103
+#, kde-format
+msgid "<binary data>"
+msgstr "<binārie dati>"
+
+#: src/contents/ui/QrCodeScannerPage.qml:117
+#, kde-format
+msgid "Open"
+msgstr "Atvērt"
+
+#: src/contents/ui/QrCodeScannerPage.qml:119
+#, kde-format
+msgid "Save contact"
+msgstr "Saglabāt kontaktu"
+
+#: src/contents/ui/QrCodeScannerPage.qml:121
+#, kde-format
+msgid "Open OTP client"
+msgstr "Atvērt OTP klientu"
+
+#: src/contents/ui/QrCodeScannerPage.qml:123
+#, kde-format
+msgid "Open Food Facts"
+msgstr "Atvērt pārtikas faktus"
+
+#: src/contents/ui/QrCodeScannerPage.qml:125
+#, kde-format
+msgid "Wikipedia Book Sources"
+msgstr "Vikipēdijas grāmatu avoti"
+
+#: src/contents/ui/QrCodeScannerPage.qml:127
+#, kde-format
+msgid "Open KDE Itinerary"
+msgstr "Atvērt KDE „Itinerary“"
+
+#: src/contents/ui/QrCodeScannerPage.qml:129
+#, kde-format
+msgid "Open in Vakzination"
+msgstr "Atvērt ar „Vakzination“"
+
+#: src/contents/ui/QrCodeScannerPage.qml:131
+#, kde-format
+msgid "Connect"
+msgstr "Savienoties"
+
+#: src/contents/ui/QrCodeScannerPage.qml:194
+#, kde-format
+msgid "Copy to clipboard"
+msgstr "Kopēt starpliktuvē"
+
+#: src/contents/ui/ShareSheet.qml:28
+#, kde-format
+msgid "Share Qr-Code"
+msgstr "Kopīgot kvadrātkodu"
+
+#: src/contents/ui/ShareSheet.qml:56
+#, kde-format
+msgid "Sharing Failed"
+msgstr "Kopīgošana neizdevās"
+
+#: src/contents/ui/ShareSheet.qml:82
+#, kde-format
+msgid "Share QR-Code"
+msgstr "Kopīgot kvadrātkodu"
+
+#: src/main.cpp:56
+#, kde-format
+msgid "Qrca"
+msgstr "Qrca"
+
+#: src/main.cpp:56
+#, kde-format
+msgid "A simple QR scanner"
+msgstr "Vienkāršs QR skeneris"
+
+#: src/main.cpp:56
+#, kde-format
+msgid "Copyright 2016-2019 Qrca and Kaidan authors"
+msgstr "Autortiesības 2016—2019 „Qrca“ un „Kaidan“ autori"
+
+#: src/main.cpp:58
+#, kde-format
+msgid "Jonah Brüchert"
+msgstr "Jonah Brüchert"
+
+#: src/main.cpp:59
+#, kde-format
+msgid "Simon Schmeißer"
+msgstr "Simon Schmeißer"
+
+#: src/notificationmanager.cpp:19
+#, kde-format
+msgid "Shared url for image is <a href='%1'>%1</a>"
+msgstr "Kopīgotā URL adrese attēlam ir <a href='%1'>%1</a>"
