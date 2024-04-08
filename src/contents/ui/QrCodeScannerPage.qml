@@ -90,7 +90,7 @@ Kirigami.Page {
 
         Item {
             implicitWidth: Kirigami.Units.gridUnit * 20
-            height: childrenRect.height
+            implicitHeight: childrenRect.height
 
             Controls.Label {
                 text: {
