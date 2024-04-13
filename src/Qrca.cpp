@@ -257,3 +257,5 @@ QrCodeContent Qrca::resultContent(const Prison::ScanResult &result)
         return QrCodeContent(result.text(), result.format());
     }
 }
+
+#include "moc_Qrca.cpp"

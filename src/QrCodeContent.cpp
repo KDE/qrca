@@ -185,3 +185,5 @@ QByteArray QrCodeContent::binaryContent() const
     }
     return {};
 }
+
+#include "moc_QrCodeContent.cpp"

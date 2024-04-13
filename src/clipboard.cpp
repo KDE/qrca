@@ -24,3 +24,5 @@ void Clipboard::saveText(const QString &message)
     mineData->setText(html.replace(re, QString()));
     m_clipboard->setMimeData(mineData);
 }
+
+#include "moc_clipboard.cpp"

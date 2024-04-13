@@ -19,3 +19,5 @@ void NotificationManager::showNotification(const QString &url)
     m_sharingSuccess->setText(i18n("Shared url for image is <a href='%1'>%1</a>", url));
     m_sharingSuccess->sendEvent();
 }
+
+#include "moc_notificationmanager.cpp"
