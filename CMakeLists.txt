@@ -7,7 +7,7 @@ cmake_minimum_required(VERSION 3.16)
 project(qrca VERSION 0.1)
 
 set(QT_MIN_VERSION "6.6.0")
-set(KF_MIN_VERSION "5.240.0")
+set(KF_MIN_VERSION "6.0.0")
 set(KDE_COMPILERSETTINGS_LEVEL "5.82")
 
 find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
