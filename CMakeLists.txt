@@ -24,6 +24,7 @@ include(ECMPoQmTools)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDEClangFormat)
 include(ECMAddAndroidApk)
+include(ECMQmlModule)
 kde_enable_exceptions()
 
 find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Multimedia)

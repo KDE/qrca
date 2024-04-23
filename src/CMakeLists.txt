@@ -15,21 +15,30 @@ set(qrca_SRCS
     mecardparser.cpp
     notificationmanager.cpp
     clipboard.cpp
-    resources.qrc
 )
 
 add_executable(qrca ${qrca_SRCS})
 
-target_link_libraries(qrca Qt::Core Qt::Qml Qt::Quick Qt::QuickControls2 Qt::Svg Qt::Multimedia KF6::I18n KF6::Contacts KF6::CoreAddons KF6::Notifications KF6::PrisonScanner)
+ecm_add_qml_module(qrca URI "org.kde.qrca" VERSION 1.0)
+
+ecm_target_qml_sources(qrca SOURCES
+    qml/Main.qml
+    qml/QrCodeScannerPage.qml
+    qml/QrCodeEncoderPage.qml
+    qml/ShareSheet.qml
+    qml/AboutPage.qml
+)
+
+target_link_libraries(qrca PRIVATE Qt::Core Qt::Qml Qt::Quick Qt::QuickControls2 Qt::Svg Qt::Multimedia KF6::I18n KF6::Contacts KF6::CoreAddons KF6::Notifications KF6::PrisonScanner)
 
 if (TARGET KF6::NetworkManagerQt)
-    target_link_libraries(qrca KF6::NetworkManagerQt)
+    target_link_libraries(qrca PRIVATE KF6::NetworkManagerQt)
 endif()
 
 target_compile_definitions(qrca PRIVATE -DQT_NO_CAST_FROM_ASCII)
 
 if(ANDROID)
-    target_link_libraries(qrca Qt::Svg KF6::Kirigami)
+    target_link_libraries(qrca PRIVATE Qt::Svg KF6::Kirigami)
 
     kirigami_package_breeze_icons(ICONS
         arrow-right
@@ -51,7 +60,7 @@ if(ANDROID)
     )
     ecm_add_android_apk(qrca ANDROID_DIR ${CMAKE_SOURCE_DIR}/android)
 else()
-    target_link_libraries(qrca Qt::Widgets KF6::KIOGui KF6::Service)
+    target_link_libraries(qrca PRIVATE Qt::Widgets KF6::KIOGui KF6::Service)
 endif()
 
 install(TARGETS qrca ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
