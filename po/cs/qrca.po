@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-12 01:39+0000\n"
+"POT-Creation-Date: 2024-04-24 00:41+0000\n"
 "PO-Revision-Date: 2023-07-04 16:47+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -26,192 +26,6 @@ msgstr "Vít Pelčák"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "vit@pelcak.org"
-
-#: src/contents/ui/main.qml:16
-#, kde-format
-msgid "QR Code Scanner"
-msgstr "Čtečka kódů QR"
-
-#: src/contents/ui/main.qml:38
-#, kde-format
-msgid "Scan"
-msgstr "Přečíst"
-
-#: src/contents/ui/main.qml:45
-#, kde-format
-msgid "Create"
-msgstr "Vytvořit"
-
-#: src/contents/ui/main.qml:51
-#, kde-format
-msgid "About"
-msgstr "O aplikaci"
-
-#: src/contents/ui/main.qml:59
-#, kde-format
-msgid "QR-Code Scanner"
-msgstr "Čtečka kódů QR"
-
-#: src/contents/ui/QrCodeEncoderPage.qml:18
-#, kde-format
-msgid "Create QR-Code"
-msgstr "Vytvořit kód QR"
-
-#: src/contents/ui/QrCodeEncoderPage.qml:30
-#, kde-format
-msgid "Image files (*.png *.jpg)"
-msgstr "Soubory obrázků (*.png *.jpg)"
-
-#: src/contents/ui/QrCodeEncoderPage.qml:30
-#, kde-format
-msgid "All files (*)"
-msgstr "Všechny soubory (*)"
-
-#: src/contents/ui/QrCodeEncoderPage.qml:35
-#, kde-format
-msgid "Save"
-msgstr "Uložit"
-
-#: src/contents/ui/QrCodeEncoderPage.qml:43
-#, kde-format
-msgid "QR-Code could not be saved"
-msgstr "QR kód nelze uložit"
-
-#: src/contents/ui/QrCodeEncoderPage.qml:53
-#, kde-format
-msgid "Share"
-msgstr "Sdílet"
-
-#: src/contents/ui/QrCodeEncoderPage.qml:63
-#, kde-format
-msgid "QR-Code could not be saved to temporary location"
-msgstr "QR kód nelze uložit na dočasné místo"
-
-#: src/contents/ui/QrCodeScannerPage.qml:28
-#, kde-format
-msgid "Light"
-msgstr "Lehce"
-
-#: src/contents/ui/QrCodeScannerPage.qml:35
-#: src/contents/ui/QrCodeScannerPage.qml:209
-#, kde-format
-msgid "Select Camera"
-msgstr "Vyberte fotoaparát"
-
-#: src/contents/ui/QrCodeScannerPage.qml:68
-#, kde-format
-msgid "Text found"
-msgstr "Nalezen text"
-
-#: src/contents/ui/QrCodeScannerPage.qml:70
-#, kde-format
-msgid "URL found"
-msgstr "URL nalezena"
-
-#: src/contents/ui/QrCodeScannerPage.qml:72
-#, kde-format
-msgid "Contact found"
-msgstr "Kontakt byl nalezen"
-
-#: src/contents/ui/QrCodeScannerPage.qml:74
-#, kde-format
-msgid "OTP URI found"
-msgstr "OTP URI nalezena"
-
-#: src/contents/ui/QrCodeScannerPage.qml:76
-#, kde-format
-msgid "Binary data found"
-msgstr "Nalezena binární data"
-
-#: src/contents/ui/QrCodeScannerPage.qml:78
-#, kde-format
-msgid "Health certificate found"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:80
-#, kde-format
-msgid "Transport ticket found"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:82
-#, kde-format
-msgid "ISBN found"
-msgstr "ISBN nalezena"
-
-#: src/contents/ui/QrCodeScannerPage.qml:84
-#, kde-format
-msgid "International Article Number found"
-msgstr "Mezinárodní číslo článku nalezeno"
-
-#: src/contents/ui/QrCodeScannerPage.qml:86
-#, kde-format
-msgid "Wi-Fi settings found"
-msgstr "Nalezeno nastavení WiFi"
-
-#: src/contents/ui/QrCodeScannerPage.qml:103
-#, kde-format
-msgid "<binary data>"
-msgstr "<binární data>"
-
-#: src/contents/ui/QrCodeScannerPage.qml:117
-#, kde-format
-msgid "Open"
-msgstr "Otevřít"
-
-#: src/contents/ui/QrCodeScannerPage.qml:119
-#, kde-format
-msgid "Save contact"
-msgstr "Uložit kontakt"
-
-#: src/contents/ui/QrCodeScannerPage.qml:121
-#, kde-format
-msgid "Open OTP client"
-msgstr "Spustit klienta OTP"
-
-#: src/contents/ui/QrCodeScannerPage.qml:123
-#, kde-format
-msgid "Open Food Facts"
-msgstr "Otevřít fakta o potravinách"
-
-#: src/contents/ui/QrCodeScannerPage.qml:125
-#, kde-format
-msgid "Wikipedia Book Sources"
-msgstr "Zdroje knih Wikipedie"
-
-#: src/contents/ui/QrCodeScannerPage.qml:127
-#, kde-format
-msgid "Open KDE Itinerary"
-msgstr "Otevřít Itinerář KDE"
-
-#: src/contents/ui/QrCodeScannerPage.qml:129
-#, kde-format
-msgid "Open in Vakzination"
-msgstr "Otevřít ve Vakzination"
-
-#: src/contents/ui/QrCodeScannerPage.qml:131
-#, kde-format
-msgid "Connect"
-msgstr "Připojit se"
-
-#: src/contents/ui/QrCodeScannerPage.qml:194
-#, kde-format
-msgid "Copy to clipboard"
-msgstr "Zkopírovat do schránky"
-
-#: src/contents/ui/ShareSheet.qml:28
-#, kde-format
-msgid "Share Qr-Code"
-msgstr "Sdílet kód QR"
-
-#: src/contents/ui/ShareSheet.qml:56
-#, kde-format
-msgid "Sharing Failed"
-msgstr "Sdílení selhalo"
-
-#: src/contents/ui/ShareSheet.qml:82
-#, kde-format
-msgid "Share QR-Code"
-msgstr "Sdílet kód QR"
 
 #: src/main.cpp:56
 #, kde-format
@@ -242,3 +56,188 @@ msgstr "Simon Schmeißer"
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
 msgstr "Sdílená adresa obrázku je <a href='%1'>%1</a>"
+
+#: src/qml/Main.qml:16
+#, kde-format
+msgid "QR Code Scanner"
+msgstr "Čtečka kódů QR"
+
+#: src/qml/Main.qml:38
+#, kde-format
+msgid "Scan"
+msgstr "Přečíst"
+
+#: src/qml/Main.qml:45
+#, kde-format
+msgid "Create"
+msgstr "Vytvořit"
+
+#: src/qml/Main.qml:51
+#, kde-format
+msgid "About"
+msgstr "O aplikaci"
+
+#: src/qml/Main.qml:59
+#, kde-format
+msgid "QR-Code Scanner"
+msgstr "Čtečka kódů QR"
+
+#: src/qml/QrCodeEncoderPage.qml:18
+#, kde-format
+msgid "Create QR-Code"
+msgstr "Vytvořit kód QR"
+
+#: src/qml/QrCodeEncoderPage.qml:30
+#, kde-format
+msgid "Image files (*.png *.jpg)"
+msgstr "Soubory obrázků (*.png *.jpg)"
+
+#: src/qml/QrCodeEncoderPage.qml:30
+#, kde-format
+msgid "All files (*)"
+msgstr "Všechny soubory (*)"
+
+#: src/qml/QrCodeEncoderPage.qml:35
+#, kde-format
+msgid "Save"
+msgstr "Uložit"
+
+#: src/qml/QrCodeEncoderPage.qml:43
+#, kde-format
+msgid "QR-Code could not be saved"
+msgstr "QR kód nelze uložit"
+
+#: src/qml/QrCodeEncoderPage.qml:53
+#, kde-format
+msgid "Share"
+msgstr "Sdílet"
+
+#: src/qml/QrCodeEncoderPage.qml:63
+#, kde-format
+msgid "QR-Code could not be saved to temporary location"
+msgstr "QR kód nelze uložit na dočasné místo"
+
+#: src/qml/QrCodeScannerPage.qml:28
+#, kde-format
+msgid "Light"
+msgstr "Lehce"
+
+#: src/qml/QrCodeScannerPage.qml:35 src/qml/QrCodeScannerPage.qml:209
+#, kde-format
+msgid "Select Camera"
+msgstr "Vyberte fotoaparát"
+
+#: src/qml/QrCodeScannerPage.qml:68
+#, kde-format
+msgid "Text found"
+msgstr "Nalezen text"
+
+#: src/qml/QrCodeScannerPage.qml:70
+#, kde-format
+msgid "URL found"
+msgstr "URL nalezena"
+
+#: src/qml/QrCodeScannerPage.qml:72
+#, kde-format
+msgid "Contact found"
+msgstr "Kontakt byl nalezen"
+
+#: src/qml/QrCodeScannerPage.qml:74
+#, kde-format
+msgid "OTP URI found"
+msgstr "OTP URI nalezena"
+
+#: src/qml/QrCodeScannerPage.qml:76
+#, kde-format
+msgid "Binary data found"
+msgstr "Nalezena binární data"
+
+#: src/qml/QrCodeScannerPage.qml:78
+#, kde-format
+msgid "Health certificate found"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:80
+#, kde-format
+msgid "Transport ticket found"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:82
+#, kde-format
+msgid "ISBN found"
+msgstr "ISBN nalezena"
+
+#: src/qml/QrCodeScannerPage.qml:84
+#, kde-format
+msgid "International Article Number found"
+msgstr "Mezinárodní číslo článku nalezeno"
+
+#: src/qml/QrCodeScannerPage.qml:86
+#, kde-format
+msgid "Wi-Fi settings found"
+msgstr "Nalezeno nastavení WiFi"
+
+#: src/qml/QrCodeScannerPage.qml:103
+#, kde-format
+msgid "<binary data>"
+msgstr "<binární data>"
+
+#: src/qml/QrCodeScannerPage.qml:117
+#, kde-format
+msgid "Open"
+msgstr "Otevřít"
+
+#: src/qml/QrCodeScannerPage.qml:119
+#, kde-format
+msgid "Save contact"
+msgstr "Uložit kontakt"
+
+#: src/qml/QrCodeScannerPage.qml:121
+#, kde-format
+msgid "Open OTP client"
+msgstr "Spustit klienta OTP"
+
+#: src/qml/QrCodeScannerPage.qml:123
+#, kde-format
+msgid "Open Food Facts"
+msgstr "Otevřít fakta o potravinách"
+
+#: src/qml/QrCodeScannerPage.qml:125
+#, kde-format
+msgid "Wikipedia Book Sources"
+msgstr "Zdroje knih Wikipedie"
+
+#: src/qml/QrCodeScannerPage.qml:127
+#, kde-format
+msgid "Open KDE Itinerary"
+msgstr "Otevřít Itinerář KDE"
+
+#: src/qml/QrCodeScannerPage.qml:129
+#, kde-format
+msgid "Open in Vakzination"
+msgstr "Otevřít ve Vakzination"
+
+#: src/qml/QrCodeScannerPage.qml:131
+#, kde-format
+msgid "Connect"
+msgstr "Připojit se"
+
+#: src/qml/QrCodeScannerPage.qml:194
+#, kde-format
+msgid "Copy to clipboard"
+msgstr "Zkopírovat do schránky"
+
+#: src/qml/ShareSheet.qml:28
+#, kde-format
+msgid "Share Qr-Code"
+msgstr "Sdílet kód QR"
+
+#: src/qml/ShareSheet.qml:56
+#, kde-format
+msgid "Sharing Failed"
+msgstr "Sdílení selhalo"
+
+#: src/qml/ShareSheet.qml:82
+#, kde-format
+msgid "Share QR-Code"
+msgstr "Sdílet kód QR"

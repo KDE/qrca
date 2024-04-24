@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-12 01:39+0000\n"
+"POT-Creation-Date: 2024-04-24 00:41+0000\n"
 "PO-Revision-Date: 2019-11-21 14:07-0800\n"
 "Last-Translator: Japanese KDE translation team <kde-jp@kde.org>\n"
 "Language-Team: Japanese <kde-jp@kde.org>\n"
@@ -22,192 +22,6 @@ msgstr ""
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
-
-#: src/contents/ui/main.qml:16
-#, kde-format
-msgid "QR Code Scanner"
-msgstr ""
-
-#: src/contents/ui/main.qml:38
-#, kde-format
-msgid "Scan"
-msgstr ""
-
-#: src/contents/ui/main.qml:45
-#, kde-format
-msgid "Create"
-msgstr ""
-
-#: src/contents/ui/main.qml:51
-#, kde-format
-msgid "About"
-msgstr ""
-
-#: src/contents/ui/main.qml:59
-#, kde-format
-msgid "QR-Code Scanner"
-msgstr ""
-
-#: src/contents/ui/QrCodeEncoderPage.qml:18
-#, kde-format
-msgid "Create QR-Code"
-msgstr ""
-
-#: src/contents/ui/QrCodeEncoderPage.qml:30
-#, kde-format
-msgid "Image files (*.png *.jpg)"
-msgstr ""
-
-#: src/contents/ui/QrCodeEncoderPage.qml:30
-#, kde-format
-msgid "All files (*)"
-msgstr ""
-
-#: src/contents/ui/QrCodeEncoderPage.qml:35
-#, kde-format
-msgid "Save"
-msgstr ""
-
-#: src/contents/ui/QrCodeEncoderPage.qml:43
-#, kde-format
-msgid "QR-Code could not be saved"
-msgstr ""
-
-#: src/contents/ui/QrCodeEncoderPage.qml:53
-#, kde-format
-msgid "Share"
-msgstr ""
-
-#: src/contents/ui/QrCodeEncoderPage.qml:63
-#, kde-format
-msgid "QR-Code could not be saved to temporary location"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:28
-#, kde-format
-msgid "Light"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:35
-#: src/contents/ui/QrCodeScannerPage.qml:209
-#, kde-format
-msgid "Select Camera"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:68
-#, kde-format
-msgid "Text found"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:70
-#, kde-format
-msgid "URL found"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:72
-#, kde-format
-msgid "Contact found"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:74
-#, kde-format
-msgid "OTP URI found"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:76
-#, kde-format
-msgid "Binary data found"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:78
-#, kde-format
-msgid "Health certificate found"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:80
-#, kde-format
-msgid "Transport ticket found"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:82
-#, kde-format
-msgid "ISBN found"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:84
-#, kde-format
-msgid "International Article Number found"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:86
-#, kde-format
-msgid "Wi-Fi settings found"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:103
-#, kde-format
-msgid "<binary data>"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:117
-#, kde-format
-msgid "Open"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:119
-#, kde-format
-msgid "Save contact"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:121
-#, kde-format
-msgid "Open OTP client"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:123
-#, kde-format
-msgid "Open Food Facts"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:125
-#, kde-format
-msgid "Wikipedia Book Sources"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:127
-#, kde-format
-msgid "Open KDE Itinerary"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:129
-#, kde-format
-msgid "Open in Vakzination"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:131
-#, kde-format
-msgid "Connect"
-msgstr ""
-
-#: src/contents/ui/QrCodeScannerPage.qml:194
-#, kde-format
-msgid "Copy to clipboard"
-msgstr ""
-
-#: src/contents/ui/ShareSheet.qml:28
-#, kde-format
-msgid "Share Qr-Code"
-msgstr ""
-
-#: src/contents/ui/ShareSheet.qml:56
-#, kde-format
-msgid "Sharing Failed"
-msgstr ""
-
-#: src/contents/ui/ShareSheet.qml:82
-#, kde-format
-msgid "Share QR-Code"
 msgstr ""
 
 #: src/main.cpp:56
@@ -238,4 +52,189 @@ msgstr ""
 #: src/notificationmanager.cpp:19
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
+msgstr ""
+
+#: src/qml/Main.qml:16
+#, kde-format
+msgid "QR Code Scanner"
+msgstr ""
+
+#: src/qml/Main.qml:38
+#, kde-format
+msgid "Scan"
+msgstr ""
+
+#: src/qml/Main.qml:45
+#, kde-format
+msgid "Create"
+msgstr ""
+
+#: src/qml/Main.qml:51
+#, kde-format
+msgid "About"
+msgstr ""
+
+#: src/qml/Main.qml:59
+#, kde-format
+msgid "QR-Code Scanner"
+msgstr ""
+
+#: src/qml/QrCodeEncoderPage.qml:18
+#, kde-format
+msgid "Create QR-Code"
+msgstr ""
+
+#: src/qml/QrCodeEncoderPage.qml:30
+#, kde-format
+msgid "Image files (*.png *.jpg)"
+msgstr ""
+
+#: src/qml/QrCodeEncoderPage.qml:30
+#, kde-format
+msgid "All files (*)"
+msgstr ""
+
+#: src/qml/QrCodeEncoderPage.qml:35
+#, kde-format
+msgid "Save"
+msgstr ""
+
+#: src/qml/QrCodeEncoderPage.qml:43
+#, kde-format
+msgid "QR-Code could not be saved"
+msgstr ""
+
+#: src/qml/QrCodeEncoderPage.qml:53
+#, kde-format
+msgid "Share"
+msgstr ""
+
+#: src/qml/QrCodeEncoderPage.qml:63
+#, kde-format
+msgid "QR-Code could not be saved to temporary location"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:28
+#, kde-format
+msgid "Light"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:35 src/qml/QrCodeScannerPage.qml:209
+#, kde-format
+msgid "Select Camera"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:68
+#, kde-format
+msgid "Text found"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:70
+#, kde-format
+msgid "URL found"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:72
+#, kde-format
+msgid "Contact found"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:74
+#, kde-format
+msgid "OTP URI found"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:76
+#, kde-format
+msgid "Binary data found"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:78
+#, kde-format
+msgid "Health certificate found"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:80
+#, kde-format
+msgid "Transport ticket found"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:82
+#, kde-format
+msgid "ISBN found"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:84
+#, kde-format
+msgid "International Article Number found"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:86
+#, kde-format
+msgid "Wi-Fi settings found"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:103
+#, kde-format
+msgid "<binary data>"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:117
+#, kde-format
+msgid "Open"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:119
+#, kde-format
+msgid "Save contact"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:121
+#, kde-format
+msgid "Open OTP client"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:123
+#, kde-format
+msgid "Open Food Facts"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:125
+#, kde-format
+msgid "Wikipedia Book Sources"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:127
+#, kde-format
+msgid "Open KDE Itinerary"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:129
+#, kde-format
+msgid "Open in Vakzination"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:131
+#, kde-format
+msgid "Connect"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:194
+#, kde-format
+msgid "Copy to clipboard"
+msgstr ""
+
+#: src/qml/ShareSheet.qml:28
+#, kde-format
+msgid "Share Qr-Code"
+msgstr ""
+
+#: src/qml/ShareSheet.qml:56
+#, kde-format
+msgid "Sharing Failed"
+msgstr ""
+
+#: src/qml/ShareSheet.qml:82
+#, kde-format
+msgid "Share QR-Code"
 msgstr ""

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-12 01:39+0000\n"
+"POT-Creation-Date: 2024-04-24 00:41+0000\n"
 "PO-Revision-Date: 2023-07-04 07:29+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -27,192 +27,6 @@ msgstr "Matjaž Jeran"
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "matjaz.jeran@amis.net"
-
-#: src/contents/ui/main.qml:16
-#, kde-format
-msgid "QR Code Scanner"
-msgstr "Skener kod QR"
-
-#: src/contents/ui/main.qml:38
-#, kde-format
-msgid "Scan"
-msgstr "Sken"
-
-#: src/contents/ui/main.qml:45
-#, kde-format
-msgid "Create"
-msgstr "Kreiraj"
-
-#: src/contents/ui/main.qml:51
-#, kde-format
-msgid "About"
-msgstr "O programu"
-
-#: src/contents/ui/main.qml:59
-#, kde-format
-msgid "QR-Code Scanner"
-msgstr "Skener kod QR"
-
-#: src/contents/ui/QrCodeEncoderPage.qml:18
-#, kde-format
-msgid "Create QR-Code"
-msgstr "Kreiraj kodo QR"
-
-#: src/contents/ui/QrCodeEncoderPage.qml:30
-#, kde-format
-msgid "Image files (*.png *.jpg)"
-msgstr "Slikovne datoteke (*.png *.jpg)"
-
-#: src/contents/ui/QrCodeEncoderPage.qml:30
-#, kde-format
-msgid "All files (*)"
-msgstr "Vse datoteke (*)"
-
-#: src/contents/ui/QrCodeEncoderPage.qml:35
-#, kde-format
-msgid "Save"
-msgstr "Shrani"
-
-#: src/contents/ui/QrCodeEncoderPage.qml:43
-#, kde-format
-msgid "QR-Code could not be saved"
-msgstr "QR kode ni bilo mogoče shraniti"
-
-#: src/contents/ui/QrCodeEncoderPage.qml:53
-#, kde-format
-msgid "Share"
-msgstr "Deli"
-
-#: src/contents/ui/QrCodeEncoderPage.qml:63
-#, kde-format
-msgid "QR-Code could not be saved to temporary location"
-msgstr "QR kode ni bilo mogoče shraniti na začasno mesto"
-
-#: src/contents/ui/QrCodeScannerPage.qml:28
-#, kde-format
-msgid "Light"
-msgstr "Svetloba"
-
-#: src/contents/ui/QrCodeScannerPage.qml:35
-#: src/contents/ui/QrCodeScannerPage.qml:209
-#, kde-format
-msgid "Select Camera"
-msgstr "Izberi kamero"
-
-#: src/contents/ui/QrCodeScannerPage.qml:68
-#, kde-format
-msgid "Text found"
-msgstr "Besedilo najdeno"
-
-#: src/contents/ui/QrCodeScannerPage.qml:70
-#, kde-format
-msgid "URL found"
-msgstr "Spletni naslov najden"
-
-#: src/contents/ui/QrCodeScannerPage.qml:72
-#, kde-format
-msgid "Contact found"
-msgstr "Stik najden"
-
-#: src/contents/ui/QrCodeScannerPage.qml:74
-#, kde-format
-msgid "OTP URI found"
-msgstr "Najden OTP URI"
-
-#: src/contents/ui/QrCodeScannerPage.qml:76
-#, kde-format
-msgid "Binary data found"
-msgstr "Binarni podatki najdeni"
-
-#: src/contents/ui/QrCodeScannerPage.qml:78
-#, kde-format
-msgid "Health certificate found"
-msgstr "Najdeno zdravstveno potrdilo"
-
-#: src/contents/ui/QrCodeScannerPage.qml:80
-#, kde-format
-msgid "Transport ticket found"
-msgstr "Najdena vozovnica za transport"
-
-#: src/contents/ui/QrCodeScannerPage.qml:82
-#, kde-format
-msgid "ISBN found"
-msgstr "Najden ISBN"
-
-#: src/contents/ui/QrCodeScannerPage.qml:84
-#, kde-format
-msgid "International Article Number found"
-msgstr "Najdena mednarodna številka artikla"
-
-#: src/contents/ui/QrCodeScannerPage.qml:86
-#, kde-format
-msgid "Wi-Fi settings found"
-msgstr "Najdene nastavitve za Wi-Fi"
-
-#: src/contents/ui/QrCodeScannerPage.qml:103
-#, kde-format
-msgid "<binary data>"
-msgstr "<binarni podatki>"
-
-#: src/contents/ui/QrCodeScannerPage.qml:117
-#, kde-format
-msgid "Open"
-msgstr "Odpri"
-
-#: src/contents/ui/QrCodeScannerPage.qml:119
-#, kde-format
-msgid "Save contact"
-msgstr "Shrani stik"
-
-#: src/contents/ui/QrCodeScannerPage.qml:121
-#, kde-format
-msgid "Open OTP client"
-msgstr "Odpri odjemalca OTP"
-
-#: src/contents/ui/QrCodeScannerPage.qml:123
-#, kde-format
-msgid "Open Food Facts"
-msgstr "Odprta dejstva o hrani"
-
-#: src/contents/ui/QrCodeScannerPage.qml:125
-#, kde-format
-msgid "Wikipedia Book Sources"
-msgstr "Knjižni viri Wikipedije"
-
-#: src/contents/ui/QrCodeScannerPage.qml:127
-#, kde-format
-msgid "Open KDE Itinerary"
-msgstr "Odpri KDE Itinerary"
-
-#: src/contents/ui/QrCodeScannerPage.qml:129
-#, kde-format
-msgid "Open in Vakzination"
-msgstr "Odpri v Vakzination"
-
-#: src/contents/ui/QrCodeScannerPage.qml:131
-#, kde-format
-msgid "Connect"
-msgstr "Poveži"
-
-#: src/contents/ui/QrCodeScannerPage.qml:194
-#, kde-format
-msgid "Copy to clipboard"
-msgstr "Kopiraj na odložišče"
-
-#: src/contents/ui/ShareSheet.qml:28
-#, kde-format
-msgid "Share Qr-Code"
-msgstr "Deli kodo QR"
-
-#: src/contents/ui/ShareSheet.qml:56
-#, kde-format
-msgid "Sharing Failed"
-msgstr "Deljenje ni uspelo"
-
-#: src/contents/ui/ShareSheet.qml:82
-#, kde-format
-msgid "Share QR-Code"
-msgstr "Deli kodo QR"
 
 #: src/main.cpp:56
 #, kde-format
@@ -243,6 +57,191 @@ msgstr "Simon Schmeißer"
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
 msgstr "Deljeni url za sliko je <a href='%1'>%1</a>"
+
+#: src/qml/Main.qml:16
+#, kde-format
+msgid "QR Code Scanner"
+msgstr "Skener kod QR"
+
+#: src/qml/Main.qml:38
+#, kde-format
+msgid "Scan"
+msgstr "Sken"
+
+#: src/qml/Main.qml:45
+#, kde-format
+msgid "Create"
+msgstr "Kreiraj"
+
+#: src/qml/Main.qml:51
+#, kde-format
+msgid "About"
+msgstr "O programu"
+
+#: src/qml/Main.qml:59
+#, kde-format
+msgid "QR-Code Scanner"
+msgstr "Skener kod QR"
+
+#: src/qml/QrCodeEncoderPage.qml:18
+#, kde-format
+msgid "Create QR-Code"
+msgstr "Kreiraj kodo QR"
+
+#: src/qml/QrCodeEncoderPage.qml:30
+#, kde-format
+msgid "Image files (*.png *.jpg)"
+msgstr "Slikovne datoteke (*.png *.jpg)"
+
+#: src/qml/QrCodeEncoderPage.qml:30
+#, kde-format
+msgid "All files (*)"
+msgstr "Vse datoteke (*)"
+
+#: src/qml/QrCodeEncoderPage.qml:35
+#, kde-format
+msgid "Save"
+msgstr "Shrani"
+
+#: src/qml/QrCodeEncoderPage.qml:43
+#, kde-format
+msgid "QR-Code could not be saved"
+msgstr "QR kode ni bilo mogoče shraniti"
+
+#: src/qml/QrCodeEncoderPage.qml:53
+#, kde-format
+msgid "Share"
+msgstr "Deli"
+
+#: src/qml/QrCodeEncoderPage.qml:63
+#, kde-format
+msgid "QR-Code could not be saved to temporary location"
+msgstr "QR kode ni bilo mogoče shraniti na začasno mesto"
+
+#: src/qml/QrCodeScannerPage.qml:28
+#, kde-format
+msgid "Light"
+msgstr "Svetloba"
+
+#: src/qml/QrCodeScannerPage.qml:35 src/qml/QrCodeScannerPage.qml:209
+#, kde-format
+msgid "Select Camera"
+msgstr "Izberi kamero"
+
+#: src/qml/QrCodeScannerPage.qml:68
+#, kde-format
+msgid "Text found"
+msgstr "Besedilo najdeno"
+
+#: src/qml/QrCodeScannerPage.qml:70
+#, kde-format
+msgid "URL found"
+msgstr "Spletni naslov najden"
+
+#: src/qml/QrCodeScannerPage.qml:72
+#, kde-format
+msgid "Contact found"
+msgstr "Stik najden"
+
+#: src/qml/QrCodeScannerPage.qml:74
+#, kde-format
+msgid "OTP URI found"
+msgstr "Najden OTP URI"
+
+#: src/qml/QrCodeScannerPage.qml:76
+#, kde-format
+msgid "Binary data found"
+msgstr "Binarni podatki najdeni"
+
+#: src/qml/QrCodeScannerPage.qml:78
+#, kde-format
+msgid "Health certificate found"
+msgstr "Najdeno zdravstveno potrdilo"
+
+#: src/qml/QrCodeScannerPage.qml:80
+#, kde-format
+msgid "Transport ticket found"
+msgstr "Najdena vozovnica za transport"
+
+#: src/qml/QrCodeScannerPage.qml:82
+#, kde-format
+msgid "ISBN found"
+msgstr "Najden ISBN"
+
+#: src/qml/QrCodeScannerPage.qml:84
+#, kde-format
+msgid "International Article Number found"
+msgstr "Najdena mednarodna številka artikla"
+
+#: src/qml/QrCodeScannerPage.qml:86
+#, kde-format
+msgid "Wi-Fi settings found"
+msgstr "Najdene nastavitve za Wi-Fi"
+
+#: src/qml/QrCodeScannerPage.qml:103
+#, kde-format
+msgid "<binary data>"
+msgstr "<binarni podatki>"
+
+#: src/qml/QrCodeScannerPage.qml:117
+#, kde-format
+msgid "Open"
+msgstr "Odpri"
+
+#: src/qml/QrCodeScannerPage.qml:119
+#, kde-format
+msgid "Save contact"
+msgstr "Shrani stik"
+
+#: src/qml/QrCodeScannerPage.qml:121
+#, kde-format
+msgid "Open OTP client"
+msgstr "Odpri odjemalca OTP"
+
+#: src/qml/QrCodeScannerPage.qml:123
+#, kde-format
+msgid "Open Food Facts"
+msgstr "Odprta dejstva o hrani"
+
+#: src/qml/QrCodeScannerPage.qml:125
+#, kde-format
+msgid "Wikipedia Book Sources"
+msgstr "Knjižni viri Wikipedije"
+
+#: src/qml/QrCodeScannerPage.qml:127
+#, kde-format
+msgid "Open KDE Itinerary"
+msgstr "Odpri KDE Itinerary"
+
+#: src/qml/QrCodeScannerPage.qml:129
+#, kde-format
+msgid "Open in Vakzination"
+msgstr "Odpri v Vakzination"
+
+#: src/qml/QrCodeScannerPage.qml:131
+#, kde-format
+msgid "Connect"
+msgstr "Poveži"
+
+#: src/qml/QrCodeScannerPage.qml:194
+#, kde-format
+msgid "Copy to clipboard"
+msgstr "Kopiraj na odložišče"
+
+#: src/qml/ShareSheet.qml:28
+#, kde-format
+msgid "Share Qr-Code"
+msgstr "Deli kodo QR"
+
+#: src/qml/ShareSheet.qml:56
+#, kde-format
+msgid "Sharing Failed"
+msgstr "Deljenje ni uspelo"
+
+#: src/qml/ShareSheet.qml:82
+#, kde-format
+msgid "Share QR-Code"
+msgstr "Deli kodo QR"
 
 #~ msgid "Saved image to %1"
 #~ msgstr "Shranjena slika na %1"
