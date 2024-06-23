@@ -12,7 +12,6 @@ set(qrca_SRCS
     main.cpp
     Qrca.cpp
     QrCodeContent.cpp
-    mecardparser.cpp
     notificationmanager.cpp
     clipboard.cpp
 )
@@ -29,7 +28,7 @@ ecm_target_qml_sources(qrca SOURCES
     qml/AboutPage.qml
 )
 
-target_link_libraries(qrca PRIVATE Qt::Core Qt::Qml Qt::Quick Qt::QuickControls2 Qt::Svg Qt::Multimedia KF6::I18n KF6::Contacts KF6::CoreAddons KF6::Notifications KF6::PrisonScanner)
+target_link_libraries(qrca PRIVATE Qt::Core Qt::Qml Qt::Quick Qt::QuickControls2 Qt::Svg Qt::Multimedia KF6::I18n KF6::Contacts KF6::CoreAddons KF6::Notifications KF6::Prison KF6::PrisonScanner)
 
 if (TARGET KF6::NetworkManagerQt)
     target_link_libraries(qrca PRIVATE KF6::NetworkManagerQt)

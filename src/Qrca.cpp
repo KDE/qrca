@@ -37,9 +37,10 @@
 #include <KContacts/VCardConverter>
 #include <KLocalizedString>
 
+#include <Prison/MeCard>
+
 #include "Qrca.h"
 #include "QrCodeContent.h"
-#include "mecardparser.h"
 
 Qrca::Qrca() = default;
 
@@ -155,9 +156,8 @@ void Qrca::openInApplication(const QrCodeContent &content, const QString &appId)
 
 QString Qrca::wifiName(const QString& wifiSetting) const
 {
-    MeCardParser p;
-    p.parse(wifiSetting);
-    return p.value(u"S");
+    auto p = Prison::MeCard::parse(wifiSetting);;
+    return p ? p->value(u"S") : QString();
 }
 
 bool Qrca::canConnectToWifi() const
@@ -195,23 +195,25 @@ static struct {
 
 void Qrca::connectToWifi(const QString &wifiCode)
 {
-    MeCardParser p;
-    p.parse(wifiCode);
+    auto p = Prison::MeCard::parse(wifiCode);
+    if (!p) {
+        return;
+    }
 
 #if HAVE_NETWORKMANAGER
     using namespace NetworkManager;
     auto settings = ConnectionSettings::Ptr(new ConnectionSettings(ConnectionSettings::Wireless));
-    settings->setId(p.value(u"S"));
+    settings->setId(p->value(u"S"));
     settings->setUuid(ConnectionSettings::createNewUuid());
     settings->setAutoconnect(true);
 
     auto wifiSetting = settings->setting(Setting::Wireless).dynamicCast<WirelessSetting>();
     wifiSetting->setInitialized(true);
     wifiSetting = settings->setting(Setting::Wireless).dynamicCast<WirelessSetting>();
-    wifiSetting->setSsid(p.value(u"S").toUtf8());
+    wifiSetting->setSsid(p->value(u"S").toUtf8());
 
     auto wifiSecurity = settings->setting(Setting::WirelessSecurity).dynamicCast<WirelessSecuritySetting>();
-    const auto securityType = p.value(u"T");
+    const auto securityType = p->value(u"T");
 
     if (!securityType.isEmpty() && securityType != QLatin1String("nopass")) {
         wifiSecurity->setInitialized(true);
@@ -220,23 +222,23 @@ void Qrca::connectToWifi(const QString &wifiCode)
 
     if (securityType == QLatin1String("WPA") || securityType == QLatin1String("WEP")) {
         wifiSecurity->setKeyMgmt(NetworkManager::WirelessSecuritySetting::WpaPsk);
-        wifiSecurity->setPsk(p.value(u"P"));
+        wifiSecurity->setPsk(p->value(u"P"));
         wifiSecurity->setPskFlags(NetworkManager::Setting::AgentOwned);
     } else if (securityType == QLatin1String("WPA2-EAP")) {
         wifiSecurity->setKeyMgmt(NetworkManager::WirelessSecuritySetting::WpaEap);
         auto sec8021x = settings->setting(Setting::Security8021x).dynamicCast<Security8021xSetting>();
-        sec8021x->setAnonymousIdentity(p.value(u"A"));
-        sec8021x->setIdentity(p.value(u"I"));
-        sec8021x->setPassword(p.value(u"P"));
+        sec8021x->setAnonymousIdentity(p->value(u"A"));
+        sec8021x->setIdentity(p->value(u"I"));
+        sec8021x->setPassword(p->value(u"P"));
 
-        const auto eapMethod = p.value(u"E");
+        const auto eapMethod = p->value(u"E");
         for (const auto &method : eap_methods) {
             if (eapMethod == QLatin1String(method.name)) {
                 sec8021x->setEapMethods({method.method});
                 break;
             }
         }
-        const auto phase2AuthMethod = p.value(u"PH2");
+        const auto phase2AuthMethod = p->value(u"PH2");
         for (const auto &method : auth_methods) {
             if (phase2AuthMethod == QLatin1String(method.name)) {
                 sec8021x->setPhase2AuthMethod(method.method);

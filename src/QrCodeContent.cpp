@@ -5,7 +5,8 @@
 */
 
 #include "QrCodeContent.h"
-#include "mecardparser.h"
+
+#include <Prison/MeCard>
 
 #include <QRegularExpression>
 #include <QUrlQuery>
@@ -101,8 +102,8 @@ static bool isTransportTicket(const QString &text)
 
 static bool isWifiSetting(const QString &text)
 {
-    MeCardParser p;
-    return p.parse(text) && p.header().compare(QLatin1String("wifi"), Qt::CaseInsensitive) == 0;
+    auto p = Prison::MeCard::parse(text);
+    return p && p->header().compare(QLatin1String("wifi"), Qt::CaseInsensitive) == 0;
 }
 
 // https://en.wikipedia.org/wiki/Global_Trade_Item_Number
