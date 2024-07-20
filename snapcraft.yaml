@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2023 Scarlett Moore <sgmoore@kde.org>
+# SPDX-FileCopyrightText: 2024 Scarlett Moore <sgmoore@kde.org>
 #
 # SPDX-License-Identifier: CC0-1.0
 ---
@@ -10,53 +10,13 @@ adopt-info: qrca
 version: '0.1'
 apps:
     qrca:
-        common-id: org.kde.qrca.desktop
+        extensions:
+        - kde-neon-6
+        common-id: org.kde.qrca
         desktop: usr/share/applications/org.kde.qrca.desktop
         command: usr/bin/qrca
         plugs:
-        - desktop
-        - desktop-legacy
-        - opengl
-        - wayland
-        - x11
-        - audio-playback
-        - unity7
-        command-chain:
-        - snap/command-chain/desktop-launch
-assumes:
-- snapd2.58.3
-compression: lzo
-plugs:
-    desktop:
-        mount-host-font-cache: false
-    icon-themes:
-        interface: content
-        target: $SNAP/data-dir/icons
-        default-provider: gtk-common-themes
-    sound-themes:
-        interface: content
-        target: $SNAP/data-dir/sounds
-        default-provider: gtk-common-themes
-    kf5-5-110-qt-5-15-11-core22:
-        content: kf5-5-110-qt-5-15-11-core22-all
-        interface: content
-        default-provider: kf5-5-110-qt-5-15-11-core22
-        target: $SNAP/kf5
-environment:
-    SNAP_DESKTOP_RUNTIME: $SNAP/kf5
-    QTWEBENGINEPROCESS_PATH: "$SNAP/kf5/usr/lib/$CRAFT_ARCH_TRIPLET/qt5/libexec/QtWebEngineProcess"
-    QT_PLUGIN_PATH: "$SNAP/usr/lib/$CRAFT_ARCH_TRIPLET/qt5/plugins:$SNAP/kf5/usr/lib/$CRAFT_ARCH_TRIPLET/qt5/plugins/kf5"
-hooks:
-    configure:
-        plugs:
-        - desktop
-        command-chain:
-        - snap/command-chain/hooks-configure-desktop
-layout:
-    /usr/share/X11:
-        symlink: $SNAP/kf5/usr/share/X11
-    /usr/share/qt5:
-        bind: $SNAP/kf5/usr/share/qt5
+        - camera
 slots:
     session-dbus-interface:
         interface: dbus
@@ -72,75 +32,59 @@ package-repositories:
     url: http://origin.archive.neon.kde.org/user
     key-server: keyserver.ubuntu.com
 parts:
-    kde-neon:
-        source: /snap/snapcraft/current/share/snapcraft/extensions/desktop/kde-neon
-        source-type: local
-        plugin: make
-        make-parameters:
-        - PLATFORM_PLUG=kf5-5-110-qt-5-15-11-core22
-        build-snaps:
-        - kf5-5-110-qt-5-15-11-core22-sdk
-        build-environment:
-        - &id001
-            PATH: /snap/kf5-5-110-qt-5-15-11-core22-sdk/current/usr/bin${PATH:+:$PATH}
-        - &id002
-            XDG_DATA_DIRS: $CRAFT_STAGE/usr/share:/snap/kf5-5-110-qt-5-15-11-core22-sdk/current/usr/share:/usr/share${XDG_DATA_DIRS:+:$XDG_DATA_DIRS}
-        - &id003
-            XDG_CONFIG_HOME: $CRAFT_STAGE/etc/xdg:/snap/kf5-5-110-qt-5-15-11-core22-sdk/current/etc/xdg:/etc/xdg${XDG_CONFIG_HOME:+:$XDG_CONFIG_HOME}
-        - &id004
-            CRAFT_CMAKE_ARGS: -DCMAKE_FIND_ROOT_PATH=/snap/kf5-5-110-qt-5-15-11-core22-sdk/current${CRAFT_CMAKE_ARGS:+:$CRAFT_CMAKE_ARGS}
     qrca:
-        after:
-        - kde-neon
         parse-info:
         - usr/share/metainfo/org.kde.qrca.appdata.xml
+        plugin: cmake
         source: .
         source-type: local
-        plugin: cmake
         build-packages:
-        - cmake
-        - libkf5doctools-dev
-        - libkf5prison-dev
-        - libkf5contacts-dev
-        - libkf5purpose-dev
+        - libpulse0
+        - libnm-dev
+        - gir1.2-glib-2.0
+        - libxkbcommon-dev
         stage-packages:
-        - libkf5contacts5
-        - libkf5prison5
-        - libkf5prisonscanner5
-        - qml-module-org-kde-kirigami2
-        - qml-module-org-kde-prison
-        - libkf5purpose5
-        - qml-module-org-kde-purpose
+        - libpulse0
+        - libnm0
+        - libxkbcommon0
         cmake-parameters:
-        - -DKDE_INSTALL_USE_QT_SYS_PATHS=FALSE
         - -DCMAKE_INSTALL_PREFIX=/usr
         - -DCMAKE_BUILD_TYPE=Release
-        - -DENABLE_TESTING=OFF
+        - -DQT_MAJOR_VERSION=6
+        - -DBUILD_WITH_QT6=ON
         - -DBUILD_TESTING=OFF
-        - -DKDE_SKIP_TEST_SETTINGS=ON
-        - "-DCMAKE_FIND_ROOT_PATH=/usr\\;$CRAFT_STAGE\\;/snap/kf5-5-110-qt-5-15-11-core22-sdk/current"
-        - "-DKDE_INSTALL_PLUGINDIR=/usr/lib/$CRAFT_ARCH_TRIPLET/qt5/plugins/"
+        - -DCMAKE_INSTALL_SYSCONFDIR=/etc
+        - -DCMAKE_INSTALL_LOCALSTATEDIR=/var
+        - -DCMAKE_EXPORT_NO_PACKAGE_REGISTRY=ON
+        - -DCMAKE_FIND_USE_PACKAGE_REGISTRY=OFF
+        - -DCMAKE_FIND_PACKAGE_NO_PACKAGE_REGISTRY=ON
+        - -DCMAKE_INSTALL_RUNSTATEDIR=/run
+        - -DCMAKE_SKIP_INSTALL_ALL_DEPENDENCY=ON
+        - -DCMAKE_VERBOSE_MAKEFILE=ON
+        - -DCMAKE_INSTALL_LIBDIR=lib/$CRAFT_ARCH_TRIPLET_BUILD_FOR
+        - --log-level=STATUS
+        - -DCMAKE_LIBRARY_PATH=lib/$CRAFT_ARCH_TRIPLET_BUILD_FOR
         prime:
-        - "-usr/lib/*/cmake/*"
-        - "-usr/include/*"
-        - "-usr/share/ECM/*"
-        - "-usr/share/doc/*"
-        - "-usr/share/man/*"
-        - "-usr/share/icons/breeze-dark*"
-        - "-usr/bin/X11"
-        - "-usr/lib/gcc/$CRAFT_ARCH_TRIPLET/6.0.0"
-        - "-usr/lib/aspell/*"
-        - "-usr/share/lintian"
-        build-environment: &id005
-        - *id001
-        - *id002
-        - *id003
-        - *id004
+        - -usr/lib/*/cmake/*
+        - -usr/include/*
+        - -usr/share/ECM/*
+        - -usr/share/man/*
+        - -usr/bin/X11
+        - -usr/lib/gcc/$CRAFT_ARCH_TRIPLET_BUILD_FOR/6.0.0
+        - -usr/lib/aspell/*
+        - -usr/share/lintian
     cleanup:
         after:
-        - kde-neon
         - qrca
         plugin: nil
-        override-prime:  |
+        build-snaps:
+        - core22
+        - kf6-core22
+        - qt-common-themes
+        override-prime: |
             set -eux
-            # # Unused libraries found by linter
+            for snap in "core22" "kf6-core22" "qt-common-themes"; do
+                cd "/snap/$snap/current" && find . -type f,l -exec rm -rf "${CRAFT_PRIME}/{}" \;
+            done
+
+
