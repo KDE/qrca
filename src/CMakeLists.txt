@@ -28,6 +28,9 @@ ecm_target_qml_sources(qrca SOURCES
     qml/AboutPage.qml
 )
 
+file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/*.png")
+ecm_add_app_icon(qrca ICONS ${ICONS_SRCS})
+
 target_link_libraries(qrca PRIVATE Qt::Core Qt::Qml Qt::Quick Qt::QuickControls2 Qt::Svg Qt::Multimedia KF6::I18n KF6::Contacts KF6::CoreAddons KF6::Notifications KF6::Prison KF6::PrisonScanner)
 
 if (TARGET KF6::NetworkManagerQt)
