@@ -22,6 +22,10 @@
 #include <KLocalizedContext>
 #include <KLocalizedString>
 
+#ifndef Q_OS_ANDROID
+#include <KCrash>
+#endif
+
 #include "QrCodeContent.h"
 // #include "QrCodeScannerFilter.h"
 #include "Qrca.h"
@@ -66,6 +70,10 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     // the information in the application's desktop file
     QGuiApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.qrca")));
     aboutData.setProgramLogo(app.windowIcon());
+
+#ifndef Q_OS_ANDROID
+    KCrash::initialize();
+#endif
 
     qmlRegisterUncreatableType<QrCodeContent>("org.kde.qrca", 1, 0, "QrCodeContent", {});
     qmlRegisterSingletonType<NotificationManager>("org.kde.qrca", 1, 0, "NotificationManager", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {

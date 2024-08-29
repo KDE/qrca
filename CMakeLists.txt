@@ -31,7 +31,7 @@ find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test
 find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami I18n Contacts CoreAddons Notifications Prison)
 
 if(NOT ANDROID)
-    find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Purpose Service KIO)
+    find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Purpose Service KIO Crash)
     find_package(KF6 ${KF_MIN_VERSION} OPTIONAL_COMPONENTS NetworkManagerQt)
 endif()
 
