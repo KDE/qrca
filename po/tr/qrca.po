@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the qrca package.
 #
-# Emir SARI <emir_sari@icloud.com>, 2022, 2023.
+# SPDX-FileCopyrightText: 2022, 2023, 2024 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-08-31 00:42+0000\n"
-"PO-Revision-Date: 2023-07-04 06:08+0300\n"
+"PO-Revision-Date: 2024-09-23 15:07+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.07.70\n"
+"X-Generator: Lokalize 24.11.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -35,12 +35,12 @@ msgstr "Qrca"
 #: src/main.cpp:60
 #, kde-format
 msgid "A simple QR scanner"
-msgstr "Yalın bir kare kod tarayıcı"
+msgstr "Yalın bir kare kod tarayıcısı"
 
 #: src/main.cpp:60
 #, kde-format
 msgid "Copyright 2016-2019 Qrca and Kaidan authors"
-msgstr "Telif hakkı 2016-2019 Qrca ve Kaidan yazarları"
+msgstr "Telif hakkı 2016–2019 Qrca ve Kaidan yazarları"
 
 #: src/main.cpp:62
 #, kde-format
@@ -55,7 +55,7 @@ msgstr "Simon Schmeißer"
 #: src/notificationmanager.cpp:19
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
-msgstr "Görselin paylaşma URL'si <a href='%1'>%1</a>"
+msgstr "Görselin paylaşma URL’si <a href='%1'>%1</a>"
 
 #: src/qml/Main.qml:16
 #, kde-format
@@ -145,7 +145,7 @@ msgstr "Kişi bulundu"
 #: src/qml/QrCodeScannerPage.qml:74
 #, kde-format
 msgid "OTP URI found"
-msgstr "OTP URI'si bulundu"
+msgstr "OTP URI’si bulundu"
 
 #: src/qml/QrCodeScannerPage.qml:76
 #, kde-format
@@ -200,7 +200,7 @@ msgstr "OTP istemcisini aç"
 #: src/qml/QrCodeScannerPage.qml:123
 #, kde-format
 msgid "Open Food Facts"
-msgstr "Food Facts'i Aç"
+msgstr "Food Facts’i Aç"
 
 #: src/qml/QrCodeScannerPage.qml:125
 #, kde-format
@@ -210,12 +210,12 @@ msgstr "Vikipedi Kitap Kaynakları"
 #: src/qml/QrCodeScannerPage.qml:127
 #, kde-format
 msgid "Open KDE Itinerary"
-msgstr "KDE Yol Kılavuzu'nu Aç"
+msgstr "KDE Yol Kılavuzu’nu Aç"
 
 #: src/qml/QrCodeScannerPage.qml:129
 #, kde-format
 msgid "Open in Vakzination"
-msgstr "Aşıcı'da Aç"
+msgstr "Aşıcı’da Aç"
 
 #: src/qml/QrCodeScannerPage.qml:131
 #, kde-format
