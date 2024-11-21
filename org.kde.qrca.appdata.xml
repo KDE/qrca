@@ -123,4 +123,7 @@
   <content_rating type="oars-1.1"/>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=qrca</url>
   <url type="donation">https://www.kde.org/community/donations/?app=qrca&amp;source=appdata</url>
+  <custom>
+    <value key="KDE::f_droid">https://community.kde.org/Android/F-Droid#KDE_F-Droid_Nightly_Build_Repository</value>
+  </custom>
 </component>
