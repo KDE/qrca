@@ -15,6 +15,10 @@ Kirigami.ApplicationWindow {
 
     title: i18n("QR Code Scanner")
 
+    width: Kirigami.Units.gridUnit * 21
+    height: Kirigami.Settings.isMobile
+            ? Kirigami.Units.gridUnit * 34
+            : Kirigami.Units.gridUnit * 27
     function passiveNotification(text) {
         showPassiveNotification(text, "long")
     }
