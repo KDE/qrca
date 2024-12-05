@@ -8,6 +8,7 @@
 import QtQuick 2.1
 import org.kde.kirigami 2.19 as Kirigami
 import QtQuick.Controls 2.0 as Controls
+import org.kde.config as KConfig
 import org.kde.qrca 1.0
 
 Kirigami.ApplicationWindow {
@@ -19,6 +20,11 @@ Kirigami.ApplicationWindow {
     height: Kirigami.Settings.isMobile
             ? Kirigami.Units.gridUnit * 34
             : Kirigami.Units.gridUnit * 27
+
+    KConfig.WindowStateSaver {
+        configGroupName: "MainWindow"
+    }
+
     function passiveNotification(text) {
         showPassiveNotification(text, "long")
     }

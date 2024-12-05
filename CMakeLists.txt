@@ -7,7 +7,7 @@ cmake_minimum_required(VERSION 3.16)
 project(qrca VERSION 0.1)
 
 set(QT_MIN_VERSION "6.6.0")
-set(KF_MIN_VERSION "6.0.0")
+set(KF_MIN_VERSION "6.6.0")
 set(KDE_COMPILERSETTINGS_LEVEL "5.82")
 
 find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
@@ -29,7 +29,7 @@ include(ECMQmlModule)
 kde_enable_exceptions()
 
 find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Multimedia)
-find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami I18n Contacts CoreAddons Notifications Prison)
+find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami I18n Contacts CoreAddons Notifications Prison Config)
 
 if(NOT ANDROID)
     find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Purpose Service KIO Crash)
