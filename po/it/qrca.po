@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-31 00:42+0000\n"
+"POT-Creation-Date: 2024-12-05 00:43+0000\n"
 "PO-Revision-Date: 2023-07-07 22:19+0200\n"
 "Last-Translator: Paolo Zamponi <feus73@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -62,22 +62,22 @@ msgstr "L'url condiviso dell'immagine è <a href='%1'>%1</a>"
 msgid "QR Code Scanner"
 msgstr "Scanner di codici QR"
 
-#: src/qml/Main.qml:38
+#: src/qml/Main.qml:42
 #, kde-format
 msgid "Scan"
 msgstr "Scansiona"
 
-#: src/qml/Main.qml:45
+#: src/qml/Main.qml:49
 #, kde-format
 msgid "Create"
 msgstr "Crea"
 
-#: src/qml/Main.qml:51
+#: src/qml/Main.qml:55
 #, kde-format
 msgid "About"
 msgstr "Informazioni su"
 
-#: src/qml/Main.qml:59
+#: src/qml/Main.qml:63
 #, kde-format
 msgid "QR-Code Scanner"
 msgstr "Scanner di codici QR"

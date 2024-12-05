@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-31 00:42+0000\n"
+"POT-Creation-Date: 2024-12-05 00:43+0000\n"
 "PO-Revision-Date: 2023-07-31 11:11+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -62,22 +62,22 @@ msgstr "Delad webbadress för bilden är <a href='%1'>%1</a>"
 msgid "QR Code Scanner"
 msgstr "QR-kodläsare"
 
-#: src/qml/Main.qml:38
+#: src/qml/Main.qml:42
 #, kde-format
 msgid "Scan"
 msgstr "Läs"
 
-#: src/qml/Main.qml:45
+#: src/qml/Main.qml:49
 #, kde-format
 msgid "Create"
 msgstr "Skapa"
 
-#: src/qml/Main.qml:51
+#: src/qml/Main.qml:55
 #, kde-format
 msgid "About"
 msgstr "Om"
 
-#: src/qml/Main.qml:59
+#: src/qml/Main.qml:63
 #, kde-format
 msgid "QR-Code Scanner"
 msgstr "QR-kodläsare"

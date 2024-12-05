@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-31 00:42+0000\n"
+"POT-Creation-Date: 2024-12-05 00:43+0000\n"
 "PO-Revision-Date: 2024-01-27 15:16+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -63,22 +63,22 @@ msgstr ""
 msgid "QR Code Scanner"
 msgstr "Сканер QR"
 
-#: src/qml/Main.qml:38
+#: src/qml/Main.qml:42
 #, kde-format
 msgid "Scan"
 msgstr "Сканировать"
 
-#: src/qml/Main.qml:45
+#: src/qml/Main.qml:49
 #, kde-format
 msgid "Create"
 msgstr "Создать"
 
-#: src/qml/Main.qml:51
+#: src/qml/Main.qml:55
 #, kde-format
 msgid "About"
 msgstr "О программе"
 
-#: src/qml/Main.qml:59
+#: src/qml/Main.qml:63
 #, kde-format
 msgid "QR-Code Scanner"
 msgstr "Сканер QR"
