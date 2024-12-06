@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-05 00:43+0000\n"
+"POT-Creation-Date: 2024-12-06 00:43+0000\n"
 "PO-Revision-Date: 2023-07-04 16:47+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -57,27 +57,27 @@ msgstr "Simon Schmeißer"
 msgid "Shared url for image is <a href='%1'>%1</a>"
 msgstr "Sdílená adresa obrázku je <a href='%1'>%1</a>"
 
-#: src/qml/Main.qml:16
+#: src/qml/Main.qml:17
 #, kde-format
 msgid "QR Code Scanner"
 msgstr "Čtečka kódů QR"
 
-#: src/qml/Main.qml:42
+#: src/qml/Main.qml:48
 #, kde-format
 msgid "Scan"
 msgstr "Přečíst"
 
-#: src/qml/Main.qml:49
+#: src/qml/Main.qml:55
 #, kde-format
 msgid "Create"
 msgstr "Vytvořit"
 
-#: src/qml/Main.qml:55
+#: src/qml/Main.qml:61
 #, kde-format
 msgid "About"
 msgstr "O aplikaci"
 
-#: src/qml/Main.qml:63
+#: src/qml/Main.qml:69
 #, kde-format
 msgid "QR-Code Scanner"
 msgstr "Čtečka kódů QR"

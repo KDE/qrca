@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-05 00:43+0000\n"
+"POT-Creation-Date: 2024-12-06 00:43+0000\n"
 "PO-Revision-Date: 2023-07-04 06:55+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -60,27 +60,27 @@ msgstr "Simon Schmeißer"
 msgid "Shared url for image is <a href='%1'>%1</a>"
 msgstr "Адресою поширення для зображення є <a href='%1'>%1</a>"
 
-#: src/qml/Main.qml:16
+#: src/qml/Main.qml:17
 #, kde-format
 msgid "QR Code Scanner"
 msgstr "Засіб сканування QR-кодів"
 
-#: src/qml/Main.qml:42
+#: src/qml/Main.qml:48
 #, kde-format
 msgid "Scan"
 msgstr "Сканувати"
 
-#: src/qml/Main.qml:49
+#: src/qml/Main.qml:55
 #, kde-format
 msgid "Create"
 msgstr "Створити"
 
-#: src/qml/Main.qml:55
+#: src/qml/Main.qml:61
 #, kde-format
 msgid "About"
 msgstr "Про програму"
 
-#: src/qml/Main.qml:63
+#: src/qml/Main.qml:69
 #, kde-format
 msgid "QR-Code Scanner"
 msgstr "Засіб сканування QR-кодів"

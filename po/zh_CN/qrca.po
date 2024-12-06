@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-05 00:43+0000\n"
+"POT-Creation-Date: 2024-12-06 00:43+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -57,27 +57,27 @@ msgstr "Simon Schmeißer"
 msgid "Shared url for image is <a href='%1'>%1</a>"
 msgstr "此图像的分享 URL 为 <a href='%1'>%1</a>"
 
-#: src/qml/Main.qml:16
+#: src/qml/Main.qml:17
 #, kde-format
 msgid "QR Code Scanner"
 msgstr "二维码扫描器"
 
-#: src/qml/Main.qml:42
+#: src/qml/Main.qml:48
 #, kde-format
 msgid "Scan"
 msgstr "扫描"
 
-#: src/qml/Main.qml:49
+#: src/qml/Main.qml:55
 #, kde-format
 msgid "Create"
 msgstr "创建"
 
-#: src/qml/Main.qml:55
+#: src/qml/Main.qml:61
 #, kde-format
 msgid "About"
 msgstr "关于"
 
-#: src/qml/Main.qml:63
+#: src/qml/Main.qml:69
 #, kde-format
 msgid "QR-Code Scanner"
 msgstr "二维码扫描器"
