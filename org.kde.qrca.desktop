@@ -1,6 +1,7 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
 Name=Qrca
+Name[ar]=كركا
 Name[ast]=Qrca
 Name[ca]=Qrca
 Name[ca@valencia]=Qrca
@@ -39,6 +40,7 @@ Name[x-test]=xxQrcaxx
 Name[zh_CN]=Qrca
 Name[zh_TW]=Qrca
 GenericName=Barcode Scanner
+GenericName[ar]=ماسح رموز
 GenericName[ast]=Escáner de códigos de barres
 GenericName[ca]=Escàner de codi de barres
 GenericName[ca@valencia]=Escàner de codi de barres
@@ -76,6 +78,7 @@ GenericName[x-test]=xxBarcode Scannerxx
 GenericName[zh_CN]=二维码扫描器
 GenericName[zh_TW]=條碼掃描器
 Comment=Scan and create QR-Codes
+Comment[ar]=مسح وإنشاء رموز الاستجابة السريعة
 Comment[ast]=Escania y crea códigos QR
 Comment[ca]=Escaneja i crea codis QR
 Comment[ca@valencia]=Escaneja i crea codis QR
