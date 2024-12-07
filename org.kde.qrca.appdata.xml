@@ -2,6 +2,7 @@
 <component type="desktop-application">
   <id>org.kde.qrca</id>
   <name>Barcode Scanner</name>
+  <name xml:lang="ar">ماسح رموز</name>
   <name xml:lang="ast">Escáner de códigos de barres</name>
   <name xml:lang="ca">Escàner de codi de barres</name>
   <name xml:lang="ca-valencia">Escàner de codi de barres</name>
@@ -39,6 +40,7 @@
   <name xml:lang="zh-CN">二维码扫描器</name>
   <name xml:lang="zh-TW">條碼掃描器</name>
   <summary>Scan and create QR-Codes</summary>
+  <summary xml:lang="ar">مسح وإنشاء رموز الاستجابة السريعة</summary>
   <summary xml:lang="ast">Escania y crea códigos QR</summary>
   <summary xml:lang="ca">Escaneja i crea codis QR</summary>
   <summary xml:lang="ca-valencia">Escaneja i crea codis QR</summary>
@@ -84,6 +86,7 @@
     <p>
       Scan QR-Codes with your camera on phones and laptops, and create your own for easily sharing data between devices.
     </p>
+    <p xml:lang="ar">يمسح رموز الاستجابة السريعة QR باستخدام الكاميرا الموجودة على الهواتف وأجهزة الحاسوب المحمولة، وينشئ رموزك الخاصة لمشاركة البيانات بسهولة بين الأجهزة.</p>
     <p xml:lang="ast">Escania códigos QR cola cámara de teléfonos y portátiles, y crea los de to pa compartir datos ente preseos fácilmente.</p>
     <p xml:lang="ca">Escanegeu els codis QR amb la càmera del telèfon o portàtil, i creeu els vostres per a compartir dades amb facilitat entre diferents dispositius.</p>
     <p xml:lang="ca-valencia">Escanegeu els codis QR amb la càmera del telèfon o portàtil, i creeu els vostres per a compartir dades amb facilitat entre diferents dispositius.</p>
