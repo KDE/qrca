@@ -241,12 +241,3 @@ msgstr "Paylaşma Başarısız"
 #, kde-format
 msgid "Share QR-Code"
 msgstr "Kare Kodu Paylaş"
-
-#~ msgid "Saved image to %1"
-#~ msgstr "Görsel %1 konumuna kaydedildi"
-
-#~ msgid "Open Externally"
-#~ msgstr "Dışarıdan Aç"
-
-#~ msgid "Generating the QR-Code failed: "
-#~ msgstr "Kare kod oluşturulamadı: "
