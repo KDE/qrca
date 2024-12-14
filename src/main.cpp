@@ -91,7 +91,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qRegisterMetaType<QrCodeContent>();
 
     Qrca qrca;
-    qrca.setAboutData(aboutData);
     qrca.setEncodeText(parser.value(QStringLiteral("encode")));
     qmlRegisterSingletonInstance<Qrca>("org.kde.qrca", 1, 0, "Qrca", &qrca);
 

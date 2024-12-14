@@ -9,7 +9,6 @@
 #ifndef QRCA_H
 #define QRCA_H
 
-#include <KAboutData>
 #include <Prison/ScanResult>
 #include <QImage>
 #include <QObject>
@@ -22,7 +21,6 @@ class Qrca : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(QString encodeText READ encodeText WRITE setEncodeText NOTIFY encodeTextChanged)
-    Q_PROPERTY(KAboutData aboutData READ aboutData WRITE setAboutData NOTIFY aboutDataChanged)
 
 public:
     Qrca();
@@ -42,9 +40,6 @@ public:
     QString encodeText() const noexcept;
     void setEncodeText(const QString &encodeText) noexcept;
 
-    KAboutData aboutData() const noexcept;
-    void setAboutData(const KAboutData &aboutData) noexcept;
-
 signals:
     /**
      * Show passive notification
@@ -52,11 +47,9 @@ signals:
     void passiveNotificationRequested(QString text);
 
     void encodeTextChanged();
-    void aboutDataChanged();
 
 private:
     QString m_encodeText;
-    KAboutData m_aboutData;
 };
 
 #endif // QRCA_H

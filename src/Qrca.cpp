@@ -44,18 +44,6 @@
 
 Qrca::Qrca() = default;
 
-KAboutData Qrca::aboutData() const noexcept
-{
-    return m_aboutData;
-}
-
-void Qrca::setAboutData(const KAboutData &aboutData) noexcept
-{
-    m_aboutData = aboutData;
-
-    Q_EMIT aboutDataChanged();
-}
-
 QString Qrca::encodeText() const noexcept
 {
     return m_encodeText;
