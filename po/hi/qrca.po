@@ -1,4 +1,4 @@
-# Sanskrit translations for qrca package.
+# Hindi translations for qrca package.
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the qrca package.
 # Kali <EMAIL@ADDRESS>, 2024.
@@ -8,199 +8,198 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-12-06 00:43+0000\n"
-"PO-Revision-Date: 2024-12-13 19:09+0530\n"
+"PO-Revision-Date: 2024-12-15 17:35+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
-"Language-Team: Sanskrit\n"
-"Language: sa\n"
+"Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
+"Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n>2);\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "भवतः नामानि"
+msgstr "तुम्हारे नाम"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "भवतः ईमेलपत्राणि"
+msgstr "आपके ईमेल"
 
 #: src/main.cpp:60
 #, kde-format
 msgid "Qrca"
-msgstr "Qrca"
+msgstr "क्यूआरसीए"
 
 #: src/main.cpp:60
 #, kde-format
 msgid "A simple QR scanner"
-msgstr "एकः सरलः QR स्कैनरः"
+msgstr "एक सरल क्यूआर स्कैनर"
 
 #: src/main.cpp:60
 #, kde-format
 msgid "Copyright 2016-2019 Qrca and Kaidan authors"
-msgstr "प्रतिलिपि अधिकार 2016-2019 Qrca एवं कैदन लेखक"
+msgstr "कॉपीराइट 2016-2019 Qrca और Kaidan लेखक"
 
 #: src/main.cpp:62
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr "जोनाह ब्रुचेर्ट"
+msgstr "जोना ब्रुचर्ट"
 
 #: src/main.cpp:63
 #, kde-format
 msgid "Simon Schmeißer"
-msgstr "सिमोन श्मेइसर"
+msgstr "साइमन शमीसर"
 
 #: src/notificationmanager.cpp:19
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
-msgstr "चित्रस्य कृते साझाकृतं url <a href='%1'>%1</a> अस्ति"
+msgstr "छवि के लिए साझा यूआरएल <a href='%1'>%1</a> है"
 
 #: src/qml/Main.qml:17
 #, kde-format
 msgid "QR Code Scanner"
-msgstr "QR कोड स्कैनर"
+msgstr "क्यूआर कोड स्कैनर"
 
 #: src/qml/Main.qml:48
 #, kde-format
 msgid "Scan"
-msgstr "स्कैन् कुर्वन्तु"
+msgstr "स्कैन"
 
 #: src/qml/Main.qml:55
 #, kde-format
 msgid "Create"
-msgstr "निर्मियताम्"
+msgstr "बनाएं"
 
 #: src/qml/Main.qml:61
 #, kde-format
 msgid "About"
-msgstr "विषये"
+msgstr "के बारे में"
 
 #: src/qml/Main.qml:69
 #, kde-format
 msgid "QR-Code Scanner"
-msgstr "QR-कोड स्कैनर"
+msgstr "क्यूआर-कोड स्कैनर"
 
 #: src/qml/QrCodeEncoderPage.qml:18
 #, kde-format
 msgid "Create QR-Code"
-msgstr "QR-Code रचयन्तु"
+msgstr "क्यूआर कोड बनाएं"
 
 #: src/qml/QrCodeEncoderPage.qml:30
 #, kde-format
 msgid "Image files (*.png *.jpg)"
-msgstr "चित्रसञ्चिकाः (*.png *.jpg)"
+msgstr "छवि फ़ाइलें (*.png *.jpg)"
 
 #: src/qml/QrCodeEncoderPage.qml:30
 #, kde-format
 msgid "All files (*)"
-msgstr "सर्वाणि सञ्चिकाः (*) ."
+msgstr "सभी फाइलें (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:35
 #, kde-format
 msgid "Save"
-msgstr "रक्ष्"
+msgstr "बचाना"
 
 #: src/qml/QrCodeEncoderPage.qml:43
 #, kde-format
 msgid "QR-Code could not be saved"
-msgstr "QR-Code रक्षितुं न शक्तवान्"
+msgstr "क्यूआर-कोड सहेजा नहीं जा सका"
 
 #: src/qml/QrCodeEncoderPage.qml:53
 #, kde-format
 msgid "Share"
-msgstr "संविभागः"
+msgstr "शेयर करना"
 
 #: src/qml/QrCodeEncoderPage.qml:63
 #, kde-format
 msgid "QR-Code could not be saved to temporary location"
-msgstr "QR-Code अस्थायीस्थाने रक्षितुं न शक्यते स्म"
+msgstr "QR-कोड को अस्थायी स्थान पर सहेजा नहीं जा सका"
 
 #: src/qml/QrCodeScannerPage.qml:28
 #, kde-format
 msgid "Light"
-msgstr "प्रकाशः"
+msgstr "रोशनी"
 
 #: src/qml/QrCodeScannerPage.qml:35 src/qml/QrCodeScannerPage.qml:209
 #, kde-format
 msgid "Select Camera"
-msgstr "Camera इति चिनोतु"
+msgstr "कैमरा चुनें"
 
 #: src/qml/QrCodeScannerPage.qml:68
 #, kde-format
 msgid "Text found"
-msgstr "पाठः प्राप्तः"
+msgstr "पाठ मिला"
 
 #: src/qml/QrCodeScannerPage.qml:70
 #, kde-format
 msgid "URL found"
-msgstr "URL प्राप्तम्"
+msgstr "यूआरएल मिला"
 
 #: src/qml/QrCodeScannerPage.qml:72
 #, kde-format
 msgid "Contact found"
-msgstr "सम्पर्क प्राप्त"
+msgstr "संपर्क मिला"
 
 #: src/qml/QrCodeScannerPage.qml:74
 #, kde-format
 msgid "OTP URI found"
-msgstr "ओटीपी यूआरआई प्राप्त"
+msgstr "OTP URI मिला"
 
 #: src/qml/QrCodeScannerPage.qml:76
 #, kde-format
 msgid "Binary data found"
-msgstr "द्विचक्रीयदत्तांशः प्राप्तः"
+msgstr "बाइनरी डेटा मिला"
 
 #: src/qml/QrCodeScannerPage.qml:78
 #, kde-format
 msgid "Health certificate found"
-msgstr "स्वास्थ्य प्रमाणपत्र प्राप्त"
+msgstr "स्वास्थ्य प्रमाणपत्र मिला"
 
 #: src/qml/QrCodeScannerPage.qml:80
 #, kde-format
 msgid "Transport ticket found"
-msgstr "परिवहनटिकटं प्राप्तम्"
+msgstr "परिवहन टिकट मिला"
 
 #: src/qml/QrCodeScannerPage.qml:82
 #, kde-format
 msgid "ISBN found"
-msgstr "ISBN प्राप्तम्"
+msgstr "आईएसबीएन मिला"
 
 #: src/qml/QrCodeScannerPage.qml:84
 #, kde-format
 msgid "International Article Number found"
-msgstr "अन्तर्राष्ट्रीय लेख संख्या प्राप्त"
+msgstr "अंतर्राष्ट्रीय लेख संख्या पाई गई"
 
 #: src/qml/QrCodeScannerPage.qml:86
 #, kde-format
 msgid "Wi-Fi settings found"
-msgstr "Wi-Fi सेटिंग्स् प्राप्ताः"
+msgstr "वाई-फ़ाई सेटिंग मिली"
 
 #: src/qml/QrCodeScannerPage.qml:103
 #, kde-format
 msgid "<binary data>"
-msgstr "<द्विचक्रीयदत्तांशः>"
+msgstr "<बाइनरी डेटा>"
 
 #: src/qml/QrCodeScannerPage.qml:117
 #, kde-format
 msgid "Open"
-msgstr "उद्घाटित"
+msgstr "खुला"
 
 #: src/qml/QrCodeScannerPage.qml:119
 #, kde-format
 msgid "Save contact"
-msgstr "सम्पर्क रक्षे"
+msgstr "संपर्क सहेजें"
 
 #: src/qml/QrCodeScannerPage.qml:121
 #, kde-format
 msgid "Open OTP client"
-msgstr "OTP क्लायन्ट् उद्घाटयन्तु"
+msgstr "OTP क्लाइंट खोलें"
 
 #: src/qml/QrCodeScannerPage.qml:123
 #, kde-format
 msgid "Open Food Facts"
-msgstr "मुक्त खाद्य तथ्य"
+msgstr "खुले खाद्य तथ्य"
 
 #: src/qml/QrCodeScannerPage.qml:125
 #, kde-format
@@ -210,34 +209,34 @@ msgstr "विकिपीडिया पुस्तक स्रोत"
 #: src/qml/QrCodeScannerPage.qml:127
 #, kde-format
 msgid "Open KDE Itinerary"
-msgstr "KDE यात्रासूचीं उद्घाटयन्तु"
+msgstr "केडीई यात्रा कार्यक्रम खोलें"
 
 #: src/qml/QrCodeScannerPage.qml:129
 #, kde-format
 msgid "Open in Vakzination"
-msgstr "वाक्जिनेशन इत्यत्र उद्घाटितम्"
+msgstr "Vakzination में खोलें"
 
 #: src/qml/QrCodeScannerPage.qml:131
 #, kde-format
 msgid "Connect"
-msgstr "संयुज्"
+msgstr "जोड़ना"
 
 #: src/qml/QrCodeScannerPage.qml:194
 #, kde-format
 msgid "Copy to clipboard"
-msgstr "क्लिप्बोर्ड् प्रति प्रतिलिख्यताम्"
+msgstr "क्लिपबोर्ड पर कॉपी करें"
 
 #: src/qml/ShareSheet.qml:28
 #, kde-format
 msgid "Share Qr-Code"
-msgstr "शेयर QR-कोड"
+msgstr "क्यूआर कोड साझा करें"
 
 #: src/qml/ShareSheet.qml:56
 #, kde-format
 msgid "Sharing Failed"
-msgstr "साझेदारी विफलम्"
+msgstr "साझाकरण विफल"
 
 #: src/qml/ShareSheet.qml:82
 #, kde-format
 msgid "Share QR-Code"
-msgstr "QR-कोड साझां कुर्वन्तु"
+msgstr "क्यूआर कोड साझा करें"
