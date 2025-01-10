@@ -23,6 +23,10 @@ class Qrca : public QObject
     Q_OBJECT
     Q_PROPERTY(QString encodeText READ encodeText WRITE setEncodeText NOTIFY encodeTextChanged)
 
+    /**
+     * Hide most UI elements and quit after connecting to the added Wifi network.
+     */
+    Q_PROPERTY(bool wifiMode READ wifiMode WRITE setWifiMode NOTIFY wifiModeChanged)
     Q_PROPERTY(bool connectingToWifi READ connectingToWifi NOTIFY connectingToWifiChanged)
 
 public:
@@ -43,6 +47,10 @@ public:
     QString encodeText() const noexcept;
     void setEncodeText(const QString &encodeText) noexcept;
 
+    bool wifiMode() const noexcept;
+    void setWifiMode(bool wifiMode) noexcept;
+    Q_SIGNAL void wifiModeChanged();
+
     bool connectingToWifi() const noexcept;
     Q_SIGNAL void connectingToWifiChanged(bool connectingToWifi);
 
@@ -61,6 +69,7 @@ private:
     void setConnectingToWifi(bool connectingToWifi) noexcept;
     QString m_encodeText;
 
+    bool m_wifiMode = false;
     bool m_connectingToWifi = false;
 };
 

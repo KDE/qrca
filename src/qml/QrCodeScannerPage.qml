@@ -23,7 +23,7 @@ Kirigami.Page {
     topPadding: 0
     bottomPadding: 0
 
-    title: qsTr("Scan QR code")
+    title: Qrca.wifiMode ? qsTr("Scan for Wifi code") : qsTr("Scan QR code")
     actions: [
         Kirigami.Action {
             icon.name: checked ? "flashlight-off" : "flashlight-on"
@@ -124,10 +124,14 @@ Kirigami.Page {
         Connections {
             target: Qrca
             enabled: resultSheet.opened && resultSheet.tag?.contentType === QrCodeContent.WifiSetting
-            function onWifiConnected() {
-                resultSheet.close();
+            function onWifiConnected() : void {
+                if (Qrca.wifiMode) {
+                    Qt.quit();
+                } else {
+                    resultSheet.close();
+                }
             }
-            function onWifiConnectionFailed(msg) {
+            function onWifiConnectionFailed(msg) : void {
                 resultErrorMessage.text = msg;
                 resultErrorMessage.visible = true;
             }
@@ -283,7 +287,12 @@ Kirigami.Page {
                 return
             }
 
-            resultSheet.tag = Qrca.resultContent(result)
+            const resultContent = Qrca.resultContent(result);
+            if (Qrca.wifiMode && resultContent.contentType !== QrCodeContent.WifiSetting) {
+                return;
+            }
+
+            resultSheet.tag = resultContent;
             if (!resultSheet.sheetOpen) {
                 resultSheet.open()
             }

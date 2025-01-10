@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: 2025 Kai Uwe Broulik <kde@broulik.de>
+[Desktop Entry]
+Name=Qrca Wifi scanner
+GenericName=Wifi Barcode Scanner
+Comment=Scan for Wifi QR-Codes
+Version=1.0
+Exec=qrca --wifi
+Icon=org.kde.qrca
+Type=Application
+Terminal=false
+Categories=Qt;KDE;AudioVideo;
+NoDisplay=true

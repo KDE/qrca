@@ -5,7 +5,10 @@
  *  SPDX-License-Identifier: GPL-3.0-or-later
  */
 
+#include "config-qrca.h"
+
 #include "qrca_version.h"
+
 #include <qglobal.h>
 #ifndef Q_OS_ANDROID
 #include <QApplication>
@@ -60,6 +63,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     aboutData.addAuthor(i18n("Simon Schmeißer"));
     aboutData.setOrganizationDomain("kde.org");
     aboutData.setDesktopFileName(QStringLiteral("org.kde.qrca"));
+
     // set the application metadata
     KAboutData::setApplicationData(aboutData);
     // in GUI apps set the window icon manually, not covered by KAboutData
@@ -71,9 +75,22 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCommandLineParser parser;
     aboutData.setupCommandLine(&parser);
     parser.addOption(QCommandLineOption(QStringLiteral("encode"), QStringLiteral("Text to encode into a QR-Code"), QStringLiteral("encode"), {}));
+#if HAVE_NETWORKMANAGER
+    QCommandLineOption wifiOption(QStringLiteral("wifi"), i18n("Scan only for Wifi network QR-Codes"));
+    parser.addOption(wifiOption);
+#endif
 
     parser.process(app);
     aboutData.processCommandLine(&parser);
+
+    bool wifiMode = false;
+#if HAVE_NETWORKMANAGER
+    wifiMode = parser.isSet(wifiOption);
+#endif
+
+    if (wifiMode) {
+        app.setDesktopFileName(QStringLiteral("org.kde.qrca.wifi"));
+    }
 
 #ifndef Q_OS_ANDROID
     KCrash::initialize();
@@ -96,6 +113,10 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     Qrca qrca;
     qrca.setEncodeText(parser.value(QStringLiteral("encode")));
+#if HAVE_NETWORKMANAGER
+    qrca.setWifiMode(wifiMode);
+#endif
+
     qmlRegisterSingletonInstance<Qrca>("org.kde.qrca", 1, 0, "Qrca", &qrca);
 
     QQmlApplicationEngine engine;

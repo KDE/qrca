@@ -60,6 +60,19 @@ void Qrca::setEncodeText(const QString &encodeText) noexcept
     Q_EMIT encodeTextChanged();
 }
 
+bool Qrca::wifiMode() const noexcept
+{
+    return m_wifiMode;
+}
+
+void Qrca::setWifiMode(bool wifiMode) noexcept
+{
+    if (m_wifiMode != wifiMode) {
+        m_wifiMode = wifiMode;
+        Q_EMIT wifiModeChanged();
+    }
+}
+
 bool Qrca::connectingToWifi() const noexcept
 {
     return m_connectingToWifi;
