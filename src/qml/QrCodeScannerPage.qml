@@ -153,6 +153,7 @@ Kirigami.Page {
                         break;
                     case QrCodeContent.HealthCertificate:
                         Qrca.openInApplication(resultSheet.tag, "org.kde.vakzination");
+                        break;
                     case QrCodeContent.WifiSetting:
                         Qrca.connectToWifi(resultSheet.tag.text);
                     }
