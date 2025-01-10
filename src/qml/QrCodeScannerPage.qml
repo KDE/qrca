@@ -1,11 +1,13 @@
 /*
  *  SPDX-FileCopyrightText: 2020 Nicolas Fella <nicolas.fella@gmx.de>
  *  SPDX-FileCopyrightText: 2016-2019 Kaidan developers and contributors (see the LICENSE file of Kaidan for a full list of copyright authors)
+ *  SPDX-FileCopyrightText: 2025 Kai Uwe Broulik <kde@broulik.de>
  *
  *  SPDX-License-Identifier: GPL-3.0-or-later
  */
 
 import QtCore
+import QtQml // for Connections.enabled
 import QtQuick 2.0
 import QtQuick.Controls 2.3 as Controls
 import QtMultimedia
@@ -60,6 +62,7 @@ Kirigami.Page {
         id: resultSheet
 
         property var tag
+        onTagChanged: resultErrorMessage.visible = false
 
         header: Kirigami.Heading {
             text: {
@@ -90,11 +93,19 @@ Kirigami.Page {
             }
         }
 
-        Item {
-            implicitWidth: Kirigami.Units.gridUnit * 20
-            implicitHeight: childrenRect.height
+        ColumnLayout {
+            Layout.preferredWidth: Kirigami.Units.gridUnit * 20
+
+            Kirigami.InlineMessage {
+                id: resultErrorMessage
+                Layout.fillWidth: true
+                type: Kirigami.MessageType.Error
+                visible: false
+            }
 
             Controls.Label {
+                Layout.maximumWidth: Kirigami.Units.gridUnit * 20
+                Layout.fillWidth: true
                 text: {
                     switch(resultSheet.tag?.contentType) {
                         case QrCodeContent.VCard:
@@ -105,14 +116,38 @@ Kirigami.Page {
                             return resultSheet.tag?.isPlainText ? resultSheet.tag.text : i18n("<binary data>");
                     }
                 }
-                anchors.left: parent.left
-                anchors.right: parent.right
                 wrapMode: Text.Wrap
                 textFormat: Text.PlainText
             }
         }
 
+        Connections {
+            target: Qrca
+            enabled: resultSheet.opened && resultSheet.tag?.contentType === QrCodeContent.WifiSetting
+            function onWifiConnected() {
+                resultSheet.close();
+            }
+            function onWifiConnectionFailed(msg) {
+                resultErrorMessage.text = msg;
+                resultErrorMessage.visible = true;
+            }
+        }
+
         footer: RowLayout {
+            RowLayout {
+                spacing: 0
+                visible: wifiBusyIndicator.running
+
+                Controls.BusyIndicator {
+                    id: wifiBusyIndicator
+                    running: resultSheet.tag?.contentType === QrCodeContent.WifiSetting && Qrca.connectingToWifi
+                }
+
+                Controls.Label {
+                    text: i18nc("Connecting to Wifi", "Connecting…")
+                }
+            }
+
             Controls.Button {
                 text: {
                     switch (resultSheet.tag?.contentType) {
@@ -137,6 +172,8 @@ Kirigami.Page {
                     }
                 }
                 onClicked: {
+                    resultErrorMessage.visible = false;
+
                     switch (resultSheet.tag.contentType) {
                     case QrCodeContent.Url:
                        Qt.openUrlExternally(resultSheet.tag.text)
@@ -161,6 +198,7 @@ Kirigami.Page {
                         break;
                     case QrCodeContent.WifiSetting:
                         Qrca.connectToWifi(resultSheet.tag.text);
+                        return; // Wait for connection to be established before closing.
                     }
                     resultSheet.close()
                 }
@@ -174,7 +212,7 @@ Kirigami.Page {
                     case QrCodeContent.HealthCertificate:
                         return Qrca.hasApplication("org.kde.vakzination");
                     case QrCodeContent.WifiSetting:
-                        return Qrca.canConnectToWifi();
+                        return Qrca.canConnectToWifi() && !Qrca.connectingToWifi
                     }
                     return true;
                 }

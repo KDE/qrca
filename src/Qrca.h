@@ -2,6 +2,7 @@
  *  SPDX-FileCopyrightText: 2019 Jonah Brüchert <jbb@kaidan.im>
  *  SPDX-FileCopyrightText: 2019 Simon Schmeisser <s.schmeisser@gmx.net>
  *  SPDX-FileCopyrightText: 2020 Nicolas Fella <nicolas.fella@gmx.de>
+ *  SPDX-FileCopyrightText: 2025 Kai Uwe Broulik <kde@broulik.de>
  *
  *  SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -22,6 +23,8 @@ class Qrca : public QObject
     Q_OBJECT
     Q_PROPERTY(QString encodeText READ encodeText WRITE setEncodeText NOTIFY encodeTextChanged)
 
+    Q_PROPERTY(bool connectingToWifi READ connectingToWifi NOTIFY connectingToWifiChanged)
+
 public:
     Qrca();
 
@@ -40,6 +43,9 @@ public:
     QString encodeText() const noexcept;
     void setEncodeText(const QString &encodeText) noexcept;
 
+    bool connectingToWifi() const noexcept;
+    Q_SIGNAL void connectingToWifiChanged(bool connectingToWifi);
+
 signals:
     /**
      * Show passive notification
@@ -48,8 +54,14 @@ signals:
 
     void encodeTextChanged();
 
+    void wifiConnected();
+    void wifiConnectionFailed(const QString &errorMsg);
+
 private:
+    void setConnectingToWifi(bool connectingToWifi) noexcept;
     QString m_encodeText;
+
+    bool m_connectingToWifi = false;
 };
 
 #endif // QRCA_H
