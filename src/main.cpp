@@ -5,6 +5,7 @@
  *  SPDX-License-Identifier: GPL-3.0-or-later
  */
 
+#include "qrca_version.h"
 #include <qglobal.h>
 #ifndef Q_OS_ANDROID
 #include <QApplication>
@@ -57,7 +58,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     KLocalizedString::setApplicationDomain("qrca");
     // create a KAboutData object to use for setting the application metadata
     KAboutData aboutData(
-        QStringLiteral("qrca"), i18n("Qrca"), QStringLiteral("0.1"), i18n("A simple QR scanner"), KAboutLicense::GPL_V3, i18n("Copyright 2016-2019 Qrca and Kaidan authors"), QString(), QStringLiteral("https://www.plasma-mobile.org"));
+        QStringLiteral("qrca"), i18n("Qrca"), QStringLiteral(QRCA_VERSION_STRING), i18n("A simple QR scanner"), KAboutLicense::GPL_V3, i18n("Copyright 2016-2019 Qrca and Kaidan authors"), QString(), QStringLiteral("https://www.plasma-mobile.org"));
     // overwrite default-generated values of organizationDomain & desktopFileName
     aboutData.addAuthor(i18n("Jonah Brüchert"), QString(), QStringLiteral("jbb@kaidan.im"), QStringLiteral("https://jbbgameich.github.io"));
     aboutData.addAuthor(i18n("Simon Schmeißer"));

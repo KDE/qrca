@@ -4,7 +4,12 @@
 # SPDX-License-Identifier: BSD-2-Clause
 cmake_minimum_required(VERSION 3.16)
 
-project(qrca VERSION 0.1)
+# KDE Application Version, managed by release script
+set (RELEASE_SERVICE_VERSION_MAJOR "25")
+set (RELEASE_SERVICE_VERSION_MINOR "03")
+set (RELEASE_SERVICE_VERSION_MICRO "70")
+set (RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE_VERSION_MINOR}.${RELEASE_SERVICE_VERSION_MICRO}")
+project(qrca VERSION ${RELEASE_SERVICE_VERSION})
 
 set(QT_MIN_VERSION "6.6.0")
 set(KF_MIN_VERSION "6.6.0")
@@ -27,6 +32,9 @@ include(KDEClangFormat)
 include(ECMAddAndroidApk)
 include(ECMQmlModule)
 kde_enable_exceptions()
+
+ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX QRCA
+    VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/src/qrca_version.h")
 
 find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Multimedia)
 find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami I18n Contacts CoreAddons Notifications Prison Config)
