@@ -49,11 +49,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     QCoreApplication::setOrganizationDomain(QStringLiteral("kde.org"));
     QCoreApplication::setApplicationName(QStringLiteral("qrca"));
 
-    QCommandLineParser parser;
-    parser.addHelpOption();
-    parser.addOption(QCommandLineOption(QStringLiteral("encode"), QStringLiteral("Text to encode into a QR-Code"), QStringLiteral("encode"), {}));
-    parser.process(app);
-
     // setup translation string domain for the i18n calls
     KLocalizedString::setApplicationDomain("qrca");
     // create a KAboutData object to use for setting the application metadata
@@ -71,6 +66,13 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     // the information in the application's desktop file
     QGuiApplication::setWindowIcon(QIcon::fromTheme(QStringLiteral("org.kde.qrca")));
     aboutData.setProgramLogo(app.windowIcon());
+
+    QCommandLineParser parser;
+    aboutData.setupCommandLine(&parser);
+    parser.addOption(QCommandLineOption(QStringLiteral("encode"), QStringLiteral("Text to encode into a QR-Code"), QStringLiteral("encode"), {}));
+
+    parser.process(app);
+    aboutData.processCommandLine(&parser);
 
 #ifndef Q_OS_ANDROID
     KCrash::initialize();
