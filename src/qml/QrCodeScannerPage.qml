@@ -63,7 +63,7 @@ Kirigami.Page {
 
         header: Kirigami.Heading {
             text: {
-                switch (resultSheet.tag.contentType) {
+                switch (resultSheet.tag?.contentType) {
                     case QrCodeContent.Text:
                         return i18n("Text found")
                     case QrCodeContent.Url:
@@ -84,6 +84,8 @@ Kirigami.Page {
                         return i18n("International Article Number found")
                     case QrCodeContent.WifiSetting:
                         return i18n("Wi-Fi settings found")
+                    default:
+                        return "";
                 }
             }
         }
@@ -94,13 +96,13 @@ Kirigami.Page {
 
             Controls.Label {
                 text: {
-                    switch(resultSheet.tag.contentType) {
+                    switch(resultSheet.tag?.contentType) {
                         case QrCodeContent.VCard:
                             return Qrca.getVCardName(resultSheet.tag.text);
                         case QrCodeContent.WifiSetting:
                             return Qrca.wifiName(resultSheet.tag.text);
                         default:
-                            return resultSheet.tag.isPlainText ? resultSheet.tag.text : i18n("<binary data>");
+                            return resultSheet.tag?.isPlainText ? resultSheet.tag.text : i18n("<binary data>");
                     }
                 }
                 anchors.left: parent.left
@@ -113,7 +115,7 @@ Kirigami.Page {
         footer: RowLayout {
             Controls.Button {
                 text: {
-                    switch (resultSheet.tag.contentType) {
+                    switch (resultSheet.tag?.contentType) {
                     case QrCodeContent.Url:
                         return i18n("Open")
                     case QrCodeContent.VCard:
@@ -130,6 +132,8 @@ Kirigami.Page {
                         return i18n("Open in Vakzination")
                     case QrCodeContent.WifiSetting:
                         return i18n("Connect")
+                    default:
+                        return "";
                     }
                 }
                 onClicked: {
@@ -161,7 +165,7 @@ Kirigami.Page {
                     resultSheet.close()
                 }
                 visible: {
-                    switch (resultSheet.tag.contentType) {
+                    switch (resultSheet.tag?.contentType) {
                     case QrCodeContent.Binary:
                     case QrCodeContent.Text:
                         return false;
@@ -175,7 +179,7 @@ Kirigami.Page {
                     return true;
                 }
                 icon.name: {
-                    switch (resultSheet.tag.contentType) {
+                    switch (resultSheet.tag?.contentType) {
                     case QrCodeContent.VCard:
                         return "document-save";
                     case QrCodeContent.OtpToken:
