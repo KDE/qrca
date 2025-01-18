@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-12-06 00:43+0000\n"
+"POT-Creation-Date: 2025-01-18 11:39+0000\n"
 "PO-Revision-Date: 2024-12-15 17:35+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
@@ -27,27 +27,27 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "आपके ईमेल"
 
-#: src/main.cpp:60
+#: src/main.cpp:56
 #, kde-format
 msgid "Qrca"
 msgstr "क्यूआरसीए"
 
-#: src/main.cpp:60
+#: src/main.cpp:56
 #, kde-format
 msgid "A simple QR scanner"
 msgstr "एक सरल क्यूआर स्कैनर"
 
-#: src/main.cpp:60
+#: src/main.cpp:56
 #, kde-format
 msgid "Copyright 2016-2019 Qrca and Kaidan authors"
 msgstr "कॉपीराइट 2016-2019 Qrca और Kaidan लेखक"
 
-#: src/main.cpp:62
+#: src/main.cpp:58
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "जोना ब्रुचर्ट"
 
-#: src/main.cpp:63
+#: src/main.cpp:59
 #, kde-format
 msgid "Simon Schmeißer"
 msgstr "साइमन शमीसर"
