@@ -106,6 +106,7 @@ Kirigami.Page {
                 anchors.left: parent.left
                 anchors.right: parent.right
                 wrapMode: Text.Wrap
+                textFormat: Text.PlainText
             }
         }
 
