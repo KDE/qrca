@@ -125,7 +125,7 @@ static bool isGlobalTradeItemNumber(const QString &text)
 
 QrCodeContent::ContentType QrCodeContent::contentType() const
 {
-    if (m_content.type() == QVariant::ByteArray) {
+    if (m_content.userType() == QMetaType::QByteArray) {
         const auto data = m_content.toByteArray();
 
         // Indian vaccination certificates
@@ -168,12 +168,12 @@ QrCodeContent::ContentType QrCodeContent::contentType() const
 
 bool QrCodeContent::isPlainText() const
 {
-    return m_content.type() == QVariant::String;
+    return m_content.userType() == QMetaType::QString;
 }
 
 QString QrCodeContent::text() const
 {
-    if (m_content.type() == QVariant::String) {
+    if (m_content.userType() == QMetaType::QString) {
         return m_content.toString();
     }
     return {};
@@ -181,7 +181,7 @@ QString QrCodeContent::text() const
 
 QByteArray QrCodeContent::binaryContent() const
 {
-    if (m_content.type() == QVariant::ByteArray) {
+    if (m_content.userType() == QMetaType::QByteArray) {
         return m_content.toByteArray();
     }
     return {};
