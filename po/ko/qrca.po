@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-18 11:39+0000\n"
+"POT-Creation-Date: 2025-01-19 00:44+0000\n"
 "PO-Revision-Date: 2023-07-25 01:18+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -122,7 +122,7 @@ msgstr "QR 코드를 임시 위치에 저장할 수 없음"
 msgid "Light"
 msgstr "조명"
 
-#: src/qml/QrCodeScannerPage.qml:35 src/qml/QrCodeScannerPage.qml:209
+#: src/qml/QrCodeScannerPage.qml:35 src/qml/QrCodeScannerPage.qml:215
 #, kde-format
 msgid "Select Camera"
 msgstr "카메라 선택"
@@ -177,52 +177,52 @@ msgstr "국제 상품 번호 찾음"
 msgid "Wi-Fi settings found"
 msgstr "Wi-Fi 설정 찾음"
 
-#: src/qml/QrCodeScannerPage.qml:103
+#: src/qml/QrCodeScannerPage.qml:105
 #, kde-format
 msgid "<binary data>"
 msgstr "<이진 데이터>"
 
-#: src/qml/QrCodeScannerPage.qml:117
+#: src/qml/QrCodeScannerPage.qml:120
 #, kde-format
 msgid "Open"
 msgstr "열기"
 
-#: src/qml/QrCodeScannerPage.qml:119
+#: src/qml/QrCodeScannerPage.qml:122
 #, kde-format
 msgid "Save contact"
 msgstr "연락처 저장"
 
-#: src/qml/QrCodeScannerPage.qml:121
+#: src/qml/QrCodeScannerPage.qml:124
 #, kde-format
 msgid "Open OTP client"
 msgstr "OTP 클라이언트 열기"
 
-#: src/qml/QrCodeScannerPage.qml:123
+#: src/qml/QrCodeScannerPage.qml:126
 #, kde-format
 msgid "Open Food Facts"
 msgstr "Food Facts 열기"
 
-#: src/qml/QrCodeScannerPage.qml:125
+#: src/qml/QrCodeScannerPage.qml:128
 #, kde-format
 msgid "Wikipedia Book Sources"
 msgstr "위키백과 책 참조"
 
-#: src/qml/QrCodeScannerPage.qml:127
+#: src/qml/QrCodeScannerPage.qml:130
 #, kde-format
 msgid "Open KDE Itinerary"
 msgstr "KDE 여행 정보 열기"
 
-#: src/qml/QrCodeScannerPage.qml:129
+#: src/qml/QrCodeScannerPage.qml:132
 #, kde-format
 msgid "Open in Vakzination"
 msgstr "Vakzination 열기"
 
-#: src/qml/QrCodeScannerPage.qml:131
+#: src/qml/QrCodeScannerPage.qml:134
 #, kde-format
 msgid "Connect"
 msgstr "연결"
 
-#: src/qml/QrCodeScannerPage.qml:194
+#: src/qml/QrCodeScannerPage.qml:200
 #, kde-format
 msgid "Copy to clipboard"
 msgstr "클립보드에 복사"

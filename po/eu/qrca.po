@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-18 11:39+0000\n"
+"POT-Creation-Date: 2025-01-19 00:44+0000\n"
 "PO-Revision-Date: 2023-07-22 15:41+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -125,7 +125,7 @@ msgstr "QR kodea ezin izan du aldi baterako kokalekuan gorde"
 msgid "Light"
 msgstr "Argia"
 
-#: src/qml/QrCodeScannerPage.qml:35 src/qml/QrCodeScannerPage.qml:209
+#: src/qml/QrCodeScannerPage.qml:35 src/qml/QrCodeScannerPage.qml:215
 #, kde-format
 msgid "Select Camera"
 msgstr "Hautatu kamera"
@@ -180,52 +180,52 @@ msgstr "Nazioarteko artikulu zenbakia aurkitu da"
 msgid "Wi-Fi settings found"
 msgstr "Wi-Fi ezarpenak aurkitu dira"
 
-#: src/qml/QrCodeScannerPage.qml:103
+#: src/qml/QrCodeScannerPage.qml:105
 #, kde-format
 msgid "<binary data>"
 msgstr "<datu bitarrak>"
 
-#: src/qml/QrCodeScannerPage.qml:117
+#: src/qml/QrCodeScannerPage.qml:120
 #, kde-format
 msgid "Open"
 msgstr "Ireki"
 
-#: src/qml/QrCodeScannerPage.qml:119
+#: src/qml/QrCodeScannerPage.qml:122
 #, kde-format
 msgid "Save contact"
 msgstr "Gorde kontaktua"
 
-#: src/qml/QrCodeScannerPage.qml:121
+#: src/qml/QrCodeScannerPage.qml:124
 #, kde-format
 msgid "Open OTP client"
 msgstr "Ireki OTP bezeroa"
 
-#: src/qml/QrCodeScannerPage.qml:123
+#: src/qml/QrCodeScannerPage.qml:126
 #, kde-format
 msgid "Open Food Facts"
 msgstr "Open Food Facts"
 
-#: src/qml/QrCodeScannerPage.qml:125
+#: src/qml/QrCodeScannerPage.qml:128
 #, kde-format
 msgid "Wikipedia Book Sources"
 msgstr "Wikipedia Liburu bilatzailea"
 
-#: src/qml/QrCodeScannerPage.qml:127
+#: src/qml/QrCodeScannerPage.qml:130
 #, kde-format
 msgid "Open KDE Itinerary"
 msgstr "Ireki KDE Itinerary"
 
-#: src/qml/QrCodeScannerPage.qml:129
+#: src/qml/QrCodeScannerPage.qml:132
 #, kde-format
 msgid "Open in Vakzination"
 msgstr "Ireki «Vakzination»ekin"
 
-#: src/qml/QrCodeScannerPage.qml:131
+#: src/qml/QrCodeScannerPage.qml:134
 #, kde-format
 msgid "Connect"
 msgstr "Konektatu"
 
-#: src/qml/QrCodeScannerPage.qml:194
+#: src/qml/QrCodeScannerPage.qml:200
 #, kde-format
 msgid "Copy to clipboard"
 msgstr "Kopiatu arbelera"

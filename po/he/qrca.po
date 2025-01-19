@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-18 11:39+0000\n"
+"POT-Creation-Date: 2025-01-19 00:44+0000\n"
 "PO-Revision-Date: 2023-11-16 13:52+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
@@ -124,7 +124,7 @@ msgstr "אי אפשר לשמור את קוד ה־QR למקום זמני"
 msgid "Light"
 msgstr "פנס"
 
-#: src/qml/QrCodeScannerPage.qml:35 src/qml/QrCodeScannerPage.qml:209
+#: src/qml/QrCodeScannerPage.qml:35 src/qml/QrCodeScannerPage.qml:215
 #, kde-format
 msgid "Select Camera"
 msgstr "בחירת מצלמה"
@@ -179,52 +179,52 @@ msgstr "נמצא International Article Number (מספר מאמר בינלאומ�
 msgid "Wi-Fi settings found"
 msgstr "נמצאו הגדרות רשת אלחוטית"
 
-#: src/qml/QrCodeScannerPage.qml:103
+#: src/qml/QrCodeScannerPage.qml:105
 #, kde-format
 msgid "<binary data>"
 msgstr "<נתונים בינריים>"
 
-#: src/qml/QrCodeScannerPage.qml:117
+#: src/qml/QrCodeScannerPage.qml:120
 #, kde-format
 msgid "Open"
 msgstr "פתיחה"
 
-#: src/qml/QrCodeScannerPage.qml:119
+#: src/qml/QrCodeScannerPage.qml:122
 #, kde-format
 msgid "Save contact"
 msgstr "שמירת איש קשר"
 
-#: src/qml/QrCodeScannerPage.qml:121
+#: src/qml/QrCodeScannerPage.qml:124
 #, kde-format
 msgid "Open OTP client"
 msgstr "פתיחת לקוח סיסמאות חד־פעמיות"
 
-#: src/qml/QrCodeScannerPage.qml:123
+#: src/qml/QrCodeScannerPage.qml:126
 #, kde-format
 msgid "Open Food Facts"
 msgstr "Open Food Facts"
 
-#: src/qml/QrCodeScannerPage.qml:125
+#: src/qml/QrCodeScannerPage.qml:128
 #, kde-format
 msgid "Wikipedia Book Sources"
 msgstr "מקורות ספרים של ויקיפדיה"
 
-#: src/qml/QrCodeScannerPage.qml:127
+#: src/qml/QrCodeScannerPage.qml:130
 #, kde-format
 msgid "Open KDE Itinerary"
 msgstr "פתיחת KDE Itinerary"
 
-#: src/qml/QrCodeScannerPage.qml:129
+#: src/qml/QrCodeScannerPage.qml:132
 #, kde-format
 msgid "Open in Vakzination"
 msgstr "פתיחה ב־Vakzination"
 
-#: src/qml/QrCodeScannerPage.qml:131
+#: src/qml/QrCodeScannerPage.qml:134
 #, kde-format
 msgid "Connect"
 msgstr "התחברות"
 
-#: src/qml/QrCodeScannerPage.qml:194
+#: src/qml/QrCodeScannerPage.qml:200
 #, kde-format
 msgid "Copy to clipboard"
 msgstr "העתקה ללוח הגזירים"

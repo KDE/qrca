@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-18 11:39+0000\n"
+"POT-Creation-Date: 2025-01-19 00:44+0000\n"
 "PO-Revision-Date: 2024-03-03 22:19+0100\n"
 "Last-Translator: Kristof Kiszel <ulysses@fsf.hu>\n"
 "Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
@@ -122,7 +122,7 @@ msgstr "A QR-kódot nem sikerült elmenteni az átmeneti helyre"
 msgid "Light"
 msgstr "Fény"
 
-#: src/qml/QrCodeScannerPage.qml:35 src/qml/QrCodeScannerPage.qml:209
+#: src/qml/QrCodeScannerPage.qml:35 src/qml/QrCodeScannerPage.qml:215
 #, kde-format
 msgid "Select Camera"
 msgstr "Kamera kiválasztása"
@@ -177,52 +177,52 @@ msgstr "EAN található"
 msgid "Wi-Fi settings found"
 msgstr "Wi-Fi beállítás található"
 
-#: src/qml/QrCodeScannerPage.qml:103
+#: src/qml/QrCodeScannerPage.qml:105
 #, kde-format
 msgid "<binary data>"
 msgstr "<bináris adat>"
 
-#: src/qml/QrCodeScannerPage.qml:117
+#: src/qml/QrCodeScannerPage.qml:120
 #, kde-format
 msgid "Open"
 msgstr "Megnyitás"
 
-#: src/qml/QrCodeScannerPage.qml:119
+#: src/qml/QrCodeScannerPage.qml:122
 #, kde-format
 msgid "Save contact"
 msgstr "Névjegy mentése"
 
-#: src/qml/QrCodeScannerPage.qml:121
+#: src/qml/QrCodeScannerPage.qml:124
 #, kde-format
 msgid "Open OTP client"
 msgstr "OTP kliens megnyitása"
 
-#: src/qml/QrCodeScannerPage.qml:123
+#: src/qml/QrCodeScannerPage.qml:126
 #, kde-format
 msgid "Open Food Facts"
 msgstr "Food Facts megnyitása"
 
-#: src/qml/QrCodeScannerPage.qml:125
+#: src/qml/QrCodeScannerPage.qml:128
 #, kde-format
 msgid "Wikipedia Book Sources"
 msgstr "Wikipédia:Könyvforrások"
 
-#: src/qml/QrCodeScannerPage.qml:127
+#: src/qml/QrCodeScannerPage.qml:130
 #, kde-format
 msgid "Open KDE Itinerary"
 msgstr "A KDE Itinerary megnyitása"
 
-#: src/qml/QrCodeScannerPage.qml:129
+#: src/qml/QrCodeScannerPage.qml:132
 #, kde-format
 msgid "Open in Vakzination"
 msgstr "Megnyitás a Vakzinationben"
 
-#: src/qml/QrCodeScannerPage.qml:131
+#: src/qml/QrCodeScannerPage.qml:134
 #, kde-format
 msgid "Connect"
 msgstr "Kapcsolódás"
 
-#: src/qml/QrCodeScannerPage.qml:194
+#: src/qml/QrCodeScannerPage.qml:200
 #, kde-format
 msgid "Copy to clipboard"
 msgstr "Másolás a vágólapra"

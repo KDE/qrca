@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-18 11:39+0000\n"
+"POT-Creation-Date: 2025-01-19 00:44+0000\n"
 "PO-Revision-Date: 2024-01-01 08:26-0600\n"
 "Last-Translator: A S Alam <aalam@punlinux.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -122,7 +122,7 @@ msgstr "QR-ਕੋਡ ਨੂੰ ਆਰਜ਼ੀ ਟਿਕਾਣੇ ਉੱਤੇ ਸ�
 msgid "Light"
 msgstr "ਹਲਕੇ"
 
-#: src/qml/QrCodeScannerPage.qml:35 src/qml/QrCodeScannerPage.qml:209
+#: src/qml/QrCodeScannerPage.qml:35 src/qml/QrCodeScannerPage.qml:215
 #, kde-format
 msgid "Select Camera"
 msgstr "ਕੈਮਰਾ ਚੁਣੋ"
@@ -177,52 +177,52 @@ msgstr "ਕੌਮਾਂਤਰੀ ਲੇਖ ਨੰਬਰ ਲੱਭਿਆ"
 msgid "Wi-Fi settings found"
 msgstr "ਵਾਈ-ਫਾਈ ਸੈਟਿੰਗਾਂ ਲੱਭੀਆਂ"
 
-#: src/qml/QrCodeScannerPage.qml:103
+#: src/qml/QrCodeScannerPage.qml:105
 #, kde-format
 msgid "<binary data>"
 msgstr "<binary data>"
 
-#: src/qml/QrCodeScannerPage.qml:117
+#: src/qml/QrCodeScannerPage.qml:120
 #, kde-format
 msgid "Open"
 msgstr "ਖੋਲ੍ਹੋ"
 
-#: src/qml/QrCodeScannerPage.qml:119
+#: src/qml/QrCodeScannerPage.qml:122
 #, kde-format
 msgid "Save contact"
 msgstr "ਸੰਪਰਕ ਸੰਭਾਲੋ"
 
-#: src/qml/QrCodeScannerPage.qml:121
+#: src/qml/QrCodeScannerPage.qml:124
 #, kde-format
 msgid "Open OTP client"
 msgstr "OTP ਕਲਾਈਂਟ ਖੋਲ੍ਹੋ"
 
-#: src/qml/QrCodeScannerPage.qml:123
+#: src/qml/QrCodeScannerPage.qml:126
 #, kde-format
 msgid "Open Food Facts"
 msgstr "ਭੋਜਨ ਤੱਥ ਖੋਲ੍ਹੋ"
 
-#: src/qml/QrCodeScannerPage.qml:125
+#: src/qml/QrCodeScannerPage.qml:128
 #, kde-format
 msgid "Wikipedia Book Sources"
 msgstr "ਵਿਕੀਪੀਡਿਆ ਕਿਤਾਬਾਂ ਦੇ ਸਰੋਤ"
 
-#: src/qml/QrCodeScannerPage.qml:127
+#: src/qml/QrCodeScannerPage.qml:130
 #, kde-format
 msgid "Open KDE Itinerary"
 msgstr "KDE ਇਟਰਨਰੀ ਖੋਲ੍ਹੋ"
 
-#: src/qml/QrCodeScannerPage.qml:129
+#: src/qml/QrCodeScannerPage.qml:132
 #, kde-format
 msgid "Open in Vakzination"
 msgstr "ਵੇਕਜ਼ੀਨੇਸ਼ਨ ਵਿੱਚ ਖੋਲ੍ਹੋ"
 
-#: src/qml/QrCodeScannerPage.qml:131
+#: src/qml/QrCodeScannerPage.qml:134
 #, kde-format
 msgid "Connect"
 msgstr "ਕਨੈਕਟ ਕਰੋ"
 
-#: src/qml/QrCodeScannerPage.qml:194
+#: src/qml/QrCodeScannerPage.qml:200
 #, kde-format
 msgid "Copy to clipboard"
 msgstr "ਕਲਿੱਪਬੋਰਡ ਵਿੱਚ ਕਾਪੀ ਕਰੋ"
