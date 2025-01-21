@@ -22,6 +22,7 @@
 #include <KAboutData>
 #include <KLocalizedContext>
 #include <KLocalizedString>
+#include <KLocalizedQmlContext>
 
 #ifndef Q_OS_ANDROID
 #include <KCrash>
@@ -98,7 +99,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterSingletonInstance<Qrca>("org.kde.qrca", 1, 0, "Qrca", &qrca);
 
     QQmlApplicationEngine engine;
-    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
+    KLocalization::setupLocalizedContext(&engine);
 
     engine.loadFromModule("org.kde.qrca", "Main");
 

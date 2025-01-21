@@ -12,7 +12,7 @@ set (RELEASE_SERVICE_VERSION "${RELEASE_SERVICE_VERSION_MAJOR}.${RELEASE_SERVICE
 project(qrca VERSION ${RELEASE_SERVICE_VERSION})
 
 set(QT_MIN_VERSION "6.6.0")
-set(KF_MIN_VERSION "6.6.0")
+set(KF_MIN_VERSION "6.8.0")
 set(KDE_COMPILERSETTINGS_LEVEL "5.82")
 
 find_package(ECM ${KF_MIN_VERSION} REQUIRED NO_MODULE)
@@ -31,6 +31,7 @@ include(ECMAddAppIcon)
 include(KDEClangFormat)
 include(ECMAddAndroidApk)
 include(ECMQmlModule)
+include(ECMDeprecationSettings)
 kde_enable_exceptions()
 
 ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX QRCA
@@ -46,6 +47,11 @@ endif()
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+ecm_set_disabled_deprecation_versions(
+    QT 6.8.0
+    KF 6.10.0
+)
 
 add_subdirectory(src)
 
