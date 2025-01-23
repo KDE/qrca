@@ -28,6 +28,7 @@ Kirigami.ScrollablePage {
         id: fileDialog
         defaultSuffix: "png"
         nameFilters: [ i18n("Image files (*.png *.jpg)"), i18n("All files (*)") ]
+        fileMode: FileDialog.SaveFile
     }
 
     actions: [
@@ -38,7 +39,7 @@ Kirigami.ScrollablePage {
             onTriggered: {
                 fileDialog.accepted.connect(() => {
                     codeView.grabToImage((result) => {
-                         const s = result.saveToFile(fileDialog.fileUrl.toString().replace("file://", ""))
+                         const s = result.saveToFile(fileDialog.selectedFile)
                          if (!s) {
                              showPassiveNotification(i18n("QR-Code could not be saved"))
                          }
