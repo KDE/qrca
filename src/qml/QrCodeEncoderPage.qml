@@ -17,13 +17,6 @@ import QtQuick.Dialogs
 Kirigami.ScrollablePage {
     title: i18n("Create QR-Code")
 
-    Loader {
-        id: shareSheetLoader
-
-        active: false
-        source: "ShareSheet.qml"
-    }
-
     FileDialog {
         id: fileDialog
         defaultSuffix: "png"
@@ -48,25 +41,6 @@ Kirigami.ScrollablePage {
                     })
                 })
                 fileDialog.open()
-            }
-        },
-        Kirigami.Action {
-            text: i18n("Share")
-            icon.name: "document-share"
-            visible: Qt.platform.os !== "android" // Purpose doesn't work properly on Android
-            enabled: inputText.length > 0
-            onTriggered: {
-                shareSheetLoader.active = true
-                codeView.grabToImage((result) => {
-                    const saveLocation = Qrca.newQrCodeSaveLocation()
-                    const s = result.saveToFile(saveLocation)
-                    if (!s) {
-                        showPassiveNotification(i18n("QR-Code could not be saved to temporary location"))
-                    }
-
-                    shareSheetLoader.item.url = saveLocation
-                    shareSheetLoader.item.open()
-                })
             }
         }
     ]

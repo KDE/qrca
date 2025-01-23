@@ -24,7 +24,6 @@ ecm_target_qml_sources(qrca SOURCES
     qml/Main.qml
     qml/QrCodeScannerPage.qml
     qml/QrCodeEncoderPage.qml
-    qml/ShareSheet.qml
     qml/AboutPage.qml
 )
 
