@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-19 00:44+0000\n"
+"POT-Creation-Date: 2025-01-24 00:45+0000\n"
 "PO-Revision-Date: 2023-07-07 22:19+0200\n"
 "Last-Translator: Paolo Zamponi <feus73@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
@@ -27,30 +27,35 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "feus73@gmail.com"
 
-#: src/main.cpp:56
+#: src/main.cpp:60
 #, kde-format
 msgid "Qrca"
 msgstr "Qrca"
 
-#: src/main.cpp:56
+#: src/main.cpp:60
 #, kde-format
 msgid "A simple QR scanner"
 msgstr "Un semplice scanner QR"
 
-#: src/main.cpp:56
+#: src/main.cpp:60
 #, kde-format
 msgid "Copyright 2016-2019 Qrca and Kaidan authors"
 msgstr "Copyright 2016-2019 degli autori di Qrca e di Kaidan"
 
-#: src/main.cpp:58
+#: src/main.cpp:62
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: src/main.cpp:59
+#: src/main.cpp:63
 #, kde-format
 msgid "Simon Schmeißer"
 msgstr "Simon Schmeißer"
+
+#: src/main.cpp:79
+#, kde-format
+msgid "Scan only for Wifi network QR-Codes"
+msgstr ""
 
 #: src/notificationmanager.cpp:19
 #, kde-format
@@ -77,7 +82,7 @@ msgstr "Crea"
 msgid "About"
 msgstr "Informazioni su"
 
-#: src/qml/Main.qml:69
+#: src/qml/Main.qml:72
 #, kde-format
 msgid "QR-Code Scanner"
 msgstr "Scanner di codici QR"
@@ -97,132 +102,139 @@ msgstr "File di immagine (*.png *.jpg)"
 msgid "All files (*)"
 msgstr "Tutti i file (*)"
 
-#: src/qml/QrCodeEncoderPage.qml:35
+#: src/qml/QrCodeEncoderPage.qml:36
 #, kde-format
 msgid "Save"
 msgstr "Salva"
 
-#: src/qml/QrCodeEncoderPage.qml:43
+#: src/qml/QrCodeEncoderPage.qml:44
 #, kde-format
 msgid "QR-Code could not be saved"
 msgstr "Impossibile salvare il codice QR"
 
-#: src/qml/QrCodeEncoderPage.qml:53
+#: src/qml/QrCodeEncoderPage.qml:54
 #, kde-format
 msgid "Share"
 msgstr "Condividi"
 
-#: src/qml/QrCodeEncoderPage.qml:63
+#: src/qml/QrCodeEncoderPage.qml:64
 #, kde-format
 msgid "QR-Code could not be saved to temporary location"
 msgstr "Impossibile salvare il codice QR nella posizione temporanea"
 
-#: src/qml/QrCodeScannerPage.qml:28
+#: src/qml/QrCodeScannerPage.qml:30
 #, kde-format
 msgid "Light"
 msgstr "Luce"
 
-#: src/qml/QrCodeScannerPage.qml:35 src/qml/QrCodeScannerPage.qml:215
+#: src/qml/QrCodeScannerPage.qml:37 src/qml/QrCodeScannerPage.qml:257
 #, kde-format
 msgid "Select Camera"
 msgstr "Seleziona fotocamera"
 
-#: src/qml/QrCodeScannerPage.qml:68
+#: src/qml/QrCodeScannerPage.qml:71
 #, kde-format
 msgid "Text found"
 msgstr "Trovato testo"
 
-#: src/qml/QrCodeScannerPage.qml:70
+#: src/qml/QrCodeScannerPage.qml:73
 #, kde-format
 msgid "URL found"
 msgstr "Trovato URL"
 
-#: src/qml/QrCodeScannerPage.qml:72
+#: src/qml/QrCodeScannerPage.qml:75
 #, kde-format
 msgid "Contact found"
 msgstr "Trovato contatto"
 
-#: src/qml/QrCodeScannerPage.qml:74
+#: src/qml/QrCodeScannerPage.qml:77
 #, kde-format
 msgid "OTP URI found"
 msgstr "Trovato URI OTP"
 
-#: src/qml/QrCodeScannerPage.qml:76
+#: src/qml/QrCodeScannerPage.qml:79
 #, kde-format
 msgid "Binary data found"
 msgstr "Trovati dati binari"
 
-#: src/qml/QrCodeScannerPage.qml:78
+#: src/qml/QrCodeScannerPage.qml:81
 #, kde-format
 msgid "Health certificate found"
 msgstr "Trovato certificato medico"
 
-#: src/qml/QrCodeScannerPage.qml:80
+#: src/qml/QrCodeScannerPage.qml:83
 #, kde-format
 msgid "Transport ticket found"
 msgstr "Trovato biglietto di viaggio"
 
-#: src/qml/QrCodeScannerPage.qml:82
+#: src/qml/QrCodeScannerPage.qml:85
 #, kde-format
 msgid "ISBN found"
 msgstr "Trovato ISBN"
 
-#: src/qml/QrCodeScannerPage.qml:84
+#: src/qml/QrCodeScannerPage.qml:87
 #, kde-format
 msgid "International Article Number found"
 msgstr "Trovato EAN"
 
-#: src/qml/QrCodeScannerPage.qml:86
+#: src/qml/QrCodeScannerPage.qml:89
 #, kde-format
 msgid "Wi-Fi settings found"
 msgstr "Impostazioni Wi-Fi trovate"
 
-#: src/qml/QrCodeScannerPage.qml:105
+#: src/qml/QrCodeScannerPage.qml:116
 #, kde-format
 msgid "<binary data>"
 msgstr "<dati binari>"
 
-#: src/qml/QrCodeScannerPage.qml:120
+#: src/qml/QrCodeScannerPage.qml:151
+#, fuzzy, kde-format
+#| msgid "Connect"
+msgctxt "Connecting to Wifi"
+msgid "Connecting…"
+msgstr "Connetti"
+
+#: src/qml/QrCodeScannerPage.qml:159
 #, kde-format
 msgid "Open"
 msgstr "Apri"
 
-#: src/qml/QrCodeScannerPage.qml:122
+#: src/qml/QrCodeScannerPage.qml:161
 #, kde-format
 msgid "Save contact"
 msgstr "Salva contatto"
 
-#: src/qml/QrCodeScannerPage.qml:124
+#: src/qml/QrCodeScannerPage.qml:163
 #, kde-format
 msgid "Open OTP client"
 msgstr "Apri client OTP"
 
-#: src/qml/QrCodeScannerPage.qml:126
+#: src/qml/QrCodeScannerPage.qml:165
 #, kde-format
 msgid "Open Food Facts"
 msgstr "Open Food Facts"
 
-#: src/qml/QrCodeScannerPage.qml:128
+#: src/qml/QrCodeScannerPage.qml:167
 #, kde-format
 msgid "Wikipedia Book Sources"
 msgstr "Fonti librarie di Wikipedia"
 
-#: src/qml/QrCodeScannerPage.qml:130
+#: src/qml/QrCodeScannerPage.qml:169
 #, kde-format
 msgid "Open KDE Itinerary"
 msgstr "Apri KDE Itinerary"
 
-#: src/qml/QrCodeScannerPage.qml:132
+#: src/qml/QrCodeScannerPage.qml:171
 #, kde-format
 msgid "Open in Vakzination"
 msgstr "Apri in Vakzination"
 
-#: src/qml/QrCodeScannerPage.qml:134
+#: src/qml/QrCodeScannerPage.qml:173
 #, kde-format
 msgid "Connect"
 msgstr "Connetti"
 
-#: src/qml/QrCodeScannerPage.qml:200
+#: src/qml/QrCodeScannerPage.qml:242
 #, kde-format
 msgid "Copy to clipboard"
 msgstr "Copia negli appunti"
@@ -241,6 +253,11 @@ msgstr "Condivisione non riuscita"
 #, kde-format
 msgid "Share QR-Code"
 msgstr "Condividi codice QR"
+
+#: src/Qrca.cpp:265
+#, kde-format
+msgid "Failed to find wifi device"
+msgstr ""
 
 #~ msgid "Saved image to %1"
 #~ msgstr "Immagine salvata su %1"
