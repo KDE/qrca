@@ -42,6 +42,16 @@ Kirigami.ScrollablePage {
                 })
                 fileDialog.open()
             }
+        },
+        Kirigami.Action {
+            text: i18n("Copy")
+            icon.name: "edit-copy"
+            enabled: inputText.length > 0
+            onTriggered: {
+                codeView.grabToImage((result) => {
+                    Qrca.copyImageToClipboard(result.image)
+                })
+            }
         }
     ]
 

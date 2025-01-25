@@ -130,6 +130,11 @@ void Qrca::copyToClipboard(const QrCodeContent &content) noexcept
     }
 }
 
+void Qrca::copyImageToClipboard(const QImage &image) {
+    QClipboard *clipboard = QGuiApplication::clipboard();
+    clipboard->setImage(image);
+}
+
 bool Qrca::hasApplication(const QString &appId) const
 {
 #ifndef Q_OS_ANDROID
