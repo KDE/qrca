@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the qrca package.
 #
-# Freek de Kruijf <freekdekruijf@kde.nl>, 2019, 2020, 2021, 2022, 2023.
+# SPDX-FileCopyrightText: 2019, 2020, 2021, 2022, 2023, 2025 Freek de Kruijf <freekdekruijf@kde.nl>
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-01-24 00:45+0000\n"
-"PO-Revision-Date: 2023-07-04 21:45+0200\n"
+"PO-Revision-Date: 2025-01-24 11:37+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,12 +15,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.2\n"
+"X-Generator: Lokalize 24.12.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Freek de Kruijf - 2019 t/m 2023"
+msgstr "Freek de Kruijf - 2019 t/m 2025"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
@@ -55,7 +55,7 @@ msgstr "Simon Schmeißer"
 #: src/main.cpp:79
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
-msgstr ""
+msgstr "Alleen scannen op wifi-netwerk-QR-codes"
 
 #: src/notificationmanager.cpp:19
 #, kde-format
@@ -188,11 +188,10 @@ msgid "<binary data>"
 msgstr "<binaire gegevens>"
 
 #: src/qml/QrCodeScannerPage.qml:151
-#, fuzzy, kde-format
-#| msgid "Connect"
+#, kde-format
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
-msgstr "Verbinden"
+msgstr "Bezig met verbinden…"
 
 #: src/qml/QrCodeScannerPage.qml:159
 #, kde-format
@@ -257,7 +256,7 @@ msgstr "QR-code delen"
 #: src/Qrca.cpp:265
 #, kde-format
 msgid "Failed to find wifi device"
-msgstr ""
+msgstr "Zoeken naar wifi-apparaat is mislukt"
 
 #~ msgid "Saved image to %1"
 #~ msgstr "Afbeelding in %1 opgeslagen"

@@ -1,21 +1,20 @@
-# SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the qrca package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+# SPDX-FileCopyrightText: 2024 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-01-24 00:45+0000\n"
-"PO-Revision-Date: 2023-11-16 13:52+0200\n"
+"PO-Revision-Date: 2025-01-24 09:07+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Lokalize 24.12.0\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
 
@@ -57,7 +56,7 @@ msgstr "סיימון שמייסר"
 #: src/main.cpp:79
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
-msgstr ""
+msgstr "לסרוק רק קודים של QR עם סיסמאות של רשתות אלחוטיות"
 
 #: src/notificationmanager.cpp:19
 #, kde-format
@@ -190,11 +189,10 @@ msgid "<binary data>"
 msgstr "<נתונים בינריים>"
 
 #: src/qml/QrCodeScannerPage.qml:151
-#, fuzzy, kde-format
-#| msgid "Connect"
+#, kde-format
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
-msgstr "התחברות"
+msgstr "מתבצעת התחברות…"
 
 #: src/qml/QrCodeScannerPage.qml:159
 #, kde-format
@@ -259,4 +257,4 @@ msgstr "שיתוף קוד QR"
 #: src/Qrca.cpp:265
 #, kde-format
 msgid "Failed to find wifi device"
-msgstr ""
+msgstr "איתור התקן הרשת האלחוטית לא נמצא"

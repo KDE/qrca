@@ -188,11 +188,10 @@ msgid "<binary data>"
 msgstr "<二进制数据>"
 
 #: src/qml/QrCodeScannerPage.qml:151
-#, fuzzy, kde-format
-#| msgid "Connect"
+#, kde-format
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
-msgstr "连接"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:159
 #, kde-format

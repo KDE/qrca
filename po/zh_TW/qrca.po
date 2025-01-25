@@ -5,13 +5,13 @@
 #
 # Automatically generated, 2019.
 # pan93412 <pan93412@gmail.com>, 2019.
-# SPDX-FileCopyrightText: 2023 Kisaragi Hiu <mail@kisaragi-hiu.com>
+# SPDX-FileCopyrightText: 2023, 2025 Kisaragi Hiu <mail@kisaragi-hiu.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-01-24 00:45+0000\n"
-"PO-Revision-Date: 2023-12-13 04:55+0900\n"
+"PO-Revision-Date: 2025-01-24 22:49+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 23.08.4\n"
+"X-Generator: Lokalize 25.03.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -59,7 +59,7 @@ msgstr "Simon Schmeißer"
 #: src/main.cpp:79
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
-msgstr ""
+msgstr "只掃描 Wifi 網路 QR 碼"
 
 #: src/notificationmanager.cpp:19
 #, kde-format
@@ -192,11 +192,10 @@ msgid "<binary data>"
 msgstr "<二進位資料>"
 
 #: src/qml/QrCodeScannerPage.qml:151
-#, fuzzy, kde-format
-#| msgid "Connect"
+#, kde-format
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
-msgstr "連線"
+msgstr "連線中…"
 
 #: src/qml/QrCodeScannerPage.qml:159
 #, kde-format
@@ -261,7 +260,7 @@ msgstr "分享 QR 碼"
 #: src/Qrca.cpp:265
 #, kde-format
 msgid "Failed to find wifi device"
-msgstr ""
+msgstr "尋找 wifi 裝置失敗"
 
 #, fuzzy
 #~| msgid "Saved image to "
