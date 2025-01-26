@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-24 00:45+0000\n"
+"POT-Creation-Date: 2025-01-26 00:44+0000\n"
 "PO-Revision-Date: 2020-10-25 22:06+0100\n"
 "Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
 "Language-Team: Estonian <>\n"
@@ -93,34 +93,29 @@ msgstr "QR-koodi skanner"
 msgid "Create QR-Code"
 msgstr "QR-koodi loomine"
 
-#: src/qml/QrCodeEncoderPage.qml:30
+#: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "Image files (*.png *.jpg)"
 msgstr ""
 
-#: src/qml/QrCodeEncoderPage.qml:30
+#: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "All files (*)"
 msgstr ""
 
-#: src/qml/QrCodeEncoderPage.qml:36
+#: src/qml/QrCodeEncoderPage.qml:29
 #, kde-format
 msgid "Save"
 msgstr "Salvesta"
 
-#: src/qml/QrCodeEncoderPage.qml:44
+#: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
 msgid "QR-Code could not be saved"
 msgstr ""
 
-#: src/qml/QrCodeEncoderPage.qml:54
+#: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
-msgid "Share"
-msgstr "Jaga"
-
-#: src/qml/QrCodeEncoderPage.qml:64
-#, kde-format
-msgid "QR-Code could not be saved to temporary location"
+msgid "Copy"
 msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:30
@@ -241,26 +236,21 @@ msgstr ""
 msgid "Copy to clipboard"
 msgstr "Kopeeri lõikepuhvrisse"
 
-#: src/qml/ShareSheet.qml:28
-#, fuzzy, kde-format
-#| msgid "Share QR-Code"
-msgid "Share Qr-Code"
-msgstr "QR-koodi jagamine"
-
-#: src/qml/ShareSheet.qml:56
-#, kde-format
-msgid "Sharing Failed"
-msgstr ""
-
-#: src/qml/ShareSheet.qml:82
-#, kde-format
-msgid "Share QR-Code"
-msgstr "QR-koodi jagamine"
-
-#: src/Qrca.cpp:265
+#: src/Qrca.cpp:270
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr ""
+
+#~ msgid "Share"
+#~ msgstr "Jaga"
+
+#, fuzzy
+#~| msgid "Share QR-Code"
+#~ msgid "Share Qr-Code"
+#~ msgstr "QR-koodi jagamine"
+
+#~ msgid "Share QR-Code"
+#~ msgstr "QR-koodi jagamine"
 
 #, fuzzy
 #~| msgid "Saved image to "

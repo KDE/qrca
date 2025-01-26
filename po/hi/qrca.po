@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-24 00:45+0000\n"
+"POT-Creation-Date: 2025-01-26 00:44+0000\n"
 "PO-Revision-Date: 2024-12-15 17:35+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
@@ -92,35 +92,30 @@ msgstr "क्यूआर-कोड स्कैनर"
 msgid "Create QR-Code"
 msgstr "क्यूआर कोड बनाएं"
 
-#: src/qml/QrCodeEncoderPage.qml:30
+#: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "Image files (*.png *.jpg)"
 msgstr "छवि फ़ाइलें (*.png *.jpg)"
 
-#: src/qml/QrCodeEncoderPage.qml:30
+#: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "All files (*)"
 msgstr "सभी फाइलें (*)"
 
-#: src/qml/QrCodeEncoderPage.qml:36
+#: src/qml/QrCodeEncoderPage.qml:29
 #, kde-format
 msgid "Save"
 msgstr "बचाना"
 
-#: src/qml/QrCodeEncoderPage.qml:44
+#: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
 msgid "QR-Code could not be saved"
 msgstr "क्यूआर-कोड सहेजा नहीं जा सका"
 
-#: src/qml/QrCodeEncoderPage.qml:54
+#: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
-msgid "Share"
-msgstr "शेयर करना"
-
-#: src/qml/QrCodeEncoderPage.qml:64
-#, kde-format
-msgid "QR-Code could not be saved to temporary location"
-msgstr "QR-कोड को अस्थायी स्थान पर सहेजा नहीं जा सका"
+msgid "Copy"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:30
 #, kde-format
@@ -239,22 +234,22 @@ msgstr "जोड़ना"
 msgid "Copy to clipboard"
 msgstr "क्लिपबोर्ड पर कॉपी करें"
 
-#: src/qml/ShareSheet.qml:28
-#, kde-format
-msgid "Share Qr-Code"
-msgstr "क्यूआर कोड साझा करें"
-
-#: src/qml/ShareSheet.qml:56
-#, kde-format
-msgid "Sharing Failed"
-msgstr "साझाकरण विफल"
-
-#: src/qml/ShareSheet.qml:82
-#, kde-format
-msgid "Share QR-Code"
-msgstr "क्यूआर कोड साझा करें"
-
-#: src/Qrca.cpp:265
+#: src/Qrca.cpp:270
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr ""
+
+#~ msgid "Share"
+#~ msgstr "शेयर करना"
+
+#~ msgid "QR-Code could not be saved to temporary location"
+#~ msgstr "QR-कोड को अस्थायी स्थान पर सहेजा नहीं जा सका"
+
+#~ msgid "Share Qr-Code"
+#~ msgstr "क्यूआर कोड साझा करें"
+
+#~ msgid "Sharing Failed"
+#~ msgstr "साझाकरण विफल"
+
+#~ msgid "Share QR-Code"
+#~ msgstr "क्यूआर कोड साझा करें"

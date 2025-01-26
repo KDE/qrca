@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-24 00:45+0000\n"
+"POT-Creation-Date: 2025-01-26 00:44+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -55,7 +55,7 @@ msgstr "Simon Schmeißer"
 #: src/main.cpp:79
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
-msgstr ""
+msgstr "仅扫描 WiFi 网络二维码"
 
 #: src/notificationmanager.cpp:19
 #, kde-format
@@ -92,35 +92,30 @@ msgstr "二维码扫描器"
 msgid "Create QR-Code"
 msgstr "创建二维码"
 
-#: src/qml/QrCodeEncoderPage.qml:30
+#: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "Image files (*.png *.jpg)"
 msgstr "图像文件 (*.png *.jpg)"
 
-#: src/qml/QrCodeEncoderPage.qml:30
+#: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "All files (*)"
 msgstr "所有文件 (*)"
 
-#: src/qml/QrCodeEncoderPage.qml:36
+#: src/qml/QrCodeEncoderPage.qml:29
 #, kde-format
 msgid "Save"
 msgstr "保存"
 
-#: src/qml/QrCodeEncoderPage.qml:44
+#: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
 msgid "QR-Code could not be saved"
 msgstr "无法保存二维码"
 
-#: src/qml/QrCodeEncoderPage.qml:54
+#: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
-msgid "Share"
-msgstr "分享"
-
-#: src/qml/QrCodeEncoderPage.qml:64
-#, kde-format
-msgid "QR-Code could not be saved to temporary location"
-msgstr "二维码无法保存到临时位置"
+msgid "Copy"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:30
 #, kde-format
@@ -191,7 +186,7 @@ msgstr "<二进制数据>"
 #, kde-format
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
-msgstr ""
+msgstr "正在连接…"
 
 #: src/qml/QrCodeScannerPage.qml:159
 #, kde-format
@@ -238,22 +233,22 @@ msgstr "连接"
 msgid "Copy to clipboard"
 msgstr "复制到剪贴板"
 
-#: src/qml/ShareSheet.qml:28
-#, kde-format
-msgid "Share Qr-Code"
-msgstr "分享二维码"
-
-#: src/qml/ShareSheet.qml:56
-#, kde-format
-msgid "Sharing Failed"
-msgstr "分享失败"
-
-#: src/qml/ShareSheet.qml:82
-#, kde-format
-msgid "Share QR-Code"
-msgstr "分享二维码"
-
-#: src/Qrca.cpp:265
+#: src/Qrca.cpp:270
 #, kde-format
 msgid "Failed to find wifi device"
-msgstr ""
+msgstr "查找 WiFi 设备失败"
+
+#~ msgid "Share"
+#~ msgstr "分享"
+
+#~ msgid "QR-Code could not be saved to temporary location"
+#~ msgstr "二维码无法保存到临时位置"
+
+#~ msgid "Share Qr-Code"
+#~ msgstr "分享二维码"
+
+#~ msgid "Sharing Failed"
+#~ msgstr "分享失败"
+
+#~ msgid "Share QR-Code"
+#~ msgstr "分享二维码"

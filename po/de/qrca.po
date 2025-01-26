@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-24 00:45+0000\n"
+"POT-Creation-Date: 2025-01-26 00:44+0000\n"
 "PO-Revision-Date: 2023-12-18 19:02+0100\n"
 "Last-Translator: Johannes Obermayr <johannesobermayr@gmx.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -95,35 +95,30 @@ msgstr "QR-Code-Scanner"
 msgid "Create QR-Code"
 msgstr "QR-Code erstellen"
 
-#: src/qml/QrCodeEncoderPage.qml:30
+#: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "Image files (*.png *.jpg)"
 msgstr "Bild-Dateien (*.png *.jpg)"
 
-#: src/qml/QrCodeEncoderPage.qml:30
+#: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "All files (*)"
 msgstr "Alle Dateien (*)"
 
-#: src/qml/QrCodeEncoderPage.qml:36
+#: src/qml/QrCodeEncoderPage.qml:29
 #, kde-format
 msgid "Save"
 msgstr "Speichern"
 
-#: src/qml/QrCodeEncoderPage.qml:44
+#: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
 msgid "QR-Code could not be saved"
 msgstr "Der QR-Code kann nicht gespeichert werden"
 
-#: src/qml/QrCodeEncoderPage.qml:54
+#: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
-msgid "Share"
-msgstr "Teilen"
-
-#: src/qml/QrCodeEncoderPage.qml:64
-#, kde-format
-msgid "QR-Code could not be saved to temporary location"
-msgstr "Der QR-Code kann beim temporären Ort nicht gespeichert werden"
+msgid "Copy"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:30
 #, kde-format
@@ -242,25 +237,25 @@ msgstr "Verbinden"
 msgid "Copy to clipboard"
 msgstr "In die Zwischenablage kopieren"
 
-#: src/qml/ShareSheet.qml:28
-#, kde-format
-msgid "Share Qr-Code"
-msgstr "QR-Code teilen"
-
-#: src/qml/ShareSheet.qml:56
-#, kde-format
-msgid "Sharing Failed"
-msgstr "Teilen fehlgeschlagen"
-
-#: src/qml/ShareSheet.qml:82
-#, kde-format
-msgid "Share QR-Code"
-msgstr "QR-Code teilen"
-
-#: src/Qrca.cpp:265
+#: src/Qrca.cpp:270
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr ""
+
+#~ msgid "Share"
+#~ msgstr "Teilen"
+
+#~ msgid "QR-Code could not be saved to temporary location"
+#~ msgstr "Der QR-Code kann beim temporären Ort nicht gespeichert werden"
+
+#~ msgid "Share Qr-Code"
+#~ msgstr "QR-Code teilen"
+
+#~ msgid "Sharing Failed"
+#~ msgstr "Teilen fehlgeschlagen"
+
+#~ msgid "Share QR-Code"
+#~ msgstr "QR-Code teilen"
 
 #~ msgid "Saved image to %1"
 #~ msgstr "Das Bild wurde in %1 gespeichert"

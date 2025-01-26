@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the qrca package.
 #
-# Stefan Asserhäll <stefan.asserhall@gmail.com>, 2019, 2020, 2021, 2023.
+# SPDX-FileCopyrightText: 2019, 2020, 2021, 2023, 2025 Stefan Asserhäll <stefan.asserhall@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-24 00:45+0000\n"
-"PO-Revision-Date: 2023-07-31 11:11+0200\n"
+"POT-Creation-Date: 2025-01-26 00:44+0000\n"
+"PO-Revision-Date: 2025-01-25 08:18+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@gmail.com>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.08.1\n"
+"X-Generator: Lokalize 24.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -55,7 +55,7 @@ msgstr "Simon Schmeißer"
 #: src/main.cpp:79
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
-msgstr ""
+msgstr "Sök bara efter QR-koder på WIFI-nätverk"
 
 #: src/notificationmanager.cpp:19
 #, kde-format
@@ -92,35 +92,30 @@ msgstr "QR-kodläsare"
 msgid "Create QR-Code"
 msgstr "Skapa QR-kod"
 
-#: src/qml/QrCodeEncoderPage.qml:30
+#: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "Image files (*.png *.jpg)"
 msgstr "Bildfiler (*.png *.jpg)"
 
-#: src/qml/QrCodeEncoderPage.qml:30
+#: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "All files (*)"
 msgstr "Alla filer (*)"
 
-#: src/qml/QrCodeEncoderPage.qml:36
+#: src/qml/QrCodeEncoderPage.qml:29
 #, kde-format
 msgid "Save"
 msgstr "Spara"
 
-#: src/qml/QrCodeEncoderPage.qml:44
+#: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
 msgid "QR-Code could not be saved"
 msgstr "QR-koden kunde inte sparas"
 
-#: src/qml/QrCodeEncoderPage.qml:54
+#: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
-msgid "Share"
-msgstr "Dela"
-
-#: src/qml/QrCodeEncoderPage.qml:64
-#, kde-format
-msgid "QR-Code could not be saved to temporary location"
-msgstr "QR-koden kunde inte sparas på tillfällig plats"
+msgid "Copy"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:30
 #, kde-format
@@ -188,11 +183,10 @@ msgid "<binary data>"
 msgstr "<binärdata>"
 
 #: src/qml/QrCodeScannerPage.qml:151
-#, fuzzy, kde-format
-#| msgid "Connect"
+#, kde-format
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
-msgstr "Anslut"
+msgstr "Ansluter…"
 
 #: src/qml/QrCodeScannerPage.qml:159
 #, kde-format
@@ -239,25 +233,25 @@ msgstr "Anslut"
 msgid "Copy to clipboard"
 msgstr "Kopiera till klippbordet"
 
-#: src/qml/ShareSheet.qml:28
-#, kde-format
-msgid "Share Qr-Code"
-msgstr "Dela QR-kod"
-
-#: src/qml/ShareSheet.qml:56
-#, kde-format
-msgid "Sharing Failed"
-msgstr "Delning misslyckades"
-
-#: src/qml/ShareSheet.qml:82
-#, kde-format
-msgid "Share QR-Code"
-msgstr "Dela QR-kod"
-
-#: src/Qrca.cpp:265
+#: src/Qrca.cpp:270
 #, kde-format
 msgid "Failed to find wifi device"
-msgstr ""
+msgstr "Misslyckades hitta WIFI-enheter"
+
+#~ msgid "Share"
+#~ msgstr "Dela"
+
+#~ msgid "QR-Code could not be saved to temporary location"
+#~ msgstr "QR-koden kunde inte sparas på tillfällig plats"
+
+#~ msgid "Share Qr-Code"
+#~ msgstr "Dela QR-kod"
+
+#~ msgid "Sharing Failed"
+#~ msgstr "Delning misslyckades"
+
+#~ msgid "Share QR-Code"
+#~ msgstr "Dela QR-kod"
 
 #~ msgid "Saved image to %1"
 #~ msgstr "Sparade bild i %1"

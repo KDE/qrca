@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-24 00:45+0000\n"
+"POT-Creation-Date: 2025-01-26 00:44+0000\n"
 "PO-Revision-Date: 2025-01-24 22:27+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -95,35 +95,30 @@ msgstr "Засіб сканування QR-кодів"
 msgid "Create QR-Code"
 msgstr "Створити QR-код"
 
-#: src/qml/QrCodeEncoderPage.qml:30
+#: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "Image files (*.png *.jpg)"
 msgstr "файли зображень (*.png *.jpg)"
 
-#: src/qml/QrCodeEncoderPage.qml:30
+#: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "All files (*)"
 msgstr "усі файли (*)"
 
-#: src/qml/QrCodeEncoderPage.qml:36
+#: src/qml/QrCodeEncoderPage.qml:29
 #, kde-format
 msgid "Save"
 msgstr "Зберегти"
 
-#: src/qml/QrCodeEncoderPage.qml:44
+#: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
 msgid "QR-Code could not be saved"
 msgstr "Не вдалося зберегти QR-код"
 
-#: src/qml/QrCodeEncoderPage.qml:54
+#: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
-msgid "Share"
-msgstr "Оприлюднити"
-
-#: src/qml/QrCodeEncoderPage.qml:64
-#, kde-format
-msgid "QR-Code could not be saved to temporary location"
-msgstr "Не вдалося зберегти QR-код до тимчасового каталогу"
+msgid "Copy"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:30
 #, kde-format
@@ -241,25 +236,25 @@ msgstr "З'єднатися"
 msgid "Copy to clipboard"
 msgstr "Скопіювати до буфера"
 
-#: src/qml/ShareSheet.qml:28
-#, kde-format
-msgid "Share Qr-Code"
-msgstr "Оприлюднити QR-код"
-
-#: src/qml/ShareSheet.qml:56
-#, kde-format
-msgid "Sharing Failed"
-msgstr "Не вдалося оприлюднити"
-
-#: src/qml/ShareSheet.qml:82
-#, kde-format
-msgid "Share QR-Code"
-msgstr "Оприлюднити QR-код"
-
-#: src/Qrca.cpp:265
+#: src/Qrca.cpp:270
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Не вдалося знайти пристрій WiFi"
+
+#~ msgid "Share"
+#~ msgstr "Оприлюднити"
+
+#~ msgid "QR-Code could not be saved to temporary location"
+#~ msgstr "Не вдалося зберегти QR-код до тимчасового каталогу"
+
+#~ msgid "Share Qr-Code"
+#~ msgstr "Оприлюднити QR-код"
+
+#~ msgid "Sharing Failed"
+#~ msgstr "Не вдалося оприлюднити"
+
+#~ msgid "Share QR-Code"
+#~ msgstr "Оприлюднити QR-код"
 
 #~ msgid "Saved image to %1"
 #~ msgstr "Зображення збережено до %1"

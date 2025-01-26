@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-01-24 00:45+0000\n"
+"POT-Creation-Date: 2025-01-26 00:44+0000\n"
 "PO-Revision-Date: 2025-01-24 06:26+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -95,35 +95,30 @@ msgstr "QR kodeen eskanerra"
 msgid "Create QR-Code"
 msgstr "Sortu QR kodea"
 
-#: src/qml/QrCodeEncoderPage.qml:30
+#: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "Image files (*.png *.jpg)"
 msgstr "Irudi fitxategiak (*.png *.jpg)"
 
-#: src/qml/QrCodeEncoderPage.qml:30
+#: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "All files (*)"
 msgstr "Fitxategi guztiak (*)"
 
-#: src/qml/QrCodeEncoderPage.qml:36
+#: src/qml/QrCodeEncoderPage.qml:29
 #, kde-format
 msgid "Save"
 msgstr "Gorde"
 
-#: src/qml/QrCodeEncoderPage.qml:44
+#: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
 msgid "QR-Code could not be saved"
 msgstr "Ezin izan du QR kodea gorde"
 
-#: src/qml/QrCodeEncoderPage.qml:54
+#: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
-msgid "Share"
-msgstr "Partekatu"
-
-#: src/qml/QrCodeEncoderPage.qml:64
-#, kde-format
-msgid "QR-Code could not be saved to temporary location"
-msgstr "QR kodea ezin izan du aldi baterako kokalekuan gorde"
+msgid "Copy"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:30
 #, kde-format
@@ -241,25 +236,25 @@ msgstr "Konektatu"
 msgid "Copy to clipboard"
 msgstr "Kopiatu arbelera"
 
-#: src/qml/ShareSheet.qml:28
-#, kde-format
-msgid "Share Qr-Code"
-msgstr "Partekatu QR-Kodea"
-
-#: src/qml/ShareSheet.qml:56
-#, kde-format
-msgid "Sharing Failed"
-msgstr "Partekatzea huts egin du"
-
-#: src/qml/ShareSheet.qml:82
-#, kde-format
-msgid "Share QR-Code"
-msgstr "Partekatu QR-Kodea"
-
-#: src/Qrca.cpp:265
+#: src/Qrca.cpp:270
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Wi-Fi gailua bilatzea huts egin du"
+
+#~ msgid "Share"
+#~ msgstr "Partekatu"
+
+#~ msgid "QR-Code could not be saved to temporary location"
+#~ msgstr "QR kodea ezin izan du aldi baterako kokalekuan gorde"
+
+#~ msgid "Share Qr-Code"
+#~ msgstr "Partekatu QR-Kodea"
+
+#~ msgid "Sharing Failed"
+#~ msgstr "Partekatzea huts egin du"
+
+#~ msgid "Share QR-Code"
+#~ msgstr "Partekatu QR-Kodea"
 
 #~ msgid "Saved image to %1"
 #~ msgstr "Irudia hor gorde da, %1"
