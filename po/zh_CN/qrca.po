@@ -237,18 +237,3 @@ msgstr "复制到剪贴板"
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "查找 WiFi 设备失败"
-
-#~ msgid "Share"
-#~ msgstr "分享"
-
-#~ msgid "QR-Code could not be saved to temporary location"
-#~ msgstr "二维码无法保存到临时位置"
-
-#~ msgid "Share Qr-Code"
-#~ msgstr "分享二维码"
-
-#~ msgid "Sharing Failed"
-#~ msgstr "分享失败"
-
-#~ msgid "Share QR-Code"
-#~ msgstr "分享二维码"
