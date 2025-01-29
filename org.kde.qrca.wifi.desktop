@@ -4,6 +4,7 @@
 [Desktop Entry]
 Name=Qrca Wifi scanner
 Name[ca]=Escàner de Wifi Qrca
+Name[ca@valencia]=Escàner de Wifi Qrca
 Name[es]=Escáner wifi Qrca
 Name[eu]=Qrca Wi-Fi eskanerra
 Name[fr]=Analyseur Qrca de Wifi
@@ -21,6 +22,7 @@ Name[zh_CN]=Qrca WiFi 扫描器
 Name[zh_TW]=Qrca Wifi 掃描器
 GenericName=Wifi Barcode Scanner
 GenericName[ca]=Escàner de codi de barres Wifi
+GenericName[ca@valencia]=Escàner de codi de barres Wifi
 GenericName[es]=Escáner de códigos de barras wifi
 GenericName[eu]=Wi-Fi barra-kode eskanerra
 GenericName[fr]=Analyseur de codes-barres Wifi
@@ -38,6 +40,7 @@ GenericName[zh_CN]=WiFi 二维码扫描器
 GenericName[zh_TW]=Wifi 條碼掃描器
 Comment=Scan for Wifi QR-Codes
 Comment[ca]=Escaneja codis QR de Wifi
+Comment[ca@valencia]=Escaneja codis QR de Wifi
 Comment[es]=Escanear códigos QR wifi
 Comment[eu]=Eskaneatu Wi-Fo QR-Kodeen bila
 Comment[fr]=Analyser pour trouver des codes « QR » pour Wifi
