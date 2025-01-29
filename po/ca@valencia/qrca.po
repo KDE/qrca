@@ -1,16 +1,16 @@
 # Translation of qrca.po to Catalan (Valencian)
-# Copyright (C) 2019-2023 This_file_is_part_of_KDE
+# Copyright (C) 2019-2025 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
 # Antoni Bella Pérez <antonibella5@yahoo.com>, 2019, 2022.
-# Josep M. Ferrer <txemaq@gmail.com>, 2020, 2021, 2022, 2023.
+# Josep M. Ferrer <txemaq@gmail.com>, 2020, 2021, 2022, 2023, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-01-26 00:44+0000\n"
-"PO-Revision-Date: 2023-07-04 10:46+0200\n"
+"PO-Revision-Date: 2025-01-26 10:37+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -58,7 +58,7 @@ msgstr "Simon Schmeißer"
 #: src/main.cpp:79
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
-msgstr ""
+msgstr "Escaneja només codis QR de xarxes Wifi"
 
 #: src/notificationmanager.cpp:19
 #, kde-format
@@ -118,7 +118,7 @@ msgstr "No s'ha pogut guardar el codi QR"
 #: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
 msgid "Copy"
-msgstr ""
+msgstr "Copia"
 
 #: src/qml/QrCodeScannerPage.qml:30
 #, kde-format
@@ -186,11 +186,10 @@ msgid "<binary data>"
 msgstr "<dades binàries>"
 
 #: src/qml/QrCodeScannerPage.qml:151
-#, fuzzy, kde-format
-#| msgid "Connect"
+#, kde-format
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
-msgstr "Connecta"
+msgstr "S'està connectant…"
 
 #: src/qml/QrCodeScannerPage.qml:159
 #, kde-format
@@ -241,19 +240,4 @@ msgstr "Copia a dins del porta-retalls"
 #: src/Qrca.cpp:270
 #, kde-format
 msgid "Failed to find wifi device"
-msgstr ""
-
-#~ msgid "Share"
-#~ msgstr "Compartix"
-
-#~ msgid "QR-Code could not be saved to temporary location"
-#~ msgstr "No s'ha pogut guardar el codi QR a la ubicació temporal"
-
-#~ msgid "Share Qr-Code"
-#~ msgstr "Compartix el codi QR"
-
-#~ msgid "Sharing Failed"
-#~ msgstr "Ha fallat la compartició"
-
-#~ msgid "Share QR-Code"
-#~ msgstr "Compartix el codi QR"
+msgstr "No s'ha pogut trobar el dispositiu wifi"
