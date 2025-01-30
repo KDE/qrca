@@ -1,14 +1,14 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the qrca package.
 #
-# SPDX-FileCopyrightText: 2024 Toms Trasūns <toms.trasuns@posteo.net>
+# SPDX-FileCopyrightText: 2024, 2025 Toms Trasūns <toms.trasuns@posteo.net>
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-01-26 00:44+0000\n"
-"PO-Revision-Date: 2024-03-26 16:10+0200\n"
-"Last-Translator: Toms Trasūns <toms.trasuns@posteo.net>\n"
+"PO-Revision-Date: 2025-01-28 18:45+0200\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
 "2);\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 24.12.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -56,7 +56,7 @@ msgstr "Simon Schmeißer"
 #: src/main.cpp:79
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
-msgstr ""
+msgstr "Skenēt tikai „Wi-Fi“ tīklu kvadrātkodus"
 
 #: src/notificationmanager.cpp:19
 #, kde-format
@@ -116,7 +116,7 @@ msgstr "Kvadrātkodu nevar saglabāt"
 #: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
 msgid "Copy"
-msgstr ""
+msgstr "Kopēt"
 
 #: src/qml/QrCodeScannerPage.qml:30
 #, kde-format
@@ -176,7 +176,7 @@ msgstr "Atrasts Starptautiskais rakstu numurs"
 #: src/qml/QrCodeScannerPage.qml:89
 #, kde-format
 msgid "Wi-Fi settings found"
-msgstr "Atrasti Wi-Fi iestatījumi"
+msgstr "Atrasti „Wi-Fi“ iestatījumi"
 
 #: src/qml/QrCodeScannerPage.qml:116
 #, kde-format
@@ -184,11 +184,10 @@ msgid "<binary data>"
 msgstr "<binārie dati>"
 
 #: src/qml/QrCodeScannerPage.qml:151
-#, fuzzy, kde-format
-#| msgid "Connect"
+#, kde-format
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
-msgstr "Savienoties"
+msgstr "Savienojas…"
 
 #: src/qml/QrCodeScannerPage.qml:159
 #, kde-format
@@ -238,7 +237,7 @@ msgstr "Kopēt starpliktuvē"
 #: src/Qrca.cpp:270
 #, kde-format
 msgid "Failed to find wifi device"
-msgstr ""
+msgstr "Neizdevās atrast „Wi-Fi“ ierīci"
 
 #~ msgid "Share"
 #~ msgstr "Kopīgot"
