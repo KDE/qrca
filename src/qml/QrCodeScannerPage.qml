@@ -14,7 +14,7 @@ import QtMultimedia
 import org.kde.kirigami as Kirigami
 import QtQuick.Layouts 1.3
 import org.kde.prison.scanner 1.0 as Prison
-
+import QtQuick.Dialogs
 import org.kde.qrca 1.0
 
 Kirigami.Page {
@@ -38,6 +38,11 @@ Kirigami.Page {
             visible: devices.videoInputs.length > 1
             icon.name: "camera-video-symbolic"
             onTriggered: cameraSelectorSheet.open()
+        },
+        Kirigami.Action {
+            icon.name: "document-open"
+            text: i18n("Open Image")
+            onTriggered: openFileDialog.open()
         }
     ]
 
@@ -319,4 +324,55 @@ Kirigami.Page {
         if (permission.status == Qt.PermissionStatus.Undetermined)
             permission.request()
     }
+
+    FileDialog {
+        id: openFileDialog
+        title: i18nc("@title:window", "Choose an image file")
+        nameFilters: [i18nc("Name filter for Image files", "Image files (*.jpeg *.jpg *.jxl *.png)")]
+        currentFolder: StandardPaths.standardLocations(StandardPaths.PicturesLocation)[0]
+        onAccepted: {
+            selectedImage.source = openFileDialog.currentFile
+            viewfinder.visible = false
+            selectedImage.visible = true
+            camera.active = false
+
+            const result = Qrca.scanImage(openFileDialog.currentFile)
+            if (result.hasContent) {
+                const resultContent = Qrca.resultContent(result);
+                resultSheet.tag = resultContent
+                resultSheet.open()
+                
+            } else {
+                showPassiveNotification(i18n("No QR code found in the image"), "long")
+                selectedImage.source = ""
+                selectedImage.visible = false
+                viewfinder.visible = true
+                camera.active = true
+            }
+        }
+    }
+
+    Image {
+        id: selectedImage
+        anchors.fill: parent
+        fillMode: Image.PreserveAspectFit
+        visible: false
+        
+        Controls.Button {
+            anchors {
+                top: parent.top
+                right: parent.right
+                margins: Kirigami.Units.largeSpacing
+            }
+            icon.name: "window-close"
+            onClicked: {
+                selectedImage.source = ""
+                selectedImage.visible = false
+                viewfinder.visible = true
+                camera.active = true
+                
+            }
+        }
+    }
+
 }

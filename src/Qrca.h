@@ -44,6 +44,7 @@ public:
     Q_INVOKABLE bool canConnectToWifi() const;
     Q_INVOKABLE void connectToWifi(const QString &wifiCode);
     Q_INVOKABLE QrCodeContent resultContent(const Prison::ScanResult &result);
+    Q_INVOKABLE Prison::ScanResult scanImage(const QUrl &imagePath);
 
     QString encodeText() const noexcept;
     void setEncodeText(const QString &encodeText) noexcept;

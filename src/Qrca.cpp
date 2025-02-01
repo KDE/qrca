@@ -42,6 +42,7 @@
 #include <KLocalizedString>
 
 #include <Prison/MeCard>
+#include <Prison/ImageScanner>
 
 #include "Qrca.h"
 #include "QrCodeContent.h"
@@ -344,6 +345,18 @@ QrCodeContent Qrca::resultContent(const Prison::ScanResult &result)
     } else {
         return QrCodeContent(result.text(), result.format());
     }
+}
+
+Prison::ScanResult Qrca::scanImage(const QUrl &imagePath)
+{
+        
+    QImage image(imagePath.toLocalFile());
+    if (image.isNull()) {
+        qWarning() << "Failed to load image from path:" << imagePath;
+        return Prison::ScanResult();
+    }
+    auto result = Prison::ImageScanner::scan(image);
+    return result;
 }
 
 #include "moc_Qrca.cpp"
