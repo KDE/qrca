@@ -20,7 +20,7 @@ Kirigami.ScrollablePage {
     FileDialog {
         id: fileDialog
         defaultSuffix: "png"
-        nameFilters: [ i18n("Image files (*.png *.jpg)"), i18n("All files (*)") ]
+        nameFilters: [i18n("Image files (*.png *.jpg)"), i18n("All files (*)")]
         fileMode: FileDialog.SaveFile
     }
 
@@ -31,16 +31,16 @@ Kirigami.ScrollablePage {
             enabled: inputText.length > 0
             onTriggered: {
                 fileDialog.accepted.connect(() => {
-                    codeView.grabToImage((result) => {
-                         const s = result.saveToFile(fileDialog.selectedFile)
-                         if (!s) {
-                             showPassiveNotification(i18n("QR-Code could not be saved"))
-                         }
+                    codeView.grabToImage(result => {
+                        const s = result.saveToFile(fileDialog.selectedFile);
+                        if (!s) {
+                            showPassiveNotification(i18n("QR-Code could not be saved"));
+                        }
 
-                         fileDialog.accepted.disconnect()
-                    })
-                })
-                fileDialog.open()
+                        fileDialog.accepted.disconnect();
+                    });
+                });
+                fileDialog.open();
             }
         },
         Kirigami.Action {
@@ -48,9 +48,9 @@ Kirigami.ScrollablePage {
             icon.name: "edit-copy"
             enabled: inputText.length > 0
             onTriggered: {
-                codeView.grabToImage((result) => {
-                    Qrca.copyImageToClipboard(result.image)
-                })
+                codeView.grabToImage(result => {
+                    Qrca.copyImageToClipboard(result.image);
+                });
             }
         }
     ]
@@ -65,7 +65,7 @@ Kirigami.ScrollablePage {
             Layout.maximumWidth: Kirigami.Units.gridUnit * 16
             Layout.preferredHeight: width
             barcodeType: Prison.Barcode.QRCode
-            content: inputText.text.length > 0 ? inputText.text: "https://www.kde.org"
+            content: inputText.text.length > 0 ? inputText.text : "https://www.kde.org"
         }
 
         Kirigami.ActionTextField {

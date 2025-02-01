@@ -60,7 +60,7 @@ Kirigami.Page {
     }
 
     function asLink(text) {
-        return "<a href='" + text + "'>" + text + "</a>"
+        return "<a href='" + text + "'>" + text + "</a>";
     }
 
     Kirigami.OverlaySheet {
@@ -72,28 +72,28 @@ Kirigami.Page {
         header: Kirigami.Heading {
             text: {
                 switch (resultSheet.tag?.contentType) {
-                    case QrCodeContent.Text:
-                        return i18n("Text found")
-                    case QrCodeContent.Url:
-                        return i18n("URL found")
-                    case QrCodeContent.VCard:
-                        return i18n("Contact found")
-                    case QrCodeContent.OtpToken:
-                        return i18n("OTP URI found")
-                    case QrCodeContent.Binary:
-                        return i18n("Binary data found")
-                    case QrCodeContent.HealthCertificate:
-                        return i18n("Health certificate found")
-                    case QrCodeContent.TransportTicket:
-                        return i18n("Transport ticket found")
-                    case QrCodeContent.ISBN:
-                        return i18n("ISBN found")
-                    case QrCodeContent.EAN:
-                        return i18n("International Article Number found")
-                    case QrCodeContent.WifiSetting:
-                        return i18n("Wi-Fi settings found")
-                    default:
-                        return "";
+                case QrCodeContent.Text:
+                    return i18n("Text found");
+                case QrCodeContent.Url:
+                    return i18n("URL found");
+                case QrCodeContent.VCard:
+                    return i18n("Contact found");
+                case QrCodeContent.OtpToken:
+                    return i18n("OTP URI found");
+                case QrCodeContent.Binary:
+                    return i18n("Binary data found");
+                case QrCodeContent.HealthCertificate:
+                    return i18n("Health certificate found");
+                case QrCodeContent.TransportTicket:
+                    return i18n("Transport ticket found");
+                case QrCodeContent.ISBN:
+                    return i18n("ISBN found");
+                case QrCodeContent.EAN:
+                    return i18n("International Article Number found");
+                case QrCodeContent.WifiSetting:
+                    return i18n("Wi-Fi settings found");
+                default:
+                    return "";
                 }
             }
         }
@@ -112,13 +112,13 @@ Kirigami.Page {
                 Layout.maximumWidth: Kirigami.Units.gridUnit * 20
                 Layout.fillWidth: true
                 text: {
-                    switch(resultSheet.tag?.contentType) {
-                        case QrCodeContent.VCard:
-                            return Qrca.getVCardName(resultSheet.tag.text);
-                        case QrCodeContent.WifiSetting:
-                            return Qrca.wifiName(resultSheet.tag.text);
-                        default:
-                            return resultSheet.tag?.isPlainText ? resultSheet.tag.text : i18n("<binary data>");
+                    switch (resultSheet.tag?.contentType) {
+                    case QrCodeContent.VCard:
+                        return Qrca.getVCardName(resultSheet.tag.text);
+                    case QrCodeContent.WifiSetting:
+                        return Qrca.wifiName(resultSheet.tag.text);
+                    default:
+                        return resultSheet.tag?.isPlainText ? resultSheet.tag.text : i18n("<binary data>");
                     }
                 }
                 wrapMode: Text.Wrap
@@ -129,14 +129,14 @@ Kirigami.Page {
         Connections {
             target: Qrca
             enabled: resultSheet.opened && resultSheet.tag?.contentType === QrCodeContent.WifiSetting
-            function onWifiConnected() : void {
+            function onWifiConnected(): void {
                 if (Qrca.wifiMode) {
                     Qt.quit();
                 } else {
                     resultSheet.close();
                 }
             }
-            function onWifiConnectionFailed(msg) : void {
+            function onWifiConnectionFailed(msg): void {
                 resultErrorMessage.text = msg;
                 resultErrorMessage.visible = true;
             }
@@ -161,21 +161,21 @@ Kirigami.Page {
                 text: {
                     switch (resultSheet.tag?.contentType) {
                     case QrCodeContent.Url:
-                        return i18n("Open")
+                        return i18n("Open");
                     case QrCodeContent.VCard:
-                        return i18n("Save contact")
+                        return i18n("Save contact");
                     case QrCodeContent.OtpToken:
-                        return i18n("Open OTP client")
+                        return i18n("Open OTP client");
                     case QrCodeContent.EAN:
-                        return i18n("Open Food Facts")
+                        return i18n("Open Food Facts");
                     case QrCodeContent.ISBN:
-                        return i18n("Wikipedia Book Sources")
+                        return i18n("Wikipedia Book Sources");
                     case QrCodeContent.TransportTicket:
-                        return i18n("Open KDE Itinerary")
+                        return i18n("Open KDE Itinerary");
                     case QrCodeContent.HealthCertificate:
-                        return i18n("Open in Vakzination")
+                        return i18n("Open in Vakzination");
                     case QrCodeContent.WifiSetting:
-                        return i18n("Connect")
+                        return i18n("Connect");
                     default:
                         return "";
                     }
@@ -185,19 +185,19 @@ Kirigami.Page {
 
                     switch (resultSheet.tag.contentType) {
                     case QrCodeContent.Url:
-                       Qt.openUrlExternally(resultSheet.tag.text)
-                       break
+                        Qt.openUrlExternally(resultSheet.tag.text);
+                        break;
                     case QrCodeContent.VCard:
-                         Qrca.saveVCard(resultSheet.tag.text)
-                        break
+                        Qrca.saveVCard(resultSheet.tag.text);
+                        break;
                     case QrCodeContent.OtpToken:
-                        Qt.openUrlExternally(resultSheet.tag.text)
-                        break
+                        Qt.openUrlExternally(resultSheet.tag.text);
+                        break;
                     case QrCodeContent.EAN:
-                        Qt.openUrlExternally("https://world.openfoodfacts.org/product/" + resultSheet.tag.text)
+                        Qt.openUrlExternally("https://world.openfoodfacts.org/product/" + resultSheet.tag.text);
                         break;
                     case QrCodeContent.ISBN:
-                        Qt.openUrlExternally("https://en.wikipedia.org/wiki/Special:BookSources?isbn=" + resultSheet.tag.text)
+                        Qt.openUrlExternally("https://en.wikipedia.org/wiki/Special:BookSources?isbn=" + resultSheet.tag.text);
                         break;
                     case QrCodeContent.TransportTicket:
                         Qrca.openInApplication(resultSheet.tag, "org.kde.itinerary");
@@ -209,7 +209,7 @@ Kirigami.Page {
                         Qrca.connectToWifi(resultSheet.tag.text);
                         return; // Wait for connection to be established before closing.
                     }
-                    resultSheet.close()
+                    resultSheet.close();
                 }
                 visible: {
                     switch (resultSheet.tag?.contentType) {
@@ -221,7 +221,7 @@ Kirigami.Page {
                     case QrCodeContent.HealthCertificate:
                         return Qrca.hasApplication("org.kde.vakzination");
                     case QrCodeContent.WifiSetting:
-                        return Qrca.canConnectToWifi() && !Qrca.connectingToWifi
+                        return Qrca.canConnectToWifi() && !Qrca.connectingToWifi;
                     }
                     return true;
                 }
@@ -238,7 +238,7 @@ Kirigami.Page {
                     case QrCodeContent.WifiSetting:
                         return "network-wireless";
                     }
-                    return "internet-services"
+                    return "internet-services";
                 }
 
                 Layout.fillWidth: true
@@ -247,8 +247,8 @@ Kirigami.Page {
                 text: i18n("Copy to clipboard")
                 icon.name: "edit-copy-symbolic"
                 onClicked: {
-                    Qrca.copyToClipboard(resultSheet.tag)
-                    resultSheet.close()
+                    Qrca.copyToClipboard(resultSheet.tag);
+                    resultSheet.close();
                 }
                 Layout.fillWidth: true
             }
@@ -289,7 +289,7 @@ Kirigami.Page {
 
         onResultContentChanged: result => {
             if (!result.hasContent) {
-                return
+                return;
             }
 
             const resultContent = Qrca.resultContent(result);
@@ -299,7 +299,7 @@ Kirigami.Page {
 
             resultSheet.tag = resultContent;
             if (!resultSheet.sheetOpen) {
-                resultSheet.open()
+                resultSheet.open();
             }
         }
         videoSink: viewfinder.videoSink
@@ -322,7 +322,7 @@ Kirigami.Page {
 
     Component.onCompleted: {
         if (permission.status == Qt.PermissionStatus.Undetermined)
-            permission.request()
+            permission.request();
     }
 
     FileDialog {
@@ -331,23 +331,22 @@ Kirigami.Page {
         nameFilters: [i18nc("Name filter for Image files", "Image files (*.jpeg *.jpg *.jxl *.png)")]
         currentFolder: StandardPaths.standardLocations(StandardPaths.PicturesLocation)[0]
         onAccepted: {
-            selectedImage.source = openFileDialog.currentFile
-            viewfinder.visible = false
-            selectedImage.visible = true
-            camera.active = false
+            selectedImage.source = openFileDialog.currentFile;
+            viewfinder.visible = false;
+            selectedImage.visible = true;
+            camera.active = false;
 
-            const result = Qrca.scanImage(openFileDialog.currentFile)
+            const result = Qrca.scanImage(openFileDialog.currentFile);
             if (result.hasContent) {
                 const resultContent = Qrca.resultContent(result);
-                resultSheet.tag = resultContent
-                resultSheet.open()
-                
+                resultSheet.tag = resultContent;
+                resultSheet.open();
             } else {
-                showPassiveNotification(i18n("No QR code found in the image"), "long")
-                selectedImage.source = ""
-                selectedImage.visible = false
-                viewfinder.visible = true
-                camera.active = true
+                showPassiveNotification(i18n("No QR code found in the image"), "long");
+                selectedImage.source = "";
+                selectedImage.visible = false;
+                viewfinder.visible = true;
+                camera.active = true;
             }
         }
     }
@@ -357,7 +356,7 @@ Kirigami.Page {
         anchors.fill: parent
         fillMode: Image.PreserveAspectFit
         visible: false
-        
+
         Controls.Button {
             anchors {
                 top: parent.top
@@ -366,13 +365,11 @@ Kirigami.Page {
             }
             icon.name: "window-close"
             onClicked: {
-                selectedImage.source = ""
-                selectedImage.visible = false
-                viewfinder.visible = true
-                camera.active = true
-                
+                selectedImage.source = "";
+                selectedImage.visible = false;
+                viewfinder.visible = true;
+                camera.active = true;
             }
         }
     }
-
 }

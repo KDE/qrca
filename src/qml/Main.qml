@@ -12,29 +12,27 @@ import org.kde.config as KConfig
 import org.kde.qrca 1.0
 
 Kirigami.ApplicationWindow {
-    id: window 
+    id: window
 
     title: i18n("QR Code Scanner")
 
     width: Kirigami.Units.gridUnit * 21
-    height: Kirigami.Settings.isMobile
-            ? Kirigami.Units.gridUnit * 34
-            : Kirigami.Units.gridUnit * 27
+    height: Kirigami.Settings.isMobile ? Kirigami.Units.gridUnit * 34 : Kirigami.Units.gridUnit * 27
 
     KConfig.WindowStateSaver {
         configGroupName: "MainWindow"
     }
 
     function passiveNotification(text) {
-        showPassiveNotification(text, "long")
+        showPassiveNotification(text, "long");
     }
 
     Component.onCompleted: {
-        Qrca.passiveNotificationRequested.connect(passiveNotification)
+        Qrca.passiveNotificationRequested.connect(passiveNotification);
         if (Qrca.encodeText) {
-            qrCodeEncoderAction.trigger()
+            qrCodeEncoderAction.trigger();
         } else {
-            qrCodeScannerAction.trigger()
+            qrCodeScannerAction.trigger();
         }
     }
 
