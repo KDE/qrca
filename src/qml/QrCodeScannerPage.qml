@@ -23,7 +23,7 @@ Kirigami.Page {
     topPadding: 0
     bottomPadding: 0
 
-    title: Qrca.wifiMode ? qsTr("Scan for Wifi code") : qsTr("Scan QR code")
+    title: Qrca.wifiMode ? i18n("Scan for Wifi code") : i18n("Scan QR code")
     actions: [
         Kirigami.Action {
             icon.name: checked ? "flashlight-off" : "flashlight-on"
