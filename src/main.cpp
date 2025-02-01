@@ -18,14 +18,14 @@
 #include <QCommandLineParser>
 #include <QIcon>
 #include <QQmlApplicationEngine>
+#include <QQuickStyle>
 #include <QUrl>
 #include <QtQml>
-#include <QQuickStyle>
 
 #include <KAboutData>
 #include <KLocalizedContext>
-#include <KLocalizedString>
 #include <KLocalizedQmlContext>
+#include <KLocalizedString>
 
 #ifndef Q_OS_ANDROID
 #include <KCrash>
@@ -34,8 +34,8 @@
 #include "QrCodeContent.h"
 // #include "QrCodeScannerFilter.h"
 #include "Qrca.h"
-#include "notificationmanager.h"
 #include "clipboard.h"
+#include "notificationmanager.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -56,8 +56,14 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     // setup translation string domain for the i18n calls
     KLocalizedString::setApplicationDomain("qrca");
     // create a KAboutData object to use for setting the application metadata
-    KAboutData aboutData(
-        QStringLiteral("qrca"), i18n("Qrca"), QStringLiteral(QRCA_VERSION_STRING), i18n("A simple QR scanner"), KAboutLicense::GPL_V3, i18n("Copyright 2016-2019 Qrca and Kaidan authors"), QString(), QStringLiteral("https://www.plasma-mobile.org"));
+    KAboutData aboutData(QStringLiteral("qrca"),
+                         i18n("Qrca"),
+                         QStringLiteral(QRCA_VERSION_STRING),
+                         i18n("A simple QR scanner"),
+                         KAboutLicense::GPL_V3,
+                         i18n("Copyright 2016-2019 Qrca and Kaidan authors"),
+                         QString(),
+                         QStringLiteral("https://www.plasma-mobile.org"));
     // overwrite default-generated values of organizationDomain & desktopFileName
     aboutData.addAuthor(i18n("Jonah Brüchert"), QString(), QStringLiteral("jbb@kaidan.im"), QStringLiteral("https://jbbgameich.github.io"));
     aboutData.addAuthor(i18n("Simon Schmeißer"));

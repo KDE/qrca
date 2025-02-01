@@ -68,9 +68,8 @@ static bool isHealtCertificate(const QString &text)
         (text.size() > 400 && (text.startsWith(QLatin1String("HC1:")) || text.startsWith(QLatin1String("NL2:"))) && isBase45(text)) ||
         // SMART Health Cards (SHC)
         (text.size() > 1000 && text.startsWith(QLatin1String("shc:/")) && std::all_of(text.begin() + 10, text.end(), [](QChar c) {
-            return c.row() == 0 && c.cell() >= '0' && c.cell() <= '9';
-        }))
-    ;
+             return c.row() == 0 && c.cell() >= '0' && c.cell() <= '9';
+         }));
 }
 
 static bool isTransportTicket(const QByteArray &data)
@@ -92,8 +91,14 @@ static bool isTransportTicket(const QString &text)
 {
     // IATA BCBP
     if (text.size() >= 47 && text[0] == QLatin1Char('M') && text[1].digitValue() >= 1 && text[1].digitValue() <= 4
-        && std::all_of(text.begin(), text.end(), [](QChar c) { return c.row() == 0; })
-        && std::all_of(text.begin() + 30, text.begin() + 36, [](QChar c) { return c.isLetter() && c.isUpper(); })) {
+        && std::all_of(text.begin(),
+                       text.end(),
+                       [](QChar c) {
+                           return c.row() == 0;
+                       })
+        && std::all_of(text.begin() + 30, text.begin() + 36, [](QChar c) {
+               return c.isLetter() && c.isUpper();
+           })) {
         return true;
     }
 
@@ -112,7 +117,9 @@ static bool isWifiSetting(const QString &text)
 // https://en.wikipedia.org/wiki/List_of_GS1_country_codes
 static bool isGlobalTradeItemNumber(const QString &text)
 {
-    if (text.size() != 13 || std::any_of(text.begin(), text.end(), [](auto c) { return c.row() != 0 || !c.isDigit(); })) {
+    if (text.size() != 13 || std::any_of(text.begin(), text.end(), [](auto c) {
+            return c.row() != 0 || !c.isDigit();
+        })) {
         return false;
     }
 

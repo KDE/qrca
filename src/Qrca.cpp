@@ -11,8 +11,8 @@
 #include <QtGlobal>
 
 #ifndef Q_OS_ANDROID
-#include <KService>
 #include <KIO/ApplicationLauncherJob>
+#include <KService>
 #endif
 
 #if HAVE_NETWORKMANAGER
@@ -20,8 +20,8 @@
 #include <NetworkManagerQt/Security8021xSetting>
 #include <NetworkManagerQt/Settings>
 #include <NetworkManagerQt/WirelessDevice>
-#include <NetworkManagerQt/WirelessSetting>
 #include <NetworkManagerQt/WirelessSecuritySetting>
+#include <NetworkManagerQt/WirelessSetting>
 
 #include <QDBusPendingCallWatcher>
 #endif
@@ -41,11 +41,11 @@
 #include <KContacts/VCardConverter>
 #include <KLocalizedString>
 
-#include <Prison/MeCard>
 #include <Prison/ImageScanner>
+#include <Prison/MeCard>
 
-#include "Qrca.h"
 #include "QrCodeContent.h"
+#include "Qrca.h"
 
 Qrca::Qrca() = default;
 
@@ -131,7 +131,8 @@ void Qrca::copyToClipboard(const QrCodeContent &content) noexcept
     }
 }
 
-void Qrca::copyImageToClipboard(const QImage &image) {
+void Qrca::copyImageToClipboard(const QImage &image)
+{
     QClipboard *clipboard = QGuiApplication::clipboard();
     clipboard->setImage(image);
 }
@@ -178,7 +179,7 @@ void Qrca::openInApplication(const QrCodeContent &content, const QString &appId)
 #endif
 }
 
-QString Qrca::wifiName(const QString& wifiSetting) const
+QString Qrca::wifiName(const QString &wifiSetting) const
 {
     auto p = Prison::MeCard::parse(wifiSetting);
     return p ? p->value(u"S") : QString();
@@ -200,20 +201,20 @@ static struct {
     const char *name;
     NetworkManager::Security8021xSetting::EapMethod method;
 } constexpr const eap_methods[] = {
-    { "PEAP", NetworkManager::Security8021xSetting::EapMethodPeap },
-    { "PWD", NetworkManager::Security8021xSetting::EapMethodPwd },
-    { "TLS", NetworkManager::Security8021xSetting::EapMethodTls },
-    { "TTLS", NetworkManager::Security8021xSetting::EapMethodTtls },
+    {"PEAP", NetworkManager::Security8021xSetting::EapMethodPeap},
+    {"PWD", NetworkManager::Security8021xSetting::EapMethodPwd},
+    {"TLS", NetworkManager::Security8021xSetting::EapMethodTls},
+    {"TTLS", NetworkManager::Security8021xSetting::EapMethodTtls},
 };
 
 static struct {
     const char *name;
     NetworkManager::Security8021xSetting::AuthMethod method;
 } constexpr const auth_methods[] = {
-    { "GTC", NetworkManager::Security8021xSetting::AuthMethodGtc },
-    { "MSCHAP", NetworkManager::Security8021xSetting::AuthMethodMschap },
-    { "MSCHAPV2", NetworkManager::Security8021xSetting::AuthMethodMschapv2 },
-    { "PAP", NetworkManager::Security8021xSetting::AuthMethodPap },
+    {"GTC", NetworkManager::Security8021xSetting::AuthMethodGtc},
+    {"MSCHAP", NetworkManager::Security8021xSetting::AuthMethodMschap},
+    {"MSCHAPV2", NetworkManager::Security8021xSetting::AuthMethodMschapv2},
+    {"PAP", NetworkManager::Security8021xSetting::AuthMethodPap},
 };
 #endif
 
@@ -349,7 +350,6 @@ QrCodeContent Qrca::resultContent(const Prison::ScanResult &result)
 
 Prison::ScanResult Qrca::scanImage(const QUrl &imagePath)
 {
-        
     QImage image(imagePath.toLocalFile());
     if (image.isNull()) {
         qWarning() << "Failed to load image from path:" << imagePath;
