@@ -9,3 +9,6 @@ CMakeLists.txt.user
 /cmake-build*
 
 /build*/
+
+# Android 
+android/.gradle/*

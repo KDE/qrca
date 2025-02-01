@@ -42,7 +42,10 @@ Kirigami.Page {
         Kirigami.Action {
             icon.name: "document-open"
             text: i18n("Open Image")
-            onTriggered: openFileDialog.open()
+            onTriggered: {
+                openFileDialog.open();
+                camera.active = false;
+            }
         }
     ]
 
@@ -348,6 +351,9 @@ Kirigami.Page {
                 viewfinder.visible = true;
                 camera.active = true;
             }
+        }
+        onRejected: {
+            camera.active = true;
         }
     }
 
