@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-02 00:45+0000\n"
-"PO-Revision-Date: 2025-01-26 10:58+0100\n"
+"PO-Revision-Date: 2025-02-02 23:48+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -120,15 +120,14 @@ msgid "Copy"
 msgstr "Copiar"
 
 #: src/qml/QrCodeScannerPage.qml:26
-#, fuzzy, kde-format
-#| msgid "Scan only for Wifi network QR-Codes"
+#, kde-format
 msgid "Scan for Wifi code"
-msgstr "Escanear solo códigos QR de redes wifi"
+msgstr "Escanear código wifi"
 
 #: src/qml/QrCodeScannerPage.qml:26
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "Escanear código QR"
 
 #: src/qml/QrCodeScannerPage.qml:30
 #, kde-format
@@ -143,7 +142,7 @@ msgstr "Seleccionar cámara"
 #: src/qml/QrCodeScannerPage.qml:44
 #, kde-format
 msgid "Open Image"
-msgstr ""
+msgstr "Abrir imagen"
 
 #: src/qml/QrCodeScannerPage.qml:76
 #, kde-format
@@ -255,63 +254,20 @@ msgstr "Copiar en el portapapeles"
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an image file"
-msgstr ""
+msgstr "Escoja un archivo de imagen"
 
 #: src/qml/QrCodeScannerPage.qml:331
-#, fuzzy, kde-format
-#| msgid "Image files (*.png *.jpg)"
+#, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
-msgstr "Archivos de imágenes (*.png *.jpg)"
+msgstr "Archivos de imágenes (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:345
 #, kde-format
 msgid "No QR code found in the image"
-msgstr ""
+msgstr "No se ha encontrado ningún código QR en la imagen"
 
 #: src/Qrca.cpp:272
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "No se encontrado el dispositivo wifi"
-
-#~ msgid "Share"
-#~ msgstr "Compartir"
-
-#~ msgid "QR-Code could not be saved to temporary location"
-#~ msgstr "El código QR no se ha podido guardar en la ubicación temporal"
-
-#~ msgid "Share Qr-Code"
-#~ msgstr "Compartir código Qr"
-
-#~ msgid "Sharing Failed"
-#~ msgstr "No se ha podido compartir"
-
-#~ msgid "Share QR-Code"
-#~ msgstr "Compartir código QR"
-
-#~ msgid "Saved image to %1"
-#~ msgstr "Imagen guardada en %1"
-
-#~ msgid "Open Externally"
-#~ msgstr "Abrir externamente"
-
-#~ msgid "Generating the QR-Code failed: "
-#~ msgstr "La generación del código QR ha fallado: "
-
-#~ msgid "Cancel"
-#~ msgstr "Cancelar"
-
-#~ msgid "The following tag has been found. Do you want to open the url?"
-#~ msgstr "Se ha encontrado la siguiente etiqueta. ¿Desea abrir el URL?"
-
-#~ msgid "A contact has been found, do you want to save it?"
-#~ msgstr "Se ha encontrado un contacto. ¿Desea guardarlo?"
-
-#~ msgid "An OTP URI has been found. Do you want to open your OTP client?"
-#~ msgstr "Se ha encontrado un URI de OTP. ¿Desea abrir el cliente OTP?"
-
-#~ msgid "The following tag has been found."
-#~ msgstr "Se ha encontrado la siguiente etiqueta."
-
-#~ msgid "Name: "
-#~ msgstr "Nombre: "

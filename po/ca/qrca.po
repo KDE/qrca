@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-02 00:45+0000\n"
-"PO-Revision-Date: 2025-01-26 10:37+0100\n"
+"PO-Revision-Date: 2025-02-02 08:55+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -121,15 +121,14 @@ msgid "Copy"
 msgstr "Copia"
 
 #: src/qml/QrCodeScannerPage.qml:26
-#, fuzzy, kde-format
-#| msgid "Scan only for Wifi network QR-Codes"
+#, kde-format
 msgid "Scan for Wifi code"
-msgstr "Escaneja només codis QR de xarxes Wifi"
+msgstr "Escaneja el codi Wifi"
 
 #: src/qml/QrCodeScannerPage.qml:26
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "Escaneja un codi QR"
 
 #: src/qml/QrCodeScannerPage.qml:30
 #, kde-format
@@ -144,7 +143,7 @@ msgstr "Selecció de càmera"
 #: src/qml/QrCodeScannerPage.qml:44
 #, kde-format
 msgid "Open Image"
-msgstr ""
+msgstr "Obre una imatge"
 
 #: src/qml/QrCodeScannerPage.qml:76
 #, kde-format
@@ -257,36 +256,20 @@ msgstr "Copia al porta-retalls"
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an image file"
-msgstr ""
+msgstr "Trieu un fitxer d'imatge"
 
 #: src/qml/QrCodeScannerPage.qml:331
-#, fuzzy, kde-format
-#| msgid "Image files (*.png *.jpg)"
+#, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
-msgstr "Fitxers d'imatge (*.png *.jpg)"
+msgstr "Fitxers d'imatge (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:345
 #, kde-format
 msgid "No QR code found in the image"
-msgstr ""
+msgstr "No s'ha trobat cap codi QR a la imatge"
 
 #: src/Qrca.cpp:272
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Ha fallat en trobar el dispositiu wifi"
-
-#~ msgid "Share"
-#~ msgstr "Comparteix"
-
-#~ msgid "QR-Code could not be saved to temporary location"
-#~ msgstr "No s'ha pogut desar el codi QR a la ubicació temporal"
-
-#~ msgid "Share Qr-Code"
-#~ msgstr "Comparteix el codi QR"
-
-#~ msgid "Sharing Failed"
-#~ msgstr "Ha fallat la compartició"
-
-#~ msgid "Share QR-Code"
-#~ msgstr "Comparteix el codi QR"
