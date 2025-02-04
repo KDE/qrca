@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-02 00:45+0000\n"
-"PO-Revision-Date: 2025-01-28 19:10+0400\n"
+"PO-Revision-Date: 2025-02-03 16:59+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -56,7 +56,7 @@ msgstr "سيمون شمايزر"
 #: src/main.cpp:85
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
-msgstr ""
+msgstr "امسح رمز الاستجابة السرية للشبكة لا سلكية فقط"
 
 #: src/notificationmanager.cpp:19
 #, kde-format
@@ -121,12 +121,12 @@ msgstr "انسخ"
 #: src/qml/QrCodeScannerPage.qml:26
 #, kde-format
 msgid "Scan for Wifi code"
-msgstr ""
+msgstr "امسح شفرة شبكة لا سلكية"
 
 #: src/qml/QrCodeScannerPage.qml:26
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "امسح رمز الاستجابة السريعة"
 
 #: src/qml/QrCodeScannerPage.qml:30
 #, kde-format
@@ -141,7 +141,7 @@ msgstr "اختر كاميرا"
 #: src/qml/QrCodeScannerPage.qml:44
 #, kde-format
 msgid "Open Image"
-msgstr ""
+msgstr "افتح صورة"
 
 #: src/qml/QrCodeScannerPage.qml:76
 #, kde-format
@@ -253,24 +253,23 @@ msgstr "انسخ إلى الحافظة"
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an image file"
-msgstr ""
+msgstr "اختر ملف صورة"
 
 #: src/qml/QrCodeScannerPage.qml:331
-#, fuzzy, kde-format
-#| msgid "Image files (*.png *.jpg)"
+#, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
-msgstr "ملفات الصور (*.png *.jpg)"
+msgstr "ملفات الصور (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:345
 #, kde-format
 msgid "No QR code found in the image"
-msgstr ""
+msgstr "لا يعثر على رمز استجابة سريع في الصوة"
 
 #: src/Qrca.cpp:272
 #, kde-format
 msgid "Failed to find wifi device"
-msgstr ""
+msgstr "فشل في العثور على جهاز لا سلكي"
 
 #~ msgid "Share"
 #~ msgstr "شارك"

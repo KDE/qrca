@@ -273,18 +273,3 @@ msgstr ""
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr ""
-
-#~ msgid "Share"
-#~ msgstr "Del"
-
-#~ msgid "QR-Code could not be saved to temporary location"
-#~ msgstr "Klarte ikkje lagra QR-koden til ei mellombels plassering"
-
-#~ msgid "Share Qr-Code"
-#~ msgstr "Del QR-kode"
-
-#~ msgid "Sharing Failed"
-#~ msgstr "Feil ved deling"
-
-#~ msgid "Share QR-Code"
-#~ msgstr "Del QR-kode"
