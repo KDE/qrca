@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-02 00:45+0000\n"
-"PO-Revision-Date: 2025-02-01 12:11+0100\n"
+"PO-Revision-Date: 2025-02-08 17:34+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
 "Language: pl\n"
@@ -120,15 +120,14 @@ msgid "Copy"
 msgstr "Skopiuj"
 
 #: src/qml/QrCodeScannerPage.qml:26
-#, fuzzy, kde-format
-#| msgid "Scan only for Wifi network QR-Codes"
+#, kde-format
 msgid "Scan for Wifi code"
-msgstr "Skanuj kody QR tylko do sieci Wifi"
+msgstr "Skanuj kod Wifi"
 
 #: src/qml/QrCodeScannerPage.qml:26
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "Zeskanuj kod QR"
 
 #: src/qml/QrCodeScannerPage.qml:30
 #, kde-format
@@ -143,7 +142,7 @@ msgstr "Wybierz aparat"
 #: src/qml/QrCodeScannerPage.qml:44
 #, kde-format
 msgid "Open Image"
-msgstr ""
+msgstr "Otwórz obraz"
 
 #: src/qml/QrCodeScannerPage.qml:76
 #, kde-format
@@ -255,19 +254,18 @@ msgstr "Skopiuj do schowka"
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an image file"
-msgstr ""
+msgstr "Wybierz plik z obrazem"
 
 #: src/qml/QrCodeScannerPage.qml:331
-#, fuzzy, kde-format
-#| msgid "Image files (*.png *.jpg)"
+#, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
-msgstr "Pliki obrazów (*.png *.jpg)"
+msgstr "Pliki obrazów (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:345
 #, kde-format
 msgid "No QR code found in the image"
-msgstr ""
+msgstr "Nie znaleziono żadnego kodu QR na obrazie"
 
 #: src/Qrca.cpp:272
 #, kde-format
