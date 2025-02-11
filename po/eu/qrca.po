@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-02 00:45+0000\n"
+"POT-Creation-Date: 2025-02-11 00:44+0000\n"
 "PO-Revision-Date: 2025-02-02 20:23+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -135,7 +135,7 @@ msgstr "Eskaneatu QR kodea"
 msgid "Light"
 msgstr "Argia"
 
-#: src/qml/QrCodeScannerPage.qml:37 src/qml/QrCodeScannerPage.qml:262
+#: src/qml/QrCodeScannerPage.qml:37 src/qml/QrCodeScannerPage.qml:265
 #, kde-format
 msgid "Select Camera"
 msgstr "Hautatu kamera"
@@ -145,125 +145,125 @@ msgstr "Hautatu kamera"
 msgid "Open Image"
 msgstr "Ireki irudia"
 
-#: src/qml/QrCodeScannerPage.qml:76
+#: src/qml/QrCodeScannerPage.qml:79
 #, kde-format
 msgid "Text found"
 msgstr "Testua aurkitu da"
 
-#: src/qml/QrCodeScannerPage.qml:78
+#: src/qml/QrCodeScannerPage.qml:81
 #, kde-format
 msgid "URL found"
 msgstr "URLa aurkitu da"
 
-#: src/qml/QrCodeScannerPage.qml:80
+#: src/qml/QrCodeScannerPage.qml:83
 #, kde-format
 msgid "Contact found"
 msgstr "Kontaktua aurkitu da"
 
-#: src/qml/QrCodeScannerPage.qml:82
+#: src/qml/QrCodeScannerPage.qml:85
 #, kde-format
 msgid "OTP URI found"
 msgstr "OTPren URI aurkitu da"
 
-#: src/qml/QrCodeScannerPage.qml:84
+#: src/qml/QrCodeScannerPage.qml:87
 #, kde-format
 msgid "Binary data found"
 msgstr "Datu bitarrak aurkitu dira"
 
-#: src/qml/QrCodeScannerPage.qml:86
+#: src/qml/QrCodeScannerPage.qml:89
 #, kde-format
 msgid "Health certificate found"
 msgstr "Osasun ziurtagiria aurkitu da"
 
-#: src/qml/QrCodeScannerPage.qml:88
+#: src/qml/QrCodeScannerPage.qml:91
 #, kde-format
 msgid "Transport ticket found"
 msgstr "Garraio-txartela aurkitu da"
 
-#: src/qml/QrCodeScannerPage.qml:90
+#: src/qml/QrCodeScannerPage.qml:93
 #, kde-format
 msgid "ISBN found"
 msgstr "ISBN aurkitu da"
 
-#: src/qml/QrCodeScannerPage.qml:92
+#: src/qml/QrCodeScannerPage.qml:95
 #, kde-format
 msgid "International Article Number found"
 msgstr "Nazioarteko artikulu zenbakia aurkitu da"
 
-#: src/qml/QrCodeScannerPage.qml:94
+#: src/qml/QrCodeScannerPage.qml:97
 #, kde-format
 msgid "Wi-Fi settings found"
 msgstr "Wi-Fi ezarpenak aurkitu dira"
 
-#: src/qml/QrCodeScannerPage.qml:121
+#: src/qml/QrCodeScannerPage.qml:124
 #, kde-format
 msgid "<binary data>"
 msgstr "<datu bitarrak>"
 
-#: src/qml/QrCodeScannerPage.qml:156
+#: src/qml/QrCodeScannerPage.qml:159
 #, kde-format
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
 msgstr "Konektatzen…"
 
-#: src/qml/QrCodeScannerPage.qml:164
+#: src/qml/QrCodeScannerPage.qml:167
 #, kde-format
 msgid "Open"
 msgstr "Ireki"
 
-#: src/qml/QrCodeScannerPage.qml:166
+#: src/qml/QrCodeScannerPage.qml:169
 #, kde-format
 msgid "Save contact"
 msgstr "Gorde kontaktua"
 
-#: src/qml/QrCodeScannerPage.qml:168
+#: src/qml/QrCodeScannerPage.qml:171
 #, kde-format
 msgid "Open OTP client"
 msgstr "Ireki OTP bezeroa"
 
-#: src/qml/QrCodeScannerPage.qml:170
+#: src/qml/QrCodeScannerPage.qml:173
 #, kde-format
 msgid "Open Food Facts"
 msgstr "Open Food Facts"
 
-#: src/qml/QrCodeScannerPage.qml:172
+#: src/qml/QrCodeScannerPage.qml:175
 #, kde-format
 msgid "Wikipedia Book Sources"
 msgstr "Wikipedia Liburu bilatzailea"
 
-#: src/qml/QrCodeScannerPage.qml:174
+#: src/qml/QrCodeScannerPage.qml:177
 #, kde-format
 msgid "Open KDE Itinerary"
 msgstr "Ireki KDE Itinerary"
 
-#: src/qml/QrCodeScannerPage.qml:176
+#: src/qml/QrCodeScannerPage.qml:179
 #, kde-format
 msgid "Open in Vakzination"
 msgstr "Ireki «Vakzination»ekin"
 
-#: src/qml/QrCodeScannerPage.qml:178
+#: src/qml/QrCodeScannerPage.qml:181
 #, kde-format
 msgid "Connect"
 msgstr "Konektatu"
 
-#: src/qml/QrCodeScannerPage.qml:247
+#: src/qml/QrCodeScannerPage.qml:250
 #, kde-format
 msgid "Copy to clipboard"
 msgstr "Kopiatu arbelera"
 
-#: src/qml/QrCodeScannerPage.qml:330
+#: src/qml/QrCodeScannerPage.qml:333
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an image file"
 msgstr "Aukeratu fitxategi-irudi bat"
 
-#: src/qml/QrCodeScannerPage.qml:331
+#: src/qml/QrCodeScannerPage.qml:334
 #, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "Irudi fitxategiak (*.jpeg *.jpg *.jxl *.png)"
 
-#: src/qml/QrCodeScannerPage.qml:345
+#: src/qml/QrCodeScannerPage.qml:348
 #, kde-format
 msgid "No QR code found in the image"
 msgstr "Irudian ez da QR koderik aurkitu"
