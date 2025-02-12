@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: CC0-1.0
 
 Dependencies:
- - 'on': ['Linux/Qt6', 'FreeBSD/Qt6', 'Android/Qt6', 'Windows/Qt6']
+ - 'on': ['Linux', 'FreeBSD', 'Android', 'Windows']
    'require':
     'frameworks/extra-cmake-modules': '@latest-kf6'
     'frameworks/kirigami': '@latest-kf6'
@@ -12,13 +12,13 @@ Dependencies:
     'frameworks/knotifications': '@latest-kf6'
     'frameworks/prison': '@latest-kf6'
 
- - 'on': ['Linux/Qt6', 'FreeBSD/Qt6']
+ - 'on': ['Linux', 'FreeBSD']
    'require':
     'frameworks/kservice': '@latest-kf6'
     'frameworks/kio': '@latest-kf6'
     'frameworks/kcrash': '@latest-kf6'
 
- - 'on': ['Linux/Qt6']
+ - 'on': ['Linux']
    'require':
     'frameworks/networkmanager-qt': '@latest-kf6'
 
