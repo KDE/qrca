@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-11 00:44+0000\n"
-"PO-Revision-Date: 2023-11-10 19:09+0100\n"
+"PO-Revision-Date: 2025-02-12 22:59+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
 "Language: eo\n"
@@ -198,11 +198,10 @@ msgid "<binary data>"
 msgstr "<duumaj datumoj>"
 
 #: src/qml/QrCodeScannerPage.qml:159
-#, fuzzy, kde-format
-#| msgid "Connect"
+#, kde-format
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
-msgstr "Konekti"
+msgstr "Konektante…"
 
 #: src/qml/QrCodeScannerPage.qml:167
 #, kde-format
@@ -253,36 +252,20 @@ msgstr "Kopii al tondujo"
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an image file"
-msgstr ""
+msgstr "Elekti bilddosieron"
 
 #: src/qml/QrCodeScannerPage.qml:334
-#, fuzzy, kde-format
-#| msgid "Image files (*.png *.jpg)"
+#, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
-msgstr "Bilddosieroj (*.png *.jpg)"
+msgstr "Bilddosieroj (*.png *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:348
 #, kde-format
 msgid "No QR code found in the image"
-msgstr ""
+msgstr "Neniu QR-kodo trovita en la bildo"
 
 #: src/Qrca.cpp:272
 #, kde-format
 msgid "Failed to find wifi device"
-msgstr ""
-
-#~ msgid "Share"
-#~ msgstr "Kunhavigi"
-
-#~ msgid "QR-Code could not be saved to temporary location"
-#~ msgstr "QR-Kodo ne povis esti konservita en provizora loko"
-
-#~ msgid "Share Qr-Code"
-#~ msgstr "Kunhavigi Qr-Kodon"
-
-#~ msgid "Sharing Failed"
-#~ msgstr "Kunhavigo Malsukcesis"
-
-#~ msgid "Share QR-Code"
-#~ msgstr "Kunhavigi QR-Kodon"
+msgstr "Malsukcesis trovi vifian aparaton"

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-11 00:44+0000\n"
-"PO-Revision-Date: 2025-01-28 18:45+0200\n"
+"PO-Revision-Date: 2025-02-11 09:48+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
 "Language: lv\n"
@@ -119,15 +119,14 @@ msgid "Copy"
 msgstr "Kopēt"
 
 #: src/qml/QrCodeScannerPage.qml:26
-#, fuzzy, kde-format
-#| msgid "Scan only for Wifi network QR-Codes"
+#, kde-format
 msgid "Scan for Wifi code"
-msgstr "Skenēt tikai „Wi-Fi“ tīklu kvadrātkodus"
+msgstr "Skenēt tikai „Wi-Fi“ kodu"
 
 #: src/qml/QrCodeScannerPage.qml:26
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "Skenēt kvadrātkodu"
 
 #: src/qml/QrCodeScannerPage.qml:30
 #, kde-format
@@ -142,7 +141,7 @@ msgstr "Atlasiet kameru"
 #: src/qml/QrCodeScannerPage.qml:44
 #, kde-format
 msgid "Open Image"
-msgstr ""
+msgstr "Atvērt attēlu"
 
 #: src/qml/QrCodeScannerPage.qml:79
 #, kde-format
@@ -254,19 +253,18 @@ msgstr "Kopēt starpliktuvē"
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an image file"
-msgstr ""
+msgstr "Izvēlieties attēla datni"
 
 #: src/qml/QrCodeScannerPage.qml:334
-#, fuzzy, kde-format
-#| msgid "Image files (*.png *.jpg)"
+#, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
-msgstr "Attēlu datnes (*.png *.jpg)"
+msgstr "Attēla datnes (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:348
 #, kde-format
 msgid "No QR code found in the image"
-msgstr ""
+msgstr "Attēlā nav atrasts kvadrātkods"
 
 #: src/Qrca.cpp:272
 #, kde-format
