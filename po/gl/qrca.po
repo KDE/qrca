@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-11 00:44+0000\n"
-"PO-Revision-Date: 2025-01-26 17:24+0100\n"
+"PO-Revision-Date: 2025-02-14 08:10+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
 "Language: gl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.1\n"
+"X-Generator: Lokalize 24.12.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -25,7 +25,7 @@ msgstr "Adrian Chaves (Gallaecio)"
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "adrian@chaves.io"
+msgstr "adrian@chaves.gal"
 
 #: src/main.cpp:60
 #, kde-format
@@ -118,15 +118,14 @@ msgid "Copy"
 msgstr "Copiar"
 
 #: src/qml/QrCodeScannerPage.qml:26
-#, fuzzy, kde-format
-#| msgid "Scan only for Wifi network QR-Codes"
+#, kde-format
 msgid "Scan for Wifi code"
-msgstr "Buscar só códigos QR de redes wifi."
+msgstr "Buscar un código de wifi"
 
 #: src/qml/QrCodeScannerPage.qml:26
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "Buscar un código QR"
 
 #: src/qml/QrCodeScannerPage.qml:30
 #, kde-format
@@ -141,7 +140,7 @@ msgstr "Escoller unha cámara"
 #: src/qml/QrCodeScannerPage.qml:44
 #, kde-format
 msgid "Open Image"
-msgstr ""
+msgstr "Abrir unha imaxe"
 
 #: src/qml/QrCodeScannerPage.qml:79
 #, kde-format
@@ -253,19 +252,18 @@ msgstr "Copiar no portapapeis"
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an image file"
-msgstr ""
+msgstr "Escolla un ficheiro de imaxe"
 
 #: src/qml/QrCodeScannerPage.qml:334
-#, fuzzy, kde-format
-#| msgid "Image files (*.png *.jpg)"
+#, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
-msgstr "Ficheiros de imaxe (*.png *.jpg)"
+msgstr "Ficheiros de imaxe (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:348
 #, kde-format
 msgid "No QR code found in the image"
-msgstr ""
+msgstr "Non se atopou ningún código QR na imaxe."
 
 #: src/Qrca.cpp:272
 #, kde-format
