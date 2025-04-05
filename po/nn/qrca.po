@@ -201,7 +201,6 @@ msgstr "<binærdata>"
 
 #: src/qml/QrCodeScannerPage.qml:159
 #, fuzzy, kde-format
-#| msgid "Connect"
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
 msgstr "Kopla til"
@@ -259,7 +258,6 @@ msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:334
 #, fuzzy, kde-format
-#| msgid "Image files (*.png *.jpg)"
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "Biletfiler (*.png *.jpg)"
