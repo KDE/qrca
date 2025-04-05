@@ -31,6 +31,7 @@
   <name xml:lang="pl">Czytnik kodów kreskowych</name>
   <name xml:lang="pt">Analisador de Códigos de Barras</name>
   <name xml:lang="pt-BR">Leitor de código de barras</name>
+  <name xml:lang="ru">Сканер штрихкодов</name>
   <name xml:lang="sa">बारकोड स्कैनर</name>
   <name xml:lang="sk">Cítačka čiarových kódov</name>
   <name xml:lang="sl">Skener črtne kode</name>
@@ -70,6 +71,7 @@
   <summary xml:lang="pl">Skanuj i twórz kody QR</summary>
   <summary xml:lang="pt">Digitalizar e criar códigos QR</summary>
   <summary xml:lang="pt-BR">Leia e crie códigos QR</summary>
+  <summary xml:lang="ru">Сканирование и создание QR-кодов</summary>
   <summary xml:lang="sa">स्कैन् कृत्वा QR-Codes रचयन्तु</summary>
   <summary xml:lang="sk">Cítanie a vytváranie QR kódov</summary>
   <summary xml:lang="sl">Skenira in kreira kode QR</summary>
@@ -118,6 +120,7 @@
     <p xml:lang="pl">Skanuj kody QR przez aparat w telefonie lub laptopie i twórz swoje własne kody, żeby móc je łatwo udostępniać pomiędzy urządzeniami. </p>
     <p xml:lang="pt">Digitalize códigos QR com a sua câmara nos telemóveis e portáteis ou crie os seus próprios para partilhar facilmente dados entre dispositivos.</p>
     <p xml:lang="pt-BR">Leia códigos QR com sua câmera em celulares e laptops e crie seus próprios para compartilhar facilmente dados entre dispositivos.</p>
+    <p xml:lang="ru">Программа позволяет сканировать QR-коды с помощью камер на телефонах и ноутбуках, а также создавать свои собственные QR-коды для упрощения обмена данными между устройствами.</p>
     <p xml:lang="sa">दूरभाषेषु लैपटॉपेषु च स्वस्य कॅमेरेण QR-कोड्स् स्कैन् कुर्वन्तु, तथा च उपकरणानां मध्ये सहजतया आँकडानां साझेदारी कर्तुं स्वकीयं रचयन्तु।</p>
     <p xml:lang="sl">S telefonom skenirajte kode QR na telefonih in prenosnikih ter ustvarite svoje za preprosto izmenjavo podatkov med napravami.</p>
     <p xml:lang="sv">Läs av QR-koder med kameran på telefoner och bärbara datorer, och skapa egna för att enkelt dela data mellan apparater.</p>
