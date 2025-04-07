@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the qrca package.
-# Shinjo Park <kde@peremen.name>, 2020, 2021, 2023.
+# SPDX-FileCopyrightText: 2020, 2021, 2023, 2025 Shinjo Park <kde@peremen.name>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-02-11 00:44+0000\n"
-"PO-Revision-Date: 2023-07-25 01:18+0200\n"
+"PO-Revision-Date: 2025-04-07 00:47+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -55,7 +55,7 @@ msgstr "Simon Schmeißer"
 #: src/main.cpp:85
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
-msgstr ""
+msgstr "Wi-Fi 네트워크 QR 코드만 스캔"
 
 #: src/notificationmanager.cpp:19
 #, kde-format
@@ -115,17 +115,17 @@ msgstr "QR 코드를 저장할 수 없음"
 #: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
 msgid "Copy"
-msgstr ""
+msgstr "복사"
 
 #: src/qml/QrCodeScannerPage.qml:26
 #, kde-format
 msgid "Scan for Wifi code"
-msgstr ""
+msgstr "Wi-Fi 코드 스캔"
 
 #: src/qml/QrCodeScannerPage.qml:26
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "QR 코드 스캔"
 
 #: src/qml/QrCodeScannerPage.qml:30
 #, kde-format
@@ -140,7 +140,7 @@ msgstr "카메라 선택"
 #: src/qml/QrCodeScannerPage.qml:44
 #, kde-format
 msgid "Open Image"
-msgstr ""
+msgstr "그림 열기"
 
 #: src/qml/QrCodeScannerPage.qml:79
 #, kde-format
@@ -198,11 +198,10 @@ msgid "<binary data>"
 msgstr "<이진 데이터>"
 
 #: src/qml/QrCodeScannerPage.qml:159
-#, fuzzy, kde-format
-#| msgid "Connect"
+#, kde-format
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
-msgstr "연결"
+msgstr "연결 중..."
 
 #: src/qml/QrCodeScannerPage.qml:167
 #, kde-format
@@ -253,24 +252,23 @@ msgstr "클립보드에 복사"
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an image file"
-msgstr ""
+msgstr "그림 파일 선택"
 
 #: src/qml/QrCodeScannerPage.qml:334
-#, fuzzy, kde-format
-#| msgid "Image files (*.png *.jpg)"
+#, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
-msgstr "그림 파일 (*.png *.jpg)"
+msgstr "그림 파일 (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:348
 #, kde-format
 msgid "No QR code found in the image"
-msgstr ""
+msgstr "그림 파일에서 QR 코드를 찾을 수 없음"
 
 #: src/Qrca.cpp:272
 #, kde-format
 msgid "Failed to find wifi device"
-msgstr ""
+msgstr "Wi-Fi 장치를 찾을 수 없음"
 
 #~ msgid "Share"
 #~ msgstr "공유"
