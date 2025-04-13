@@ -36,6 +36,17 @@ Kirigami.ApplicationWindow {
         }
     }
 
+    Connections {
+        target: Qrca
+        function onEncodeTextChanged() {
+            if (Qrca.encodeText) {
+                qrCodeEncoderAction.trigger();
+            } else {
+                qrCodeScannerAction.trigger();
+            }
+        }
+    }
+
     Kirigami.PagePool {
         id: mainPagePool
     }

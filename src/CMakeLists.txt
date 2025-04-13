@@ -61,7 +61,7 @@ if(ANDROID)
     )
     ecm_add_android_apk(qrca ANDROID_DIR ${CMAKE_SOURCE_DIR}/android)
 else()
-    target_link_libraries(qrca PRIVATE Qt::Widgets KF6::KIOGui KF6::Service KF6::Crash)
+    target_link_libraries(qrca PRIVATE Qt::Widgets KF6::KIOGui KF6::Service KF6::Crash KF6::DBusAddons)
 endif()
 
 install(TARGETS qrca ${KF_INSTALL_TARGETS_DEFAULT_ARGS})

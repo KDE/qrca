@@ -90,3 +90,4 @@ Type=Application
 Terminal=false
 Categories=Qt;KDE;AudioVideo;
 NoDisplay=true
+SingleMainWindow=true

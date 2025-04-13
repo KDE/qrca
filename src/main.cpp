@@ -19,6 +19,7 @@
 #include <QIcon>
 #include <QQmlApplicationEngine>
 #include <QQuickStyle>
+#include <QQuickWindow>
 #include <QUrl>
 #include <QtQml>
 
@@ -29,6 +30,7 @@
 
 #ifndef Q_OS_ANDROID
 #include <KCrash>
+#include <KDBusService>
 #endif
 
 #include "QrCodeContent.h"
@@ -36,6 +38,14 @@
 #include "Qrca.h"
 #include "clipboard.h"
 #include "notificationmanager.h"
+
+static void processCommandLine(const QCommandLineParser &parser, Qrca &qrca)
+{
+    qrca.setEncodeText(parser.value(QStringLiteral("encode")));
+#if HAVE_NETWORKMANAGER
+    qrca.setWifiMode(parser.isSet(QStringLiteral("wifi")));
+#endif
+}
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -100,6 +110,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
 #ifndef Q_OS_ANDROID
     KCrash::initialize();
+
+    KDBusService service(KDBusService::Unique);
 #endif
 
     qmlRegisterUncreatableType<QrCodeContent>("org.kde.qrca", 1, 0, "QrCodeContent", {});
@@ -118,11 +130,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qRegisterMetaType<QrCodeContent>();
 
     Qrca qrca;
-    qrca.setEncodeText(parser.value(QStringLiteral("encode")));
-#if HAVE_NETWORKMANAGER
-    qrca.setWifiMode(wifiMode);
-#endif
-
+    processCommandLine(parser, qrca);
     qmlRegisterSingletonInstance<Qrca>("org.kde.qrca", 1, 0, "Qrca", &qrca);
 
     QQmlApplicationEngine engine;
@@ -130,9 +138,22 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     engine.loadFromModule("org.kde.qrca", "Main");
 
-    if (engine.rootObjects().isEmpty()) {
-        return -1;
+    QQuickWindow *mainWindow = qobject_cast<QQuickWindow *>(engine.rootObjects().value(0));
+    if (!mainWindow) {
+        qFatal() << "Failed to create main window";
     }
+
+#ifndef Q_OS_ANDROID
+    QObject::connect(&service,
+                     &KDBusService::activateRequested,
+                     mainWindow,
+                     [&parser, &qrca, mainWindow](const QStringList &arguments, const QString &workingDirectory) {
+                         Q_UNUSED(workingDirectory);
+                         parser.parse(arguments);
+                         processCommandLine(parser, qrca);
+                         mainWindow->requestActivate();
+                     });
+#endif
 
     return app.exec();
 }
