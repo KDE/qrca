@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-11 00:44+0000\n"
+"POT-Creation-Date: 2025-04-19 00:44+0000\n"
 "PO-Revision-Date: 2023-07-05 00:32+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -26,32 +26,32 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "zepires@gmail.com"
 
-#: src/main.cpp:60
+#: src/main.cpp:70
 #, kde-format
 msgid "Qrca"
 msgstr "Qrca"
 
-#: src/main.cpp:62
+#: src/main.cpp:72
 #, kde-format
 msgid "A simple QR scanner"
 msgstr "Um analisador de QR simples"
 
-#: src/main.cpp:64
+#: src/main.cpp:74
 #, kde-format
 msgid "Copyright 2016-2019 Qrca and Kaidan authors"
 msgstr "'Copyright' 2016-2019 dos autores do Qrca e Kaidan"
 
-#: src/main.cpp:68
+#: src/main.cpp:78
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: src/main.cpp:69
+#: src/main.cpp:79
 #, kde-format
 msgid "Simon Schmeißer"
 msgstr "Simon Schmeißer"
 
-#: src/main.cpp:85
+#: src/main.cpp:95
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
 msgstr ""
@@ -66,22 +66,22 @@ msgstr "O URL partilhado da imagem é <a href='%1'>%1</a>"
 msgid "QR Code Scanner"
 msgstr "Analisador de Códigos QR"
 
-#: src/qml/Main.qml:46
+#: src/qml/Main.qml:57
 #, kde-format
 msgid "Scan"
 msgstr "Digitalizar"
 
-#: src/qml/Main.qml:53
+#: src/qml/Main.qml:64
 #, kde-format
 msgid "Create"
 msgstr "Criar"
 
-#: src/qml/Main.qml:59
+#: src/qml/Main.qml:70
 #, kde-format
 msgid "About"
 msgstr "Acerca"
 
-#: src/qml/Main.qml:70
+#: src/qml/Main.qml:81
 #, kde-format
 msgid "QR-Code Scanner"
 msgstr "Analisador de Códigos QR"

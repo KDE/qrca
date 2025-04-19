@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-02-11 00:44+0000\n"
+"POT-Creation-Date: 2025-04-19 00:44+0000\n"
 "PO-Revision-Date: 2024-12-15 17:35+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
@@ -27,32 +27,32 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "आपके ईमेल"
 
-#: src/main.cpp:60
+#: src/main.cpp:70
 #, kde-format
 msgid "Qrca"
 msgstr "क्यूआरसीए"
 
-#: src/main.cpp:62
+#: src/main.cpp:72
 #, kde-format
 msgid "A simple QR scanner"
 msgstr "एक सरल क्यूआर स्कैनर"
 
-#: src/main.cpp:64
+#: src/main.cpp:74
 #, kde-format
 msgid "Copyright 2016-2019 Qrca and Kaidan authors"
 msgstr "कॉपीराइट 2016-2019 Qrca और Kaidan लेखक"
 
-#: src/main.cpp:68
+#: src/main.cpp:78
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "जोना ब्रुचर्ट"
 
-#: src/main.cpp:69
+#: src/main.cpp:79
 #, kde-format
 msgid "Simon Schmeißer"
 msgstr "साइमन शमीसर"
 
-#: src/main.cpp:85
+#: src/main.cpp:95
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
 msgstr ""
@@ -67,22 +67,22 @@ msgstr "छवि के लिए साझा यूआरएल <a href='%1'>
 msgid "QR Code Scanner"
 msgstr "क्यूआर कोड स्कैनर"
 
-#: src/qml/Main.qml:46
+#: src/qml/Main.qml:57
 #, kde-format
 msgid "Scan"
 msgstr "स्कैन"
 
-#: src/qml/Main.qml:53
+#: src/qml/Main.qml:64
 #, kde-format
 msgid "Create"
 msgstr "बनाएं"
 
-#: src/qml/Main.qml:59
+#: src/qml/Main.qml:70
 #, kde-format
 msgid "About"
 msgstr "के बारे में"
 
-#: src/qml/Main.qml:70
+#: src/qml/Main.qml:81
 #, kde-format
 msgid "QR-Code Scanner"
 msgstr "क्यूआर-कोड स्कैनर"
