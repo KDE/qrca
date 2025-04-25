@@ -132,6 +132,14 @@
     <p xml:lang="zh-TW">使用手機或筆電上的相機掃描 QR 碼，並建立自己的 QR 碼以方便在裝置間傳輸。</p>
   </description>
   <launchable type="desktop-id">org.kde.qrca.desktop</launchable>
+    <screenshots>
+    <screenshot type="default">
+      <image>https://cdn.kde.org/screenshots/qrca/qrca_scan.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://cdn.kde.org/screenshots/qrca/qrca_create_code.png</image>
+    </screenshot>
+  </screenshots>
   <content_rating type="oars-1.1"/>
   <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=qrca</url>
   <url type="donation">https://www.kde.org/community/donations/?app=qrca&amp;source=appdata</url>
