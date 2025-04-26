@@ -74,18 +74,8 @@ Kirigami.ApplicationWindow {
         }
     ]
 
-    globalDrawer: Qrca.wifiMode ? null : drawer
-
-    Kirigami.GlobalDrawer {
-        id: drawer
-        title: i18n("QR-Code Scanner")
-        isMenu: window.wideScreen
-        actions: window.wideScreen ? navigationActions : []
-        enabled: window.wideScreen
-    }
-
     footer: Kirigami.NavigationTabBar {
-        visible: !window.wideScreen && !Qrca.wifiMode
+        visible: !Qrca.wifiMode
         actions: navigationActions
     }
 
