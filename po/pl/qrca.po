@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-19 00:44+0000\n"
+"POT-Creation-Date: 2025-04-27 00:45+0000\n"
 "PO-Revision-Date: 2025-02-08 17:34+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -83,11 +83,6 @@ msgstr "Utwórz"
 #, kde-format
 msgid "About"
 msgstr "O programie"
-
-#: src/qml/Main.qml:81
-#, kde-format
-msgid "QR-Code Scanner"
-msgstr "Skaner kodów QR"
 
 #: src/qml/QrCodeEncoderPage.qml:18
 #, kde-format
@@ -271,6 +266,9 @@ msgstr "Nie znaleziono żadnego kodu QR na obrazie"
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Nie udało się znaleźć urządzenia Wifi"
+
+#~ msgid "QR-Code Scanner"
+#~ msgstr "Skaner kodów QR"
 
 #~ msgid "Share"
 #~ msgstr "Udostępnij"

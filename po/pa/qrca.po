@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-19 00:44+0000\n"
+"POT-Creation-Date: 2025-04-27 00:45+0000\n"
 "PO-Revision-Date: 2024-01-01 08:26-0600\n"
 "Last-Translator: A S Alam <aalam@punlinux.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -81,11 +81,6 @@ msgstr "ਬਣਾਓ"
 #, kde-format
 msgid "About"
 msgstr "ਇਸ ਬਾਰੇ"
-
-#: src/qml/Main.qml:81
-#, kde-format
-msgid "QR-Code Scanner"
-msgstr "QR-ਕੋਡ ਸਕੈਨਰ"
 
 #: src/qml/QrCodeEncoderPage.qml:18
 #, kde-format
@@ -271,6 +266,9 @@ msgstr ""
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr ""
+
+#~ msgid "QR-Code Scanner"
+#~ msgstr "QR-ਕੋਡ ਸਕੈਨਰ"
 
 #~ msgid "Share"
 #~ msgstr "ਸਾਂਝਾ ਕਰੋ"

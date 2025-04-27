@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-19 00:44+0000\n"
+"POT-Creation-Date: 2025-04-27 00:45+0000\n"
 "PO-Revision-Date: 2025-02-12 22:59+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -81,11 +81,6 @@ msgstr "Krei"
 #, kde-format
 msgid "About"
 msgstr "Pri"
-
-#: src/qml/Main.qml:81
-#, kde-format
-msgid "QR-Code Scanner"
-msgstr "QR-Koda Skanilo"
 
 #: src/qml/QrCodeEncoderPage.qml:18
 #, kde-format
@@ -269,3 +264,6 @@ msgstr "Neniu QR-kodo trovita en la bildo"
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Malsukcesis trovi vifian aparaton"
+
+#~ msgid "QR-Code Scanner"
+#~ msgstr "QR-Koda Skanilo"

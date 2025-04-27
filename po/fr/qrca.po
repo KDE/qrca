@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-19 00:44+0000\n"
+"POT-Creation-Date: 2025-04-27 00:45+0000\n"
 "PO-Revision-Date: 2025-02-03 09:32+0100\n"
 "Last-Translator: Xavier Besnard <xavier.besnard@kde.org>\n"
 "Language-Team: French <French <kde-francophone@kde.org>>\n"
@@ -79,11 +79,6 @@ msgstr "Créer"
 #, kde-format
 msgid "About"
 msgstr "À propos"
-
-#: src/qml/Main.qml:81
-#, kde-format
-msgid "QR-Code Scanner"
-msgstr "Scanner de code QR"
 
 #: src/qml/QrCodeEncoderPage.qml:18
 #, kde-format
@@ -267,6 +262,9 @@ msgstr "Aucun code « QR » n'a été trouvé dans l'image."
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Impossible de trouver des périphériques Wifi"
+
+#~ msgid "QR-Code Scanner"
+#~ msgstr "Scanner de code QR"
 
 #~ msgid "Share"
 #~ msgstr "Partager"

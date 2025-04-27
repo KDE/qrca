@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-19 00:44+0000\n"
+"POT-Creation-Date: 2025-04-27 00:45+0000\n"
 "PO-Revision-Date: 2024-04-22 15:58\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -81,11 +81,6 @@ msgstr "创建"
 #, kde-format
 msgid "About"
 msgstr "关于"
-
-#: src/qml/Main.qml:81
-#, kde-format
-msgid "QR-Code Scanner"
-msgstr "二维码扫描器"
 
 #: src/qml/QrCodeEncoderPage.qml:18
 #, kde-format
@@ -269,3 +264,6 @@ msgstr "图像中没有找到二维码"
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "查找 WiFi 设备失败"
+
+#~ msgid "QR-Code Scanner"
+#~ msgstr "二维码扫描器"

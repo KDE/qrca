@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-19 00:44+0000\n"
+"POT-Creation-Date: 2025-04-27 00:45+0000\n"
 "PO-Revision-Date: 2025-04-07 00:47+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -81,11 +81,6 @@ msgstr "만들기"
 #, kde-format
 msgid "About"
 msgstr "정보"
-
-#: src/qml/Main.qml:81
-#, kde-format
-msgid "QR-Code Scanner"
-msgstr "QR 코드 스캐너"
 
 #: src/qml/QrCodeEncoderPage.qml:18
 #, kde-format
@@ -269,6 +264,9 @@ msgstr "그림 파일에서 QR 코드를 찾을 수 없음"
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Wi-Fi 장치를 찾을 수 없음"
+
+#~ msgid "QR-Code Scanner"
+#~ msgstr "QR 코드 스캐너"
 
 #~ msgid "Share"
 #~ msgstr "공유"

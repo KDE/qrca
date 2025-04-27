@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-19 00:44+0000\n"
+"POT-Creation-Date: 2025-04-27 00:45+0000\n"
 "PO-Revision-Date: 2025-02-02 20:23+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -84,11 +84,6 @@ msgstr "Sortu"
 #, kde-format
 msgid "About"
 msgstr "Honi buruz"
-
-#: src/qml/Main.qml:81
-#, kde-format
-msgid "QR-Code Scanner"
-msgstr "QR kodeen eskanerra"
 
 #: src/qml/QrCodeEncoderPage.qml:18
 #, kde-format
@@ -272,6 +267,9 @@ msgstr "Irudian ez da QR koderik aurkitu"
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Wi-Fi gailua bilatzea huts egin du"
+
+#~ msgid "QR-Code Scanner"
+#~ msgstr "QR kodeen eskanerra"
 
 #~ msgid "Share"
 #~ msgstr "Partekatu"

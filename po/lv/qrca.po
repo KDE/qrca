@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-19 00:44+0000\n"
+"POT-Creation-Date: 2025-04-27 00:45+0000\n"
 "PO-Revision-Date: 2025-02-11 09:48+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -82,11 +82,6 @@ msgstr "Izveidot"
 #, kde-format
 msgid "About"
 msgstr "Par"
-
-#: src/qml/Main.qml:81
-#, kde-format
-msgid "QR-Code Scanner"
-msgstr "Kvadrātkodu skeneris"
 
 #: src/qml/QrCodeEncoderPage.qml:18
 #, kde-format
@@ -270,6 +265,9 @@ msgstr "Attēlā nav atrasts kvadrātkods"
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Neizdevās atrast „Wi-Fi“ ierīci"
+
+#~ msgid "QR-Code Scanner"
+#~ msgstr "Kvadrātkodu skeneris"
 
 #~ msgid "Share"
 #~ msgstr "Kopīgot"

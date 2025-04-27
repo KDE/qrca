@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-19 00:44+0000\n"
+"POT-Creation-Date: 2025-04-27 00:45+0000\n"
 "PO-Revision-Date: 2025-02-02 10:11+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
@@ -84,11 +84,6 @@ msgstr "Створити"
 #, kde-format
 msgid "About"
 msgstr "Про програму"
-
-#: src/qml/Main.qml:81
-#, kde-format
-msgid "QR-Code Scanner"
-msgstr "Засіб сканування QR-кодів"
 
 #: src/qml/QrCodeEncoderPage.qml:18
 #, kde-format
@@ -272,6 +267,9 @@ msgstr "У зображенні не виявлено QR-коду"
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Не вдалося знайти пристрій WiFi"
+
+#~ msgid "QR-Code Scanner"
+#~ msgstr "Засіб сканування QR-кодів"
 
 #~ msgid "Share"
 #~ msgstr "Оприлюднити"
