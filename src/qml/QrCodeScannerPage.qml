@@ -276,6 +276,7 @@ Kirigami.Page {
                     camera.cameraDevice = modelData;
                     camera.start();
                     cameraSelectorSheet.close();
+                    scanner_settings.camera_id = modelData.id
                 }
             }
         }
@@ -323,9 +324,21 @@ Kirigami.Page {
         anchors.fill: parent
     }
 
+    Settings {
+        id: scanner_settings
+        property string camera_id: ""
+    }
+
     Component.onCompleted: {
         if (permission.status == Qt.PermissionStatus.Undetermined)
             permission.request();
+
+        // Try to restore the previously selected camera
+        for (let i = 0; i < devices.videoInputs.length; i++) {
+            if (devices.videoInputs[i].id == scanner_settings.camera_id) {
+                camera.cameraDevice = devices.videoInputs[i];
+            }
+        }
     }
 
     FileDialog {
