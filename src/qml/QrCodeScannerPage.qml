@@ -2,6 +2,7 @@
  *  SPDX-FileCopyrightText: 2020 Nicolas Fella <nicolas.fella@gmx.de>
  *  SPDX-FileCopyrightText: 2016-2019 Kaidan developers and contributors (see the LICENSE file of Kaidan for a full list of copyright authors)
  *  SPDX-FileCopyrightText: 2025 Kai Uwe Broulik <kde@broulik.de>
+ *  SPDX-FileCopyrightText: 2025 Salvo 'LtWorf' Tomaselli <ltworf@debian.org>
  *
  *  SPDX-License-Identifier: GPL-3.0-or-later
  */
@@ -18,10 +19,36 @@ import QtQuick.Dialogs
 import org.kde.qrca 1.0
 
 Kirigami.Page {
+    id: scanner
     leftPadding: 0
     rightPadding: 0
     topPadding: 0
     bottomPadding: 0
+    property bool windowActive: Controls.ApplicationWindow.window.active
+
+    onWindowActiveChanged: {
+        // Deactivate camera on mobile, if the window is inactive
+        if (! Kirigami.Settings.isMobile)
+            return
+
+        if (scanner.windowActive) {
+            camera.start()
+            deactivateCamera.running = false
+        } else {
+            deactivateCamera.running = true
+        }
+    }
+
+    Timer {
+        id: deactivateCamera
+        interval: 1000 * 5
+        repeat: false
+        running: false
+        triggeredOnStart: false
+        onTriggered: {
+            camera.stop()
+        }
+    }
 
     title: Qrca.wifiMode ? i18n("Scan for Wifi code") : i18n("Scan QR code")
     actions: [
