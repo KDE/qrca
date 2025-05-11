@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-27 00:45+0000\n"
+"POT-Creation-Date: 2025-05-11 00:46+0000\n"
 "PO-Revision-Date: 2025-02-03 16:59+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -244,19 +244,19 @@ msgstr "اتّصل"
 msgid "Copy to clipboard"
 msgstr "انسخ إلى الحافظة"
 
-#: src/qml/QrCodeScannerPage.qml:333
+#: src/qml/QrCodeScannerPage.qml:346
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an image file"
 msgstr "اختر ملف صورة"
 
-#: src/qml/QrCodeScannerPage.qml:334
+#: src/qml/QrCodeScannerPage.qml:347
 #, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "ملفات الصور (*.jpeg *.jpg *.jxl *.png)"
 
-#: src/qml/QrCodeScannerPage.qml:348
+#: src/qml/QrCodeScannerPage.qml:361
 #, kde-format
 msgid "No QR code found in the image"
 msgstr "لا يعثر على رمز استجابة سريع في الصوة"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-04-27 00:45+0000\n"
+"POT-Creation-Date: 2025-05-11 00:46+0000\n"
 "PO-Revision-Date: 2025-02-02 08:55+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -247,19 +247,19 @@ msgstr "Connecta"
 msgid "Copy to clipboard"
 msgstr "Copia al porta-retalls"
 
-#: src/qml/QrCodeScannerPage.qml:333
+#: src/qml/QrCodeScannerPage.qml:346
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an image file"
 msgstr "Trieu un fitxer d'imatge"
 
-#: src/qml/QrCodeScannerPage.qml:334
+#: src/qml/QrCodeScannerPage.qml:347
 #, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "Fitxers d'imatge (*.jpeg *.jpg *.jxl *.png)"
 
-#: src/qml/QrCodeScannerPage.qml:348
+#: src/qml/QrCodeScannerPage.qml:361
 #, kde-format
 msgid "No QR code found in the image"
 msgstr "No s'ha trobat cap codi QR a la imatge"
