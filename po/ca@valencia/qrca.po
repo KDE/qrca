@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-11 00:46+0000\n"
+"POT-Creation-Date: 2025-05-13 00:45+0000\n"
 "PO-Revision-Date: 2025-02-02 08:55+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -115,151 +115,151 @@ msgstr "No s'ha pogut guardar el codi QR"
 msgid "Copy"
 msgstr "Copia"
 
-#: src/qml/QrCodeScannerPage.qml:26
+#: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
 msgid "Scan for Wifi code"
 msgstr "Escaneja el codi Wifi"
 
-#: src/qml/QrCodeScannerPage.qml:26
+#: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
 msgid "Scan QR code"
 msgstr "Escaneja un codi QR"
 
-#: src/qml/QrCodeScannerPage.qml:30
+#: src/qml/QrCodeScannerPage.qml:57
 #, kde-format
 msgid "Light"
 msgstr "Llum"
 
-#: src/qml/QrCodeScannerPage.qml:37 src/qml/QrCodeScannerPage.qml:265
+#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:292
 #, kde-format
 msgid "Select Camera"
 msgstr "Seleccioneu la càmera"
 
-#: src/qml/QrCodeScannerPage.qml:44
+#: src/qml/QrCodeScannerPage.qml:71
 #, kde-format
 msgid "Open Image"
 msgstr "Obri una imatge"
 
-#: src/qml/QrCodeScannerPage.qml:79
+#: src/qml/QrCodeScannerPage.qml:106
 #, kde-format
 msgid "Text found"
 msgstr "Text trobat"
 
-#: src/qml/QrCodeScannerPage.qml:81
+#: src/qml/QrCodeScannerPage.qml:108
 #, kde-format
 msgid "URL found"
 msgstr "S'ha trobat un URL"
 
-#: src/qml/QrCodeScannerPage.qml:83
+#: src/qml/QrCodeScannerPage.qml:110
 #, kde-format
 msgid "Contact found"
 msgstr "S'ha trobat un contacte"
 
-#: src/qml/QrCodeScannerPage.qml:85
+#: src/qml/QrCodeScannerPage.qml:112
 #, kde-format
 msgid "OTP URI found"
 msgstr "S'ha trobat un URI d'OTP"
 
-#: src/qml/QrCodeScannerPage.qml:87
+#: src/qml/QrCodeScannerPage.qml:114
 #, kde-format
 msgid "Binary data found"
 msgstr "No s'han trobat les dades binàries"
 
-#: src/qml/QrCodeScannerPage.qml:89
+#: src/qml/QrCodeScannerPage.qml:116
 #, kde-format
 msgid "Health certificate found"
 msgstr "S'ha trobat un certificat de salut"
 
-#: src/qml/QrCodeScannerPage.qml:91
+#: src/qml/QrCodeScannerPage.qml:118
 #, kde-format
 msgid "Transport ticket found"
 msgstr "S'ha trobat un bitllet de transport"
 
-#: src/qml/QrCodeScannerPage.qml:93
+#: src/qml/QrCodeScannerPage.qml:120
 #, kde-format
 msgid "ISBN found"
 msgstr "S'ha trobat un ISBN"
 
-#: src/qml/QrCodeScannerPage.qml:95
+#: src/qml/QrCodeScannerPage.qml:122
 #, kde-format
 msgid "International Article Number found"
 msgstr "S'ha trobat un número internacional d'article"
 
-#: src/qml/QrCodeScannerPage.qml:97
+#: src/qml/QrCodeScannerPage.qml:124
 #, kde-format
 msgid "Wi-Fi settings found"
 msgstr "S'ha trobat la configuració de la Wi-Fi"
 
-#: src/qml/QrCodeScannerPage.qml:124
+#: src/qml/QrCodeScannerPage.qml:151
 #, kde-format
 msgid "<binary data>"
 msgstr "<dades binàries>"
 
-#: src/qml/QrCodeScannerPage.qml:159
+#: src/qml/QrCodeScannerPage.qml:186
 #, kde-format
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
 msgstr "S'està connectant…"
 
-#: src/qml/QrCodeScannerPage.qml:167
+#: src/qml/QrCodeScannerPage.qml:194
 #, kde-format
 msgid "Open"
 msgstr "Obri"
 
-#: src/qml/QrCodeScannerPage.qml:169
+#: src/qml/QrCodeScannerPage.qml:196
 #, kde-format
 msgid "Save contact"
 msgstr "Guarda el contacte"
 
-#: src/qml/QrCodeScannerPage.qml:171
+#: src/qml/QrCodeScannerPage.qml:198
 #, kde-format
 msgid "Open OTP client"
 msgstr "Obri el client OTP"
 
 # "Open Food Facts" és una marca que ara mateix no té traducció
-#: src/qml/QrCodeScannerPage.qml:173
+#: src/qml/QrCodeScannerPage.qml:200
 #, kde-format
 msgid "Open Food Facts"
 msgstr "Open Food Facts"
 
-#: src/qml/QrCodeScannerPage.qml:175
+#: src/qml/QrCodeScannerPage.qml:202
 #, kde-format
 msgid "Wikipedia Book Sources"
 msgstr "Obris de referència de la Viquipèdia"
 
-#: src/qml/QrCodeScannerPage.qml:177
+#: src/qml/QrCodeScannerPage.qml:204
 #, kde-format
 msgid "Open KDE Itinerary"
 msgstr "Obri en KDE Itinerary"
 
-#: src/qml/QrCodeScannerPage.qml:179
+#: src/qml/QrCodeScannerPage.qml:206
 #, kde-format
 msgid "Open in Vakzination"
 msgstr "Open en Vakzination"
 
-#: src/qml/QrCodeScannerPage.qml:181
+#: src/qml/QrCodeScannerPage.qml:208
 #, kde-format
 msgid "Connect"
 msgstr "Connecta"
 
-#: src/qml/QrCodeScannerPage.qml:250
+#: src/qml/QrCodeScannerPage.qml:277
 #, kde-format
 msgid "Copy to clipboard"
 msgstr "Copia a dins del porta-retalls"
 
-#: src/qml/QrCodeScannerPage.qml:346
+#: src/qml/QrCodeScannerPage.qml:373
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an image file"
 msgstr "Seleccioneu un fitxer d'imatge"
 
-#: src/qml/QrCodeScannerPage.qml:347
+#: src/qml/QrCodeScannerPage.qml:374
 #, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "Fitxers d'imatge (*.jpeg *.jpg *.jxl *.png)"
 
-#: src/qml/QrCodeScannerPage.qml:361
+#: src/qml/QrCodeScannerPage.qml:388
 #, kde-format
 msgid "No QR code found in the image"
 msgstr "No s'ha trobat cap codi QR a la imatge"

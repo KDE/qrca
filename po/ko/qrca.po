@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-11 00:46+0000\n"
+"POT-Creation-Date: 2025-05-13 00:45+0000\n"
 "PO-Revision-Date: 2025-04-07 00:47+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -112,150 +112,150 @@ msgstr "QR 코드를 저장할 수 없음"
 msgid "Copy"
 msgstr "복사"
 
-#: src/qml/QrCodeScannerPage.qml:26
+#: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
 msgid "Scan for Wifi code"
 msgstr "Wi-Fi 코드 스캔"
 
-#: src/qml/QrCodeScannerPage.qml:26
+#: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
 msgid "Scan QR code"
 msgstr "QR 코드 스캔"
 
-#: src/qml/QrCodeScannerPage.qml:30
+#: src/qml/QrCodeScannerPage.qml:57
 #, kde-format
 msgid "Light"
 msgstr "조명"
 
-#: src/qml/QrCodeScannerPage.qml:37 src/qml/QrCodeScannerPage.qml:265
+#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:292
 #, kde-format
 msgid "Select Camera"
 msgstr "카메라 선택"
 
-#: src/qml/QrCodeScannerPage.qml:44
+#: src/qml/QrCodeScannerPage.qml:71
 #, kde-format
 msgid "Open Image"
 msgstr "그림 열기"
 
-#: src/qml/QrCodeScannerPage.qml:79
+#: src/qml/QrCodeScannerPage.qml:106
 #, kde-format
 msgid "Text found"
 msgstr "텍스트 찾음"
 
-#: src/qml/QrCodeScannerPage.qml:81
+#: src/qml/QrCodeScannerPage.qml:108
 #, kde-format
 msgid "URL found"
 msgstr "URL 찾음"
 
-#: src/qml/QrCodeScannerPage.qml:83
+#: src/qml/QrCodeScannerPage.qml:110
 #, kde-format
 msgid "Contact found"
 msgstr "연락처 찾음"
 
-#: src/qml/QrCodeScannerPage.qml:85
+#: src/qml/QrCodeScannerPage.qml:112
 #, kde-format
 msgid "OTP URI found"
 msgstr "OTP URI 찾음"
 
-#: src/qml/QrCodeScannerPage.qml:87
+#: src/qml/QrCodeScannerPage.qml:114
 #, kde-format
 msgid "Binary data found"
 msgstr "이진 데이터 찾음"
 
-#: src/qml/QrCodeScannerPage.qml:89
+#: src/qml/QrCodeScannerPage.qml:116
 #, kde-format
 msgid "Health certificate found"
 msgstr "건강 인증서 찾음"
 
-#: src/qml/QrCodeScannerPage.qml:91
+#: src/qml/QrCodeScannerPage.qml:118
 #, kde-format
 msgid "Transport ticket found"
 msgstr "대중교통 승차권 찾음"
 
-#: src/qml/QrCodeScannerPage.qml:93
+#: src/qml/QrCodeScannerPage.qml:120
 #, kde-format
 msgid "ISBN found"
 msgstr "ISBN 찾음"
 
-#: src/qml/QrCodeScannerPage.qml:95
+#: src/qml/QrCodeScannerPage.qml:122
 #, kde-format
 msgid "International Article Number found"
 msgstr "국제 상품 번호 찾음"
 
-#: src/qml/QrCodeScannerPage.qml:97
+#: src/qml/QrCodeScannerPage.qml:124
 #, kde-format
 msgid "Wi-Fi settings found"
 msgstr "Wi-Fi 설정 찾음"
 
-#: src/qml/QrCodeScannerPage.qml:124
+#: src/qml/QrCodeScannerPage.qml:151
 #, kde-format
 msgid "<binary data>"
 msgstr "<이진 데이터>"
 
-#: src/qml/QrCodeScannerPage.qml:159
+#: src/qml/QrCodeScannerPage.qml:186
 #, kde-format
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
 msgstr "연결 중..."
 
-#: src/qml/QrCodeScannerPage.qml:167
+#: src/qml/QrCodeScannerPage.qml:194
 #, kde-format
 msgid "Open"
 msgstr "열기"
 
-#: src/qml/QrCodeScannerPage.qml:169
+#: src/qml/QrCodeScannerPage.qml:196
 #, kde-format
 msgid "Save contact"
 msgstr "연락처 저장"
 
-#: src/qml/QrCodeScannerPage.qml:171
+#: src/qml/QrCodeScannerPage.qml:198
 #, kde-format
 msgid "Open OTP client"
 msgstr "OTP 클라이언트 열기"
 
-#: src/qml/QrCodeScannerPage.qml:173
+#: src/qml/QrCodeScannerPage.qml:200
 #, kde-format
 msgid "Open Food Facts"
 msgstr "Food Facts 열기"
 
-#: src/qml/QrCodeScannerPage.qml:175
+#: src/qml/QrCodeScannerPage.qml:202
 #, kde-format
 msgid "Wikipedia Book Sources"
 msgstr "위키백과 책 참조"
 
-#: src/qml/QrCodeScannerPage.qml:177
+#: src/qml/QrCodeScannerPage.qml:204
 #, kde-format
 msgid "Open KDE Itinerary"
 msgstr "KDE 여행 정보 열기"
 
-#: src/qml/QrCodeScannerPage.qml:179
+#: src/qml/QrCodeScannerPage.qml:206
 #, kde-format
 msgid "Open in Vakzination"
 msgstr "Vakzination 열기"
 
-#: src/qml/QrCodeScannerPage.qml:181
+#: src/qml/QrCodeScannerPage.qml:208
 #, kde-format
 msgid "Connect"
 msgstr "연결"
 
-#: src/qml/QrCodeScannerPage.qml:250
+#: src/qml/QrCodeScannerPage.qml:277
 #, kde-format
 msgid "Copy to clipboard"
 msgstr "클립보드에 복사"
 
-#: src/qml/QrCodeScannerPage.qml:346
+#: src/qml/QrCodeScannerPage.qml:373
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an image file"
 msgstr "그림 파일 선택"
 
-#: src/qml/QrCodeScannerPage.qml:347
+#: src/qml/QrCodeScannerPage.qml:374
 #, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "그림 파일 (*.jpeg *.jpg *.jxl *.png)"
 
-#: src/qml/QrCodeScannerPage.qml:361
+#: src/qml/QrCodeScannerPage.qml:388
 #, kde-format
 msgid "No QR code found in the image"
 msgstr "그림 파일에서 QR 코드를 찾을 수 없음"

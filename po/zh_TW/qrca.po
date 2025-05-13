@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-11 00:46+0000\n"
+"POT-Creation-Date: 2025-05-13 00:45+0000\n"
 "PO-Revision-Date: 2025-03-27 21:51+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -116,150 +116,150 @@ msgstr "QR 碼無法儲存"
 msgid "Copy"
 msgstr "複製"
 
-#: src/qml/QrCodeScannerPage.qml:26
+#: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
 msgid "Scan for Wifi code"
 msgstr "掃描 Wifi 條碼"
 
-#: src/qml/QrCodeScannerPage.qml:26
+#: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
 msgid "Scan QR code"
 msgstr "掃描 QR 碼"
 
-#: src/qml/QrCodeScannerPage.qml:30
+#: src/qml/QrCodeScannerPage.qml:57
 #, kde-format
 msgid "Light"
 msgstr "光亮"
 
-#: src/qml/QrCodeScannerPage.qml:37 src/qml/QrCodeScannerPage.qml:265
+#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:292
 #, kde-format
 msgid "Select Camera"
 msgstr "選取相機"
 
-#: src/qml/QrCodeScannerPage.qml:44
+#: src/qml/QrCodeScannerPage.qml:71
 #, kde-format
 msgid "Open Image"
 msgstr "開啟影像"
 
-#: src/qml/QrCodeScannerPage.qml:79
+#: src/qml/QrCodeScannerPage.qml:106
 #, kde-format
 msgid "Text found"
 msgstr "找到文字"
 
-#: src/qml/QrCodeScannerPage.qml:81
+#: src/qml/QrCodeScannerPage.qml:108
 #, kde-format
 msgid "URL found"
 msgstr "找到網址"
 
-#: src/qml/QrCodeScannerPage.qml:83
+#: src/qml/QrCodeScannerPage.qml:110
 #, kde-format
 msgid "Contact found"
 msgstr "找到聯絡人"
 
-#: src/qml/QrCodeScannerPage.qml:85
+#: src/qml/QrCodeScannerPage.qml:112
 #, kde-format
 msgid "OTP URI found"
 msgstr "找到 OTP URI"
 
-#: src/qml/QrCodeScannerPage.qml:87
+#: src/qml/QrCodeScannerPage.qml:114
 #, kde-format
 msgid "Binary data found"
 msgstr "找到二進位資料"
 
-#: src/qml/QrCodeScannerPage.qml:89
+#: src/qml/QrCodeScannerPage.qml:116
 #, kde-format
 msgid "Health certificate found"
 msgstr "找到健康證明"
 
-#: src/qml/QrCodeScannerPage.qml:91
+#: src/qml/QrCodeScannerPage.qml:118
 #, kde-format
 msgid "Transport ticket found"
 msgstr "找到交通票券"
 
-#: src/qml/QrCodeScannerPage.qml:93
+#: src/qml/QrCodeScannerPage.qml:120
 #, kde-format
 msgid "ISBN found"
 msgstr "找到 ISBN"
 
-#: src/qml/QrCodeScannerPage.qml:95
+#: src/qml/QrCodeScannerPage.qml:122
 #, kde-format
 msgid "International Article Number found"
 msgstr "找到國際商品條碼"
 
-#: src/qml/QrCodeScannerPage.qml:97
+#: src/qml/QrCodeScannerPage.qml:124
 #, kde-format
 msgid "Wi-Fi settings found"
 msgstr "找到 Wi-Fi 設定"
 
-#: src/qml/QrCodeScannerPage.qml:124
+#: src/qml/QrCodeScannerPage.qml:151
 #, kde-format
 msgid "<binary data>"
 msgstr "<二進位資料>"
 
-#: src/qml/QrCodeScannerPage.qml:159
+#: src/qml/QrCodeScannerPage.qml:186
 #, kde-format
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
 msgstr "連線中…"
 
-#: src/qml/QrCodeScannerPage.qml:167
+#: src/qml/QrCodeScannerPage.qml:194
 #, kde-format
 msgid "Open"
 msgstr "開啟"
 
-#: src/qml/QrCodeScannerPage.qml:169
+#: src/qml/QrCodeScannerPage.qml:196
 #, kde-format
 msgid "Save contact"
 msgstr "儲存聯絡人"
 
-#: src/qml/QrCodeScannerPage.qml:171
+#: src/qml/QrCodeScannerPage.qml:198
 #, kde-format
 msgid "Open OTP client"
 msgstr "開啟 OTP 用戶端"
 
-#: src/qml/QrCodeScannerPage.qml:173
+#: src/qml/QrCodeScannerPage.qml:200
 #, kde-format
 msgid "Open Food Facts"
 msgstr "開啟食品資訊"
 
-#: src/qml/QrCodeScannerPage.qml:175
+#: src/qml/QrCodeScannerPage.qml:202
 #, kde-format
 msgid "Wikipedia Book Sources"
 msgstr "維基百科書本來源"
 
-#: src/qml/QrCodeScannerPage.qml:177
+#: src/qml/QrCodeScannerPage.qml:204
 #, kde-format
 msgid "Open KDE Itinerary"
 msgstr "開啟 KDE Itinerary"
 
-#: src/qml/QrCodeScannerPage.qml:179
+#: src/qml/QrCodeScannerPage.qml:206
 #, kde-format
 msgid "Open in Vakzination"
 msgstr "在 Vakzination 開啟"
 
-#: src/qml/QrCodeScannerPage.qml:181
+#: src/qml/QrCodeScannerPage.qml:208
 #, kde-format
 msgid "Connect"
 msgstr "連線"
 
-#: src/qml/QrCodeScannerPage.qml:250
+#: src/qml/QrCodeScannerPage.qml:277
 #, kde-format
 msgid "Copy to clipboard"
 msgstr "複製到剪貼簿"
 
-#: src/qml/QrCodeScannerPage.qml:346
+#: src/qml/QrCodeScannerPage.qml:373
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an image file"
 msgstr "選擇影像"
 
-#: src/qml/QrCodeScannerPage.qml:347
+#: src/qml/QrCodeScannerPage.qml:374
 #, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "影像檔 (*.jpeg *.jpg *.jxl *.png)"
 
-#: src/qml/QrCodeScannerPage.qml:361
+#: src/qml/QrCodeScannerPage.qml:388
 #, kde-format
 msgid "No QR code found in the image"
 msgstr "影像中沒有找到 QR 碼"
