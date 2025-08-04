@@ -56,7 +56,7 @@ msgstr "سيمون شمايزر"
 #: src/main.cpp:95
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
-msgstr "امسح رمز الاستجابة السرية للشبكة لا سلكية فقط"
+msgstr "امحُ رمز الاستجابة السرية للشبكة لا سلكية فقط"
 
 #: src/notificationmanager.cpp:19
 #, kde-format
@@ -71,7 +71,7 @@ msgstr "ماسح رمز الاستجابة السريعة"
 #: src/qml/Main.qml:57
 #, kde-format
 msgid "Scan"
-msgstr "امسح"
+msgstr "امحُ"
 
 #: src/qml/Main.qml:64
 #, kde-format
@@ -116,12 +116,12 @@ msgstr "انسخ"
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
 msgid "Scan for Wifi code"
-msgstr "امسح شفرة شبكة لا سلكية"
+msgstr "امحُ شفرة شبكة لا سلكية"
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
 msgid "Scan QR code"
-msgstr "امسح رمز الاستجابة السريعة"
+msgstr "امحُ رمز الاستجابة السريعة"
 
 #: src/qml/QrCodeScannerPage.qml:57
 #, kde-format
