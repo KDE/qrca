@@ -20,17 +20,12 @@
     "cleanup": [
         "*.a",
         "*.la",
-        "/doc",
-        "/docs",
         "/include",
         "/lib/cmake",
         "/lib/pkgconfig",
         "/lib/*/cmake",
         "/lib/*/pkgconfig",
-        "/man",
         "/share/cmake",
-        "/share/doc",
-        "/share/man",
         "/share/pkgconfig"
     ],
     "modules": [
