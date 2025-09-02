@@ -133,7 +133,7 @@ msgstr "Llum"
 #: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:292
 #, kde-format
 msgid "Select Camera"
-msgstr "Seleccioneu la càmera"
+msgstr "Trieu la càmera"
 
 #: src/qml/QrCodeScannerPage.qml:71
 #, kde-format
@@ -251,7 +251,7 @@ msgstr "Copia a dins del porta-retalls"
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an image file"
-msgstr "Seleccioneu un fitxer d'imatge"
+msgstr "Trieu un fitxer d'imatge"
 
 #: src/qml/QrCodeScannerPage.qml:374
 #, kde-format
@@ -268,6 +268,3 @@ msgstr "No s'ha trobat cap codi QR a la imatge"
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "No s'ha pogut trobar el dispositiu wifi"
-
-#~ msgid "QR-Code Scanner"
-#~ msgstr "Escàner de codis QR"
