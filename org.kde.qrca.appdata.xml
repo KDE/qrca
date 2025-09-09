@@ -39,7 +39,6 @@
   <name xml:lang="tg">Сканнери рамзи наворӣ</name>
   <name xml:lang="tr">Barkod Tarayıcısı</name>
   <name xml:lang="uk">Засіб сканування штрихкодів</name>
-  <name xml:lang="x-test">xxBarcode Scannerxx</name>
   <name xml:lang="zh-CN">二维码扫描器</name>
   <name xml:lang="zh-TW">條碼掃描器</name>
   <summary>Scan and create QR-Codes</summary>
@@ -79,7 +78,6 @@
   <summary xml:lang="tg">Рамзҳои QR-ро мушоҳида ё эҷод намоед</summary>
   <summary xml:lang="tr">Kare kod tarayın ve oluşturun</summary>
   <summary xml:lang="uk">Сканування і створення QR-кодів</summary>
-  <summary xml:lang="x-test">xxScan and create QR-Codesxx</summary>
   <summary xml:lang="zh-CN">扫描和创建二维码</summary>
   <summary xml:lang="zh-TW">掃描及建立 QR 碼</summary>
   <metadata_license>CC0-1.0</metadata_license>
@@ -127,7 +125,6 @@
     <p xml:lang="tg">Рамзҳои QR-ро ба воситаи камераи телефон ё ноутбуки худ мушоҳида кунед ва рамзҳои худро барои мубодилаи иттилоот байни дастгоҳҳо ба осонӣ эҷод намоед.</p>
     <p xml:lang="tr">Telefon veya dizüstünüzün kamerasıyla kare kodları tarayın ve aygıtlar arasında kolay veri aktarımı için kendi kodlarınızı oluşturun.</p>
     <p xml:lang="uk">Скануйте QR-коди за допомогою вашої фотокамери на телефоні або ноутбуці і створюйте ваші власні коди для передавання даних між пристроями.</p>
-    <p xml:lang="x-test">xxScan QR-Codes with your camera on phones and laptops, and create your own for easily sharing data between devices.xx</p>
     <p xml:lang="zh-CN">使用手机和笔记本电脑的摄像头扫描二维码，还可以轻松创建您自己的二维码以便在不同设备之间分享数据。</p>
     <p xml:lang="zh-TW">使用手機或筆電上的相機掃描 QR 碼，並建立自己的 QR 碼以方便在裝置間傳輸。</p>
   </description>
