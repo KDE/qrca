@@ -9,11 +9,11 @@
     ],
     "desktop-file-name-suffix": " (Nightly)",
     "finish-args": [
+        "--device=all",
         "--share=ipc",
         "--share=network",
         "--socket=fallback-x11",
         "--socket=wayland",
-        "--device=all",
         "--system-talk-name=org.freedesktop.NetworkManager"
     ],
     "separate-locales": false,
