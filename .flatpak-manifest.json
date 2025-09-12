@@ -41,8 +41,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/jpirko/libndp/archive/v1.8.tar.gz",
-                    "sha256": "c3ea76e253def89869651686a827da75b56896fe94fabd87d8c14b1d4588fd05",
+                    "url": "https://github.com/jpirko/libndp/archive/v1.9.tar.gz",
+                    "sha256": "e564f5914a6b1b799c3afa64c258824a801c1b79a29e2fe6525b682249c65261",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 14944,
@@ -72,8 +72,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://gitlab.freedesktop.org/polkit/polkit/-/archive/123/polkit-123.tar.gz",
-                    "sha256": "b69278f6ea0eac406350c45f5720e2fe5e4beaf9f53c16d9902e025965418864",
+                    "url": "https://gitlab.freedesktop.org/polkit/polkit/-/archive/123/polkit-126.tar.gz",
+                    "sha256": "2fa7a56c1196f4bf3b05b504c6cb668678f8c42dc7cf84150fab9e29b588a92d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3682,
@@ -127,8 +127,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git",
-                    "tag": "1.44.2",
-                    "commit": "8bee6ef894a27ffc8a464df3b32b03e811e1a15d",
+                    "tag": "1.54.0",
+                    "commit": "37dbdd3199cfd369a49d03888e75491f92dfbbfa",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
@@ -143,11 +143,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/networkmanager-qt.git",
-                    "tag": "v6.8.0",
+                    "tag": "v6.17.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
-                    }
+                    },
+                    "commit": "f35444037501dc5fbc8551190522c1b32d34e27f"
                 }
             ]
         },
