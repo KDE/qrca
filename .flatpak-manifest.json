@@ -100,6 +100,7 @@
                 "-Dlibaudit=no",
                 "-Dlibpsl=false",
                 "-Dmodem_manager=false",
+                "-Dnbft=false",
                 "-Dnmcli=false",
                 "-Dnm_cloud_setup=false",
                 "-Dnmtui=false",
