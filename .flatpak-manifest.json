@@ -101,6 +101,7 @@
                 "-Dlibpsl=false",
                 "-Dmodem_manager=false",
                 "-Dnmcli=false",
+                "-Dnm_cloud_setup=false",
                 "-Dnmtui=false",
                 "-Dovs=false",
                 "-Dppp=false",
