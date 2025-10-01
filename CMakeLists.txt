@@ -39,6 +39,7 @@ ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX QRCA
 
 find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Multimedia)
 find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami I18n Contacts CoreAddons Notifications Prison Config)
+find_package(KF6KirigamiAddons REQUIRED)
 
 if(NOT ANDROID)
     find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Service KIO Crash DBusAddons)
