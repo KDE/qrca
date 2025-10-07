@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-05-13 00:45+0000\n"
-"PO-Revision-Date: 2025-02-03 16:59+0400\n"
+"PO-Revision-Date: 2025-10-06 12:59+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -116,12 +116,12 @@ msgstr "انسخ"
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
 msgid "Scan for Wifi code"
-msgstr "امحُ شفرة شبكة لا سلكية"
+msgstr "امسح شفرة شبكة لا سلكية"
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
 msgid "Scan QR code"
-msgstr "امحُ رمز الاستجابة السريعة"
+msgstr "امسح رمز الاستجابة السريعة"
 
 #: src/qml/QrCodeScannerPage.qml:57
 #, kde-format
@@ -232,7 +232,7 @@ msgstr "افتح مسار رحلة كيدي"
 #: src/qml/QrCodeScannerPage.qml:206
 #, kde-format
 msgid "Open in Vakzination"
-msgstr "افتح في Vakzination"
+msgstr "افتح في برنامج التحصين"
 
 #: src/qml/QrCodeScannerPage.qml:208
 #, kde-format
