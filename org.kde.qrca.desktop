@@ -125,5 +125,5 @@ Exec=qrca
 Icon=org.kde.qrca
 Type=Application
 Terminal=false
-Categories=Qt;KDE;AudioVideo;
+Categories=Qt;KDE;Utility;
 SingleMainWindow=true
