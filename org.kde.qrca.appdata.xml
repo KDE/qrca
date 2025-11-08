@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component type="desktop-application">
   <id>org.kde.qrca</id>
-  <name>Barcode Scanner</name>
+  <name>Qrca</name>
   <name xml:lang="ar">ماسح رموز</name>
   <name xml:lang="ast">Escáner de códigos de barres</name>
   <name xml:lang="ca">Escàner de codi de barres</name>
