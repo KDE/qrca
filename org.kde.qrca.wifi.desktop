@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: CC0-1.0
 # SPDX-FileCopyrightText: 2025 Kai Uwe Broulik <kde@broulik.de>
 [Desktop Entry]
-Name=Qrca Wifi scanner
+Name=Qrca Wi-Fi scanner
 Name[ar]=ماسح شبكات لا سلكية كركا
 Name[ca]=Escàner de Wifi Qrca
 Name[ca@valencia]=Escàner de Wifi Qrca
@@ -30,7 +30,7 @@ Name[tr]=Qrca Wi-Fi Tarayıcısı
 Name[uk]=Сканер WiFi Qrca
 Name[zh_CN]=Qrca WiFi 扫描器
 Name[zh_TW]=Qrca Wifi 掃描器
-GenericName=Wifi Barcode Scanner
+GenericName=Wi-Fi QR Code Scanner
 GenericName[ar]=ماسح رموز شبكة لا سلكية
 GenericName[ca]=Escàner de codi de barres Wifi
 GenericName[ca@valencia]=Escàner de codi de barres Wifi
@@ -58,7 +58,7 @@ GenericName[tr]=Wi-Fi Barkod Tarayıcısı
 GenericName[uk]=Засіб сканування штрихкодів WiFi
 GenericName[zh_CN]=WiFi 二维码扫描器
 GenericName[zh_TW]=Wifi 條碼掃描器
-Comment=Scan for Wifi QR-Codes
+Comment=Scan Wi-Fi QR codes
 Comment[ar]=مسح رموز الاستجابة السريعة للشبكات اللاسلكية
 Comment[ca]=Escaneja codis QR de Wifi
 Comment[ca@valencia]=Escaneja codis QR de Wifi

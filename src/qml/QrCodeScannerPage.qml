@@ -50,7 +50,7 @@ Kirigami.Page {
         }
     }
 
-    title: Qrca.wifiMode ? i18n("Scan for Wifi code") : i18n("Scan QR code")
+    title: Qrca.wifiMode ? i18n("Scan a Wi-Fi Code") : i18n("Scan a QR Code")
     actions: [
         Kirigami.Action {
             icon.name: checked ? "flashlight-off" : "flashlight-on"
@@ -183,7 +183,7 @@ Kirigami.Page {
                 }
 
                 Controls.Label {
-                    text: i18nc("Connecting to Wifi", "Connecting…")
+                    text: i18nc("Connecting to Wi-Fi", "Connecting…")
                 }
             }
 
@@ -193,7 +193,7 @@ Kirigami.Page {
                     case QrCodeContent.Url:
                         return i18n("Open");
                     case QrCodeContent.VCard:
-                        return i18n("Save contact");
+                        return i18n("Save Contact");
                     case QrCodeContent.OtpToken:
                         return i18n("Open OTP client");
                     case QrCodeContent.EAN:
@@ -274,7 +274,7 @@ Kirigami.Page {
                 Layout.fillWidth: true
             }
             Controls.Button {
-                text: i18n("Copy to clipboard")
+                text: i18n("Copy to Clipboard")
                 icon.name: "edit-copy-symbolic"
                 onClicked: {
                     Qrca.copyToClipboard(resultSheet.tag);
@@ -370,7 +370,7 @@ Kirigami.Page {
 
     FileDialog {
         id: openFileDialog
-        title: i18nc("@title:window", "Choose an image file")
+        title: i18nc("@title:window", "Choose an Image File")
         nameFilters: [i18nc("Name filter for Image files", "Image files (*.jpeg *.jpg *.jxl *.png)")]
         currentFolder: StandardPaths.standardLocations(StandardPaths.PicturesLocation)[0]
         onAccepted: {
@@ -385,7 +385,7 @@ Kirigami.Page {
                 resultSheet.tag = resultContent;
                 resultSheet.open();
             } else {
-                showPassiveNotification(i18n("No QR code found in the image"), "long");
+                showPassiveNotification(i18n("No QR code found in the image."), "long");
                 selectedImage.source = "";
                 selectedImage.visible = false;
                 viewfinder.visible = true;

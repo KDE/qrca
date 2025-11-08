@@ -15,7 +15,7 @@ import org.kde.prison 1.0 as Prison
 import QtQuick.Dialogs
 
 Kirigami.ScrollablePage {
-    title: i18n("Create QR-Code")
+    title: i18n("Create a QR Code")
 
     FileDialog {
         id: fileDialog
@@ -34,7 +34,7 @@ Kirigami.ScrollablePage {
                     codeView.grabToImage(result => {
                         const s = result.saveToFile(fileDialog.selectedFile);
                         if (!s) {
-                            showPassiveNotification(i18n("QR-Code could not be saved"));
+                            showPassiveNotification(i18n("QR code could not be saved."));
                         }
 
                         fileDialog.accepted.disconnect();
