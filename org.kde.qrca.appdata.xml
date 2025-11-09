@@ -2,45 +2,6 @@
 <component type="desktop-application">
   <id>org.kde.qrca</id>
   <name>Qrca</name>
-  <name xml:lang="ar">ماسح رموز</name>
-  <name xml:lang="ast">Escáner de códigos de barres</name>
-  <name xml:lang="ca">Escàner de codi de barres</name>
-  <name xml:lang="ca-valencia">Escàner de codi de barres</name>
-  <name xml:lang="cs">Čtečka čarových kódů</name>
-  <name xml:lang="de">Strichcode-Scanner</name>
-  <name xml:lang="en-GB">Barcode Scanner</name>
-  <name xml:lang="eo">Strikoda Skanilo</name>
-  <name xml:lang="es">Escáner de códigos de barras</name>
-  <name xml:lang="et">Ribakoodi skanner</name>
-  <name xml:lang="eu">Barra-kode eskanerra</name>
-  <name xml:lang="fi">Viivakoodinlukija</name>
-  <name xml:lang="fr">Scanner de codes-barres</name>
-  <name xml:lang="gl">Escáner de códigos de barras</name>
-  <name xml:lang="he">סורק ברקודים</name>
-  <name xml:lang="hi">बारकोड स्कैनर</name>
-  <name xml:lang="hu">Vonalkódolvasó</name>
-  <name xml:lang="ia">Scanner (scanditor) de Codice a barras (barcode)</name>
-  <name xml:lang="id">Barcode Scanner</name>
-  <name xml:lang="it">Scanner di codici a barre</name>
-  <name xml:lang="ka">ბარკოდის სკანერი</name>
-  <name xml:lang="ko">바코드 스캐너</name>
-  <name xml:lang="lv">Svītrkodu skeneris</name>
-  <name xml:lang="nl">Barcodescanner</name>
-  <name xml:lang="nn">Strekkode-skannar</name>
-  <name xml:lang="pa">ਬਾਰ-ਕੋਡ ਸਕੈਨਰ</name>
-  <name xml:lang="pl">Czytnik kodów kreskowych</name>
-  <name xml:lang="pt">Analisador de Códigos de Barras</name>
-  <name xml:lang="pt-BR">Leitor de código de barras</name>
-  <name xml:lang="ru">Сканер штрихкодов</name>
-  <name xml:lang="sa">बारकोड स्कैनर</name>
-  <name xml:lang="sk">Cítačka čiarových kódov</name>
-  <name xml:lang="sl">Skener črtne kode</name>
-  <name xml:lang="sv">Streckkodsläsare</name>
-  <name xml:lang="tg">Сканнери рамзи наворӣ</name>
-  <name xml:lang="tr">Barkod Tarayıcısı</name>
-  <name xml:lang="uk">Засіб сканування штрихкодів</name>
-  <name xml:lang="zh-CN">二维码扫描器</name>
-  <name xml:lang="zh-TW">條碼掃描器</name>
   <summary>Scan and create QR-Codes</summary>
   <summary xml:lang="ar">مسح وإنشاء رموز الاستجابة السريعة</summary>
   <summary xml:lang="ast">Escania y crea códigos QR</summary>
