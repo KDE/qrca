@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-13 00:45+0000\n"
+"POT-Creation-Date: 2025-11-12 00:48+0000\n"
 "PO-Revision-Date: 2023-11-07 13:19+0100\n"
 "Last-Translator: Enol P. <enolp@softastur.org>\n"
 "Language-Team: \n"
@@ -84,7 +84,7 @@ msgstr "Tocante a"
 
 #: src/qml/QrCodeEncoderPage.qml:18
 #, kde-format
-msgid "Create QR-Code"
+msgid "Create a QR Code"
 msgstr ""
 
 #: src/qml/QrCodeEncoderPage.qml:23
@@ -104,7 +104,7 @@ msgstr ""
 
 #: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
-msgid "QR-Code could not be saved"
+msgid "QR code could not be saved."
 msgstr ""
 
 #: src/qml/QrCodeEncoderPage.qml:47
@@ -114,12 +114,12 @@ msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
-msgid "Scan for Wifi code"
+msgid "Scan a Wi-Fi Code"
 msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
-msgid "Scan QR code"
+msgid "Scan a QR Code"
 msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:57
@@ -194,7 +194,7 @@ msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:186
 #, kde-format
-msgctxt "Connecting to Wifi"
+msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
 msgstr ""
 
@@ -205,7 +205,7 @@ msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:196
 #, kde-format
-msgid "Save contact"
+msgid "Save Contact"
 msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:198
@@ -240,13 +240,13 @@ msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:277
 #, kde-format
-msgid "Copy to clipboard"
+msgid "Copy to Clipboard"
 msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:373
 #, kde-format
 msgctxt "@title:window"
-msgid "Choose an image file"
+msgid "Choose an Image File"
 msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:374
@@ -257,7 +257,7 @@ msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:388
 #, kde-format
-msgid "No QR code found in the image"
+msgid "No QR code found in the image."
 msgstr ""
 
 #: src/Qrca.cpp:272

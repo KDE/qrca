@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-13 00:45+0000\n"
+"POT-Creation-Date: 2025-11-12 00:48+0000\n"
 "PO-Revision-Date: 2024-12-15 17:35+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
@@ -83,8 +83,9 @@ msgid "About"
 msgstr "के बारे में"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, kde-format
-msgid "Create QR-Code"
+#, fuzzy, kde-format
+#| msgid "Create QR-Code"
+msgid "Create a QR Code"
 msgstr "क्यूआर कोड बनाएं"
 
 #: src/qml/QrCodeEncoderPage.qml:23
@@ -103,8 +104,9 @@ msgid "Save"
 msgstr "बचाना"
 
 #: src/qml/QrCodeEncoderPage.qml:37
-#, kde-format
-msgid "QR-Code could not be saved"
+#, fuzzy, kde-format
+#| msgid "QR-Code could not be saved"
+msgid "QR code could not be saved."
 msgstr "क्यूआर-कोड सहेजा नहीं जा सका"
 
 #: src/qml/QrCodeEncoderPage.qml:47
@@ -114,13 +116,14 @@ msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
-msgid "Scan for Wifi code"
+msgid "Scan a Wi-Fi Code"
 msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, kde-format
-msgid "Scan QR code"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Share QR-Code"
+msgid "Scan a QR Code"
+msgstr "क्यूआर कोड साझा करें"
 
 #: src/qml/QrCodeScannerPage.qml:57
 #, kde-format
@@ -195,7 +198,7 @@ msgstr "<बाइनरी डेटा>"
 #: src/qml/QrCodeScannerPage.qml:186
 #, fuzzy, kde-format
 #| msgid "Connect"
-msgctxt "Connecting to Wifi"
+msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
 msgstr "जोड़ना"
 
@@ -205,8 +208,9 @@ msgid "Open"
 msgstr "खुला"
 
 #: src/qml/QrCodeScannerPage.qml:196
-#, kde-format
-msgid "Save contact"
+#, fuzzy, kde-format
+#| msgid "Save contact"
+msgid "Save Contact"
 msgstr "संपर्क सहेजें"
 
 #: src/qml/QrCodeScannerPage.qml:198
@@ -240,14 +244,15 @@ msgid "Connect"
 msgstr "जोड़ना"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, kde-format
-msgid "Copy to clipboard"
+#, fuzzy, kde-format
+#| msgid "Copy to clipboard"
+msgid "Copy to Clipboard"
 msgstr "क्लिपबोर्ड पर कॉपी करें"
 
 #: src/qml/QrCodeScannerPage.qml:373
 #, kde-format
 msgctxt "@title:window"
-msgid "Choose an image file"
+msgid "Choose an Image File"
 msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:374
@@ -259,7 +264,7 @@ msgstr "छवि फ़ाइलें (*.png *.jpg)"
 
 #: src/qml/QrCodeScannerPage.qml:388
 #, kde-format
-msgid "No QR code found in the image"
+msgid "No QR code found in the image."
 msgstr ""
 
 #: src/Qrca.cpp:272
@@ -281,6 +286,3 @@ msgstr ""
 
 #~ msgid "Sharing Failed"
 #~ msgstr "साझाकरण विफल"
-
-#~ msgid "Share QR-Code"
-#~ msgstr "क्यूआर कोड साझा करें"

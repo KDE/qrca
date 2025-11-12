@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-13 00:45+0000\n"
+"POT-Creation-Date: 2025-11-12 00:48+0000\n"
 "PO-Revision-Date: 2025-04-04 13:16+0300\n"
 "Last-Translator: Olesya Gerasimenko <translation-team@basealt.ru>\n"
 "Language-Team: Basealt Translation Team\n"
@@ -85,8 +85,9 @@ msgid "About"
 msgstr "О программе"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, kde-format
-msgid "Create QR-Code"
+#, fuzzy, kde-format
+#| msgid "Create QR-Code"
+msgid "Create a QR Code"
 msgstr "Создать QR-код"
 
 #: src/qml/QrCodeEncoderPage.qml:23
@@ -105,8 +106,9 @@ msgid "Save"
 msgstr "Сохранить"
 
 #: src/qml/QrCodeEncoderPage.qml:37
-#, kde-format
-msgid "QR-Code could not be saved"
+#, fuzzy, kde-format
+#| msgid "QR-Code could not be saved"
+msgid "QR code could not be saved."
 msgstr "Не удалось сохранить QR-код"
 
 #: src/qml/QrCodeEncoderPage.qml:47
@@ -115,13 +117,15 @@ msgid "Copy"
 msgstr "Копировать"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, kde-format
-msgid "Scan for Wifi code"
+#, fuzzy, kde-format
+#| msgid "Scan for Wifi code"
+msgid "Scan a Wi-Fi Code"
 msgstr "Сканировать код Wi-Fi"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, kde-format
-msgid "Scan QR code"
+#, fuzzy, kde-format
+#| msgid "Scan QR code"
+msgid "Scan a QR Code"
 msgstr "Сканировать QR-код"
 
 #: src/qml/QrCodeScannerPage.qml:57
@@ -195,8 +199,10 @@ msgid "<binary data>"
 msgstr "<двоичные данные>"
 
 #: src/qml/QrCodeScannerPage.qml:186
-#, kde-format
-msgctxt "Connecting to Wifi"
+#, fuzzy, kde-format
+#| msgctxt "Connecting to Wifi"
+#| msgid "Connecting…"
+msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
 msgstr "Подключение…"
 
@@ -206,8 +212,9 @@ msgid "Open"
 msgstr "Открыть"
 
 #: src/qml/QrCodeScannerPage.qml:196
-#, kde-format
-msgid "Save contact"
+#, fuzzy, kde-format
+#| msgid "Save contact"
+msgid "Save Contact"
 msgstr "Сохранить контакт"
 
 #: src/qml/QrCodeScannerPage.qml:198
@@ -241,14 +248,17 @@ msgid "Connect"
 msgstr "Подключиться"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, kde-format
-msgid "Copy to clipboard"
+#, fuzzy, kde-format
+#| msgid "Copy to clipboard"
+msgid "Copy to Clipboard"
 msgstr "Скопировать в буфер обмена"
 
 #: src/qml/QrCodeScannerPage.qml:373
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@title:window"
+#| msgid "Choose an image file"
 msgctxt "@title:window"
-msgid "Choose an image file"
+msgid "Choose an Image File"
 msgstr "Выбор файла изображения"
 
 #: src/qml/QrCodeScannerPage.qml:374
@@ -258,8 +268,9 @@ msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "Изображения (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:388
-#, kde-format
-msgid "No QR code found in the image"
+#, fuzzy, kde-format
+#| msgid "No QR code found in the image"
+msgid "No QR code found in the image."
 msgstr "На изображении не найден QR-код"
 
 #: src/Qrca.cpp:272

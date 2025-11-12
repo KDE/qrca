@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-13 00:45+0000\n"
+"POT-Creation-Date: 2025-11-12 00:48+0000\n"
 "PO-Revision-Date: 2020-10-25 22:06+0100\n"
 "Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
 "Language-Team: Estonian <>\n"
@@ -84,8 +84,9 @@ msgid "About"
 msgstr "Teave"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, kde-format
-msgid "Create QR-Code"
+#, fuzzy, kde-format
+#| msgid "Create QR-Code"
+msgid "Create a QR Code"
 msgstr "QR-koodi loomine"
 
 #: src/qml/QrCodeEncoderPage.qml:23
@@ -105,7 +106,7 @@ msgstr "Salvesta"
 
 #: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
-msgid "QR-Code could not be saved"
+msgid "QR code could not be saved."
 msgstr ""
 
 #: src/qml/QrCodeEncoderPage.qml:47
@@ -115,13 +116,14 @@ msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
-msgid "Scan for Wifi code"
+msgid "Scan a Wi-Fi Code"
 msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, kde-format
-msgid "Scan QR code"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Share QR-Code"
+msgid "Scan a QR Code"
+msgstr "QR-koodi jagamine"
 
 #: src/qml/QrCodeScannerPage.qml:57
 #, kde-format
@@ -197,7 +199,7 @@ msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:186
 #, kde-format
-msgctxt "Connecting to Wifi"
+msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
 msgstr ""
 
@@ -207,8 +209,9 @@ msgid "Open"
 msgstr "Ava"
 
 #: src/qml/QrCodeScannerPage.qml:196
-#, kde-format
-msgid "Save contact"
+#, fuzzy, kde-format
+#| msgid "Save contact"
+msgid "Save Contact"
 msgstr "Salvesta kontakt"
 
 #: src/qml/QrCodeScannerPage.qml:198
@@ -242,14 +245,15 @@ msgid "Connect"
 msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, kde-format
-msgid "Copy to clipboard"
+#, fuzzy, kde-format
+#| msgid "Copy to clipboard"
+msgid "Copy to Clipboard"
 msgstr "Kopeeri lõikepuhvrisse"
 
 #: src/qml/QrCodeScannerPage.qml:373
 #, kde-format
 msgctxt "@title:window"
-msgid "Choose an image file"
+msgid "Choose an Image File"
 msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:374
@@ -260,7 +264,7 @@ msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:388
 #, kde-format
-msgid "No QR code found in the image"
+msgid "No QR code found in the image."
 msgstr ""
 
 #: src/Qrca.cpp:272
@@ -277,9 +281,6 @@ msgstr ""
 #, fuzzy
 #~| msgid "Share QR-Code"
 #~ msgid "Share Qr-Code"
-#~ msgstr "QR-koodi jagamine"
-
-#~ msgid "Share QR-Code"
 #~ msgstr "QR-koodi jagamine"
 
 #, fuzzy

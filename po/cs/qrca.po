@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-05-13 00:45+0000\n"
+"POT-Creation-Date: 2025-11-12 00:48+0000\n"
 "PO-Revision-Date: 2023-07-04 16:47+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -83,8 +83,9 @@ msgid "About"
 msgstr "O aplikaci"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, kde-format
-msgid "Create QR-Code"
+#, fuzzy, kde-format
+#| msgid "Create QR-Code"
+msgid "Create a QR Code"
 msgstr "Vytvořit kód QR"
 
 #: src/qml/QrCodeEncoderPage.qml:23
@@ -103,8 +104,9 @@ msgid "Save"
 msgstr "Uložit"
 
 #: src/qml/QrCodeEncoderPage.qml:37
-#, kde-format
-msgid "QR-Code could not be saved"
+#, fuzzy, kde-format
+#| msgid "QR-Code could not be saved"
+msgid "QR code could not be saved."
 msgstr "QR kód nelze uložit"
 
 #: src/qml/QrCodeEncoderPage.qml:47
@@ -113,13 +115,15 @@ msgid "Copy"
 msgstr "Kopírovat"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, kde-format
-msgid "Scan for Wifi code"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Scan QR code"
+msgid "Scan a Wi-Fi Code"
+msgstr "Skenovat kód QR"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, kde-format
-msgid "Scan QR code"
+#, fuzzy, kde-format
+#| msgid "Scan QR code"
+msgid "Scan a QR Code"
 msgstr "Skenovat kód QR"
 
 #: src/qml/QrCodeScannerPage.qml:57
@@ -193,10 +197,11 @@ msgid "<binary data>"
 msgstr "<binární data>"
 
 #: src/qml/QrCodeScannerPage.qml:186
-#, kde-format
-msgctxt "Connecting to Wifi"
+#, fuzzy, kde-format
+#| msgid "Connect"
+msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
-msgstr ""
+msgstr "Připojit se"
 
 #: src/qml/QrCodeScannerPage.qml:194
 #, kde-format
@@ -204,8 +209,9 @@ msgid "Open"
 msgstr "Otevřít"
 
 #: src/qml/QrCodeScannerPage.qml:196
-#, kde-format
-msgid "Save contact"
+#, fuzzy, kde-format
+#| msgid "Save contact"
+msgid "Save Contact"
 msgstr "Uložit kontakt"
 
 #: src/qml/QrCodeScannerPage.qml:198
@@ -239,14 +245,15 @@ msgid "Connect"
 msgstr "Připojit se"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, kde-format
-msgid "Copy to clipboard"
+#, fuzzy, kde-format
+#| msgid "Copy to clipboard"
+msgid "Copy to Clipboard"
 msgstr "Zkopírovat do schránky"
 
 #: src/qml/QrCodeScannerPage.qml:373
 #, kde-format
 msgctxt "@title:window"
-msgid "Choose an image file"
+msgid "Choose an Image File"
 msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:374
@@ -257,7 +264,7 @@ msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:388
 #, kde-format
-msgid "No QR code found in the image"
+msgid "No QR code found in the image."
 msgstr ""
 
 #: src/Qrca.cpp:272
