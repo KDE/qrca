@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-12 00:48+0000\n"
-"PO-Revision-Date: 2025-02-02 08:55+0100\n"
+"PO-Revision-Date: 2025-11-12 09:51+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -86,8 +86,7 @@ msgid "About"
 msgstr "Quant al"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, fuzzy, kde-format
-#| msgid "Create QR-Code"
+#, kde-format
 msgid "Create a QR Code"
 msgstr "Crea un codi QR"
 
@@ -107,10 +106,9 @@ msgid "Save"
 msgstr "Desa"
 
 #: src/qml/QrCodeEncoderPage.qml:37
-#, fuzzy, kde-format
-#| msgid "QR-Code could not be saved"
+#, kde-format
 msgid "QR code could not be saved."
-msgstr "No s'ha pogut desar el codi QR"
+msgstr "No s'ha pogut desar el codi QR."
 
 #: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
@@ -118,14 +116,12 @@ msgid "Copy"
 msgstr "Copia"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan for Wifi code"
+#, kde-format
 msgid "Scan a Wi-Fi Code"
-msgstr "Escaneja el codi Wifi"
+msgstr "Escaneja el codi Wi-Fi"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan QR code"
+#, kde-format
 msgid "Scan a QR Code"
 msgstr "Escaneja un codi QR"
 
@@ -200,9 +196,7 @@ msgid "<binary data>"
 msgstr "<dades binàries>"
 
 #: src/qml/QrCodeScannerPage.qml:186
-#, fuzzy, kde-format
-#| msgctxt "Connecting to Wifi"
-#| msgid "Connecting…"
+#, kde-format
 msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
 msgstr "S'està connectant…"
@@ -213,8 +207,7 @@ msgid "Open"
 msgstr "Obre"
 
 #: src/qml/QrCodeScannerPage.qml:196
-#, fuzzy, kde-format
-#| msgid "Save contact"
+#, kde-format
 msgid "Save Contact"
 msgstr "Desa el contacte"
 
@@ -250,15 +243,12 @@ msgid "Connect"
 msgstr "Connecta"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Copy to clipboard"
+#, kde-format
 msgid "Copy to Clipboard"
 msgstr "Copia al porta-retalls"
 
 #: src/qml/QrCodeScannerPage.qml:373
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Choose an image file"
+#, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
 msgstr "Trieu un fitxer d'imatge"
@@ -270,10 +260,9 @@ msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "Fitxers d'imatge (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:388
-#, fuzzy, kde-format
-#| msgid "No QR code found in the image"
+#, kde-format
 msgid "No QR code found in the image."
-msgstr "No s'ha trobat cap codi QR a la imatge"
+msgstr "No s'ha trobat cap codi QR a la imatge."
 
 #: src/Qrca.cpp:272
 #, kde-format

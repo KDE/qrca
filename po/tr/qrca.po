@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-12 00:48+0000\n"
-"PO-Revision-Date: 2025-02-02 12:48+0300\n"
-"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
+"PO-Revision-Date: 2025-11-12 17:34+0300\n"
+"Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.03.70\n"
+"X-Generator: Lokalize 25.08.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -83,8 +83,7 @@ msgid "About"
 msgstr "Hakkında"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, fuzzy, kde-format
-#| msgid "Create QR-Code"
+#, kde-format
 msgid "Create a QR Code"
 msgstr "Kare Kod Oluştur"
 
@@ -104,10 +103,9 @@ msgid "Save"
 msgstr "Kaydet"
 
 #: src/qml/QrCodeEncoderPage.qml:37
-#, fuzzy, kde-format
-#| msgid "QR-Code could not be saved"
+#, kde-format
 msgid "QR code could not be saved."
-msgstr "Kare Kod kaydedilemedi"
+msgstr "Kare Kod kaydedilemedi."
 
 #: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
@@ -115,14 +113,12 @@ msgid "Copy"
 msgstr "Kopyala"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan for Wifi code"
+#, kde-format
 msgid "Scan a Wi-Fi Code"
 msgstr "Wi-Fi Kodunu Tara"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan QR code"
+#, kde-format
 msgid "Scan a QR Code"
 msgstr "Kare Kod Tara"
 
@@ -197,9 +193,7 @@ msgid "<binary data>"
 msgstr "<ikili veri>"
 
 #: src/qml/QrCodeScannerPage.qml:186
-#, fuzzy, kde-format
-#| msgctxt "Connecting to Wifi"
-#| msgid "Connecting…"
+#, kde-format
 msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
 msgstr "Bağlanıyor…"
@@ -210,10 +204,9 @@ msgid "Open"
 msgstr "Aç"
 
 #: src/qml/QrCodeScannerPage.qml:196
-#, fuzzy, kde-format
-#| msgid "Save contact"
+#, kde-format
 msgid "Save Contact"
-msgstr "Kişiyi kaydet"
+msgstr "Kişiyi Kaydet"
 
 #: src/qml/QrCodeScannerPage.qml:198
 #, kde-format
@@ -246,15 +239,12 @@ msgid "Connect"
 msgstr "Bağlan"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Copy to clipboard"
+#, kde-format
 msgid "Copy to Clipboard"
-msgstr "Panoya kopyala"
+msgstr "Panoya Kopyala"
 
 #: src/qml/QrCodeScannerPage.qml:373
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Choose an image file"
+#, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
 msgstr "Görsel Dosyası Seç"
@@ -266,10 +256,9 @@ msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "Görsel dosyaları (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:388
-#, fuzzy, kde-format
-#| msgid "No QR code found in the image"
+#, kde-format
 msgid "No QR code found in the image."
-msgstr "Görselde kare kod bulunamadı"
+msgstr "Görselde bulunan kare kod yok."
 
 #: src/Qrca.cpp:272
 #, kde-format

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-12 00:48+0000\n"
-"PO-Revision-Date: 2025-02-02 08:31+0100\n"
+"PO-Revision-Date: 2025-11-12 07:43+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.5\n"
+"X-Generator: Poedit 3.8\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -84,8 +84,7 @@ msgid "About"
 msgstr "O programu"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, fuzzy, kde-format
-#| msgid "Create QR-Code"
+#, kde-format
 msgid "Create a QR Code"
 msgstr "Kreiraj kodo QR"
 
@@ -105,10 +104,9 @@ msgid "Save"
 msgstr "Shrani"
 
 #: src/qml/QrCodeEncoderPage.qml:37
-#, fuzzy, kde-format
-#| msgid "QR-Code could not be saved"
+#, kde-format
 msgid "QR code could not be saved."
-msgstr "QR kode ni bilo mogoče shraniti"
+msgstr "QR kode ni bilo mogoče shraniti."
 
 #: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
@@ -116,14 +114,12 @@ msgid "Copy"
 msgstr "Kopiraj"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan for Wifi code"
+#, kde-format
 msgid "Scan a Wi-Fi Code"
-msgstr "Skeniraj kodo Wifi"
+msgstr "Skeniraj kodo Wi-Fi"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan QR code"
+#, kde-format
 msgid "Scan a QR Code"
 msgstr "Skeniraj kodo QR"
 
@@ -198,9 +194,7 @@ msgid "<binary data>"
 msgstr "<binarni podatki>"
 
 #: src/qml/QrCodeScannerPage.qml:186
-#, fuzzy, kde-format
-#| msgctxt "Connecting to Wifi"
-#| msgid "Connecting…"
+#, kde-format
 msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
 msgstr "Povezovanje…"
@@ -211,8 +205,7 @@ msgid "Open"
 msgstr "Odpri"
 
 #: src/qml/QrCodeScannerPage.qml:196
-#, fuzzy, kde-format
-#| msgid "Save contact"
+#, kde-format
 msgid "Save Contact"
 msgstr "Shrani stik"
 
@@ -247,15 +240,12 @@ msgid "Connect"
 msgstr "Poveži"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Copy to clipboard"
+#, kde-format
 msgid "Copy to Clipboard"
 msgstr "Kopiraj na odložišče"
 
 #: src/qml/QrCodeScannerPage.qml:373
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Choose an image file"
+#, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
 msgstr "Izberi slikovno datoteko"
@@ -267,10 +257,9 @@ msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "Slikovne datoteke (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:388
-#, fuzzy, kde-format
-#| msgid "No QR code found in the image"
+#, kde-format
 msgid "No QR code found in the image."
-msgstr "Na sliki ni najdene kode QR"
+msgstr "Na sliki ni najdene kode QR."
 
 #: src/Qrca.cpp:272
 #, kde-format
