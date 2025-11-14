@@ -83,10 +83,9 @@ msgid "About"
 msgstr "关于"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, fuzzy, kde-format
-#| msgid "Create QR-Code"
+#, kde-format
 msgid "Create a QR Code"
-msgstr "创建二维码"
+msgstr ""
 
 #: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
@@ -104,10 +103,9 @@ msgid "Save"
 msgstr "保存"
 
 #: src/qml/QrCodeEncoderPage.qml:37
-#, fuzzy, kde-format
-#| msgid "QR-Code could not be saved"
+#, kde-format
 msgid "QR code could not be saved."
-msgstr "无法保存二维码"
+msgstr ""
 
 #: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
@@ -115,16 +113,14 @@ msgid "Copy"
 msgstr "复制"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan for Wifi code"
+#, kde-format
 msgid "Scan a Wi-Fi Code"
-msgstr "扫描 WiFi 二维码"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan QR code"
+#, kde-format
 msgid "Scan a QR Code"
-msgstr "扫描二维码"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:57
 #, kde-format
@@ -197,12 +193,10 @@ msgid "<binary data>"
 msgstr "<二进制数据>"
 
 #: src/qml/QrCodeScannerPage.qml:186
-#, fuzzy, kde-format
-#| msgctxt "Connecting to Wifi"
-#| msgid "Connecting…"
+#, kde-format
 msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
-msgstr "正在连接…"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:194
 #, kde-format
@@ -210,10 +204,9 @@ msgid "Open"
 msgstr "打开"
 
 #: src/qml/QrCodeScannerPage.qml:196
-#, fuzzy, kde-format
-#| msgid "Save contact"
+#, kde-format
 msgid "Save Contact"
-msgstr "保存联系人"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:198
 #, kde-format
@@ -246,18 +239,15 @@ msgid "Connect"
 msgstr "连接"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Copy to clipboard"
+#, kde-format
 msgid "Copy to Clipboard"
-msgstr "复制到剪贴板"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:373
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Choose an image file"
+#, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
-msgstr "选择图像文件"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:374
 #, kde-format
@@ -266,10 +256,9 @@ msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "图像文件 (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:388
-#, fuzzy, kde-format
-#| msgid "No QR code found in the image"
+#, kde-format
 msgid "No QR code found in the image."
-msgstr "图像中没有找到二维码"
+msgstr ""
 
 #: src/Qrca.cpp:272
 #, kde-format

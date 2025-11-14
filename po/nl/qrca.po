@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-12 00:48+0000\n"
-"PO-Revision-Date: 2025-02-02 14:22+0100\n"
+"PO-Revision-Date: 2025-11-13 17:40+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.12.1\n"
+"X-Generator: Lokalize 25.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -83,10 +83,9 @@ msgid "About"
 msgstr "Info over"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, fuzzy, kde-format
-#| msgid "Create QR-Code"
+#, kde-format
 msgid "Create a QR Code"
-msgstr "QR-code aanmaken"
+msgstr "Een QR-code aanmaken"
 
 #: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
@@ -104,8 +103,7 @@ msgid "Save"
 msgstr "Opslaan"
 
 #: src/qml/QrCodeEncoderPage.qml:37
-#, fuzzy, kde-format
-#| msgid "QR-Code could not be saved"
+#, kde-format
 msgid "QR code could not be saved."
 msgstr "QR-code kon niet opgeslagen worden"
 
@@ -115,14 +113,12 @@ msgid "Copy"
 msgstr "Kopiëren"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan for Wifi code"
+#, kde-format
 msgid "Scan a Wi-Fi Code"
-msgstr "Scannen op wifi-code"
+msgstr "Scannen op Wi-Fi-code"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan QR code"
+#, kde-format
 msgid "Scan a QR Code"
 msgstr "QR-code scannen"
 
@@ -197,9 +193,7 @@ msgid "<binary data>"
 msgstr "<binaire gegevens>"
 
 #: src/qml/QrCodeScannerPage.qml:186
-#, fuzzy, kde-format
-#| msgctxt "Connecting to Wifi"
-#| msgid "Connecting…"
+#, kde-format
 msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
 msgstr "Bezig met verbinden…"
@@ -210,8 +204,7 @@ msgid "Open"
 msgstr "Openen"
 
 #: src/qml/QrCodeScannerPage.qml:196
-#, fuzzy, kde-format
-#| msgid "Save contact"
+#, kde-format
 msgid "Save Contact"
 msgstr "Contactpersoon opslaan"
 
@@ -246,15 +239,12 @@ msgid "Connect"
 msgstr "Verbinden"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Copy to clipboard"
+#, kde-format
 msgid "Copy to Clipboard"
 msgstr "Naar klembord kopiëren"
 
 #: src/qml/QrCodeScannerPage.qml:373
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Choose an image file"
+#, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
 msgstr "Een afbeeldingsbestand kiezen"
@@ -266,10 +256,9 @@ msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "Afbeeldingsbestanden (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:388
-#, fuzzy, kde-format
-#| msgid "No QR code found in the image"
+#, kde-format
 msgid "No QR code found in the image."
-msgstr "Geen QR-code gevonden in de afbeelding "
+msgstr "Geen QR-code gevonden in de afbeelding."
 
 #: src/Qrca.cpp:272
 #, kde-format
