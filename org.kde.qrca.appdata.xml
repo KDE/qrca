@@ -2,6 +2,7 @@
 <component type="desktop-application">
   <id>org.kde.qrca</id>
   <name>Qrca</name>
+  <name xml:lang="ar">كركا</name>
   <name xml:lang="ca">Qrca</name>
   <name xml:lang="cs">Qrca</name>
   <name xml:lang="es">Qrca</name>
