@@ -196,7 +196,7 @@ msgstr "<二进制数据>"
 #, kde-format
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
-msgstr ""
+msgstr "正在连接…"
 
 #: src/qml/QrCodeScannerPage.qml:194
 #, kde-format
