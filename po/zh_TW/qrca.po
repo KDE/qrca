@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:55+0000\n"
-"PO-Revision-Date: 2025-03-27 21:51+0900\n"
+"PO-Revision-Date: 2025-11-20 21:06+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 24.12.3\n"
+"X-Generator: Lokalize 26.03.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -87,8 +87,7 @@ msgid "About"
 msgstr "關於"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, fuzzy, kde-format
-#| msgid "Create QR-Code"
+#, kde-format
 msgid "Create a QR Code"
 msgstr "建立 QR 碼"
 
@@ -108,10 +107,9 @@ msgid "Save"
 msgstr "儲存"
 
 #: src/qml/QrCodeEncoderPage.qml:37
-#, fuzzy, kde-format
-#| msgid "QR-Code could not be saved"
+#, kde-format
 msgid "QR code could not be saved."
-msgstr "QR 碼無法儲存"
+msgstr "QR 碼無法儲存。"
 
 #: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
@@ -119,14 +117,12 @@ msgid "Copy"
 msgstr "複製"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan for Wifi code"
+#, kde-format
 msgid "Scan a Wi-Fi Code"
-msgstr "掃描 Wifi 條碼"
+msgstr "掃描 Wi-Fi 條碼"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan QR code"
+#, kde-format
 msgid "Scan a QR Code"
 msgstr "掃描 QR 碼"
 
@@ -201,9 +197,7 @@ msgid "<binary data>"
 msgstr "<二進位資料>"
 
 #: src/qml/QrCodeScannerPage.qml:186
-#, fuzzy, kde-format
-#| msgctxt "Connecting to Wifi"
-#| msgid "Connecting…"
+#, kde-format
 msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
 msgstr "連線中…"
@@ -214,8 +208,7 @@ msgid "Open"
 msgstr "開啟"
 
 #: src/qml/QrCodeScannerPage.qml:196
-#, fuzzy, kde-format
-#| msgid "Save contact"
+#, kde-format
 msgid "Save Contact"
 msgstr "儲存聯絡人"
 
@@ -250,18 +243,15 @@ msgid "Connect"
 msgstr "連線"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Copy to clipboard"
+#, kde-format
 msgid "Copy to Clipboard"
 msgstr "複製到剪貼簿"
 
 #: src/qml/QrCodeScannerPage.qml:373
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Choose an image file"
+#, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
-msgstr "選擇影像"
+msgstr "選擇影像檔"
 
 #: src/qml/QrCodeScannerPage.qml:374
 #, kde-format
@@ -270,10 +260,9 @@ msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "影像檔 (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:388
-#, fuzzy, kde-format
-#| msgid "No QR code found in the image"
+#, kde-format
 msgid "No QR code found in the image."
-msgstr "影像中沒有找到 QR 碼"
+msgstr "影像中沒有找到 QR 碼。"
 
 #: src/Qrca.cpp:272
 #, kde-format
