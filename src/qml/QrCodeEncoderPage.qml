@@ -15,7 +15,7 @@ import org.kde.prison 1.0 as Prison
 import QtQuick.Dialogs
 
 Kirigami.ScrollablePage {
-    title: i18n("Create a QR Code")
+    title: i18nc("@title:window", "Create a QR Code")
 
     FileDialog {
         id: fileDialog
@@ -26,7 +26,7 @@ Kirigami.ScrollablePage {
 
     actions: [
         Kirigami.Action {
-            text: i18n("Save")
+            text: i18nc("@action:intoolbar", "Save")
             icon.name: "document-save"
             enabled: inputText.length > 0
             onTriggered: {
@@ -44,7 +44,7 @@ Kirigami.ScrollablePage {
             }
         },
         Kirigami.Action {
-            text: i18n("Copy")
+            text: i18nc("@action:intoolbar", "Copy")
             icon.name: "edit-copy"
             enabled: inputText.length > 0
             onTriggered: {
@@ -70,7 +70,7 @@ Kirigami.ScrollablePage {
 
         Kirigami.ActionTextField {
             id: inputText
-            placeholderText: "Enter text"
+            placeholderText: i18nc("@info:placeholder", "Enter text…")
             text: Qrca.encodeText ? Qrca.encodeText : ""
             Layout.fillWidth: true
             rightActions: [
