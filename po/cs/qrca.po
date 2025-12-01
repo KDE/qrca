@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-01 00:47+0000\n"
 "PO-Revision-Date: 2023-07-04 16:47+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -85,6 +85,7 @@ msgstr "O aplikaci"
 #: src/qml/QrCodeEncoderPage.qml:18
 #, fuzzy, kde-format
 #| msgid "Create QR-Code"
+msgctxt "@title:window"
 msgid "Create a QR Code"
 msgstr "Vytvořit kód QR"
 
@@ -99,7 +100,9 @@ msgid "All files (*)"
 msgstr "Všechny soubory (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save"
+msgctxt "@action:intoolbar"
 msgid "Save"
 msgstr "Uložit"
 
@@ -110,9 +113,17 @@ msgid "QR code could not be saved."
 msgstr "QR kód nelze uložit"
 
 #: src/qml/QrCodeEncoderPage.qml:47
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Copy"
+msgctxt "@action:intoolbar"
 msgid "Copy"
 msgstr "Kopírovat"
+
+#: src/qml/QrCodeEncoderPage.qml:73
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Enter text…"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, fuzzy, kde-format

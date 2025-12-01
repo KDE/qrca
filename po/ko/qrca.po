@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-01 00:47+0000\n"
 "PO-Revision-Date: 2025-04-07 00:47+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -85,6 +85,7 @@ msgstr "정보"
 #: src/qml/QrCodeEncoderPage.qml:18
 #, fuzzy, kde-format
 #| msgid "Create QR-Code"
+msgctxt "@title:window"
 msgid "Create a QR Code"
 msgstr "QR 코드 만들기"
 
@@ -99,7 +100,9 @@ msgid "All files (*)"
 msgstr "모든 파일 (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save"
+msgctxt "@action:intoolbar"
 msgid "Save"
 msgstr "저장"
 
@@ -110,9 +113,17 @@ msgid "QR code could not be saved."
 msgstr "QR 코드를 저장할 수 없음"
 
 #: src/qml/QrCodeEncoderPage.qml:47
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Copy"
+msgctxt "@action:intoolbar"
 msgid "Copy"
 msgstr "복사"
+
+#: src/qml/QrCodeEncoderPage.qml:73
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Enter text…"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, fuzzy, kde-format

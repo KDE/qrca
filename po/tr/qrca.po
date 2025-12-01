@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-01 00:47+0000\n"
 "PO-Revision-Date: 2025-11-12 17:34+0300\n"
 "Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -83,7 +83,9 @@ msgid "About"
 msgstr "Hakkında"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Create a QR Code"
+msgctxt "@title:window"
 msgid "Create a QR Code"
 msgstr "Kare Kod Oluştur"
 
@@ -98,7 +100,9 @@ msgid "All files (*)"
 msgstr "Tüm dosyalar (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save"
+msgctxt "@action:intoolbar"
 msgid "Save"
 msgstr "Kaydet"
 
@@ -108,9 +112,17 @@ msgid "QR code could not be saved."
 msgstr "Kare Kod kaydedilemedi."
 
 #: src/qml/QrCodeEncoderPage.qml:47
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Copy"
+msgctxt "@action:intoolbar"
 msgid "Copy"
 msgstr "Kopyala"
+
+#: src/qml/QrCodeEncoderPage.qml:73
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Enter text…"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format

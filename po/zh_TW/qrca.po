@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-01 00:47+0000\n"
 "PO-Revision-Date: 2025-11-20 21:06+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -87,7 +87,9 @@ msgid "About"
 msgstr "關於"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Create a QR Code"
+msgctxt "@title:window"
 msgid "Create a QR Code"
 msgstr "建立 QR 碼"
 
@@ -102,7 +104,9 @@ msgid "All files (*)"
 msgstr "所有檔案 (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save"
+msgctxt "@action:intoolbar"
 msgid "Save"
 msgstr "儲存"
 
@@ -112,9 +116,17 @@ msgid "QR code could not be saved."
 msgstr "QR 碼無法儲存。"
 
 #: src/qml/QrCodeEncoderPage.qml:47
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Copy"
+msgctxt "@action:intoolbar"
 msgid "Copy"
 msgstr "複製"
+
+#: src/qml/QrCodeEncoderPage.qml:73
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Enter text…"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format

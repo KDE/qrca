@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:55+0000\n"
+"POT-Creation-Date: 2025-12-01 00:47+0000\n"
 "PO-Revision-Date: 2024-01-01 08:26-0600\n"
 "Last-Translator: A S Alam <aalam@punlinux.org>\n"
 "Language-Team: Punjabi <kde-i18n-doc@kde.org>\n"
@@ -85,6 +85,7 @@ msgstr "ਇਸ ਬਾਰੇ"
 #: src/qml/QrCodeEncoderPage.qml:18
 #, fuzzy, kde-format
 #| msgid "Create QR-Code"
+msgctxt "@title:window"
 msgid "Create a QR Code"
 msgstr "QR-ਕੋਡ ਬਣਾਓ"
 
@@ -99,7 +100,9 @@ msgid "All files (*)"
 msgstr "ਸਭ ਫਾਇਲਾਂ (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Save"
+msgctxt "@action:intoolbar"
 msgid "Save"
 msgstr "ਸੰਭਾਲੋ"
 
@@ -111,7 +114,14 @@ msgstr "QR-ਕੋਡ ਨੂੰ ਸੰਭਾਲਿਆ ਨਹੀਂ ਜਾ ਸਕ�
 
 #: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
+msgctxt "@action:intoolbar"
 msgid "Copy"
+msgstr ""
+
+#: src/qml/QrCodeEncoderPage.qml:73
+#, kde-format
+msgctxt "@info:placeholder"
+msgid "Enter text…"
 msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:53
