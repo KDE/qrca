@@ -1,34 +1,31 @@
 # Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the qrca package.
 #
-# Luiz Fernando Ranghetti <elchevive@opensuse.org>, 2020, 2021, 2022, 2023.
-# SPDX-FileCopyrightText: 2025 Geraldo Simiao <geraldosimiao@fedoraproject.org>
-# SPDX-FileCopyrightText: 2025 Guilherme Marçal Silva <guimarcalsilva@gmail.com>
-# SPDX-FileCopyrightText: 2025 Marcus Gama <marcus.gama@gmail.com>
+# SPDX-FileCopyrightText: 2025 Sveinn í Felli <sv1@fellsnet.is>
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-01 00:47+0000\n"
-"PO-Revision-Date: 2025-12-01 08:25-0300\n"
-"Last-Translator: Marcus Gama <marcus.gama@gmail.com>\n"
-"Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
-"Language: pt_BR\n"
+"PO-Revision-Date: 2025-12-01 21:16+0000\n"
+"Last-Translator: Sveinn í Felli <sv1@fellsnet.is>\n"
+"Language-Team: Icelandic\n"
+"Language: is\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.08.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Luiz Fernando Ranghetti, Geraldo Simião"
+msgstr "Sveinn í Felli"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "elchevive@opensuse.org, geraldosimiao@fedoraproject.org"
+msgstr "Sveinn í Felli"
 
 #: src/main.cpp:70
 #, kde-format
@@ -38,12 +35,12 @@ msgstr "Qrca"
 #: src/main.cpp:72
 #, kde-format
 msgid "A simple QR scanner"
-msgstr "Um leitor de códigos QR simples"
+msgstr "Einfaldur skanni fyrir QR-kóða"
 
 #: src/main.cpp:74
 #, kde-format
 msgid "Copyright 2016-2019 Qrca and Kaidan authors"
-msgstr "Copyright 2016-2019 Autores do Qrca e Kaidan"
+msgstr "Höfundarréttur © 2016-2019 Qrca og Kaidan höfundarnir"
 
 #: src/main.cpp:78
 #, kde-format
@@ -58,266 +55,221 @@ msgstr "Simon Schmeißer"
 #: src/main.cpp:95
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
-msgstr "Ler apenas códigos QR de redes Wifi"
+msgstr "Einungis skanna QR-kóða fyrir þráðlaus net"
 
 #: src/notificationmanager.cpp:19
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
-msgstr "A URL de compartilhamento da imagem é <a href='%1'>%1</a>"
+msgstr "Deild slóð myndar er <a href='%1'>%1</a>"
 
 #: src/qml/Main.qml:17
 #, kde-format
 msgid "QR Code Scanner"
-msgstr "Leitor de códigos QR"
+msgstr "QR-kóðaskanni"
 
 #: src/qml/Main.qml:57
 #, kde-format
 msgid "Scan"
-msgstr "Ler"
+msgstr "Skanna"
 
 #: src/qml/Main.qml:64
 #, kde-format
 msgid "Create"
-msgstr "Criar"
+msgstr "Útbúa"
 
 #: src/qml/Main.qml:70
 #, kde-format
 msgid "About"
-msgstr "Sobre"
+msgstr "Um hugbúnaðinn"
 
 #: src/qml/QrCodeEncoderPage.qml:18
 #, kde-format
 msgctxt "@title:window"
 msgid "Create a QR Code"
-msgstr "Criar um código QR"
+msgstr "Útbúa QR-kóða"
 
 #: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "Image files (*.png *.jpg)"
-msgstr "Arquivos de imagem (*.png *.jpg)"
+msgstr "Myndskrár (*.png *.jpg)"
 
 #: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "All files (*)"
-msgstr "Todos os arquivos (*)"
+msgstr "Allar skrár (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Save"
-msgstr "Salvar"
+msgstr "Vista"
 
 #: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
 msgid "QR code could not be saved."
-msgstr "O código QR não pôde ser salvo."
+msgstr "Ekki tókst að vista QR-kóða."
 
 #: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Copy"
-msgstr "Copiar"
+msgstr "Afrita"
 
 #: src/qml/QrCodeEncoderPage.qml:73
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter text…"
-msgstr "Inserir texto…"
+msgstr "Skrifaðu texta…"
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
 msgid "Scan a Wi-Fi Code"
-msgstr "Ler um código Wifi"
+msgstr "Skanna WiFi-kóða fyrir þráðlaust net"
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
 msgid "Scan a QR Code"
-msgstr "Ler um código QR"
+msgstr "Skanna QR-kóða"
 
 #: src/qml/QrCodeScannerPage.qml:57
 #, kde-format
 msgid "Light"
-msgstr "Luz"
+msgstr "Ljóst"
 
 #: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:292
 #, kde-format
 msgid "Select Camera"
-msgstr "Selecionar câmera"
+msgstr "Veldu myndavél"
 
 #: src/qml/QrCodeScannerPage.qml:71
 #, kde-format
 msgid "Open Image"
-msgstr "Abrir imagem"
+msgstr "Opna mynd"
 
 #: src/qml/QrCodeScannerPage.qml:106
 #, kde-format
 msgid "Text found"
-msgstr "Texto encontrado"
+msgstr "Texti fannst"
 
 #: src/qml/QrCodeScannerPage.qml:108
 #, kde-format
 msgid "URL found"
-msgstr "URL encontrada"
+msgstr "URL-slóð fannst"
 
 #: src/qml/QrCodeScannerPage.qml:110
 #, kde-format
 msgid "Contact found"
-msgstr "Contato encontrado"
+msgstr "Tengiliður fannst"
 
 #: src/qml/QrCodeScannerPage.qml:112
 #, kde-format
 msgid "OTP URI found"
-msgstr "URI OTP encontrada"
+msgstr "OTP URI-slóð fannst"
 
 #: src/qml/QrCodeScannerPage.qml:114
 #, kde-format
 msgid "Binary data found"
-msgstr "Dados binários encontrado"
+msgstr "Tvíundargögn fundust"
 
 #: src/qml/QrCodeScannerPage.qml:116
 #, kde-format
 msgid "Health certificate found"
-msgstr "Certificado de saúde encontrado "
+msgstr "Heilsuskilríki fannst"
 
 #: src/qml/QrCodeScannerPage.qml:118
 #, kde-format
 msgid "Transport ticket found"
-msgstr "Bilhete de transporte encontrado"
+msgstr "Farmiði í samgöngur fannst"
 
 #: src/qml/QrCodeScannerPage.qml:120
 #, kde-format
 msgid "ISBN found"
-msgstr "ISBN encontrado"
+msgstr "ISBN fannst"
 
 #: src/qml/QrCodeScannerPage.qml:122
 #, kde-format
 msgid "International Article Number found"
-msgstr "Número EAN 13 encontrado"
+msgstr "Alþjóðlegt númer greinar fannst"
 
 #: src/qml/QrCodeScannerPage.qml:124
 #, kde-format
 msgid "Wi-Fi settings found"
-msgstr "Configurações Wi-Fi encontrada"
+msgstr "Wi-Fi stillingar fundust"
 
 #: src/qml/QrCodeScannerPage.qml:151
 #, kde-format
 msgid "<binary data>"
-msgstr "<dados binários>"
+msgstr "<tvíundargögn>"
 
 #: src/qml/QrCodeScannerPage.qml:186
 #, kde-format
 msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
-msgstr "Conectando…"
+msgstr "Tengist…"
 
 #: src/qml/QrCodeScannerPage.qml:194
 #, kde-format
 msgid "Open"
-msgstr "Abrir"
+msgstr "Opna"
 
 #: src/qml/QrCodeScannerPage.qml:196
 #, kde-format
 msgid "Save Contact"
-msgstr "Salvar contato"
+msgstr "Vista tengilið"
 
 #: src/qml/QrCodeScannerPage.qml:198
 #, kde-format
 msgid "Open OTP client"
-msgstr "Abrir cliente OTP"
+msgstr "Opna OTP-forrit"
 
 #: src/qml/QrCodeScannerPage.qml:200
 #, kde-format
 msgid "Open Food Facts"
-msgstr "Open Food Facts"
+msgstr "Opna Food Facts"
 
 #: src/qml/QrCodeScannerPage.qml:202
 #, kde-format
 msgid "Wikipedia Book Sources"
-msgstr "Fontes da Wikipédia Livros"
+msgstr "Wikipedia bókaheimildir"
 
 #: src/qml/QrCodeScannerPage.qml:204
 #, kde-format
 msgid "Open KDE Itinerary"
-msgstr "Abrir no KDE Itinerary"
+msgstr "Opna KDE Itinerary"
 
 #: src/qml/QrCodeScannerPage.qml:206
 #, kde-format
 msgid "Open in Vakzination"
-msgstr "Abrir no Vakzination"
+msgstr "Opna í Vakzination"
 
 #: src/qml/QrCodeScannerPage.qml:208
 #, kde-format
 msgid "Connect"
-msgstr "Conectar"
+msgstr "Tengjast"
 
 #: src/qml/QrCodeScannerPage.qml:277
 #, kde-format
 msgid "Copy to Clipboard"
-msgstr "Copiar para a área de transferência"
+msgstr "Afrita á klippispjald"
 
 #: src/qml/QrCodeScannerPage.qml:373
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
-msgstr "Escolher um arquivo de imagem"
+msgstr "Veldu myndskrá"
 
 #: src/qml/QrCodeScannerPage.qml:374
 #, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
-msgstr "Arquivos de imagem (*.jpeg *.jpg *.jxl *.png)"
+msgstr "Myndskrár (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:388
 #, kde-format
 msgid "No QR code found in the image."
-msgstr "Nenhum código QR encontrado na imagem."
+msgstr "Enginn QR-kóði fannst í myndinni."
 
 #: src/Qrca.cpp:272
 #, kde-format
 msgid "Failed to find wifi device"
-msgstr "Falha ao localizar dispositivo wifi"
-
-#~ msgid "QR-Code Scanner"
-#~ msgstr "Leitor de códigos QR"
-
-#~ msgid "Share"
-#~ msgstr "Compartilhar"
-
-#~ msgid "QR-Code could not be saved to temporary location"
-#~ msgstr "O código QR não pôde ser salvo na localização temporária"
-
-#~ msgid "Share Qr-Code"
-#~ msgstr "Compartilhar código QR"
-
-#~ msgid "Sharing Failed"
-#~ msgstr "Falha ao compartilhar"
-
-#~ msgid "Share QR-Code"
-#~ msgstr "Compartilhar código QR"
-
-#~ msgid "Saved image to %1"
-#~ msgstr "Imagem salva em %1"
-
-#~ msgid "Open Externally"
-#~ msgstr "Abrir externamente"
-
-#~ msgid "Generating the QR-Code failed: "
-#~ msgstr "Falha ao gerar o código QR:"
-
-#~ msgid "Cancel"
-#~ msgstr "Cancelar"
-
-#~ msgid "The following tag has been found. Do you want to open the url?"
-#~ msgstr "A seguinte etiqueta foi encontrada. Deseja abrir a URL?"
-
-#~ msgid "A contact has been found, do you want to save it?"
-#~ msgstr "Um contato foi encontrado, deseja salvá-lo?"
-
-#~ msgid "An OTP URI has been found. Do you want to open your OTP client?"
-#~ msgstr "Uma URI OTP foi encontrada. Deseja abrir seu cliente OTP?"
-
-#~ msgid "The following tag has been found."
-#~ msgstr "A seguinte etiqueta foi encontrada."
-
-#~ msgid "Name: "
-#~ msgstr "Nome: "
+msgstr "Mistókst að finna WiFi-tæki"

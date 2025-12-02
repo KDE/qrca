@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-01 00:47+0000\n"
-"PO-Revision-Date: 2025-11-12 06:57+0100\n"
+"PO-Revision-Date: 2025-12-01 05:55+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -41,7 +41,7 @@ msgstr "მარტივი QR კოდის სკანერი"
 #: src/main.cpp:74
 #, kde-format
 msgid "Copyright 2016-2019 Qrca and Kaidan authors"
-msgstr "Copyright 2016-2019 Qrca და Kaidan-ის ავტორები"
+msgstr "Copyright 2016-2019 Qrca-ის და Kaidan-ის ავტორები"
 
 #: src/main.cpp:78
 #, kde-format
@@ -84,11 +84,10 @@ msgid "About"
 msgstr "შესახებ"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, fuzzy, kde-format
-#| msgid "Create a QR Code"
+#, kde-format
 msgctxt "@title:window"
 msgid "Create a QR Code"
-msgstr "QR კოდის ტიპის შექმნა"
+msgstr "QR კოდის შექმნა"
 
 #: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
@@ -101,8 +100,7 @@ msgid "All files (*)"
 msgstr "ყველა ფაილი (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
-#, fuzzy, kde-format
-#| msgid "Save"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Save"
 msgstr "შენახვა"
@@ -113,8 +111,7 @@ msgid "QR code could not be saved."
 msgstr "QR-კოდის შენახვა შეუძლებელია."
 
 #: src/qml/QrCodeEncoderPage.qml:47
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Copy"
 msgstr "კოპირება"
@@ -123,7 +120,7 @@ msgstr "კოპირება"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter text…"
-msgstr ""
+msgstr "შეიყვანეთ ტექსტი…"
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format

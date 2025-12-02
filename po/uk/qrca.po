@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-01 00:47+0000\n"
-"PO-Revision-Date: 2025-11-12 18:24+0200\n"
+"PO-Revision-Date: 2025-12-01 15:06+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -86,8 +86,7 @@ msgid "About"
 msgstr "Про програму"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, fuzzy, kde-format
-#| msgid "Create a QR Code"
+#, kde-format
 msgctxt "@title:window"
 msgid "Create a QR Code"
 msgstr "Створити QR-код"
@@ -103,8 +102,7 @@ msgid "All files (*)"
 msgstr "усі файли (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
-#, fuzzy, kde-format
-#| msgid "Save"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Save"
 msgstr "Зберегти"
@@ -115,8 +113,7 @@ msgid "QR code could not be saved."
 msgstr "Не вдалося зберегти QR-код."
 
 #: src/qml/QrCodeEncoderPage.qml:47
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Copy"
 msgstr "Копіювати"
@@ -125,7 +122,7 @@ msgstr "Копіювати"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter text…"
-msgstr ""
+msgstr "Введіть текст…"
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format

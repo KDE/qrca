@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-01 00:47+0000\n"
-"PO-Revision-Date: 2025-11-12 09:51+0100\n"
+"PO-Revision-Date: 2025-12-01 11:33+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -86,11 +86,10 @@ msgid "About"
 msgstr "Quant al"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, fuzzy, kde-format
-#| msgid "Create a QR Code"
+#, kde-format
 msgctxt "@title:window"
 msgid "Create a QR Code"
-msgstr "Crea un codi QR"
+msgstr "Creació de codi QR"
 
 #: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
@@ -103,8 +102,7 @@ msgid "All files (*)"
 msgstr "Tots els fitxers (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
-#, fuzzy, kde-format
-#| msgid "Save"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Save"
 msgstr "Desa"
@@ -115,8 +113,7 @@ msgid "QR code could not be saved."
 msgstr "No s'ha pogut desar el codi QR."
 
 #: src/qml/QrCodeEncoderPage.qml:47
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Copy"
 msgstr "Copia"
@@ -125,7 +122,7 @@ msgstr "Copia"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter text…"
-msgstr ""
+msgstr "Introduïu el text…"
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
