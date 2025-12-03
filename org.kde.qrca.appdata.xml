@@ -9,6 +9,7 @@
   <name xml:lang="es">Qrca</name>
   <name xml:lang="fr">Qrca</name>
   <name xml:lang="he">Qrca</name>
+  <name xml:lang="is">Qrca</name>
   <name xml:lang="it">Qrca</name>
   <name xml:lang="ka">Qrca</name>
   <name xml:lang="nl">Qrca</name>
@@ -37,6 +38,7 @@
   <summary xml:lang="hu">QR-kódok olvasása és létrehozása</summary>
   <summary xml:lang="ia">Scande e crea codices QR</summary>
   <summary xml:lang="id">Scan dan ciptakan QR-Codes</summary>
+  <summary xml:lang="is">Skanna og búa til QR-kóða</summary>
   <summary xml:lang="it">Scansiona e crea codici QR</summary>
   <summary xml:lang="ka">QR კოდის სკანირება და შექმნა</summary>
   <summary xml:lang="ko">QR 코드 스캔 및 생성</summary>
