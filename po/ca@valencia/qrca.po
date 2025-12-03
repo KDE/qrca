@@ -267,4 +267,4 @@ msgstr "No s'ha trobat cap codi QR a la imatge"
 #: src/Qrca.cpp:272
 #, kde-format
 msgid "Failed to find wifi device"
-msgstr "No s'ha pogut trobar el dispositiu wifi"
+msgstr "Ha fallat mentre es trobava el dispositiu wifi"
