@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-01 00:47+0000\n"
-"PO-Revision-Date: 2025-11-12 19:57+0400\n"
+"PO-Revision-Date: 2025-12-03 16:53+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -84,8 +84,7 @@ msgid "About"
 msgstr "عن"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, fuzzy, kde-format
-#| msgid "Create a QR Code"
+#, kde-format
 msgctxt "@title:window"
 msgid "Create a QR Code"
 msgstr "أنشئ رمز الاستجابة السريعة"
@@ -101,8 +100,7 @@ msgid "All files (*)"
 msgstr "كلّ الملفّات (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
-#, fuzzy, kde-format
-#| msgid "Save"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Save"
 msgstr "احفظ"
@@ -113,8 +111,7 @@ msgid "QR code could not be saved."
 msgstr "لم يتمكن من حفظ رمز الاستجابة."
 
 #: src/qml/QrCodeEncoderPage.qml:47
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Copy"
 msgstr "انسخ"
@@ -123,7 +120,7 @@ msgstr "انسخ"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter text…"
-msgstr ""
+msgstr "أَدْخِل نصًا…"
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format

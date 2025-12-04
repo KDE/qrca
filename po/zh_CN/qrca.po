@@ -86,7 +86,7 @@ msgstr "关于"
 #, kde-format
 msgctxt "@title:window"
 msgid "Create a QR Code"
-msgstr ""
+msgstr "创建二维码"
 
 #: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
@@ -102,7 +102,7 @@ msgstr "所有文件 (*)"
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Save"
-msgstr ""
+msgstr "保存"
 
 #: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
@@ -113,13 +113,13 @@ msgstr "无法保存二维码。"
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Copy"
-msgstr ""
+msgstr "复制"
 
 #: src/qml/QrCodeEncoderPage.qml:73
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter text…"
-msgstr ""
+msgstr "输入文本…"
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
