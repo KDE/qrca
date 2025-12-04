@@ -100,7 +100,7 @@ msgstr "所有文件 (*)"
 #: src/qml/QrCodeEncoderPage.qml:29
 #, kde-format
 msgid "Save"
-msgstr ""
+msgstr "保存"
 
 #: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
@@ -110,7 +110,7 @@ msgstr "无法保存二维码"
 #: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
 msgid "Copy"
-msgstr ""
+msgstr "复制"
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
