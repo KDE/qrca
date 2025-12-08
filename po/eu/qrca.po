@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-01 00:47+0000\n"
-"PO-Revision-Date: 2025-02-02 20:23+0100\n"
+"PO-Revision-Date: 2025-12-07 19:26+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.12.1\n"
+"X-Generator: Lokalize 25.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -86,11 +86,10 @@ msgid "About"
 msgstr "Honi buruz"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, fuzzy, kde-format
-#| msgid "Create QR-Code"
+#, kde-format
 msgctxt "@title:window"
 msgid "Create a QR Code"
-msgstr "Sortu QR kodea"
+msgstr "Sortu QR kode bat"
 
 #: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
@@ -103,21 +102,18 @@ msgid "All files (*)"
 msgstr "Fitxategi guztiak (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
-#, fuzzy, kde-format
-#| msgid "Save"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Save"
 msgstr "Gorde"
 
 #: src/qml/QrCodeEncoderPage.qml:37
-#, fuzzy, kde-format
-#| msgid "QR-Code could not be saved"
+#, kde-format
 msgid "QR code could not be saved."
-msgstr "Ezin izan du QR kodea gorde"
+msgstr "Ezin izan du QR kodea gorde."
 
 #: src/qml/QrCodeEncoderPage.qml:47
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Copy"
 msgstr "Kopiatu"
@@ -126,19 +122,17 @@ msgstr "Kopiatu"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter text…"
-msgstr ""
+msgstr "Sartu testua…"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan for Wifi code"
+#, kde-format
 msgid "Scan a Wi-Fi Code"
-msgstr "Eskaneatu Wi-Fi kode bila"
+msgstr "Eskaneatu Wi-Fi kode bat"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan QR code"
+#, kde-format
 msgid "Scan a QR Code"
-msgstr "Eskaneatu QR kodea"
+msgstr "Eskaneatu QR-kodea bat"
 
 #: src/qml/QrCodeScannerPage.qml:57
 #, kde-format
@@ -211,9 +205,7 @@ msgid "<binary data>"
 msgstr "<datu bitarrak>"
 
 #: src/qml/QrCodeScannerPage.qml:186
-#, fuzzy, kde-format
-#| msgctxt "Connecting to Wifi"
-#| msgid "Connecting…"
+#, kde-format
 msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
 msgstr "Konektatzen…"
@@ -224,8 +216,7 @@ msgid "Open"
 msgstr "Ireki"
 
 #: src/qml/QrCodeScannerPage.qml:196
-#, fuzzy, kde-format
-#| msgid "Save contact"
+#, kde-format
 msgid "Save Contact"
 msgstr "Gorde kontaktua"
 
@@ -260,18 +251,15 @@ msgid "Connect"
 msgstr "Konektatu"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Copy to clipboard"
+#, kde-format
 msgid "Copy to Clipboard"
-msgstr "Kopiatu arbelera"
+msgstr "Kopiatu arbelean"
 
 #: src/qml/QrCodeScannerPage.qml:373
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Choose an image file"
+#, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
-msgstr "Aukeratu fitxategi-irudi bat"
+msgstr "Aukeratu irudi-fitxategi bat"
 
 #: src/qml/QrCodeScannerPage.qml:374
 #, kde-format
@@ -280,10 +268,9 @@ msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "Irudi fitxategiak (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:388
-#, fuzzy, kde-format
-#| msgid "No QR code found in the image"
+#, kde-format
 msgid "No QR code found in the image."
-msgstr "Irudian ez da QR koderik aurkitu"
+msgstr "Irudian ez da QR-koderik aurkitu."
 
 #: src/Qrca.cpp:272
 #, kde-format
