@@ -113,8 +113,7 @@ msgid "QR code could not be saved."
 msgstr "QR kód nelze uložit"
 
 #: src/qml/QrCodeEncoderPage.qml:47
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Copy"
 msgstr "Kopírovat"
@@ -256,8 +255,7 @@ msgid "Connect"
 msgstr "Připojit se"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Copy to clipboard"
+#, kde-format
 msgid "Copy to Clipboard"
 msgstr "Zkopírovat do schránky"
 
