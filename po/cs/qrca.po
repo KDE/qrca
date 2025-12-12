@@ -83,11 +83,10 @@ msgid "About"
 msgstr "O aplikaci"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, fuzzy, kde-format
-#| msgid "Create QR-Code"
+#, kde-format
 msgctxt "@title:window"
 msgid "Create a QR Code"
-msgstr "Vytvořit kód QR"
+msgstr ""
 
 #: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
@@ -100,17 +99,15 @@ msgid "All files (*)"
 msgstr "Všechny soubory (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
-#, fuzzy, kde-format
-#| msgid "Save"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Save"
-msgstr "Uložit"
+msgstr ""
 
 #: src/qml/QrCodeEncoderPage.qml:37
-#, fuzzy, kde-format
-#| msgid "QR-Code could not be saved"
+#, kde-format
 msgid "QR code could not be saved."
-msgstr "QR kód nelze uložit"
+msgstr ""
 
 #: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
@@ -125,16 +122,14 @@ msgid "Enter text…"
 msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan QR code"
+#, kde-format
 msgid "Scan a Wi-Fi Code"
-msgstr "Skenovat kód QR"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan QR code"
+#, kde-format
 msgid "Scan a QR Code"
-msgstr "Skenovat kód QR"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:57
 #, kde-format
@@ -219,10 +214,9 @@ msgid "Open"
 msgstr "Otevřít"
 
 #: src/qml/QrCodeScannerPage.qml:196
-#, fuzzy, kde-format
-#| msgid "Save contact"
+#, kde-format
 msgid "Save Contact"
-msgstr "Uložit kontakt"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:198
 #, kde-format
