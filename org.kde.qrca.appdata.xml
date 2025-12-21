@@ -7,7 +7,7 @@
   <name xml:lang="ca">Escàner de codi de barres</name>
   <name xml:lang="ca-valencia">Escàner de codi de barres</name>
   <name xml:lang="cs">Čtečka čarových kódů</name>
-  <name xml:lang="de">Strichcode-Scanner</name>
+  <name xml:lang="de">Barcode-Scanner</name>
   <name xml:lang="en-GB">Barcode Scanner</name>
   <name xml:lang="eo">Strikoda Skanilo</name>
   <name xml:lang="es">Escáner de códigos de barras</name>
@@ -94,7 +94,7 @@
     <p xml:lang="ast">Escania códigos QR cola cámara de teléfonos y portátiles, y crea los de to pa compartir datos ente preseos fácilmente.</p>
     <p xml:lang="ca">Escanegeu els codis QR amb la càmera del telèfon o portàtil, i creeu els vostres per a compartir dades amb facilitat entre diferents dispositius.</p>
     <p xml:lang="ca-valencia">Escanegeu els codis QR amb la càmera del telèfon o portàtil, i creeu els vostres per a compartir dades amb facilitat entre diferents dispositius.</p>
-    <p xml:lang="de">Scannen Sie QR-Codes mit Ihrer Kamera auf Telefonen und Laptops, und erstellen Sie Ihre eigenen QR-Codeszum einfachen Austausch von Daten zwischen Geräten.</p>
+    <p xml:lang="de">Scannen Sie QR-Codes mit Ihrer Kamera auf Telefonen und Laptops. Erstellen Sie Ihre eigenen QR-Codes, um Daten einfach zwischen Geräten zu teilen.</p>
     <p xml:lang="en-GB">Scan QR-Codes with your camera on phones and laptops, and create your own for easily sharing data between devices.</p>
     <p xml:lang="eo">Skanu QR-kodojn per via fotilo en telefonoj kaj tekkomputiloj, kaj kreu vian propran por facile kunhavigi datumojn inter aparatoj.</p>
     <p xml:lang="es">Escanear códigos QR con la cámara de los teléfonos móviles y de los portátiles, y crear un código QR propio para compartir datos de forma sencilla entre dispositivos.</p>
