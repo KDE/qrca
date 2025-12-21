@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-01 00:47+0000\n"
-"PO-Revision-Date: 2025-08-07 22:21+0200\n"
+"PO-Revision-Date: 2025-12-05 14:34+0100\n"
 "Last-Translator: Philipp Kiemle <l10n.daphipz@fastmail.de>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 25.04.3\n"
+"X-Generator: Lokalize 25.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -43,7 +43,7 @@ msgstr "Ein einfacher QR-Scanner"
 #: src/main.cpp:74
 #, kde-format
 msgid "Copyright 2016-2019 Qrca and Kaidan authors"
-msgstr "Copyright 2016-2019 Qrca- und Kaidan-Autoren"
+msgstr "© 2016–2019 Die Autoren von Qrca und Kaidan"
 
 #: src/main.cpp:78
 #, kde-format
@@ -58,7 +58,7 @@ msgstr "Simon Schmeißer"
 #: src/main.cpp:95
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
-msgstr ""
+msgstr "Nur nach QR-Codes für WLAN-Netzwerke scannen"
 
 #: src/notificationmanager.cpp:19
 #, kde-format
@@ -86,16 +86,15 @@ msgid "About"
 msgstr "Über"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, fuzzy, kde-format
-#| msgid "Create QR-Code"
+#, kde-format
 msgctxt "@title:window"
 msgid "Create a QR Code"
-msgstr "QR-Code erstellen"
+msgstr "Einen QR-Code erstellen"
 
 #: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "Image files (*.png *.jpg)"
-msgstr "Bild-Dateien (*.png *.jpg)"
+msgstr "Bilddateien (*.png *.jpg)"
 
 #: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
@@ -103,40 +102,37 @@ msgid "All files (*)"
 msgstr "Alle Dateien (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
-#, fuzzy, kde-format
-#| msgid "Save"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Save"
 msgstr "Speichern"
 
 #: src/qml/QrCodeEncoderPage.qml:37
-#, fuzzy, kde-format
-#| msgid "QR-Code could not be saved"
+#, kde-format
 msgid "QR code could not be saved."
-msgstr "Der QR-Code kann nicht gespeichert werden"
+msgstr "QR-Code kann nicht gespeichert werden."
 
 #: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Copy"
-msgstr ""
+msgstr "Kopieren"
 
 #: src/qml/QrCodeEncoderPage.qml:73
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter text…"
-msgstr ""
+msgstr "Text eingeben …"
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
 msgid "Scan a Wi-Fi Code"
-msgstr ""
+msgstr "Einen WLAN-Code scannen"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Share QR-Code"
+#, kde-format
 msgid "Scan a QR Code"
-msgstr "QR-Code teilen"
+msgstr "Einen QR-Code scannen"
 
 #: src/qml/QrCodeScannerPage.qml:57
 #, kde-format
@@ -151,7 +147,7 @@ msgstr "Kamera auswählen"
 #: src/qml/QrCodeScannerPage.qml:71
 #, kde-format
 msgid "Open Image"
-msgstr ""
+msgstr "Bild öffnen"
 
 #: src/qml/QrCodeScannerPage.qml:106
 #, kde-format
@@ -209,11 +205,10 @@ msgid "<binary data>"
 msgstr "<binary data>"
 
 #: src/qml/QrCodeScannerPage.qml:186
-#, fuzzy, kde-format
-#| msgid "Connect"
+#, kde-format
 msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
-msgstr "Verbinden"
+msgstr "Wird verbunden …"
 
 #: src/qml/QrCodeScannerPage.qml:194
 #, kde-format
@@ -221,8 +216,7 @@ msgid "Open"
 msgstr "Öffnen"
 
 #: src/qml/QrCodeScannerPage.qml:196
-#, fuzzy, kde-format
-#| msgid "Save contact"
+#, kde-format
 msgid "Save Contact"
 msgstr "Kontakt speichern"
 
@@ -257,8 +251,7 @@ msgid "Connect"
 msgstr "Verbinden"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Copy to clipboard"
+#, kde-format
 msgid "Copy to Clipboard"
 msgstr "In die Zwischenablage kopieren"
 
@@ -266,24 +259,23 @@ msgstr "In die Zwischenablage kopieren"
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
-msgstr ""
+msgstr "Eine Bilddatei auswählen"
 
 #: src/qml/QrCodeScannerPage.qml:374
-#, fuzzy, kde-format
-#| msgid "Image files (*.png *.jpg)"
+#, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
-msgstr "Bild-Dateien (*.png *.jpg)"
+msgstr "Bilddateien (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:388
 #, kde-format
 msgid "No QR code found in the image."
-msgstr ""
+msgstr "Kein QR-Code im Bild gefunden."
 
 #: src/Qrca.cpp:272
 #, kde-format
 msgid "Failed to find wifi device"
-msgstr ""
+msgstr "Kein WLAN-Gerät gefunden"
 
 #~ msgid "QR-Code Scanner"
 #~ msgstr "QR-Code-Scanner"
