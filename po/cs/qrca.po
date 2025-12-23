@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the qrca package.
-# Vit Pelcak <vit@pelcak.org>, 2019, 2020, 2021, 2023.
+# SPDX-FileCopyrightText: 2019, 2020, 2021, 2023, 2025 Vit Pelcak <vit@pelcak.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 14:43+0000\n"
-"PO-Revision-Date: 2023-07-04 16:47+0200\n"
+"PO-Revision-Date: 2025-12-19 16:52+0100\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -15,17 +15,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 23.04.2\n"
+"X-Generator: Lokalize 25.12.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Vít Pelčák"
+msgstr "Vít Pelčák,Libor Filípek"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "vit@pelcak.org"
+msgstr "vit@pelcak.org,filipek.libor@protonmail.com"
 
 #: src/main.cpp:70
 #, kde-format
@@ -55,7 +55,7 @@ msgstr "Simon Schmeißer"
 #: src/main.cpp:95
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
-msgstr ""
+msgstr "Skenovat pouze QR kódy pro sítě Wi-Fi"
 
 #: src/notificationmanager.cpp:19
 #, kde-format
@@ -115,7 +115,7 @@ msgstr "Kopírovat"
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
 msgid "Scan for Wifi code"
-msgstr ""
+msgstr "Skenovat kód Wi-Fi"
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
@@ -165,12 +165,12 @@ msgstr "Nalezena binární data"
 #: src/qml/QrCodeScannerPage.qml:116
 #, kde-format
 msgid "Health certificate found"
-msgstr ""
+msgstr "Nalezen očkovací certifikát"
 
 #: src/qml/QrCodeScannerPage.qml:118
 #, kde-format
 msgid "Transport ticket found"
-msgstr ""
+msgstr "Nalezena jízdenka"
 
 #: src/qml/QrCodeScannerPage.qml:120
 #, kde-format
@@ -185,7 +185,7 @@ msgstr "Mezinárodní číslo článku nalezeno"
 #: src/qml/QrCodeScannerPage.qml:124
 #, kde-format
 msgid "Wi-Fi settings found"
-msgstr "Nalezeno nastavení WiFi"
+msgstr "Nalezeno nastavení Wi-Fi"
 
 #: src/qml/QrCodeScannerPage.qml:151
 #, kde-format
@@ -196,7 +196,7 @@ msgstr "<binární data>"
 #, kde-format
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
-msgstr ""
+msgstr "Připojování..."
 
 #: src/qml/QrCodeScannerPage.qml:194
 #, kde-format
@@ -247,20 +247,20 @@ msgstr "Zkopírovat do schránky"
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an image file"
-msgstr ""
+msgstr "Vybrat soubor s obrázkem"
 
 #: src/qml/QrCodeScannerPage.qml:374
 #, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
-msgstr ""
+msgstr "Soubory obrázků (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:388
 #, kde-format
 msgid "No QR code found in the image"
-msgstr ""
+msgstr "Na obrázku nebyl nalezen žádný QR kód"
 
 #: src/Qrca.cpp:272
 #, kde-format
 msgid "Failed to find wifi device"
-msgstr ""
+msgstr "Nepodařilo se najít zařízení Wi-Fi"
