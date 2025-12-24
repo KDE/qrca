@@ -46,6 +46,7 @@
   <summary xml:lang="ast">Escania y crea códigos QR</summary>
   <summary xml:lang="ca">Escaneja i crea codis QR</summary>
   <summary xml:lang="ca-valencia">Escaneja i crea codis QR</summary>
+  <summary xml:lang="cs">Skenujte a vytvářejte QR kódy</summary>
   <summary xml:lang="de">Scannen und Erstellen von QR-Codes</summary>
   <summary xml:lang="en-GB">Scan and create QR-Codes</summary>
   <summary xml:lang="eo">Skani kaj krei QR-kodojn</summary>
@@ -94,6 +95,7 @@
     <p xml:lang="ast">Escania códigos QR cola cámara de teléfonos y portátiles, y crea los de to pa compartir datos ente preseos fácilmente.</p>
     <p xml:lang="ca">Escanegeu els codis QR amb la càmera del telèfon o portàtil, i creeu els vostres per a compartir dades amb facilitat entre diferents dispositius.</p>
     <p xml:lang="ca-valencia">Escanegeu els codis QR amb la càmera del telèfon o portàtil, i creeu els vostres per a compartir dades amb facilitat entre diferents dispositius.</p>
+    <p xml:lang="cs">Naskenujte QR kódy fotoaparátem na telefonech a noteboocích a vytvořte si vlastní pro snadné sdílení dat mezi zařízeními.</p>
     <p xml:lang="de">Scannen Sie QR-Codes mit Ihrer Kamera auf Telefonen und Laptops. Erstellen Sie Ihre eigenen QR-Codes, um Daten einfach zwischen Geräten zu teilen.</p>
     <p xml:lang="en-GB">Scan QR-Codes with your camera on phones and laptops, and create your own for easily sharing data between devices.</p>
     <p xml:lang="eo">Skanu QR-kodojn per via fotilo en telefonoj kaj tekkomputiloj, kaj kreu vian propran por facile kunhavigi datumojn inter aparatoj.</p>
