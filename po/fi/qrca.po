@@ -1,13 +1,13 @@
 # Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the qrca package.
-# SPDX-FileCopyrightText: 2020, 2022, 2023, 2025 Tommi Nieminen <translator@legisign.org>
+# SPDX-FileCopyrightText: 2020, 2022, 2023, 2025, 2026 Tommi Nieminen <translator@legisign.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-01 00:47+0000\n"
-"PO-Revision-Date: 2025-02-20 17:15+0200\n"
+"PO-Revision-Date: 2026-01-05 20:44+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 25.04.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -83,8 +83,7 @@ msgid "About"
 msgstr "Tietoa"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, fuzzy, kde-format
-#| msgid "Create QR-Code"
+#, kde-format
 msgctxt "@title:window"
 msgid "Create a QR Code"
 msgstr "Luo QR-koodi"
@@ -100,21 +99,18 @@ msgid "All files (*)"
 msgstr "Kaikki tiedostot (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
-#, fuzzy, kde-format
-#| msgid "Save"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Save"
 msgstr "Tallenna"
 
 #: src/qml/QrCodeEncoderPage.qml:37
-#, fuzzy, kde-format
-#| msgid "QR-Code could not be saved"
+#, kde-format
 msgid "QR code could not be saved."
-msgstr "QR-koodia ei voitu tallentaa"
+msgstr "QR-koodia ei voitu tallentaa."
 
 #: src/qml/QrCodeEncoderPage.qml:47
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Copy"
 msgstr "Kopioi"
@@ -123,17 +119,15 @@ msgstr "Kopioi"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter text…"
-msgstr ""
+msgstr "Anna teksti…"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan for Wifi code"
+#, kde-format
 msgid "Scan a Wi-Fi Code"
 msgstr "Lue langattoman verkon koodi"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan QR code"
+#, kde-format
 msgid "Scan a QR Code"
 msgstr "Lue QR-koodi"
 
@@ -209,9 +203,7 @@ msgid "<binary data>"
 msgstr "<binaaridataa>"
 
 #: src/qml/QrCodeScannerPage.qml:186
-#, fuzzy, kde-format
-#| msgctxt "Connecting to Wifi"
-#| msgid "Connecting…"
+#, kde-format
 msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
 msgstr "Yhdistetään…"
@@ -222,8 +214,7 @@ msgid "Open"
 msgstr "Avaa"
 
 #: src/qml/QrCodeScannerPage.qml:196
-#, fuzzy, kde-format
-#| msgid "Save contact"
+#, kde-format
 msgid "Save Contact"
 msgstr "Tallenna yhteystieto"
 
@@ -258,18 +249,15 @@ msgid "Connect"
 msgstr "Yhdistä"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Copy to clipboard"
+#, kde-format
 msgid "Copy to Clipboard"
 msgstr "Kopioi leikepöydälle"
 
 #: src/qml/QrCodeScannerPage.qml:373
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Choose an image file"
+#, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
-msgstr "Avaa kuvatiedosto"
+msgstr "Valitse kuvatiedosto"
 
 #: src/qml/QrCodeScannerPage.qml:374
 #, kde-format
@@ -278,10 +266,9 @@ msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "Kuvatiedostot (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:388
-#, fuzzy, kde-format
-#| msgid "No QR code found in the image"
+#, kde-format
 msgid "No QR code found in the image."
-msgstr "Kuvasta ei löytynyt QR-koodia"
+msgstr "Kuvasta ei löytynyt QR-koodia."
 
 #: src/Qrca.cpp:272
 #, kde-format
