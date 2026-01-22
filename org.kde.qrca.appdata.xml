@@ -15,9 +15,11 @@
   <name xml:lang="is">Qrca</name>
   <name xml:lang="it">Qrca</name>
   <name xml:lang="ka">Qrca</name>
+  <name xml:lang="lv">Qrca</name>
   <name xml:lang="nl">Qrca</name>
   <name xml:lang="pt-BR">Qrca</name>
   <name xml:lang="sl">Qrca</name>
+  <name xml:lang="sv">Qrca</name>
   <name xml:lang="tr">Qrca</name>
   <name xml:lang="uk">Qrca</name>
   <name xml:lang="zh-CN">Qrca</name>
@@ -46,7 +48,7 @@
   <summary xml:lang="it">Scansiona e crea codici QR</summary>
   <summary xml:lang="ka">QR კოდის სკანირება და შექმნა</summary>
   <summary xml:lang="ko">QR 코드 스캔 및 생성</summary>
-  <summary xml:lang="lv">Skenējiet un izveidojiet kvadrātkodus</summary>
+  <summary xml:lang="lv">Kvadrātkodu skenēšana un izveidošana</summary>
   <summary xml:lang="nl">QR-Codes scannen en aanmaken</summary>
   <summary xml:lang="nn">Skann og lag QR-kodar</summary>
   <summary xml:lang="pa">QR-ਕੋਡ ਸਕੈਨ ਕਰੋ ਤੇ ਬਣਾਓ</summary>
