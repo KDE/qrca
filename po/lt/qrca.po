@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 14:43+0000\n"
-"PO-Revision-Date: 2019-11-14 03:26+0100\n"
+"PO-Revision-Date: 2026-01-28 19:54+0200\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -17,251 +17,252 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3);\n"
+"X-Generator: Poedit 3.8\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Moo"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "<>"
 
 #: src/main.cpp:70
 #, kde-format
 msgid "Qrca"
-msgstr ""
+msgstr "Qrca"
 
 #: src/main.cpp:72
 #, kde-format
 msgid "A simple QR scanner"
-msgstr ""
+msgstr "Paprastas QR kodų skaitytuvas"
 
 #: src/main.cpp:74
 #, kde-format
 msgid "Copyright 2016-2019 Qrca and Kaidan authors"
-msgstr ""
+msgstr "Autorių teisės 2016–2019 Qrca ir Kaidan autoriai"
 
 #: src/main.cpp:78
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr ""
+msgstr "Jonah Brüchert"
 
 #: src/main.cpp:79
 #, kde-format
 msgid "Simon Schmeißer"
-msgstr ""
+msgstr "Simon Schmeißer"
 
 #: src/main.cpp:95
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
-msgstr ""
+msgstr "Skenuoti tik belaidžių tinklų (Wi-Fi) QR kodus"
 
 #: src/notificationmanager.cpp:19
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
-msgstr ""
+msgstr "Bendrinamas paveikslo URL yra <a href='%1'>%1</a>"
 
 #: src/qml/Main.qml:17
 #, kde-format
 msgid "QR Code Scanner"
-msgstr ""
+msgstr "QR kodų skaitytuvas"
 
 #: src/qml/Main.qml:57
 #, kde-format
 msgid "Scan"
-msgstr ""
+msgstr "Skenuoti"
 
 #: src/qml/Main.qml:64
 #, kde-format
 msgid "Create"
-msgstr ""
+msgstr "Sukurti"
 
 #: src/qml/Main.qml:70
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "Apie"
 
 #: src/qml/QrCodeEncoderPage.qml:18
 #, kde-format
 msgid "Create QR-Code"
-msgstr ""
+msgstr "Sukurti QR kodą"
 
 #: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "Image files (*.png *.jpg)"
-msgstr ""
+msgstr "Paveikslų failai (*.png *.jpg)"
 
 #: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
 msgid "All files (*)"
-msgstr ""
+msgstr "Visi failai (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
 #, kde-format
 msgid "Save"
-msgstr ""
+msgstr "Įrašyti"
 
 #: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
 msgid "QR-Code could not be saved"
-msgstr ""
+msgstr "Nepavyko įrašyti QR kodo"
 
 #: src/qml/QrCodeEncoderPage.qml:47
 #, kde-format
 msgid "Copy"
-msgstr ""
+msgstr "Kopijuoti"
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
 msgid "Scan for Wifi code"
-msgstr ""
+msgstr "Skenuoti belaidžio tinklo kodą"
 
 #: src/qml/QrCodeScannerPage.qml:53
 #, kde-format
 msgid "Scan QR code"
-msgstr ""
+msgstr "Skenuoti QR kodą"
 
 #: src/qml/QrCodeScannerPage.qml:57
 #, kde-format
 msgid "Light"
-msgstr ""
+msgstr "Šviesus"
 
 #: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:292
 #, kde-format
 msgid "Select Camera"
-msgstr ""
+msgstr "Pasirinkti kamerą"
 
 #: src/qml/QrCodeScannerPage.qml:71
 #, kde-format
 msgid "Open Image"
-msgstr ""
+msgstr "Atverti paveikslą"
 
 #: src/qml/QrCodeScannerPage.qml:106
 #, kde-format
 msgid "Text found"
-msgstr ""
+msgstr "Rastas tekstas"
 
 #: src/qml/QrCodeScannerPage.qml:108
 #, kde-format
 msgid "URL found"
-msgstr ""
+msgstr "Rastas URL adresas"
 
 #: src/qml/QrCodeScannerPage.qml:110
 #, kde-format
 msgid "Contact found"
-msgstr ""
+msgstr "Rastas adresatas"
 
 #: src/qml/QrCodeScannerPage.qml:112
 #, kde-format
 msgid "OTP URI found"
-msgstr ""
+msgstr "Rastas vienkartinio slaptažodžio (OTP) URI"
 
 #: src/qml/QrCodeScannerPage.qml:114
 #, kde-format
 msgid "Binary data found"
-msgstr ""
+msgstr "Rasti dvejetainiai duomenys"
 
 #: src/qml/QrCodeScannerPage.qml:116
 #, kde-format
 msgid "Health certificate found"
-msgstr ""
+msgstr "Rastas sveikatos liudijimas"
 
 #: src/qml/QrCodeScannerPage.qml:118
 #, kde-format
 msgid "Transport ticket found"
-msgstr ""
+msgstr "Rastas transporto bilietas"
 
 #: src/qml/QrCodeScannerPage.qml:120
 #, kde-format
 msgid "ISBN found"
-msgstr ""
+msgstr "Rastas ISBN"
 
 #: src/qml/QrCodeScannerPage.qml:122
 #, kde-format
 msgid "International Article Number found"
-msgstr ""
+msgstr "Rastas tarptautinis straipsnio numeris"
 
 #: src/qml/QrCodeScannerPage.qml:124
 #, kde-format
 msgid "Wi-Fi settings found"
-msgstr ""
+msgstr "Rastos belaidžio tinklo (Wi-Fi) nuostatos"
 
 #: src/qml/QrCodeScannerPage.qml:151
 #, kde-format
 msgid "<binary data>"
-msgstr ""
+msgstr "<dvejetainiai duomenys>"
 
 #: src/qml/QrCodeScannerPage.qml:186
 #, kde-format
 msgctxt "Connecting to Wifi"
 msgid "Connecting…"
-msgstr ""
+msgstr "Jungiamasi…"
 
 #: src/qml/QrCodeScannerPage.qml:194
 #, kde-format
 msgid "Open"
-msgstr ""
+msgstr "Atverti"
 
 #: src/qml/QrCodeScannerPage.qml:196
 #, kde-format
 msgid "Save contact"
-msgstr ""
+msgstr "Įrašyti adresatą"
 
 #: src/qml/QrCodeScannerPage.qml:198
 #, kde-format
 msgid "Open OTP client"
-msgstr ""
+msgstr "Atverti vienkartinio slaptažodžio (OTP) programą"
 
 #: src/qml/QrCodeScannerPage.qml:200
 #, kde-format
 msgid "Open Food Facts"
-msgstr ""
+msgstr "Atverti „Food Facts“"
 
 #: src/qml/QrCodeScannerPage.qml:202
 #, kde-format
 msgid "Wikipedia Book Sources"
-msgstr ""
+msgstr "Vikipedijos knygų šaltiniai"
 
 #: src/qml/QrCodeScannerPage.qml:204
 #, kde-format
 msgid "Open KDE Itinerary"
-msgstr ""
+msgstr "Atverti KDE Itinerary"
 
 #: src/qml/QrCodeScannerPage.qml:206
 #, kde-format
 msgid "Open in Vakzination"
-msgstr ""
+msgstr "Atverti programoje Vakzination"
 
 #: src/qml/QrCodeScannerPage.qml:208
 #, kde-format
 msgid "Connect"
-msgstr ""
+msgstr "Prisijungti"
 
 #: src/qml/QrCodeScannerPage.qml:277
 #, kde-format
 msgid "Copy to clipboard"
-msgstr ""
+msgstr "Kopijuoti į iškarpinę"
 
 #: src/qml/QrCodeScannerPage.qml:373
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an image file"
-msgstr ""
+msgstr "Pasirinkite paveikslo failą"
 
 #: src/qml/QrCodeScannerPage.qml:374
 #, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
-msgstr ""
+msgstr "Paveikslų failai (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:388
 #, kde-format
 msgid "No QR code found in the image"
-msgstr ""
+msgstr "Paveiksle nerastas joks QR kodas"
 
 #: src/Qrca.cpp:272
 #, kde-format
 msgid "Failed to find wifi device"
-msgstr ""
+msgstr "Nepavyko rasti belaidį (Wi-Fi) įrenginį"
