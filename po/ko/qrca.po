@@ -1,13 +1,13 @@
 # Copyright (C) 2025 This file is copyright:
 # This file is distributed under the same license as the qrca package.
-# SPDX-FileCopyrightText: 2020, 2021, 2023, 2025 Shinjo Park <kde@peremen.name>
+# SPDX-FileCopyrightText: 2020, 2021, 2023, 2025, 2026 Shinjo Park <kde@peremen.name>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-12-01 00:47+0000\n"
-"PO-Revision-Date: 2025-04-07 00:47+0200\n"
+"PO-Revision-Date: 2026-02-03 22:48+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
 "Language: ko\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Lokalize 23.08.5\n"
+"X-Generator: Lokalize 25.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -83,8 +83,7 @@ msgid "About"
 msgstr "정보"
 
 #: src/qml/QrCodeEncoderPage.qml:18
-#, fuzzy, kde-format
-#| msgid "Create QR-Code"
+#, kde-format
 msgctxt "@title:window"
 msgid "Create a QR Code"
 msgstr "QR 코드 만들기"
@@ -100,21 +99,18 @@ msgid "All files (*)"
 msgstr "모든 파일 (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
-#, fuzzy, kde-format
-#| msgid "Save"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Save"
 msgstr "저장"
 
 #: src/qml/QrCodeEncoderPage.qml:37
-#, fuzzy, kde-format
-#| msgid "QR-Code could not be saved"
+#, kde-format
 msgid "QR code could not be saved."
-msgstr "QR 코드를 저장할 수 없음"
+msgstr "QR 코드를 저장할 수 없습니다."
 
 #: src/qml/QrCodeEncoderPage.qml:47
-#, fuzzy, kde-format
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Copy"
 msgstr "복사"
@@ -123,17 +119,15 @@ msgstr "복사"
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter text…"
-msgstr ""
+msgstr "텍스트 입력…"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan for Wifi code"
+#, kde-format
 msgid "Scan a Wi-Fi Code"
 msgstr "Wi-Fi 코드 스캔"
 
 #: src/qml/QrCodeScannerPage.qml:53
-#, fuzzy, kde-format
-#| msgid "Scan QR code"
+#, kde-format
 msgid "Scan a QR Code"
 msgstr "QR 코드 스캔"
 
@@ -208,12 +202,10 @@ msgid "<binary data>"
 msgstr "<이진 데이터>"
 
 #: src/qml/QrCodeScannerPage.qml:186
-#, fuzzy, kde-format
-#| msgctxt "Connecting to Wifi"
-#| msgid "Connecting…"
+#, kde-format
 msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
-msgstr "연결 중..."
+msgstr "연결 중…"
 
 #: src/qml/QrCodeScannerPage.qml:194
 #, kde-format
@@ -221,8 +213,7 @@ msgid "Open"
 msgstr "열기"
 
 #: src/qml/QrCodeScannerPage.qml:196
-#, fuzzy, kde-format
-#| msgid "Save contact"
+#, kde-format
 msgid "Save Contact"
 msgstr "연락처 저장"
 
@@ -257,15 +248,12 @@ msgid "Connect"
 msgstr "연결"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Copy to clipboard"
+#, kde-format
 msgid "Copy to Clipboard"
 msgstr "클립보드에 복사"
 
 #: src/qml/QrCodeScannerPage.qml:373
-#, fuzzy, kde-format
-#| msgctxt "@title:window"
-#| msgid "Choose an image file"
+#, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
 msgstr "그림 파일 선택"
@@ -277,10 +265,9 @@ msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "그림 파일 (*.jpeg *.jpg *.jxl *.png)"
 
 #: src/qml/QrCodeScannerPage.qml:388
-#, fuzzy, kde-format
-#| msgid "No QR code found in the image"
+#, kde-format
 msgid "No QR code found in the image."
-msgstr "그림 파일에서 QR 코드를 찾을 수 없음"
+msgstr "그림 파일에서 QR 코드를 찾을 수 없습니다."
 
 #: src/Qrca.cpp:272
 #, kde-format
