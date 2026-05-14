@@ -67,4 +67,4 @@ else()
     target_link_libraries(qrca PRIVATE Qt::Widgets KF6::KIOGui KF6::Service KF6::Crash KF6::DBusAddons)
 endif()
 
-install(TARGETS qrca ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS qrca ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
