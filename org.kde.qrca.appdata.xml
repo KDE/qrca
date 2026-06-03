@@ -27,6 +27,7 @@
   <name xml:lang="sl">Qrca</name>
   <name xml:lang="sv">Qrca</name>
   <name xml:lang="tr">Qrca</name>
+  <name xml:lang="ug">Qrca</name>
   <name xml:lang="uk">Qrca</name>
   <name xml:lang="zh-CN">Qrca</name>
   <name xml:lang="zh-TW">Qrca</name>
@@ -69,6 +70,7 @@
   <summary xml:lang="sv">Läs och skapa QR-koder</summary>
   <summary xml:lang="tg">Рамзҳои QR-ро мушоҳида ё эҷод намоед</summary>
   <summary xml:lang="tr">Kare kod tarayın ve oluşturun</summary>
+  <summary xml:lang="ug">QR كودىنى تاراپ ۋە قۇرىدۇ</summary>
   <summary xml:lang="uk">Сканування і створення QR-кодів</summary>
   <summary xml:lang="zh-CN">扫描和创建二维码</summary>
   <summary xml:lang="zh-TW">掃描及建立 QR 碼</summary>
