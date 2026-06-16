@@ -129,8 +129,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git",
-                    "tag": "1.54.2",
-                    "commit": "dc3beb479fc07fbdf43b148f529b21a6474e52a1",
+                    "tag": "1.56.1",
+                    "commit": "b829f838fc5d8c93437faa5db44a5396b67893de",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
@@ -145,12 +145,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/networkmanager-qt.git",
-                    "tag": "v6.20.0",
+                    "tag": "v6.27.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "02f238580f421cd6458b98cc096c972c50c48b1c"
+                    "commit": "c959ca5807326622caadfb6516d3ac949ccb050f"
                 }
             ]
         },
