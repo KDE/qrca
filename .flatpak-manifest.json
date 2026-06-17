@@ -99,6 +99,7 @@
                 "-Diptables=/usr/bin/true",
                 "-Dlibaudit=no",
                 "-Dlibpsl=false",
+                "-Dman=false",
                 "-Dmodem_manager=false",
                 "-Dnbft=false",
                 "-Dnmcli=false",
