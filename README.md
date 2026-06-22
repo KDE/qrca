@@ -1,16 +1,18 @@
-# Qrca
-
+# <img src="org.kde.qrca.svg" width="48"/> Qrca
 Qrca is a simple application for [Plasma Desktop](https://kde.org/plasma-desktop/) and [Plasma Mobile](https://plasma-mobile.org/) that lets you scan many barcode formats and create your own QR code images.
 
 ## Get it
+<a href='https://flathub.org/en/apps/org.kde.qrca'><img width='190px' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.png'/></a>
+[![Snap Store Link](https://snapcraft.io/en/dark/install.svg)](https://snapcraft.io/qrca)
 
-Qrca is currently available on Linux as a nightly Flatpak:
+### Nightly Versions
+#### Flatpak
 
 ```bash
 flatpak install --user https://cdn.kde.org/flatpak/qrca-nightly/org.kde.qrca.flatpakref
 ```
-
-Qrca is also available as a nightly for Android on F-Droid with the [KDE F-Droid Nightly Build Repository](https://community.kde.org/Android/F-Droid#KDE_F-Droid_Nightly_Build_Repository).
+#### Android:
+Available on F-Droid with the [KDE F-Droid Nightly Build Repository](https://community.kde.org/Android/F-Droid#KDE_F-Droid_Nightly_Build_Repository).
 
 ## Build it
 

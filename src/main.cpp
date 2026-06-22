@@ -71,7 +71,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
                          QStringLiteral(QRCA_VERSION_STRING),
                          i18n("A simple QR scanner"),
                          KAboutLicense::GPL_V3,
-                         i18n("Copyright 2016-2019 Qrca and Kaidan authors"),
+                         i18n("Copyright 2016-2026 Qrca and Kaidan authors"),
                          QString(),
                          QStringLiteral("https://www.plasma-mobile.org"));
     // overwrite default-generated values of organizationDomain & desktopFileName
