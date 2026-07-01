@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-01 00:47+0000\n"
+"POT-Creation-Date: 2026-07-01 00:50+0000\n"
 "PO-Revision-Date: 2026-01-26 17:25+0100\n"
 "Last-Translator: giovanni <g.sora@tiscali.it>\n"
 "Language-Team: Interlingua <kde-i18n-doc@kde.org>\n"
@@ -38,8 +38,9 @@ msgid "A simple QR scanner"
 msgstr "Un simple scanditor de QR"
 
 #: src/main.cpp:74
-#, kde-format
-msgid "Copyright 2016-2019 Qrca and Kaidan authors"
+#, fuzzy, kde-format
+#| msgid "Copyright 2016-2019 Qrca and Kaidan authors"
+msgid "Copyright 2016-2026 Qrca and Kaidan authors"
 msgstr "Copyright 2016-2019 Qrca e autores de Kaidan"
 
 #: src/main.cpp:78
