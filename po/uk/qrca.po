@@ -3,13 +3,13 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2019, 2020, 2021, 2022, 2023, 2025.
+# Yuri Chornoivan <yurchor@ukr.net>, 2019, 2020, 2021, 2022, 2023, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-01 00:50+0000\n"
-"PO-Revision-Date: 2025-12-01 15:06+0200\n"
+"PO-Revision-Date: 2026-07-01 13:30+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <trans-uk@lists.fedoraproject.org>\n"
 "Language: uk\n"
@@ -41,10 +41,9 @@ msgid "A simple QR scanner"
 msgstr "Проста програма для сканування QR-кодів"
 
 #: src/main.cpp:74
-#, fuzzy, kde-format
-#| msgid "Copyright 2016-2019 Qrca and Kaidan authors"
+#, kde-format
 msgid "Copyright 2016-2026 Qrca and Kaidan authors"
-msgstr "© Розробкники Qrca і Kaidan, 2016–2019"
+msgstr "© Розробкники Qrca і Kaidan, 2016–2026"
 
 #: src/main.cpp:78
 #, kde-format
