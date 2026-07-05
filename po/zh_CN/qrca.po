@@ -40,7 +40,7 @@ msgstr "简易二维码扫描器"
 #: src/main.cpp:74
 #, kde-format
 msgid "Copyright 2016-2026 Qrca and Kaidan authors"
-msgstr ""
+msgstr "Copyright 2016-2026 Qrca and Kaidan authors"
 
 #: src/main.cpp:78
 #, kde-format
