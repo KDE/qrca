@@ -21,7 +21,6 @@
 #include <QQuickStyle>
 #include <QQuickWindow>
 #include <QUrl>
-#include <QtQml>
 
 #include <KAboutData>
 #include <KLocalizedContext>
