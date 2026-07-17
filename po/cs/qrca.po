@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-01 00:50+0000\n"
+"POT-Creation-Date: 2026-07-17 00:48+0000\n"
 "PO-Revision-Date: 2026-07-05 23:16+0200\n"
 "Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -29,32 +29,32 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "vit@pelcak.org,filipek.libor@protonmail.com,honyczek@centrum.cz"
 
-#: src/main.cpp:70
+#: src/main.cpp:69
 #, kde-format
 msgid "Qrca"
 msgstr "Qrca"
 
-#: src/main.cpp:72
+#: src/main.cpp:71
 #, kde-format
 msgid "A simple QR scanner"
 msgstr "Jednoduchá čtečka QR"
 
-#: src/main.cpp:74
+#: src/main.cpp:73
 #, kde-format
 msgid "Copyright 2016-2026 Qrca and Kaidan authors"
 msgstr "Autorská práva 2016-2026 Autoři Qrca a Kaidan"
 
-#: src/main.cpp:78
+#: src/main.cpp:77
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: src/main.cpp:79
+#: src/main.cpp:78
 #, kde-format
 msgid "Simon Schmeißer"
 msgstr "Simon Schmeißer"
 
-#: src/main.cpp:95
+#: src/main.cpp:94
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
 msgstr "Skenovat pouze QR kódy pro sítě Wi-Fi"

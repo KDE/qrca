@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-01 00:50+0000\n"
+"POT-Creation-Date: 2026-07-17 00:48+0000\n"
 "PO-Revision-Date: 2026-07-01 16:31+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -29,32 +29,32 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "ecuadra@eloihr.net"
 
-#: src/main.cpp:70
+#: src/main.cpp:69
 #, kde-format
 msgid "Qrca"
 msgstr "Qrca"
 
-#: src/main.cpp:72
+#: src/main.cpp:71
 #, kde-format
 msgid "A simple QR scanner"
 msgstr "Escáner QR sencillo"
 
-#: src/main.cpp:74
+#: src/main.cpp:73
 #, kde-format
 msgid "Copyright 2016-2026 Qrca and Kaidan authors"
 msgstr "Copyright 2016-2026 los autores de Qrca y de Kaidan"
 
-#: src/main.cpp:78
+#: src/main.cpp:77
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: src/main.cpp:79
+#: src/main.cpp:78
 #, kde-format
 msgid "Simon Schmeißer"
 msgstr "Simon Schmeißer"
 
-#: src/main.cpp:95
+#: src/main.cpp:94
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
 msgstr "Escanear solo códigos QR de redes wifi"
