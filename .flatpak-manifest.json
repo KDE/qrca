@@ -146,12 +146,12 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/frameworks/networkmanager-qt.git",
-                    "tag": "v6.27.0",
+                    "tag": "v6.28.0",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
                     },
-                    "commit": "c959ca5807326622caadfb6516d3ac949ccb050f"
+                    "commit": "e035becf215bf28e686f6593c6ddc0ff053462d3"
                 }
             ]
         },
