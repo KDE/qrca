@@ -25,6 +25,7 @@ ecm_target_qml_sources(qrca SOURCES
     qml/QrCodeScannerPage.qml
     qml/QrCodeEncoderPage.qml
     qml/AboutPage.qml
+    qml/ShareSheet.qml
 )
 
 file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/*.png")
@@ -36,6 +37,9 @@ if (TARGET KF6::NetworkManagerQt)
     target_link_libraries(qrca PRIVATE KF6::NetworkManagerQt)
 endif()
 
+if (NOT ANDROID)
+    target_link_libraries(qrca PRIVATE KF6::Purpose)
+endif()
 target_compile_definitions(qrca PRIVATE -DQT_NO_CAST_FROM_ASCII)
 
 if(ANDROID)

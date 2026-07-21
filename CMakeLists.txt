@@ -42,7 +42,7 @@ find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami I18n Contacts Co
 find_package(KF6KirigamiAddons REQUIRED)
 
 if(NOT ANDROID)
-    find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Service KIO Crash DBusAddons)
+    find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Service KIO Crash DBusAddons Purpose)
     find_package(KF6 ${KF_MIN_VERSION} OPTIONAL_COMPONENTS NetworkManagerQt)
 endif()
 

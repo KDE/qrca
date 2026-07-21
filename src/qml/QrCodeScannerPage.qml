@@ -274,7 +274,7 @@ Kirigami.Page {
                 Layout.fillWidth: true
             }
             Controls.Button {
-                text: i18n("Copy to Clipboard")
+                text: i18nc("@action:button","Copy to Clipboard")
                 icon.name: "edit-copy-symbolic"
                 onClicked: {
                     Qrca.copyToClipboard(resultSheet.tag);
@@ -282,8 +282,24 @@ Kirigami.Page {
                 }
                 Layout.fillWidth: true
             }
+            Controls.Button {
+                text: i18nc("@action:button","Share…")
+                icon.name: "emblem-shared-symbolic"
+                visible: Qt.platform.os != "android"
+                onClicked: {
+                    // disabledPlugins won't disable clipboard plugin on old versions of purpose framework, because it didn't have the property
+                    shareSheetLoader.setSource("ShareSheet.qml",
+                                               { "text": resultSheet.tag.text, "disabledPlugins": ["clipboardplugin"]});
+                    shareSheetLoader.item.open();
+                }
+                Layout.fillWidth: true
+            }
         }
     }
+    Loader {
+        id: shareSheetLoader
+    }
+
 
     Kirigami.OverlaySheet {
         id: cameraSelectorSheet
