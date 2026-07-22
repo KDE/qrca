@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-17 00:48+0000\n"
+"POT-Creation-Date: 2026-07-22 00:49+0000\n"
 "PO-Revision-Date: 2026-07-02 08:09+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
@@ -137,7 +137,7 @@ msgstr "סריקת קוד QR"
 msgid "Light"
 msgstr "פנס"
 
-#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:292
+#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:308
 #, kde-format
 msgid "Select Camera"
 msgstr "בחירת מצלמה"
@@ -249,26 +249,47 @@ msgid "Connect"
 msgstr "התחברות"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Copy to Clipboard"
+msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "העתקה ללוח הגזירים"
 
-#: src/qml/QrCodeScannerPage.qml:373
+#: src/qml/QrCodeScannerPage.qml:286
+#, fuzzy, kde-format
+#| msgid "Share"
+msgctxt "@action:button"
+msgid "Share…"
+msgstr "שיתוף"
+
+#: src/qml/QrCodeScannerPage.qml:389
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
 msgstr "בחירת קובץ תמונה"
 
-#: src/qml/QrCodeScannerPage.qml:374
+#: src/qml/QrCodeScannerPage.qml:390
 #, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "קובצי תמונה (‎*.jpeg‏ ‎*.jpg‏ ‎*.jxl ‏‎*.png)"
 
-#: src/qml/QrCodeScannerPage.qml:388
+#: src/qml/QrCodeScannerPage.qml:404
 #, kde-format
 msgid "No QR code found in the image."
 msgstr "לא נמצא קוד QR בתמונה."
+
+#: src/qml/ShareSheet.qml:12
+#, fuzzy, kde-format
+#| msgid "Share"
+msgctxt "@title:window"
+msgid "Share"
+msgstr "שיתוף"
+
+#: src/qml/ShareSheet.qml:25
+#, kde-format
+msgid "Scanned using Qrca"
+msgstr ""
 
 #: src/Qrca.cpp:272
 #, kde-format
@@ -277,9 +298,6 @@ msgstr "איתור התקן הרשת האלחוטית לא נמצא"
 
 #~ msgid "QR-Code Scanner"
 #~ msgstr "סורק קודים מסוג QR"
-
-#~ msgid "Share"
-#~ msgstr "שיתוף"
 
 #~ msgid "QR-Code could not be saved to temporary location"
 #~ msgstr "אי אפשר לשמור את קוד ה־QR למקום זמני"

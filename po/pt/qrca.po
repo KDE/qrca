@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-17 00:48+0000\n"
+"POT-Creation-Date: 2026-07-22 00:49+0000\n"
 "PO-Revision-Date: 2023-07-05 00:32+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -140,7 +140,7 @@ msgstr "Partilhar o Código QR"
 msgid "Light"
 msgstr "Luz"
 
-#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:292
+#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:308
 #, kde-format
 msgid "Select Camera"
 msgstr "Seleccionar a Câmara"
@@ -256,25 +256,45 @@ msgstr "Ligar"
 #: src/qml/QrCodeScannerPage.qml:277
 #, fuzzy, kde-format
 #| msgid "Copy to clipboard"
+msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "Copiar para a área de transferência"
 
-#: src/qml/QrCodeScannerPage.qml:373
+#: src/qml/QrCodeScannerPage.qml:286
+#, fuzzy, kde-format
+#| msgid "Share"
+msgctxt "@action:button"
+msgid "Share…"
+msgstr "Partilhar"
+
+#: src/qml/QrCodeScannerPage.qml:389
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
 msgstr ""
 
-#: src/qml/QrCodeScannerPage.qml:374
+#: src/qml/QrCodeScannerPage.qml:390
 #, fuzzy, kde-format
 #| msgid "Image files (*.png *.jpg)"
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "Ficheiros de imagens (*.png *.jpg)"
 
-#: src/qml/QrCodeScannerPage.qml:388
+#: src/qml/QrCodeScannerPage.qml:404
 #, kde-format
 msgid "No QR code found in the image."
+msgstr ""
+
+#: src/qml/ShareSheet.qml:12
+#, fuzzy, kde-format
+#| msgid "Share"
+msgctxt "@title:window"
+msgid "Share"
+msgstr "Partilhar"
+
+#: src/qml/ShareSheet.qml:25
+#, kde-format
+msgid "Scanned using Qrca"
 msgstr ""
 
 #: src/Qrca.cpp:272
@@ -284,9 +304,6 @@ msgstr ""
 
 #~ msgid "QR-Code Scanner"
 #~ msgstr "Analisador de Códigos QR"
-
-#~ msgid "Share"
-#~ msgstr "Partilhar"
 
 #~ msgid "QR-Code could not be saved to temporary location"
 #~ msgstr "Não foi possível gravar o código QR na pasta temporária"

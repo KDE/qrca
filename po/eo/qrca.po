@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-17 00:48+0000\n"
+"POT-Creation-Date: 2026-07-22 00:49+0000\n"
 "PO-Revision-Date: 2025-02-12 22:59+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -140,7 +140,7 @@ msgstr ""
 msgid "Light"
 msgstr "Lumo"
 
-#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:292
+#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:308
 #, kde-format
 msgid "Select Camera"
 msgstr "Elekti Fotilon"
@@ -257,10 +257,17 @@ msgstr "Konekti"
 #: src/qml/QrCodeScannerPage.qml:277
 #, fuzzy, kde-format
 #| msgid "Copy to clipboard"
+msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "Kopii al tondujo"
 
-#: src/qml/QrCodeScannerPage.qml:373
+#: src/qml/QrCodeScannerPage.qml:286
+#, kde-format
+msgctxt "@action:button"
+msgid "Share…"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:389
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Choose an image file"
@@ -268,17 +275,28 @@ msgctxt "@title:window"
 msgid "Choose an Image File"
 msgstr "Elekti bilddosieron"
 
-#: src/qml/QrCodeScannerPage.qml:374
+#: src/qml/QrCodeScannerPage.qml:390
 #, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "Bilddosieroj (*.png *.jpg *.jxl *.png)"
 
-#: src/qml/QrCodeScannerPage.qml:388
+#: src/qml/QrCodeScannerPage.qml:404
 #, fuzzy, kde-format
 #| msgid "No QR code found in the image"
 msgid "No QR code found in the image."
 msgstr "Neniu QR-kodo trovita en la bildo"
+
+#: src/qml/ShareSheet.qml:12
+#, kde-format
+msgctxt "@title:window"
+msgid "Share"
+msgstr ""
+
+#: src/qml/ShareSheet.qml:25
+#, kde-format
+msgid "Scanned using Qrca"
+msgstr ""
 
 #: src/Qrca.cpp:272
 #, kde-format

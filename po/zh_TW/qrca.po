@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-17 00:48+0000\n"
+"POT-Creation-Date: 2026-07-22 00:49+0000\n"
 "PO-Revision-Date: 2026-07-06 05:40+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -140,7 +140,7 @@ msgstr "掃描 QR 碼"
 msgid "Light"
 msgstr "光亮"
 
-#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:292
+#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:308
 #, kde-format
 msgid "Select Camera"
 msgstr "選取相機"
@@ -252,26 +252,47 @@ msgid "Connect"
 msgstr "連線"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "Copy to Clipboard"
+msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "複製到剪貼簿"
 
-#: src/qml/QrCodeScannerPage.qml:373
+#: src/qml/QrCodeScannerPage.qml:286
+#, fuzzy, kde-format
+#| msgid "Share"
+msgctxt "@action:button"
+msgid "Share…"
+msgstr "分享"
+
+#: src/qml/QrCodeScannerPage.qml:389
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
 msgstr "選擇影像檔"
 
-#: src/qml/QrCodeScannerPage.qml:374
+#: src/qml/QrCodeScannerPage.qml:390
 #, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "影像檔 (*.jpeg *.jpg *.jxl *.png)"
 
-#: src/qml/QrCodeScannerPage.qml:388
+#: src/qml/QrCodeScannerPage.qml:404
 #, kde-format
 msgid "No QR code found in the image."
 msgstr "影像中沒有找到 QR 碼。"
+
+#: src/qml/ShareSheet.qml:12
+#, fuzzy, kde-format
+#| msgid "Share"
+msgctxt "@title:window"
+msgid "Share"
+msgstr "分享"
+
+#: src/qml/ShareSheet.qml:25
+#, kde-format
+msgid "Scanned using Qrca"
+msgstr ""
 
 #: src/Qrca.cpp:272
 #, kde-format
@@ -280,9 +301,6 @@ msgstr "尋找 wifi 裝置失敗"
 
 #~ msgid "QR-Code Scanner"
 #~ msgstr "QR 碼掃描器"
-
-#~ msgid "Share"
-#~ msgstr "分享"
 
 #~ msgid "QR-Code could not be saved to temporary location"
 #~ msgstr "QR 碼無法儲存到暫存位置"

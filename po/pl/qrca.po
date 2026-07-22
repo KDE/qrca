@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-17 00:48+0000\n"
+"POT-Creation-Date: 2026-07-22 00:49+0000\n"
 "PO-Revision-Date: 2025-02-08 17:34+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -144,7 +144,7 @@ msgstr "Zeskanuj kod QR"
 msgid "Light"
 msgstr "Światło"
 
-#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:292
+#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:308
 #, kde-format
 msgid "Select Camera"
 msgstr "Wybierz aparat"
@@ -261,10 +261,18 @@ msgstr "Połącz"
 #: src/qml/QrCodeScannerPage.qml:277
 #, fuzzy, kde-format
 #| msgid "Copy to clipboard"
+msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "Skopiuj do schowka"
 
-#: src/qml/QrCodeScannerPage.qml:373
+#: src/qml/QrCodeScannerPage.qml:286
+#, fuzzy, kde-format
+#| msgid "Share"
+msgctxt "@action:button"
+msgid "Share…"
+msgstr "Udostępnij"
+
+#: src/qml/QrCodeScannerPage.qml:389
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Choose an image file"
@@ -272,17 +280,29 @@ msgctxt "@title:window"
 msgid "Choose an Image File"
 msgstr "Wybierz plik z obrazem"
 
-#: src/qml/QrCodeScannerPage.qml:374
+#: src/qml/QrCodeScannerPage.qml:390
 #, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "Pliki obrazów (*.jpeg *.jpg *.jxl *.png)"
 
-#: src/qml/QrCodeScannerPage.qml:388
+#: src/qml/QrCodeScannerPage.qml:404
 #, fuzzy, kde-format
 #| msgid "No QR code found in the image"
 msgid "No QR code found in the image."
 msgstr "Nie znaleziono żadnego kodu QR na obrazie"
+
+#: src/qml/ShareSheet.qml:12
+#, fuzzy, kde-format
+#| msgid "Share"
+msgctxt "@title:window"
+msgid "Share"
+msgstr "Udostępnij"
+
+#: src/qml/ShareSheet.qml:25
+#, kde-format
+msgid "Scanned using Qrca"
+msgstr ""
 
 #: src/Qrca.cpp:272
 #, kde-format
@@ -291,9 +311,6 @@ msgstr "Nie udało się znaleźć urządzenia Wifi"
 
 #~ msgid "QR-Code Scanner"
 #~ msgstr "Skaner kodów QR"
-
-#~ msgid "Share"
-#~ msgstr "Udostępnij"
 
 #~ msgid "QR-Code could not be saved to temporary location"
 #~ msgstr "Nie można było zapisać kodu QR do miejsca tymczasowego"

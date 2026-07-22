@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-17 00:48+0000\n"
+"POT-Creation-Date: 2026-07-22 00:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Irish Gaelic <kde-i18n-doc@kde.org>\n"
@@ -137,7 +137,7 @@ msgstr ""
 msgid "Light"
 msgstr ""
 
-#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:292
+#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:308
 #, kde-format
 msgid "Select Camera"
 msgstr ""
@@ -250,24 +250,42 @@ msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:277
 #, kde-format
+msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr ""
 
-#: src/qml/QrCodeScannerPage.qml:373
+#: src/qml/QrCodeScannerPage.qml:286
+#, kde-format
+msgctxt "@action:button"
+msgid "Share…"
+msgstr ""
+
+#: src/qml/QrCodeScannerPage.qml:389
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
 msgstr ""
 
-#: src/qml/QrCodeScannerPage.qml:374
+#: src/qml/QrCodeScannerPage.qml:390
 #, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr ""
 
-#: src/qml/QrCodeScannerPage.qml:388
+#: src/qml/QrCodeScannerPage.qml:404
 #, kde-format
 msgid "No QR code found in the image."
+msgstr ""
+
+#: src/qml/ShareSheet.qml:12
+#, kde-format
+msgctxt "@title:window"
+msgid "Share"
+msgstr ""
+
+#: src/qml/ShareSheet.qml:25
+#, kde-format
+msgid "Scanned using Qrca"
 msgstr ""
 
 #: src/Qrca.cpp:272

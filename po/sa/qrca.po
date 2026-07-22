@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-17 00:48+0000\n"
+"POT-Creation-Date: 2026-07-22 00:49+0000\n"
 "PO-Revision-Date: 2024-12-24 20:39+0530\n"
 "Last-Translator: kali <shreekantkalwar@gmail.com>\n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -143,7 +143,7 @@ msgstr "QR-कोड साझां कुर्वन्तु"
 msgid "Light"
 msgstr "प्रकाशः"
 
-#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:292
+#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:308
 #, kde-format
 msgid "Select Camera"
 msgstr "Camera इति चिनोतु"
@@ -259,25 +259,45 @@ msgstr "संयुज्"
 #: src/qml/QrCodeScannerPage.qml:277
 #, fuzzy, kde-format
 #| msgid "Copy to clipboard"
+msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "क्लिप्बोर्ड् प्रति प्रतिलिख्यताम्"
 
-#: src/qml/QrCodeScannerPage.qml:373
+#: src/qml/QrCodeScannerPage.qml:286
+#, fuzzy, kde-format
+#| msgid "Share"
+msgctxt "@action:button"
+msgid "Share…"
+msgstr "संविभागः"
+
+#: src/qml/QrCodeScannerPage.qml:389
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
 msgstr ""
 
-#: src/qml/QrCodeScannerPage.qml:374
+#: src/qml/QrCodeScannerPage.qml:390
 #, fuzzy, kde-format
 #| msgid "Image files (*.png *.jpg)"
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "चित्रसञ्चिकाः (*.png *.jpg)"
 
-#: src/qml/QrCodeScannerPage.qml:388
+#: src/qml/QrCodeScannerPage.qml:404
 #, kde-format
 msgid "No QR code found in the image."
+msgstr ""
+
+#: src/qml/ShareSheet.qml:12
+#, fuzzy, kde-format
+#| msgid "Share"
+msgctxt "@title:window"
+msgid "Share"
+msgstr "संविभागः"
+
+#: src/qml/ShareSheet.qml:25
+#, kde-format
+msgid "Scanned using Qrca"
 msgstr ""
 
 #: src/Qrca.cpp:272
@@ -287,9 +307,6 @@ msgstr ""
 
 #~ msgid "QR-Code Scanner"
 #~ msgstr "QR-कोड स्कैनर"
-
-#~ msgid "Share"
-#~ msgstr "संविभागः"
 
 #~ msgid "QR-Code could not be saved to temporary location"
 #~ msgstr "QR-Code अस्थायीस्थाने रक्षितुं न शक्यते स्म"

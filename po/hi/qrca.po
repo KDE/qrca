@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-17 00:48+0000\n"
+"POT-Creation-Date: 2026-07-22 00:49+0000\n"
 "PO-Revision-Date: 2024-12-15 17:35+0530\n"
 "Last-Translator: Kali <EMAIL@ADDRESS>\n"
 "Language-Team: Hindi <fedora-trans-hi@redhat.com>\n"
@@ -141,7 +141,7 @@ msgstr "क्यूआर कोड साझा करें"
 msgid "Light"
 msgstr "रोशनी"
 
-#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:292
+#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:308
 #, kde-format
 msgid "Select Camera"
 msgstr "कैमरा चुनें"
@@ -257,25 +257,45 @@ msgstr "जोड़ना"
 #: src/qml/QrCodeScannerPage.qml:277
 #, fuzzy, kde-format
 #| msgid "Copy to clipboard"
+msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "क्लिपबोर्ड पर कॉपी करें"
 
-#: src/qml/QrCodeScannerPage.qml:373
+#: src/qml/QrCodeScannerPage.qml:286
+#, fuzzy, kde-format
+#| msgid "Share"
+msgctxt "@action:button"
+msgid "Share…"
+msgstr "शेयर करना"
+
+#: src/qml/QrCodeScannerPage.qml:389
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
 msgstr ""
 
-#: src/qml/QrCodeScannerPage.qml:374
+#: src/qml/QrCodeScannerPage.qml:390
 #, fuzzy, kde-format
 #| msgid "Image files (*.png *.jpg)"
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "छवि फ़ाइलें (*.png *.jpg)"
 
-#: src/qml/QrCodeScannerPage.qml:388
+#: src/qml/QrCodeScannerPage.qml:404
 #, kde-format
 msgid "No QR code found in the image."
+msgstr ""
+
+#: src/qml/ShareSheet.qml:12
+#, fuzzy, kde-format
+#| msgid "Share"
+msgctxt "@title:window"
+msgid "Share"
+msgstr "शेयर करना"
+
+#: src/qml/ShareSheet.qml:25
+#, kde-format
+msgid "Scanned using Qrca"
 msgstr ""
 
 #: src/Qrca.cpp:272
@@ -285,9 +305,6 @@ msgstr ""
 
 #~ msgid "QR-Code Scanner"
 #~ msgstr "क्यूआर-कोड स्कैनर"
-
-#~ msgid "Share"
-#~ msgstr "शेयर करना"
 
 #~ msgid "QR-Code could not be saved to temporary location"
 #~ msgstr "QR-कोड को अस्थायी स्थान पर सहेजा नहीं जा सका"
