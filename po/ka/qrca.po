@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-22 00:49+0000\n"
-"PO-Revision-Date: 2026-07-01 05:09+0200\n"
+"PO-Revision-Date: 2026-07-22 07:24+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -249,18 +249,16 @@ msgid "Connect"
 msgstr "დაკავშირება"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Copy to Clipboard"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "ბუფერში კოპირება"
 
 #: src/qml/QrCodeScannerPage.qml:286
-#, fuzzy, kde-format
-#| msgid "Share"
+#, kde-format
 msgctxt "@action:button"
 msgid "Share…"
-msgstr "გაზიარება"
+msgstr "გაზიარება…"
 
 #: src/qml/QrCodeScannerPage.qml:389
 #, kde-format
@@ -280,8 +278,7 @@ msgid "No QR code found in the image."
 msgstr "გამოსახულებაში QR კოდი აღმოჩენილი არაა."
 
 #: src/qml/ShareSheet.qml:12
-#, fuzzy, kde-format
-#| msgid "Share"
+#, kde-format
 msgctxt "@title:window"
 msgid "Share"
 msgstr "გაზიარება"
@@ -289,7 +286,7 @@ msgstr "გაზიარება"
 #: src/qml/ShareSheet.qml:25
 #, kde-format
 msgid "Scanned using Qrca"
-msgstr ""
+msgstr "დასკანერებულია Qrca-ით"
 
 #: src/Qrca.cpp:272
 #, kde-format

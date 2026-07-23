@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-22 00:49+0000\n"
-"PO-Revision-Date: 2026-07-05 23:16+0200\n"
+"PO-Revision-Date: 2026-07-22 17:41+0200\n"
 "Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -250,8 +250,7 @@ msgid "Connect"
 msgstr "Připojit se"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Copy to Clipboard"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "Zkopírovat do schránky"
@@ -260,7 +259,7 @@ msgstr "Zkopírovat do schránky"
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
-msgstr ""
+msgstr "Sdílet…"
 
 #: src/qml/QrCodeScannerPage.qml:389
 #, kde-format
@@ -283,12 +282,12 @@ msgstr "V souboru nebyl nalezen žádný kód QR"
 #, kde-format
 msgctxt "@title:window"
 msgid "Share"
-msgstr ""
+msgstr "Sdílet"
 
 #: src/qml/ShareSheet.qml:25
 #, kde-format
 msgid "Scanned using Qrca"
-msgstr ""
+msgstr "Naskenováno pomocí Qrca"
 
 #: src/Qrca.cpp:272
 #, kde-format
