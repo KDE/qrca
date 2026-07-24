@@ -194,30 +194,6 @@ bool Qrca::canConnectToWifi() const
 #endif
 }
 
-// see https://github.com/zxing/zxing/blob/master/android/src/com/google/zxing/client/android/wifi/WifiConfigManager.java
-// for the details not found in the documentation
-#if HAVE_NETWORKMANAGER
-static struct {
-    const char *name;
-    NetworkManager::Security8021xSetting::EapMethod method;
-} constexpr const eap_methods[] = {
-    {"PEAP", NetworkManager::Security8021xSetting::EapMethodPeap},
-    {"PWD", NetworkManager::Security8021xSetting::EapMethodPwd},
-    {"TLS", NetworkManager::Security8021xSetting::EapMethodTls},
-    {"TTLS", NetworkManager::Security8021xSetting::EapMethodTtls},
-};
-
-static struct {
-    const char *name;
-    NetworkManager::Security8021xSetting::AuthMethod method;
-} constexpr const auth_methods[] = {
-    {"GTC", NetworkManager::Security8021xSetting::AuthMethodGtc},
-    {"MSCHAP", NetworkManager::Security8021xSetting::AuthMethodMschap},
-    {"MSCHAPV2", NetworkManager::Security8021xSetting::AuthMethodMschapv2},
-    {"PAP", NetworkManager::Security8021xSetting::AuthMethodPap},
-};
-#endif
-
 void Qrca::connectToWifi(const QString &wifiCode)
 {
 #if HAVE_NETWORKMANAGER
