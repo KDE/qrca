@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-22 00:49+0000\n"
-"PO-Revision-Date: 2026-07-03 01:32+0300\n"
+"PO-Revision-Date: 2026-07-24 01:00+0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
 "Language: lt\n"
@@ -250,8 +250,7 @@ msgid "Connect"
 msgstr "Prisijungti"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Copy to Clipboard"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "Kopijuoti į iškarpinę"
@@ -260,7 +259,7 @@ msgstr "Kopijuoti į iškarpinę"
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
-msgstr ""
+msgstr "Bendrinti…"
 
 #: src/qml/QrCodeScannerPage.qml:389
 #, kde-format
@@ -283,12 +282,12 @@ msgstr "Paveiksle nerastas joks QR kodas."
 #, kde-format
 msgctxt "@title:window"
 msgid "Share"
-msgstr ""
+msgstr "Bendrinti"
 
 #: src/qml/ShareSheet.qml:25
 #, kde-format
 msgid "Scanned using Qrca"
-msgstr ""
+msgstr "Nuskenuota naudojant Qrca"
 
 #: src/Qrca.cpp:272
 #, kde-format

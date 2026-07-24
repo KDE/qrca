@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-22 00:49+0000\n"
-"PO-Revision-Date: 2026-07-02 08:09+0300\n"
+"PO-Revision-Date: 2026-07-23 08:52+0300\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
@@ -249,18 +249,16 @@ msgid "Connect"
 msgstr "התחברות"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Copy to Clipboard"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "העתקה ללוח הגזירים"
 
 #: src/qml/QrCodeScannerPage.qml:286
-#, fuzzy, kde-format
-#| msgid "Share"
+#, kde-format
 msgctxt "@action:button"
 msgid "Share…"
-msgstr "שיתוף"
+msgstr "שיתוף…"
 
 #: src/qml/QrCodeScannerPage.qml:389
 #, kde-format
@@ -280,8 +278,7 @@ msgid "No QR code found in the image."
 msgstr "לא נמצא קוד QR בתמונה."
 
 #: src/qml/ShareSheet.qml:12
-#, fuzzy, kde-format
-#| msgid "Share"
+#, kde-format
 msgctxt "@title:window"
 msgid "Share"
 msgstr "שיתוף"
@@ -289,7 +286,7 @@ msgstr "שיתוף"
 #: src/qml/ShareSheet.qml:25
 #, kde-format
 msgid "Scanned using Qrca"
-msgstr ""
+msgstr "נסרק עם Qrca"
 
 #: src/Qrca.cpp:272
 #, kde-format
