@@ -114,13 +114,6 @@ QString Qrca::getVCardName(const QString &text) noexcept
     return adressee.realName();
 }
 
-QString Qrca::newQrCodeSaveLocation() noexcept
-{
-    const QString directory = QStandardPaths::writableLocation(QStandardPaths::TempLocation);
-    const QString path = directory + QDir::separator() + QDateTime::currentDateTime().toString(Qt::ISODate) + QStringLiteral(".png");
-    return path;
-}
-
 #ifndef Q_OS_ANDROID
 const QString s_qrCodeFileClass = QStringLiteral(":qrcaSaveLocation");
 #endif
