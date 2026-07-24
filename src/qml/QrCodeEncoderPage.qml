@@ -30,11 +30,14 @@ Kirigami.ScrollablePage {
             icon.name: "document-save"
             enabled: inputText.length > 0
             onTriggered: {
+                fileDialog.selectedFile = Qrca.defaultQrCodeFileName(inputText.text);
                 fileDialog.accepted.connect(() => {
                     codeView.grabToImage(result => {
                         const s = result.saveToFile(fileDialog.selectedFile);
                         if (!s) {
                             showPassiveNotification(i18n("QR code could not be saved."));
+                        } else {
+                            Qrca.rememberQrCodeSaveLocation(fileDialog.selectedFile);
                         }
 
                         fileDialog.accepted.disconnect();

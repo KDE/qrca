@@ -12,6 +12,7 @@
 
 #ifndef Q_OS_ANDROID
 #include <KIO/ApplicationLauncherJob>
+#include <KRecentDirs>
 #include <KService>
 #endif
 
@@ -39,6 +40,7 @@
 
 #include <KContacts/Addressee>
 #include <KContacts/VCardConverter>
+#include <KFileUtils>
 #include <KLocalizedString>
 
 #include <Prison/ImageScanner>
@@ -117,6 +119,37 @@ QString Qrca::newQrCodeSaveLocation() noexcept
     const QString directory = QStandardPaths::writableLocation(QStandardPaths::TempLocation);
     const QString path = directory + QDir::separator() + QDateTime::currentDateTime().toString(Qt::ISODate) + QStringLiteral(".png");
     return path;
+}
+
+#ifndef Q_OS_ANDROID
+const QString s_qrCodeFileClass = QStringLiteral(":qrcaSaveLocation");
+#endif
+
+QUrl Qrca::defaultQrCodeFileName(const QString &content) const noexcept
+{
+    QString label = content.trimmed();
+    label.replace(QLatin1Char('/'), QStringLiteral("%2F"));
+    QString fileName = i18n("QR code for %1", QLocale().quoteString(label)) + QStringLiteral(".png");
+#ifndef Q_OS_ANDROID
+    const QString dirPath = KRecentDirs::dir(s_qrCodeFileClass) + QLatin1Char('/');
+#else
+    const QString dirPath = QStandardPaths::writableLocation(QStandardPaths::PicturesLocation) + QLatin1Char('/');
+#endif
+    QString filePath = dirPath + fileName;
+
+    if (QFileInfo::exists(filePath)) {
+        filePath = dirPath + KFileUtils::suggestName(QUrl::fromLocalFile(dirPath), fileName);
+    }
+    return QUrl::fromLocalFile(filePath);
+    }
+
+void Qrca::rememberQrCodeSaveLocation(const QUrl &fileUrl) noexcept
+{
+#ifndef Q_OS_ANDROID
+    KRecentDirs::add(s_qrCodeFileClass, QFileInfo(fileUrl.toLocalFile()).absolutePath());
+#else
+    Q_UNUSED(fileUrl)
+#endif
 }
 
 void Qrca::copyToClipboard(const QrCodeContent &content) noexcept
