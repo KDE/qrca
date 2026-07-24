@@ -123,17 +123,17 @@ QUrl Qrca::defaultQrCodeFileName(const QString &content) const noexcept
     QString label = content.trimmed();
     label.replace(QLatin1Char('/'), QStringLiteral("%2F"));
     QString fileName = i18n("QR code for %1", QLocale().quoteString(label)) + QStringLiteral(".png");
-#ifndef Q_OS_ANDROID
-    const QString dirPath = KRecentDirs::dir(s_qrCodeFileClass) + QLatin1Char('/');
+#ifdef Q_OS_ANDROID
+    return QUrl::fromLocalFile(fileName);
 #else
-    const QString dirPath = QStandardPaths::writableLocation(QStandardPaths::PicturesLocation) + QLatin1Char('/');
-#endif
+    const QString dirPath = KRecentDirs::dir(s_qrCodeFileClass) + QLatin1Char('/');
     QString filePath = dirPath + fileName;
 
     if (QFileInfo::exists(filePath)) {
         filePath = dirPath + KFileUtils::suggestName(QUrl::fromLocalFile(dirPath), fileName);
     }
     return QUrl::fromLocalFile(filePath);
+#endif
     }
 
 void Qrca::rememberQrCodeSaveLocation(const QUrl &fileUrl) noexcept

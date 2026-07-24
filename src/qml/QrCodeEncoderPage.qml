@@ -29,6 +29,19 @@ Kirigami.ScrollablePage {
             text: i18nc("@action:intoolbar", "Save")
             icon.name: "document-save"
             enabled: inputText.length > 0
+            visible: Qt.platform.os !== "android"
+            onTriggered: {
+                const target = Qrca.defaultQrCodeFileName(inputText.text);
+                codeView.grabToImage(result => {
+                    const s = result.saveToFile(target);
+                    showPassiveNotification(s ? i18n("QR code saved to %1", decodeURIComponent(target.toString().replace("file://", ""))) : i18n("QR code could not be saved."));
+                });
+            }
+        },
+        Kirigami.Action {
+            text: i18nc("@action:intoolbar", "Save As…")
+            icon.name: "document-save-as"
+            enabled: inputText.length > 0
             onTriggered: {
                 fileDialog.selectedFile = Qrca.defaultQrCodeFileName(inputText.text);
                 fileDialog.accepted.connect(() => {
