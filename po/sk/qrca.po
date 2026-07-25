@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-22 00:49+0000\n"
+"POT-Creation-Date: 2026-07-25 00:49+0000\n"
 "PO-Revision-Date: 2022-04-07 18:27+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -289,7 +289,7 @@ msgstr "Zdieľať"
 msgid "Scanned using Qrca"
 msgstr ""
 
-#: src/Qrca.cpp:272
+#: src/Qrca.cpp:248
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Nepodarilo sa nájsť zariadenie Wi-Fi"

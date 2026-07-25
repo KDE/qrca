@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-22 00:49+0000\n"
+"POT-Creation-Date: 2026-07-25 00:49+0000\n"
 "PO-Revision-Date: 2026-07-22 00:47-0300\n"
 "Last-Translator: Guilherme Marçal Silva <guimarcalsilva@gmail.com>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -290,7 +290,7 @@ msgstr "Compartilhar"
 msgid "Scanned using Qrca"
 msgstr "Escaneado usando Qrca"
 
-#: src/Qrca.cpp:272
+#: src/Qrca.cpp:248
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Falha ao localizar dispositivo wifi"
