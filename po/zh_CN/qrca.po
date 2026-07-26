@@ -248,11 +248,10 @@ msgid "Connect"
 msgstr "连接"
 
 #: src/qml/QrCodeScannerPage.qml:277
-#, fuzzy, kde-format
-#| msgid "Copy to Clipboard"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard"
-msgstr "复制到剪贴板"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:286
 #, kde-format
