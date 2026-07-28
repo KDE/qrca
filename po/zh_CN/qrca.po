@@ -251,13 +251,13 @@ msgstr "连接"
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "复制到剪贴板"
 
 #: src/qml/QrCodeScannerPage.qml:286
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
-msgstr ""
+msgstr "分享…"
 
 #: src/qml/QrCodeScannerPage.qml:389
 #, kde-format
@@ -280,12 +280,12 @@ msgstr "图像中没有找到二维码。"
 #, kde-format
 msgctxt "@title:window"
 msgid "Share"
-msgstr ""
+msgstr "分享"
 
 #: src/qml/ShareSheet.qml:25
 #, kde-format
 msgid "Scanned using Qrca"
-msgstr ""
+msgstr "使用 Qrca 扫描"
 
 #: src/Qrca.cpp:248
 #, kde-format
