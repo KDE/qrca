@@ -250,7 +250,7 @@ msgstr "连接"
 #: src/qml/QrCodeScannerPage.qml:277
 #, kde-format
 msgid "Copy to Clipboard"
-msgstr ""
+msgstr "复制到剪贴板"
 
 #: src/qml/QrCodeScannerPage.qml:373
 #, kde-format
