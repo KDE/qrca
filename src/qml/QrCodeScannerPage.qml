@@ -28,14 +28,13 @@ Kirigami.Page {
 
     onWindowActiveChanged: {
         // Deactivate camera on mobile, if the window is inactive
-        if (! Kirigami.Settings.isMobile)
-            return
-
+        if (!Kirigami.Settings.isMobile)
+            return;
         if (scanner.windowActive) {
-            camera.start()
-            deactivateCamera.running = false
+            camera.start();
+            deactivateCamera.running = false;
         } else {
-            deactivateCamera.running = true
+            deactivateCamera.running = true;
         }
     }
 
@@ -46,7 +45,7 @@ Kirigami.Page {
         running: false
         triggeredOnStart: false
         onTriggered: {
-            camera.stop()
+            camera.stop();
         }
     }
 
@@ -288,8 +287,10 @@ Kirigami.Page {
                 visible: Qt.platform.os != "android"
                 onClicked: {
                     // disabledPlugins won't disable clipboard plugin on old versions of purpose framework, because it didn't have the property
-                    shareSheetLoader.setSource("ShareSheet.qml",
-                                               { "text": resultSheet.tag.text, "disabledPlugins": ["clipboardplugin"]});
+                    shareSheetLoader.setSource("ShareSheet.qml", {
+                        "text": resultSheet.tag.text,
+                        "disabledPlugins": ["clipboardplugin"]
+                    });
                     shareSheetLoader.item.open();
                 }
                 Layout.fillWidth: true
@@ -299,7 +300,6 @@ Kirigami.Page {
     Loader {
         id: shareSheetLoader
     }
-
 
     Kirigami.OverlaySheet {
         id: cameraSelectorSheet
@@ -319,7 +319,7 @@ Kirigami.Page {
                     camera.cameraDevice = modelData;
                     camera.start();
                     cameraSelectorSheet.close();
-                    scanner_settings.camera_id = modelData.id
+                    scanner_settings.camera_id = modelData.id;
                 }
             }
         }
