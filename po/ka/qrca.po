@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-07-25 00:49+0000\n"
+"POT-Creation-Date: 2026-08-08 00:49+0000\n"
 "PO-Revision-Date: 2026-07-22 07:24+0200\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -122,139 +122,139 @@ msgctxt "@info:placeholder"
 msgid "Enter text…"
 msgstr "შეიყვანეთ ტექსტი…"
 
-#: src/qml/QrCodeScannerPage.qml:53
+#: src/qml/QrCodeScannerPage.qml:52
 #, kde-format
 msgid "Scan a Wi-Fi Code"
 msgstr "Wi-Fi კოდის სკანირება"
 
-#: src/qml/QrCodeScannerPage.qml:53
+#: src/qml/QrCodeScannerPage.qml:52
 #, kde-format
 msgid "Scan a QR Code"
 msgstr "QR კოდის სკანირება"
 
-#: src/qml/QrCodeScannerPage.qml:57
+#: src/qml/QrCodeScannerPage.qml:56
 #, kde-format
 msgid "Light"
 msgstr "ნათელი"
 
-#: src/qml/QrCodeScannerPage.qml:64 src/qml/QrCodeScannerPage.qml:308
+#: src/qml/QrCodeScannerPage.qml:63 src/qml/QrCodeScannerPage.qml:308
 #, kde-format
 msgid "Select Camera"
 msgstr "აირჩიეთ კამერა"
 
-#: src/qml/QrCodeScannerPage.qml:71
+#: src/qml/QrCodeScannerPage.qml:70
 #, kde-format
 msgid "Open Image"
 msgstr "გამოსახულების გახსნა"
 
-#: src/qml/QrCodeScannerPage.qml:106
+#: src/qml/QrCodeScannerPage.qml:105
 #, kde-format
 msgid "Text found"
 msgstr "ნაპოვნია ტექსტი"
 
-#: src/qml/QrCodeScannerPage.qml:108
+#: src/qml/QrCodeScannerPage.qml:107
 #, kde-format
 msgid "URL found"
 msgstr "ნაპოვნია URL"
 
-#: src/qml/QrCodeScannerPage.qml:110
+#: src/qml/QrCodeScannerPage.qml:109
 #, kde-format
 msgid "Contact found"
 msgstr "ნაპოვნია კონტაქტი"
 
-#: src/qml/QrCodeScannerPage.qml:112
+#: src/qml/QrCodeScannerPage.qml:111
 #, kde-format
 msgid "OTP URI found"
 msgstr "ნაპოვნია OTP URI"
 
-#: src/qml/QrCodeScannerPage.qml:114
+#: src/qml/QrCodeScannerPage.qml:113
 #, kde-format
 msgid "Binary data found"
 msgstr "ნაპოვნია ბინარული მონაცემები"
 
-#: src/qml/QrCodeScannerPage.qml:116
+#: src/qml/QrCodeScannerPage.qml:115
 #, kde-format
 msgid "Health certificate found"
 msgstr "ნაპოვნია ჯანმრთელობის სერტიფიკატი"
 
-#: src/qml/QrCodeScannerPage.qml:118
+#: src/qml/QrCodeScannerPage.qml:117
 #, kde-format
 msgid "Transport ticket found"
 msgstr "ნაპოვნია ტრანსპორტის ბილეთი"
 
-#: src/qml/QrCodeScannerPage.qml:120
+#: src/qml/QrCodeScannerPage.qml:119
 #, kde-format
 msgid "ISBN found"
 msgstr "ნაპოვნია ISBN"
 
-#: src/qml/QrCodeScannerPage.qml:122
+#: src/qml/QrCodeScannerPage.qml:121
 #, kde-format
 msgid "International Article Number found"
 msgstr "ნაპოვნია სტატიის საერთაშორისო ნომერი"
 
-#: src/qml/QrCodeScannerPage.qml:124
+#: src/qml/QrCodeScannerPage.qml:123
 #, kde-format
 msgid "Wi-Fi settings found"
 msgstr "ნაპოვნია Wi-Fi-ის პარამეტრები"
 
-#: src/qml/QrCodeScannerPage.qml:151
+#: src/qml/QrCodeScannerPage.qml:150
 #, kde-format
 msgid "<binary data>"
 msgstr "<ბინარული მონაცემები>"
 
-#: src/qml/QrCodeScannerPage.qml:186
+#: src/qml/QrCodeScannerPage.qml:185
 #, kde-format
 msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
 msgstr "დაკავშირება…"
 
-#: src/qml/QrCodeScannerPage.qml:194
+#: src/qml/QrCodeScannerPage.qml:193
 #, kde-format
 msgid "Open"
 msgstr "გახსნა"
 
-#: src/qml/QrCodeScannerPage.qml:196
+#: src/qml/QrCodeScannerPage.qml:195
 #, kde-format
 msgid "Save Contact"
 msgstr "კონტაქტის შენახვა"
 
-#: src/qml/QrCodeScannerPage.qml:198
+#: src/qml/QrCodeScannerPage.qml:197
 #, kde-format
 msgid "Open OTP client"
 msgstr "OTP კლიენტის გახსნა"
 
-#: src/qml/QrCodeScannerPage.qml:200
+#: src/qml/QrCodeScannerPage.qml:199
 #, kde-format
 msgid "Open Food Facts"
 msgstr "Food Fact-ის გახსნა"
 
-#: src/qml/QrCodeScannerPage.qml:202
+#: src/qml/QrCodeScannerPage.qml:201
 #, kde-format
 msgid "Wikipedia Book Sources"
 msgstr "ვიკიპედიის წიგნების წყაროები"
 
-#: src/qml/QrCodeScannerPage.qml:204
+#: src/qml/QrCodeScannerPage.qml:203
 #, kde-format
 msgid "Open KDE Itinerary"
 msgstr "KDE Itinerary-ის გახსნა"
 
-#: src/qml/QrCodeScannerPage.qml:206
+#: src/qml/QrCodeScannerPage.qml:205
 #, kde-format
 msgid "Open in Vakzination"
 msgstr "Vakzination-ში გახსნა"
 
-#: src/qml/QrCodeScannerPage.qml:208
+#: src/qml/QrCodeScannerPage.qml:207
 #, kde-format
 msgid "Connect"
 msgstr "დაკავშირება"
 
-#: src/qml/QrCodeScannerPage.qml:277
+#: src/qml/QrCodeScannerPage.qml:276
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy to Clipboard"
 msgstr "ბუფერში კოპირება"
 
-#: src/qml/QrCodeScannerPage.qml:286
+#: src/qml/QrCodeScannerPage.qml:285
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
