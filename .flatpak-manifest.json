@@ -3,6 +3,15 @@
     "runtime": "org.kde.Platform",
     "runtime-version": "6.11",
     "sdk": "org.kde.Sdk",
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.llvm22"
+    ],
+    "add-extensions": {
+        "org.freedesktop.Sdk.Extension.llvm22": {
+            "no-autodownload": false,
+            "version": "25.08"
+        }
+    },
     "command": "qrca",
     "tags": [
         "nightly"
@@ -10,6 +19,7 @@
     "desktop-file-name-suffix": " (Nightly)",
     "finish-args": [
         "--device=all",
+        "--env=PATH=/app/bin:/usr/bin:/usr/lib/sdk/llvm22/bin",
         "--share=ipc",
         "--share=network",
         "--socket=fallback-x11",
@@ -88,10 +98,13 @@
             "buildsystem": "meson",
             "build-options": {
                 "cflags": "-ltinfo",
-                "cxxflags": "-ltinfo"
+                "cxxflags": "-ltinfo",
+                "prepend-path": "/usr/lib/sdk/llvm22/bin",
+                "prepend-ld-library-path": "/usr/lib/sdk/llvm22/lib"
             },
             "config-opts": [
                 "-Ddbus_conf_dir=/app/etc/dbus-1/system.d",
+                "-Dclat=false",
                 "-Ddnsmasq=/usr/bin/true",
                 "-Ddocs=false",
                 "-Dfirewalld_zone=false",
@@ -111,6 +124,7 @@
                 "-Dselinux=false",
                 "-Dsession_tracking=no",
                 "-Dsystemd_journal=false",
+                "-Dsystemdsystemgeneratordir=no",
                 "-Dsystemdsystemunitdir=no",
                 "-Dtests=no",
                 "-Dvapi=false",
@@ -130,8 +144,8 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.freedesktop.org/NetworkManager/NetworkManager.git",
-                    "tag": "1.56.1",
-                    "commit": "b829f838fc5d8c93437faa5db44a5396b67893de",
+                    "tag": "1.58.0",
+                    "commit": "61302aac7f2e7411f3b42159544926484eacd37e",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^([\\d.]+)$"
