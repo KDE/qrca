@@ -36,10 +36,9 @@ msgid "A simple QR scanner"
 msgstr "Jednoduchý QR skener"
 
 #: src/main.cpp:74
-#, fuzzy, kde-format
-#| msgid "Copyright 2016-2019 Qrca and Kaidan authors"
+#, kde-format
 msgid "Copyright 2016-2026 Qrca and Kaidan authors"
-msgstr "Copyright 2016-2019 autori Qrca a Kaidan"
+msgstr "Copyright 2016 – 2026 autori Qrca a Kaidan"
 
 #: src/main.cpp:78
 #, kde-format
