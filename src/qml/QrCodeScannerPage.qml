@@ -273,7 +273,7 @@ Kirigami.Page {
                 Layout.fillWidth: true
             }
             Controls.Button {
-                text: i18nc("@action:button","Copy to Clipboard")
+                text: i18nc("@action:button","Copy")
                 icon.name: "edit-copy-symbolic"
                 onClicked: {
                     Qrca.copyToClipboard(resultSheet.tag);
