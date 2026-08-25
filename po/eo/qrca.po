@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-08 00:49+0000\n"
+"POT-Creation-Date: 2026-08-25 00:49+0000\n"
 "PO-Revision-Date: 2025-02-12 22:59+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-eo@kde.org>\n"
@@ -255,11 +255,10 @@ msgid "Connect"
 msgstr "Konekti"
 
 #: src/qml/QrCodeScannerPage.qml:276
-#, fuzzy, kde-format
-#| msgid "Copy to clipboard"
+#, kde-format
 msgctxt "@action:button"
-msgid "Copy to Clipboard"
-msgstr "Kopii al tondujo"
+msgid "Copy"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:285
 #, kde-format
@@ -302,6 +301,12 @@ msgstr ""
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Malsukcesis trovi vifian aparaton"
+
+#, fuzzy
+#~| msgid "Copy to clipboard"
+#~ msgctxt "@action:button"
+#~ msgid "Copy to Clipboard"
+#~ msgstr "Kopii al tondujo"
 
 #~ msgid "QR-Code Scanner"
 #~ msgstr "QR-Koda Skanilo"

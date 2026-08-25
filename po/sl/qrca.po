@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-08 00:49+0000\n"
+"POT-Creation-Date: 2026-08-25 00:49+0000\n"
 "PO-Revision-Date: 2026-07-22 07:39+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -249,10 +249,12 @@ msgid "Connect"
 msgstr "Poveži"
 
 #: src/qml/QrCodeScannerPage.qml:276
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action:intoolbar"
+#| msgid "Copy"
 msgctxt "@action:button"
-msgid "Copy to Clipboard"
-msgstr "Kopiraj na odložišče"
+msgid "Copy"
+msgstr "Kopiraj"
 
 #: src/qml/QrCodeScannerPage.qml:285
 #, kde-format
@@ -292,6 +294,10 @@ msgstr "Skenirano z uporabo Qrca"
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Naprave wifi ni bilo mogoče najti"
+
+#~ msgctxt "@action:button"
+#~ msgid "Copy to Clipboard"
+#~ msgstr "Kopiraj na odložišče"
 
 #~ msgid "QR-Code Scanner"
 #~ msgstr "Skener kod QR"

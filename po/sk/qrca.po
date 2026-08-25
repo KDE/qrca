@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-08 00:49+0000\n"
+"POT-Creation-Date: 2026-08-25 00:49+0000\n"
 "PO-Revision-Date: 2022-04-07 18:27+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -246,10 +246,12 @@ msgid "Connect"
 msgstr "Pripojiť"
 
 #: src/qml/QrCodeScannerPage.qml:276
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action:intoolbar"
+#| msgid "Copy"
 msgctxt "@action:button"
-msgid "Copy to Clipboard"
-msgstr "Skopírovať do schránky"
+msgid "Copy"
+msgstr "Kopírovať"
 
 #: src/qml/QrCodeScannerPage.qml:285
 #, kde-format
@@ -289,6 +291,10 @@ msgstr "Naskenované aplikáciou Qrca"
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Nepodarilo sa nájsť zariadenie Wi-Fi"
+
+#~ msgctxt "@action:button"
+#~ msgid "Copy to Clipboard"
+#~ msgstr "Skopírovať do schránky"
 
 #~ msgid "Sharing Failed"
 #~ msgstr "Zdieľanie zlyhalo"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-08 00:49+0000\n"
+"POT-Creation-Date: 2026-08-25 00:49+0000\n"
 "PO-Revision-Date: 2025-02-08 17:34+0100\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -260,10 +260,10 @@ msgstr "Połącz"
 
 #: src/qml/QrCodeScannerPage.qml:276
 #, fuzzy, kde-format
-#| msgid "Copy to clipboard"
+#| msgid "Copy"
 msgctxt "@action:button"
-msgid "Copy to Clipboard"
-msgstr "Skopiuj do schowka"
+msgid "Copy"
+msgstr "Skopiuj"
 
 #: src/qml/QrCodeScannerPage.qml:285
 #, fuzzy, kde-format
@@ -308,6 +308,12 @@ msgstr ""
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Nie udało się znaleźć urządzenia Wifi"
+
+#, fuzzy
+#~| msgid "Copy to clipboard"
+#~ msgctxt "@action:button"
+#~ msgid "Copy to Clipboard"
+#~ msgstr "Skopiuj do schowka"
 
 #~ msgid "QR-Code Scanner"
 #~ msgstr "Skaner kodów QR"

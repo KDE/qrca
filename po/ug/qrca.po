@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-08 00:49+0000\n"
+"POT-Creation-Date: 2026-08-25 00:49+0000\n"
 "PO-Revision-Date: 2026-06-01 18:37-0400\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
@@ -250,10 +250,11 @@ msgstr "باغلان"
 
 #: src/qml/QrCodeScannerPage.qml:276
 #, fuzzy, kde-format
-#| msgid "Copy to Clipboard"
+#| msgctxt "@action:intoolbar"
+#| msgid "Copy"
 msgctxt "@action:button"
-msgid "Copy to Clipboard"
-msgstr "چاپلاش تاختىسىغا كۆچۈر"
+msgid "Copy"
+msgstr "كۆچۈر"
 
 #: src/qml/QrCodeScannerPage.qml:285
 #, kde-format
@@ -293,3 +294,9 @@ msgstr ""
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Copy to Clipboard"
+#~ msgctxt "@action:button"
+#~ msgid "Copy to Clipboard"
+#~ msgstr "چاپلاش تاختىسىغا كۆچۈر"

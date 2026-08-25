@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-08 00:49+0000\n"
+"POT-Creation-Date: 2026-08-25 00:49+0000\n"
 "PO-Revision-Date: 2026-02-03 22:48+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -250,10 +250,11 @@ msgstr "연결"
 
 #: src/qml/QrCodeScannerPage.qml:276
 #, fuzzy, kde-format
-#| msgid "Copy to Clipboard"
+#| msgctxt "@action:intoolbar"
+#| msgid "Copy"
 msgctxt "@action:button"
-msgid "Copy to Clipboard"
-msgstr "클립보드에 복사"
+msgid "Copy"
+msgstr "복사"
 
 #: src/qml/QrCodeScannerPage.qml:285
 #, fuzzy, kde-format
@@ -295,6 +296,12 @@ msgstr ""
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Wi-Fi 장치를 찾을 수 없음"
+
+#, fuzzy
+#~| msgid "Copy to Clipboard"
+#~ msgctxt "@action:button"
+#~ msgid "Copy to Clipboard"
+#~ msgstr "클립보드에 복사"
 
 #~ msgid "QR-Code Scanner"
 #~ msgstr "QR 코드 스캐너"

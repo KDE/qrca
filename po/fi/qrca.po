@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-08 00:49+0000\n"
+"POT-Creation-Date: 2026-08-25 00:49+0000\n"
 "PO-Revision-Date: 2026-01-05 20:44+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -251,10 +251,11 @@ msgstr "Yhdistä"
 
 #: src/qml/QrCodeScannerPage.qml:276
 #, fuzzy, kde-format
-#| msgid "Copy to Clipboard"
+#| msgctxt "@action:intoolbar"
+#| msgid "Copy"
 msgctxt "@action:button"
-msgid "Copy to Clipboard"
-msgstr "Kopioi leikepöydälle"
+msgid "Copy"
+msgstr "Kopioi"
 
 #: src/qml/QrCodeScannerPage.qml:285
 #, fuzzy, kde-format
@@ -296,6 +297,12 @@ msgstr ""
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Langatonta verkkolaitetta ei löytynyt"
+
+#, fuzzy
+#~| msgid "Copy to Clipboard"
+#~ msgctxt "@action:button"
+#~ msgid "Copy to Clipboard"
+#~ msgstr "Kopioi leikepöydälle"
 
 #~ msgid "QR-Code Scanner"
 #~ msgstr "QR-koodinlukija"

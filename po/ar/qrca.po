@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-08 00:49+0000\n"
+"POT-Creation-Date: 2026-08-25 00:49+0000\n"
 "PO-Revision-Date: 2026-08-10 14:08+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
@@ -249,10 +249,12 @@ msgid "Connect"
 msgstr "اتّصل"
 
 #: src/qml/QrCodeScannerPage.qml:276
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action:intoolbar"
+#| msgid "Copy"
 msgctxt "@action:button"
-msgid "Copy to Clipboard"
-msgstr "انسخ إلى الحافظة"
+msgid "Copy"
+msgstr "انسخ"
 
 #: src/qml/QrCodeScannerPage.qml:285
 #, kde-format
@@ -292,6 +294,10 @@ msgstr "مُسحت بواسطة برنامج كركا"
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "فشل في العثور على جهاز لا سلكي"
+
+#~ msgctxt "@action:button"
+#~ msgid "Copy to Clipboard"
+#~ msgstr "انسخ إلى الحافظة"
 
 #~ msgid "QR-Code Scanner"
 #~ msgstr "ماسح رمز الاستجابة السريعة"
