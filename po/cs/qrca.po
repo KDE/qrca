@@ -250,9 +250,7 @@ msgid "Connect"
 msgstr "Připojit se"
 
 #: src/qml/QrCodeScannerPage.qml:276
-#, fuzzy, kde-format
-#| msgctxt "@action:intoolbar"
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy"
 msgstr "Kopírovat"

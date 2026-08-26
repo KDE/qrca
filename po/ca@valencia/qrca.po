@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-25 00:49+0000\n"
-"PO-Revision-Date: 2026-07-22 13:08+0200\n"
+"PO-Revision-Date: 2026-08-25 08:34+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 26.04.3\n"
+"X-Generator: Lokalize 26.08.0\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -252,9 +252,7 @@ msgid "Connect"
 msgstr "Connecta"
 
 #: src/qml/QrCodeScannerPage.qml:276
-#, fuzzy, kde-format
-#| msgctxt "@action:intoolbar"
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy"
 msgstr "Copia"
@@ -297,7 +295,3 @@ msgstr "Escanejat utilitzant Orca"
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Ha fallat mentre es trobava el dispositiu wifi"
-
-#~ msgctxt "@action:button"
-#~ msgid "Copy to Clipboard"
-#~ msgstr "Copia a dins del porta-retalls"
