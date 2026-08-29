@@ -295,7 +295,3 @@ msgstr "Skanna med Qrca"
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Fann ikkje Wi-Fi-eining"
-
-#~ msgctxt "@action:button"
-#~ msgid "Copy to Clipboard"
-#~ msgstr "Kopier til utklippstavla"

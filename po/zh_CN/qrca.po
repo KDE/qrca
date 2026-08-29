@@ -248,12 +248,10 @@ msgid "Connect"
 msgstr "连接"
 
 #: src/qml/QrCodeScannerPage.qml:276
-#, fuzzy, kde-format
-#| msgctxt "@action:intoolbar"
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy"
-msgstr "复制"
+msgstr ""
 
 #: src/qml/QrCodeScannerPage.qml:285
 #, kde-format
@@ -293,7 +291,3 @@ msgstr "使用 Qrca 扫描"
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "查找 WiFi 设备失败"
-
-#~ msgctxt "@action:button"
-#~ msgid "Copy to Clipboard"
-#~ msgstr "复制到剪贴板"
