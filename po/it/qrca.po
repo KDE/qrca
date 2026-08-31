@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-25 00:49+0000\n"
-"PO-Revision-Date: 2026-07-23 14:51+0200\n"
+"PO-Revision-Date: 2026-08-26 17:47+0200\n"
 "Last-Translator: Paolo Zamponi <feus73@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -248,9 +248,7 @@ msgid "Connect"
 msgstr "Connetti"
 
 #: src/qml/QrCodeScannerPage.qml:276
-#, fuzzy, kde-format
-#| msgctxt "@action:intoolbar"
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy"
 msgstr "Copia"
