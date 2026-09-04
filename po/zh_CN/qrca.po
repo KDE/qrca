@@ -251,7 +251,7 @@ msgstr "连接"
 #, kde-format
 msgctxt "@action:button"
 msgid "Copy"
-msgstr ""
+msgstr "复制"
 
 #: src/qml/QrCodeScannerPage.qml:285
 #, kde-format
