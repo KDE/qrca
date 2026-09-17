@@ -46,6 +46,7 @@ public:
     QString text() const;
     QString displayText() const;
     QByteArray binaryContent() const;
+    Prison::Format::BarcodeFormat format() const;
 
 private:
     QVariant m_content;

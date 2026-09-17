@@ -36,6 +36,7 @@
 // #include "QrCodeScannerFilter.h"
 #include "Qrca.h"
 #include "clipboard.h"
+#include "historymodel.h"
 #include "notificationmanager.h"
 
 static void processCommandLine(const QCommandLineParser &parser, Qrca &qrca)
@@ -125,6 +126,12 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
         Q_UNUSED(scriptEngine)
 
         return new Clipboard();
+    });
+    qmlRegisterSingletonType<Clipboard>("org.kde.qrca", 1, 0, "HistoryModel", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
+        Q_UNUSED(engine)
+        Q_UNUSED(scriptEngine)
+
+        return new HistoryModel();
     });
     qRegisterMetaType<QrCodeContent>();
 

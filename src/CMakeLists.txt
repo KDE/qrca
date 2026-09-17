@@ -14,6 +14,7 @@ set(qrca_SRCS
     QrCodeContent.cpp
     notificationmanager.cpp
     clipboard.cpp
+    historymodel.cpp
 )
 
 add_executable(qrca ${qrca_SRCS})
@@ -24,6 +25,7 @@ ecm_target_qml_sources(qrca SOURCES
     qml/Main.qml
     qml/QrCodeScannerPage.qml
     qml/QrCodeEncoderPage.qml
+    qml/HistoryPage.qml
     qml/AboutPage.qml
     qml/ShareSheet.qml
     qml/ResultSheet.qml
