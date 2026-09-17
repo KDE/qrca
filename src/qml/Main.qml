@@ -19,6 +19,11 @@ Kirigami.ApplicationWindow {
     width: Kirigami.Units.gridUnit * 21
     height: Kirigami.Settings.isMobile ? Kirigami.Units.gridUnit * 34 : Kirigami.Units.gridUnit * 27
 
+    pageStack {
+        columnView.columnResizeMode: Kirigami.ColumnView.SingleColumn
+        popHiddenPages: true
+    }
+
     KConfig.WindowStateSaver {
         configGroupName: "MainWindow"
     }

@@ -42,6 +42,8 @@ find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami I18n Contacts Co
 find_package(KF6KirigamiAddons REQUIRED)
 
 if(NOT ANDROID)
+    # FIXME No DBus on Windows...
+    find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS DBus)
     find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Service KIO Crash DBusAddons Purpose)
     find_package(KF6 ${KF_MIN_VERSION} OPTIONAL_COMPONENTS NetworkManagerQt)
 endif()
