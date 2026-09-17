@@ -1,0 +1,222 @@
+/*
+ *  SPDX-FileCopyrightText: 2020 Nicolas Fella <nicolas.fella@gmx.de>
+ *  SPDX-FileCopyrightText: 2016-2019 Kaidan developers and contributors (see the LICENSE file of Kaidan for a full list of copyright authors)
+ *  SPDX-FileCopyrightText: 2025 Kai Uwe Broulik <kde@broulik.de>
+ *  SPDX-FileCopyrightText: 2025 Salvo 'LtWorf' Tomaselli <ltworf@debian.org>
+ *
+ *  SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
+import QtQuick
+import QtQuick.Layouts
+import QtQuick.Controls as Controls
+
+import org.kde.kirigami as Kirigami
+
+import org.kde.qrca 1.0
+
+Kirigami.OverlaySheet {
+    id: resultSheet
+
+    property var tag
+    onTagChanged: resultErrorMessage.visible = false
+
+    header: Kirigami.Heading {
+        text: {
+            switch (resultSheet.tag?.contentType) {
+            case QrCodeContent.Text:
+                return i18n("Text found");
+            case QrCodeContent.Url:
+                return i18n("URL found");
+            case QrCodeContent.VCard:
+                return i18n("Contact found");
+            case QrCodeContent.OtpToken:
+                return i18n("OTP URI found");
+            case QrCodeContent.Binary:
+                return i18n("Binary data found");
+            case QrCodeContent.HealthCertificate:
+                return i18n("Health certificate found");
+            case QrCodeContent.TransportTicket:
+                return i18n("Transport ticket found");
+            case QrCodeContent.ISBN:
+                return i18n("ISBN found");
+            case QrCodeContent.EAN:
+                return i18n("International Article Number found");
+            case QrCodeContent.WifiSetting:
+                return i18n("Wi-Fi settings found");
+            default:
+                return "";
+            }
+        }
+    }
+
+    ColumnLayout {
+        Layout.preferredWidth: Kirigami.Units.gridUnit * 20
+
+        Kirigami.InlineMessage {
+            id: resultErrorMessage
+            Layout.fillWidth: true
+            type: Kirigami.MessageType.Error
+            visible: false
+        }
+
+        Controls.Label {
+            Layout.maximumWidth: Kirigami.Units.gridUnit * 20
+            Layout.fillWidth: true
+            text: {
+                switch (resultSheet.tag?.contentType) {
+                case QrCodeContent.VCard:
+                    return Qrca.getVCardName(resultSheet.tag.text);
+                case QrCodeContent.WifiSetting:
+                    return Qrca.wifiName(resultSheet.tag.text);
+                default:
+                    return resultSheet.tag?.isPlainText ? resultSheet.tag.text : i18n("<binary data>");
+                }
+            }
+            wrapMode: Text.Wrap
+            textFormat: Text.PlainText
+        }
+    }
+
+    Connections {
+        target: Qrca
+        enabled: resultSheet.opened && resultSheet.tag?.contentType === QrCodeContent.WifiSetting
+        function onWifiConnected(): void {
+            if (Qrca.wifiMode) {
+                Qt.quit();
+            } else {
+                resultSheet.close();
+            }
+        }
+        function onWifiConnectionFailed(msg): void {
+            resultErrorMessage.text = msg;
+            resultErrorMessage.visible = true;
+        }
+    }
+
+    footer: RowLayout {
+        RowLayout {
+            spacing: 0
+            visible: wifiBusyIndicator.running
+
+            Controls.BusyIndicator {
+                id: wifiBusyIndicator
+                running: resultSheet.tag?.contentType === QrCodeContent.WifiSetting && Qrca.connectingToWifi
+            }
+
+            Controls.Label {
+                text: i18nc("Connecting to Wi-Fi", "Connecting…")
+            }
+        }
+
+        Controls.Button {
+            text: {
+                switch (resultSheet.tag?.contentType) {
+                case QrCodeContent.Url:
+                    return i18n("Open");
+                case QrCodeContent.VCard:
+                    return i18n("Save Contact");
+                case QrCodeContent.OtpToken:
+                    return i18n("Open OTP client");
+                case QrCodeContent.EAN:
+                    return i18n("Open Food Facts");
+                case QrCodeContent.ISBN:
+                    return i18n("Wikipedia Book Sources");
+                case QrCodeContent.TransportTicket:
+                    return i18n("Open KDE Itinerary");
+                case QrCodeContent.HealthCertificate:
+                    return i18n("Open in Vakzination");
+                case QrCodeContent.WifiSetting:
+                    return i18n("Connect");
+                default:
+                    return "";
+                }
+            }
+            onClicked: {
+                resultErrorMessage.visible = false;
+
+                switch (resultSheet.tag.contentType) {
+                case QrCodeContent.Url:
+                    Qt.openUrlExternally(resultSheet.tag.text);
+                    break;
+                case QrCodeContent.VCard:
+                    Qrca.saveVCard(resultSheet.tag.text);
+                    break;
+                case QrCodeContent.OtpToken:
+                    Qt.openUrlExternally(resultSheet.tag.text);
+                    break;
+                case QrCodeContent.EAN:
+                    Qt.openUrlExternally("https://world.openfoodfacts.org/product/" + resultSheet.tag.text);
+                    break;
+                case QrCodeContent.ISBN:
+                    Qt.openUrlExternally("https://en.wikipedia.org/wiki/Special:BookSources?isbn=" + resultSheet.tag.text);
+                    break;
+                case QrCodeContent.TransportTicket:
+                    Qrca.openInApplication(resultSheet.tag, "org.kde.itinerary");
+                    break;
+                case QrCodeContent.HealthCertificate:
+                    Qrca.openInApplication(resultSheet.tag, "org.kde.vakzination");
+                    break;
+                case QrCodeContent.WifiSetting:
+                    Qrca.connectToWifi(resultSheet.tag.text);
+                    return; // Wait for connection to be established before closing.
+                }
+                resultSheet.close();
+            }
+            visible: {
+                switch (resultSheet.tag?.contentType) {
+                case QrCodeContent.Binary:
+                case QrCodeContent.Text:
+                    return false;
+                case QrCodeContent.TransportTicket:
+                    return Qrca.hasApplication("org.kde.itinerary");
+                case QrCodeContent.HealthCertificate:
+                    return Qrca.hasApplication("org.kde.vakzination");
+                case QrCodeContent.WifiSetting:
+                    return Qrca.canConnectToWifi() && !Qrca.connectingToWifi;
+                }
+                return true;
+            }
+            icon.name: {
+                switch (resultSheet.tag?.contentType) {
+                case QrCodeContent.VCard:
+                    return "document-save";
+                case QrCodeContent.OtpToken:
+                    return "document-encrypt";
+                case QrCodeContent.TransportTicket:
+                    return Qrca.applicationIconName("org.kde.itinerary");
+                case QrCodeContent.HealthCertificate:
+                    return Qrca.applicationIconName("org.kde.vakzination");
+                case QrCodeContent.WifiSetting:
+                    return "network-wireless";
+                }
+                return "internet-services";
+            }
+
+            Layout.fillWidth: true
+        }
+        Controls.Button {
+            text: i18nc("@action:button","Copy")
+            icon.name: "edit-copy-symbolic"
+            onClicked: {
+                Qrca.copyToClipboard(resultSheet.tag);
+                resultSheet.close();
+            }
+            Layout.fillWidth: true
+        }
+        Controls.Button {
+            text: i18nc("@action:button","Share…")
+            icon.name: "emblem-shared-symbolic"
+            visible: Qt.platform.os != "android"
+            onClicked: {
+                // disabledPlugins won't disable clipboard plugin on old versions of purpose framework, because it didn't have the property
+                shareSheetLoader.setSource("ShareSheet.qml", {
+                    "text": resultSheet.tag.text,
+                    "disabledPlugins": ["clipboardplugin"]
+                });
+                shareSheetLoader.item.open();
+            }
+            Layout.fillWidth: true
+        }
+    }
+}
