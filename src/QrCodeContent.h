@@ -18,6 +18,7 @@ class QrCodeContent
     Q_GADGET
     Q_PROPERTY(ContentType contentType READ contentType)
     Q_PROPERTY(QString text READ text)
+    Q_PROPERTY(QString displayText READ displayText STORED false)
     Q_PROPERTY(bool isPlainText READ isPlainText)
 public:
     QrCodeContent();
@@ -43,6 +44,7 @@ public:
     /** @c true if the content consists only of plain text, which might also be the case for contentType() != Text. */
     bool isPlainText() const;
     QString text() const;
+    QString displayText() const;
     QByteArray binaryContent() const;
 
 private:
