@@ -38,6 +38,14 @@ Kirigami.Page {
         }
     }
 
+    onIsCurrentPageChanged: {
+        if (isCurrentPage) {
+            camera.start();
+        } else {
+            camera.stop();
+        }
+    }
+
     Timer {
         id: deactivateCamera
         interval: 1000 * 5
@@ -71,6 +79,15 @@ Kirigami.Page {
             onTriggered: {
                 openFileDialog.open();
                 camera.active = false;
+            }
+        },
+        Kirigami.Action {
+            icon.name: "view-history-symbolic"
+            text: i18nc("@action:intoolbar", "View History")
+            enabled: HistoryModel.count > 0
+            visible: !Qrca.wifiMode
+            onTriggered: {
+                scanner.Kirigami.PageStack.push(Qt.resolvedUrl("HistoryPage.qml"));
             }
         }
     ]
@@ -148,6 +165,7 @@ Kirigami.Page {
             }
 
             resultSheet.tag = resultContent;
+            HistoryModel.add(resultContent);
             if (!resultSheet.sheetOpen) {
                 resultSheet.open();
             }
@@ -202,6 +220,7 @@ Kirigami.Page {
             if (result.hasContent) {
                 const resultContent = Qrca.resultContent(result);
                 resultSheet.tag = resultContent;
+                HistoryModel.add(resultContent);
                 resultSheet.open();
             } else {
                 showPassiveNotification(i18n("No QR code found in the image."), "long");

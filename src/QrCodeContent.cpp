@@ -213,4 +213,9 @@ QByteArray QrCodeContent::binaryContent() const
     return {};
 }
 
+Prison::Format::BarcodeFormat QrCodeContent::format() const
+{
+    return m_format;
+}
+
 #include "moc_QrCodeContent.cpp"

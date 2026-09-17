@@ -20,6 +20,7 @@ class QrCodeContent
     Q_PROPERTY(QString text READ text)
     Q_PROPERTY(QString displayText READ displayText STORED false)
     Q_PROPERTY(bool isPlainText READ isPlainText)
+    Q_PROPERTY(Prison::Format::BarcodeFormat format READ format)
 public:
     QrCodeContent();
     explicit QrCodeContent(const QByteArray &content, Prison::Format::BarcodeFormat format);
@@ -46,6 +47,7 @@ public:
     QString text() const;
     QString displayText() const;
     QByteArray binaryContent() const;
+    Prison::Format::BarcodeFormat format() const;
 
 private:
     QVariant m_content;
