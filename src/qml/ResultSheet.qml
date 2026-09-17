@@ -63,16 +63,7 @@ Kirigami.OverlaySheet {
         Controls.Label {
             Layout.maximumWidth: Kirigami.Units.gridUnit * 20
             Layout.fillWidth: true
-            text: {
-                switch (resultSheet.tag?.contentType) {
-                case QrCodeContent.VCard:
-                    return Qrca.getVCardName(resultSheet.tag.text);
-                case QrCodeContent.WifiSetting:
-                    return Qrca.wifiName(resultSheet.tag.text);
-                default:
-                    return resultSheet.tag?.isPlainText ? resultSheet.tag.text : i18n("<binary data>");
-                }
-            }
+            text: resultSheet.tag?.displayText ?? ""
             wrapMode: Text.Wrap
             textFormat: Text.PlainText
         }
