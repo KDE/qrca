@@ -12,6 +12,8 @@ import QtQuick.Layouts
 import QtQuick.Controls as Controls
 
 import org.kde.kirigami as Kirigami
+import org.kde.prison 1.0 as Prison
+import org.kde.prison.scanner 1.0 as PrisonScanner
 
 import org.kde.qrca 1.0
 
@@ -19,6 +21,7 @@ Kirigami.OverlaySheet {
     id: resultSheet
 
     property var tag
+    property bool showBarcode: false
     onTagChanged: resultErrorMessage.visible = false
 
     header: Kirigami.Heading {
@@ -66,6 +69,40 @@ Kirigami.OverlaySheet {
             text: resultSheet.tag?.displayText ?? ""
             wrapMode: Text.Wrap
             textFormat: Text.PlainText
+        }
+
+        Prison.Barcode {
+            Layout.fillWidth: true
+            Layout.alignment: Qt.AlignCenter
+            Layout.maximumWidth: Kirigami.Units.gridUnit * 16
+            Layout.preferredHeight: width
+            Layout.maximumHeight: width
+            Layout.fillHeight: true
+            barcodeType: {
+                // PrisonScanner.Format not match Prison.BarcodeItem.BarcodeType.
+                switch (resultSheet.tag?.format) {
+                case PrisonScanner.Format.QRCode:
+                    return Prison.Barcode.QRCode;
+                case PrisonScanner.Format.DataMatrix:
+                    return Prison.Barcode.DataMatrix;
+                case PrisonScanner.Format.Aztec:
+                    return Prison.Barcode.Aztec;
+                case PrisonScanner.Format.PDF417:
+                    return Prison.Barcode.EAN13;
+                // TODO Do we really need Code39/93/128/EAN13?
+                }
+                return Prison.Barcode.QRCode;
+            }
+            content: {
+                if (resultSheet.tag && resultSheet.showBarcode) {
+                    if (resultSheet.tag.isPlainText) {
+                        return resultSheet.tag.text;
+                    } else {
+                        return resultSheet.tag.binaryContent;
+                    }
+                }
+            }
+            visible: resultSheet.showBarcode
         }
     }
 

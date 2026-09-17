@@ -3,6 +3,9 @@
 #
 # SPDX-License-Identifier: BSD-2-Clause
 
+if (TARGET Qt6::DBus)
+    set(HAVE_QTDBUS TRUE)
+endif()
 if (TARGET KF6::NetworkManagerQt)
     set(HAVE_NETWORKMANAGER TRUE)
 endif()
@@ -14,9 +17,14 @@ set(qrca_SRCS
     QrCodeContent.cpp
     notificationmanager.cpp
     clipboard.cpp
+    historymodel.cpp
 )
 
 add_executable(qrca ${qrca_SRCS})
+
+if (TARGET Qt6::DBus)
+    target_sources(qrca PRIVATE activitymanager.cpp)
+endif()
 
 ecm_add_qml_module(qrca URI "org.kde.qrca" VERSION 1.0)
 
@@ -24,6 +32,7 @@ ecm_target_qml_sources(qrca SOURCES
     qml/Main.qml
     qml/QrCodeScannerPage.qml
     qml/QrCodeEncoderPage.qml
+    qml/HistoryPage.qml
     qml/AboutPage.qml
     qml/ShareSheet.qml
     qml/ResultSheet.qml
@@ -32,7 +41,7 @@ ecm_target_qml_sources(qrca SOURCES
 file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/*.png")
 ecm_add_app_icon(qrca ICONS ${ICONS_SRCS})
 
-target_link_libraries(qrca PRIVATE Qt::Core Qt::Qml Qt::Quick Qt::QuickControls2 Qt::Svg Qt::Multimedia KF6::I18n KF6::Contacts KF6::CoreAddons KF6::Notifications KF6::Prison KF6::PrisonScanner KF6::I18nQml)
+target_link_libraries(qrca PRIVATE Qt::Core Qt::Qml Qt::Quick Qt::QuickControls2 Qt::Svg Qt::Multimedia KF6::I18n KF6::ConfigCore KF6::Contacts KF6::CoreAddons KF6::Notifications KF6::Prison KF6::PrisonScanner KF6::I18nQml)
 
 if (TARGET KF6::NetworkManagerQt)
     target_link_libraries(qrca PRIVATE KF6::NetworkManagerQt)
