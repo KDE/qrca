@@ -179,7 +179,7 @@ void Qrca::openInApplication(const QrCodeContent &content, const QString &appId)
 #endif
 }
 
-QString Qrca::wifiName(const QString &wifiSetting) const
+QString Qrca::wifiName(const QString &wifiSetting)
 {
     auto p = Prison::MeCard::parse(wifiSetting);
     return p ? p->value(u"S") : QString();

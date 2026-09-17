@@ -5,8 +5,11 @@
 */
 
 #include "QrCodeContent.h"
+#include "Qrca.h"
 
 #include <Prison/MeCard>
+
+#include <KLocalizedString>
 
 #include <QRegularExpression>
 #include <QUrlQuery>
@@ -184,6 +187,22 @@ QString QrCodeContent::text() const
         return m_content.toString();
     }
     return {};
+}
+
+QString QrCodeContent::displayText() const
+{
+    switch (contentType()) {
+    case QrCodeContent::VCard:
+        return Qrca::getVCardName(text());
+    case QrCodeContent::WifiSetting:
+        return Qrca::wifiName(text());
+    default:
+        if (isPlainText()) {
+            return text();
+        } else {
+            return i18n("<binary data>");
+        }
+    }
 }
 
 QByteArray QrCodeContent::binaryContent() const
