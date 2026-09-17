@@ -88,10 +88,6 @@ Kirigami.Page {
         id: devices
     }
 
-    function asLink(text) {
-        return "<a href='" + text + "'>" + text + "</a>";
-    }
-
     Kirigami.OverlaySheet {
         id: resultSheet
 
