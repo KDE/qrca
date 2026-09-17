@@ -26,6 +26,7 @@ ecm_target_qml_sources(qrca SOURCES
     qml/QrCodeEncoderPage.qml
     qml/AboutPage.qml
     qml/ShareSheet.qml
+    qml/ResultSheet.qml
 )
 
 file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/*.png")
