@@ -124,6 +124,14 @@ Kirigami.Page {
         id: viewfinder
         anchors.fill: parent
         fillMode: VideoOutput.PreserveAspectCrop
+        visible: camera.error === Camera.NoError
+
+        Component.onCompleted: {
+            // TODO Set it directly once we depend on Qt 6.9
+            if (viewfinder.hasOwnProperty("endOfStreamPolicy")) {
+                viewfinder.endOfStreamPolicy = VideoOutput.KeepLastFrame;
+            }
+        }
     }
 
     Prison.VideoScanner {
