@@ -242,4 +242,26 @@ Kirigami.Page {
             showPassiveNotification(errorString || i18n("Failed to scan QR code"), "long");
         }
     }
+
+    DropArea {
+        id: area
+        anchors.fill: parent
+        onEntered: (drag) => {
+            // No imageData on QML DragEvent :-(
+            if (drag.hasUrls || drag.formats.includes("image/png") || drag.formats.includes("image/jpeg")) {
+                drag.accept();
+            } else {
+                drag.accepted = false;
+            }
+        }
+        onDropped: (drag) => {
+            if (drag.hasUrls) {
+                importer.load(drag.urls[0]);
+            } else if (drag.formats.includes("image/png")) {
+                importer.load(drag.getDataAsArrayBuffer("image/png"));
+            } else if (drag.formats.includes("image/jpeg")) {
+                importer.load(drag.getDataAsArrayBuffer("image/jpeg"));
+            }
+        }
+    }
 }
