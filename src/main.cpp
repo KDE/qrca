@@ -37,6 +37,7 @@
 #include "Qrca.h"
 #include "clipboard.h"
 #include "historymodel.h"
+#include "importer.h"
 #include "notificationmanager.h"
 
 static void processCommandLine(const QCommandLineParser &parser, Qrca &qrca)
@@ -133,6 +134,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
         return new HistoryModel();
     });
+    qmlRegisterType<Importer>("org.kde.qrca", 1, 0, "Importer");
     qRegisterMetaType<QrCodeContent>();
 
     Qrca qrca;

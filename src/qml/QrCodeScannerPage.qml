@@ -211,49 +211,35 @@ Kirigami.Page {
         nameFilters: [i18nc("Name filter for Image files", "Image files (*.jpeg *.jpg *.jxl *.png)")]
         currentFolder: StandardPaths.standardLocations(StandardPaths.PicturesLocation)[0]
         onAccepted: {
-            selectedImage.source = openFileDialog.currentFile;
-            viewfinder.visible = false;
-            selectedImage.visible = true;
-            camera.active = false;
-
-            const result = Qrca.scanImage(openFileDialog.currentFile);
-            if (result.hasContent) {
-                const resultContent = Qrca.resultContent(result);
-                resultSheet.tag = resultContent;
-                HistoryModel.add(resultContent);
-                resultSheet.open();
-            } else {
-                showPassiveNotification(i18n("No QR code found in the image."), "long");
-                selectedImage.source = "";
-                selectedImage.visible = false;
-                viewfinder.visible = true;
-                camera.active = true;
-            }
+            importer.load(openFileDialog.selectedFile);
         }
         onRejected: {
             camera.active = true;
         }
     }
 
-    Image {
-        id: selectedImage
-        anchors.fill: parent
-        fillMode: Image.PreserveAspectFit
-        visible: false
+    Controls.BusyIndicator {
+        anchors.centerIn: parent
+        running: importer.busy
+        visible: running
+    }
 
-        Controls.Button {
-            anchors {
-                top: parent.top
-                right: parent.right
-                margins: Kirigami.Units.largeSpacing
+    Importer {
+        id: importer
+        onFinished: (image, result) => {
+            if (result.hasContent) {
+                const resultContent = Qrca.resultContent(result);
+                HistoryModel.add(resultContent);
+                scanner.Kirigami.PageStack.pageStack.layers.push(Qt.resolvedUrl("ImportedQrCodePage.qml"), {
+                    image,
+                    tag: resultContent
+                });
+            } else {
+                showPassiveNotification(i18n("No QR code found in the image."), "long");
             }
-            icon.name: "window-close"
-            onClicked: {
-                selectedImage.source = "";
-                selectedImage.visible = false;
-                viewfinder.visible = true;
-                camera.active = true;
-            }
+        }
+        onFailed: (errorCode, errorString) => {
+            showPassiveNotification(errorString || i18n("Failed to scan QR code"), "long");
         }
     }
 }

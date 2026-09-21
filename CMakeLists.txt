@@ -37,12 +37,12 @@ kde_enable_exceptions()
 ecm_setup_version(${RELEASE_SERVICE_VERSION} VARIABLE_PREFIX QRCA
     VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/src/qrca_version.h")
 
-find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Multimedia)
-find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami I18n Contacts CoreAddons Notifications Prison Config)
+find_package(Qt6 ${QT_MIN_VERSION} REQUIRED NO_MODULE COMPONENTS Core Quick Test Gui Svg QuickControls2 Multimedia Concurrent)
+find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Kirigami I18n KIO Contacts CoreAddons Notifications Prison Config Declarative)
 find_package(KF6KirigamiAddons REQUIRED)
 
 if(NOT ANDROID)
-    find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Service KIO Crash DBusAddons Purpose)
+    find_package(KF6 ${KF_MIN_VERSION} REQUIRED COMPONENTS Service Crash DBusAddons Purpose)
     find_package(KF6 ${KF_MIN_VERSION} OPTIONAL_COMPONENTS NetworkManagerQt)
 endif()
 

@@ -15,6 +15,7 @@ set(qrca_SRCS
     notificationmanager.cpp
     clipboard.cpp
     historymodel.cpp
+    importer.cpp
 )
 
 add_executable(qrca ${qrca_SRCS})
@@ -26,6 +27,7 @@ ecm_target_qml_sources(qrca SOURCES
     qml/QrCodeScannerPage.qml
     qml/QrCodeEncoderPage.qml
     qml/HistoryPage.qml
+    qml/ImportedQrCodePage.qml
     qml/AboutPage.qml
     qml/ShareSheet.qml
     qml/ResultSheet.qml
@@ -34,7 +36,7 @@ ecm_target_qml_sources(qrca SOURCES
 file(GLOB ICONS_SRCS "${CMAKE_CURRENT_SOURCE_DIR}/../icons/*.png")
 ecm_add_app_icon(qrca ICONS ${ICONS_SRCS})
 
-target_link_libraries(qrca PRIVATE Qt::Core Qt::Qml Qt::Quick Qt::QuickControls2 Qt::Svg Qt::Multimedia KF6::I18n KF6::ConfigCore KF6::Contacts KF6::CoreAddons KF6::Notifications KF6::Prison KF6::PrisonScanner KF6::I18nQml)
+target_link_libraries(qrca PRIVATE Qt::Core Qt::Qml Qt::Quick Qt::QuickControls2 Qt::Svg Qt::Multimedia Qt::Concurrent KF6::I18n KF6::ConfigCore KF6::Contacts KF6::CoreAddons KF6::Notifications KF6::Prison KF6::PrisonScanner KF6::I18nQml)
 
 if (TARGET KF6::NetworkManagerQt)
     target_link_libraries(qrca PRIVATE KF6::NetworkManagerQt)
@@ -44,6 +46,8 @@ if (NOT ANDROID)
     target_link_libraries(qrca PRIVATE KF6::Purpose)
 endif()
 target_compile_definitions(qrca PRIVATE -DQT_NO_CAST_FROM_ASCII)
+
+target_link_libraries(qrca PRIVATE KF6::KIOGui)
 
 if(ANDROID)
     target_link_libraries(qrca PRIVATE Qt::Svg KF6::Kirigami)
@@ -71,7 +75,7 @@ if(ANDROID)
     install(FILES ${CMAKE_SOURCE_DIR}/org.kde.qrca.svg  DESTINATION ${KDE_INSTALL_QMLDIR}/org/kde/kirigami/breeze-internal/icons/)
     ecm_add_android_apk(qrca ANDROID_DIR ${CMAKE_SOURCE_DIR}/android)
 else()
-    target_link_libraries(qrca PRIVATE Qt::Widgets KF6::KIOGui KF6::Service KF6::Crash KF6::DBusAddons)
+    target_link_libraries(qrca PRIVATE Qt::Widgets KF6::Service KF6::Crash KF6::DBusAddons)
 endif()
 
 install(TARGETS qrca ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
