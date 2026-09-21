@@ -80,7 +80,7 @@ Kirigami.ApplicationWindow {
     ]
 
     footer: Kirigami.NavigationTabBar {
-        visible: !Qrca.wifiMode
+        visible: !Qrca.wifiMode && window.pageStack.layers.depth < 2
         actions: navigationActions
     }
 
