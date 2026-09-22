@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-08-25 00:49+0000\n"
-"PO-Revision-Date: 2026-06-01 18:37-0400\n"
+"PO-Revision-Date: 2026-09-22 18:03+0900\n"
 "Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur <kde-i18n-doc@kde.org>\n"
 "Language: ug\n"
@@ -31,7 +31,7 @@ msgstr "sahranbay@gmail.com, gheyret@gmail.com"
 #: src/main.cpp:69
 #, kde-format
 msgid "Qrca"
-msgstr "Qrca"
+msgstr ""
 
 #: src/main.cpp:71
 #, kde-format
@@ -46,12 +46,12 @@ msgstr ""
 #: src/main.cpp:77
 #, kde-format
 msgid "Jonah Brüchert"
-msgstr "Jonah Brüchert"
+msgstr ""
 
 #: src/main.cpp:78
 #, kde-format
 msgid "Simon Schmeißer"
-msgstr "Simon Schmeißer"
+msgstr ""
 
 #: src/main.cpp:94
 #, kde-format
@@ -249,9 +249,7 @@ msgid "Connect"
 msgstr "باغلان"
 
 #: src/qml/QrCodeScannerPage.qml:276
-#, fuzzy, kde-format
-#| msgctxt "@action:intoolbar"
-#| msgid "Copy"
+#, kde-format
 msgctxt "@action:button"
 msgid "Copy"
 msgstr "كۆچۈر"
@@ -260,7 +258,7 @@ msgstr "كۆچۈر"
 #, kde-format
 msgctxt "@action:button"
 msgid "Share…"
-msgstr ""
+msgstr "ھەمبەھىر…"
 
 #: src/qml/QrCodeScannerPage.qml:389
 #, kde-format
@@ -283,7 +281,7 @@ msgstr ""
 #, kde-format
 msgctxt "@title:window"
 msgid "Share"
-msgstr ""
+msgstr "ھەمبەھىر"
 
 #: src/qml/ShareSheet.qml:25
 #, kde-format
@@ -295,7 +293,6 @@ msgstr ""
 msgid "Failed to find wifi device"
 msgstr ""
 
-#, fuzzy
 #~| msgid "Copy to Clipboard"
 #~ msgctxt "@action:button"
 #~ msgid "Copy to Clipboard"
