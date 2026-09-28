@@ -53,7 +53,7 @@ Kirigami.Page {
     actions: [
         Kirigami.Action {
             icon.name: checked ? "flashlight-off" : "flashlight-on"
-            text: i18n("Light")
+            text: i18nc("@option:check Toggle flashlight", "Light")
             checkable: true
             checked: camera.torchMode == Camera.TorchOn
             visible: camera.cameraDevice, camera.isTorchModeSupported(Camera.TorchOn)
