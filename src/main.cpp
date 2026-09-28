@@ -91,7 +91,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     aboutData.setupCommandLine(&parser);
     parser.addOption(QCommandLineOption(QStringLiteral("encode"), QStringLiteral("Text to encode into a QR-Code"), QStringLiteral("encode"), {}));
 #if HAVE_NETWORKMANAGER
-    QCommandLineOption wifiOption(QStringLiteral("wifi"), i18n("Scan only for Wifi network QR codes"));
+    QCommandLineOption wifiOption(QStringLiteral("wifi"), i18n("Scan only for Wi-Fi network QR codes"));
     parser.addOption(wifiOption);
 #endif
 
