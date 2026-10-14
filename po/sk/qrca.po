@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-08-25 00:49+0000\n"
+"POT-Creation-Date: 2026-10-14 00:52+0000\n"
 "PO-Revision-Date: 2026-09-14 20:10+0200\n"
 "Last-Translator: Roman Paholík <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -25,32 +25,32 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "wizzardsk@gmail.com"
 
-#: src/main.cpp:69
+#: src/main.cpp:70
 #, kde-format
 msgid "Qrca"
 msgstr "Qrca"
 
-#: src/main.cpp:71
+#: src/main.cpp:72
 #, kde-format
 msgid "A simple QR scanner"
 msgstr "Jednoduchý QR skener"
 
-#: src/main.cpp:73
+#: src/main.cpp:74
 #, kde-format
 msgid "Copyright 2016-2026 Qrca and Kaidan authors"
 msgstr "Copyright 2016 – 2026 autori Qrca a Kaidan"
 
-#: src/main.cpp:77
+#: src/main.cpp:78
 #, kde-format
 msgid "Jonah Brüchert"
 msgstr "Jonah Brüchert"
 
-#: src/main.cpp:78
+#: src/main.cpp:79
 #, kde-format
 msgid "Simon Schmeißer"
 msgstr "Simon Schmeißer"
 
-#: src/main.cpp:94
+#: src/main.cpp:95
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
 msgstr "Skenovať iba QR kódy Wi-Fi sietí"
@@ -60,22 +60,46 @@ msgstr "Skenovať iba QR kódy Wi-Fi sietí"
 msgid "Shared url for image is <a href='%1'>%1</a>"
 msgstr "Webová adresa zdieľaného obrázka je <a href='%1'>%1</a>"
 
+#: src/qml/HistoryPage.qml:19
+#, kde-format
+msgctxt "@title:window"
+msgid "History"
+msgstr ""
+
+#: src/qml/HistoryPage.qml:23
+#, kde-format
+msgctxt "@action:intoolbar Clear history"
+msgid "Clear"
+msgstr ""
+
+#: src/qml/HistoryPage.qml:97
+#, kde-format
+msgctxt "@action:button Remove history entry"
+msgid "Remove"
+msgstr ""
+
+#: src/qml/HistoryPage.qml:117
+#, kde-format
+msgctxt "placeholder"
+msgid "History empty"
+msgstr ""
+
 #: src/qml/Main.qml:17
 #, kde-format
 msgid "QR Code Scanner"
 msgstr "Skener QR kódov"
 
-#: src/qml/Main.qml:57
+#: src/qml/Main.qml:62
 #, kde-format
 msgid "Scan"
 msgstr "Skenovať"
 
-#: src/qml/Main.qml:64
+#: src/qml/Main.qml:69
 #, kde-format
 msgid "Create"
 msgstr "Vytvoriť"
 
-#: src/qml/Main.qml:70
+#: src/qml/Main.qml:75
 #, kde-format
 msgid "About"
 msgstr "O aplikácii"
@@ -119,160 +143,197 @@ msgctxt "@info:placeholder"
 msgid "Enter text…"
 msgstr "Zadajte text…"
 
-#: src/qml/QrCodeScannerPage.qml:52
+#: src/qml/QrCodeScannerPage.qml:60
 #, kde-format
 msgid "Scan a Wi-Fi Code"
 msgstr "Skenovať Wi-Fi kód"
 
-#: src/qml/QrCodeScannerPage.qml:52
+#: src/qml/QrCodeScannerPage.qml:60
 #, kde-format
 msgid "Scan a QR Code"
 msgstr "Skenovať QR kód"
 
-#: src/qml/QrCodeScannerPage.qml:56
+#: src/qml/QrCodeScannerPage.qml:64
 #, kde-format
 msgid "Light"
 msgstr "Svetlo"
 
-#: src/qml/QrCodeScannerPage.qml:63 src/qml/QrCodeScannerPage.qml:308
+#: src/qml/QrCodeScannerPage.qml:71 src/qml/QrCodeScannerPage.qml:120
 #, kde-format
 msgid "Select Camera"
 msgstr "Prepnúť fotoaparát"
 
-#: src/qml/QrCodeScannerPage.qml:70
+#: src/qml/QrCodeScannerPage.qml:78
 #, kde-format
 msgid "Open Image"
 msgstr "Otvoriť obrázky"
 
-#: src/qml/QrCodeScannerPage.qml:105
+#: src/qml/QrCodeScannerPage.qml:86
 #, kde-format
-msgid "Text found"
-msgstr "Nájdený text:"
+msgctxt "@action:intoolbar"
+msgid "View History"
+msgstr ""
 
-#: src/qml/QrCodeScannerPage.qml:107
-#, kde-format
-msgid "URL found"
-msgstr "Nájdená URL adresa"
-
-#: src/qml/QrCodeScannerPage.qml:109
-#, kde-format
-msgid "Contact found"
-msgstr "Nájdený kontakt"
-
-#: src/qml/QrCodeScannerPage.qml:111
-#, kde-format
-msgid "OTP URI found"
-msgstr "Nájdený OTP URI"
-
-#: src/qml/QrCodeScannerPage.qml:113
-#, kde-format
-msgid "Binary data found"
-msgstr "Nájdené binárne dáta"
-
-#: src/qml/QrCodeScannerPage.qml:115
-#, kde-format
-msgid "Health certificate found"
-msgstr "Nájdený zdravotný certifikát"
-
-#: src/qml/QrCodeScannerPage.qml:117
-#, kde-format
-msgid "Transport ticket found"
-msgstr "Nájdený cestovný lístok"
-
-#: src/qml/QrCodeScannerPage.qml:119
-#, kde-format
-msgid "ISBN found"
-msgstr "Nájdené ISBN"
-
-#: src/qml/QrCodeScannerPage.qml:121
-#, kde-format
-msgid "International Article Number found"
-msgstr "Nájdené medzinárodné číslo článku"
-
-#: src/qml/QrCodeScannerPage.qml:123
-#, kde-format
-msgid "Wi-Fi settings found"
-msgstr "Nájdené nastavenia Wi-Fi"
-
-#: src/qml/QrCodeScannerPage.qml:150
-#, kde-format
-msgid "<binary data>"
-msgstr "<binárne dáta>"
-
-#: src/qml/QrCodeScannerPage.qml:185
-#, kde-format
-msgctxt "Connecting to Wi-Fi"
-msgid "Connecting…"
-msgstr "Pripojiť"
-
-#: src/qml/QrCodeScannerPage.qml:193
-#, kde-format
-msgid "Open"
-msgstr "Otvoriť"
-
-#: src/qml/QrCodeScannerPage.qml:195
-#, kde-format
-msgid "Save Contact"
-msgstr "Uložiť kontakt"
-
-#: src/qml/QrCodeScannerPage.qml:197
-#, kde-format
-msgid "Open OTP client"
-msgstr "Otvoriť klienta OTP"
-
-#: src/qml/QrCodeScannerPage.qml:199
-#, kde-format
-msgid "Open Food Facts"
-msgstr "Open Food Facts"
-
-#: src/qml/QrCodeScannerPage.qml:201
-#, kde-format
-msgid "Wikipedia Book Sources"
-msgstr "Knižné zdroje Wikipédie"
-
-#: src/qml/QrCodeScannerPage.qml:203
-#, kde-format
-msgid "Open KDE Itinerary"
-msgstr "Otvoriť KDE Itinerary"
-
-#: src/qml/QrCodeScannerPage.qml:205
-#, kde-format
-msgid "Open in Vakzination"
-msgstr "Otvoriť vo Vakzination"
-
-#: src/qml/QrCodeScannerPage.qml:207
-#, kde-format
-msgid "Connect"
-msgstr "Pripojiť"
-
-#: src/qml/QrCodeScannerPage.qml:276
-#, kde-format
-msgctxt "@action:button"
-msgid "Copy"
-msgstr "Kopírovať"
-
-#: src/qml/QrCodeScannerPage.qml:285
-#, kde-format
-msgctxt "@action:button"
-msgid "Share…"
-msgstr "Zdieľať…"
-
-#: src/qml/QrCodeScannerPage.qml:389
+#: src/qml/QrCodeScannerPage.qml:210
 #, kde-format
 msgctxt "@title:window"
 msgid "Choose an Image File"
 msgstr "Vyberte súbor obrázka"
 
-#: src/qml/QrCodeScannerPage.qml:390
+#: src/qml/QrCodeScannerPage.qml:211
 #, kde-format
 msgctxt "Name filter for Image files"
 msgid "Image files (*.jpeg *.jpg *.jxl *.png)"
 msgstr "Súbory obrázkov (*.jpeg *.jpg *.jxl *.png)"
 
-#: src/qml/QrCodeScannerPage.qml:404
+#: src/qml/QrCodeScannerPage.qml:226
 #, kde-format
 msgid "No QR code found in the image."
 msgstr "V obrázku sa nenašiel žiadny QR kód."
+
+#: src/qml/ResultSheet.qml:31
+#, fuzzy, kde-format
+#| msgid "Text found"
+msgctxt "Barcode scanned"
+msgid "Text found"
+msgstr "Nájdený text:"
+
+#: src/qml/ResultSheet.qml:33
+#, fuzzy, kde-format
+#| msgid "URL found"
+msgctxt "Barcode scanned"
+msgid "URL found"
+msgstr "Nájdená URL adresa"
+
+#: src/qml/ResultSheet.qml:35
+#, fuzzy, kde-format
+#| msgid "Contact found"
+msgctxt "Barcode scanned"
+msgid "Contact found"
+msgstr "Nájdený kontakt"
+
+#: src/qml/ResultSheet.qml:37
+#, fuzzy, kde-format
+#| msgid "OTP URI found"
+msgctxt "Barcode scanned"
+msgid "OTP URI found"
+msgstr "Nájdený OTP URI"
+
+#: src/qml/ResultSheet.qml:39
+#, fuzzy, kde-format
+#| msgid "Binary data found"
+msgctxt "Barcode scanned"
+msgid "Binary data found"
+msgstr "Nájdené binárne dáta"
+
+#: src/qml/ResultSheet.qml:41
+#, fuzzy, kde-format
+#| msgid "Health certificate found"
+msgctxt "Barcode scanned"
+msgid "Health certificate found"
+msgstr "Nájdený zdravotný certifikát"
+
+#: src/qml/ResultSheet.qml:43
+#, fuzzy, kde-format
+#| msgid "Transport ticket found"
+msgctxt "Barcode scanned, train/flight ticket found"
+msgid "Transport ticket found"
+msgstr "Nájdený cestovný lístok"
+
+#: src/qml/ResultSheet.qml:45
+#, fuzzy, kde-format
+#| msgid "ISBN found"
+msgctxt "Barcode scanned"
+msgid "ISBN found"
+msgstr "Nájdené ISBN"
+
+#: src/qml/ResultSheet.qml:47
+#, fuzzy, kde-format
+#| msgid "International Article Number found"
+msgctxt "Barcode scanned, EAN found"
+msgid "International Article Number found"
+msgstr "Nájdené medzinárodné číslo článku"
+
+#: src/qml/ResultSheet.qml:49
+#, fuzzy, kde-format
+#| msgid "Wi-Fi settings found"
+msgctxt "Barcode scanned"
+msgid "Wi-Fi settings found"
+msgstr "Nájdené nastavenia Wi-Fi"
+
+#: src/qml/ResultSheet.qml:136
+#, kde-format
+msgctxt "Connecting to Wi-Fi"
+msgid "Connecting…"
+msgstr "Pripojiť"
+
+#: src/qml/ResultSheet.qml:144
+#, fuzzy, kde-format
+#| msgid "Open"
+msgctxt "@action:button"
+msgid "Open"
+msgstr "Otvoriť"
+
+#: src/qml/ResultSheet.qml:146
+#, fuzzy, kde-format
+#| msgid "Save Contact"
+msgctxt "@action:button"
+msgid "Save Contact"
+msgstr "Uložiť kontakt"
+
+#: src/qml/ResultSheet.qml:148
+#, fuzzy, kde-format
+#| msgid "Open OTP client"
+msgctxt "@action:button"
+msgid "Open OTP client"
+msgstr "Otvoriť klienta OTP"
+
+#: src/qml/ResultSheet.qml:150
+#, fuzzy, kde-format
+#| msgid "Open Food Facts"
+msgctxt "@action:button"
+msgid "Open Food Facts"
+msgstr "Open Food Facts"
+
+#: src/qml/ResultSheet.qml:152
+#, fuzzy, kde-format
+#| msgid "Wikipedia Book Sources"
+msgctxt "@action:button"
+msgid "Wikipedia Book Sources"
+msgstr "Knižné zdroje Wikipédie"
+
+#: src/qml/ResultSheet.qml:154
+#, fuzzy, kde-format
+#| msgid "Open KDE Itinerary"
+msgctxt "@action:button"
+msgid "Open KDE Itinerary"
+msgstr "Otvoriť KDE Itinerary"
+
+#: src/qml/ResultSheet.qml:156
+#, fuzzy, kde-format
+#| msgid "Open in Vakzination"
+msgctxt "@action:button"
+msgid "Open in Vakzination"
+msgstr "Otvoriť vo Vakzination"
+
+#: src/qml/ResultSheet.qml:158
+#, fuzzy, kde-format
+#| msgid "Connect"
+msgctxt "@action:button"
+msgid "Connect"
+msgstr "Pripojiť"
+
+#: src/qml/ResultSheet.qml:227
+#, kde-format
+msgctxt "@action:button"
+msgid "Copy"
+msgstr "Kopírovať"
+
+#: src/qml/ResultSheet.qml:236
+#, kde-format
+msgctxt "@action:button"
+msgid "Share…"
+msgstr "Zdieľať…"
 
 #: src/qml/ShareSheet.qml:12
 #, kde-format
@@ -289,6 +350,13 @@ msgstr "Naskenované aplikáciou Qrca"
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Nepodarilo sa nájsť zariadenie Wi-Fi"
+
+#: src/QrCodeContent.cpp:203
+#, fuzzy, kde-format
+#| msgid "<binary data>"
+msgctxt "Barcode content when it's not representable as plain text"
+msgid "<binary data>"
+msgstr "<binárne dáta>"
 
 #~ msgctxt "@action:button"
 #~ msgid "Copy to Clipboard"
