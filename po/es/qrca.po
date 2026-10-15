@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-01 00:50+0000\n"
-"PO-Revision-Date: 2026-07-01 16:31+0100\n"
+"PO-Revision-Date: 2026-10-14 11:23+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 26.04.2\n"
+"X-Generator: Lokalize 26.08.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -62,7 +62,7 @@ msgstr "Escanear solo códigos QR de redes wifi"
 #: src/notificationmanager.cpp:19
 #, kde-format
 msgid "Shared url for image is <a href='%1'>%1</a>"
-msgstr "El URL compartido para la imagen es <a href='%1'>%1</a>"
+msgstr "La URL compartida para la imagen es <a href='%1'>%1</a>"
 
 #: src/qml/Main.qml:17
 #, kde-format
@@ -156,7 +156,7 @@ msgstr "Se ha encontrado un texto"
 #: src/qml/QrCodeScannerPage.qml:108
 #, kde-format
 msgid "URL found"
-msgstr "Se ha encontrado un URL"
+msgstr "Se ha encontrado una URL"
 
 #: src/qml/QrCodeScannerPage.qml:110
 #, kde-format
@@ -176,12 +176,12 @@ msgstr "Se han encontrado datos binarios"
 #: src/qml/QrCodeScannerPage.qml:116
 #, kde-format
 msgid "Health certificate found"
-msgstr "Certificado de salud encontrado"
+msgstr "Se ha encontrado un certificado sanitario"
 
 #: src/qml/QrCodeScannerPage.qml:118
 #, kde-format
 msgid "Transport ticket found"
-msgstr "Billete de transporte encontrado"
+msgstr "Se ha encontrado un billete de transporte"
 
 #: src/qml/QrCodeScannerPage.qml:120
 #, kde-format
@@ -196,7 +196,7 @@ msgstr "Se ha encontrado un número de artículo internacional"
 #: src/qml/QrCodeScannerPage.qml:124
 #, kde-format
 msgid "Wi-Fi settings found"
-msgstr "Se han encontrado preferencias de WiFi"
+msgstr "Se han encontrado preferencias de wifi"
 
 #: src/qml/QrCodeScannerPage.qml:151
 #, kde-format

@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-01 00:50+0000\n"
-"PO-Revision-Date: 2026-07-15 11:05+0300\n"
-"Last-Translator: Olesya Gerasimenko <goa@altlinux.org>\n"
+"PO-Revision-Date: 2026-10-14 12:30+0300\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Basealt Translation Team\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -242,12 +242,12 @@ msgstr "Открыть приложение KDE Itinerary"
 #: src/qml/QrCodeScannerPage.qml:206
 #, kde-format
 msgid "Open in Vakzination"
-msgstr "Открыть в приложении Вакцинация"
+msgstr "Открыть в приложении Vakzination"
 
 #: src/qml/QrCodeScannerPage.qml:208
 #, kde-format
 msgid "Connect"
-msgstr "Подключиться"
+msgstr "Подключить"
 
 #: src/qml/QrCodeScannerPage.qml:277
 #, kde-format
