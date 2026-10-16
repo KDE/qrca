@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-07-01 00:50+0000\n"
-"PO-Revision-Date: 2026-07-01 09:31+0200\n"
+"PO-Revision-Date: 2026-10-14 10:26+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -152,7 +152,7 @@ msgstr "Obri una imatge"
 #: src/qml/QrCodeScannerPage.qml:106
 #, kde-format
 msgid "Text found"
-msgstr "Text trobat"
+msgstr "S'ha trobat text"
 
 #: src/qml/QrCodeScannerPage.qml:108
 #, kde-format
@@ -172,7 +172,7 @@ msgstr "S'ha trobat un URI d'OTP"
 #: src/qml/QrCodeScannerPage.qml:114
 #, kde-format
 msgid "Binary data found"
-msgstr "No s'han trobat les dades binàries"
+msgstr "S'han trobat dades binàries"
 
 #: src/qml/QrCodeScannerPage.qml:116
 #, kde-format
@@ -229,7 +229,7 @@ msgstr "Obri el client OTP"
 #: src/qml/QrCodeScannerPage.qml:200
 #, kde-format
 msgid "Open Food Facts"
-msgstr "Open Food Facts"
+msgstr "Obri «Food Facts»"
 
 #: src/qml/QrCodeScannerPage.qml:202
 #, kde-format
