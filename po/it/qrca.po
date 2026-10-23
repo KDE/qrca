@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-14 00:52+0000\n"
-"PO-Revision-Date: 2026-08-26 17:47+0200\n"
+"PO-Revision-Date: 2026-10-18 19:40+0200\n"
 "Last-Translator: Paolo Zamponi <feus73@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 26.04.3\n"
+"X-Generator: Lokalize 26.08.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -66,25 +66,25 @@ msgstr "L'url condiviso dell'immagine è <a href='%1'>%1</a>"
 #, kde-format
 msgctxt "@title:window"
 msgid "History"
-msgstr ""
+msgstr "Cronologia"
 
 #: src/qml/HistoryPage.qml:23
 #, kde-format
 msgctxt "@action:intoolbar Clear history"
 msgid "Clear"
-msgstr ""
+msgstr "Pulisci"
 
 #: src/qml/HistoryPage.qml:97
 #, kde-format
 msgctxt "@action:button Remove history entry"
 msgid "Remove"
-msgstr ""
+msgstr "Rimuovi"
 
 #: src/qml/HistoryPage.qml:117
 #, kde-format
 msgctxt "placeholder"
 msgid "History empty"
-msgstr ""
+msgstr "Cronologia vuota"
 
 #: src/qml/Main.qml:17
 #, kde-format
@@ -174,7 +174,7 @@ msgstr "Apri immagine"
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "View History"
-msgstr ""
+msgstr "Visualizza la cronologia"
 
 #: src/qml/QrCodeScannerPage.qml:210
 #, kde-format
@@ -194,71 +194,61 @@ msgid "No QR code found in the image."
 msgstr "Nell'immagine non ci sono codici QR."
 
 #: src/qml/ResultSheet.qml:31
-#, fuzzy, kde-format
-#| msgid "Text found"
+#, kde-format
 msgctxt "Barcode scanned"
 msgid "Text found"
 msgstr "Trovato testo"
 
 #: src/qml/ResultSheet.qml:33
-#, fuzzy, kde-format
-#| msgid "URL found"
+#, kde-format
 msgctxt "Barcode scanned"
 msgid "URL found"
 msgstr "Trovato URL"
 
 #: src/qml/ResultSheet.qml:35
-#, fuzzy, kde-format
-#| msgid "Contact found"
+#, kde-format
 msgctxt "Barcode scanned"
 msgid "Contact found"
 msgstr "Trovato contatto"
 
 #: src/qml/ResultSheet.qml:37
-#, fuzzy, kde-format
-#| msgid "OTP URI found"
+#, kde-format
 msgctxt "Barcode scanned"
 msgid "OTP URI found"
 msgstr "Trovato URI OTP"
 
 #: src/qml/ResultSheet.qml:39
-#, fuzzy, kde-format
-#| msgid "Binary data found"
+#, kde-format
 msgctxt "Barcode scanned"
 msgid "Binary data found"
 msgstr "Trovati dati binari"
 
 #: src/qml/ResultSheet.qml:41
-#, fuzzy, kde-format
-#| msgid "Health certificate found"
+#, kde-format
 msgctxt "Barcode scanned"
 msgid "Health certificate found"
 msgstr "Trovato certificato medico"
 
 #: src/qml/ResultSheet.qml:43
-#, fuzzy, kde-format
-#| msgid "Transport ticket found"
+#, kde-format
 msgctxt "Barcode scanned, train/flight ticket found"
 msgid "Transport ticket found"
 msgstr "Trovato biglietto di viaggio"
 
 #: src/qml/ResultSheet.qml:45
-#, fuzzy, kde-format
-#| msgid "ISBN found"
+#, kde-format
 msgctxt "Barcode scanned"
 msgid "ISBN found"
 msgstr "Trovato ISBN"
 
 #: src/qml/ResultSheet.qml:47
-#, fuzzy, kde-format
-#| msgid "International Article Number found"
+#, kde-format
 msgctxt "Barcode scanned, EAN found"
 msgid "International Article Number found"
 msgstr "Trovato EAN"
 
 #: src/qml/ResultSheet.qml:49
-#, fuzzy, kde-format
-#| msgid "Wi-Fi settings found"
+#, kde-format
 msgctxt "Barcode scanned"
 msgid "Wi-Fi settings found"
 msgstr "Impostazioni Wi-Fi trovate"
@@ -270,57 +260,49 @@ msgid "Connecting…"
 msgstr "Connessione…"
 
 #: src/qml/ResultSheet.qml:144
-#, fuzzy, kde-format
-#| msgid "Open"
+#, kde-format
 msgctxt "@action:button"
 msgid "Open"
 msgstr "Apri"
 
 #: src/qml/ResultSheet.qml:146
-#, fuzzy, kde-format
-#| msgid "Save Contact"
+#, kde-format
 msgctxt "@action:button"
 msgid "Save Contact"
 msgstr "Salva contatto"
 
 #: src/qml/ResultSheet.qml:148
-#, fuzzy, kde-format
-#| msgid "Open OTP client"
+#, kde-format
 msgctxt "@action:button"
 msgid "Open OTP client"
 msgstr "Apri client OTP"
 
 #: src/qml/ResultSheet.qml:150
-#, fuzzy, kde-format
-#| msgid "Open Food Facts"
+#, kde-format
 msgctxt "@action:button"
 msgid "Open Food Facts"
 msgstr "Open Food Facts"
 
 #: src/qml/ResultSheet.qml:152
-#, fuzzy, kde-format
-#| msgid "Wikipedia Book Sources"
+#, kde-format
 msgctxt "@action:button"
 msgid "Wikipedia Book Sources"
 msgstr "Fonti librarie di Wikipedia"
 
 #: src/qml/ResultSheet.qml:154
-#, fuzzy, kde-format
-#| msgid "Open KDE Itinerary"
+#, kde-format
 msgctxt "@action:button"
 msgid "Open KDE Itinerary"
 msgstr "Apri KDE Itinerary"
 
 #: src/qml/ResultSheet.qml:156
-#, fuzzy, kde-format
-#| msgid "Open in Vakzination"
+#, kde-format
 msgctxt "@action:button"
 msgid "Open in Vakzination"
 msgstr "Apri in Vakzination"
 
 #: src/qml/ResultSheet.qml:158
-#, fuzzy, kde-format
-#| msgid "Connect"
+#, kde-format
 msgctxt "@action:button"
 msgid "Connect"
 msgstr "Connetti"
@@ -354,8 +336,7 @@ msgid "Failed to find wifi device"
 msgstr "Impossibile trovare dispositivi wifi"
 
 #: src/QrCodeContent.cpp:203
-#, fuzzy, kde-format
-#| msgid "<binary data>"
+#, kde-format
 msgctxt "Barcode content when it's not representable as plain text"
 msgid "<binary data>"
 msgstr "<dati binari>"
