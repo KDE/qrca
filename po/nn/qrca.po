@@ -6,7 +6,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-14 00:52+0000\n"
-"PO-Revision-Date: 2026-09-19 16:43+0200\n"
+"PO-Revision-Date: 2026-10-27 20:01+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@nuug.no>\n"
 "Language: nn\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 26.08.1\n"
+"X-Generator: Lokalize 26.11.70\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
@@ -68,25 +68,25 @@ msgstr "Delt adresse for biletet er <a href='%1'>%1</a>"
 #, kde-format
 msgctxt "@title:window"
 msgid "History"
-msgstr ""
+msgstr "Logg"
 
 #: src/qml/HistoryPage.qml:23
 #, kde-format
 msgctxt "@action:intoolbar Clear history"
 msgid "Clear"
-msgstr ""
+msgstr "Tøm"
 
 #: src/qml/HistoryPage.qml:97
 #, kde-format
 msgctxt "@action:button Remove history entry"
 msgid "Remove"
-msgstr ""
+msgstr "Fjern"
 
 #: src/qml/HistoryPage.qml:117
 #, kde-format
 msgctxt "placeholder"
 msgid "History empty"
-msgstr ""
+msgstr "Loggen er tom"
 
 #: src/qml/Main.qml:17
 #, kde-format
@@ -176,7 +176,7 @@ msgstr "Opna bilete"
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "View History"
-msgstr ""
+msgstr "Vis logg"
 
 #: src/qml/QrCodeScannerPage.qml:210
 #, kde-format
