@@ -125,8 +125,7 @@ msgid "All files (*)"
 msgstr "Todos os ficheiros (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
-#, fuzzy, kde-format
-#| msgid "Save"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Save"
 msgstr "Gardar"
@@ -274,9 +273,7 @@ msgid "Wi-Fi settings found"
 msgstr "Atopouse unha configuración de rede sen fíos"
 
 #: src/qml/ResultSheet.qml:136
-#, fuzzy, kde-format
-#| msgctxt "Connecting to Wifi"
-#| msgid "Connecting…"
+#, kde-format
 msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
 msgstr "Conectando…"
@@ -352,8 +349,7 @@ msgid "Share…"
 msgstr "Compartir"
 
 #: src/qml/ShareSheet.qml:12
-#, fuzzy, kde-format
-#| msgid "Share"
+#, kde-format
 msgctxt "@title:window"
 msgid "Share"
 msgstr "Compartir"
