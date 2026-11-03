@@ -101,8 +101,7 @@ msgid "All files (*)"
 msgstr "Todos os ficheiros (*)"
 
 #: src/qml/QrCodeEncoderPage.qml:29
-#, fuzzy, kde-format
-#| msgid "Save"
+#, kde-format
 msgctxt "@action:intoolbar"
 msgid "Save"
 msgstr "Gardar"
@@ -209,9 +208,7 @@ msgid "<binary data>"
 msgstr "<datos binarios>"
 
 #: src/qml/QrCodeScannerPage.qml:186
-#, fuzzy, kde-format
-#| msgctxt "Connecting to Wifi"
-#| msgid "Connecting…"
+#, kde-format
 msgctxt "Connecting to Wi-Fi"
 msgid "Connecting…"
 msgstr "Conectando…"
