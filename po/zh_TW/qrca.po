@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-10-14 00:52+0000\n"
-"PO-Revision-Date: 2026-09-15 14:12+0900\n"
+"PO-Revision-Date: 2026-11-03 21:51+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
 "Language: zh_TW\n"
@@ -70,25 +70,25 @@ msgstr "影像已分享的網址是 <a href='%1'>%1</a>"
 #, kde-format
 msgctxt "@title:window"
 msgid "History"
-msgstr ""
+msgstr "歷史紀錄"
 
 #: src/qml/HistoryPage.qml:23
 #, kde-format
 msgctxt "@action:intoolbar Clear history"
 msgid "Clear"
-msgstr ""
+msgstr "清除"
 
 #: src/qml/HistoryPage.qml:97
 #, kde-format
 msgctxt "@action:button Remove history entry"
 msgid "Remove"
-msgstr ""
+msgstr "移除"
 
 #: src/qml/HistoryPage.qml:117
 #, kde-format
 msgctxt "placeholder"
 msgid "History empty"
-msgstr ""
+msgstr "歷史紀錄是空的"
 
 #: src/qml/Main.qml:17
 #, kde-format
@@ -178,7 +178,7 @@ msgstr "開啟影像"
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "View History"
-msgstr ""
+msgstr "檢視歷史"
 
 #: src/qml/QrCodeScannerPage.qml:210
 #, kde-format
@@ -198,71 +198,61 @@ msgid "No QR code found in the image."
 msgstr "影像中沒有找到 QR 碼。"
 
 #: src/qml/ResultSheet.qml:31
-#, fuzzy, kde-format
-#| msgid "Text found"
+#, kde-format
 msgctxt "Barcode scanned"
 msgid "Text found"
 msgstr "找到文字"
 
 #: src/qml/ResultSheet.qml:33
-#, fuzzy, kde-format
-#| msgid "URL found"
+#, kde-format
 msgctxt "Barcode scanned"
 msgid "URL found"
 msgstr "找到網址"
 
 #: src/qml/ResultSheet.qml:35
-#, fuzzy, kde-format
-#| msgid "Contact found"
+#, kde-format
 msgctxt "Barcode scanned"
 msgid "Contact found"
 msgstr "找到聯絡人"
 
 #: src/qml/ResultSheet.qml:37
-#, fuzzy, kde-format
-#| msgid "OTP URI found"
+#, kde-format
 msgctxt "Barcode scanned"
 msgid "OTP URI found"
 msgstr "找到 OTP URI"
 
 #: src/qml/ResultSheet.qml:39
-#, fuzzy, kde-format
-#| msgid "Binary data found"
+#, kde-format
 msgctxt "Barcode scanned"
 msgid "Binary data found"
 msgstr "找到二進位資料"
 
 #: src/qml/ResultSheet.qml:41
-#, fuzzy, kde-format
-#| msgid "Health certificate found"
+#, kde-format
 msgctxt "Barcode scanned"
 msgid "Health certificate found"
 msgstr "找到健康證明"
 
 #: src/qml/ResultSheet.qml:43
-#, fuzzy, kde-format
-#| msgid "Transport ticket found"
+#, kde-format
 msgctxt "Barcode scanned, train/flight ticket found"
 msgid "Transport ticket found"
 msgstr "找到交通票券"
 
 #: src/qml/ResultSheet.qml:45
-#, fuzzy, kde-format
-#| msgid "ISBN found"
+#, kde-format
 msgctxt "Barcode scanned"
 msgid "ISBN found"
 msgstr "找到 ISBN"
 
 #: src/qml/ResultSheet.qml:47
-#, fuzzy, kde-format
-#| msgid "International Article Number found"
+#, kde-format
 msgctxt "Barcode scanned, EAN found"
 msgid "International Article Number found"
 msgstr "找到國際商品條碼"
 
 #: src/qml/ResultSheet.qml:49
-#, fuzzy, kde-format
-#| msgid "Wi-Fi settings found"
+#, kde-format
 msgctxt "Barcode scanned"
 msgid "Wi-Fi settings found"
 msgstr "找到 Wi-Fi 設定"
@@ -274,57 +264,49 @@ msgid "Connecting…"
 msgstr "連線中…"
 
 #: src/qml/ResultSheet.qml:144
-#, fuzzy, kde-format
-#| msgid "Open"
+#, kde-format
 msgctxt "@action:button"
 msgid "Open"
 msgstr "開啟"
 
 #: src/qml/ResultSheet.qml:146
-#, fuzzy, kde-format
-#| msgid "Save Contact"
+#, kde-format
 msgctxt "@action:button"
 msgid "Save Contact"
 msgstr "儲存聯絡人"
 
 #: src/qml/ResultSheet.qml:148
-#, fuzzy, kde-format
-#| msgid "Open OTP client"
+#, kde-format
 msgctxt "@action:button"
 msgid "Open OTP client"
 msgstr "開啟 OTP 用戶端"
 
 #: src/qml/ResultSheet.qml:150
-#, fuzzy, kde-format
-#| msgid "Open Food Facts"
+#, kde-format
 msgctxt "@action:button"
 msgid "Open Food Facts"
 msgstr "開啟食品資訊"
 
 #: src/qml/ResultSheet.qml:152
-#, fuzzy, kde-format
-#| msgid "Wikipedia Book Sources"
+#, kde-format
 msgctxt "@action:button"
 msgid "Wikipedia Book Sources"
 msgstr "維基百科書本來源"
 
 #: src/qml/ResultSheet.qml:154
-#, fuzzy, kde-format
-#| msgid "Open KDE Itinerary"
+#, kde-format
 msgctxt "@action:button"
 msgid "Open KDE Itinerary"
-msgstr "開啟 KDE Itinerary"
+msgstr "開啟 KDE 旅行計劃"
 
 #: src/qml/ResultSheet.qml:156
-#, fuzzy, kde-format
-#| msgid "Open in Vakzination"
+#, kde-format
 msgctxt "@action:button"
 msgid "Open in Vakzination"
 msgstr "在 Vakzination 開啟"
 
 #: src/qml/ResultSheet.qml:158
-#, fuzzy, kde-format
-#| msgid "Connect"
+#, kde-format
 msgctxt "@action:button"
 msgid "Connect"
 msgstr "連線"
@@ -358,8 +340,7 @@ msgid "Failed to find wifi device"
 msgstr "尋找 wifi 裝置失敗"
 
 #: src/QrCodeContent.cpp:203
-#, fuzzy, kde-format
-#| msgid "<binary data>"
+#, kde-format
 msgctxt "Barcode content when it's not representable as plain text"
 msgid "<binary data>"
 msgstr "<二進位資料>"
