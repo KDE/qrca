@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-14 00:52+0000\n"
+"POT-Creation-Date: 2026-11-11 01:07+0000\n"
 "PO-Revision-Date: 2026-10-27 20:01+0100\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
 "Language-Team: Norwegian Nynorsk <l10n-no@nuug.no>\n"
@@ -132,16 +132,27 @@ msgstr "Lagra"
 
 #: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
+msgid "QR code saved to %1"
+msgstr ""
+
+#: src/qml/QrCodeEncoderPage.qml:37 src/qml/QrCodeEncoderPage.qml:51
+#, kde-format
 msgid "QR code could not be saved."
 msgstr "Klarte ikkje lagra QR-koden."
 
-#: src/qml/QrCodeEncoderPage.qml:47
+#: src/qml/QrCodeEncoderPage.qml:42
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Save As…"
+msgstr ""
+
+#: src/qml/QrCodeEncoderPage.qml:63
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Copy"
 msgstr "Kopier"
 
-#: src/qml/QrCodeEncoderPage.qml:73
+#: src/qml/QrCodeEncoderPage.qml:89
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter text…"
@@ -350,7 +361,12 @@ msgstr "Del"
 msgid "Scanned using Qrca"
 msgstr "Skanna med Qrca"
 
-#: src/Qrca.cpp:248
+#: src/Qrca.cpp:125
+#, kde-format
+msgid "QR code for %1"
+msgstr ""
+
+#: src/Qrca.cpp:274
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Fann ikkje Wi-Fi-eining"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-14 00:52+0000\n"
+"POT-Creation-Date: 2026-11-11 01:07+0000\n"
 "PO-Revision-Date: 2026-09-14 20:10+0200\n"
 "Last-Translator: Roman Paholík <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -128,16 +128,27 @@ msgstr "Uložiť"
 
 #: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
+msgid "QR code saved to %1"
+msgstr ""
+
+#: src/qml/QrCodeEncoderPage.qml:37 src/qml/QrCodeEncoderPage.qml:51
+#, kde-format
 msgid "QR code could not be saved."
 msgstr "QR kód sa nepodarilo uložiť."
 
-#: src/qml/QrCodeEncoderPage.qml:47
+#: src/qml/QrCodeEncoderPage.qml:42
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Save As…"
+msgstr ""
+
+#: src/qml/QrCodeEncoderPage.qml:63
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Copy"
 msgstr "Kopírovať"
 
-#: src/qml/QrCodeEncoderPage.qml:73
+#: src/qml/QrCodeEncoderPage.qml:89
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter text…"
@@ -328,7 +339,12 @@ msgstr "Zdieľať"
 msgid "Scanned using Qrca"
 msgstr "Naskenované aplikáciou Qrca"
 
-#: src/Qrca.cpp:248
+#: src/Qrca.cpp:125
+#, kde-format
+msgid "QR code for %1"
+msgstr ""
+
+#: src/Qrca.cpp:274
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Nepodarilo sa nájsť zariadenie Wi-Fi"

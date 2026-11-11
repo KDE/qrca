@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-10-14 00:52+0000\n"
+"POT-Creation-Date: 2026-11-11 01:07+0000\n"
 "PO-Revision-Date: 2025-02-14 08:10+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
@@ -131,19 +131,30 @@ msgid "Save"
 msgstr "Gardar"
 
 #: src/qml/QrCodeEncoderPage.qml:37
+#, kde-format
+msgid "QR code saved to %1"
+msgstr ""
+
+#: src/qml/QrCodeEncoderPage.qml:37 src/qml/QrCodeEncoderPage.qml:51
 #, fuzzy, kde-format
 #| msgid "QR-Code could not be saved"
 msgid "QR code could not be saved."
 msgstr "Non foi posíbel gardar o código QR."
 
-#: src/qml/QrCodeEncoderPage.qml:47
+#: src/qml/QrCodeEncoderPage.qml:42
+#, kde-format
+msgctxt "@action:intoolbar"
+msgid "Save As…"
+msgstr ""
+
+#: src/qml/QrCodeEncoderPage.qml:63
 #, fuzzy, kde-format
 #| msgid "Copy"
 msgctxt "@action:intoolbar"
 msgid "Copy"
 msgstr "Copiar"
 
-#: src/qml/QrCodeEncoderPage.qml:73
+#: src/qml/QrCodeEncoderPage.qml:89
 #, kde-format
 msgctxt "@info:placeholder"
 msgid "Enter text…"
@@ -359,7 +370,12 @@ msgstr "Compartir"
 msgid "Scanned using Qrca"
 msgstr ""
 
-#: src/Qrca.cpp:248
+#: src/Qrca.cpp:125
+#, kde-format
+msgid "QR code for %1"
+msgstr ""
+
+#: src/Qrca.cpp:274
 #, kde-format
 msgid "Failed to find wifi device"
 msgstr "Non foi posíbel atopar un dispositivo de wifi."
