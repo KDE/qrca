@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-11 01:07+0000\n"
-"PO-Revision-Date: 2026-10-15 00:11+0200\n"
+"PO-Revision-Date: 2026-11-11 12:29+0100\n"
 "Last-Translator: Libor Filípek <libor.filipek@gmail.com>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 26.08.2\n"
+"X-Generator: Lokalize 26.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -133,7 +133,7 @@ msgstr "Uložit"
 #: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
 msgid "QR code saved to %1"
-msgstr ""
+msgstr "QR kód uložen do %1"
 
 #: src/qml/QrCodeEncoderPage.qml:37 src/qml/QrCodeEncoderPage.qml:51
 #, kde-format
@@ -144,7 +144,7 @@ msgstr "QR kód nelze uložit."
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Save As…"
-msgstr ""
+msgstr "Uložit jako…"
 
 #: src/qml/QrCodeEncoderPage.qml:63
 #, kde-format
@@ -346,7 +346,7 @@ msgstr "Naskenováno pomocí Qrca"
 #: src/Qrca.cpp:125
 #, kde-format
 msgid "QR code for %1"
-msgstr ""
+msgstr "Kód QR pro %1"
 
 #: src/Qrca.cpp:274
 #, kde-format

@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-11 01:07+0000\n"
-"PO-Revision-Date: 2026-10-31 18:17+0400\n"
+"PO-Revision-Date: 2026-11-11 20:55+0400\n"
 "Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
 "Language-Team: ar\n"
 "Language: ar\n"
@@ -132,7 +132,7 @@ msgstr "احفظ"
 #: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
 msgid "QR code saved to %1"
-msgstr ""
+msgstr "رمز الاستجابة حُفظ إلى %1"
 
 #: src/qml/QrCodeEncoderPage.qml:37 src/qml/QrCodeEncoderPage.qml:51
 #, kde-format
@@ -143,7 +143,7 @@ msgstr "لم يتمكن من حفظ رمز الاستجابة."
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Save As…"
-msgstr ""
+msgstr "احفظ باسم…"
 
 #: src/qml/QrCodeEncoderPage.qml:63
 #, kde-format
@@ -345,7 +345,7 @@ msgstr "مُسحت بواسطة برنامج كركا"
 #: src/Qrca.cpp:125
 #, kde-format
 msgid "QR code for %1"
-msgstr ""
+msgstr "شفرة رمز الاستجابة لـ%1"
 
 #: src/Qrca.cpp:274
 #, kde-format

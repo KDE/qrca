@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-11 01:07+0000\n"
-"PO-Revision-Date: 2026-10-14 10:26+0200\n"
+"PO-Revision-Date: 2026-11-11 09:48+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -134,7 +134,7 @@ msgstr "Desa"
 #: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
 msgid "QR code saved to %1"
-msgstr ""
+msgstr "El codi QR s'ha desat a %1"
 
 #: src/qml/QrCodeEncoderPage.qml:37 src/qml/QrCodeEncoderPage.qml:51
 #, kde-format
@@ -145,7 +145,7 @@ msgstr "No s'ha pogut desar el codi QR."
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Save As…"
-msgstr ""
+msgstr "Desa com a…"
 
 #: src/qml/QrCodeEncoderPage.qml:63
 #, kde-format
@@ -348,7 +348,7 @@ msgstr "Escanejat utilitzant l'Orca"
 #: src/Qrca.cpp:125
 #, kde-format
 msgid "QR code for %1"
-msgstr ""
+msgstr "Codi QR de %1"
 
 #: src/Qrca.cpp:274
 #, kde-format
