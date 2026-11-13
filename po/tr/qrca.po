@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: qrca\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2026-11-11 01:07+0000\n"
-"PO-Revision-Date: 2026-11-11 20:38+0300\n"
+"PO-Revision-Date: 2026-11-12 19:06+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -35,7 +35,7 @@ msgstr "Qrca"
 #: src/main.cpp:72
 #, kde-format
 msgid "A simple QR scanner"
-msgstr "Yalın bir kare kod tarayıcısı"
+msgstr "Yalın bir karekod tarayıcısı"
 
 #: src/main.cpp:74
 #, kde-format
@@ -55,7 +55,7 @@ msgstr "Simon Schmeißer"
 #: src/main.cpp:95
 #, kde-format
 msgid "Scan only for Wifi network QR-Codes"
-msgstr "Yalnızca Wi-Fi ağ kare kodlarını tara"
+msgstr "Yalnızca Wi-Fi ağ karekodlarını tara"
 
 #: src/notificationmanager.cpp:19
 #, kde-format
@@ -89,7 +89,7 @@ msgstr "Geçmiş boş"
 #: src/qml/Main.qml:17
 #, kde-format
 msgid "QR Code Scanner"
-msgstr "Kare Kod Tarayıcısı"
+msgstr "Karekod Tarayıcısı"
 
 #: src/qml/Main.qml:62
 #, kde-format
@@ -110,7 +110,7 @@ msgstr "Hakkında"
 #, kde-format
 msgctxt "@title:window"
 msgid "Create a QR Code"
-msgstr "Kare Kod Oluştur"
+msgstr "Karekod Oluştur"
 
 #: src/qml/QrCodeEncoderPage.qml:23
 #, kde-format
@@ -131,12 +131,12 @@ msgstr "Kaydet"
 #: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
 msgid "QR code saved to %1"
-msgstr "Kare kod, %1 konumuna kaydedildi"
+msgstr "Karekod, %1 konumuna kaydedildi"
 
 #: src/qml/QrCodeEncoderPage.qml:37 src/qml/QrCodeEncoderPage.qml:51
 #, kde-format
 msgid "QR code could not be saved."
-msgstr "Kare Kod kaydedilemedi."
+msgstr "Karekod kaydedilemedi."
 
 #: src/qml/QrCodeEncoderPage.qml:42
 #, kde-format
@@ -164,7 +164,7 @@ msgstr "Wi-Fi Kodunu Tara"
 #: src/qml/QrCodeScannerPage.qml:60
 #, kde-format
 msgid "Scan a QR Code"
-msgstr "Kare Kod Tara"
+msgstr "Karekod Tara"
 
 #: src/qml/QrCodeScannerPage.qml:64
 #, kde-format
@@ -202,7 +202,7 @@ msgstr "Görsel dosyaları (*.jpeg *.jpg *.jxl *.png)"
 #: src/qml/QrCodeScannerPage.qml:226
 #, kde-format
 msgid "No QR code found in the image."
-msgstr "Görselde bulunan kare kod yok."
+msgstr "Görselde bulunan karekod yok."
 
 #: src/qml/ResultSheet.qml:31
 #, kde-format
@@ -344,7 +344,7 @@ msgstr "Qrca kullanarak tarandı"
 #: src/Qrca.cpp:125
 #, kde-format
 msgid "QR code for %1"
-msgstr "%1 için Kare Kod"
+msgstr "%1 için Karekod"
 
 #: src/Qrca.cpp:274
 #, kde-format
