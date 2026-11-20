@@ -129,7 +129,7 @@ msgstr "Uložiť"
 #: src/qml/QrCodeEncoderPage.qml:37
 #, kde-format
 msgid "QR code saved to %1"
-msgstr ""
+msgstr "QR kód uložený do %1"
 
 #: src/qml/QrCodeEncoderPage.qml:37 src/qml/QrCodeEncoderPage.qml:51
 #, kde-format
@@ -140,7 +140,7 @@ msgstr "QR kód sa nepodarilo uložiť."
 #, kde-format
 msgctxt "@action:intoolbar"
 msgid "Save As…"
-msgstr ""
+msgstr "Uložiť ako…"
 
 #: src/qml/QrCodeEncoderPage.qml:63
 #, kde-format
@@ -342,7 +342,7 @@ msgstr "Naskenované aplikáciou Qrca"
 #: src/Qrca.cpp:125
 #, kde-format
 msgid "QR code for %1"
-msgstr ""
+msgstr "QR kód pre %1"
 
 #: src/Qrca.cpp:274
 #, kde-format
